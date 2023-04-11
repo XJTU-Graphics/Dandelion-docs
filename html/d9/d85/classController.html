@@ -1,0 +1,510 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dandelion: Controller类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="../../../mathjax/es5/tex-chtml.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+   <div id="projectbrief">A light-weight 3D builder for educational usage</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d9/d85/classController.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="#pri-static-attribs">静态 Private 属性</a> &#124;
+<a href="../../d1/d36/classController-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">Controller类 参考<div class="ingroups"><a class="el" href="../../dd/df1/group__ui.html">UI 界面</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>控制器管理所有的界面组件，并处理和预览视角操作（例如旋转、缩放或者平移）相关的输入。  
+ <a href="../../d9/d85/classController.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d2/dd9/controller_8h_source.html">controller.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ac33cc6c318b232a74c05b2b48b2c41bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#ac33cc6c318b232a74c05b2b48b2c41bb">on_mouse_dragged</a> (bool initial)</td></tr>
+<tr class="memdesc:ac33cc6c318b232a74c05b2b48b2c41bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">将鼠标拖动转换为轨迹球 (Trackball) 操作，用于旋转预览视角。  <br /></td></tr>
+<tr class="separator:ac33cc6c318b232a74c05b2b48b2c41bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e48bd3ebf3cd691b7485cfa65c3043"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a17e48bd3ebf3cd691b7485cfa65c3043">on_wheel_scrolled</a> ()</td></tr>
+<tr class="memdesc:a17e48bd3ebf3cd691b7485cfa65c3043"><td class="mdescLeft">&#160;</td><td class="mdescRight">将拨动鼠标滚轮的操作转换为视角拉进或远离。  <br /></td></tr>
+<tr class="separator:a17e48bd3ebf3cd691b7485cfa65c3043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a142bc68626ef6319295599d939e56cf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a142bc68626ef6319295599d939e56cf0">on_framebuffer_resized</a> (float width, float height)</td></tr>
+<tr class="separator:a142bc68626ef6319295599d939e56cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f12b4298f0f7594d37ab7ac28889b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a16f12b4298f0f7594d37ab7ac28889b7">render</a> (const std::unique_ptr&lt; <a class="el" href="../../d9/d69/classShader.html">Shader</a> &gt; &amp;shader)</td></tr>
+<tr class="separator:a16f12b4298f0f7594d37ab7ac28889b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:adb5f21653407293de30f649a8d2fc52c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#adb5f21653407293de30f649a8d2fc52c">Controller</a> (<a class="el" href="../../d9/d85/classController.html">Controller</a> &amp;other)=delete</td></tr>
+<tr class="separator:adb5f21653407293de30f649a8d2fc52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a567c43e7750582fe306bf36f90e41393"><td class="memItemLeft" align="right" valign="top"><a id="a567c43e7750582fe306bf36f90e41393" name="a567c43e7750582fe306bf36f90e41393"></a>
+<a class="el" href="../../d9/d85/classController.html">Controller</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="../../d9/d85/classController.html">Controller</a> &amp;other)=delete</td></tr>
+<tr class="separator:a567c43e7750582fe306bf36f90e41393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a6301902226747ccdef81ee281c9abc6e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d85/classController.html">Controller</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a6301902226747ccdef81ee281c9abc6e">controller</a> ()</td></tr>
+<tr class="memdesc:a6301902226747ccdef81ee281c9abc6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取 <code><a class="el" href="../../d9/d85/classController.html" title="控制器管理所有的界面组件，并处理和预览视角操作（例如旋转、缩放或者平移）相关的输入。">Controller</a></code> 类的唯一实例。  <br /></td></tr>
+<tr class="separator:a6301902226747ccdef81ee281c9abc6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:ad186fddab2ac94aa2c8d5c004a106905"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#ad186fddab2ac94aa2c8d5c004a106905">window_width</a></td></tr>
+<tr class="separator:ad186fddab2ac94aa2c8d5c004a106905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac311755efb73190790f24aee388aa82b"><td class="memItemLeft" align="right" valign="top"><a id="ac311755efb73190790f24aee388aa82b" name="ac311755efb73190790f24aee388aa82b"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>window_height</b></td></tr>
+<tr class="separator:ac311755efb73190790f24aee388aa82b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc69a49a601469759bd6a314a615983b"><td class="memItemLeft" align="right" valign="top"><a id="afc69a49a601469759bd6a314a615983b" name="afc69a49a601469759bd6a314a615983b"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>menubar_height</b></td></tr>
+<tr class="separator:afc69a49a601469759bd6a314a615983b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad334964cd4e2fb4aceaa3bebe9bf7363"><td class="memItemLeft" align="right" valign="top"><a id="ad334964cd4e2fb4aceaa3bebe9bf7363" name="ad334964cd4e2fb4aceaa3bebe9bf7363"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>toolbar_width</b></td></tr>
+<tr class="separator:ad334964cd4e2fb4aceaa3bebe9bf7363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a95c56822d667e94b031451729ce069a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a95c56822d667e94b031451729ce069a9">Controller</a> ()</td></tr>
+<tr class="separator:a95c56822d667e94b031451729ce069a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a40e6e17183942873b841df10930b88ed"><td class="memItemLeft" align="right" valign="top"><a id="a40e6e17183942873b841df10930b88ed" name="a40e6e17183942873b841df10930b88ed"></a>
+std::shared_ptr&lt; <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>scene</b></td></tr>
+<tr class="separator:a40e6e17183942873b841df10930b88ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20539e548e10bce4d113f894be43665e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a20539e548e10bce4d113f894be43665e">main_camera</a></td></tr>
+<tr class="separator:a20539e548e10bce4d113f894be43665e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ac9aefe19714d124cb032e23fd23e75"><td class="memItemLeft" align="right" valign="top"><a id="a3ac9aefe19714d124cb032e23fd23e75" name="a3ac9aefe19714d124cb032e23fd23e75"></a>
+std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>logger</b></td></tr>
+<tr class="separator:a3ac9aefe19714d124cb032e23fd23e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae604a933148415cb35ffd6dfdc6572b5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#ae604a933148415cb35ffd6dfdc6572b5">trackball_radius</a></td></tr>
+<tr class="separator:ae604a933148415cb35ffd6dfdc6572b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a0af759189b57f0c96d2145954f5f113b"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d5/d2f/classUI_1_1MenuBar.html">UI::MenuBar</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a0af759189b57f0c96d2145954f5f113b">menu_bar</a></td></tr>
+<tr class="separator:a0af759189b57f0c96d2145954f5f113b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afce114fa8791a1786ac51666a67e7139"><td class="memItemLeft" align="right" valign="top"><a id="afce114fa8791a1786ac51666a67e7139" name="afce114fa8791a1786ac51666a67e7139"></a>
+std::unique_ptr&lt; <a class="el" href="../../d9/d7f/classUI_1_1ToolBar.html">UI::ToolBar</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>tool_bar</b></td></tr>
+<tr class="separator:afce114fa8791a1786ac51666a67e7139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静态 Private 属性</h2></td></tr>
+<tr class="memitem:a6d58d96a5298afd8338ca4d39127053b"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a6d58d96a5298afd8338ca4d39127053b">wheel_scroll_factor</a> = 0.8f</td></tr>
+<tr class="separator:a6d58d96a5298afd8338ca4d39127053b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>控制器管理所有的界面组件，并处理和预览视角操作（例如旋转、缩放或者平移）相关的输入。 </p>
+<p>控制器并不负责判断来自鼠标或键盘的输入是否表示场景预览操作，这些判断是由 <code><a class="el" href="../../df/d1e/classPlatform.html" title="这个类管理平台相关的窗口和配置信息。">Platform</a></code> 对象做出的。 因此，所有形如 <code>on_[device]_[act]ed()</code> 的方法都应当由 <code><a class="el" href="../../df/d1e/classPlatform.html" title="这个类管理平台相关的窗口和配置信息。">Platform</a></code> 对象调用，调用条件是： 光标悬停的位置不在任何一个 ImGui 窗口上。</p>
+<p>这是一个单例的类，其唯一一个实例可以通过 <code><a class="el" href="../../d9/d85/classController.html#a6301902226747ccdef81ee281c9abc6e" title="获取 Controller 类的唯一实例。">controller()</a></code> 这个静态方法访问。 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="adb5f21653407293de30f649a8d2fc52c" name="adb5f21653407293de30f649a8d2fc52c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb5f21653407293de30f649a8d2fc52c">&#9670;&#160;</a></span>Controller() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Controller::Controller </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d85/classController.html">Controller</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>禁止复制构造。 </p>
+
+</div>
+</div>
+<a id="a95c56822d667e94b031451729ce069a9" name="a95c56822d667e94b031451729ce069a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95c56822d667e94b031451729ce069a9">&#9670;&#160;</a></span>Controller() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Controller::Controller </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>构造函数是私有的。 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a6301902226747ccdef81ee281c9abc6e" name="a6301902226747ccdef81ee281c9abc6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6301902226747ccdef81ee281c9abc6e">&#9670;&#160;</a></span>controller()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d85/classController.html">Controller</a> &amp; Controller::controller </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取 <code><a class="el" href="../../d9/d85/classController.html" title="控制器管理所有的界面组件，并处理和预览视角操作（例如旋转、缩放或者平移）相关的输入。">Controller</a></code> 类的唯一实例。 </p>
+<p>唯一的实例被定义成函数内的静态变量，在 C++ 11 及之后的标准中，这种定义方式是线程安全的。 </p>
+
+</div>
+</div>
+<a id="a142bc68626ef6319295599d939e56cf0" name="a142bc68626ef6319295599d939e56cf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a142bc68626ef6319295599d939e56cf0">&#9670;&#160;</a></span>on_framebuffer_resized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::on_framebuffer_resized </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>在缩放窗口时调整轨迹球半径、预览视角（相机）Y 方向的 FoV，并更新自身记录的窗口尺寸。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>缩放后的窗口宽度。 </td></tr>
+    <tr><td class="paramname">height</td><td>缩放后的窗口高度。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac33cc6c318b232a74c05b2b48b2c41bb" name="ac33cc6c318b232a74c05b2b48b2c41bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac33cc6c318b232a74c05b2b48b2c41bb">&#9670;&#160;</a></span>on_mouse_dragged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::on_mouse_dragged </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>initial</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将鼠标拖动转换为轨迹球 (Trackball) 操作，用于旋转预览视角。 </p>
+<p>轨迹球曲面的推导参考 <a href="https://www.khronos.org/opengl/wiki/Object_Mouse_Trackball">Object Mouse Trackball</a>。</p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">initial</td><td>为真表示开始拖动时调用，为假表示拖动过程中调用。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a17e48bd3ebf3cd691b7485cfa65c3043" name="a17e48bd3ebf3cd691b7485cfa65c3043"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17e48bd3ebf3cd691b7485cfa65c3043">&#9670;&#160;</a></span>on_wheel_scrolled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::on_wheel_scrolled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将拨动鼠标滚轮的操作转换为视角拉进或远离。 </p>
+<p>缩放视角的操作按指数规律执行：鼠标滚轮每滚动一个单位，观察相机到目标点的距离就乘上一个固定值 <code>wheel_scroll_factor</code>，即</p>
+<p class="formulaDsp">
+\[
+  \vec{d}_\text{new}=\text{wheel_scroll_factor}^\text{wheel_delta}\cdot\vec{d}
+\]
+</p>
+ 
+</div>
+</div>
+<a id="a16f12b4298f0f7594d37ab7ac28889b7" name="a16f12b4298f0f7594d37ab7ac28889b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16f12b4298f0f7594d37ab7ac28889b7">&#9670;&#160;</a></span>render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::render </td>
+          <td>(</td>
+          <td class="paramtype">const std::unique_ptr&lt; <a class="el" href="../../d9/d69/classShader.html">Shader</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>shader</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>渲染场景和各个 UI 组件。控制器本身不直接渲染任何内容，而是调用相应类的 <code><a class="el" href="../../d9/d85/classController.html#a16f12b4298f0f7594d37ab7ac28889b7">render()</a></code> 方法。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shader</td><td>当前渲染使用的 shader，用于设置 shader 中的全局变量。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a20539e548e10bce4d113f894be43665e" name="a20539e548e10bce4d113f894be43665e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20539e548e10bce4d113f894be43665e">&#9670;&#160;</a></span>main_camera</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="../../d7/d7e/structCamera.html">Camera</a>&gt; Controller::main_camera</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>用于预览场景的观察相机（主相机）。 </p>
+
+</div>
+</div>
+<a id="a0af759189b57f0c96d2145954f5f113b" name="a0af759189b57f0c96d2145954f5f113b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0af759189b57f0c96d2145954f5f113b">&#9670;&#160;</a></span>menu_bar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="../../d5/d2f/classUI_1_1MenuBar.html">UI::MenuBar</a>&gt; Controller::menu_bar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>各 UI 组件应当被控制器独占。 </p>
+
+</div>
+</div>
+<a id="ae604a933148415cb35ffd6dfdc6572b5" name="ae604a933148415cb35ffd6dfdc6572b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae604a933148415cb35ffd6dfdc6572b5">&#9670;&#160;</a></span>trackball_radius</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Controller::trackball_radius</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>当前的轨迹球半径，决定轨迹球控制曲面上球面和双曲面部分的相切位置。 </p>
+
+</div>
+</div>
+<a id="a6d58d96a5298afd8338ca4d39127053b" name="a6d58d96a5298afd8338ca4d39127053b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d58d96a5298afd8338ca4d39127053b">&#9670;&#160;</a></span>wheel_scroll_factor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float Controller::wheel_scroll_factor = 0.8f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>缩放视角的控制系数，详见 <code>on_wheel_scrolled</code> 方法。 </p>
+
+</div>
+</div>
+<a id="ad186fddab2ac94aa2c8d5c004a106905" name="ad186fddab2ac94aa2c8d5c004a106905"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad186fddab2ac94aa2c8d5c004a106905">&#9670;&#160;</a></span>window_width</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Controller::window_width</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>由于 Dear ImGui 使用浮点数表示尺寸，所有和布局相关的变量都是浮点型。 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="../../d2/dd9/controller_8h_source.html">controller.h</a></li>
+<li>controller.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d9/d85/classController.html">Controller</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

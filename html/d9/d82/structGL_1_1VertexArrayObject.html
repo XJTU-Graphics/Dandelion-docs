@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dandelion: GL::VertexArrayObject结构体 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="../../../mathjax/es5/tex-chtml.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+   <div id="projectbrief">A light-weight 3D builder for educational usage</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d9/d82/structGL_1_1VertexArrayObject.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="../../d8/d2c/structGL_1_1VertexArrayObject-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">GL::VertexArrayObject结构体 参考<div class="ingroups"><a class="el" href="../../de/d8b/group__platform.html">平台相关的部分</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>对 OpenGL 顶点数组对象 (Vertex Array <a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a>) 的封装。  
+ <a href="../../d9/d82/structGL_1_1VertexArrayObject.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d7/d6a/gl_8hpp_source.html">gl.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a73e2208fff05d22519dfad0309339f75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/structGL_1_1VertexArrayObject.html#a73e2208fff05d22519dfad0309339f75">VertexArrayObject</a> ()</td></tr>
+<tr class="separator:a73e2208fff05d22519dfad0309339f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ab82cbd88e9d8bb49ba2f16dac4d99"><td class="memItemLeft" align="right" valign="top"><a id="a04ab82cbd88e9d8bb49ba2f16dac4d99" name="a04ab82cbd88e9d8bb49ba2f16dac4d99"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>VertexArrayObject</b> (<a class="el" href="../../d9/d82/structGL_1_1VertexArrayObject.html">VertexArrayObject</a> &amp;other)=delete</td></tr>
+<tr class="separator:a04ab82cbd88e9d8bb49ba2f16dac4d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5e587c167e0e0581abe1e475d1a8ba0"><td class="memItemLeft" align="right" valign="top"><a id="ab5e587c167e0e0581abe1e475d1a8ba0" name="ab5e587c167e0e0581abe1e475d1a8ba0"></a>
+<a class="el" href="../../d9/d82/structGL_1_1VertexArrayObject.html">VertexArrayObject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="../../d9/d82/structGL_1_1VertexArrayObject.html">VertexArrayObject</a> &amp;other)=delete</td></tr>
+<tr class="separator:ab5e587c167e0e0581abe1e475d1a8ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6ce0146fa93d7e7518f82a336637b26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/structGL_1_1VertexArrayObject.html#ab6ce0146fa93d7e7518f82a336637b26">VertexArrayObject</a> (<a class="el" href="../../d9/d82/structGL_1_1VertexArrayObject.html">VertexArrayObject</a> &amp;&amp;other)</td></tr>
+<tr class="separator:ab6ce0146fa93d7e7518f82a336637b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37ca7e8bff292e3f334544dd6ba4ab37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/structGL_1_1VertexArrayObject.html#a37ca7e8bff292e3f334544dd6ba4ab37">~VertexArrayObject</a> ()</td></tr>
+<tr class="separator:a37ca7e8bff292e3f334544dd6ba4ab37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1666f5d4a67792d9895330c2c86e76da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/structGL_1_1VertexArrayObject.html#a1666f5d4a67792d9895330c2c86e76da">bind</a> ()</td></tr>
+<tr class="separator:a1666f5d4a67792d9895330c2c86e76da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa106084d1d1a66a1c19fe7828b674830"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/structGL_1_1VertexArrayObject.html#aa106084d1d1a66a1c19fe7828b674830">release</a> ()</td></tr>
+<tr class="separator:aa106084d1d1a66a1c19fe7828b674830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7313fe7cf566758819a19108694d828"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/structGL_1_1VertexArrayObject.html#af7313fe7cf566758819a19108694d828">draw</a> (GLenum mode, int first, std::size_t count)</td></tr>
+<tr class="separator:af7313fe7cf566758819a19108694d828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a87d8cdda0d24e3c999ffaec872e8fde7"><td class="memItemLeft" align="right" valign="top"><a id="a87d8cdda0d24e3c999ffaec872e8fde7" name="a87d8cdda0d24e3c999ffaec872e8fde7"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>descriptor</b></td></tr>
+<tr class="separator:a87d8cdda0d24e3c999ffaec872e8fde7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>对 OpenGL 顶点数组对象 (Vertex Array <a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a>) 的封装。 </p>
+<p>这个结构体只对 VAO 做了最基本的封装，稍微简化了手动构造和使用 VAO 的过程。由于此结构体的实例将持有 OpenGL VAO 的名字 (name) 或者叫描述符，它不允许被复制构造。 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a73e2208fff05d22519dfad0309339f75" name="a73e2208fff05d22519dfad0309339f75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73e2208fff05d22519dfad0309339f75">&#9670;&#160;</a></span>VertexArrayObject() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VertexArrayObject::VertexArrayObject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>构造函数将调用 glGenVertexArrays 创建一个 OpenGL VAO，其名字存储于 <code>descriptor</code> 属性中。 </p>
+
+</div>
+</div>
+<a id="ab6ce0146fa93d7e7518f82a336637b26" name="ab6ce0146fa93d7e7518f82a336637b26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6ce0146fa93d7e7518f82a336637b26">&#9670;&#160;</a></span>VertexArrayObject() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VertexArrayObject::VertexArrayObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d82/structGL_1_1VertexArrayObject.html">VertexArrayObject</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>移动构造函数是为满足 MoveInsertable 条件而写的，保证持有 VAO 的其他对象能使用 <code>std::vector</code> 之类的容器存储。此构造函数会将 <code>other</code> 的 <code>descriptor</code> 设置成 0，从而避免 <code>other</code> 析构时将真正的 OpenGL VAO 删除掉。 </p>
+
+</div>
+</div>
+<a id="a37ca7e8bff292e3f334544dd6ba4ab37" name="a37ca7e8bff292e3f334544dd6ba4ab37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37ca7e8bff292e3f334544dd6ba4ab37">&#9670;&#160;</a></span>~VertexArrayObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VertexArrayObject::~VertexArrayObject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>调用 glDeleteVertexArrays 删除 VAO。 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a1666f5d4a67792d9895330c2c86e76da" name="a1666f5d4a67792d9895330c2c86e76da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1666f5d4a67792d9895330c2c86e76da">&#9670;&#160;</a></span>bind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VertexArrayObject::bind </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>绑定 VAO，仅用于更新它持有的 buffer 数据或格式时才需要专门调用。 </p>
+
+</div>
+</div>
+<a id="af7313fe7cf566758819a19108694d828" name="af7313fe7cf566758819a19108694d828"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7313fe7cf566758819a19108694d828">&#9670;&#160;</a></span>draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VertexArrayObject::draw </td>
+          <td>(</td>
+          <td class="paramtype">GLenum&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>绘制这个 VAO 记录的所有内容，无需专门绑定和解绑。 </p>
+
+</div>
+</div>
+<a id="aa106084d1d1a66a1c19fe7828b674830" name="aa106084d1d1a66a1c19fe7828b674830"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa106084d1d1a66a1c19fe7828b674830">&#9670;&#160;</a></span>release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VertexArrayObject::release </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>解绑 VAO。 </p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li><a class="el" href="../../d7/d6a/gl_8hpp_source.html">gl.hpp</a></li>
+<li>gl.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>GL</b></li><li class="navelem"><a class="el" href="../../d9/d82/structGL_1_1VertexArrayObject.html">VertexArrayObject</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dandelion: 开始开发</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="../../../mathjax/es5/tex-chtml.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+   <div id="projectbrief">A light-weight 3D builder for educational usage</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('da/d2c/startup.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">开始开发 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>在开始编写代码前，请稍微花一点时间阅读以下的约定和帮助，这将有助于你更加顺利地参与到 Dandelion 的开发中。使用 Dandelion 做实验的同学不必遵守这些，直接开始实验。</p>
+<h1><a class="anchor" id="standard"></a>
+项目规范</h1>
+<p>开发过程中，除实现功能外，也请关注命名、注释（文档）、提交规范这三方面。</p>
+<ul>
+<li>命名<ul>
+<li>禁止用拼音命名，可以用 <a href="https://unbug.github.io/codelf">CodeIf</a> 这个工具来查找合适的变量名，实在不方便翻译成英文的直接用中文。</li>
+<li>文件名只能是英文，所有文件一律使用 UTF-8 编码，禁止使用任何其他编码。</li>
+<li>类型名称（类、枚举、结构体等）遵循大驼峰，例如 <code>ArrayBuffer</code> 代表 array buffer 类型。</li>
+<li>变量、函数名称用通常小写、下划线隔开，例如 <code>extract_vector3f</code> 代表 extract vector3f 这个过程；如果某个单词是缩写，那么这个单词大写，例如 <code>get_GL_type_enum</code> 代表获取数据类型对应的枚举值（在 GLAD 中定义，用于某些 OpenGL API）。</li>
+<li>常量尽量定义成 <code>constexpr</code> 而不是 <code>const</code> 或者宏，命名规则与变量相同。</li>
+<li>宏一般用全大写命名。</li>
+</ul>
+</li>
+<li>注释：一次 Git 提交应当同时包含修改过（或新增）的代码及相应的注释，除非这次提交只修复 bug 而不曾更改（添加）功能。<ul>
+<li>对类和函数的注释应该是 Qt 风格的 Doxygen 注释块。每处英文注释开头请加上 <code>\~english</code> 指令、中文注释开头请加上 <code>\~chinese</code> 命令，否则 Doxygen 生成对应语言的文档时内容会不匹配。</li>
+<li>如果时间紧张，可以仅写中文注释；但除非功能特别简单，还请务必写上注释，哪怕只是一个 <code>\brief</code>。</li>
+</ul>
+</li>
+<li>提交规范<ul>
+<li>必须包含有意义的提交说明，不能什么都不写或者只写个 update on yyyy-mm-dd 这样无意义的句子。</li>
+<li>如果某次本地提交之后发现还需要修改一些细节内容，请尽量将没有特殊意义的修改与之前的提交合并，避免“改正了某个单词拼写”或“多加了一层大括号”成为一次单独的提交。</li>
+<li>提交说明最重要的目的是说清楚做了什么，如果觉得英语说不清，完全可以用中文写提交说明。</li>
+</ul>
+</li>
+</ul>
+<p>下面是一个注释的例子（controller.h 文件的内容可能会更新，这只是个例子）：</p>
+<div class="fragment"><div class="line"><span class="comment">/*!</span></div>
+<div class="line"><span class="comment">   \ingroup ui</span></div>
+<div class="line"><span class="comment">   \~chinese</span></div>
+<div class="line"><span class="comment">   \brief 控制器管理所有的界面组件，并处理和预览视角操作（例如旋转、缩放或者平移）相关的输入。</span></div>
+<div class="line"><span class="comment">  </span></div>
+<div class="line"><span class="comment">   控制器并不负责判断来自鼠标或键盘的输入是否表示场景预览操作，这些判断是由 `Platform` 对象做出的。</span></div>
+<div class="line"><span class="comment">   因此，所有形如 `on_[device]_[act]ed()` 的方法都应当由 `Platform` 对象调用，调用条件是：</span></div>
+<div class="line"><span class="comment">   光标悬停的位置不在任何一个 ImGui 窗口上。</span></div>
+<div class="line"><span class="comment">  </span></div>
+<div class="line"><span class="comment">   这是一个单例的类，其唯一一个实例可以通过 `controller()` 这个静态方法访问。</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line"><span class="keyword">class </span><a class="code hl_class" href="../../d9/d85/classController.html">Controller</a></div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><span class="comment">    /*!</span></div>
+<div class="line"><span class="comment">       \~chinese</span></div>
+<div class="line"><span class="comment">       \brief 获取 `Controller` 类的唯一实例。</span></div>
+<div class="line"><span class="comment">      </span></div>
+<div class="line"><span class="comment">       唯一的实例被定义成函数内的静态变量，在 C++ 11 及之后的标准中，这种定义方式是线程安全的。</span></div>
+<div class="line"><span class="comment">     */</span></div>
+<div class="line">    <span class="keyword">static</span> <a class="code hl_class" href="../../d9/d85/classController.html">Controller</a>&amp; <a class="code hl_function" href="../../d9/d85/classController.html#a6301902226747ccdef81ee281c9abc6e">controller</a>();<span class="comment"></span></div>
+<div class="line"><span class="comment">    ///@{</span></div>
+<div class="line"><span class="comment"></span><span class="comment">    /*! \~chinese 禁止复制构造。*/</span></div>
+<div class="line">    <a class="code hl_function" href="../../d9/d85/classController.html#a95c56822d667e94b031451729ce069a9">Controller</a>(<a class="code hl_class" href="../../d9/d85/classController.html">Controller</a>&amp; other)            = <span class="keyword">delete</span>;</div>
+<div class="line">    <a class="code hl_class" href="../../d9/d85/classController.html">Controller</a>&amp; operator=(<a class="code hl_class" href="../../d9/d85/classController.html">Controller</a>&amp; other) = <span class="keyword">delete</span>;<span class="comment"></span></div>
+<div class="line"><span class="comment">    ///@}</span></div>
+<div class="line"><span class="comment"></span>    <a class="code hl_class" href="../../d9/d85/classController.html">~Controller</a>();<span class="comment"></span></div>
+<div class="line"><span class="comment">    /*!</span></div>
+<div class="line"><span class="comment">       \~chinese</span></div>
+<div class="line"><span class="comment">       \brief 将鼠标拖动转换为轨迹球 (Trackball) 操作，用于旋转预览视角。</span></div>
+<div class="line"><span class="comment">      </span></div>
+<div class="line"><span class="comment">       轨迹球曲面的推导参考 [Object Mouse</span></div>
+<div class="line"><span class="comment">       Trackball](https://www.khronos.org/opengl/wiki/Object_Mouse_Trackball)。 \param initial</span></div>
+<div class="line"><span class="comment">       为真表示开始拖动时调用，为假表示拖动过程中调用。</span></div>
+<div class="line"><span class="comment">     */</span></div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d85/classController.html#ac33cc6c318b232a74c05b2b48b2c41bb">on_mouse_dragged</a>(<span class="keywordtype">bool</span> initial);<span class="comment"></span></div>
+<div class="line"><span class="comment">    /*!</span></div>
+<div class="line"><span class="comment">       \~chinese</span></div>
+<div class="line"><span class="comment">       \brief 将拨动鼠标滚轮的操作转换为视角拉进或远离。</span></div>
+<div class="line"><span class="comment">      </span></div>
+<div class="line"><span class="comment">       缩放视角的操作按指数规律执行：鼠标滚轮每滚动一个单位，观察相机到目标点的距离就乘上一个固定值</span></div>
+<div class="line"><span class="comment">       `wheel_scroll_factor`，即</span></div>
+<div class="line"><span class="comment">      </span></div>
+<div class="line"><span class="comment">       \f[</span></div>
+<div class="line"><span class="comment">         \vec{d}_\text{new}=\text{wheel_scroll_factor}^\text{wheel_delta}\cdot\vec{d}</span></div>
+<div class="line"><span class="comment">       \f]</span></div>
+<div class="line"><span class="comment">     */</span></div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d85/classController.html#a17e48bd3ebf3cd691b7485cfa65c3043">on_wheel_scrolled</a>();<span class="comment"></span></div>
+<div class="line"><span class="comment">    /*!</span></div>
+<div class="line"><span class="comment">       \~chinese</span></div>
+<div class="line"><span class="comment">       在缩放窗口时调整轨迹球半径、预览视角（相机）Y 方向的 FoV，并更新自身记录的窗口尺寸。</span></div>
+<div class="line"><span class="comment">       \param width 缩放后的窗口宽度。</span></div>
+<div class="line"><span class="comment">       \param height 缩放后的窗口高度。</span></div>
+<div class="line"><span class="comment">     */</span></div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d85/classController.html#a142bc68626ef6319295599d939e56cf0">on_framebuffer_resized</a>(<span class="keywordtype">float</span> width, <span class="keywordtype">float</span> height);<span class="comment"></span></div>
+<div class="line"><span class="comment">    /*!</span></div>
+<div class="line"><span class="comment">       \~chinese</span></div>
+<div class="line"><span class="comment">       渲染场景和各个 UI 组件。控制器本身不直接渲染任何内容，而是调用相应类的 `render()` 方法。</span></div>
+<div class="line"><span class="comment">       \param shader 当前渲染使用的 shader，用于设置 shader 中的全局变量。</span></div>
+<div class="line"><span class="comment">     */</span></div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d85/classController.html#a16f12b4298f0f7594d37ab7ac28889b7">render</a>(<span class="keyword">const</span> std::unique_ptr&lt;Shader&gt;&amp; shader);<span class="comment"></span></div>
+<div class="line"><span class="comment">    /*!</span></div>
+<div class="line"><span class="comment">       \~english All variables used for layout are float because ImVec2 expects float.</span></div>
+<div class="line"><span class="comment">       \~chinese 由于 Dear ImGui 使用浮点数表示尺寸，所有和布局相关的变量都是浮点型。</span></div>
+<div class="line"><span class="comment">     */</span><span class="comment"></span></div>
+<div class="line"><span class="comment">    ///@{</span></div>
+<div class="line"><span class="comment"></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d9/d85/classController.html#ad186fddab2ac94aa2c8d5c004a106905">window_width</a>, window_height;</div>
+<div class="line">    <span class="keywordtype">float</span> menubar_height;</div>
+<div class="line">    <span class="keywordtype">float</span> toolbar_width;<span class="comment"></span></div>
+<div class="line"><span class="comment">    ///@}</span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="keyword">private</span>:<span class="comment"></span></div>
+<div class="line"><span class="comment">    /*! \~chinese 缩放视角的控制系数，详见 `on_wheel_scrolled` 方法。 */</span></div>
+<div class="line">    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d9/d85/classController.html#a6d58d96a5298afd8338ca4d39127053b">wheel_scroll_factor</a> = 0.8f;<span class="comment"></span></div>
+<div class="line"><span class="comment">    /*! \~chinese 构造函数是私有的。 */</span></div>
+<div class="line">    <a class="code hl_function" href="../../d9/d85/classController.html#a95c56822d667e94b031451729ce069a9">Controller</a>();<span class="comment"></span></div>
+<div class="line"><span class="comment">    ///@{</span></div>
+<div class="line"><span class="comment"></span><span class="comment">    /*! \~chinese 各 UI 组件应当被控制器独占。 */</span></div>
+<div class="line">    std::unique_ptr&lt;UI::MenuBar&gt; <a class="code hl_variable" href="../../d9/d85/classController.html#a0af759189b57f0c96d2145954f5f113b">menu_bar</a>;</div>
+<div class="line">    std::unique_ptr&lt;UI::ToolBar&gt; tool_bar;<span class="comment"></span></div>
+<div class="line"><span class="comment">    ///@}</span></div>
+<div class="line"><span class="comment"></span>    std::shared_ptr&lt;Scene&gt; scene;</div>
+<div class="line">    std::unique_ptr&lt;Camera&gt; <a class="code hl_variable" href="../../d9/d85/classController.html#a20539e548e10bce4d113f894be43665e">main_camera</a>;</div>
+<div class="line">    std::shared_ptr&lt;spdlog::logger&gt; logger;<span class="comment"></span></div>
+<div class="line"><span class="comment">    /*! \~chinese 当前的轨迹球半径，决定轨迹球控制曲面上球面和双曲面部分的相切位置。 */</span></div>
+<div class="line">    <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d9/d85/classController.html#ae604a933148415cb35ffd6dfdc6572b5">trackball_radius</a>;</div>
+<div class="line">};</div>
+<div class="ttc" id="aclassController_html"><div class="ttname"><a href="../../d9/d85/classController.html">Controller</a></div><div class="ttdoc">控制器管理所有的界面组件，并处理和预览视角操作（例如旋转、缩放或者平移）相关的输入。</div><div class="ttdef"><b>Definition:</b> controller.h:41</div></div>
+<div class="ttc" id="aclassController_html_a0af759189b57f0c96d2145954f5f113b"><div class="ttname"><a href="../../d9/d85/classController.html#a0af759189b57f0c96d2145954f5f113b">Controller::menu_bar</a></div><div class="ttdeci">std::unique_ptr&lt; UI::MenuBar &gt; menu_bar</div><div class="ttdef"><b>Definition:</b> controller.h:107</div></div>
+<div class="ttc" id="aclassController_html_a142bc68626ef6319295599d939e56cf0"><div class="ttname"><a href="../../d9/d85/classController.html#a142bc68626ef6319295599d939e56cf0">Controller::on_framebuffer_resized</a></div><div class="ttdeci">void on_framebuffer_resized(float width, float height)</div><div class="ttdef"><b>Definition:</b> controller.cpp:152</div></div>
+<div class="ttc" id="aclassController_html_a16f12b4298f0f7594d37ab7ac28889b7"><div class="ttname"><a href="../../d9/d85/classController.html#a16f12b4298f0f7594d37ab7ac28889b7">Controller::render</a></div><div class="ttdeci">void render(const std::unique_ptr&lt; Shader &gt; &amp;shader)</div><div class="ttdef"><b>Definition:</b> controller.cpp:162</div></div>
+<div class="ttc" id="aclassController_html_a17e48bd3ebf3cd691b7485cfa65c3043"><div class="ttname"><a href="../../d9/d85/classController.html#a17e48bd3ebf3cd691b7485cfa65c3043">Controller::on_wheel_scrolled</a></div><div class="ttdeci">void on_wheel_scrolled()</div><div class="ttdoc">将拨动鼠标滚轮的操作转换为视角拉进或远离。</div><div class="ttdef"><b>Definition:</b> controller.cpp:142</div></div>
+<div class="ttc" id="aclassController_html_a20539e548e10bce4d113f894be43665e"><div class="ttname"><a href="../../d9/d85/classController.html#a20539e548e10bce4d113f894be43665e">Controller::main_camera</a></div><div class="ttdeci">std::unique_ptr&lt; Camera &gt; main_camera</div><div class="ttdef"><b>Definition:</b> controller.h:112</div></div>
+<div class="ttc" id="aclassController_html_a6301902226747ccdef81ee281c9abc6e"><div class="ttname"><a href="../../d9/d85/classController.html#a6301902226747ccdef81ee281c9abc6e">Controller::controller</a></div><div class="ttdeci">static Controller &amp; controller()</div><div class="ttdoc">获取 Controller 类的唯一实例。</div><div class="ttdef"><b>Definition:</b> controller.cpp:20</div></div>
+<div class="ttc" id="aclassController_html_a6d58d96a5298afd8338ca4d39127053b"><div class="ttname"><a href="../../d9/d85/classController.html#a6d58d96a5298afd8338ca4d39127053b">Controller::wheel_scroll_factor</a></div><div class="ttdeci">static constexpr float wheel_scroll_factor</div><div class="ttdef"><b>Definition:</b> controller.h:102</div></div>
+<div class="ttc" id="aclassController_html_a95c56822d667e94b031451729ce069a9"><div class="ttname"><a href="../../d9/d85/classController.html#a95c56822d667e94b031451729ce069a9">Controller::Controller</a></div><div class="ttdeci">Controller()</div><div class="ttdef"><b>Definition:</b> controller.cpp:42</div></div>
+<div class="ttc" id="aclassController_html_ac33cc6c318b232a74c05b2b48b2c41bb"><div class="ttname"><a href="../../d9/d85/classController.html#ac33cc6c318b232a74c05b2b48b2c41bb">Controller::on_mouse_dragged</a></div><div class="ttdeci">void on_mouse_dragged(bool initial)</div><div class="ttdoc">将鼠标拖动转换为轨迹球 (Trackball) 操作，用于旋转预览视角。</div><div class="ttdef"><b>Definition:</b> controller.cpp:87</div></div>
+<div class="ttc" id="aclassController_html_ad186fddab2ac94aa2c8d5c004a106905"><div class="ttname"><a href="../../d9/d85/classController.html#ad186fddab2ac94aa2c8d5c004a106905">Controller::window_width</a></div><div class="ttdeci">float window_width</div><div class="ttdef"><b>Definition:</b> controller.h:95</div></div>
+<div class="ttc" id="aclassController_html_ae604a933148415cb35ffd6dfdc6572b5"><div class="ttname"><a href="../../d9/d85/classController.html#ae604a933148415cb35ffd6dfdc6572b5">Controller::trackball_radius</a></div><div class="ttdeci">float trackball_radius</div><div class="ttdef"><b>Definition:</b> controller.h:115</div></div>
+</div><!-- fragment --><h1><a class="anchor" id="tools"></a>
+开发工具</h1>
+<h2><a class="anchor" id="code-format"></a>
+代码格式</h2>
+<p>请注意， <b>所有的源代码文件在提交之前都应当被格式化。</b></p>
+<p>为了免去写代码时考虑格式的麻烦，我们使用 clang-format 工具格式化 src 目录下的所有代码。指定格式的 .clang-format 文件已经放置于项目根目录下，请勿随意修改。</p>
+<p>目前 vim / VS Code / Visual Studio 等开发工具中都有集成 clang-format 的插件，可以直接安装使用；也可以手动在命令行使用</p>
+<div class="fragment"><div class="line">clang-format -style=file -i file</div>
+</div><!-- fragment --><p>来格式化 <code>file</code> 这个文件。</p>
+<p>我们目前使用的 clang-format 版本是 14，因此新版本的工具可能会提示 .clang-format 文件中有些配置项 deprecated，但由于新版本相同功能的配置项并不兼容旧版本，我们暂时不打算升级 clang-format。</p>
+<h2><a class="anchor" id="spell-check"></a>
+拼写检查</h2>
+<p>推荐使用 cSpell 检查单词拼写，省得在写错后回头修改。</p>
+<ul>
+<li>VS Code 用户可以直接安装 cSpell 插件。</li>
+<li>Vim 用户可以使用 coc.nvim 并安装 coc-spell-checker 插件。</li>
+</ul>
+<h2><a class="anchor" id="code-complention"></a>
+代码补全</h2>
+<p>目前主要的代码补全方案有两种：</p>
+<ul>
+<li>全功能 IDE 直接提供的补全，例如 Visual Studio 或者 Qt Creator</li>
+<li>基于 Language Server Protocol (LSP) 的补全，绝大部分编辑器都使用这种方式</li>
+</ul>
+<p>一些代码补全工具的补全策略中包含“自动引入头文件”的功能，例如 Clangd 会在你写下新的类型时自动包含定义了这个类型的头文件。这种策略被称为 include-what-you-use (IWYU)，也就是“用什么包含什么”。</p>
+<p>但有一些依赖库并不是遵循这个原则开发的，例如 Eigen 就不是：如果你想使用 <code>Eigen::Vector3f</code> 类型，它推荐你引入 Eigen/Core 这个头文件，而不是定义了这个类型的 Eigen/src/Core/Matrix.h 这个头文件。此时“自动引入头文件”的功能就非常烦人，甚至可能导致某些错误。为此，我们推荐在开发过程中禁止该功能。</p>
+<p>如果你使用 Clangd 提供的 Language Server，那么在启动 clangd 时加上 <code>--header-insertion=never</code> 参数就可以了，推荐直接把这个参数写进 VS Code 插件的 <code>clangd.arguments</code> 属性里。</p>
+<p>另一个必须注意的问题是：GLFW 和 GLAD 头文件的包含是有顺序要求的，必须先包含 GLAD 再包含 GLFW。而 clang-format 这样的格式化工具会自动重排头文件顺序，直接导致编译失败，我们已经在 .clang-format 文件中禁止了头文件重排序。或许其他 IDE 也会有类似的行为，请务必检查一下。 </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

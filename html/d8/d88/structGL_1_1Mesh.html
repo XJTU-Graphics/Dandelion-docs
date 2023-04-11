@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dandelion: GL::Mesh结构体 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="../../../mathjax/es5/tex-chtml.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+   <div id="projectbrief">A light-weight 3D builder for educational usage</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d8/d88/structGL_1_1Mesh.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="../../db/dfb/structGL_1_1Mesh-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">GL::Mesh结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>用于场景预览渲染的 <a class="el" href="../../d8/d88/structGL_1_1Mesh.html" title="用于场景预览渲染的 Mesh 类。">Mesh</a> 类。  
+ <a href="../../d8/d88/structGL_1_1Mesh.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d7/d6a/gl_8hpp_source.html">gl.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a81afad0fc0201e1c1bc012ba41a22268"><td class="memItemLeft" align="right" valign="top"><a id="a81afad0fc0201e1c1bc012ba41a22268" name="a81afad0fc0201e1c1bc012ba41a22268"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Mesh</b> (const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">Mesh</a> &amp;other)=delete</td></tr>
+<tr class="separator:a81afad0fc0201e1c1bc012ba41a22268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75180ba39e94350a1ecebbeb2b348c8a"><td class="memItemLeft" align="right" valign="top"><a id="a75180ba39e94350a1ecebbeb2b348c8a" name="a75180ba39e94350a1ecebbeb2b348c8a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Mesh</b> (<a class="el" href="../../d8/d88/structGL_1_1Mesh.html">Mesh</a> &amp;&amp;other)</td></tr>
+<tr class="separator:a75180ba39e94350a1ecebbeb2b348c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a7c6f2a42575fb36f4c0109b00958bba5"><td class="memItemLeft" align="right" valign="top">static Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html#a7c6f2a42575fb36f4c0109b00958bba5">pack</a> (const std::vector&lt; float &gt; &amp;data, size_t pos)</td></tr>
+<tr class="separator:a7c6f2a42575fb36f4c0109b00958bba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a258f7fea18cb3824ca68bd7181e0d452"><td class="memItemLeft" align="right" valign="top"><a id="a258f7fea18cb3824ca68bd7181e0d452" name="a258f7fea18cb3824ca68bd7181e0d452"></a>
+<a class="el" href="../../d9/d82/structGL_1_1VertexArrayObject.html">VertexArrayObject</a>&#160;</td><td class="memItemRight" valign="bottom"><b>vao</b></td></tr>
+<tr class="separator:a258f7fea18cb3824ca68bd7181e0d452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a742d3cb12ad5c576822e9e14712ebbae"><td class="memItemLeft" align="right" valign="top"><a id="a742d3cb12ad5c576822e9e14712ebbae" name="a742d3cb12ad5c576822e9e14712ebbae"></a>
+<a class="el" href="../../d6/dba/structGL_1_1ArrayBuffer.html">ArrayBuffer</a>&lt; float, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vertices</b></td></tr>
+<tr class="separator:a742d3cb12ad5c576822e9e14712ebbae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac757b6e5a92ffa91b453e5426e295f73"><td class="memItemLeft" align="right" valign="top"><a id="ac757b6e5a92ffa91b453e5426e295f73" name="ac757b6e5a92ffa91b453e5426e295f73"></a>
+<a class="el" href="../../d6/dba/structGL_1_1ArrayBuffer.html">ArrayBuffer</a>&lt; float, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>normals</b></td></tr>
+<tr class="separator:ac757b6e5a92ffa91b453e5426e295f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a966cb3c9373b7f4fa6c717cc6fb63b69"><td class="memItemLeft" align="right" valign="top"><a id="a966cb3c9373b7f4fa6c717cc6fb63b69" name="a966cb3c9373b7f4fa6c717cc6fb63b69"></a>
+<a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer</a>&lt; 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>edges</b></td></tr>
+<tr class="separator:a966cb3c9373b7f4fa6c717cc6fb63b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a702a858e1a5c54f0769a42a4901919cd"><td class="memItemLeft" align="right" valign="top"><a id="a702a858e1a5c54f0769a42a4901919cd" name="a702a858e1a5c54f0769a42a4901919cd"></a>
+<a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer</a>&lt; 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>faces</b></td></tr>
+<tr class="separator:a702a858e1a5c54f0769a42a4901919cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23777f301b1c83def29d6028713fb348"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d50/structGL_1_1Material.html">Material</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html#a23777f301b1c83def29d6028713fb348">material</a></td></tr>
+<tr class="separator:a23777f301b1c83def29d6028713fb348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:a514ce06fdca0c0a588b680760878b978"><td class="memItemLeft" align="right" valign="top"><a id="a514ce06fdca0c0a588b680760878b978" name="a514ce06fdca0c0a588b680760878b978"></a>
+static const Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><b>wireframe_color</b></td></tr>
+<tr class="separator:a514ce06fdca0c0a588b680760878b978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1345ac159219d9a213b4dbc9dc592f61"><td class="memItemLeft" align="right" valign="top"><a id="a1345ac159219d9a213b4dbc9dc592f61" name="a1345ac159219d9a213b4dbc9dc592f61"></a>
+static const Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><b>face_preview_color</b></td></tr>
+<tr class="separator:a1345ac159219d9a213b4dbc9dc592f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>用于场景预览渲染的 <a class="el" href="../../d8/d88/structGL_1_1Mesh.html" title="用于场景预览渲染的 Mesh 类。">Mesh</a> 类。 </p>
+<p>这个类为了便于和 OpenGL 交互，不会使用 Eigen 中的各种向量存储顶点坐标、法线和颜色等信息，而是直接持有 VAO、VBO 和 EBO。 </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a7c6f2a42575fb36f4c0109b00958bba5" name="a7c6f2a42575fb36f4c0109b00958bba5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c6f2a42575fb36f4c0109b00958bba5">&#9670;&#160;</a></span>pack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Vector3f Mesh::pack </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>由于这个 <a class="el" href="../../d8/d88/structGL_1_1Mesh.html" title="用于场景预览渲染的 Mesh 类。">Mesh</a> 类直接用 <code>std::vector&lt;float&gt;</code> 存储数据，直接访问数据比较不便。 这个方法从存储信息的 <code>std::vector</code> 中打包一个三维向量。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>指定要从哪个 <code>vector</code> 中获取数据 </td></tr>
+    <tr><td class="paramname">pos</td><td>按每 <code>size</code> 个元素为一个向量计，指定要打包的向量是第几个 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a23777f301b1c83def29d6028713fb348" name="a23777f301b1c83def29d6028713fb348"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23777f301b1c83def29d6028713fb348">&#9670;&#160;</a></span>material</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d50/structGL_1_1Material.html">Material</a> GL::Mesh::material</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>每个 <a class="el" href="../../d8/d88/structGL_1_1Mesh.html" title="用于场景预览渲染的 Mesh 类。">Mesh</a> 只能有一个材质 </p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li><a class="el" href="../../d7/d6a/gl_8hpp_source.html">gl.hpp</a></li>
+<li>gl.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>GL</b></li><li class="navelem"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html">Mesh</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

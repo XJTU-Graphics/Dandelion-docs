@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dandelion: Dandelion 开发者文档</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="../mathjax/es5/tex-chtml.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="dandelion_32.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+   <div id="projectbrief">A light-weight 3D builder for educational usage</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Dandelion 开发者文档 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><div class="image">
+<img src="dandelion_512.png" alt="" width="128px"/>
+<div class="caption">
+我们希望 Dandelion 成为一颗蒲公英种子，传播渺小的热爱和友善</div></div>
+ <p>Dandelion 是一个轻量级的跨平台三维实验框架，适合用于图形学课程教学。本文档介绍了 Dandelion 的开发思路、项目结构，并尽可能全面地列出类和函数参考。</p>
+<h1><a class="anchor" id="功能定位"></a>
+功能定位</h1>
+<p>当我们开设计算机图形学这门课程时，必然需要设计相应的实验。而实现一个“好看”（甚至有时只是“能看”）的图形应用，往往需要编写上千行的代码。为了在十分有限的课时约束下开展实验，最成熟的办法就是设计一个代码框架。我们对 Dandelion 的期望是：核心功能有限（但可扩展）、界面足够简单、尽可能不涉及和特定平台相关的细节。</p>
+<p>目前 Dandelion 提供（或计划提供）的功能包括：</p>
+<ul>
+<li>常见格式三维 Mesh 模型的加载、预览</li>
+<li>离线渲染：指定相机和光源，用 CPU 将场景渲染为一张图片</li>
+<li>几何编辑：基本的几何变换、Mesh 几何操作</li>
+<li>物理仿真：简单物体的运动、碰撞</li>
+</ul>
+<p>诸如 Blender / Maya / 3Ds MAX 这样的工业级软件拥有丰富而强大的功能，但功能丰富难免导致使用复杂。我们希望在课时很少（比如只有 32 课时）的情况下，同学可以在半小时内学会使用 Dandelion 的绝大部分功能，将精力集中在完成实验上。为此，Dandelion 将不会显式使用任何配置文件、不在 UI 界面上设计复杂的数据观察和调试功能、不设置两位数以上的快捷键。这些约定无疑会限制熟练工作者的创作自由和效率，但对于时间紧张的教学来说未必是坏事。</p>
+<p>出于同样的理由，Dandelion 将不会实现实时渲染（至少需要掌握一门着色器语言）和脚本指令（需要额外理解脚本），因此它也不是一个小型的游戏引擎。另外还有一些功能因我们开发能力有限而目前不会实现，例如：</p>
+<ul>
+<li>纹理贴图的加载和编辑</li>
+<li>多种类型的光源（例如面光源）</li>
+<li>对 Mesh 以外的三维表示形式的支持（例如体素、点云、符号距离场等等）</li>
+</ul>
+<h1><a class="anchor" id="鸣谢"></a>
+鸣谢</h1>
+<p>感谢卡内基-梅隆大学 15/462 课题组开源了 Scotty3D 实验框架，我们在很大程度上参考了它。</p>
+<p>感谢 GAMES 开放的 GAMES 系列课程，我们参考了 GAMES 101 / 102 的课程、文档和实验框架。 </p>
+</div></div><!-- PageDoc -->
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>
