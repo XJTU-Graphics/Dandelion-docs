@@ -38,6 +38,10 @@ var NAVTREE =
     ] ],
     [ "开始开发", "da/d2c/startup.html", [
       [ "项目规范", "da/d2c/startup.html#standard", null ],
+      [ "提交更改", "da/d2c/startup.html#commit", [
+        [ "XJTU-Graphics 组织成员", "da/d2c/startup.html#member-submission", null ],
+        [ "非组织成员", "da/d2c/startup.html#non-member-submission", null ]
+      ] ],
       [ "开发工具", "da/d2c/startup.html#tools", [
         [ "代码格式", "da/d2c/startup.html#code-format", null ],
         [ "拼写检查", "da/d2c/startup.html#spell-check", null ],
