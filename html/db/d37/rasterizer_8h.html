@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dandelion: rasterizer.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="../../../mathjax/es5/tex-chtml.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+   <div id="projectbrief">A light-weight 3D builder for educational usage</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('db/d37/rasterizer_8h.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">rasterizer.h 文件参考<div class="ingroups"><a class="el" href="../../db/d81/group__rendering.html">离线渲染</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;Eigen/Core&gt;</code><br />
+<code>#include &lt;Eigen/Geometry&gt;</code><br />
+<code>#include &lt;spdlog/sinks/stdout_color_sinks.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/d6a/gl_8hpp_source.html">../platform/gl.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/dd3/light_8h_source.html">../scene/light.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/df6/camera_8h_source.html">../scene/camera.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/d60/shader__payload_8h_source.html">shader_payload.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d6a/triangle_8h_source.html">triangle.h</a>&quot;</code><br />
+</div>
+<p><a href="../../db/d37/rasterizer_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7a/classRasterizer.html">Rasterizer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:adf8e136713c0691010d2bec6ba63e9cf"><td class="memItemLeft" align="right" valign="top"><a id="adf8e136713c0691010d2bec6ba63e9cf" name="adf8e136713c0691010d2bec6ba63e9cf"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>BufferType</b> { <b>Color</b> = 1
+, <b>Depth</b> = 2
+ }</td></tr>
+<tr class="separator:adf8e136713c0691010d2bec6ba63e9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a04d9d4dd1222e0e051553bec3e25c2ad"><td class="memItemLeft" align="right" valign="top"><a id="a04d9d4dd1222e0e051553bec3e25c2ad" name="a04d9d4dd1222e0e051553bec3e25c2ad"></a>
+BufferType&#160;</td><td class="memItemRight" valign="bottom"><b>operator|</b> (BufferType a, BufferType b)</td></tr>
+<tr class="separator:a04d9d4dd1222e0e051553bec3e25c2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf6a3646ac7cd0ddcc559f2d2b3e7070"><td class="memItemLeft" align="right" valign="top"><a id="acf6a3646ac7cd0ddcc559f2d2b3e7070" name="acf6a3646ac7cd0ddcc559f2d2b3e7070"></a>
+BufferType&#160;</td><td class="memItemRight" valign="bottom"><b>operator&amp;</b> (BufferType a, BufferType b)</td></tr>
+<tr class="separator:acf6a3646ac7cd0ddcc559f2d2b3e7070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>给定材质、Model/View/Projection Matrix 的光栅化器。 </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_e488ee1cea97fb16abdb5ccc78d2123b.html">render</a></li><li class="navelem"><a class="el" href="../../db/d37/rasterizer_8h.html">rasterizer.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>
