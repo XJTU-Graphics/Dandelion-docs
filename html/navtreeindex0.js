@@ -2,22 +2,42 @@ var NAVTREEINDEX0 =
 {
 "annotated.html":[5,0],
 "classes.html":[5,1],
+<<<<<<< HEAD
 "d0/d61/menubar_8h_source.html":[6,0,0,3,1],
 "d2/d51/classTriangle.html":[4,1,3],
 "d2/d51/classTriangle.html#a3f3bbd24c7501750c607875d0a34c97a":[4,1,3,1],
 "d2/d51/classTriangle.html#ade47eca7a673c6aa7d7844fdd910fc70":[4,1,3,0],
 "d2/dd9/controller_8h.html":[6,0,0,3,0],
 "d2/dd9/controller_8h_source.html":[6,0,0,3,0],
+=======
+"d0/d61/menubar_8h_source.html":[6,0,0,4,1],
+"d0/d65/classHalfedge.html":[5,0,7],
+"d2/d51/classTriangle.html":[4,1,3],
+"d2/d51/classTriangle.html#a3f3bbd24c7501750c607875d0a34c97a":[4,1,3,1],
+"d2/d51/classTriangle.html#ade47eca7a673c6aa7d7844fdd910fc70":[4,1,3,0],
+"d2/da0/classVertex.html":[5,0,17],
+"d2/dd9/controller_8h.html":[6,0,0,4,0],
+"d2/dd9/controller_8h_source.html":[6,0,0,4,0],
+>>>>>>> origin/main
 "d3/d2f/classRenderEngine.html":[4,1,2],
 "d3/d2f/classRenderEngine.html#a8a00eff19a34210acad2447e7fd358db":[4,1,2,2],
 "d3/d2f/classRenderEngine.html#a9d65e0ca6739f810354f86b0cf0bd3cc":[4,1,2,0],
 "d3/d2f/classRenderEngine.html#aa344fc7bdfaa41a6a413edacbb7691c2":[4,1,2,1],
+<<<<<<< HEAD
 "d3/d7a/classRasterizer.html":[5,0,8],
+=======
+"d3/d7a/classRasterizer.html":[5,0,12],
+"d3/db7/classFace.html":[5,0,5],
+>>>>>>> origin/main
 "d4/d50/structGL_1_1Material.html":[4,1,1],
 "d4/d50/structGL_1_1Material.html#a2e6bfa1497546db65f1c363985b4a52e":[4,1,1,1],
 "d4/d50/structGL_1_1Material.html#a593816847c0d6811a2fc6c625670ef27":[4,1,1,2],
 "d4/d50/structGL_1_1Material.html#a886340a3db61c4e1139bc795a89fe2f7":[4,1,1,3],
 "d4/d50/structGL_1_1Material.html#afbe14a21e57e922a86e202772688f2ef":[4,1,1,0],
+<<<<<<< HEAD
+=======
+"d4/d70/halfedge_8h_source.html":[6,0,0,0,0],
+>>>>>>> origin/main
 "d4/d78/math_8hpp.html":[4,3,0],
 "d5/d2f/classUI_1_1MenuBar.html":[5,0,1,0],
 "d5/d79/structLight.html":[4,1,5],
@@ -42,8 +62,13 @@ var NAVTREEINDEX0 =
 "d6/dba/structGL_1_1ArrayBuffer.html#ae486606f2927953ef45babf8adef5bb9":[4,0,1,4],
 "d6/dba/structGL_1_1ArrayBuffer.html#af0736b43512bd7183b7f5de35f4005b0":[4,0,1,9],
 "d6/dba/structGL_1_1ArrayBuffer.html#af87b261e58ef9cb2bcf77f4e4c9eb86b":[4,0,1,1],
+<<<<<<< HEAD
 "d7/d6a/gl_8hpp.html":[6,0,0,0,0],
 "d7/d6a/gl_8hpp_source.html":[6,0,0,0,0],
+=======
+"d7/d6a/gl_8hpp.html":[6,0,0,1,0],
+"d7/d6a/gl_8hpp_source.html":[6,0,0,1,0],
+>>>>>>> origin/main
 "d7/d7e/structCamera.html":[4,1,4],
 "d7/d7e/structCamera.html#a1207b991b04502fb760f76be67530119":[4,1,4,0],
 "d7/d7e/structCamera.html#a4551bfb7cb5ed86cc5427e370fda0bdb":[4,1,4,2],
@@ -53,14 +78,29 @@ var NAVTREEINDEX0 =
 "d7/d7e/structCamera.html#ad96efd3e1e4ec33dddb1d25f05d02ff2":[4,1,4,4],
 "d7/d7e/structCamera.html#ade56525b5437d9e2c8a890a734bc83d1":[4,1,4,1],
 "d7/d7e/structCamera.html#ae52020b85d1f749f50c533fe10fc0f91":[4,1,4,5],
+<<<<<<< HEAD
 "d7/da2/render__engine_8h_source.html":[6,0,0,1,1],
 "d7/df6/camera_8h.html":[6,0,0,2,0],
 "d7/df6/camera_8h_source.html":[6,0,0,2,0],
+=======
+"d7/da2/render__engine_8h_source.html":[6,0,0,2,1],
+"d7/df6/camera_8h.html":[6,0,0,3,0],
+"d7/df6/camera_8h_source.html":[6,0,0,3,0],
+>>>>>>> origin/main
 "d8/d4b/classObject.html":[4,1,6],
 "d8/d4b/classObject.html#a4f119c87cf943df17a3fc72a37cccc39":[4,1,6,1],
 "d8/d4b/classObject.html#af8f23e84a424cb6061cc9b23bb1f650c":[4,1,6,0],
 "d8/d88/structGL_1_1Mesh.html":[5,0,0,3],
+<<<<<<< HEAD
 "d8/d88/structGL_1_1Mesh.html#a23777f301b1c83def29d6028713fb348":[5,0,0,3,0],
+=======
+"d8/d88/structGL_1_1Mesh.html#a23777f301b1c83def29d6028713fb348":[5,0,0,3,4],
+"d8/d88/structGL_1_1Mesh.html#a602a6a1d8934a0b4348d80be84146556":[5,0,0,3,2],
+"d8/d88/structGL_1_1Mesh.html#a93809011ac1fad8be5e6453236241751":[5,0,0,3,0],
+"d8/d88/structGL_1_1Mesh.html#aa03800854866954138d57431aa1fc52f":[5,0,0,3,3],
+"d8/d88/structGL_1_1Mesh.html#ab15e23cf96406db70051f5da8cd72f3f":[5,0,0,3,1],
+"d8/d8c/classEdge.html":[5,0,4],
+>>>>>>> origin/main
 "d8/df1/build.html":[1],
 "d8/df1/build.html#compilation":[1,3],
 "d8/df1/build.html#compilation-linux":[1,3,1],
@@ -70,6 +110,7 @@ var NAVTREEINDEX0 =
 "d8/df1/build.html#environment":[1,0],
 "d8/df1/build.html#requests":[1,2],
 "d9/d2f/structure.html":[3],
+<<<<<<< HEAD
 "d9/d52/shader_8hpp.html":[6,0,0,0,2],
 "d9/d52/shader_8hpp_source.html":[6,0,0,0,2],
 "d9/d60/shader__payload_8h.html":[6,0,0,1,2],
@@ -77,6 +118,15 @@ var NAVTREEINDEX0 =
 "d9/d69/classShader.html":[4,0,4],
 "d9/d69/classShader.html#aa44c91fd9fa18a0a09184c5a1768b7be":[4,0,4,0],
 "d9/d78/structVertexShaderPayload.html":[5,0,13],
+=======
+"d9/d52/shader_8hpp.html":[6,0,0,1,2],
+"d9/d52/shader_8hpp_source.html":[6,0,0,1,2],
+"d9/d60/shader__payload_8h.html":[6,0,0,2,2],
+"d9/d60/shader__payload_8h_source.html":[6,0,0,2,2],
+"d9/d69/classShader.html":[4,0,4],
+"d9/d69/classShader.html#aa44c91fd9fa18a0a09184c5a1768b7be":[4,0,4,0],
+"d9/d78/structVertexShaderPayload.html":[5,0,18],
+>>>>>>> origin/main
 "d9/d7f/classUI_1_1ToolBar.html":[4,2,2],
 "d9/d82/structGL_1_1VertexArrayObject.html":[4,0,0],
 "d9/d82/structGL_1_1VertexArrayObject.html#a1666f5d4a67792d9895330c2c86e76da":[4,0,0,3],
@@ -113,6 +163,7 @@ var NAVTREEINDEX0 =
 "db/d37/rasterizer_8h.html":[4,1,0],
 "db/d81/group__rendering.html":[4,1],
 "db/d81/group__utils.html":[4,3],
+<<<<<<< HEAD
 "db/d83/scene_8h.html":[6,0,0,2,3],
 "db/d83/scene_8h_source.html":[6,0,0,2,3],
 "db/dd4/structFragmentShaderPayload.html":[5,0,4],
@@ -128,6 +179,24 @@ var NAVTREEINDEX0 =
 "de/d03/platform_8h_source.html":[6,0,0,0,1],
 "de/d10/object_8h.html":[6,0,0,2,2],
 "de/d10/object_8h_source.html":[6,0,0,2,2],
+=======
+"db/d83/scene_8h.html":[6,0,0,3,3],
+"db/d83/scene_8h_source.html":[6,0,0,3,3],
+"db/dd4/structFragmentShaderPayload.html":[5,0,6],
+"dc/d2a/toolbar_8h.html":[6,0,0,4,3],
+"dc/d2a/toolbar_8h_source.html":[6,0,0,4,3],
+"dc/d6d/classHalfedgeMesh.html":[5,0,8],
+"dc/df7/rendering_8hpp.html":[4,3,1],
+"dd/d6a/triangle_8h.html":[6,0,0,2,3],
+"dd/d6a/triangle_8h_source.html":[6,0,0,2,3],
+"dd/dd3/light_8h.html":[6,0,0,3,1],
+"dd/dd3/light_8h_source.html":[6,0,0,3,1],
+"dd/df1/group__ui.html":[4,2],
+"de/d03/platform_8h.html":[6,0,0,1,1],
+"de/d03/platform_8h_source.html":[6,0,0,1,1],
+"de/d10/object_8h.html":[6,0,0,3,2],
+"de/d10/object_8h_source.html":[6,0,0,3,2],
+>>>>>>> origin/main
 "de/d60/settings_8h.html":[4,2,0],
 "de/d8b/group__platform.html":[4,0],
 "de/d8b/group__platform.html#ga6efffcb404895fd65d719751e0c1a617":[4,0,5],
@@ -139,12 +208,22 @@ var NAVTREEINDEX0 =
 "df/d1e/classPlatform.html#abc7c9ebc5b95dfc19864a639839bd986":[4,0,3,5],
 "df/d1e/classPlatform.html#ae68d7112482e9e731697b5569e4afeef":[4,0,3,6],
 "df/d1e/classPlatform.html#afca9d338fc86be846ac3835b443faf02":[4,0,3,4],
+<<<<<<< HEAD
 "dir_313caf1132e152dd9b58bea13a4052ca.html":[6,0,0,4],
 "dir_35781f0e74aa8deac19fa31b37174dc2.html":[6,0,0,2],
 "dir_4b68c2fef3e151b6b93d5e93b14f1857.html":[6,0,0,0],
 "dir_68267d1309a1af8e8297ef4c3efbcdba.html":[6,0,0],
 "dir_da5c6b39c0a2f54e57df6799511cd3ab.html":[6,0,0,3],
 "dir_e488ee1cea97fb16abdb5ccc78d2123b.html":[6,0,0,1],
+=======
+"dir_313caf1132e152dd9b58bea13a4052ca.html":[6,0,0,5],
+"dir_35781f0e74aa8deac19fa31b37174dc2.html":[6,0,0,3],
+"dir_405fd32de3649961a5f009c7a3fe84df.html":[6,0,0,0],
+"dir_4b68c2fef3e151b6b93d5e93b14f1857.html":[6,0,0,1],
+"dir_68267d1309a1af8e8297ef4c3efbcdba.html":[6,0,0],
+"dir_da5c6b39c0a2f54e57df6799511cd3ab.html":[6,0,0,4],
+"dir_e488ee1cea97fb16abdb5ccc78d2123b.html":[6,0,0,2],
+>>>>>>> origin/main
 "files.html":[6,0],
 "functions.html":[5,2,0],
 "functions_func.html":[5,2,1],

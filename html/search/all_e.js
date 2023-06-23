@@ -1,5 +1,6 @@
 var searchData=
 [
+<<<<<<< HEAD
   ['scale_5ffactor_0',['scale_factor',['../de/d60/settings_8h.html#a0e2670c8711a75dd29c3e07307270535',1,'platform.cpp']]],
   ['scene_1',['Scene',['../d5/d9c/classScene.html',1,'']]],
   ['scene_2eh_2',['scene.h',['../db/d83/scene_8h.html',1,'']]],
@@ -14,4 +15,15 @@ var searchData=
   ['shininess_11',['shininess',['../d4/d50/structGL_1_1Material.html#a593816847c0d6811a2fc6c625670ef27',1,'GL::Material']]],
   ['specify_5fvertex_5fattribute_12',['specify_vertex_attribute',['../d6/dba/structGL_1_1ArrayBuffer.html#a4a875617acb4be2277ae1f1924e63731',1,'GL::ArrayBuffer']]],
   ['specular_13',['specular',['../d4/d50/structGL_1_1Material.html#a886340a3db61c4e1139bc795a89fe2f7',1,'GL::Material']]]
+=======
+  ['rasterizer_0',['Rasterizer',['../d3/d7a/classRasterizer.html',1,'']]],
+  ['rasterizer_2eh_1',['rasterizer.h',['../db/d37/rasterizer_8h.html',1,'']]],
+  ['release_2',['release',['../d9/d82/structGL_1_1VertexArrayObject.html#aa106084d1d1a66a1c19fe7828b674830',1,'GL::VertexArrayObject::release()'],['../d6/dba/structGL_1_1ArrayBuffer.html#a75e71a3f0eb57f79b044099e82065242',1,'GL::ArrayBuffer::release()']]],
+  ['render_3',['render',['../d3/d2f/classRenderEngine.html#a9d65e0ca6739f810354f86b0cf0bd3cc',1,'RenderEngine::render()'],['../d9/d85/classController.html#a16f12b4298f0f7594d37ab7ac28889b7',1,'Controller::render()']]],
+  ['render_5fground_4',['render_ground',['../d5/d9c/classScene.html#a5e194aaf0caf3b689823d67765f626ea',1,'Scene']]],
+  ['renderengine_5',['RenderEngine',['../d3/d2f/classRenderEngine.html',1,'']]],
+  ['rendering_2ehpp_6',['rendering.hpp',['../dc/df7/rendering_8hpp.html',1,'']]],
+  ['rendering_5fres_7',['rendering_res',['../d3/d2f/classRenderEngine.html#a8a00eff19a34210acad2447e7fd358db',1,'RenderEngine']]],
+  ['resize_5fwindow_8',['resize_window',['../df/d1e/classPlatform.html#abc7c9ebc5b95dfc19864a639839bd986',1,'Platform']]]
+>>>>>>> origin/main
 ];
