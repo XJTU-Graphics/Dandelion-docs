@@ -9,13 +9,18 @@ var annotated_dup =
     ] ],
     [ "UI", null, [
       [ "MenuBar", "d5/d2f/classUI_1_1MenuBar.html", null ],
-      [ "ToolBar", "d9/d7f/classUI_1_1ToolBar.html", "d9/d7f/classUI_1_1ToolBar" ]
+      [ "ToolBar", "d9/d7f/classUI_1_1ToolBar.html", null ]
     ] ],
     [ "Camera", "d7/d7e/structCamera.html", "d7/d7e/structCamera" ],
     [ "Controller", "d9/d85/classController.html", "d9/d85/classController" ],
+    [ "FragmentShaderPayload", "db/dd4/structFragmentShaderPayload.html", null ],
     [ "Light", "d5/d79/structLight.html", "d5/d79/structLight" ],
     [ "Object", "d8/d4b/classObject.html", "d8/d4b/classObject" ],
     [ "Platform", "df/d1e/classPlatform.html", "df/d1e/classPlatform" ],
+    [ "Rasterizer", "d3/d7a/classRasterizer.html", null ],
+    [ "RenderEngine", "d3/d2f/classRenderEngine.html", "d3/d2f/classRenderEngine" ],
     [ "Scene", "d5/d9c/classScene.html", "d5/d9c/classScene" ],
-    [ "Shader", "d9/d69/classShader.html", "d9/d69/classShader" ]
+    [ "Shader", "d9/d69/classShader.html", "d9/d69/classShader" ],
+    [ "Triangle", "d2/d51/classTriangle.html", "d2/d51/classTriangle" ],
+    [ "VertexShaderPayload", "d9/d78/structVertexShaderPayload.html", null ]
 ];

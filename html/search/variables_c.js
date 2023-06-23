@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['usage_0',['usage',['../d6/dba/structGL_1_1ArrayBuffer.html#aa8ecf23830cb9969726478bccb43a01c',1,'GL::ArrayBuffer']]]
+  ['target_0',['target',['../d7/d7e/structCamera.html#aa46269efc05d0aea46f8b0540ccb9d01',1,'Camera']]],
+  ['trackball_5fradius_1',['trackball_radius',['../d9/d85/classController.html#ae604a933148415cb35ffd6dfdc6572b5',1,'Controller']]]
 ];

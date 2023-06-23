@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['light_0',['Light',['../d5/d79/structLight.html',1,'']]]
+  ['fragmentshaderpayload_0',['FragmentShaderPayload',['../db/dd4/structFragmentShaderPayload.html',1,'']]]
 ];
