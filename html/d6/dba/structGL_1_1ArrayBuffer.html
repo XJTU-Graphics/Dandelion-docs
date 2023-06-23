@@ -133,8 +133,8 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a605a48e7c99737fb0404f54c5245be1f"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
 <tr class="memitem:a605a48e7c99737fb0404f54c5245be1f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a605a48e7c99737fb0404f54c5245be1f">append</a> (Ts... values)</td></tr>
 <tr class="separator:a605a48e7c99737fb0404f54c5245be1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1528aae0c7e8fe2cdece8a4f8e336bce"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a1528aae0c7e8fe2cdece8a4f8e336bce">count</a> ()</td></tr>
-<tr class="separator:a1528aae0c7e8fe2cdece8a4f8e336bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5cac6ebe97d4f7cfdddc9b694fe6397"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dba/structGL_1_1ArrayBuffer.html#ad5cac6ebe97d4f7cfdddc9b694fe6397">count</a> () const</td></tr>
+<tr class="separator:ad5cac6ebe97d4f7cfdddc9b694fe6397"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae486606f2927953ef45babf8adef5bb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dba/structGL_1_1ArrayBuffer.html#ae486606f2927953ef45babf8adef5bb9">bind</a> ()</td></tr>
 <tr class="separator:ae486606f2927953ef45babf8adef5bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75e71a3f0eb57f79b044099e82065242"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a75e71a3f0eb57f79b044099e82065242">release</a> ()</td></tr>
@@ -162,7 +162,7 @@ std::vector&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>dat
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T, std::size_t size&gt;<br />
 struct GL::ArrayBuffer&lt; T, size &gt;</div><p>对 OpenGL 数组缓冲 (Array Buffer) 的封装。 </p>
-<p>Array Buffer 通常用于创建顶点缓冲对象 (<a class="el" href="../../d2/da0/classVertex.html">Vertex</a> Buffer <a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a>, VBO)，用于存储顶点属性。 与 <a class="el" href="../../d9/d82/structGL_1_1VertexArrayObject.html" title="对 OpenGL 顶点数组对象 (Vertex Array Object) 的封装。">VertexArrayObject</a> 对象不同的是，ArrayBuffer 对象持有数据。如果希望更新一个 <a class="el" href="../../d6/dba/structGL_1_1ArrayBuffer.html" title="对 OpenGL 数组缓冲 (Array Buffer) 的封装。">ArrayBuffer</a> 中的数据，首先应当直接修改它持有的 <code>std::vector&lt;T&gt;</code>，然后调用 <code>to_gpu</code> 复制到显存。 </p><dl class="tparams"><dt>模板参数</dt><dd>
+<p>Array Buffer 通常用于创建顶点缓冲对象 (Vertex Buffer <a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a>, VBO)，用于存储顶点属性。 与 <a class="el" href="../../d9/d82/structGL_1_1VertexArrayObject.html" title="对 OpenGL 顶点数组对象 (Vertex Array Object) 的封装。">VertexArrayObject</a> 对象不同的是，ArrayBuffer 对象持有数据。如果希望更新一个 <a class="el" href="../../d6/dba/structGL_1_1ArrayBuffer.html" title="对 OpenGL 数组缓冲 (Array Buffer) 的封装。">ArrayBuffer</a> 中的数据，首先应当直接修改它持有的 <code>std::vector&lt;T&gt;</code>，然后调用 <code>to_gpu</code> 复制到显存。 </p><dl class="tparams"><dt>模板参数</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>此缓冲区中存放的数据类型，应当指定为基本数据类型，否则没有实际意义。 </td></tr>
     <tr><td class="paramname">size</td><td>每个顶点的数据个数，例如 size 是 3 表示缓冲区中每三个数据是一组， 这一组数据属于同一个顶点。 </td></tr>
@@ -285,8 +285,8 @@ template&lt;typename T , std::size_t size&gt; </div>
 
 </div>
 </div>
-<a id="a1528aae0c7e8fe2cdece8a4f8e336bce" name="a1528aae0c7e8fe2cdece8a4f8e336bce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1528aae0c7e8fe2cdece8a4f8e336bce">&#9670;&#160;</a></span>count()</h2>
+<a id="ad5cac6ebe97d4f7cfdddc9b694fe6397" name="ad5cac6ebe97d4f7cfdddc9b694fe6397"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5cac6ebe97d4f7cfdddc9b694fe6397">&#9670;&#160;</a></span>count()</h2>
 
 <div class="memitem">
 <div class="memproto">

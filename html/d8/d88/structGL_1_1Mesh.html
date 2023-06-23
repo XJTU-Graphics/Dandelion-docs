@@ -128,14 +128,14 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a75180ba39e94350a1ecebbeb2b348c8a"><td class="memItemLeft" align="right" valign="top"><a id="a75180ba39e94350a1ecebbeb2b348c8a" name="a75180ba39e94350a1ecebbeb2b348c8a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Mesh</b> (<a class="el" href="../../d8/d88/structGL_1_1Mesh.html">Mesh</a> &amp;&amp;other)</td></tr>
 <tr class="separator:a75180ba39e94350a1ecebbeb2b348c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa03800854866954138d57431aa1fc52f"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html#aa03800854866954138d57431aa1fc52f">vertex</a> (size_t index)</td></tr>
-<tr class="separator:aa03800854866954138d57431aa1fc52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a602a6a1d8934a0b4348d80be84146556"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html#a602a6a1d8934a0b4348d80be84146556">normal</a> (size_t index)</td></tr>
-<tr class="separator:a602a6a1d8934a0b4348d80be84146556"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93809011ac1fad8be5e6453236241751"><td class="memItemLeft" align="right" valign="top">std::array&lt; size_t, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html#a93809011ac1fad8be5e6453236241751">edge</a> (size_t index)</td></tr>
-<tr class="separator:a93809011ac1fad8be5e6453236241751"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab15e23cf96406db70051f5da8cd72f3f"><td class="memItemLeft" align="right" valign="top">std::array&lt; size_t, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html#ab15e23cf96406db70051f5da8cd72f3f">face</a> (size_t index)</td></tr>
-<tr class="separator:ab15e23cf96406db70051f5da8cd72f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb6cfaaf78c29740bc6dbf215347b203"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html#abb6cfaaf78c29740bc6dbf215347b203">vertex</a> (size_t index) const</td></tr>
+<tr class="separator:abb6cfaaf78c29740bc6dbf215347b203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a974fc923af6b4255289ffc20046afb14"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html#a974fc923af6b4255289ffc20046afb14">normal</a> (size_t index) const</td></tr>
+<tr class="separator:a974fc923af6b4255289ffc20046afb14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd5496ce294b47446f8af09fe33dbb8"><td class="memItemLeft" align="right" valign="top">std::array&lt; size_t, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html#afbd5496ce294b47446f8af09fe33dbb8">edge</a> (size_t index) const</td></tr>
+<tr class="separator:afbd5496ce294b47446f8af09fe33dbb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2207633400950588ddd94676412bd9f0"><td class="memItemLeft" align="right" valign="top">std::array&lt; size_t, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html#a2207633400950588ddd94676412bd9f0">face</a> (size_t index) const</td></tr>
+<tr class="separator:a2207633400950588ddd94676412bd9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
@@ -175,8 +175,8 @@ static const Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom">
 <p>由于 OpenGL API 只支持绘制三角形，GL::Mesh 存储的面片 (face) 只能是三角形。 四边形乃至任意多边形面片需要先三角化成三角形才能被渲染。</p>
 <p>外界读取 <a class="el" href="../../d8/d88/structGL_1_1Mesh.html" title="用于场景预览渲染的 Mesh 类。">Mesh</a> 中的顶点、边等基元时应当调用 <code>vertex/normal/edge/face</code> 方法， 而不是直接访问 <code>vertices.data</code> 等内部存储。这些 <a class="el" href="../../d6/dba/structGL_1_1ArrayBuffer.html" title="对 OpenGL 数组缓冲 (Array Buffer) 的封装。">ArrayBuffer</a> 或 <a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html" title="对 OpenGL 索引数组缓冲 (Element Array Buffer) 的封装。">ElementArrayBuffer</a> 之所以被设为公有成员，是因为在修改数据或进行渲染时需要操作它们， 其他情况下都不必也不应该使用这些扁平存储的数据。 </p>
 </div><h2 class="groupheader">成员函数说明</h2>
-<a id="a93809011ac1fad8be5e6453236241751" name="a93809011ac1fad8be5e6453236241751"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93809011ac1fad8be5e6453236241751">&#9670;&#160;</a></span>edge()</h2>
+<a id="afbd5496ce294b47446f8af09fe33dbb8" name="afbd5496ce294b47446f8af09fe33dbb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbd5496ce294b47446f8af09fe33dbb8">&#9670;&#160;</a></span>edge()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -186,7 +186,7 @@ static const Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom">
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -194,8 +194,8 @@ static const Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom">
 
 </div>
 </div>
-<a id="ab15e23cf96406db70051f5da8cd72f3f" name="ab15e23cf96406db70051f5da8cd72f3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab15e23cf96406db70051f5da8cd72f3f">&#9670;&#160;</a></span>face()</h2>
+<a id="a2207633400950588ddd94676412bd9f0" name="a2207633400950588ddd94676412bd9f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2207633400950588ddd94676412bd9f0">&#9670;&#160;</a></span>face()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,7 +205,7 @@ static const Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom">
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -213,8 +213,8 @@ static const Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom">
 
 </div>
 </div>
-<a id="a602a6a1d8934a0b4348d80be84146556" name="a602a6a1d8934a0b4348d80be84146556"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a602a6a1d8934a0b4348d80be84146556">&#9670;&#160;</a></span>normal()</h2>
+<a id="a974fc923af6b4255289ffc20046afb14" name="a974fc923af6b4255289ffc20046afb14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a974fc923af6b4255289ffc20046afb14">&#9670;&#160;</a></span>normal()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -224,7 +224,7 @@ static const Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom">
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -232,8 +232,8 @@ static const Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom">
 
 </div>
 </div>
-<a id="aa03800854866954138d57431aa1fc52f" name="aa03800854866954138d57431aa1fc52f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa03800854866954138d57431aa1fc52f">&#9670;&#160;</a></span>vertex()</h2>
+<a id="abb6cfaaf78c29740bc6dbf215347b203" name="abb6cfaaf78c29740bc6dbf215347b203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb6cfaaf78c29740bc6dbf215347b203">&#9670;&#160;</a></span>vertex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -243,7 +243,7 @@ static const Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom">
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
