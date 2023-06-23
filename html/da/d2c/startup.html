@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('da/d2c/startup.html','../../'); initRe
   <div class="headertitle"><div class="title">开始开发 </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>在开始编写代码前，请稍微花一点时间阅读以下的约定和帮助，这将有助于你更加顺利地参与到 Dandelion 的开发中。使用 Dandelion 做实验的同学不必遵守这些，直接开始实验。</p>
+<div class="textblock"><p>在开始编写代码前，请稍微花一点时间阅读以下的约定和帮助，这将有助于你更加顺利地参与到 Dandelion 的开发中。使用 Dandelion 做实验的同学可以不必遵守这些，直接开始实验。</p>
 <h1><a class="anchor" id="standard"></a>
 项目规范</h1>
 <p>开发过程中，除实现功能外，也请关注命名、注释（文档）、提交规范这三方面。</p>
@@ -203,11 +203,15 @@ XJTU-Graphics 组织成员</h2>
 <div class="line">$ git merge your_new_branch_name</div>
 <div class="line">$ git push origin main</div>
 </div><!-- fragment --></li>
+<li>完成修改后，建议删除新创建的分支，下次修改时再新建： <div class="fragment"><div class="line">$ git branch -d your_new_branch_name</div>
+</div><!-- fragment --></li>
 </ol>
+<p>我们倾向于使用 rebase 操作来维持主分支的提交记录是线性的，如果不了解 Git 的 rebase 操作，请阅读<a href="https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%8F%98%E5%9F%BA">Git-变基</a></p>
 <p>总之，</p>
 <ul>
-<li>请勿直接在 <code>main</code> 分支上修改代码</li>
-<li>在推送到远程仓库前，保证自己的 <code>main</code> 分支已经是最新的</li>
+<li>新建自己的分支，请勿直接在 <code>main</code> 分支上修改代码。</li>
+<li>任何提交被推送到远程仓库后禁止再次修改，严禁使用 <code>git push -f</code> (<code>git push --force</code>) 强制覆盖远程仓库。如果需要修正已经推送的错误，请新建一个提交。</li>
+<li>在推送到远程仓库前，保证自己的 <code>main</code> 分支已经是最新的。</li>
 </ul>
 <h2><a class="anchor" id="non-member-submission"></a>
 非组织成员</h2>
@@ -221,10 +225,10 @@ XJTU-Graphics 组织成员</h2>
 <p>目前 vim / VS Code / Visual Studio 等开发工具中都有集成 clang-format 的插件，可以直接安装使用；也可以手动在命令行使用</p>
 <div class="fragment"><div class="line">clang-format -style=file -i file</div>
 </div><!-- fragment --><p>来格式化 <code>file</code> 这个文件。</p>
-<p>我们目前使用的 clang-format 版本是 14，因此新版本的工具可能会提示 .clang-format 文件中有些配置项 deprecated，但由于新版本相同功能的配置项并不兼容旧版本，我们暂时不打算升级 clang-format。</p>
+<p>我们目前使用的 clang-format 版本是 14，格式化配置文件应当与 15 版本兼容。更高版本会提示 .clang-format 文件中有些配置项已被废弃 (deprecated)，但由于新版本相同功能的配置项并不兼容旧版本，我们暂时不打算升级 clang-format。</p>
 <h2><a class="anchor" id="spell-check"></a>
 拼写检查</h2>
-<p>推荐使用 cSpell 检查单词拼写，省得在写错后回头修改。</p>
+<p>一个拼写错误的单词可能给后期开发带来很大麻烦，我们在发现拼写错误后 <b>一定会更正它</b> 。推荐使用 cSpell 检查单词拼写，省得在写错后回头修改。</p>
 <ul>
 <li>VS Code 用户可以直接安装 cSpell 插件。</li>
 <li>Vim 用户可以使用 coc.nvim 并安装 coc-spell-checker 插件。</li>
@@ -237,8 +241,7 @@ XJTU-Graphics 组织成员</h2>
 <li>基于 Language Server Protocol (LSP) 的补全，绝大部分编辑器都使用这种方式</li>
 </ul>
 <p>一些代码补全工具的补全策略中包含“自动引入头文件”的功能，例如 Clangd 会在你写下新的类型时自动包含定义了这个类型的头文件。这种策略被称为 include-what-you-use (IWYU)，也就是“用什么包含什么”。</p>
-<p>但有一些依赖库并不是遵循这个原则开发的，例如 Eigen 就不是：如果你想使用 <code>Eigen::Vector3f</code> 类型，它推荐你引入 Eigen/Core 这个头文件，而不是定义了这个类型的 Eigen/src/Core/Matrix.h 这个头文件。此时“自动引入头文件”的功能就非常烦人，甚至可能导致某些错误。为此，我们推荐在开发过程中禁止该功能。</p>
-<p>如果你使用 Clangd 提供的 Language Server，那么在启动 clangd 时加上 <code>--header-insertion=never</code> 参数就可以了，推荐直接把这个参数写进 VS Code 插件的 <code>clangd.arguments</code> 属性里。</p>
+<p>但有一些依赖库并不是遵循这个原则开发的，例如 Eigen 就不是：如果你想使用 <code>Eigen::Vector3f</code> 类型，它推荐你引入 Eigen/Core 这个头文件，而不是定义了这个类型的 Eigen/src/Core/Matrix.h 这个头文件。此时“自动引入头文件”的功能就非常烦人，甚至可能导致某些错误。提交到远程的源代码中尽量不要含有类似的不当引用，为此，我们推荐在开发过程中禁止该功能。如果你使用 Clangd 提供的 Language Server，那么在启动 clangd 时加上 <code>--header-insertion=never</code> 参数就可以了，推荐直接把这个参数写进 VS Code 插件的 <code>clangd.arguments</code> 属性里。</p>
 <p>另一个必须注意的问题是：GLFW 和 GLAD 头文件的包含是有顺序要求的，必须先包含 GLAD 再包含 GLFW。而 clang-format 这样的格式化工具会自动重排头文件顺序，直接导致编译失败，我们已经在 .clang-format 文件中禁止了头文件重排序。或许其他 IDE 也会有类似的行为，请务必检查一下。 </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
