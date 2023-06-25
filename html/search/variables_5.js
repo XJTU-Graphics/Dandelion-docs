@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['layout_5flocation_0',['layout_location',['../d6/dba/structGL_1_1ArrayBuffer.html#a5c92fd61c3de20c99e71c48e9fa5291a',1,'GL::ArrayBuffer']]]
+  ['intensity_0',['intensity',['../d5/d79/structLight.html#a1071eaa556f4bb2a9345fdfba7e6f220',1,'Light']]]
 ];

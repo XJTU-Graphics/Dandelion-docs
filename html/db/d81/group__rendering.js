@@ -36,9 +36,20 @@ var group__rendering =
     ] ],
     [ "Scene", "d5/d9c/classScene.html", [
       [ "load", "d5/d9c/classScene.html#aa78f982d2d987f8e4bc6748a834bdccc", null ],
+      [ "render", "d5/d9c/classScene.html#adfdfa40f0fc12706c5df9916b866606d", null ],
+      [ "render_camera", "d5/d9c/classScene.html#a538e25d2e438166039cdea0053da344f", null ],
+      [ "render_lights", "d5/d9c/classScene.html#a3b43ea89d6c24ed55d7dd8f5748674eb", null ],
       [ "camera", "d5/d9c/classScene.html#afed13ec4ba2d7ab75b273d507911b498", null ],
+      [ "lights", "d5/d9c/classScene.html#ab3625e4ac3c6e47156edd23e2421e828", null ],
       [ "mode", "d5/d9c/classScene.html#a414212450f0d20ca3a9822b3906590c7", null ],
       [ "objects", "d5/d9c/classScene.html#abbd6f5b3a4639c3b089037519085bf86", null ],
       [ "selected_object_id", "d5/d9c/classScene.html#ae3f9004a2faa3f55665d6aba858b1af5", null ]
+    ] ],
+    [ "Ray", "dd/d5e/structRay.html", null ],
+    [ "Intersection", "d6/d30/structIntersection.html", [
+      [ "barycentric_coord", "d6/d30/structIntersection.html#aa963a5e5aad31c9dbc2484c6d1eefc7e", null ],
+      [ "face_index", "d6/d30/structIntersection.html#a8eb314eb1047af071a62e692e7deec76", null ],
+      [ "normal", "d6/d30/structIntersection.html#a477a228b3a9a1691c1ebad8776ec511c", null ],
+      [ "t", "d6/d30/structIntersection.html#a369acde39ebf5283fb012181cd262055", null ]
     ] ]
 ];

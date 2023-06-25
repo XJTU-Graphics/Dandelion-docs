@@ -4,7 +4,7 @@ var indexSectionsWithContent =
   1: "acefilmoprstv",
   2: "cglmoprst",
   3: "abcdefgilmnoprstv~",
-  4: "acdfilmnoprstuvw",
+  4: "abcdfilmnoprstuvw",
   5: "u小平离",
   6: "d开构项"
 };

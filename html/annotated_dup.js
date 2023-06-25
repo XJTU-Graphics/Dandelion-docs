@@ -14,7 +14,7 @@ var annotated_dup =
     [ "Camera", "d7/d7e/structCamera.html", "d7/d7e/structCamera" ],
     [ "Controller", "d9/d85/classController.html", "d9/d85/classController" ],
     [ "FragmentShaderPayload", "db/dd4/structFragmentShaderPayload.html", null ],
-    [ "Intersection", "d6/d30/structIntersection.html", null ],
+    [ "Intersection", "d6/d30/structIntersection.html", "d6/d30/structIntersection" ],
     [ "Light", "d5/d79/structLight.html", "d5/d79/structLight" ],
     [ "Object", "d8/d4b/classObject.html", "d8/d4b/classObject" ],
     [ "Platform", "df/d1e/classPlatform.html", "df/d1e/classPlatform" ],

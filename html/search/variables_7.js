@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['near_0',['near',['../d7/d7e/structCamera.html#ad96efd3e1e4ec33dddb1d25f05d02ff2',1,'Camera']]],
-  ['normal_1',['normal',['../d2/d51/classTriangle.html#ade47eca7a673c6aa7d7844fdd910fc70',1,'Triangle']]]
+  ['main_5fcamera_0',['main_camera',['../d9/d85/classController.html#a20539e548e10bce4d113f894be43665e',1,'Controller']]],
+  ['material_1',['material',['../d8/d88/structGL_1_1Mesh.html#a23777f301b1c83def29d6028713fb348',1,'GL::Mesh']]],
+  ['menubar_2',['menubar',['../d9/d85/classController.html#afe600befbeedd8d86dc9bf7e373e365a',1,'Controller']]],
+  ['meshes_3',['meshes',['../d8/d4b/classObject.html#a4f119c87cf943df17a3fc72a37cccc39',1,'Object']]],
+  ['mode_4',['mode',['../d5/d9c/classScene.html#a414212450f0d20ca3a9822b3906590c7',1,'Scene']]]
 ];

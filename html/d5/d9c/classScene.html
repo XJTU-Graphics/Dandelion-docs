@@ -105,8 +105,9 @@ $(document).ready(function(){initNavTree('d5/d9c/classScene.html','../../'); ini
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public 成员函数</a> &#124;
-<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
 <a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-static-methods">静态 Private 成员函数</a> &#124;
 <a href="#pri-attribs">Private 属性</a> &#124;
 <a href="../../db/d67/classScene-members.html">所有成员列表</a>  </div>
   <div class="headertitle"><div class="title">Scene类 参考<div class="ingroups"><a class="el" href="../../db/d81/group__rendering.html">离线渲染</a></div></div></div>
@@ -120,23 +121,11 @@ $(document).ready(function(){initNavTree('d5/d9c/classScene.html','../../'); ini
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a9e5f28d63a83ea9afe43121f22fe5486"><td class="memItemLeft" align="right" valign="top"><a id="a9e5f28d63a83ea9afe43121f22fe5486" name="a9e5f28d63a83ea9afe43121f22fe5486"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>render_camera</b> (const std::unique_ptr&lt; <a class="el" href="../../d9/d69/classShader.html">Shader</a> &gt; &amp;shader)</td></tr>
-<tr class="separator:a9e5f28d63a83ea9afe43121f22fe5486"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b17eaad47c88446c4f00ac6c4bbb3e1"><td class="memItemLeft" align="right" valign="top"><a id="a3b17eaad47c88446c4f00ac6c4bbb3e1" name="a3b17eaad47c88446c4f00ac6c4bbb3e1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>render_lights</b> (const std::unique_ptr&lt; <a class="el" href="../../d9/d69/classShader.html">Shader</a> &gt; &amp;shader)</td></tr>
-<tr class="separator:a3b17eaad47c88446c4f00ac6c4bbb3e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa78f982d2d987f8e4bc6748a834bdccc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#aa78f982d2d987f8e4bc6748a834bdccc">load</a> (const std::string &amp;file_path)</td></tr>
 <tr class="separator:aa78f982d2d987f8e4bc6748a834bdccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a162f43456996c21ce8cd0e40f871787a"><td class="memItemLeft" align="right" valign="top"><a id="a162f43456996c21ce8cd0e40f871787a" name="a162f43456996c21ce8cd0e40f871787a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>render</b> (const std::unique_ptr&lt; <a class="el" href="../../d9/d69/classShader.html">Shader</a> &gt; &amp;shader)</td></tr>
-<tr class="separator:a162f43456996c21ce8cd0e40f871787a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-静态 Public 成员函数</h2></td></tr>
-<tr class="memitem:a5e194aaf0caf3b689823d67765f626ea"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#a5e194aaf0caf3b689823d67765f626ea">render_ground</a> (const std::unique_ptr&lt; <a class="el" href="../../d9/d69/classShader.html">Shader</a> &gt; &amp;shader)</td></tr>
-<tr class="memdesc:a5e194aaf0caf3b689823d67765f626ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">渲染 \(y=1\) 平面上表示地面的网格线。  <br /></td></tr>
-<tr class="separator:a5e194aaf0caf3b689823d67765f626ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfdfa40f0fc12706c5df9916b866606d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#adfdfa40f0fc12706c5df9916b866606d">render</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader)</td></tr>
+<tr class="memdesc:adfdfa40f0fc12706c5df9916b866606d"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制整个场景。  <br /></td></tr>
+<tr class="separator:adfdfa40f0fc12706c5df9916b866606d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
@@ -148,9 +137,23 @@ Public 属性</h2></td></tr>
 <tr class="separator:ae3f9004a2faa3f55665d6aba858b1af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afed13ec4ba2d7ab75b273d507911b498"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d7e/structCamera.html">Camera</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#afed13ec4ba2d7ab75b273d507911b498">camera</a></td></tr>
 <tr class="separator:afed13ec4ba2d7ab75b273d507911b498"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3625e4ac3c6e47156edd23e2421e828"><td class="memItemLeft" align="right" valign="top"><a id="ab3625e4ac3c6e47156edd23e2421e828" name="ab3625e4ac3c6e47156edd23e2421e828"></a>
-std::vector&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lights</b></td></tr>
+<tr class="memitem:ab3625e4ac3c6e47156edd23e2421e828"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#ab3625e4ac3c6e47156edd23e2421e828">lights</a></td></tr>
 <tr class="separator:ab3625e4ac3c6e47156edd23e2421e828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a538e25d2e438166039cdea0053da344f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#a538e25d2e438166039cdea0053da344f">render_camera</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader)</td></tr>
+<tr class="memdesc:a538e25d2e438166039cdea0053da344f"><td class="mdescLeft">&#160;</td><td class="mdescRight">在渲染模式 (Rendering mode) 下绘制代表相机视锥的线框。  <br /></td></tr>
+<tr class="separator:a538e25d2e438166039cdea0053da344f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b43ea89d6c24ed55d7dd8f5748674eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#a3b43ea89d6c24ed55d7dd8f5748674eb">render_lights</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader)</td></tr>
+<tr class="memdesc:a3b43ea89d6c24ed55d7dd8f5748674eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">在渲染模式下绘制光源。  <br /></td></tr>
+<tr class="separator:a3b43ea89d6c24ed55d7dd8f5748674eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+静态 Private 成员函数</h2></td></tr>
+<tr class="memitem:a53fbe865bbe45b652ebd137cc2ef39cd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#a53fbe865bbe45b652ebd137cc2ef39cd">render_ground</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader)</td></tr>
+<tr class="memdesc:a53fbe865bbe45b652ebd137cc2ef39cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制空间坐标轴和 \(y=1\) 平面上表示地面的网格线。  <br /></td></tr>
+<tr class="separator:a53fbe865bbe45b652ebd137cc2ef39cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private 属性</h2></td></tr>
@@ -180,8 +183,58 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 
 </div>
 </div>
-<a id="a5e194aaf0caf3b689823d67765f626ea" name="a5e194aaf0caf3b689823d67765f626ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e194aaf0caf3b689823d67765f626ea">&#9670;&#160;</a></span>render_ground()</h2>
+<a id="adfdfa40f0fc12706c5df9916b866606d" name="adfdfa40f0fc12706c5df9916b866606d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfdfa40f0fc12706c5df9916b866606d">&#9670;&#160;</a></span>render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scene::render </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;&#160;</td>
+          <td class="paramname"><em>shader</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绘制整个场景。 </p>
+<p><code>render</code> 方法是场景对外的绘制接口，不会直接绘制任何内容，只负责调用每个 <a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a> 的 <code>render</code> 方法、<code>render_camera</code> 和 <code>render_lights</code> 方法。 </p>
+
+</div>
+</div>
+<a id="a538e25d2e438166039cdea0053da344f" name="a538e25d2e438166039cdea0053da344f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a538e25d2e438166039cdea0053da344f">&#9670;&#160;</a></span>render_camera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scene::render_camera </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;&#160;</td>
+          <td class="paramname"><em>shader</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在渲染模式 (Rendering mode) 下绘制代表相机视锥的线框。 </p>
+<p>根据场景对象的相机参数（位置、目标点、远近平面、视角），绘制四棱锥形的相机视锥。 由于近平面通常离相机视点很近，这个函数不会绘制近平面。离线渲染时， 会裁剪掉视锥范围外的所有内容。 </p>
+
+</div>
+</div>
+<a id="a53fbe865bbe45b652ebd137cc2ef39cd" name="a53fbe865bbe45b652ebd137cc2ef39cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53fbe865bbe45b652ebd137cc2ef39cd">&#9670;&#160;</a></span>render_ground()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -192,20 +245,49 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
         <tr>
           <td class="memname">void Scene::render_ground </td>
           <td>(</td>
-          <td class="paramtype">const std::unique_ptr&lt; <a class="el" href="../../d9/d69/classShader.html">Shader</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;&#160;</td>
           <td class="paramname"><em>shader</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>渲染 \(y=1\) 平面上表示地面的网格线。 </p>
-<p>这个函数默认在 \(x\) 和 \(z\) 方向各渲染 100 条网格线。 </p>
+<p>绘制空间坐标轴和 \(y=1\) 平面上表示地面的网格线。 </p>
+<p>这个函数在 \(x\) 和 \(z\) 方向各绘制 100 条网格线，并分别用红、绿、蓝三色绘制 x, y, z 三轴正半轴。 </p>
+
+</div>
+</div>
+<a id="a3b43ea89d6c24ed55d7dd8f5748674eb" name="a3b43ea89d6c24ed55d7dd8f5748674eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b43ea89d6c24ed55d7dd8f5748674eb">&#9670;&#160;</a></span>render_lights()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scene::render_lights </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;&#160;</td>
+          <td class="paramname"><em>shader</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在渲染模式下绘制光源。 </p>
+<p>这个函数将场景中每个点光源绘制成六个亮点。 </p>
 
 </div>
 </div>
@@ -222,6 +304,21 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
       </table>
 </div><div class="memdoc">
 <p>用于 <b>离线渲染</b> 的相机，和用于预览场景的观察相机（主相机）无关。 </p>
+
+</div>
+</div>
+<a id="ab3625e4ac3c6e47156edd23e2421e828" name="ab3625e4ac3c6e47156edd23e2421e828"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3625e4ac3c6e47156edd23e2421e828">&#9670;&#160;</a></span>lights</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d5/d79/structLight.html">Light</a>&gt; Scene::lights</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>用于 <b>离线渲染</b> 的光源，和预览时照亮物体的光源无关。 </p>
 
 </div>
 </div>

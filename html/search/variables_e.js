@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vertex_0',['vertex',['../d2/d51/classTriangle.html#a3f3bbd24c7501750c607875d0a34c97a',1,'Triangle']]]
+  ['usage_0',['usage',['../d6/dba/structGL_1_1ArrayBuffer.html#aa8ecf23830cb9969726478bccb43a01c',1,'GL::ArrayBuffer']]]
 ];

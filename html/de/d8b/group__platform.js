@@ -28,6 +28,12 @@ var group__platform =
       [ "count", "da/dd6/structGL_1_1ElementArrayBuffer.html#a25fd1f84717b224a566b84214ce33ead", null ],
       [ "data", "da/dd6/structGL_1_1ElementArrayBuffer.html#ac8146ee6a703d9e3076aaccee1ab8642", null ]
     ] ],
+    [ "GL::Material", "d4/d50/structGL_1_1Material.html", [
+      [ "ambient", "d4/d50/structGL_1_1Material.html#afbe14a21e57e922a86e202772688f2ef", null ],
+      [ "diffuse", "d4/d50/structGL_1_1Material.html#a2e6bfa1497546db65f1c363985b4a52e", null ],
+      [ "shininess", "d4/d50/structGL_1_1Material.html#a593816847c0d6811a2fc6c625670ef27", null ],
+      [ "specular", "d4/d50/structGL_1_1Material.html#a886340a3db61c4e1139bc795a89fe2f7", null ]
+    ] ],
     [ "Platform", "df/d1e/classPlatform.html", [
       [ "Platform", "df/d1e/classPlatform.html#a52028ea2984cbfdf8e9f42ee87f66cfe", null ],
       [ "create_context", "df/d1e/classPlatform.html#a6304cef1b9edc72f8d7793c2d7cfd1f9", null ],
@@ -38,7 +44,7 @@ var group__platform =
       [ "set_opengl_properties", "df/d1e/classPlatform.html#ae68d7112482e9e731697b5569e4afeef", null ]
     ] ],
     [ "Shader", "d9/d69/classShader.html", [
-      [ "set_uniform", "d9/d69/classShader.html#aa44c91fd9fa18a0a09184c5a1768b7be", null ]
+      [ "set_uniform", "d9/d69/classShader.html#a4362b3c351e543ec784db0ce4e043239", null ]
     ] ],
     [ "GL::get_GL_type_enum", "de/d8b/group__platform.html#ga6efffcb404895fd65d719751e0c1a617", null ]
 ];
