@@ -112,30 +112,32 @@ $(document).ready(function(){initNavTree('dd/dd3/light_8h_source.html','../../')
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;Eigen/Core&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * \file scene/light.h</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"></span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> * \ingroup rendering</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * \brief 一个点光源。</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * \ingroup rendering</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * \file scene/light.h</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"></span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * \ingroup rendering</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * \brief 一个点光源。</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../d5/d79/structLight.html">   16</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d5/d79/structLight.html">Light</a></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_struct" href="../../d5/d79/structLight.html">Light</a>() = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_struct" href="../../d5/d79/structLight.html">Light</a>(<span class="keyword">const</span> Eigen::Vector3f&amp; <a class="code hl_variable" href="../../d5/d79/structLight.html#ac485b2b57b34f6d01f316f57b40c2fed">position</a>, <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d5/d79/structLight.html#a1071eaa556f4bb2a9345fdfba7e6f220">intensity</a>);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"></span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">    /*! \~chinese 光源位置。 */</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="../../d5/d79/structLight.html#ac485b2b57b34f6d01f316f57b40c2fed">   22</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d5/d79/structLight.html#ac485b2b57b34f6d01f316f57b40c2fed">position</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">    /*! \~chinese 光源强度。 */</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../d5/d79/structLight.html#a1071eaa556f4bb2a9345fdfba7e6f220">   24</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d5/d79/structLight.html#a1071eaa556f4bb2a9345fdfba7e6f220">intensity</a>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_LIGHT_H</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{<span class="comment"></span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">    /*! \~chinese 禁止无参构造。 */</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../d5/d79/structLight.html#aff5011d911a33e38dba5ea174679736e">   19</a></span>    <a class="code hl_function" href="../../d5/d79/structLight.html#aff5011d911a33e38dba5ea174679736e">Light</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_function" href="../../d5/d79/structLight.html#aff5011d911a33e38dba5ea174679736e">Light</a>(<span class="keyword">const</span> Eigen::Vector3f&amp; <a class="code hl_variable" href="../../d5/d79/structLight.html#ac485b2b57b34f6d01f316f57b40c2fed">position</a>, <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d5/d79/structLight.html#a1071eaa556f4bb2a9345fdfba7e6f220">intensity</a>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"></span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">    /*! \~chinese 光源位置。 */</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="../../d5/d79/structLight.html#ac485b2b57b34f6d01f316f57b40c2fed">   23</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d5/d79/structLight.html#ac485b2b57b34f6d01f316f57b40c2fed">position</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">    /*! \~chinese 光源强度。 */</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../d5/d79/structLight.html#a1071eaa556f4bb2a9345fdfba7e6f220">   25</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d5/d79/structLight.html#a1071eaa556f4bb2a9345fdfba7e6f220">intensity</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_LIGHT_H</span></div>
 <div class="ttc" id="astructLight_html"><div class="ttname"><a href="../../d5/d79/structLight.html">Light</a></div><div class="ttdoc">一个点光源。</div><div class="ttdef"><b>Definition:</b> light.h:17</div></div>
-<div class="ttc" id="astructLight_html_a1071eaa556f4bb2a9345fdfba7e6f220"><div class="ttname"><a href="../../d5/d79/structLight.html#a1071eaa556f4bb2a9345fdfba7e6f220">Light::intensity</a></div><div class="ttdeci">float intensity</div><div class="ttdef"><b>Definition:</b> light.h:24</div></div>
-<div class="ttc" id="astructLight_html_ac485b2b57b34f6d01f316f57b40c2fed"><div class="ttname"><a href="../../d5/d79/structLight.html#ac485b2b57b34f6d01f316f57b40c2fed">Light::position</a></div><div class="ttdeci">Eigen::Vector3f position</div><div class="ttdef"><b>Definition:</b> light.h:22</div></div>
+<div class="ttc" id="astructLight_html_a1071eaa556f4bb2a9345fdfba7e6f220"><div class="ttname"><a href="../../d5/d79/structLight.html#a1071eaa556f4bb2a9345fdfba7e6f220">Light::intensity</a></div><div class="ttdeci">float intensity</div><div class="ttdef"><b>Definition:</b> light.h:25</div></div>
+<div class="ttc" id="astructLight_html_ac485b2b57b34f6d01f316f57b40c2fed"><div class="ttname"><a href="../../d5/d79/structLight.html#ac485b2b57b34f6d01f316f57b40c2fed">Light::position</a></div><div class="ttdeci">Eigen::Vector3f position</div><div class="ttdef"><b>Definition:</b> light.h:23</div></div>
+<div class="ttc" id="astructLight_html_aff5011d911a33e38dba5ea174679736e"><div class="ttname"><a href="../../d5/d79/structLight.html#aff5011d911a33e38dba5ea174679736e">Light::Light</a></div><div class="ttdeci">Light()=delete</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

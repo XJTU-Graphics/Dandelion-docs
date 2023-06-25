@@ -131,7 +131,7 @@ Public 成员函数</h2></td></tr>
 Public 属性</h2></td></tr>
 <tr class="memitem:abbd6f5b3a4639c3b089037519085bf86"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="../../d8/d4b/classObject.html">Object</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#abbd6f5b3a4639c3b089037519085bf86">objects</a></td></tr>
 <tr class="separator:abbd6f5b3a4639c3b089037519085bf86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a414212450f0d20ca3a9822b3906590c7"><td class="memItemLeft" align="right" valign="top">RenderingMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#a414212450f0d20ca3a9822b3906590c7">mode</a></td></tr>
+<tr class="memitem:a414212450f0d20ca3a9822b3906590c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d81/group__utils.html#ga87cafe63badc45546f2eb940f2a94d70">RenderingMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#a414212450f0d20ca3a9822b3906590c7">mode</a></td></tr>
 <tr class="separator:a414212450f0d20ca3a9822b3906590c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3f9004a2faa3f55665d6aba858b1af5"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#ae3f9004a2faa3f55665d6aba858b1af5">selected_object_id</a></td></tr>
 <tr class="separator:ae3f9004a2faa3f55665d6aba858b1af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,7 +258,7 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 </div><div class="memdoc">
 
 <p>绘制空间坐标轴和 \(y=1\) 平面上表示地面的网格线。 </p>
-<p>这个函数在 \(x\) 和 \(z\) 方向各绘制 100 条网格线，并分别用红、绿、蓝三色绘制 x, y, z 三轴正半轴。 </p>
+<p>这个函数在 \(x\) 和 \(z\) 方向各绘制 100 条网格线，并分别用红、绿、蓝三色绘制 \(x,y,z\) 三轴正半轴。 </p>
 
 </div>
 </div>
@@ -329,11 +329,11 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">RenderingMode Scene::mode</td>
+          <td class="memname"><a class="el" href="../../db/d81/group__utils.html#ga87cafe63badc45546f2eb940f2a94d70">RenderingMode</a> Scene::mode</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>与工具栏 (Tool Bar) 中的工作模式一一对应，<code>render</code> 方法据此调整渲染行为。 </p>
+<p>与 Dandelion 的工作模式一一对应，<code>render</code> 方法据此调整渲染行为。 </p>
 
 </div>
 </div>

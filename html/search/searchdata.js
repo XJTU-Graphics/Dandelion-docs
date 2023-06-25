@@ -1,12 +1,13 @@
 var indexSectionsWithContent =
 {
-  0: "abcdefgilmnoprstuvw~小平开构离项",
+  0: "abcdefgilmnopqrstuvw~小平开构离项",
   1: "acefilmoprstv",
   2: "cglmoprst",
-  3: "abcdefgilmnoprstv~",
+  3: "abcdefgilmnopqrstv~",
   4: "abcdfilmnoprstuvw",
-  5: "u小平离",
-  6: "d开构项"
+  5: "r",
+  6: "u小平离",
+  7: "d开构项"
 };
 
 var indexSectionNames =
@@ -16,8 +17,9 @@ var indexSectionNames =
   2: "files",
   3: "functions",
   4: "variables",
-  5: "groups",
-  6: "pages"
+  5: "enums",
+  6: "groups",
+  7: "pages"
 };
 
 var indexSectionLabels =
@@ -27,7 +29,8 @@ var indexSectionLabels =
   2: "文件",
   3: "函数",
   4: "变量",
-  5: "组",
-  6: "页"
+  5: "枚举",
+  6: "组",
+  7: "页"
 };
 

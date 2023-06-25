@@ -106,7 +106,10 @@ $(document).ready(function(){initNavTree('db/d81/group__utils.html','../../'); i
   <div class="summary">
 <a href="#files">文件</a> &#124;
 <a href="#nested-classes">类</a> &#124;
-<a href="#func-members">函数</a>  </div>
+<a href="#define-members">宏定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
   <div class="headertitle"><div class="title">小工具</div></div>
 </div><!--header-->
 <div class="contents">
@@ -125,6 +128,9 @@ $(document).ready(function(){initNavTree('db/d81/group__utils.html','../../'); i
 <tr class="memitem:dc/df7/rendering_8hpp"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df7/rendering_8hpp.html">rendering.hpp</a></td></tr>
 <tr class="memdesc:dc/df7/rendering_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">这个文件定义了一些和渲染（离线渲染或场景预览）相关的常量、枚举等。 <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d0/d13/stb__image__wrapper_8cpp"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d13/stb__image__wrapper_8cpp.html">stb_image_wrapper.cpp</a></td></tr>
+<tr class="memdesc:d0/d13/stb__image__wrapper_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于包装 stb_image 库的文件。 <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 类</h2></td></tr>
@@ -134,17 +140,134 @@ $(document).ready(function(){initNavTree('db/d81/group__utils.html','../../'); i
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">表示射线与 Mesh 相交结果的结构体。  <a href="../../d6/d30/structIntersection.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ga4a118ad3ee36468a3fa616977a64864e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga4a118ad3ee36468a3fa616977a64864e">RGB</a>(r,  g,  b)&#160;&#160;&#160;(float)r / 255.0f, (float)g / 255.0f, (float)b / 255.0f</td></tr>
+<tr class="separator:ga4a118ad3ee36468a3fa616977a64864e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:ga87cafe63badc45546f2eb940f2a94d70"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga87cafe63badc45546f2eb940f2a94d70">RenderingMode</a> { <b>LAYOUT</b>
+, <b>MODEL</b>
+, <b>RENDER</b>
+ }</td></tr>
+<tr class="separator:ga87cafe63badc45546f2eb940f2a94d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 函数</h2></td></tr>
+<tr class="memitem:ga8af16bad73ed4f92ede4dd5e7841bd7c"><td class="memTemplParams" colspan="2"><a id="ga8af16bad73ed4f92ede4dd5e7841bd7c" name="ga8af16bad73ed4f92ede4dd5e7841bd7c"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga8af16bad73ed4f92ede4dd5e7841bd7c"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>pi</b> ()</td></tr>
+<tr class="memdesc:ga8af16bad73ed4f92ede4dd5e7841bd7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回 float 或 double 类型的 \(\pi\) 值。 <br /></td></tr>
+<tr class="separator:ga8af16bad73ed4f92ede4dd5e7841bd7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc516f532c93b92333ea8e8962393300"><td class="memTemplParams" colspan="2"><a id="gadc516f532c93b92333ea8e8962393300" name="gadc516f532c93b92333ea8e8962393300"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gadc516f532c93b92333ea8e8962393300"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>radians</b> (T <a class="el" href="../../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">degrees</a>)</td></tr>
+<tr class="memdesc:gadc516f532c93b92333ea8e8962393300"><td class="mdescLeft">&#160;</td><td class="mdescRight">将角度转换为弧度。 <br /></td></tr>
+<tr class="separator:gadc516f532c93b92333ea8e8962393300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69c7787a7d4d90c5abd1cd155532202f"><td class="memTemplParams" colspan="2"><a id="ga69c7787a7d4d90c5abd1cd155532202f" name="ga69c7787a7d4d90c5abd1cd155532202f"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga69c7787a7d4d90c5abd1cd155532202f"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>degrees</b> (T <a class="el" href="../../db/d81/group__utils.html#gadc516f532c93b92333ea8e8962393300">radians</a>)</td></tr>
+<tr class="memdesc:ga69c7787a7d4d90c5abd1cd155532202f"><td class="mdescLeft">&#160;</td><td class="mdescRight">将弧度转换为角度。 <br /></td></tr>
+<tr class="separator:ga69c7787a7d4d90c5abd1cd155532202f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94c1d99deed7f3b1a05d8edc8f05219c"><td class="memTemplParams" colspan="2"><a id="ga94c1d99deed7f3b1a05d8edc8f05219c" name="ga94c1d99deed7f3b1a05d8edc8f05219c"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga94c1d99deed7f3b1a05d8edc8f05219c"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>squ</b> (T x)</td></tr>
+<tr class="memdesc:ga94c1d99deed7f3b1a05d8edc8f05219c"><td class="mdescLeft">&#160;</td><td class="mdescRight">求一个数的平方。 <br /></td></tr>
+<tr class="separator:ga94c1d99deed7f3b1a05d8edc8f05219c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9394636a770c3d784a10b8334c33f5d2"><td class="memTemplParams" colspan="2"><a id="ga9394636a770c3d784a10b8334c33f5d2" name="ga9394636a770c3d784a10b8334c33f5d2"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga9394636a770c3d784a10b8334c33f5d2"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>sign</b> (T x)</td></tr>
+<tr class="memdesc:ga9394636a770c3d784a10b8334c33f5d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">符号函数，正数的求值结果为 1，负数为 -1，零的求值结果是 0. <br /></td></tr>
+<tr class="separator:ga9394636a770c3d784a10b8334c33f5d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0dfa41efabad3139029bf25ff2147c79"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga0dfa41efabad3139029bf25ff2147c79"><td class="memTemplItemLeft" align="right" valign="top">std::tuple&lt; T, T, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga0dfa41efabad3139029bf25ff2147c79">quaternion_to_xyz_euler</a> (T w, T x, T y, T z)</td></tr>
+<tr class="memdesc:ga0dfa41efabad3139029bf25ff2147c79"><td class="mdescLeft">&#160;</td><td class="mdescRight">将旋转的四元数表示形式转换为 XYZ 欧拉角表示形式。  <br /></td></tr>
+<tr class="separator:ga0dfa41efabad3139029bf25ff2147c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga058f7f5f254453b5df93c093ebde122a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d5e/structRay.html">Ray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga058f7f5f254453b5df93c093ebde122a">generate_ray</a> (int width, int height, int x, int y, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp;camera, float depth)</td></tr>
 <tr class="memdesc:ga058f7f5f254453b5df93c093ebde122a"><td class="mdescLeft">&#160;</td><td class="mdescRight">给定成像平面的宽度和高度、成像平面上的坐标、成像平面的深度和相机，生成一条射线。  <br /></td></tr>
 <tr class="separator:ga058f7f5f254453b5df93c093ebde122a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1a3a6b802c525058a523c2dadaae1f2b"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga1a3a6b802c525058a523c2dadaae1f2b">naive_intersect</a> (const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray, const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;mesh, const Eigen::Matrix4f model)</td></tr>
-<tr class="memdesc:ga1a3a6b802c525058a523c2dadaae1f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断射线是否与给定的 Mesh 相交。  <br /></td></tr>
+<tr class="memdesc:ga1a3a6b802c525058a523c2dadaae1f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">用朴素方法判断射线是否与给定的 mesh 相交。  <br /></td></tr>
 <tr class="separator:ga1a3a6b802c525058a523c2dadaae1f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:ga7040e00a64700f0d2349c23740688f56"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga7040e00a64700f0d2349c23740688f56">point_size</a> = 4.0f</td></tr>
+<tr class="separator:ga7040e00a64700f0d2349c23740688f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ca9a822f7e8866ae1e5f1e29a3e20b2"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga3ca9a822f7e8866ae1e5f1e29a3e20b2">line_width</a> = 2.0f</td></tr>
+<tr class="separator:ga3ca9a822f7e8866ae1e5f1e29a3e20b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59f39d17248f4e72b89867b326d1cd76"><td class="memItemLeft" align="right" valign="top">constexpr unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga59f39d17248f4e72b89867b326d1cd76">vertex_position_location</a> = 0</td></tr>
+<tr class="separator:ga59f39d17248f4e72b89867b326d1cd76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa30b93e8006d140b22dc6d5a7cd167eb"><td class="memItemLeft" align="right" valign="top"><a id="gaa30b93e8006d140b22dc6d5a7cd167eb" name="gaa30b93e8006d140b22dc6d5a7cd167eb"></a>
+constexpr unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>vertex_color_location</b> = 1</td></tr>
+<tr class="separator:gaa30b93e8006d140b22dc6d5a7cd167eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf9299ed6aa7dd39df06de271a323be8d"><td class="memItemLeft" align="right" valign="top"><a id="gaf9299ed6aa7dd39df06de271a323be8d" name="gaf9299ed6aa7dd39df06de271a323be8d"></a>
+constexpr unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>vertex_normal_location</b> = 2</td></tr>
+<tr class="separator:gaf9299ed6aa7dd39df06de271a323be8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <p>一些杂项工具。 </p>
+<h2 class="groupheader">宏定义说明</h2>
+<a id="ga4a118ad3ee36468a3fa616977a64864e" name="ga4a118ad3ee36468a3fa616977a64864e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4a118ad3ee36468a3fa616977a64864e">&#9670;&#160;</a></span>RGB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RGB</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">r, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">g, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(float)r / 255.0f, (float)g / 255.0f, (float)b / 255.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>将整数形式的颜色转换成浮点数，便于传入 Eigen::Vector3f 的构造函数。 </p>
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a id="ga87cafe63badc45546f2eb940f2a94d70" name="ga87cafe63badc45546f2eb940f2a94d70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga87cafe63badc45546f2eb940f2a94d70">&#9670;&#160;</a></span>RenderingMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="../../db/d81/group__utils.html#ga87cafe63badc45546f2eb940f2a94d70">RenderingMode</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>预览场景时使用的渲染模式，与 Dandelion 的工作模式一一对应。 </p>
+
+</div>
+</div>
 <h2 class="groupheader">函数说明</h2>
 <a id="ga058f7f5f254453b5df93c093ebde122a" name="ga058f7f5f254453b5df93c093ebde122a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga058f7f5f254453b5df93c093ebde122a">&#9670;&#160;</a></span>generate_ray()</h2>
@@ -244,16 +367,143 @@ $(document).ready(function(){initNavTree('db/d81/group__utils.html','../../'); i
       </table>
 </div><div class="memdoc">
 
-<p>判断射线是否与给定的 Mesh 相交。 </p>
+<p>用朴素方法判断射线是否与给定的 mesh 相交。 </p>
+<p>这个函数顺序遍历 mesh 中的所有面片，逐一判断射线是否与之相交，最终取所有交点中 \(t\) 值最小的一个作为结果。</p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">ray</td><td>射线 </td></tr>
-    <tr><td class="paramname">mesh</td><td>指定的 Mesh </td></tr>
-    <tr><td class="paramname">model</td><td>这个 Mesh 对应的模型变换矩阵 (model transform)</td></tr>
+    <tr><td class="paramname">mesh</td><td>指定的 mesh </td></tr>
+    <tr><td class="paramname">model</td><td>这个 mesh 对应的模型变换矩阵 (model transform)</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>一个 <code>std::optional</code> 对象，若相交，则此对象有值 (<code>has_value() == true</code>)；不相交则返回 <code>std::nullopt</code> 。 </dd></dl>
+
+</div>
+</div>
+<a id="ga0dfa41efabad3139029bf25ff2147c79" name="ga0dfa41efabad3139029bf25ff2147c79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0dfa41efabad3139029bf25ff2147c79">&#9670;&#160;</a></span>quaternion_to_xyz_euler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::tuple&lt; T, T, T &gt; quaternion_to_xyz_euler </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将旋转的四元数表示形式转换为 XYZ 欧拉角表示形式。 </p>
+<p>由于欧拉角固有的缺陷，这个函数并不能完全消除航向角（或称方向角 yaw）在 \(\pm 90^\circ\) 附近时产生的抖动现象。</p>
+<p>虽然函数的返回值是 <code>tuple</code>，但使用 <code>tuple</code> 接受返回值并不方便，建议用结构化绑定 </p><div class="fragment"><div class="line"><span class="keyword">auto</span> [x_euler, y_euler, z_euler] = <a class="code hl_function" href="../../db/d81/group__utils.html#ga0dfa41efabad3139029bf25ff2147c79">quaternion_to_xyz_euler</a>(w, x, y, z);</div>
+<div class="ttc" id="agroup__utils_html_ga0dfa41efabad3139029bf25ff2147c79"><div class="ttname"><a href="../../db/d81/group__utils.html#ga0dfa41efabad3139029bf25ff2147c79">quaternion_to_xyz_euler</a></div><div class="ttdeci">std::tuple&lt; T, T, T &gt; quaternion_to_xyz_euler(T w, T x, T y, T z)</div><div class="ttdoc">将旋转的四元数表示形式转换为 XYZ 欧拉角表示形式。</div><div class="ttdef"><b>Definition:</b> math.hpp:99</div></div>
+</div><!-- fragment --><p> 或 <code>std::tie</code> 来接受返回值。 </p>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="ga3ca9a822f7e8866ae1e5f1e29a3e20b2" name="ga3ca9a822f7e8866ae1e5f1e29a3e20b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3ca9a822f7e8866ae1e5f1e29a3e20b2">&#9670;&#160;</a></span>line_width</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float line_width = 2.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>预览场景时用 OpenGL 绘制的线宽。 </p>
+
+</div>
+</div>
+<a id="ga7040e00a64700f0d2349c23740688f56" name="ga7040e00a64700f0d2349c23740688f56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7040e00a64700f0d2349c23740688f56">&#9670;&#160;</a></span>point_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float point_size = 4.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>预览场景时用 OpenGL 绘制的点大小。 </p>
+
+</div>
+</div>
+<a id="ga59f39d17248f4e72b89867b326d1cd76" name="ga59f39d17248f4e72b89867b326d1cd76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga59f39d17248f4e72b89867b326d1cd76">&#9670;&#160;</a></span>vertex_position_location</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr unsigned int vertex_position_location = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>预览场景时，GLSL shader 中各输入变量的位置。相应的变量定义参考 resources/shaders 中的 shader 代码。 </p>
 
 </div>
 </div>

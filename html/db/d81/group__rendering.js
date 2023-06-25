@@ -1,6 +1,10 @@
 var group__rendering =
 [
     [ "rasterizer.h", "db/d37/rasterizer_8h.html", null ],
+    [ "camera.h", "d7/df6/camera_8h.html", null ],
+    [ "light.h", "dd/dd3/light_8h.html", null ],
+    [ "object.h", "de/d10/object_8h.html", null ],
+    [ "scene.h", "db/d83/scene_8h.html", null ],
     [ "GL::Material", "d4/d50/structGL_1_1Material.html", [
       [ "ambient", "d4/d50/structGL_1_1Material.html#afbe14a21e57e922a86e202772688f2ef", null ],
       [ "diffuse", "d4/d50/structGL_1_1Material.html#a2e6bfa1497546db65f1c363985b4a52e", null ],
@@ -27,12 +31,17 @@ var group__rendering =
       [ "world_up", "d7/d7e/structCamera.html#ad8f6527347bebb52dfe3e4bfa963c3b1", null ]
     ] ],
     [ "Light", "d5/d79/structLight.html", [
+      [ "Light", "d5/d79/structLight.html#aff5011d911a33e38dba5ea174679736e", null ],
       [ "intensity", "d5/d79/structLight.html#a1071eaa556f4bb2a9345fdfba7e6f220", null ],
       [ "position", "d5/d79/structLight.html#ac485b2b57b34f6d01f316f57b40c2fed", null ]
     ] ],
     [ "Object", "d8/d4b/classObject.html", [
       [ "model", "d8/d4b/classObject.html#af8f23e84a424cb6061cc9b23bb1f650c", null ],
-      [ "meshes", "d8/d4b/classObject.html#a4f119c87cf943df17a3fc72a37cccc39", null ]
+      [ "render", "d8/d4b/classObject.html#a10c691cfd678ac3a03483639b3fe5f90", null ],
+      [ "center", "d8/d4b/classObject.html#a0e9b68376530dd18ab88b43e8456337f", null ],
+      [ "meshes", "d8/d4b/classObject.html#a4f119c87cf943df17a3fc72a37cccc39", null ],
+      [ "modified", "d8/d4b/classObject.html#abcf908134541bea512ca0148e05f1f44", null ],
+      [ "visible", "d8/d4b/classObject.html#ac2b299eaa47a407bca0e9b47205edd99", null ]
     ] ],
     [ "Scene", "d5/d9c/classScene.html", [
       [ "load", "d5/d9c/classScene.html#aa78f982d2d987f8e4bc6748a834bdccc", null ],

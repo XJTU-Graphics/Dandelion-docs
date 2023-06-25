@@ -146,7 +146,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>aspect_ratio</b></td
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>表示观察点的相机，既可以用于预览视角，也可以用于渲染视角。 </p>
-<p>这个类封装了从观察点、按一定视角去观察目标点的功能，可以完成相应的几何计算， 包括观察矩阵和透视投影矩阵 (view &amp; projection matrix)。 预览场景中相机的显示则不由它直接负责，每个 <a class="el" href="../../d7/d7e/structCamera.html" title="表示观察点的相机，既可以用于预览视角，也可以用于渲染视角。">Camera</a> 对象只有一个 <code>visible</code> 属性表示它是否可见，当相机可见时应当在预览场景中渲染一个相机。 </p>
+<p>这个类封装了从观察点、按一定视角去观察目标点的功能，可以完成相应的几何计算， 包括观察矩阵和透视投影矩阵 (view &amp; projection matrix)。 预览场景中相机的显示不由 <a class="el" href="../../d7/d7e/structCamera.html" title="表示观察点的相机，既可以用于预览视角，也可以用于渲染视角。">Camera</a> 类自己负责，它的功能只是存储参数并构造变换矩阵。 Dandelion 工作于渲染模式下时，Scene 对象将主动渲染一个相机视锥。 </p>
 </div><h2 class="groupheader">构造及析构函数说明</h2>
 <a id="a1207b991b04502fb760f76be67530119" name="a1207b991b04502fb760f76be67530119"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1207b991b04502fb760f76be67530119">&#9670;&#160;</a></span>Camera()</h2>
@@ -226,7 +226,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>aspect_ratio</b></td
         </tr>
       </table>
 </div><div class="memdoc">
-<p>获取该相机的 Projection 矩阵，对应（透视）投影变换。 </p>
+<p>获取该相机的 Projection 矩阵，对应透视投影变换。 </p>
 
 </div>
 </div>

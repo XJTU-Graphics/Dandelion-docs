@@ -64,7 +64,9 @@ var NAVTREE =
       [ "文件成员", "globals.html", [
         [ "全部", "globals.html", null ],
         [ "函数", "globals_func.html", null ],
-        [ "变量", "globals_vars.html", null ]
+        [ "变量", "globals_vars.html", null ],
+        [ "枚举", "globals_enum.html", null ],
+        [ "宏定义", "globals_defs.html", null ]
       ] ]
     ] ]
   ] ]

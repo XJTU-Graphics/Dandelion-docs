@@ -93,4 +93,6 @@ var menudata={children:[
 {text:"文件成员",url:"globals.html",children:[
 {text:"全部",url:"globals.html"},
 {text:"函数",url:"globals_func.html"},
-{text:"变量",url:"globals_vars.html"}]}]}]}
+{text:"变量",url:"globals_vars.html"},
+{text:"枚举",url:"globals_enum.html"},
+{text:"宏定义",url:"globals_defs.html"}]}]}]}
