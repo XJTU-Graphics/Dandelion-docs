@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['main_5fcamera_0',['main_camera',['../d9/d85/classController.html#a20539e548e10bce4d113f894be43665e',1,'Controller']]],
-  ['material_1',['material',['../d8/d88/structGL_1_1Mesh.html#a23777f301b1c83def29d6028713fb348',1,'GL::Mesh']]],
-  ['menubar_2',['menubar',['../d9/d85/classController.html#afe600befbeedd8d86dc9bf7e373e365a',1,'Controller']]],
-  ['meshes_3',['meshes',['../d8/d4b/classObject.html#a4f119c87cf943df17a3fc72a37cccc39',1,'Object']]],
-  ['mode_4',['mode',['../d5/d9c/classScene.html#a414212450f0d20ca3a9822b3906590c7',1,'Scene']]],
-  ['modified_5',['modified',['../d8/d4b/classObject.html#abcf908134541bea512ca0148e05f1f44',1,'Object']]]
+  ['halfedge_0',['halfedge',['../d2/da0/classVertex.html#ae4648b5a80cc3114c57cb7568007ccf2',1,'Vertex::halfedge()'],['../d8/d8c/classEdge.html#ab66068c31ce14cc46ceeac7028248b25',1,'Edge::halfedge()'],['../d3/db7/classFace.html#a6627574fc4284048d6713713f32103c9',1,'Face::halfedge()']]],
+  ['halfedge_5fmesh_1',['halfedge_mesh',['../d5/d9c/classScene.html#aaa74b766e66ccda23ba55490a93db7bb',1,'Scene']]],
+  ['halfedges_2',['halfedges',['../dc/d6d/classHalfedgeMesh.html#a41a0a09ced80f66857c1298935945ccc',1,'HalfedgeMesh']]]
 ];

@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;0.2.2</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -112,35 +112,32 @@ $(document).ready(function(){initNavTree('d0/d65/classHalfedge.html','../../'); 
   <div class="headertitle"><div class="title">Halfedge类 参考</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>半边网格中最关键的几何元素。  
+ <a href="../../d0/d65/classHalfedge.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d4/d70/halfedge_8h_source.html">halfedge.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a75bd90659be39124c8fa86d754f31746"><td class="memItemLeft" align="right" valign="top"><a id="a75bd90659be39124c8fa86d754f31746" name="a75bd90659be39124c8fa86d754f31746"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_neighbors</b> (<a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a> *next, <a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a> *prev, <a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a> *twin, <a class="el" href="../../d2/da0/classVertex.html">Vertex</a> *vertex, <a class="el" href="../../d8/d8c/classEdge.html">Edge</a> *edge, <a class="el" href="../../d3/db7/classFace.html">Face</a> *face)</td></tr>
-<tr class="separator:a75bd90659be39124c8fa86d754f31746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd5ef487a6c984aec8386a81acd574ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d65/classHalfedge.html#abd5ef487a6c984aec8386a81acd574ba">set_neighbors</a> (<a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a> *<a class="el" href="../../d0/d65/classHalfedge.html#a39fffbfff9d7dafc64e8eea6c99dfb0b">next</a>, <a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a> *<a class="el" href="../../d0/d65/classHalfedge.html#a3641c6df7c8eb01d6380cd88987367fc">prev</a>, <a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a> *<a class="el" href="../../d0/d65/classHalfedge.html#a4f982336fcb5cfe922ef05489010ab56">inv</a>, <a class="el" href="../../d2/da0/classVertex.html">Vertex</a> *vertex, <a class="el" href="../../d8/d8c/classEdge.html">Edge</a> *<a class="el" href="../../d0/d65/classHalfedge.html#a0465cf62d0c9580ba6739bf1b73e76e3">edge</a>, <a class="el" href="../../d3/db7/classFace.html">Face</a> *<a class="el" href="../../d0/d65/classHalfedge.html#ab040e45d54199899c27c79615f1088ae">face</a>)</td></tr>
+<tr class="separator:abd5ef487a6c984aec8386a81acd574ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:ad2b5c8becbcd69f87529c19b273af43d"><td class="memItemLeft" align="right" valign="top"><a id="ad2b5c8becbcd69f87529c19b273af43d" name="ad2b5c8becbcd69f87529c19b273af43d"></a>
-const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
+<tr class="memitem:ad2b5c8becbcd69f87529c19b273af43d"><td class="memItemLeft" align="right" valign="top">const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d65/classHalfedge.html#ad2b5c8becbcd69f87529c19b273af43d">id</a></td></tr>
 <tr class="separator:ad2b5c8becbcd69f87529c19b273af43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39fffbfff9d7dafc64e8eea6c99dfb0b"><td class="memItemLeft" align="right" valign="top"><a id="a39fffbfff9d7dafc64e8eea6c99dfb0b" name="a39fffbfff9d7dafc64e8eea6c99dfb0b"></a>
-<a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>next</b></td></tr>
+<tr class="memitem:a39fffbfff9d7dafc64e8eea6c99dfb0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d65/classHalfedge.html#a39fffbfff9d7dafc64e8eea6c99dfb0b">next</a></td></tr>
 <tr class="separator:a39fffbfff9d7dafc64e8eea6c99dfb0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af156a840a1b762dc306346ff1b6bf8df"><td class="memItemLeft" align="right" valign="top"><a id="af156a840a1b762dc306346ff1b6bf8df" name="af156a840a1b762dc306346ff1b6bf8df"></a>
-<a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>prev</b></td></tr>
-<tr class="separator:af156a840a1b762dc306346ff1b6bf8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2911481cdf135acbeed861dd82f55d0f"><td class="memItemLeft" align="right" valign="top"><a id="a2911481cdf135acbeed861dd82f55d0f" name="a2911481cdf135acbeed861dd82f55d0f"></a>
-<a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>inv</b></td></tr>
-<tr class="separator:a2911481cdf135acbeed861dd82f55d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bb515eebb9177fbc2fde1f0893a93c7"><td class="memItemLeft" align="right" valign="top"><a id="a3bb515eebb9177fbc2fde1f0893a93c7" name="a3bb515eebb9177fbc2fde1f0893a93c7"></a>
-<a class="el" href="../../d2/da0/classVertex.html">Vertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>from</b></td></tr>
+<tr class="memitem:a3641c6df7c8eb01d6380cd88987367fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d65/classHalfedge.html#a3641c6df7c8eb01d6380cd88987367fc">prev</a></td></tr>
+<tr class="separator:a3641c6df7c8eb01d6380cd88987367fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f982336fcb5cfe922ef05489010ab56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d65/classHalfedge.html#a4f982336fcb5cfe922ef05489010ab56">inv</a></td></tr>
+<tr class="separator:a4f982336fcb5cfe922ef05489010ab56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bb515eebb9177fbc2fde1f0893a93c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/da0/classVertex.html">Vertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d65/classHalfedge.html#a3bb515eebb9177fbc2fde1f0893a93c7">from</a></td></tr>
 <tr class="separator:a3bb515eebb9177fbc2fde1f0893a93c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0465cf62d0c9580ba6739bf1b73e76e3"><td class="memItemLeft" align="right" valign="top"><a id="a0465cf62d0c9580ba6739bf1b73e76e3" name="a0465cf62d0c9580ba6739bf1b73e76e3"></a>
-<a class="el" href="../../d8/d8c/classEdge.html">Edge</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>edge</b></td></tr>
+<tr class="memitem:a0465cf62d0c9580ba6739bf1b73e76e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d8c/classEdge.html">Edge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d65/classHalfedge.html#a0465cf62d0c9580ba6739bf1b73e76e3">edge</a></td></tr>
 <tr class="separator:a0465cf62d0c9580ba6739bf1b73e76e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab040e45d54199899c27c79615f1088ae"><td class="memItemLeft" align="right" valign="top"><a id="ab040e45d54199899c27c79615f1088ae" name="ab040e45d54199899c27c79615f1088ae"></a>
-<a class="el" href="../../d3/db7/classFace.html">Face</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>face</b></td></tr>
+<tr class="memitem:ab040e45d54199899c27c79615f1088ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/db7/classFace.html">Face</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d65/classHalfedge.html#ab040e45d54199899c27c79615f1088ae">face</a></td></tr>
 <tr class="separator:ab040e45d54199899c27c79615f1088ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
@@ -155,6 +152,169 @@ Private 成员函数</h2></td></tr>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>HalfedgeMesh</b></td></tr>
 <tr class="separator:acd209c8d2675c866e614afa0fb6e3a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>半边网格中最关键的几何元素。 </p>
+<p>半边网格中，所有几何元素都通过半边相互连接，Halfedge 类维护了每条半边的起点、所属的边和面片、 在整个半边网格上的下一条（前一条、反向）半边。实际使用时，只有 <code><a class="el" href="../../dc/d6d/classHalfedgeMesh.html" title="半边网格整体。">HalfedgeMesh</a></code> 类可以构造半边， 因此 <code><a class="el" href="../../d0/d65/classHalfedge.html" title="半边网格中最关键的几何元素。">Halfedge</a></code> 类的构造函数是私有的。 </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="abd5ef487a6c984aec8386a81acd574ba" name="abd5ef487a6c984aec8386a81acd574ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd5ef487a6c984aec8386a81acd574ba">&#9670;&#160;</a></span>set_neighbors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Halfedge::set_neighbors </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a> *&#160;</td>
+          <td class="paramname"><em>next</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a> *&#160;</td>
+          <td class="paramname"><em>prev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a> *&#160;</td>
+          <td class="paramname"><em>inv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/da0/classVertex.html">Vertex</a> *&#160;</td>
+          <td class="paramname"><em>vertex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d8c/classEdge.html">Edge</a> *&#160;</td>
+          <td class="paramname"><em>edge</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/db7/classFace.html">Face</a> *&#160;</td>
+          <td class="paramname"><em>face</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>一次性设置半边的所有属性，各参数含义与同名属性一致。 </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a0465cf62d0c9580ba6739bf1b73e76e3" name="a0465cf62d0c9580ba6739bf1b73e76e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0465cf62d0c9580ba6739bf1b73e76e3">&#9670;&#160;</a></span>edge</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d8c/classEdge.html">Edge</a>* Halfedge::edge</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>半边所在的边。 </p>
+
+</div>
+</div>
+<a id="ab040e45d54199899c27c79615f1088ae" name="ab040e45d54199899c27c79615f1088ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab040e45d54199899c27c79615f1088ae">&#9670;&#160;</a></span>face</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/db7/classFace.html">Face</a>* Halfedge::face</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>半边所在的面片。 </p>
+
+</div>
+</div>
+<a id="a3bb515eebb9177fbc2fde1f0893a93c7" name="a3bb515eebb9177fbc2fde1f0893a93c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bb515eebb9177fbc2fde1f0893a93c7">&#9670;&#160;</a></span>from</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/da0/classVertex.html">Vertex</a>* Halfedge::from</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>半边的起点（发出点）。 </p>
+
+</div>
+</div>
+<a id="ad2b5c8becbcd69f87529c19b273af43d" name="ad2b5c8becbcd69f87529c19b273af43d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2b5c8becbcd69f87529c19b273af43d">&#9670;&#160;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::size_t Halfedge::id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>半边的全局唯一 ID，不会与整个半边网格中任何其他元素重复。 </p>
+
+</div>
+</div>
+<a id="a4f982336fcb5cfe922ef05489010ab56" name="a4f982336fcb5cfe922ef05489010ab56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f982336fcb5cfe922ef05489010ab56">&#9670;&#160;</a></span>inv</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a>* Halfedge::inv</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>反方向的半边。 </p>
+
+</div>
+</div>
+<a id="a39fffbfff9d7dafc64e8eea6c99dfb0b" name="a39fffbfff9d7dafc64e8eea6c99dfb0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39fffbfff9d7dafc64e8eea6c99dfb0b">&#9670;&#160;</a></span>next</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a>* Halfedge::next</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>下一条半边。 </p>
+
+</div>
+</div>
+<a id="a3641c6df7c8eb01d6380cd88987367fc" name="a3641c6df7c8eb01d6380cd88987367fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3641c6df7c8eb01d6380cd88987367fc">&#9670;&#160;</a></span>prev</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a>* Halfedge::prev</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>上一条半边。 </p>
+
+</div>
+</div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li><a class="el" href="../../d4/d70/halfedge_8h_source.html">halfedge.h</a></li>
 <li>halfedge.cpp</li>

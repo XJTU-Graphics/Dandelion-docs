@@ -15,5 +15,7 @@ var group__ui =
       [ "trackball_radius", "d9/d85/classController.html#ae604a933148415cb35ffd6dfdc6572b5", null ],
       [ "window_width", "d9/d85/classController.html#ad186fddab2ac94aa2c8d5c004a106905", null ]
     ] ],
-    [ "UI::Toolbar", "d1/d84/classUI_1_1Toolbar.html", null ]
+    [ "UI::Toolbar", "d1/d84/classUI_1_1Toolbar.html", [
+      [ "mode", "d1/d84/classUI_1_1Toolbar.html#a348efb8685dabb528a5ef0db3d50e0bc", null ]
+    ] ]
 ];

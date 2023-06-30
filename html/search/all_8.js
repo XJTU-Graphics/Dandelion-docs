@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['layout_5flocation_0',['layout_location',['../d6/dba/structGL_1_1ArrayBuffer.html#a5c92fd61c3de20c99e71c48e9fa5291a',1,'GL::ArrayBuffer']]],
-  ['light_1',['Light',['../d5/d79/structLight.html',1,'Light'],['../d5/d79/structLight.html#aff5011d911a33e38dba5ea174679736e',1,'Light::Light()']]],
-  ['light_2eh_2',['light.h',['../dd/dd3/light_8h.html',1,'']]],
-  ['lights_3',['lights',['../d5/d9c/classScene.html#ab3625e4ac3c6e47156edd23e2421e828',1,'Scene']]],
-  ['line_5fwidth_4',['line_width',['../db/d81/group__utils.html#ga3ca9a822f7e8866ae1e5f1e29a3e20b2',1,'rendering.hpp']]],
-  ['load_5',['load',['../d5/d9c/classScene.html#aa78f982d2d987f8e4bc6748a834bdccc',1,'Scene']]]
+  ['id_0',['id',['../d0/d65/classHalfedge.html#ad2b5c8becbcd69f87529c19b273af43d',1,'Halfedge::id()'],['../d2/da0/classVertex.html#ab085aa9ff29987c35c2f00974f090fb3',1,'Vertex::id()'],['../d8/d8c/classEdge.html#a9924bab4b5f40782d80786ad9039e448',1,'Edge::id()'],['../d3/db7/classFace.html#a2291e6265606e738bc18ed0f45a98704',1,'Face::id()']]],
+  ['init_5fui_1',['init_ui',['../df/d1e/classPlatform.html#afca9d338fc86be846ac3835b443faf02',1,'Platform']]],
+  ['intensity_2',['intensity',['../d5/d79/structLight.html#a1071eaa556f4bb2a9345fdfba7e6f220',1,'Light']]],
+  ['intersection_3',['Intersection',['../d6/d30/structIntersection.html',1,'']]],
+  ['inv_4',['inv',['../d0/d65/classHalfedge.html#a4f982336fcb5cfe922ef05489010ab56',1,'Halfedge']]]
 ];

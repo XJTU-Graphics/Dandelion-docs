@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;0.2.2</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -111,14 +111,17 @@ $(document).ready(function(){initNavTree('d3/db7/classFace.html','../../'); init
   <div class="headertitle"><div class="title">Face类 参考</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>半边网格中的面片。  
+ <a href="../../d3/db7/classFace.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d4/d70/halfedge_8h_source.html">halfedge.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:a2291e6265606e738bc18ed0f45a98704"><td class="memItemLeft" align="right" valign="top"><a id="a2291e6265606e738bc18ed0f45a98704" name="a2291e6265606e738bc18ed0f45a98704"></a>
-const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
+<tr class="memitem:a2291e6265606e738bc18ed0f45a98704"><td class="memItemLeft" align="right" valign="top">const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db7/classFace.html#a2291e6265606e738bc18ed0f45a98704">id</a></td></tr>
 <tr class="separator:a2291e6265606e738bc18ed0f45a98704"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6627574fc4284048d6713713f32103c9"><td class="memItemLeft" align="right" valign="top"><a id="a6627574fc4284048d6713713f32103c9" name="a6627574fc4284048d6713713f32103c9"></a>
-<a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>halfedge</b></td></tr>
+<tr class="memitem:a6627574fc4284048d6713713f32103c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db7/classFace.html#a6627574fc4284048d6713713f32103c9">halfedge</a></td></tr>
 <tr class="separator:a6627574fc4284048d6713713f32103c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
@@ -133,6 +136,40 @@ Private 成员函数</h2></td></tr>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>HalfedgeMesh</b></td></tr>
 <tr class="separator:acd209c8d2675c866e614afa0fb6e3a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>半边网格中的面片。 </p>
+<p>半边网格中，每个面片只维护属于自身的某一条半边。 </p>
+</div><h2 class="groupheader">类成员变量说明</h2>
+<a id="a6627574fc4284048d6713713f32103c9" name="a6627574fc4284048d6713713f32103c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6627574fc4284048d6713713f32103c9">&#9670;&#160;</a></span>halfedge</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a>* Face::halfedge</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>属于这个面片的某一条半边。 </p>
+
+</div>
+</div>
+<a id="a2291e6265606e738bc18ed0f45a98704" name="a2291e6265606e738bc18ed0f45a98704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2291e6265606e738bc18ed0f45a98704">&#9670;&#160;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::size_t Face::id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>面片的全局唯一 ID，不会与整个半边网格中任何其他元素重复。 </p>
+
+</div>
+</div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li><a class="el" href="../../d4/d70/halfedge_8h_source.html">halfedge.h</a></li>
 <li>face.cpp</li>

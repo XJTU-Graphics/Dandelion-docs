@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['离线渲染_0',['离线渲染',['../db/d81/group__rendering.html',1,'']]]
+  ['平台相关的部分_0',['平台相关的部分',['../de/d8b/group__platform.html',1,'']]]
 ];

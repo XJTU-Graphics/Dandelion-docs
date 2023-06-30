@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['face_5findex_0',['face_index',['../d6/d30/structIntersection.html#a8eb314eb1047af071a62e692e7deec76',1,'Intersection']]],
-  ['fov_5fy_5fdegrees_1',['fov_y_degrees',['../d7/d7e/structCamera.html#aa3f6b2c9df678347897554480099e342',1,'Camera']]]
+  ['edge_0',['edge',['../d0/d65/classHalfedge.html#a0465cf62d0c9580ba6739bf1b73e76e3',1,'Halfedge']]],
+  ['edges_1',['edges',['../dc/d6d/classHalfedgeMesh.html#a3f00332a264a4fba034ca825199e824d',1,'HalfedgeMesh']]]
 ];

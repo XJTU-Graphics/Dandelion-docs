@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;0.2.2</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -105,6 +105,7 @@ $(document).ready(function(){initNavTree('d1/d84/classUI_1_1Toolbar.html','../..
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
 <a href="#pri-methods">Private 成员函数</a> &#124;
 <a href="#pri-attribs">Private 属性</a> &#124;
 <a href="../../de/dfb/classUI_1_1Toolbar-members.html">所有成员列表</a>  </div>
@@ -119,12 +120,17 @@ $(document).ready(function(){initNavTree('d1/d84/classUI_1_1Toolbar.html','../..
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a350594d91e037a3cca8d61cd59546574"><td class="memItemLeft" align="right" valign="top"><a id="a350594d91e037a3cca8d61cd59546574" name="a350594d91e037a3cca8d61cd59546574"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>select_object_by_id</b> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene, int id)</td></tr>
-<tr class="separator:a350594d91e037a3cca8d61cd59546574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2f98680b6786a132a19ae26f3c2162"><td class="memItemLeft" align="right" valign="top"><a id="ace2f98680b6786a132a19ae26f3c2162" name="ace2f98680b6786a132a19ae26f3c2162"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>select_object_by_id</b> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene, std::optional&lt; std::size_t &gt; object_id)</td></tr>
+<tr class="separator:ace2f98680b6786a132a19ae26f3c2162"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37fdcc0bb4811b139392c198e160fcc9"><td class="memItemLeft" align="right" valign="top"><a id="a37fdcc0bb4811b139392c198e160fcc9" name="a37fdcc0bb4811b139392c198e160fcc9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>render</b> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
 <tr class="separator:a37fdcc0bb4811b139392c198e160fcc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a348efb8685dabb528a5ef0db3d50e0bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d81/group__utils.html#ga1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d84/classUI_1_1Toolbar.html#a348efb8685dabb528a5ef0db3d50e0bc">mode</a></td></tr>
+<tr class="separator:a348efb8685dabb528a5ef0db3d50e0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private 成员函数</h2></td></tr>
@@ -149,7 +155,23 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>gl_rendered_t
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>工具栏提供大部分对场景、物体、相机和光源的操作。 </p>
-</div><hr/>该类的文档由以下文件生成:<ul>
+</div><h2 class="groupheader">类成员变量说明</h2>
+<a id="a348efb8685dabb528a5ef0db3d50e0bc" name="a348efb8685dabb528a5ef0db3d50e0bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a348efb8685dabb528a5ef0db3d50e0bc">&#9670;&#160;</a></span>mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d81/group__utils.html#ga1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> UI::Toolbar::mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>与 Dandelion 的工作模式一一对应，<code>render</code> 方法据此调整渲染行为。 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
 <li><a class="el" href="../../dc/d2a/toolbar_8h_source.html">toolbar.h</a></li>
 <li>toolbar.cpp</li>
 </ul>

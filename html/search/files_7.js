@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['scene_2eh_0',['scene.h',['../db/d83/scene_8h.html',1,'']]],
-  ['settings_2eh_1',['settings.h',['../de/d60/settings_8h.html',1,'']]],
-  ['shader_2ehpp_2',['shader.hpp',['../d9/d52/shader_8hpp.html',1,'']]],
-  ['shader_5fpayload_2eh_3',['shader_payload.h',['../d9/d60/shader__payload_8h.html',1,'']]],
-  ['stb_5fimage_5fwrapper_2ecpp_4',['stb_image_wrapper.cpp',['../d0/d13/stb__image__wrapper_8cpp.html',1,'']]]
+  ['rasterizer_2eh_0',['rasterizer.h',['../db/d37/rasterizer_8h.html',1,'']]],
+  ['ray_2eh_1',['ray.h',['../d5/d92/ray_8h.html',1,'']]],
+  ['rendering_2ehpp_2',['rendering.hpp',['../dc/df7/rendering_8hpp.html',1,'']]]
 ];

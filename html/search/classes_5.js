@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['light_0',['Light',['../d5/d79/structLight.html',1,'']]]
+  ['intersection_0',['Intersection',['../d6/d30/structIntersection.html',1,'']]]
 ];

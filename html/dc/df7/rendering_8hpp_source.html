@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;0.2.2</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('dc/df7/rendering_8hpp_source.html','..
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> * \~chinese</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> * 预览场景时用 OpenGL 绘制的点大小。</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#ga7040e00a64700f0d2349c23740688f56">   36</a></span><span class="keyword">constexpr</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="../../db/d81/group__utils.html#ga7040e00a64700f0d2349c23740688f56">point_size</a> = 4.0f;<span class="comment"></span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#ga7040e00a64700f0d2349c23740688f56">   36</a></span><span class="keyword">constexpr</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="../../db/d81/group__utils.html#ga7040e00a64700f0d2349c23740688f56">point_size</a> = 8.0f;<span class="comment"></span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">/*!</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> * \ingroup utils</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> * \~chinese</span></div>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('dc/df7/rendering_8hpp_source.html','..
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"> * \~chinese</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"> * 预览场景时使用的渲染模式，与 Dandelion 的工作模式一一对应。</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#ga87cafe63badc45546f2eb940f2a94d70">   49</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="../../db/d81/group__utils.html#ga87cafe63badc45546f2eb940f2a94d70">RenderingMode</a></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#ga1352c5fcb6cfad612ba26a0e91355bcb">   49</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="../../db/d81/group__utils.html#ga1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    LAYOUT,</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    MODEL,</div>
@@ -162,10 +162,10 @@ $(document).ready(function(){initNavTree('dc/df7/rendering_8hpp_source.html','..
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_UTILS_RENDERING_HPP</span></div>
+<div class="ttc" id="agroup__utils_html_ga1352c5fcb6cfad612ba26a0e91355bcb"><div class="ttname"><a href="../../db/d81/group__utils.html#ga1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a></div><div class="ttdeci">WorkingMode</div><div class="ttdef"><b>Definition:</b> rendering.hpp:50</div></div>
 <div class="ttc" id="agroup__utils_html_ga3ca9a822f7e8866ae1e5f1e29a3e20b2"><div class="ttname"><a href="../../db/d81/group__utils.html#ga3ca9a822f7e8866ae1e5f1e29a3e20b2">line_width</a></div><div class="ttdeci">constexpr float line_width</div><div class="ttdef"><b>Definition:</b> rendering.hpp:42</div></div>
 <div class="ttc" id="agroup__utils_html_ga59f39d17248f4e72b89867b326d1cd76"><div class="ttname"><a href="../../db/d81/group__utils.html#ga59f39d17248f4e72b89867b326d1cd76">vertex_position_location</a></div><div class="ttdeci">constexpr unsigned int vertex_position_location</div><div class="ttdef"><b>Definition:</b> rendering.hpp:26</div></div>
 <div class="ttc" id="agroup__utils_html_ga7040e00a64700f0d2349c23740688f56"><div class="ttname"><a href="../../db/d81/group__utils.html#ga7040e00a64700f0d2349c23740688f56">point_size</a></div><div class="ttdeci">constexpr float point_size</div><div class="ttdef"><b>Definition:</b> rendering.hpp:36</div></div>
-<div class="ttc" id="agroup__utils_html_ga87cafe63badc45546f2eb940f2a94d70"><div class="ttname"><a href="../../db/d81/group__utils.html#ga87cafe63badc45546f2eb940f2a94d70">RenderingMode</a></div><div class="ttdeci">RenderingMode</div><div class="ttdef"><b>Definition:</b> rendering.hpp:50</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;0.2.2</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -111,17 +111,19 @@ $(document).ready(function(){initNavTree('d2/da0/classVertex.html','../../'); in
   <div class="headertitle"><div class="title">Vertex类 参考</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>半边网格中的顶点。  
+ <a href="../../d2/da0/classVertex.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d4/d70/halfedge_8h_source.html">halfedge.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:ab085aa9ff29987c35c2f00974f090fb3"><td class="memItemLeft" align="right" valign="top"><a id="ab085aa9ff29987c35c2f00974f090fb3" name="ab085aa9ff29987c35c2f00974f090fb3"></a>
-const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
+<tr class="memitem:ab085aa9ff29987c35c2f00974f090fb3"><td class="memItemLeft" align="right" valign="top">const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da0/classVertex.html#ab085aa9ff29987c35c2f00974f090fb3">id</a></td></tr>
 <tr class="separator:ab085aa9ff29987c35c2f00974f090fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4648b5a80cc3114c57cb7568007ccf2"><td class="memItemLeft" align="right" valign="top"><a id="ae4648b5a80cc3114c57cb7568007ccf2" name="ae4648b5a80cc3114c57cb7568007ccf2"></a>
-<a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>halfedge</b></td></tr>
+<tr class="memitem:ae4648b5a80cc3114c57cb7568007ccf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da0/classVertex.html#ae4648b5a80cc3114c57cb7568007ccf2">halfedge</a></td></tr>
 <tr class="separator:ae4648b5a80cc3114c57cb7568007ccf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af590da4b6d7ff4f46e36e866dbf18e26"><td class="memItemLeft" align="right" valign="top"><a id="af590da4b6d7ff4f46e36e866dbf18e26" name="af590da4b6d7ff4f46e36e866dbf18e26"></a>
-Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><b>pos</b></td></tr>
+<tr class="memitem:af590da4b6d7ff4f46e36e866dbf18e26"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da0/classVertex.html#af590da4b6d7ff4f46e36e866dbf18e26">pos</a></td></tr>
 <tr class="separator:af590da4b6d7ff4f46e36e866dbf18e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
@@ -136,6 +138,55 @@ Private 成员函数</h2></td></tr>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>HalfedgeMesh</b></td></tr>
 <tr class="separator:acd209c8d2675c866e614afa0fb6e3a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>半边网格中的顶点。 </p>
+<p>半边网格中，每个顶点只维护自身的坐标和某一条从自身发出的半边。 </p>
+</div><h2 class="groupheader">类成员变量说明</h2>
+<a id="ae4648b5a80cc3114c57cb7568007ccf2" name="ae4648b5a80cc3114c57cb7568007ccf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4648b5a80cc3114c57cb7568007ccf2">&#9670;&#160;</a></span>halfedge</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a>* Vertex::halfedge</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>从这一顶点发出的某条半边。 </p>
+
+</div>
+</div>
+<a id="ab085aa9ff29987c35c2f00974f090fb3" name="ab085aa9ff29987c35c2f00974f090fb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab085aa9ff29987c35c2f00974f090fb3">&#9670;&#160;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::size_t Vertex::id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>顶点的全局唯一 ID，不会与整个半边网格中任何其他元素重复。 </p>
+
+</div>
+</div>
+<a id="af590da4b6d7ff4f46e36e866dbf18e26" name="af590da4b6d7ff4f46e36e866dbf18e26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af590da4b6d7ff4f46e36e866dbf18e26">&#9670;&#160;</a></span>pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Vector3f Vertex::pos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>顶点坐标。 </p>
+
+</div>
+</div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li><a class="el" href="../../d4/d70/halfedge_8h_source.html">halfedge.h</a></li>
 <li>vertex.cpp</li>

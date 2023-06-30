@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;0.2.2</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -123,22 +123,22 @@ $(document).ready(function(){initNavTree('d5/d9c/classScene.html','../../'); ini
 Public 成员函数</h2></td></tr>
 <tr class="memitem:aa78f982d2d987f8e4bc6748a834bdccc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#aa78f982d2d987f8e4bc6748a834bdccc">load</a> (const std::string &amp;file_path)</td></tr>
 <tr class="separator:aa78f982d2d987f8e4bc6748a834bdccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfdfa40f0fc12706c5df9916b866606d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#adfdfa40f0fc12706c5df9916b866606d">render</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader)</td></tr>
-<tr class="memdesc:adfdfa40f0fc12706c5df9916b866606d"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制整个场景。  <br /></td></tr>
-<tr class="separator:adfdfa40f0fc12706c5df9916b866606d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dcbf1d49270fea656c0a86b2bacd95c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#a3dcbf1d49270fea656c0a86b2bacd95c">render</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader, <a class="el" href="../../db/d81/group__utils.html#ga1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> mode)</td></tr>
+<tr class="memdesc:a3dcbf1d49270fea656c0a86b2bacd95c"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制整个场景。  <br /></td></tr>
+<tr class="separator:a3dcbf1d49270fea656c0a86b2bacd95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
 <tr class="memitem:abbd6f5b3a4639c3b089037519085bf86"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="../../d8/d4b/classObject.html">Object</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#abbd6f5b3a4639c3b089037519085bf86">objects</a></td></tr>
 <tr class="separator:abbd6f5b3a4639c3b089037519085bf86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a414212450f0d20ca3a9822b3906590c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d81/group__utils.html#ga87cafe63badc45546f2eb940f2a94d70">RenderingMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#a414212450f0d20ca3a9822b3906590c7">mode</a></td></tr>
-<tr class="separator:a414212450f0d20ca3a9822b3906590c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3f9004a2faa3f55665d6aba858b1af5"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#ae3f9004a2faa3f55665d6aba858b1af5">selected_object_id</a></td></tr>
 <tr class="separator:ae3f9004a2faa3f55665d6aba858b1af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afed13ec4ba2d7ab75b273d507911b498"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d7e/structCamera.html">Camera</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#afed13ec4ba2d7ab75b273d507911b498">camera</a></td></tr>
 <tr class="separator:afed13ec4ba2d7ab75b273d507911b498"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3625e4ac3c6e47156edd23e2421e828"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#ab3625e4ac3c6e47156edd23e2421e828">lights</a></td></tr>
 <tr class="separator:ab3625e4ac3c6e47156edd23e2421e828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa74b766e66ccda23ba55490a93db7bb"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#aaa74b766e66ccda23ba55490a93db7bb">halfedge_mesh</a></td></tr>
+<tr class="separator:aaa74b766e66ccda23ba55490a93db7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private 成员函数</h2></td></tr>
@@ -183,8 +183,8 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 
 </div>
 </div>
-<a id="adfdfa40f0fc12706c5df9916b866606d" name="adfdfa40f0fc12706c5df9916b866606d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfdfa40f0fc12706c5df9916b866606d">&#9670;&#160;</a></span>render()</h2>
+<a id="a3dcbf1d49270fea656c0a86b2bacd95c" name="a3dcbf1d49270fea656c0a86b2bacd95c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dcbf1d49270fea656c0a86b2bacd95c">&#9670;&#160;</a></span>render()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -193,8 +193,18 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
           <td class="memname">void Scene::render </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;&#160;</td>
-          <td class="paramname"><em>shader</em></td><td>)</td>
+          <td class="paramname"><em>shader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d81/group__utils.html#ga1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -307,6 +317,21 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 
 </div>
 </div>
+<a id="aaa74b766e66ccda23ba55490a93db7bb" name="aaa74b766e66ccda23ba55490a93db7bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa74b766e66ccda23ba55490a93db7bb">&#9670;&#160;</a></span>halfedge_mesh</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a>&gt; Scene::halfedge_mesh</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>用于建模模式的半边网格。 </p>
+
+</div>
+</div>
 <a id="ab3625e4ac3c6e47156edd23e2421e828" name="ab3625e4ac3c6e47156edd23e2421e828"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab3625e4ac3c6e47156edd23e2421e828">&#9670;&#160;</a></span>lights</h2>
 
@@ -319,21 +344,6 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
       </table>
 </div><div class="memdoc">
 <p>用于 <b>离线渲染</b> 的光源，和预览时照亮物体的光源无关。 </p>
-
-</div>
-</div>
-<a id="a414212450f0d20ca3a9822b3906590c7" name="a414212450f0d20ca3a9822b3906590c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a414212450f0d20ca3a9822b3906590c7">&#9670;&#160;</a></span>mode</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../db/d81/group__utils.html#ga87cafe63badc45546f2eb940f2a94d70">RenderingMode</a> Scene::mode</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>与 Dandelion 的工作模式一一对应，<code>render</code> 方法据此调整渲染行为。 </p>
 
 </div>
 </div>

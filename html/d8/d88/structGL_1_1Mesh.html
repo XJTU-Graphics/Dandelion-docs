@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;0.2.2</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -122,8 +122,7 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:aa200b9e345e84f759c60c97d1ea97059"><td class="memItemLeft" align="right" valign="top"><a id="aa200b9e345e84f759c60c97d1ea97059" name="aa200b9e345e84f759c60c97d1ea97059"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Mesh</b> (const std::string &amp;name)</td></tr>
 <tr class="separator:aa200b9e345e84f759c60c97d1ea97059"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81afad0fc0201e1c1bc012ba41a22268"><td class="memItemLeft" align="right" valign="top"><a id="a81afad0fc0201e1c1bc012ba41a22268" name="a81afad0fc0201e1c1bc012ba41a22268"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Mesh</b> (const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">Mesh</a> &amp;other)=delete</td></tr>
+<tr class="memitem:a81afad0fc0201e1c1bc012ba41a22268"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html#a81afad0fc0201e1c1bc012ba41a22268">Mesh</a> (const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">Mesh</a> &amp;other)=delete</td></tr>
 <tr class="separator:a81afad0fc0201e1c1bc012ba41a22268"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75180ba39e94350a1ecebbeb2b348c8a"><td class="memItemLeft" align="right" valign="top"><a id="a75180ba39e94350a1ecebbeb2b348c8a" name="a75180ba39e94350a1ecebbeb2b348c8a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Mesh</b> (<a class="el" href="../../d8/d88/structGL_1_1Mesh.html">Mesh</a> &amp;&amp;other)</td></tr>
@@ -139,9 +138,9 @@ Public 成员函数</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:a258f7fea18cb3824ca68bd7181e0d452"><td class="memItemLeft" align="right" valign="top"><a id="a258f7fea18cb3824ca68bd7181e0d452" name="a258f7fea18cb3824ca68bd7181e0d452"></a>
-<a class="el" href="../../d9/d82/structGL_1_1VertexArrayObject.html">VertexArrayObject</a>&#160;</td><td class="memItemRight" valign="bottom"><b>vao</b></td></tr>
-<tr class="separator:a258f7fea18cb3824ca68bd7181e0d452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedebbc5e963f8523b5340928f77c4f04"><td class="memItemLeft" align="right" valign="top"><a id="aedebbc5e963f8523b5340928f77c4f04" name="aedebbc5e963f8523b5340928f77c4f04"></a>
+<a class="el" href="../../d9/d82/structGL_1_1VertexArrayObject.html">VertexArrayObject</a>&#160;</td><td class="memItemRight" valign="bottom"><b>VAO</b></td></tr>
+<tr class="separator:aedebbc5e963f8523b5340928f77c4f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a742d3cb12ad5c576822e9e14712ebbae"><td class="memItemLeft" align="right" valign="top"><a id="a742d3cb12ad5c576822e9e14712ebbae" name="a742d3cb12ad5c576822e9e14712ebbae"></a>
 <a class="el" href="../../d6/dba/structGL_1_1ArrayBuffer.html">ArrayBuffer</a>&lt; float, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vertices</b></td></tr>
 <tr class="separator:a742d3cb12ad5c576822e9e14712ebbae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,7 +173,35 @@ static const Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom">
 <p>这个类为了便于和 OpenGL 交互，不会使用 Eigen 中的各种向量存储顶点坐标、法线和颜色等信息，而是直接持有 VAO、VBO 和 EBO。</p>
 <p>由于 OpenGL API 只支持绘制三角形，GL::Mesh 存储的面片 (face) 只能是三角形。 四边形乃至任意多边形面片需要先三角化成三角形才能被渲染。</p>
 <p>外界读取 <a class="el" href="../../d8/d88/structGL_1_1Mesh.html" title="用于场景预览渲染的 Mesh 类。">Mesh</a> 中的顶点、边等基元时应当调用 <code>vertex/normal/edge/face</code> 方法， 而不是直接访问 <code>vertices.data</code> 等内部存储。这些 <a class="el" href="../../d6/dba/structGL_1_1ArrayBuffer.html" title="对 OpenGL 数组缓冲 (Array Buffer) 的封装。">ArrayBuffer</a> 或 <a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html" title="对 OpenGL 索引数组缓冲 (Element Array Buffer) 的封装。">ElementArrayBuffer</a> 之所以被设为公有成员，是因为在修改数据或进行渲染时需要操作它们， 其他情况下都不必也不应该使用这些扁平存储的数据。 </p>
-</div><h2 class="groupheader">成员函数说明</h2>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a81afad0fc0201e1c1bc012ba41a22268" name="a81afad0fc0201e1c1bc012ba41a22268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81afad0fc0201e1c1bc012ba41a22268">&#9670;&#160;</a></span>Mesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GL::Mesh::Mesh </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">Mesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>由于 VAO 和 <a class="el" href="../../d6/dba/structGL_1_1ArrayBuffer.html" title="对 OpenGL 数组缓冲 (Array Buffer) 的封装。">ArrayBuffer</a> 不允许复制构造，Mesh 也不允许复制构造。 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
 <a id="afbd5496ce294b47446f8af09fe33dbb8" name="afbd5496ce294b47446f8af09fe33dbb8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afbd5496ce294b47446f8af09fe33dbb8">&#9670;&#160;</a></span>edge()</h2>
 
