@@ -5,4 +5,5 @@ build:
     python: "3.10"
   commands:
     - mkdir -p $READTHEDOCS_OUTPUT/html/
-    - cp -r * $READTHEDOCS_OUTPUT/html/
+    - cp -r html $READTHEDOCS_OUTPUT/html/
+    - cp -r mathjax $READTHEDOCS_OUTPUT/
