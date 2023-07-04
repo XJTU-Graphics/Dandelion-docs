@@ -4,5 +4,8 @@ build:
   tools:
     python: "3.10"
   commands:
-    - cp -r html $READTHEDOCS_OUTPUT/
+    - mkdir -p $READTHEDOCS_OUTPUT/html/
+    - cp -r html/* $READTHEDOCS_OUTPUT/html/
     - cp -r mathjax $READTHEDOCS_OUTPUT/
+    - ls -hl $READTHEDOCS_OUTPUT
+    - ls -hl $READTHEDOCS_OUTPUT/html/ | grep index
