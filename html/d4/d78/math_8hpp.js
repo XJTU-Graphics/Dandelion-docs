@@ -1,5 +1,6 @@
 var math_8hpp =
 [
+    [ "clamp", "db/d81/group__utils.html#ga46f6553c90bf08999d0ba4c86130986d", null ],
     [ "degrees", "db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f", null ],
     [ "pi", "db/d81/group__utils.html#ga8af16bad73ed4f92ede4dd5e7841bd7c", null ],
     [ "quaternion_to_xyz_euler", "db/d81/group__utils.html#ga0dfa41efabad3139029bf25ff2147c79", null ],

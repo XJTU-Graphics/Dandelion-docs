@@ -1,7 +1,7 @@
 var indexSectionsWithContent =
 {
   0: "abcdefghilmnopqrstuvw~几小平开构离项",
-  1: "acefghilmoprstv",
+  1: "acefghilmoprstvw",
   2: "cghlmoprst",
   3: "abcdefghilmnopqrstv~",
   4: "abcdefghilmnoprstuvw",

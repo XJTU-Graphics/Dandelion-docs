@@ -175,6 +175,11 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ga94c1d99deed7f3b1a05d8edc8f05219c"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>squ</b> (T x)</td></tr>
 <tr class="memdesc:ga94c1d99deed7f3b1a05d8edc8f05219c"><td class="mdescLeft">&#160;</td><td class="mdescRight">求一个数的平方。 <br /></td></tr>
 <tr class="separator:ga94c1d99deed7f3b1a05d8edc8f05219c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46f6553c90bf08999d0ba4c86130986d"><td class="memTemplParams" colspan="2"><a id="ga46f6553c90bf08999d0ba4c86130986d" name="ga46f6553c90bf08999d0ba4c86130986d"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga46f6553c90bf08999d0ba4c86130986d"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>clamp</b> (T low, T high, T value)</td></tr>
+<tr class="memdesc:ga46f6553c90bf08999d0ba4c86130986d"><td class="mdescLeft">&#160;</td><td class="mdescRight">将一个数截断在给定的上下界之间 <br /></td></tr>
+<tr class="separator:ga46f6553c90bf08999d0ba4c86130986d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9394636a770c3d784a10b8334c33f5d2"><td class="memTemplParams" colspan="2"><a id="ga9394636a770c3d784a10b8334c33f5d2" name="ga9394636a770c3d784a10b8334c33f5d2"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ga9394636a770c3d784a10b8334c33f5d2"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>sign</b> (T x)</td></tr>
@@ -432,7 +437,7 @@ template&lt;typename T &gt; </div>
 <p>将旋转的四元数表示形式转换为 XYZ 欧拉角表示形式。 </p>
 <p>由于欧拉角固有的缺陷，这个函数并不能完全消除航向角（或称方向角 yaw）在 \(\pm 90^\circ\) 附近时产生的抖动现象。</p>
 <p>虽然函数的返回值是 <code>tuple</code>，但使用 <code>tuple</code> 接受返回值并不方便，建议用结构化绑定 </p><div class="fragment"><div class="line"><span class="keyword">auto</span> [x_euler, y_euler, z_euler] = <a class="code hl_function" href="../../db/d81/group__utils.html#ga0dfa41efabad3139029bf25ff2147c79">quaternion_to_xyz_euler</a>(w, x, y, z);</div>
-<div class="ttc" id="agroup__utils_html_ga0dfa41efabad3139029bf25ff2147c79"><div class="ttname"><a href="../../db/d81/group__utils.html#ga0dfa41efabad3139029bf25ff2147c79">quaternion_to_xyz_euler</a></div><div class="ttdeci">std::tuple&lt; T, T, T &gt; quaternion_to_xyz_euler(T w, T x, T y, T z)</div><div class="ttdoc">将旋转的四元数表示形式转换为 XYZ 欧拉角表示形式。</div><div class="ttdef"><b>Definition:</b> math.hpp:99</div></div>
+<div class="ttc" id="agroup__utils_html_ga0dfa41efabad3139029bf25ff2147c79"><div class="ttname"><a href="../../db/d81/group__utils.html#ga0dfa41efabad3139029bf25ff2147c79">quaternion_to_xyz_euler</a></div><div class="ttdeci">std::tuple&lt; T, T, T &gt; quaternion_to_xyz_euler(T w, T x, T y, T z)</div><div class="ttdoc">将旋转的四元数表示形式转换为 XYZ 欧拉角表示形式。</div><div class="ttdef"><b>Definition:</b> math.hpp:109</div></div>
 </div><!-- fragment --><p> 或 <code>std::tie</code> 来接受返回值。 </p>
 
 </div>

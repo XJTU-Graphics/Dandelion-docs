@@ -25,11 +25,13 @@ var annotated_dup =
     [ "Object", "d8/d4b/classObject.html", "d8/d4b/classObject" ],
     [ "Platform", "df/d1e/classPlatform.html", "df/d1e/classPlatform" ],
     [ "Rasterizer", "d3/d7a/classRasterizer.html", null ],
+    [ "RasterizerRenderer", "d7/db0/classRasterizerRenderer.html", null ],
     [ "Ray", "dd/d5e/structRay.html", null ],
     [ "RenderEngine", "d3/d2f/classRenderEngine.html", "d3/d2f/classRenderEngine" ],
     [ "Scene", "d5/d9c/classScene.html", "d5/d9c/classScene" ],
     [ "Shader", "d9/d69/classShader.html", "d9/d69/classShader" ],
     [ "Triangle", "d2/d51/classTriangle.html", "d2/d51/classTriangle" ],
     [ "Vertex", "d2/da0/classVertex.html", "d2/da0/classVertex" ],
-    [ "VertexShaderPayload", "d9/d78/structVertexShaderPayload.html", null ]
+    [ "VertexShaderPayload", "d9/d78/structVertexShaderPayload.html", null ],
+    [ "WhittedRenderer", "da/db7/classWhittedRenderer.html", null ]
 ];

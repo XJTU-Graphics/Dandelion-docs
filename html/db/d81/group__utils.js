@@ -13,6 +13,7 @@ var group__utils =
     ] ],
     [ "RGB", "db/d81/group__utils.html#ga4a118ad3ee36468a3fa616977a64864e", null ],
     [ "WorkingMode", "db/d81/group__utils.html#ga1352c5fcb6cfad612ba26a0e91355bcb", null ],
+    [ "clamp", "db/d81/group__utils.html#ga46f6553c90bf08999d0ba4c86130986d", null ],
     [ "degrees", "db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f", null ],
     [ "generate_ray", "db/d81/group__utils.html#ga058f7f5f254453b5df93c093ebde122a", null ],
     [ "naive_intersect", "db/d81/group__utils.html#ga1a3a6b802c525058a523c2dadaae1f2b", null ],

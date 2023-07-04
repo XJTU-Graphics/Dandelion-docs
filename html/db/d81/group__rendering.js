@@ -13,10 +13,11 @@ var group__rendering =
       [ "specular", "d4/d50/structGL_1_1Material.html#a886340a3db61c4e1139bc795a89fe2f7", null ]
     ] ],
     [ "RenderEngine", "d3/d2f/classRenderEngine.html", [
-      [ "render", "d3/d2f/classRenderEngine.html#a9d65e0ca6739f810354f86b0cf0bd3cc", null ],
-      [ "set_imageSize", "d3/d2f/classRenderEngine.html#aa344fc7bdfaa41a6a413edacbb7691c2", null ],
+      [ "render", "d3/d2f/classRenderEngine.html#aa079a671bcaa22501bc07fb810cce53a", null ],
       [ "rendering_res", "d3/d2f/classRenderEngine.html#a8a00eff19a34210acad2447e7fd358db", null ]
     ] ],
+    [ "RasterizerRenderer", "d7/db0/classRasterizerRenderer.html", null ],
+    [ "WhittedRenderer", "da/db7/classWhittedRenderer.html", null ],
     [ "Triangle", "d2/d51/classTriangle.html", [
       [ "normal", "d2/d51/classTriangle.html#ade47eca7a673c6aa7d7844fdd910fc70", null ],
       [ "vertex", "d2/d51/classTriangle.html#a3f3bbd24c7501750c607875d0a34c97a", null ]
