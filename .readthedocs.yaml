@@ -6,6 +6,5 @@ build:
   commands:
     - mkdir -p $READTHEDOCS_OUTPUT/html/
     - cp -r html/* $READTHEDOCS_OUTPUT/html/
-    - cp -r mathjax $READTHEDOCS_OUTPUT/
     - ls -hl $READTHEDOCS_OUTPUT
     - ls -hl $READTHEDOCS_OUTPUT/html/ | grep index
