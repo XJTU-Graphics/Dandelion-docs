@@ -17,6 +17,7 @@ var annotated_dup =
     [ "Edge", "d8/d8c/classEdge.html", "d8/d8c/classEdge" ],
     [ "Face", "d3/db7/classFace.html", "d3/db7/classFace" ],
     [ "FragmentShaderPayload", "db/dd4/structFragmentShaderPayload.html", null ],
+    [ "Group", "d0/db7/classGroup.html", "d0/db7/classGroup" ],
     [ "Halfedge", "d0/d65/classHalfedge.html", "d0/d65/classHalfedge" ],
     [ "HalfedgeMesh", "dc/d6d/classHalfedgeMesh.html", "dc/d6d/classHalfedgeMesh" ],
     [ "Intersection", "d6/d30/structIntersection.html", "d6/d30/structIntersection" ],

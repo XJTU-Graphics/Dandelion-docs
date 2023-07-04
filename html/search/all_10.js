@@ -1,7 +1,7 @@
 var searchData=
 [
   ['scale_5ffactor_0',['scale_factor',['../de/d60/settings_8h.html#a0e2670c8711a75dd29c3e07307270535',1,'platform.cpp']]],
-  ['scene_1',['Scene',['../d5/d9c/classScene.html',1,'']]],
+  ['scene_1',['Scene',['../d5/d9c/classScene.html',1,'Scene'],['../d5/d9c/classScene.html#a2dced7c96389ef0c6688ad20c8d01e81',1,'Scene::Scene(Scene &amp;other)=delete'],['../d5/d9c/classScene.html#adb7836c08d271fb2f2faebf720d7b5e2',1,'Scene::Scene(Scene &amp;&amp;other)=delete']]],
   ['scene_2eh_2',['scene.h',['../db/d83/scene_8h.html',1,'']]],
   ['selected_5fobject_5fid_3',['selected_object_id',['../d5/d9c/classScene.html#ae3f9004a2faa3f55665d6aba858b1af5',1,'Scene']]],
   ['set_5fimagesize_4',['set_imageSize',['../d3/d2f/classRenderEngine.html#aa344fc7bdfaa41a6a413edacbb7691c2',1,'RenderEngine']]],

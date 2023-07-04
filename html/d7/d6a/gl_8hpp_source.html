@@ -312,7 +312,7 @@ $(document).ready(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../');
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="../../d8/d88/structGL_1_1Mesh.html">  205</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d8/d88/structGL_1_1Mesh.html">Mesh</a></div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>{</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <a class="code hl_struct" href="../../d8/d88/structGL_1_1Mesh.html">Mesh</a>(<span class="keyword">const</span> std::string&amp; name);<span class="comment"></span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <a class="code hl_struct" href="../../d8/d88/structGL_1_1Mesh.html">Mesh</a>();<span class="comment"></span></div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">    /*! \~chinese 由于 VAO 和 ArrayBuffer 不允许复制构造，Mesh 也不允许复制构造。 */</span></div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="../../d8/d88/structGL_1_1Mesh.html#a81afad0fc0201e1c1bc012ba41a22268">  209</a></span>    <a class="code hl_function" href="../../d8/d88/structGL_1_1Mesh.html#a81afad0fc0201e1c1bc012ba41a22268">Mesh</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../d8/d88/structGL_1_1Mesh.html">Mesh</a>&amp; other) = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <a class="code hl_struct" href="../../d8/d88/structGL_1_1Mesh.html">Mesh</a>(<a class="code hl_struct" href="../../d8/d88/structGL_1_1Mesh.html">Mesh</a>&amp;&amp; other);<span class="comment"></span></div>
@@ -334,215 +334,214 @@ $(document).ready(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../');
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    <a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer&lt;3&gt;</a> faces;<span class="comment"></span></div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="comment">    /*! \~chinese 每个 Mesh 只能有一个材质 */</span></div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="../../d8/d88/structGL_1_1Mesh.html#a23777f301b1c83def29d6028713fb348">  228</a></span>    <a class="code hl_struct" href="../../d4/d50/structGL_1_1Material.html">Material</a> <a class="code hl_variable" href="../../d8/d88/structGL_1_1Mesh.html#a23777f301b1c83def29d6028713fb348">material</a>;</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    std::string name;</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>};</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="comment"></span> </div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment"> * \brief 在预览场景时绘制若干线条。</span></div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="comment"> * 这个类与 `GL::Mesh` 相似但更简单，只有顶点 VBO 和线条 EBO，可用于绘制射线、</span></div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="comment"> * 半边等线条元素。</span></div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno"><a class="line" href="../../d4/d91/structGL_1_1LineSet.html">  239</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d4/d91/structGL_1_1LineSet.html">LineSet</a></div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>{</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <a class="code hl_struct" href="../../d4/d91/structGL_1_1LineSet.html">LineSet</a>(<span class="keyword">const</span> std::string&amp; name);<span class="comment"></span></div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="comment">    /*! \~chinese 由于 VAO 和 ArrayBuffer 不允许复制构造，LineSet 也不允许复制构造。 */</span></div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno"><a class="line" href="../../d4/d91/structGL_1_1LineSet.html#afd590478026675e92c7aa324936088c9">  243</a></span>    <a class="code hl_function" href="../../d4/d91/structGL_1_1LineSet.html#afd590478026675e92c7aa324936088c9">LineSet</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../d4/d91/structGL_1_1LineSet.html">LineSet</a>&amp; other) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <a class="code hl_struct" href="../../d4/d91/structGL_1_1LineSet.html">LineSet</a>(<a class="code hl_struct" href="../../d4/d91/structGL_1_1LineSet.html">LineSet</a>&amp;&amp; other);</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="keyword">const</span> <span class="keyword">static</span> Eigen::Vector3f line_color;</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <a class="code hl_struct" href="../../d9/d82/structGL_1_1VertexArrayObject.html">VertexArrayObject</a> VAO;</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <a class="code hl_struct" href="../../d6/dba/structGL_1_1ArrayBuffer.html">ArrayBuffer&lt;float, 3&gt;</a> vertices;</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    <a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer&lt;2&gt;</a> lines;</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    std::string name;</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>};</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="comment">/* ---------------------------------------------------------</span></div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="comment"> * The implementation region for template class and functions.</span></div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="comment"> * ---------------------------------------------------------</span></div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> DataType&gt;</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="../../de/d8b/group__platform.html#ga6efffcb404895fd65d719751e0c1a617">  259</a></span><span class="keyword">constexpr</span> GLenum <a class="code hl_function" href="../../de/d8b/group__platform.html#ga6efffcb404895fd65d719751e0c1a617">get_GL_type_enum</a>()</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>{</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;DataType, char&gt;) {</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        <span class="keywordflow">return</span> GL_BYTE;</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;DataType, unsigned char&gt;) {</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        <span class="keywordflow">return</span> GL_UNSIGNED_BYTE;</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;DataType, int&gt;) {</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        <span class="keywordflow">return</span> GL_INT;</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;DataType, unsigned int&gt;) {</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        <span class="keywordflow">return</span> GL_UNSIGNED_INT;</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;DataType, float&gt;) {</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        <span class="keywordflow">return</span> GL_FLOAT;</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;DataType, double&gt;) {</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        <span class="keywordflow">return</span> GL_DOUBLE;</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    }</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    <span class="keywordflow">return</span> GL_NONE;</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>}</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="comment">// ArrayBuffer ---------------------------------------------</span></div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> size&gt;</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">  280</a></span><a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">ArrayBuffer&lt;T, size&gt;::ArrayBuffer</a>(GLenum buffer_usage, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> layout_location)</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    : usage(buffer_usage), layout_location(layout_location)</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>{</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    glGenBuffers(1, &amp;(this-&gt;descriptor));</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>}</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> size&gt;</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#af87b261e58ef9cb2bcf77f4e4c9eb86b">  287</a></span><a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">ArrayBuffer&lt;T, size&gt;::ArrayBuffer</a>(<a class="code hl_struct" href="../../d6/dba/structGL_1_1ArrayBuffer.html">ArrayBuffer</a>&amp;&amp; other)</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    : descriptor(other.descriptor), usage(other.usage), layout_location(other.layout_location),</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>      data(std::move(other.data))</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>{</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    other.descriptor = 0;</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>}</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> size&gt;</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a7e97dda8fc89ec9da70ffc4f63d5ea12">  295</a></span><a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a7e97dda8fc89ec9da70ffc4f63d5ea12">ArrayBuffer&lt;T, size&gt;::~ArrayBuffer</a>()</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>{</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    <span class="keywordflow">if</span> (this-&gt;descriptor != 0) {</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        glDeleteBuffers(1, &amp;(this-&gt;descriptor));</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    }</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>}</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> size&gt;</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a605a48e7c99737fb0404f54c5245be1f">  304</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a605a48e7c99737fb0404f54c5245be1f">ArrayBuffer&lt;T, size&gt;::append</a>(Ts... values)</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>{</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    <span class="keyword">static_assert</span>((std::is_same_v&lt;<span class="keyword">decltype</span>(values), T&gt; &amp;&amp; ...),</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>                  <span class="stringliteral">&quot;ArrayBuffer: all values to be appended must have the same type as T&quot;</span>);</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    <span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>...(values) == size,</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>                  <span class="stringliteral">&quot;ArrayBuffer: number of values to be appended must be same as size per vertex&quot;</span>);</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    (this-&gt;data.push_back(values), ...);</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>}</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> size&gt;</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#ad5cac6ebe97d4f7cfdddc9b694fe6397">  314</a></span>std::size_t <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#ad5cac6ebe97d4f7cfdddc9b694fe6397">ArrayBuffer&lt;T, size&gt;::count</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    <span class="keywordflow">return</span> this-&gt;data.size() / size;</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>}</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> size&gt;</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#ae486606f2927953ef45babf8adef5bb9">  320</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#ae486606f2927953ef45babf8adef5bb9">ArrayBuffer&lt;T, size&gt;::bind</a>()</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>{</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    glBindBuffer(GL_ARRAY_BUFFER, this-&gt;descriptor);</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>}</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span> </div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> size&gt;</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a75e71a3f0eb57f79b044099e82065242">  326</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a75e71a3f0eb57f79b044099e82065242">ArrayBuffer&lt;T, size&gt;::release</a>()</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>{</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    glBindBuffer(GL_ARRAY_BUFFER, 0);</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>}</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> size&gt;</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a4a875617acb4be2277ae1f1924e63731">  332</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a4a875617acb4be2277ae1f1924e63731">ArrayBuffer&lt;T, size&gt;::specify_vertex_attribute</a>()</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>{</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    GLenum data_type = get_GL_type_enum&lt;T&gt;();</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    glVertexAttribPointer(this-&gt;layout_location, size, data_type, GL_FALSE, size * <span class="keyword">sizeof</span>(T),</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>                          (<span class="keywordtype">void</span>*)0);</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    glEnableVertexAttribArray(this-&gt;layout_location);</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>}</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span> </div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> size&gt;</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#acae88854f303cdab9f1d23bd338bb32a">  341</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#acae88854f303cdab9f1d23bd338bb32a">ArrayBuffer&lt;T, size&gt;::disable</a>()</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>{</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    glDisableVertexAttribArray(this-&gt;layout_location);</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>}</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span> </div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> size&gt;</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#af0736b43512bd7183b7f5de35f4005b0">  347</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#af0736b43512bd7183b7f5de35f4005b0">ArrayBuffer&lt;T, size&gt;::to_gpu</a>()</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>{</div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    this-&gt;bind();</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    glBufferData(GL_ARRAY_BUFFER, <span class="keyword">sizeof</span>(T) * this-&gt;data.size(), this-&gt;data.data(), this-&gt;usage);</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    this-&gt;specify_vertex_attribute();</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>}</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span><span class="comment">// ElementArrayBuffer --------------------------------------</span></div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span> </div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> size&gt;</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span><a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer&lt;size&gt;::ElementArrayBuffer</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> buffer_usage) : usage(buffer_usage)</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>{</div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    glGenBuffers(1, &amp;(this-&gt;descriptor));</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>}</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> size&gt;</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno"><a class="line" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a2f7352881659cbf5f07d9026409dac29">  363</a></span><a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer&lt;size&gt;::ElementArrayBuffer</a>(<a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer</a>&amp;&amp; other)</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>    : descriptor(other.descriptor), usage(other.usage), data(std::move(other.data))</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>{</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    other.descriptor = 0;</div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>}</div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> size&gt;</div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span><a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer&lt;size&gt;::~ElementArrayBuffer</a>()</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>{</div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>    <span class="keywordflow">if</span> (this-&gt;descriptor != 0) {</div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>        glDeleteBuffers(1, &amp;(this-&gt;descriptor));</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>    }</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>}</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span> </div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> size&gt;</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno"><a class="line" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a25fd1f84717b224a566b84214ce33ead">  378</a></span>std::size_t <a class="code hl_function" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a25fd1f84717b224a566b84214ce33ead">ElementArrayBuffer&lt;size&gt;::count</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>    <span class="keywordflow">return</span> this-&gt;data.size() / size;</div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>}</div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> size&gt;</div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno"><a class="line" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#aa826a419aae7eb87828ceb781ee780cf">  385</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#aa826a419aae7eb87828ceb781ee780cf">ElementArrayBuffer&lt;size&gt;::append</a>(Ts... values)</div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>{</div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    <span class="keyword">static_assert</span>((std::is_same_v&lt;<span class="keyword">decltype</span>(values), <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&gt; &amp;&amp; ...),</div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>                  <span class="stringliteral">&quot;ElementArrayBuffer: all values to be appended must be unsigned int&quot;</span>);</div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    <span class="keyword">static_assert</span>(</div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>        <span class="keyword">sizeof</span>...(values) == size,</div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>        <span class="stringliteral">&quot;ElementArrayBuffer: number of values to be appended must be as same as size per vertex&quot;</span>);</div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    (this-&gt;data.push_back(values), ...);</div>
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>}</div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span> </div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> size&gt;</div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span><span class="keywordtype">void</span> <a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer&lt;size&gt;::bind</a>()</div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>{</div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, this-&gt;descriptor);</div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>}</div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span> </div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> size&gt;</div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span><span class="keywordtype">void</span> ElementArrayBuffer&lt;size&gt;::release()</div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>{</div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);</div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>}</div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span> </div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> size&gt;</div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span><span class="keywordtype">void</span> ElementArrayBuffer&lt;size&gt;::to_gpu()</div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>{</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>    this-&gt;bind();</div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>    glBufferData(GL_ELEMENT_ARRAY_BUFFER, <span class="keyword">sizeof</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>) * this-&gt;data.size(),</div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>                 this-&gt;data.data(), this-&gt;usage);</div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>}</div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span> </div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>} <span class="comment">// namespace GL</span></div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span> </div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_PLATFORM_GL_HPP</span></div>
-<div class="ttc" id="agroup__platform_html_ga6efffcb404895fd65d719751e0c1a617"><div class="ttname"><a href="../../de/d8b/group__platform.html#ga6efffcb404895fd65d719751e0c1a617">GL::get_GL_type_enum</a></div><div class="ttdeci">constexpr GLenum get_GL_type_enum()</div><div class="ttdoc">获取某个基本数据类型对应的枚举值（用于传递给某些 OpenGL API）。</div><div class="ttdef"><b>Definition:</b> gl.hpp:259</div></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>};</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="comment"></span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="comment"> * \brief 在预览场景时绘制若干线条。</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment"> * 这个类与 `GL::Mesh` 相似但更简单，只有顶点 VBO 和线条 EBO，可用于绘制射线、</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="comment"> * 半边等线条元素。</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno"><a class="line" href="../../d4/d91/structGL_1_1LineSet.html">  238</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d4/d91/structGL_1_1LineSet.html">LineSet</a></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>{</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <a class="code hl_struct" href="../../d4/d91/structGL_1_1LineSet.html">LineSet</a>(<span class="keyword">const</span> std::string&amp; name);<span class="comment"></span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="comment">    /*! \~chinese 由于 VAO 和 ArrayBuffer 不允许复制构造，LineSet 也不允许复制构造。 */</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno"><a class="line" href="../../d4/d91/structGL_1_1LineSet.html#afd590478026675e92c7aa324936088c9">  242</a></span>    <a class="code hl_function" href="../../d4/d91/structGL_1_1LineSet.html#afd590478026675e92c7aa324936088c9">LineSet</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../d4/d91/structGL_1_1LineSet.html">LineSet</a>&amp; other) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <a class="code hl_struct" href="../../d4/d91/structGL_1_1LineSet.html">LineSet</a>(<a class="code hl_struct" href="../../d4/d91/structGL_1_1LineSet.html">LineSet</a>&amp;&amp; other);</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <span class="keyword">const</span> <span class="keyword">static</span> Eigen::Vector3f line_color;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <a class="code hl_struct" href="../../d9/d82/structGL_1_1VertexArrayObject.html">VertexArrayObject</a> VAO;</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <a class="code hl_struct" href="../../d6/dba/structGL_1_1ArrayBuffer.html">ArrayBuffer&lt;float, 3&gt;</a> vertices;</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer&lt;2&gt;</a> lines;</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    std::string name;</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>};</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="comment">/* ---------------------------------------------------------</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="comment"> * The implementation region for template class and functions.</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="comment"> * ---------------------------------------------------------</span></div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> DataType&gt;</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno"><a class="line" href="../../de/d8b/group__platform.html#ga6efffcb404895fd65d719751e0c1a617">  258</a></span><span class="keyword">constexpr</span> GLenum <a class="code hl_function" href="../../de/d8b/group__platform.html#ga6efffcb404895fd65d719751e0c1a617">get_GL_type_enum</a>()</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>{</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;DataType, char&gt;) {</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        <span class="keywordflow">return</span> GL_BYTE;</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;DataType, unsigned char&gt;) {</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        <span class="keywordflow">return</span> GL_UNSIGNED_BYTE;</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;DataType, int&gt;) {</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        <span class="keywordflow">return</span> GL_INT;</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;DataType, unsigned int&gt;) {</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        <span class="keywordflow">return</span> GL_UNSIGNED_INT;</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;DataType, float&gt;) {</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        <span class="keywordflow">return</span> GL_FLOAT;</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;DataType, double&gt;) {</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        <span class="keywordflow">return</span> GL_DOUBLE;</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    }</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    <span class="keywordflow">return</span> GL_NONE;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>}</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="comment">// ArrayBuffer ---------------------------------------------</span></div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> size&gt;</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">  279</a></span><a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">ArrayBuffer&lt;T, size&gt;::ArrayBuffer</a>(GLenum buffer_usage, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> layout_location)</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    : usage(buffer_usage), layout_location(layout_location)</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>{</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    glGenBuffers(1, &amp;(this-&gt;descriptor));</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>}</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> size&gt;</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#af87b261e58ef9cb2bcf77f4e4c9eb86b">  286</a></span><a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">ArrayBuffer&lt;T, size&gt;::ArrayBuffer</a>(<a class="code hl_struct" href="../../d6/dba/structGL_1_1ArrayBuffer.html">ArrayBuffer</a>&amp;&amp; other)</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    : descriptor(other.descriptor), usage(other.usage), layout_location(other.layout_location),</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>      data(std::move(other.data))</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>{</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    other.descriptor = 0;</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>}</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> size&gt;</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a7e97dda8fc89ec9da70ffc4f63d5ea12">  294</a></span><a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a7e97dda8fc89ec9da70ffc4f63d5ea12">ArrayBuffer&lt;T, size&gt;::~ArrayBuffer</a>()</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>{</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    <span class="keywordflow">if</span> (this-&gt;descriptor != 0) {</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        glDeleteBuffers(1, &amp;(this-&gt;descriptor));</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    }</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>}</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> size&gt;</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a605a48e7c99737fb0404f54c5245be1f">  303</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a605a48e7c99737fb0404f54c5245be1f">ArrayBuffer&lt;T, size&gt;::append</a>(Ts... values)</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>{</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    <span class="keyword">static_assert</span>((std::is_same_v&lt;<span class="keyword">decltype</span>(values), T&gt; &amp;&amp; ...),</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>                  <span class="stringliteral">&quot;ArrayBuffer: all values to be appended must have the same type as T&quot;</span>);</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    <span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>...(values) == size,</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>                  <span class="stringliteral">&quot;ArrayBuffer: number of values to be appended must be same as size per vertex&quot;</span>);</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    (this-&gt;data.push_back(values), ...);</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>}</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span> </div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> size&gt;</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#ad5cac6ebe97d4f7cfdddc9b694fe6397">  313</a></span>std::size_t <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#ad5cac6ebe97d4f7cfdddc9b694fe6397">ArrayBuffer&lt;T, size&gt;::count</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    <span class="keywordflow">return</span> this-&gt;data.size() / size;</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>}</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> size&gt;</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#ae486606f2927953ef45babf8adef5bb9">  319</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#ae486606f2927953ef45babf8adef5bb9">ArrayBuffer&lt;T, size&gt;::bind</a>()</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>{</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    glBindBuffer(GL_ARRAY_BUFFER, this-&gt;descriptor);</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>}</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span> </div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> size&gt;</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a75e71a3f0eb57f79b044099e82065242">  325</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a75e71a3f0eb57f79b044099e82065242">ArrayBuffer&lt;T, size&gt;::release</a>()</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>{</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    glBindBuffer(GL_ARRAY_BUFFER, 0);</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>}</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> size&gt;</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a4a875617acb4be2277ae1f1924e63731">  331</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a4a875617acb4be2277ae1f1924e63731">ArrayBuffer&lt;T, size&gt;::specify_vertex_attribute</a>()</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>{</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    GLenum data_type = get_GL_type_enum&lt;T&gt;();</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    glVertexAttribPointer(this-&gt;layout_location, size, data_type, GL_FALSE, size * <span class="keyword">sizeof</span>(T),</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>                          (<span class="keywordtype">void</span>*)0);</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>    glEnableVertexAttribArray(this-&gt;layout_location);</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>}</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span> </div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> size&gt;</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#acae88854f303cdab9f1d23bd338bb32a">  340</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#acae88854f303cdab9f1d23bd338bb32a">ArrayBuffer&lt;T, size&gt;::disable</a>()</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>{</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    glDisableVertexAttribArray(this-&gt;layout_location);</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>}</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> size&gt;</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#af0736b43512bd7183b7f5de35f4005b0">  346</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#af0736b43512bd7183b7f5de35f4005b0">ArrayBuffer&lt;T, size&gt;::to_gpu</a>()</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>{</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    this-&gt;bind();</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    glBufferData(GL_ARRAY_BUFFER, <span class="keyword">sizeof</span>(T) * this-&gt;data.size(), this-&gt;data.data(), this-&gt;usage);</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    this-&gt;specify_vertex_attribute();</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>}</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span><span class="comment">// ElementArrayBuffer --------------------------------------</span></div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> size&gt;</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span><a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer&lt;size&gt;::ElementArrayBuffer</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> buffer_usage) : usage(buffer_usage)</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>{</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    glGenBuffers(1, &amp;(this-&gt;descriptor));</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>}</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span> </div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> size&gt;</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno"><a class="line" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a2f7352881659cbf5f07d9026409dac29">  362</a></span><a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer&lt;size&gt;::ElementArrayBuffer</a>(<a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer</a>&amp;&amp; other)</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>    : descriptor(other.descriptor), usage(other.usage), data(std::move(other.data))</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>{</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    other.descriptor = 0;</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>}</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> size&gt;</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span><a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer&lt;size&gt;::~ElementArrayBuffer</a>()</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>{</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>    <span class="keywordflow">if</span> (this-&gt;descriptor != 0) {</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>        glDeleteBuffers(1, &amp;(this-&gt;descriptor));</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>    }</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>}</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span> </div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> size&gt;</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno"><a class="line" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a25fd1f84717b224a566b84214ce33ead">  377</a></span>std::size_t <a class="code hl_function" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a25fd1f84717b224a566b84214ce33ead">ElementArrayBuffer&lt;size&gt;::count</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    <span class="keywordflow">return</span> this-&gt;data.size() / size;</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>}</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span> </div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> size&gt;</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno"><a class="line" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#aa826a419aae7eb87828ceb781ee780cf">  384</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#aa826a419aae7eb87828ceb781ee780cf">ElementArrayBuffer&lt;size&gt;::append</a>(Ts... values)</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>{</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>    <span class="keyword">static_assert</span>((std::is_same_v&lt;<span class="keyword">decltype</span>(values), <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&gt; &amp;&amp; ...),</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>                  <span class="stringliteral">&quot;ElementArrayBuffer: all values to be appended must be unsigned int&quot;</span>);</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    <span class="keyword">static_assert</span>(</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>        <span class="keyword">sizeof</span>...(values) == size,</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>        <span class="stringliteral">&quot;ElementArrayBuffer: number of values to be appended must be as same as size per vertex&quot;</span>);</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    (this-&gt;data.push_back(values), ...);</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>}</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span> </div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> size&gt;</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span><span class="keywordtype">void</span> <a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer&lt;size&gt;::bind</a>()</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>{</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, this-&gt;descriptor);</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>}</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span> </div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> size&gt;</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span><span class="keywordtype">void</span> ElementArrayBuffer&lt;size&gt;::release()</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>{</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>}</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span> </div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> size&gt;</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span><span class="keywordtype">void</span> ElementArrayBuffer&lt;size&gt;::to_gpu()</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>{</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    this-&gt;bind();</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>    glBufferData(GL_ELEMENT_ARRAY_BUFFER, <span class="keyword">sizeof</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>) * this-&gt;data.size(),</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>                 this-&gt;data.data(), this-&gt;usage);</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>}</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span> </div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>} <span class="comment">// namespace GL</span></div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span> </div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_PLATFORM_GL_HPP</span></div>
+<div class="ttc" id="agroup__platform_html_ga6efffcb404895fd65d719751e0c1a617"><div class="ttname"><a href="../../de/d8b/group__platform.html#ga6efffcb404895fd65d719751e0c1a617">GL::get_GL_type_enum</a></div><div class="ttdeci">constexpr GLenum get_GL_type_enum()</div><div class="ttdoc">获取某个基本数据类型对应的枚举值（用于传递给某些 OpenGL API）。</div><div class="ttdef"><b>Definition:</b> gl.hpp:258</div></div>
 <div class="ttc" id="astructGL_1_1ArrayBuffer_html"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html">GL::ArrayBuffer</a></div><div class="ttdoc">对 OpenGL 数组缓冲 (Array Buffer) 的封装。</div><div class="ttdef"><b>Definition:</b> gl.hpp:86</div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a20dda9b009642ee54f0b260b3622f3e2"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">GL::ArrayBuffer::ArrayBuffer</a></div><div class="ttdeci">ArrayBuffer(GLenum buffer_usage, unsigned int layout_location)</div><div class="ttdef"><b>Definition:</b> gl.hpp:280</div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a4a875617acb4be2277ae1f1924e63731"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a4a875617acb4be2277ae1f1924e63731">GL::ArrayBuffer::specify_vertex_attribute</a></div><div class="ttdeci">void specify_vertex_attribute()</div><div class="ttdef"><b>Definition:</b> gl.hpp:332</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a20dda9b009642ee54f0b260b3622f3e2"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">GL::ArrayBuffer::ArrayBuffer</a></div><div class="ttdeci">ArrayBuffer(GLenum buffer_usage, unsigned int layout_location)</div><div class="ttdef"><b>Definition:</b> gl.hpp:279</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a4a875617acb4be2277ae1f1924e63731"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a4a875617acb4be2277ae1f1924e63731">GL::ArrayBuffer::specify_vertex_attribute</a></div><div class="ttdeci">void specify_vertex_attribute()</div><div class="ttdef"><b>Definition:</b> gl.hpp:331</div></div>
 <div class="ttc" id="astructGL_1_1ArrayBuffer_html_a5c92fd61c3de20c99e71c48e9fa5291a"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a5c92fd61c3de20c99e71c48e9fa5291a">GL::ArrayBuffer::layout_location</a></div><div class="ttdeci">unsigned int layout_location</div><div class="ttdef"><b>Definition:</b> gl.hpp:129</div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a605a48e7c99737fb0404f54c5245be1f"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a605a48e7c99737fb0404f54c5245be1f">GL::ArrayBuffer::append</a></div><div class="ttdeci">void append(Ts... values)</div><div class="ttdef"><b>Definition:</b> gl.hpp:304</div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a75e71a3f0eb57f79b044099e82065242"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a75e71a3f0eb57f79b044099e82065242">GL::ArrayBuffer::release</a></div><div class="ttdeci">void release()</div><div class="ttdef"><b>Definition:</b> gl.hpp:326</div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a7e97dda8fc89ec9da70ffc4f63d5ea12"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a7e97dda8fc89ec9da70ffc4f63d5ea12">GL::ArrayBuffer::~ArrayBuffer</a></div><div class="ttdeci">~ArrayBuffer()</div><div class="ttdef"><b>Definition:</b> gl.hpp:295</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a605a48e7c99737fb0404f54c5245be1f"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a605a48e7c99737fb0404f54c5245be1f">GL::ArrayBuffer::append</a></div><div class="ttdeci">void append(Ts... values)</div><div class="ttdef"><b>Definition:</b> gl.hpp:303</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a75e71a3f0eb57f79b044099e82065242"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a75e71a3f0eb57f79b044099e82065242">GL::ArrayBuffer::release</a></div><div class="ttdeci">void release()</div><div class="ttdef"><b>Definition:</b> gl.hpp:325</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a7e97dda8fc89ec9da70ffc4f63d5ea12"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a7e97dda8fc89ec9da70ffc4f63d5ea12">GL::ArrayBuffer::~ArrayBuffer</a></div><div class="ttdeci">~ArrayBuffer()</div><div class="ttdef"><b>Definition:</b> gl.hpp:294</div></div>
 <div class="ttc" id="astructGL_1_1ArrayBuffer_html_aa8ecf23830cb9969726478bccb43a01c"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#aa8ecf23830cb9969726478bccb43a01c">GL::ArrayBuffer::usage</a></div><div class="ttdeci">unsigned int usage</div><div class="ttdef"><b>Definition:</b> gl.hpp:125</div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html_acae88854f303cdab9f1d23bd338bb32a"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#acae88854f303cdab9f1d23bd338bb32a">GL::ArrayBuffer::disable</a></div><div class="ttdeci">void disable()</div><div class="ttdef"><b>Definition:</b> gl.hpp:341</div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html_ad5cac6ebe97d4f7cfdddc9b694fe6397"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#ad5cac6ebe97d4f7cfdddc9b694fe6397">GL::ArrayBuffer::count</a></div><div class="ttdeci">std::size_t count() const</div><div class="ttdef"><b>Definition:</b> gl.hpp:314</div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html_ae486606f2927953ef45babf8adef5bb9"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#ae486606f2927953ef45babf8adef5bb9">GL::ArrayBuffer::bind</a></div><div class="ttdeci">void bind()</div><div class="ttdef"><b>Definition:</b> gl.hpp:320</div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html_af0736b43512bd7183b7f5de35f4005b0"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#af0736b43512bd7183b7f5de35f4005b0">GL::ArrayBuffer::to_gpu</a></div><div class="ttdeci">void to_gpu()</div><div class="ttdef"><b>Definition:</b> gl.hpp:347</div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html_af87b261e58ef9cb2bcf77f4e4c9eb86b"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#af87b261e58ef9cb2bcf77f4e4c9eb86b">GL::ArrayBuffer::ArrayBuffer</a></div><div class="ttdeci">ArrayBuffer(ArrayBuffer &amp;&amp;other)</div><div class="ttdef"><b>Definition:</b> gl.hpp:287</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html_acae88854f303cdab9f1d23bd338bb32a"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#acae88854f303cdab9f1d23bd338bb32a">GL::ArrayBuffer::disable</a></div><div class="ttdeci">void disable()</div><div class="ttdef"><b>Definition:</b> gl.hpp:340</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html_ad5cac6ebe97d4f7cfdddc9b694fe6397"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#ad5cac6ebe97d4f7cfdddc9b694fe6397">GL::ArrayBuffer::count</a></div><div class="ttdeci">std::size_t count() const</div><div class="ttdef"><b>Definition:</b> gl.hpp:313</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html_ae486606f2927953ef45babf8adef5bb9"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#ae486606f2927953ef45babf8adef5bb9">GL::ArrayBuffer::bind</a></div><div class="ttdeci">void bind()</div><div class="ttdef"><b>Definition:</b> gl.hpp:319</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html_af0736b43512bd7183b7f5de35f4005b0"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#af0736b43512bd7183b7f5de35f4005b0">GL::ArrayBuffer::to_gpu</a></div><div class="ttdeci">void to_gpu()</div><div class="ttdef"><b>Definition:</b> gl.hpp:346</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html_af87b261e58ef9cb2bcf77f4e4c9eb86b"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#af87b261e58ef9cb2bcf77f4e4c9eb86b">GL::ArrayBuffer::ArrayBuffer</a></div><div class="ttdeci">ArrayBuffer(ArrayBuffer &amp;&amp;other)</div><div class="ttdef"><b>Definition:</b> gl.hpp:286</div></div>
 <div class="ttc" id="astructGL_1_1ElementArrayBuffer_html"><div class="ttname"><a href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">GL::ElementArrayBuffer</a></div><div class="ttdoc">对 OpenGL 索引数组缓冲 (Element Array Buffer) 的封装。</div><div class="ttdef"><b>Definition:</b> gl.hpp:146</div></div>
-<div class="ttc" id="astructGL_1_1ElementArrayBuffer_html_a25fd1f84717b224a566b84214ce33ead"><div class="ttname"><a href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a25fd1f84717b224a566b84214ce33ead">GL::ElementArrayBuffer::count</a></div><div class="ttdeci">std::size_t count() const</div><div class="ttdef"><b>Definition:</b> gl.hpp:378</div></div>
-<div class="ttc" id="astructGL_1_1ElementArrayBuffer_html_a2f7352881659cbf5f07d9026409dac29"><div class="ttname"><a href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a2f7352881659cbf5f07d9026409dac29">GL::ElementArrayBuffer::ElementArrayBuffer</a></div><div class="ttdeci">ElementArrayBuffer(ElementArrayBuffer &amp;&amp;other)</div><div class="ttdef"><b>Definition:</b> gl.hpp:363</div></div>
-<div class="ttc" id="astructGL_1_1ElementArrayBuffer_html_aa826a419aae7eb87828ceb781ee780cf"><div class="ttname"><a href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#aa826a419aae7eb87828ceb781ee780cf">GL::ElementArrayBuffer::append</a></div><div class="ttdeci">void append(Ts... values)</div><div class="ttdef"><b>Definition:</b> gl.hpp:385</div></div>
+<div class="ttc" id="astructGL_1_1ElementArrayBuffer_html_a25fd1f84717b224a566b84214ce33ead"><div class="ttname"><a href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a25fd1f84717b224a566b84214ce33ead">GL::ElementArrayBuffer::count</a></div><div class="ttdeci">std::size_t count() const</div><div class="ttdef"><b>Definition:</b> gl.hpp:377</div></div>
+<div class="ttc" id="astructGL_1_1ElementArrayBuffer_html_a2f7352881659cbf5f07d9026409dac29"><div class="ttname"><a href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a2f7352881659cbf5f07d9026409dac29">GL::ElementArrayBuffer::ElementArrayBuffer</a></div><div class="ttdeci">ElementArrayBuffer(ElementArrayBuffer &amp;&amp;other)</div><div class="ttdef"><b>Definition:</b> gl.hpp:362</div></div>
+<div class="ttc" id="astructGL_1_1ElementArrayBuffer_html_aa826a419aae7eb87828ceb781ee780cf"><div class="ttname"><a href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#aa826a419aae7eb87828ceb781ee780cf">GL::ElementArrayBuffer::append</a></div><div class="ttdeci">void append(Ts... values)</div><div class="ttdef"><b>Definition:</b> gl.hpp:384</div></div>
 <div class="ttc" id="astructGL_1_1ElementArrayBuffer_html_ac8146ee6a703d9e3076aaccee1ab8642"><div class="ttname"><a href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#ac8146ee6a703d9e3076aaccee1ab8642">GL::ElementArrayBuffer::data</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; data</div><div class="ttdef"><b>Definition:</b> gl.hpp:165</div></div>
-<div class="ttc" id="astructGL_1_1LineSet_html"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a></div><div class="ttdoc">在预览场景时绘制若干线条。</div><div class="ttdef"><b>Definition:</b> gl.hpp:240</div></div>
+<div class="ttc" id="astructGL_1_1LineSet_html"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a></div><div class="ttdoc">在预览场景时绘制若干线条。</div><div class="ttdef"><b>Definition:</b> gl.hpp:239</div></div>
 <div class="ttc" id="astructGL_1_1LineSet_html_afd590478026675e92c7aa324936088c9"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html#afd590478026675e92c7aa324936088c9">GL::LineSet::LineSet</a></div><div class="ttdeci">LineSet(const LineSet &amp;other)=delete</div></div>
 <div class="ttc" id="astructGL_1_1Material_html"><div class="ttname"><a href="../../d4/d50/structGL_1_1Material.html">GL::Material</a></div><div class="ttdoc">物体材质。</div><div class="ttdef"><b>Definition:</b> gl.hpp:175</div></div>
 <div class="ttc" id="astructGL_1_1Material_html_a2e6bfa1497546db65f1c363985b4a52e"><div class="ttname"><a href="../../d4/d50/structGL_1_1Material.html#a2e6bfa1497546db65f1c363985b4a52e">GL::Material::diffuse</a></div><div class="ttdeci">Eigen::Vector3f diffuse</div><div class="ttdef"><b>Definition:</b> gl.hpp:183</div></div>
@@ -550,12 +549,12 @@ $(document).ready(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../');
 <div class="ttc" id="astructGL_1_1Material_html_a886340a3db61c4e1139bc795a89fe2f7"><div class="ttname"><a href="../../d4/d50/structGL_1_1Material.html#a886340a3db61c4e1139bc795a89fe2f7">GL::Material::specular</a></div><div class="ttdeci">Eigen::Vector3f specular</div><div class="ttdef"><b>Definition:</b> gl.hpp:185</div></div>
 <div class="ttc" id="astructGL_1_1Material_html_afbe14a21e57e922a86e202772688f2ef"><div class="ttname"><a href="../../d4/d50/structGL_1_1Material.html#afbe14a21e57e922a86e202772688f2ef">GL::Material::ambient</a></div><div class="ttdeci">Eigen::Vector3f ambient</div><div class="ttdef"><b>Definition:</b> gl.hpp:181</div></div>
 <div class="ttc" id="astructGL_1_1Mesh_html"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a></div><div class="ttdoc">用于场景预览渲染的 Mesh 类。</div><div class="ttdef"><b>Definition:</b> gl.hpp:206</div></div>
-<div class="ttc" id="astructGL_1_1Mesh_html_a2207633400950588ddd94676412bd9f0"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#a2207633400950588ddd94676412bd9f0">GL::Mesh::face</a></div><div class="ttdeci">std::array&lt; size_t, 3 &gt; face(size_t index) const</div><div class="ttdef"><b>Definition:</b> gl.cpp:102</div></div>
+<div class="ttc" id="astructGL_1_1Mesh_html_a2207633400950588ddd94676412bd9f0"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#a2207633400950588ddd94676412bd9f0">GL::Mesh::face</a></div><div class="ttdeci">std::array&lt; size_t, 3 &gt; face(size_t index) const</div><div class="ttdef"><b>Definition:</b> gl.cpp:101</div></div>
 <div class="ttc" id="astructGL_1_1Mesh_html_a23777f301b1c83def29d6028713fb348"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#a23777f301b1c83def29d6028713fb348">GL::Mesh::material</a></div><div class="ttdeci">Material material</div><div class="ttdef"><b>Definition:</b> gl.hpp:228</div></div>
 <div class="ttc" id="astructGL_1_1Mesh_html_a81afad0fc0201e1c1bc012ba41a22268"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#a81afad0fc0201e1c1bc012ba41a22268">GL::Mesh::Mesh</a></div><div class="ttdeci">Mesh(const Mesh &amp;other)=delete</div></div>
-<div class="ttc" id="astructGL_1_1Mesh_html_a974fc923af6b4255289ffc20046afb14"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#a974fc923af6b4255289ffc20046afb14">GL::Mesh::normal</a></div><div class="ttdeci">Eigen::Vector3f normal(size_t index) const</div><div class="ttdef"><b>Definition:</b> gl.cpp:92</div></div>
-<div class="ttc" id="astructGL_1_1Mesh_html_abb6cfaaf78c29740bc6dbf215347b203"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#abb6cfaaf78c29740bc6dbf215347b203">GL::Mesh::vertex</a></div><div class="ttdeci">Eigen::Vector3f vertex(size_t index) const</div><div class="ttdef"><b>Definition:</b> gl.cpp:87</div></div>
-<div class="ttc" id="astructGL_1_1Mesh_html_afbd5496ce294b47446f8af09fe33dbb8"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#afbd5496ce294b47446f8af09fe33dbb8">GL::Mesh::edge</a></div><div class="ttdeci">std::array&lt; size_t, 2 &gt; edge(size_t index) const</div><div class="ttdef"><b>Definition:</b> gl.cpp:97</div></div>
+<div class="ttc" id="astructGL_1_1Mesh_html_a974fc923af6b4255289ffc20046afb14"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#a974fc923af6b4255289ffc20046afb14">GL::Mesh::normal</a></div><div class="ttdeci">Eigen::Vector3f normal(size_t index) const</div><div class="ttdef"><b>Definition:</b> gl.cpp:91</div></div>
+<div class="ttc" id="astructGL_1_1Mesh_html_abb6cfaaf78c29740bc6dbf215347b203"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#abb6cfaaf78c29740bc6dbf215347b203">GL::Mesh::vertex</a></div><div class="ttdeci">Eigen::Vector3f vertex(size_t index) const</div><div class="ttdef"><b>Definition:</b> gl.cpp:86</div></div>
+<div class="ttc" id="astructGL_1_1Mesh_html_afbd5496ce294b47446f8af09fe33dbb8"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#afbd5496ce294b47446f8af09fe33dbb8">GL::Mesh::edge</a></div><div class="ttdeci">std::array&lt; size_t, 2 &gt; edge(size_t index) const</div><div class="ttdef"><b>Definition:</b> gl.cpp:96</div></div>
 <div class="ttc" id="astructGL_1_1VertexArrayObject_html"><div class="ttname"><a href="../../d9/d82/structGL_1_1VertexArrayObject.html">GL::VertexArrayObject</a></div><div class="ttdoc">对 OpenGL 顶点数组对象 (Vertex Array Object) 的封装。</div><div class="ttdef"><b>Definition:</b> gl.hpp:46</div></div>
 <div class="ttc" id="astructGL_1_1VertexArrayObject_html_a1666f5d4a67792d9895330c2c86e76da"><div class="ttname"><a href="../../d9/d82/structGL_1_1VertexArrayObject.html#a1666f5d4a67792d9895330c2c86e76da">GL::VertexArrayObject::bind</a></div><div class="ttdeci">void bind()</div><div class="ttdef"><b>Definition:</b> gl.cpp:27</div></div>
 <div class="ttc" id="astructGL_1_1VertexArrayObject_html_a37ca7e8bff292e3f334544dd6ba4ab37"><div class="ttname"><a href="../../d9/d82/structGL_1_1VertexArrayObject.html#a37ca7e8bff292e3f334544dd6ba4ab37">GL::VertexArrayObject::~VertexArrayObject</a></div><div class="ttdeci">~VertexArrayObject()</div><div class="ttdef"><b>Definition:</b> gl.cpp:20</div></div>

@@ -74,7 +74,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"pages.html"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

@@ -128,6 +128,12 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a5c13c26a5d9896e078a32de6593e5be5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a5c13c26a5d9896e078a32de6593e5be5">render</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader, <a class="el" href="../../db/d81/group__utils.html#ga1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> mode, bool selected)</td></tr>
 <tr class="memdesc:a5c13c26a5d9896e078a32de6593e5be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据指定的渲染模式渲染物体。  <br /></td></tr>
 <tr class="separator:a5c13c26a5d9896e078a32de6593e5be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:aef343197effbc642b3f1812ac7bd3d85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#aef343197effbc642b3f1812ac7bd3d85">Object</a> (<a class="el" href="../../d8/d4b/classObject.html">Object</a> &amp;other)=delete</td></tr>
+<tr class="separator:aef343197effbc642b3f1812ac7bd3d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f1113c0cc351878350931775ccb56dc"><td class="memItemLeft" align="right" valign="top"><a id="a2f1113c0cc351878350931775ccb56dc" name="a2f1113c0cc351878350931775ccb56dc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Object</b> (const <a class="el" href="../../d8/d4b/classObject.html">Object</a> &amp;other)=delete</td></tr>
+<tr class="separator:a2f1113c0cc351878350931775ccb56dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
@@ -141,8 +147,8 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td><
 <tr class="separator:ac2b299eaa47a407bca0e9b47205edd99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcf908134541bea512ca0148e05f1f44"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#abcf908134541bea512ca0148e05f1f44">modified</a></td></tr>
 <tr class="separator:abcf908134541bea512ca0148e05f1f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f119c87cf943df17a3fc72a37cccc39"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a4f119c87cf943df17a3fc72a37cccc39">meshes</a></td></tr>
-<tr class="separator:a4f119c87cf943df17a3fc72a37cccc39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3961b5381a8384cc71246ff15f7be99b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a3961b5381a8384cc71246ff15f7be99b">mesh</a></td></tr>
+<tr class="separator:a3961b5381a8384cc71246ff15f7be99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a0e9b68376530dd18ab88b43e8456337f"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a0e9b68376530dd18ab88b43e8456337f">center</a></td></tr>
 <tr class="separator:a0e9b68376530dd18ab88b43e8456337f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,8 +172,37 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>表示物体的类。 </p>
-<p>一个逻辑上的“物体”是若干个 mesh 组成的，所有的 mesh 共享 Model 矩阵，在布局模式下不可分离。 </p>
-</div><h2 class="groupheader">成员函数说明</h2>
+<p>“物体”由存储几何数据的 mesh、存储变换信息的位姿参数和存储颜色的材质组成， 每个 <code><a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a></code> 实例对应唯一的 <code><a class="el" href="../../d8/d88/structGL_1_1Mesh.html" title="用于场景预览渲染的 Mesh 类。">GL::Mesh</a></code>、<code><a class="el" href="../../d4/d50/structGL_1_1Material.html" title="物体材质。">GL::Material</a></code> 和唯一的模型变换矩阵 (Model Transform Matrix)，是场景中的最小单元。</p>
+<p>由于 <code><a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a></code> 对象持有的 <code><a class="el" href="../../d8/d88/structGL_1_1Mesh.html" title="用于场景预览渲染的 Mesh 类。">GL::Mesh</a></code> 实例是不可复制的，当前的 <code><a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a></code> 也是不可复制的。但“复制一个物体”在逻辑上完全合理，因此未来会实现该类的复制构造函数。 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="aef343197effbc642b3f1812ac7bd3d85" name="aef343197effbc642b3f1812ac7bd3d85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef343197effbc642b3f1812ac7bd3d85">&#9670;&#160;</a></span>Object()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Object::Object </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d4b/classObject.html">Object</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>禁止复制物体。 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
 <a id="af8f23e84a424cb6061cc9b23bb1f650c" name="af8f23e84a424cb6061cc9b23bb1f650c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8f23e84a424cb6061cc9b23bb1f650c">&#9670;&#160;</a></span>model()</h2>
 
@@ -182,7 +217,7 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
         </tr>
       </table>
 </div><div class="memdoc">
-<p>此物体的 Model 矩阵，对应模型变换。 </p>
+<p>此物体的模型变换矩阵 (Model Transform Matrix)。 </p>
 
 </div>
 </div>
@@ -242,22 +277,22 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
         </tr>
       </table>
 </div><div class="memdoc">
-<p>物体的中心（位置）、缩放和旋转参数用于构造它的 Model 矩阵。 </p>
+<p>物体的位姿属性，用于构造它的模型变换矩阵 (Model Transform Matrix)。 </p>
 
 </div>
 </div>
-<a id="a4f119c87cf943df17a3fc72a37cccc39" name="a4f119c87cf943df17a3fc72a37cccc39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f119c87cf943df17a3fc72a37cccc39">&#9670;&#160;</a></span>meshes</h2>
+<a id="a3961b5381a8384cc71246ff15f7be99b" name="a3961b5381a8384cc71246ff15f7be99b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3961b5381a8384cc71246ff15f7be99b">&#9670;&#160;</a></span>mesh</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a>&gt; Object::meshes</td>
+          <td class="memname"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> Object::mesh</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>每个 mesh 存储的都是该物体的模型坐标系下的顶点坐标。 如需获取世界坐标系下的坐标，请乘上 Model 矩阵。 </p>
+<p>由于位姿参数每一帧都可能变化，mesh 中存储模型坐标系下的坐标以提高运行效率。 如需获取世界坐标系下的坐标，请乘上模型变换矩阵。 </p>
 
 </div>
 </div>
@@ -272,7 +307,7 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
         </tr>
       </table>
 </div><div class="memdoc">
-<p>用于和半边网格 (halfedge mesh) 同步。 </p>
+<p>表示上一帧过后是否被修改，在第一次加载后或与半边网格不一致时为真。 </p>
 
 </div>
 </div>
@@ -310,7 +345,7 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
         </tr>
       </table>
 </div><div class="memdoc">
-<p>控制物体是否可见，当前并无实际作用。 </p>
+<p>控制物体是否可见，当前恒为真，并无实际作用。 </p>
 
 </div>
 </div>

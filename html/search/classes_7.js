@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['material_0',['Material',['../d4/d50/structGL_1_1Material.html',1,'GL']]],
-  ['menubar_1',['Menubar',['../d6/de2/classUI_1_1Menubar.html',1,'UI']]],
-  ['mesh_2',['Mesh',['../d8/d88/structGL_1_1Mesh.html',1,'GL']]]
+  ['light_0',['Light',['../d5/d79/structLight.html',1,'']]],
+  ['lineset_1',['LineSet',['../d4/d91/structGL_1_1LineSet.html',1,'GL']]]
 ];
