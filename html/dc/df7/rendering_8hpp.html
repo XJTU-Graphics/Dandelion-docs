@@ -106,6 +106,7 @@ $(document).ready(function(){initNavTree('dc/df7/rendering_8hpp.html','../../');
   <div class="summary">
 <a href="#define-members">宏定义</a> &#124;
 <a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a> &#124;
 <a href="#var-members">变量</a>  </div>
   <div class="headertitle"><div class="title">rendering.hpp 文件参考<div class="ingroups"><a class="el" href="../../db/d81/group__utils.html">小工具</a></div></div></div>
 </div><!--header-->
@@ -123,18 +124,28 @@ $(document).ready(function(){initNavTree('dc/df7/rendering_8hpp.html','../../');
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 枚举</h2></td></tr>
-<tr class="memitem:ga1352c5fcb6cfad612ba26a0e91355bcb"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> { <b>LAYOUT</b>
+<tr class="memitem:a1352c5fcb6cfad612ba26a0e91355bcb"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> { <b>LAYOUT</b>
 , <b>MODEL</b>
 , <b>RENDER</b>
+, <b>SIMULATE</b>
  }</td></tr>
-<tr class="separator:ga1352c5fcb6cfad612ba26a0e91355bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a1352c5fcb6cfad612ba26a0e91355bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a0ad2a7688f4c2a3f1e99d3b03bfd1715"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df7/rendering_8hpp.html#a0ad2a7688f4c2a3f1e99d3b03bfd1715">check_picking_enabled</a> (<a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> mode)</td></tr>
+<tr class="memdesc:a0ad2a7688f4c2a3f1e99d3b03bfd1715"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断指定模式是否允许拾取物体。  <br /></td></tr>
+<tr class="separator:a0ad2a7688f4c2a3f1e99d3b03bfd1715"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 变量</h2></td></tr>
-<tr class="memitem:ga7040e00a64700f0d2349c23740688f56"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga7040e00a64700f0d2349c23740688f56">point_size</a> = 8.0f</td></tr>
-<tr class="separator:ga7040e00a64700f0d2349c23740688f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3ca9a822f7e8866ae1e5f1e29a3e20b2"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga3ca9a822f7e8866ae1e5f1e29a3e20b2">line_width</a> = 2.0f</td></tr>
-<tr class="separator:ga3ca9a822f7e8866ae1e5f1e29a3e20b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7040e00a64700f0d2349c23740688f56"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df7/rendering_8hpp.html#a7040e00a64700f0d2349c23740688f56">point_size</a> = 8.0f</td></tr>
+<tr class="separator:a7040e00a64700f0d2349c23740688f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca9a822f7e8866ae1e5f1e29a3e20b2"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df7/rendering_8hpp.html#a3ca9a822f7e8866ae1e5f1e29a3e20b2">line_width</a> = 2.0f</td></tr>
+<tr class="separator:a3ca9a822f7e8866ae1e5f1e29a3e20b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d1f9d29e3d9cadcf469f07790d4be18"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df7/rendering_8hpp.html#a2d1f9d29e3d9cadcf469f07790d4be18">picking_enabled_modes</a> [] = {WorkingMode::LAYOUT, WorkingMode::SIMULATE}</td></tr>
+<tr class="memdesc:a2d1f9d29e3d9cadcf469f07790d4be18"><td class="mdescLeft">&#160;</td><td class="mdescRight">允许拾取物体的模式。  <br /></td></tr>
+<tr class="separator:a2d1f9d29e3d9cadcf469f07790d4be18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:ga59f39d17248f4e72b89867b326d1cd76"><td class="memItemLeft" align="right" valign="top">constexpr unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga59f39d17248f4e72b89867b326d1cd76">vertex_position_location</a> = 0</td></tr>
 <tr class="separator:ga59f39d17248f4e72b89867b326d1cd76"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,7 +158,138 @@ constexpr unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>ver
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>这个文件定义了一些和渲染（离线渲染或场景预览）相关的常量、枚举等。 </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">枚举类型说明</h2>
+<a id="a1352c5fcb6cfad612ba26a0e91355bcb" name="a1352c5fcb6cfad612ba26a0e91355bcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1352c5fcb6cfad612ba26a0e91355bcb">&#9670;&#160;</a></span>WorkingMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>预览场景时使用的渲染模式，与 Dandelion 的工作模式一一对应。 </p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a0ad2a7688f4c2a3f1e99d3b03bfd1715" name="a0ad2a7688f4c2a3f1e99d3b03bfd1715"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ad2a7688f4c2a3f1e99d3b03bfd1715">&#9670;&#160;</a></span>check_picking_enabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool check_picking_enabled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>判断指定模式是否允许拾取物体。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>表示当前的工作模式。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="a3ca9a822f7e8866ae1e5f1e29a3e20b2" name="a3ca9a822f7e8866ae1e5f1e29a3e20b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ca9a822f7e8866ae1e5f1e29a3e20b2">&#9670;&#160;</a></span>line_width</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float line_width = 2.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>预览场景时用 OpenGL 绘制的线宽。 </p>
+
+</div>
+</div>
+<a id="a2d1f9d29e3d9cadcf469f07790d4be18" name="a2d1f9d29e3d9cadcf469f07790d4be18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d1f9d29e3d9cadcf469f07790d4be18">&#9670;&#160;</a></span>picking_enabled_modes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> picking_enabled_modes[] = {WorkingMode::LAYOUT, WorkingMode::SIMULATE}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>允许拾取物体的模式。 </p>
+<p>这个常量数组指定允许拾取物体（直接在屏幕上点击选取物体）的工作模式， 当前为布局模式（用于操纵物体）和物理模拟模式（用于修改物理属性）。 </p>
+
+</div>
+</div>
+<a id="a7040e00a64700f0d2349c23740688f56" name="a7040e00a64700f0d2349c23740688f56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7040e00a64700f0d2349c23740688f56">&#9670;&#160;</a></span>point_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float point_size = 8.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>预览场景时用 OpenGL 绘制的点大小。 </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -23,6 +23,7 @@ var annotated_dup =
     [ "Intersection", "d6/d30/structIntersection.html", "d6/d30/structIntersection" ],
     [ "Light", "d5/d79/structLight.html", "d5/d79/structLight" ],
     [ "Object", "d8/d4b/classObject.html", "d8/d4b/classObject" ],
+    [ "ObjectBackup", "db/d1c/structObjectBackup.html", null ],
     [ "Platform", "df/d1e/classPlatform.html", "df/d1e/classPlatform" ],
     [ "Rasterizer", "d3/d7a/classRasterizer.html", null ],
     [ "RasterizerRenderer", "d7/db0/classRasterizerRenderer.html", null ],

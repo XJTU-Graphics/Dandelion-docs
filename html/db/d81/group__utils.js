@@ -12,7 +12,6 @@ var group__utils =
       [ "t", "d6/d30/structIntersection.html#a369acde39ebf5283fb012181cd262055", null ]
     ] ],
     [ "RGB", "db/d81/group__utils.html#ga4a118ad3ee36468a3fa616977a64864e", null ],
-    [ "WorkingMode", "db/d81/group__utils.html#ga1352c5fcb6cfad612ba26a0e91355bcb", null ],
     [ "clamp", "db/d81/group__utils.html#ga46f6553c90bf08999d0ba4c86130986d", null ],
     [ "degrees", "db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f", null ],
     [ "generate_ray", "db/d81/group__utils.html#ga058f7f5f254453b5df93c093ebde122a", null ],
@@ -22,7 +21,5 @@ var group__utils =
     [ "radians", "db/d81/group__utils.html#gadc516f532c93b92333ea8e8962393300", null ],
     [ "sign", "db/d81/group__utils.html#ga9394636a770c3d784a10b8334c33f5d2", null ],
     [ "squ", "db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c", null ],
-    [ "line_width", "db/d81/group__utils.html#ga3ca9a822f7e8866ae1e5f1e29a3e20b2", null ],
-    [ "point_size", "db/d81/group__utils.html#ga7040e00a64700f0d2349c23740688f56", null ],
     [ "vertex_position_location", "db/d81/group__utils.html#ga59f39d17248f4e72b89867b326d1cd76", null ]
 ];

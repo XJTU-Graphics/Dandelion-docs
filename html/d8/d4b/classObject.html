@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('d8/d4b/classObject.html','../../'); in
 <a href="#pri-attribs">Private 属性</a> &#124;
 <a href="#pri-static-attribs">静态 Private 属性</a> &#124;
 <a href="../../d7/dc8/classObject-members.html">所有成员列表</a>  </div>
-  <div class="headertitle"><div class="title">Object类 参考<div class="ingroups"><a class="el" href="../../db/d81/group__rendering.html">离线渲染</a></div></div></div>
+  <div class="headertitle"><div class="title">Object类 参考<div class="ingroups"><a class="el" href="../../db/d81/group__rendering.html">离线渲染</a> &#124; <a class="el" href="../../d9/d77/group__simulation.html">物理模拟</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -125,7 +125,10 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:aa164f4cf0ebff3e52c00167953866f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8f23e84a424cb6061cc9b23bb1f650c"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix4f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#af8f23e84a424cb6061cc9b23bb1f650c">model</a> ()</td></tr>
 <tr class="separator:af8f23e84a424cb6061cc9b23bb1f650c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c13c26a5d9896e078a32de6593e5be5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a5c13c26a5d9896e078a32de6593e5be5">render</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader, <a class="el" href="../../db/d81/group__utils.html#ga1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> mode, bool selected)</td></tr>
+<tr class="memitem:aaa2867a4c1f99f99806ea093c411e861"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#aaa2867a4c1f99f99806ea093c411e861">update</a> (float delta_t)</td></tr>
+<tr class="memdesc:aaa2867a4c1f99f99806ea093c411e861"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新当前帧的物理属性。  <br /></td></tr>
+<tr class="separator:aaa2867a4c1f99f99806ea093c411e861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c13c26a5d9896e078a32de6593e5be5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a5c13c26a5d9896e078a32de6593e5be5">render</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader, <a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> mode, bool selected)</td></tr>
 <tr class="memdesc:a5c13c26a5d9896e078a32de6593e5be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据指定的渲染模式渲染物体。  <br /></td></tr>
 <tr class="separator:a5c13c26a5d9896e078a32de6593e5be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
@@ -147,6 +150,12 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td><
 <tr class="separator:ac2b299eaa47a407bca0e9b47205edd99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcf908134541bea512ca0148e05f1f44"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#abcf908134541bea512ca0148e05f1f44">modified</a></td></tr>
 <tr class="separator:abcf908134541bea512ca0148e05f1f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72eed21f81afdf95370d638db35b59e1"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a72eed21f81afdf95370d638db35b59e1">velocity</a></td></tr>
+<tr class="separator:a72eed21f81afdf95370d638db35b59e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa31820215a5450a83c624324258f00dd"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#aa31820215a5450a83c624324258f00dd">force</a></td></tr>
+<tr class="separator:aa31820215a5450a83c624324258f00dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60866179af7cb2aad410ea01de546e4e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a60866179af7cb2aad410ea01de546e4e">mass</a></td></tr>
+<tr class="separator:a60866179af7cb2aad410ea01de546e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3961b5381a8384cc71246ff15f7be99b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a3961b5381a8384cc71246ff15f7be99b">mesh</a></td></tr>
 <tr class="separator:a3961b5381a8384cc71246ff15f7be99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
@@ -236,7 +245,7 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../db/d81/group__utils.html#ga1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a>&#160;</td>
           <td class="paramname"><em>mode</em>, </td>
         </tr>
         <tr>
@@ -265,6 +274,33 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 
 </div>
 </div>
+<a id="aaa2867a4c1f99f99806ea093c411e861" name="aaa2867a4c1f99f99806ea093c411e861"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa2867a4c1f99f99806ea093c411e861">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Object::update </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>delta_t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>更新当前帧的物理属性。 </p>
+<p>根据上一帧结束时物体当前的位置、速度、合外力，更新物体当前帧结束时的物理属性。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta_t</td><td>当前帧的时长，以秒为单位。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">类成员变量说明</h2>
 <a id="a0e9b68376530dd18ab88b43e8456337f" name="a0e9b68376530dd18ab88b43e8456337f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e9b68376530dd18ab88b43e8456337f">&#9670;&#160;</a></span>center</h2>
@@ -278,6 +314,36 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
       </table>
 </div><div class="memdoc">
 <p>物体的位姿属性，用于构造它的模型变换矩阵 (Model Transform Matrix)。 </p>
+
+</div>
+</div>
+<a id="aa31820215a5450a83c624324258f00dd" name="aa31820215a5450a83c624324258f00dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa31820215a5450a83c624324258f00dd">&#9670;&#160;</a></span>force</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Vector3f Object::force</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>物体所受的合外力。 </p>
+
+</div>
+</div>
+<a id="a60866179af7cb2aad410ea01de546e4e" name="a60866179af7cb2aad410ea01de546e4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60866179af7cb2aad410ea01de546e4e">&#9670;&#160;</a></span>mass</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Object::mass</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>物体质量 </p>
 
 </div>
 </div>
@@ -331,6 +397,21 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 </table>
 </div><div class="memdoc">
 <p>下一个可用的物体 ID 。 </p>
+
+</div>
+</div>
+<a id="a72eed21f81afdf95370d638db35b59e1" name="a72eed21f81afdf95370d638db35b59e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72eed21f81afdf95370d638db35b59e1">&#9670;&#160;</a></span>velocity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Vector3f Object::velocity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>物体的速度。 </p>
 
 </div>
 </div>

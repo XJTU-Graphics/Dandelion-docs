@@ -1,12 +1,12 @@
 var indexSectionsWithContent =
 {
-  0: "abcdefghilmnopqrstuvw~几小平开构离项",
+  0: "abcdefghilmnopqrstuvw~几小平开构物离项",
   1: "acefghilmoprstvw",
   2: "cghlmoprst",
-  3: "abcdefghilmnopqrstv~",
+  3: "abcdefghilmnopqrstuv~",
   4: "abcdefghilmnoprstuvw",
   5: "w",
-  6: "u几小平离",
+  6: "u几小平物离",
   7: "d开构项"
 };
 

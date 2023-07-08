@@ -75,7 +75,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"index.html#鸣谢"
+"dc/d6d/classHalfedgeMesh.html#a1214b2ccc858ceb5d5967ba9e9792006"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';
