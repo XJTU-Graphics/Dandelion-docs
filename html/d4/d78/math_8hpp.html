@@ -104,7 +104,8 @@ $(document).ready(function(){initNavTree('d4/d78/math_8hpp.html','../../'); init
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">函数</a>  </div>
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
   <div class="headertitle"><div class="title">math.hpp 文件参考<div class="ingroups"><a class="el" href="../../db/d81/group__utils.html">小工具</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -113,6 +114,7 @@ $(document).ready(function(){initNavTree('d4/d78/math_8hpp.html','../../'); init
 <a href="#details">更多...</a></p>
 <div class="textblock"><code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;tuple&gt;</code><br />
+<code>#include &lt;Eigen/Core&gt;</code><br />
 </div>
 <p><a href="../../d4/d78/math_8hpp_source.html">浏览源代码.</a></p>
 <table class="memberdecls">
@@ -160,6 +162,15 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ga0dfa41efabad3139029bf25ff2147c79"><td class="memTemplItemLeft" align="right" valign="top">std::tuple&lt; T, T, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga0dfa41efabad3139029bf25ff2147c79">quaternion_to_xyz_euler</a> (T w, T x, T y, T z)</td></tr>
 <tr class="memdesc:ga0dfa41efabad3139029bf25ff2147c79"><td class="mdescLeft">&#160;</td><td class="mdescRight">将旋转的四元数表示形式转换为 XYZ 欧拉角表示形式。  <br /></td></tr>
 <tr class="separator:ga0dfa41efabad3139029bf25ff2147c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:af561c357ce00686b0487f0e55558c503"><td class="memItemLeft" align="right" valign="top"><a id="af561c357ce00686b0487f0e55558c503" name="af561c357ce00686b0487f0e55558c503"></a>
+const Eigen::Matrix3f&#160;</td><td class="memItemRight" valign="bottom"><b>I3f</b> = Eigen::Matrix3f::Identity()</td></tr>
+<tr class="separator:af561c357ce00686b0487f0e55558c503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b964c8b0a76c7743c378e0b62607536"><td class="memItemLeft" align="right" valign="top"><a id="a3b964c8b0a76c7743c378e0b62607536" name="a3b964c8b0a76c7743c378e0b62607536"></a>
+const Eigen::Matrix4f&#160;</td><td class="memItemRight" valign="bottom"><b>I4f</b> = Eigen::Matrix4f::Identity()</td></tr>
+<tr class="separator:a3b964c8b0a76c7743c378e0b62607536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>这个文件提供一些方便使用的数学函数。 </p>

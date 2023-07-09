@@ -106,7 +106,6 @@ $(document).ready(function(){initNavTree('d4/d91/structGL_1_1LineSet.html','../.
   <div class="summary">
 <a href="#pub-methods">Public 成员函数</a> &#124;
 <a href="#pub-attribs">Public 属性</a> &#124;
-<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
 <a href="../../da/d0e/structGL_1_1LineSet-members.html">所有成员列表</a>  </div>
   <div class="headertitle"><div class="title">GL::LineSet结构体 参考</div></div>
 </div><!--header-->
@@ -119,17 +118,30 @@ $(document).ready(function(){initNavTree('d4/d91/structGL_1_1LineSet.html','../.
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a13bb8aa70400fe86c4cff50fdfe9f398"><td class="memItemLeft" align="right" valign="top"><a id="a13bb8aa70400fe86c4cff50fdfe9f398" name="a13bb8aa70400fe86c4cff50fdfe9f398"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>LineSet</b> (const std::string &amp;name)</td></tr>
-<tr class="separator:a13bb8aa70400fe86c4cff50fdfe9f398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a338cf05992231a9c465a545a975f7041"><td class="memItemLeft" align="right" valign="top"><a id="a338cf05992231a9c465a545a975f7041" name="a338cf05992231a9c465a545a975f7041"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>LineSet</b> (const std::string &amp;name, Eigen::Vector3f color=Eigen::Vector3f(<a class="el" href="../../db/d81/group__utils.html#ga4a118ad3ee36468a3fa616977a64864e">RGB</a>(255, 215, 15)))</td></tr>
+<tr class="separator:a338cf05992231a9c465a545a975f7041"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd590478026675e92c7aa324936088c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html#afd590478026675e92c7aa324936088c9">LineSet</a> (const <a class="el" href="../../d4/d91/structGL_1_1LineSet.html">LineSet</a> &amp;other)=delete</td></tr>
 <tr class="separator:afd590478026675e92c7aa324936088c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f9d141939e260553b57c97c75572b2a"><td class="memItemLeft" align="right" valign="top"><a id="a4f9d141939e260553b57c97c75572b2a" name="a4f9d141939e260553b57c97c75572b2a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>LineSet</b> (<a class="el" href="../../d4/d91/structGL_1_1LineSet.html">LineSet</a> &amp;&amp;other)</td></tr>
 <tr class="separator:a4f9d141939e260553b57c97c75572b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f29f9d457134a056b69ab382d67710d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html#a3f29f9d457134a056b69ab382d67710d">add_line_segment</a> (const Eigen::Vector3f &amp;a, const Eigen::Vector3f &amp;b)</td></tr>
+<tr class="separator:a3f29f9d457134a056b69ab382d67710d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3379115b62a105e7091db128c012f69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html#ae3379115b62a105e7091db128c012f69">add_arrow</a> (const Eigen::Vector3f &amp;from, const Eigen::Vector3f &amp;to)</td></tr>
+<tr class="separator:ae3379115b62a105e7091db128c012f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae828a479016a57b411291662f3ab7d16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html#ae828a479016a57b411291662f3ab7d16">clear</a> ()</td></tr>
+<tr class="separator:ae828a479016a57b411291662f3ab7d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10af9f331ed602321162b0e4a31d5a74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html#a10af9f331ed602321162b0e4a31d5a74">to_gpu</a> ()</td></tr>
+<tr class="separator:a10af9f331ed602321162b0e4a31d5a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b0c4b7f0f49b6ba88c6235a6d8fa5c1"><td class="memItemLeft" align="right" valign="top"><a id="a5b0c4b7f0f49b6ba88c6235a6d8fa5c1" name="a5b0c4b7f0f49b6ba88c6235a6d8fa5c1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>render</b> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader)</td></tr>
+<tr class="separator:a5b0c4b7f0f49b6ba88c6235a6d8fa5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
+<tr class="memitem:aa6a75a492ac9dccd1f60c6daa24b7caa"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html#aa6a75a492ac9dccd1f60c6daa24b7caa">line_color</a></td></tr>
+<tr class="separator:aa6a75a492ac9dccd1f60c6daa24b7caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8657de700d3bc4d3efa959675e0b4f09"><td class="memItemLeft" align="right" valign="top"><a id="a8657de700d3bc4d3efa959675e0b4f09" name="a8657de700d3bc4d3efa959675e0b4f09"></a>
 <a class="el" href="../../d9/d82/structGL_1_1VertexArrayObject.html">VertexArrayObject</a>&#160;</td><td class="memItemRight" valign="bottom"><b>VAO</b></td></tr>
 <tr class="separator:a8657de700d3bc4d3efa959675e0b4f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,12 +154,6 @@ Public 属性</h2></td></tr>
 <tr class="memitem:a5331822f99ba891c2008cfe9e47a5b02"><td class="memItemLeft" align="right" valign="top"><a id="a5331822f99ba891c2008cfe9e47a5b02" name="a5331822f99ba891c2008cfe9e47a5b02"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
 <tr class="separator:a5331822f99ba891c2008cfe9e47a5b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
-静态 Public 属性</h2></td></tr>
-<tr class="memitem:a4a33a9f39af360436fd7386521658509"><td class="memItemLeft" align="right" valign="top"><a id="a4a33a9f39af360436fd7386521658509" name="a4a33a9f39af360436fd7386521658509"></a>
-static const Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><b>line_color</b></td></tr>
-<tr class="separator:a4a33a9f39af360436fd7386521658509"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>在预览场景时绘制若干线条。 </p>
@@ -177,6 +183,117 @@ static const Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom">
 </table>
 </div><div class="memdoc">
 <p>由于 VAO 和 <a class="el" href="../../d6/dba/structGL_1_1ArrayBuffer.html" title="对 OpenGL 数组缓冲 (Array Buffer) 的封装。">ArrayBuffer</a> 不允许复制构造，LineSet 也不允许复制构造。 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ae3379115b62a105e7091db128c012f69" name="ae3379115b62a105e7091db128c012f69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3379115b62a105e7091db128c012f69">&#9670;&#160;</a></span>add_arrow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LineSet::add_arrow </td>
+          <td>(</td>
+          <td class="paramtype">const Eigen::Vector3f &amp;&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Vector3f &amp;&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>加入一个从 from 到 to 的箭头。 </p>
+
+</div>
+</div>
+<a id="a3f29f9d457134a056b69ab382d67710d" name="a3f29f9d457134a056b69ab382d67710d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f29f9d457134a056b69ab382d67710d">&#9670;&#160;</a></span>add_line_segment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LineSet::add_line_segment </td>
+          <td>(</td>
+          <td class="paramtype">const Eigen::Vector3f &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Vector3f &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>加入一条从 a 到 b 的线段。 </p>
+
+</div>
+</div>
+<a id="ae828a479016a57b411291662f3ab7d16" name="ae828a479016a57b411291662f3ab7d16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae828a479016a57b411291662f3ab7d16">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LineSet::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>清空所有元素，但只影响内存，不会同步到显存。 </p>
+
+</div>
+</div>
+<a id="a10af9f331ed602321162b0e4a31d5a74" name="a10af9f331ed602321162b0e4a31d5a74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10af9f331ed602321162b0e4a31d5a74">&#9670;&#160;</a></span>to_gpu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LineSet::to_gpu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>将修改同步到显存。 </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="aa6a75a492ac9dccd1f60c6daa24b7caa" name="aa6a75a492ac9dccd1f60c6daa24b7caa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6a75a492ac9dccd1f60c6daa24b7caa">&#9670;&#160;</a></span>line_color</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Vector3f GL::LineSet::line_color</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>绘制的线条颜色。 </p>
 
 </div>
 </div>

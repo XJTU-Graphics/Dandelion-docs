@@ -67,6 +67,7 @@ var group__rendering =
       [ "reset_simulation", "d5/d9c/classScene.html#a22359fce4b3d3f44275aa5d6b2dd3dc1", null ],
       [ "start_simulation", "d5/d9c/classScene.html#a95c6652f9dab25c674e14c889a0d72db", null ],
       [ "stop_simulation", "d5/d9c/classScene.html#a60ceb60b6635b4750ea7681e358b2185", null ],
+      [ "arrows", "d5/d9c/classScene.html#a65320ce4e571046f3ebea79b9ef00ece", null ],
       [ "backups", "d5/d9c/classScene.html#ae6ed1aa756b3b0e642a7d6e7ba89a700", null ],
       [ "camera", "d5/d9c/classScene.html#afed13ec4ba2d7ab75b273d507911b498", null ],
       [ "during_animation", "d5/d9c/classScene.html#a141a7d2999cde438b69442da6bbd6d79", null ],
