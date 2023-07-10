@@ -5,7 +5,7 @@ var indexSectionsWithContent =
   2: "cghlmoprst",
   3: "abcdefghilmnopqrstuv~",
   4: "abcdefghilmnoprstuvw",
-  5: "w",
+  5: "hw",
   6: "u几小平物离",
   7: "d开构项"
 };

@@ -105,6 +105,8 @@ $(document).ready(function(){initNavTree('dc/d6d/classHalfedgeMesh.html','../../
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
 <a href="#pri-attribs">Private 属性</a> &#124;
 <a href="#pri-static-attribs">静态 Private 属性</a> &#124;
 <a href="../../dc/d5b/classHalfedgeMesh-members.html">所有成员列表</a>  </div>
@@ -128,6 +130,23 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a581d002e76229508e3970fe1c29038ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a581d002e76229508e3970fe1c29038ab">render</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader)</td></tr>
 <tr class="separator:a581d002e76229508e3970fe1c29038ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a3e4d4472c21ee0c5bb36dedecafd0857"><td class="memItemLeft" align="right" valign="top"><a id="a3e4d4472c21ee0c5bb36dedecafd0857" name="a3e4d4472c21ee0c5bb36dedecafd0857"></a>
+std::optional&lt; <a class="el" href="../../d4/d70/halfedge_8h.html#a61975e76d464c02410b50d5600f125da">HalfedgeMeshFailure</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>error_info</b></td></tr>
+<tr class="separator:a3e4d4472c21ee0c5bb36dedecafd0857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a11fb68a9c539b85f208b09337d35a831"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a11fb68a9c539b85f208b09337d35a831">new_halfedge</a> ()</td></tr>
+<tr class="separator:a11fb68a9c539b85f208b09337d35a831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d376f5935581aff1d04716d063f4d4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/da0/classVertex.html">Vertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a7d376f5935581aff1d04716d063f4d4d">new_vertex</a> ()</td></tr>
+<tr class="separator:a7d376f5935581aff1d04716d063f4d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d1f8dc7b7973b0a5d133cd9b9ac5cd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d8c/classEdge.html">Edge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a6d1f8dc7b7973b0a5d133cd9b9ac5cd3">new_edge</a> ()</td></tr>
+<tr class="separator:a6d1f8dc7b7973b0a5d133cd9b9ac5cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19cdd6ee69d015c4d73235ccfe61cff8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/db7/classFace.html">Face</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a19cdd6ee69d015c4d73235ccfe61cff8">new_face</a> (bool is_boundary=false)</td></tr>
+<tr class="separator:a19cdd6ee69d015c4d73235ccfe61cff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private 属性</h2></td></tr>
 <tr class="memitem:a83064ef1f92388f61c18465849fc3bdd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a83064ef1f92388f61c18465849fc3bdd">mesh</a></td></tr>
@@ -142,8 +161,8 @@ Private 属性</h2></td></tr>
 <tr class="separator:a2b098bbd5a5edcd462885a73f723eb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5a3b8bbc464e803ad81e6879c80be62"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#af5a3b8bbc464e803ad81e6879c80be62">global_inconsistent</a></td></tr>
 <tr class="separator:af5a3b8bbc464e803ad81e6879c80be62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3899a07af4a18a770d111636d86c1794"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a3899a07af4a18a770d111636d86c1794">line_set</a></td></tr>
-<tr class="separator:a3899a07af4a18a770d111636d86c1794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35ffb9ef22970a6a808a82e97899612c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a35ffb9ef22970a6a808a82e97899612c">halfedge_arrows</a></td></tr>
+<tr class="separator:a35ffb9ef22970a6a808a82e97899612c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37aa317f68032db7f5cd80e9e7c153df"><td class="memItemLeft" align="right" valign="top"><a id="a37aa317f68032db7f5cd80e9e7c153df" name="a37aa317f68032db7f5cd80e9e7c153df"></a>
 std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>logger</b></td></tr>
 <tr class="separator:a37aa317f68032db7f5cd80e9e7c153df"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -205,6 +224,111 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 </div>
 </div>
 <h2 class="groupheader">成员函数说明</h2>
+<a id="a6d1f8dc7b7973b0a5d133cd9b9ac5cd3" name="a6d1f8dc7b7973b0a5d133cd9b9ac5cd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d1f8dc7b7973b0a5d133cd9b9ac5cd3">&#9670;&#160;</a></span>new_edge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d8c/classEdge.html">Edge</a> * HalfedgeMesh::new_edge </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>创建一条边。 </p>
+
+</div>
+</div>
+<a id="a19cdd6ee69d015c4d73235ccfe61cff8" name="a19cdd6ee69d015c4d73235ccfe61cff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19cdd6ee69d015c4d73235ccfe61cff8">&#9670;&#160;</a></span>new_face()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/db7/classFace.html">Face</a> * HalfedgeMesh::new_face </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_boundary</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>创建一个面片，可以是真实存在的面片也可以是代表边界的虚拟面片。 </p>
+
+</div>
+</div>
+<a id="a11fb68a9c539b85f208b09337d35a831" name="a11fb68a9c539b85f208b09337d35a831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11fb68a9c539b85f208b09337d35a831">&#9670;&#160;</a></span>new_halfedge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a> * HalfedgeMesh::new_halfedge </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>创建一条半边。 </p>
+
+</div>
+</div>
+<a id="a7d376f5935581aff1d04716d063f4d4d" name="a7d376f5935581aff1d04716d063f4d4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d376f5935581aff1d04716d063f4d4d">&#9670;&#160;</a></span>new_vertex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/da0/classVertex.html">Vertex</a> * HalfedgeMesh::new_vertex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>创建一个顶点。 </p>
+
+</div>
+</div>
 <a id="a581d002e76229508e3970fe1c29038ab" name="a581d002e76229508e3970fe1c29038ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a581d002e76229508e3970fe1c29038ab">&#9670;&#160;</a></span>render()</h2>
 
@@ -312,6 +436,29 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 
 </div>
 </div>
+<a id="a35ffb9ef22970a6a808a82e97899612c" name="a35ffb9ef22970a6a808a82e97899612c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35ffb9ef22970a6a808a82e97899612c">&#9670;&#160;</a></span>halfedge_arrows</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a> HalfedgeMesh::halfedge_arrows</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>用于渲染半边的 <code>LineSet</code> 对象。 </p>
+
+</div>
+</div>
 <a id="a41a0a09ced80f66857c1298935945ccc" name="a41a0a09ced80f66857c1298935945ccc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a41a0a09ced80f66857c1298935945ccc">&#9670;&#160;</a></span>halfedges</h2>
 
@@ -332,29 +479,6 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 </table>
 </div><div class="memdoc">
 <p>所有的半边。 </p>
-
-</div>
-</div>
-<a id="a3899a07af4a18a770d111636d86c1794" name="a3899a07af4a18a770d111636d86c1794"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3899a07af4a18a770d111636d86c1794">&#9670;&#160;</a></span>line_set</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a> HalfedgeMesh::line_set</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>用于渲染半边的 <code>LineSet</code> 对象。 </p>
 
 </div>
 </div>

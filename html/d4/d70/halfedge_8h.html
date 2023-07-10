@@ -104,13 +104,15 @@ $(document).ready(function(){initNavTree('d4/d70/halfedge_8h.html','../../'); in
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">类</a>  </div>
+<a href="#nested-classes">类</a> &#124;
+<a href="#enum-members">枚举</a>  </div>
   <div class="headertitle"><div class="title">halfedge.h 文件参考<div class="ingroups"><a class="el" href="../../d9/dba/group__geometry.html">几何处理</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;list&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;Eigen/Core&gt;</code><br />
 <code>#include &lt;spdlog/sinks/stdout_color_sinks.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../d7/d6a/gl_8hpp_source.html">../platform/gl.hpp</a>&quot;</code><br />
@@ -135,7 +137,42 @@ $(document).ready(function(){initNavTree('d4/d70/halfedge_8h.html','../../'); in
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">半边网格整体。  <a href="../../dc/d6d/classHalfedgeMesh.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a61975e76d464c02410b50d5600f125da"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d70/halfedge_8h.html#a61975e76d464c02410b50d5600f125da">HalfedgeMeshFailure</a> { <b>NO_SELECTED_MESH</b>
+, <b>MULTIPLE_ORIENTED_EDGES</b>
+, <b>NON_MANIFOLD_VERTEX</b>
+ }</td></tr>
+<tr class="memdesc:a61975e76d464c02410b50d5600f125da"><td class="mdescLeft">&#160;</td><td class="mdescRight">半边网格的不合法情况。  <a href="../../d4/d70/halfedge_8h.html#a61975e76d464c02410b50d5600f125da">更多...</a><br /></td></tr>
+<tr class="separator:a61975e76d464c02410b50d5600f125da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">枚举类型说明</h2>
+<a id="a61975e76d464c02410b50d5600f125da" name="a61975e76d464c02410b50d5600f125da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61975e76d464c02410b50d5600f125da">&#9670;&#160;</a></span>HalfedgeMeshFailure</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="../../d4/d70/halfedge_8h.html#a61975e76d464c02410b50d5600f125da">HalfedgeMeshFailure</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>半边网格的不合法情况。 </p>
+<p>在创建半边网格失败或验证其合法性失败时，用该枚举类代表失败原因。 </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
