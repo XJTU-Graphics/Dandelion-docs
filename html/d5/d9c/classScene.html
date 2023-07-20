@@ -176,10 +176,8 @@ Private 成员函数</h2></td></tr>
 Private 属性</h2></td></tr>
 <tr class="memitem:a141a7d2999cde438b69442da6bbd6d79"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#a141a7d2999cde438b69442da6bbd6d79">during_animation</a></td></tr>
 <tr class="separator:a141a7d2999cde438b69442da6bbd6d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a676e3279b71bb622735aebab66bb6c72"><td class="memItemLeft" align="right" valign="top">std::chrono::time_point&lt; std::chrono::steady_clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#a676e3279b71bb622735aebab66bb6c72">t_prev</a></td></tr>
-<tr class="separator:a676e3279b71bb622735aebab66bb6c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6ed1aa756b3b0e642a7d6e7ba89a700"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../db/d1c/structObjectBackup.html">ObjectBackup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#ae6ed1aa756b3b0e642a7d6e7ba89a700">backups</a></td></tr>
-<tr class="separator:ae6ed1aa756b3b0e642a7d6e7ba89a700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac27383b17bb15fffc17d3e402cf4dcd9"><td class="memItemLeft" align="right" valign="top">std::chrono::time_point&lt; std::chrono::steady_clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#ac27383b17bb15fffc17d3e402cf4dcd9">last_update</a></td></tr>
+<tr class="separator:ac27383b17bb15fffc17d3e402cf4dcd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65320ce4e571046f3ebea79b9ef00ece"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#a65320ce4e571046f3ebea79b9ef00ece">arrows</a></td></tr>
 <tr class="separator:a65320ce4e571046f3ebea79b9ef00ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d310a617d791b73ab82bc34bcb37f69"><td class="memItemLeft" align="right" valign="top"><a id="a5d310a617d791b73ab82bc34bcb37f69" name="a5d310a617d791b73ab82bc34bcb37f69"></a>
@@ -481,29 +479,6 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 
 </div>
 </div>
-<a id="ae6ed1aa756b3b0e642a7d6e7ba89a700" name="ae6ed1aa756b3b0e642a7d6e7ba89a700"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6ed1aa756b3b0e642a7d6e7ba89a700">&#9670;&#160;</a></span>backups</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="../../db/d1c/structObjectBackup.html">ObjectBackup</a>&gt; Scene::backups</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>所有物体的状态备份。 </p>
-
-</div>
-</div>
 <a id="afed13ec4ba2d7ab75b273d507911b498" name="afed13ec4ba2d7ab75b273d507911b498"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afed13ec4ba2d7ab75b273d507911b498">&#9670;&#160;</a></span>camera</h2>
 
@@ -572,6 +547,29 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 
 </div>
 </div>
+<a id="ac27383b17bb15fffc17d3e402cf4dcd9" name="ac27383b17bb15fffc17d3e402cf4dcd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac27383b17bb15fffc17d3e402cf4dcd9">&#9670;&#160;</a></span>last_update</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::chrono::time_point&lt;std::chrono::steady_clock&gt; Scene::last_update</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>上一次将模拟状态同步到渲染的时间点。 </p>
+
+</div>
+</div>
 <a id="ab3625e4ac3c6e47156edd23e2421e828" name="ab3625e4ac3c6e47156edd23e2421e828"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab3625e4ac3c6e47156edd23e2421e828">&#9670;&#160;</a></span>lights</h2>
 
@@ -599,29 +597,6 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
       </table>
 </div><div class="memdoc">
 <p>当前选中的物体 ID，任何模式下此 ID 都可能为空。 </p>
-
-</div>
-</div>
-<a id="a676e3279b71bb622735aebab66bb6c72" name="a676e3279b71bb622735aebab66bb6c72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a676e3279b71bb622735aebab66bb6c72">&#9670;&#160;</a></span>t_prev</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::chrono::time_point&lt;std::chrono::steady_clock&gt; Scene::t_prev</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>上一帧结束的时间点。 </p>
 
 </div>
 </div>

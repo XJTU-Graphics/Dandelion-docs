@@ -53,6 +53,7 @@ var NAVTREE =
     [ "类", "annotated.html", [
       [ "类列表", "annotated.html", "annotated_dup" ],
       [ "类索引", "classes.html", null ],
+      [ "类继承关系", "hierarchy.html", "hierarchy" ],
       [ "类成员", "functions.html", [
         [ "全部", "functions.html", null ],
         [ "函数", "functions_func.html", null ],
@@ -75,7 +76,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"db/d81/group__utils.html#gadc516f532c93b92333ea8e8962393300"
+"da/d2c/startup.html#commit"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

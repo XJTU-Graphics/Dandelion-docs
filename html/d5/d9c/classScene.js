@@ -11,12 +11,11 @@ var classScene =
     [ "start_simulation", "d5/d9c/classScene.html#a95c6652f9dab25c674e14c889a0d72db", null ],
     [ "stop_simulation", "d5/d9c/classScene.html#a60ceb60b6635b4750ea7681e358b2185", null ],
     [ "arrows", "d5/d9c/classScene.html#a65320ce4e571046f3ebea79b9ef00ece", null ],
-    [ "backups", "d5/d9c/classScene.html#ae6ed1aa756b3b0e642a7d6e7ba89a700", null ],
     [ "camera", "d5/d9c/classScene.html#afed13ec4ba2d7ab75b273d507911b498", null ],
     [ "during_animation", "d5/d9c/classScene.html#a141a7d2999cde438b69442da6bbd6d79", null ],
     [ "groups", "d5/d9c/classScene.html#a3f024af6f54b5cd0dd3ed11cd875c327", null ],
     [ "halfedge_mesh", "d5/d9c/classScene.html#aaa74b766e66ccda23ba55490a93db7bb", null ],
+    [ "last_update", "d5/d9c/classScene.html#ac27383b17bb15fffc17d3e402cf4dcd9", null ],
     [ "lights", "d5/d9c/classScene.html#ab3625e4ac3c6e47156edd23e2421e828", null ],
-    [ "selected_object_id", "d5/d9c/classScene.html#ae3f9004a2faa3f55665d6aba858b1af5", null ],
-    [ "t_prev", "d5/d9c/classScene.html#a676e3279b71bb622735aebab66bb6c72", null ]
+    [ "selected_object_id", "d5/d9c/classScene.html#ae3f9004a2faa3f55665d6aba858b1af5", null ]
 ];

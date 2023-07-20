@@ -29,6 +29,7 @@ var menudata={children:[
 {text:"类",url:"annotated.html",children:[
 {text:"类列表",url:"annotated.html"},
 {text:"类索引",url:"classes.html"},
+{text:"类继承关系",url:"hierarchy.html"},
 {text:"类成员",url:"functions.html",children:[
 {text:"全部",url:"functions.html",children:[
 {text:"a",url:"functions.html#index_a"},

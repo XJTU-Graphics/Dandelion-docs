@@ -119,6 +119,9 @@ $(document).ready(function(){initNavTree('d8/d88/structGL_1_1Mesh.html','../../'
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
+<tr class="memitem:a4f159289d04a079e142ecf09b31a6e1a"><td class="memItemLeft" align="right" valign="top"><a id="a4f159289d04a079e142ecf09b31a6e1a" name="a4f159289d04a079e142ecf09b31a6e1a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Mesh</b> (Eigen::Vector3f face_color=default_face_color)</td></tr>
+<tr class="separator:a4f159289d04a079e142ecf09b31a6e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81afad0fc0201e1c1bc012ba41a22268"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html#a81afad0fc0201e1c1bc012ba41a22268">Mesh</a> (const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">Mesh</a> &amp;other)=delete</td></tr>
 <tr class="separator:a81afad0fc0201e1c1bc012ba41a22268"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75180ba39e94350a1ecebbeb2b348c8a"><td class="memItemLeft" align="right" valign="top"><a id="a75180ba39e94350a1ecebbeb2b348c8a" name="a75180ba39e94350a1ecebbeb2b348c8a"></a>
@@ -132,6 +135,9 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:afbd5496ce294b47446f8af09fe33dbb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2207633400950588ddd94676412bd9f0"><td class="memItemLeft" align="right" valign="top">std::array&lt; size_t, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html#a2207633400950588ddd94676412bd9f0">face</a> (size_t index) const</td></tr>
 <tr class="separator:a2207633400950588ddd94676412bd9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f1f31dedf84e50f22372f40be522779"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html#a6f1f31dedf84e50f22372f40be522779">render</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader, unsigned int element_flags, bool face_shading=true)</td></tr>
+<tr class="memdesc:a6f1f31dedf84e50f22372f40be522779"><td class="mdescLeft">&#160;</td><td class="mdescRight">渲染这个 mesh。  <br /></td></tr>
+<tr class="separator:a6f1f31dedf84e50f22372f40be522779"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
@@ -155,12 +161,27 @@ Public 属性</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 静态 Public 属性</h2></td></tr>
-<tr class="memitem:a514ce06fdca0c0a588b680760878b978"><td class="memItemLeft" align="right" valign="top"><a id="a514ce06fdca0c0a588b680760878b978" name="a514ce06fdca0c0a588b680760878b978"></a>
-static const Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><b>wireframe_color</b></td></tr>
-<tr class="separator:a514ce06fdca0c0a588b680760878b978"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1345ac159219d9a213b4dbc9dc592f61"><td class="memItemLeft" align="right" valign="top"><a id="a1345ac159219d9a213b4dbc9dc592f61" name="a1345ac159219d9a213b4dbc9dc592f61"></a>
-static const Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><b>face_preview_color</b></td></tr>
-<tr class="separator:a1345ac159219d9a213b4dbc9dc592f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da448549290dede422ede1a7ab0f317"><td class="memItemLeft" align="right" valign="top"><a id="a7da448549290dede422ede1a7ab0f317" name="a7da448549290dede422ede1a7ab0f317"></a>
+static constexpr unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>vertices_flag</b> = 1u</td></tr>
+<tr class="separator:a7da448549290dede422ede1a7ab0f317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89d8446e585134e58aeb5b8f4d695039"><td class="memItemLeft" align="right" valign="top"><a id="a89d8446e585134e58aeb5b8f4d695039" name="a89d8446e585134e58aeb5b8f4d695039"></a>
+static constexpr unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>edges_flag</b> = 1u &lt;&lt; 1u</td></tr>
+<tr class="separator:a89d8446e585134e58aeb5b8f4d695039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83d9a6c3b399a2587da05e9efaf6f15a"><td class="memItemLeft" align="right" valign="top"><a id="a83d9a6c3b399a2587da05e9efaf6f15a" name="a83d9a6c3b399a2587da05e9efaf6f15a"></a>
+static constexpr unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>faces_flag</b> = 1u &lt;&lt; 2u</td></tr>
+<tr class="separator:a83d9a6c3b399a2587da05e9efaf6f15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5ca1327d4badb82c7017a05326ebf1f"><td class="memItemLeft" align="right" valign="top"><a id="ad5ca1327d4badb82c7017a05326ebf1f" name="ad5ca1327d4badb82c7017a05326ebf1f"></a>
+static const Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><b>default_wireframe_color</b></td></tr>
+<tr class="separator:ad5ca1327d4badb82c7017a05326ebf1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04baa13ecbd7ce7cda651c634ddd6b5e"><td class="memItemLeft" align="right" valign="top"><a id="a04baa13ecbd7ce7cda651c634ddd6b5e" name="a04baa13ecbd7ce7cda651c634ddd6b5e"></a>
+static const Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><b>default_face_color</b></td></tr>
+<tr class="separator:a04baa13ecbd7ce7cda651c634ddd6b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a877cd9d5951a8bfef862ae352badafce"><td class="memItemLeft" align="right" valign="top"><a id="a877cd9d5951a8bfef862ae352badafce" name="a877cd9d5951a8bfef862ae352badafce"></a>
+static const Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><b>highlight_wireframe_color</b></td></tr>
+<tr class="separator:a877cd9d5951a8bfef862ae352badafce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1f9d0f3d8122efc11efcd3a97da92f3"><td class="memItemLeft" align="right" valign="top"><a id="ae1f9d0f3d8122efc11efcd3a97da92f3" name="ae1f9d0f3d8122efc11efcd3a97da92f3"></a>
+static const Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><b>highlight_face_color</b></td></tr>
+<tr class="separator:ae1f9d0f3d8122efc11efcd3a97da92f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>用于场景预览渲染的 <a class="el" href="../../d8/d88/structGL_1_1Mesh.html" title="用于场景预览渲染的 Mesh 类。">Mesh</a> 类。 </p>
@@ -250,6 +271,49 @@ static const Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom">
       </table>
 </div><div class="memdoc">
 <p>读取编号为 index 的顶点法线。 </p>
+
+</div>
+</div>
+<a id="a6f1f31dedf84e50f22372f40be522779" name="a6f1f31dedf84e50f22372f40be522779"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f1f31dedf84e50f22372f40be522779">&#9670;&#160;</a></span>render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mesh::render </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;&#160;</td>
+          <td class="paramname"><em>shader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>element_flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>face_shading</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>渲染这个 mesh。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">element_flags</td><td>指定渲染哪些元素的二进制串，可以是 <code>vertices_flag</code> / <code>edges_flag</code> / <code>faces_flag</code> 中的任意一个或多个 </td></tr>
+    <tr><td class="paramname">face_shading</td><td>面片是否根据光照和材质进行着色，若否，则统一使用全局颜色。 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

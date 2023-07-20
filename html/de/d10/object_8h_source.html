@@ -113,128 +113,132 @@ $(document).ready(function(){initNavTree('de/d10/object_8h_source.html','../../'
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;Eigen/Core&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;Eigen/Geometry&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;spdlog/sinks/stdout_color_sinks.h&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;../platform/gl.hpp&quot;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;../platform/shader.hpp&quot;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;../utils/rendering.hpp&quot;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"></span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * \file scene/object.h</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"></span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * \ingroup rendering</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * \ingroup simulation</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * \brief 表示物体的类。</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> * “物体”由存储几何数据的 mesh、存储变换信息的位姿参数和存储颜色的材质组成，</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> * 每个 `Object` 实例对应唯一的 `GL::Mesh`、`GL::Material` 和唯一的模型变换矩阵</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> * (Model Transform Matrix)，是场景中的最小单元。</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> * 由于 `Object` 对象持有的 `GL::Mesh` 实例是不可复制的，当前的 `Object`</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> * 也是不可复制的。但“复制一个物体”在逻辑上完全合理，因此未来会实现该类的复制构造函数。</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html">   34</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d8/d4b/classObject.html">Object</a></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_class" href="../../d8/d4b/classObject.html">Object</a>(<span class="keyword">const</span> std::string&amp; object_name);<span class="comment"></span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">    ///@{</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"></span><span class="comment">    /*! \~chinese 禁止复制物体。 */</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#aef343197effbc642b3f1812ac7bd3d85">   40</a></span>    <a class="code hl_function" href="../../d8/d4b/classObject.html#aef343197effbc642b3f1812ac7bd3d85">Object</a>(<a class="code hl_class" href="../../d8/d4b/classObject.html">Object</a>&amp; other)       = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_class" href="../../d8/d4b/classObject.html">Object</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d8/d4b/classObject.html">Object</a>&amp; other) = <span class="keyword">delete</span>;<span class="comment"></span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">    ///@}</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"></span>    <a class="code hl_class" href="../../d8/d4b/classObject.html">~Object</a>() = <span class="keywordflow">default</span>;<span class="comment"></span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">    /*! \~chinese 此物体的模型变换矩阵 (Model Transform Matrix)。 */</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    Eigen::Matrix4f <a class="code hl_function" href="../../d8/d4b/classObject.html#af8f23e84a424cb6061cc9b23bb1f650c">model</a>();<span class="comment"></span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">    /*!</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">     * \~chinese</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">     * \brief 更新当前帧的物理属性。</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">     * 根据上一帧结束时物体当前的位置、速度、合外力，更新物体当前帧结束时的物理属性。</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">     * \param delta_t 当前帧的时长，以秒为单位。</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/d4b/classObject.html#aaa2867a4c1f99f99806ea093c411e861">update</a>(<span class="keywordtype">float</span> delta_t);<span class="comment"></span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">    /*!</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">     * \~chinese</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">     * \brief 根据指定的渲染模式渲染物体。</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">     * \param shader 对一个 `Shader` 对象的引用</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">     * \param mode 渲染模式。所有模式下都渲染面片，建模模式下额外渲染边和顶点。</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">     * \param selected 布局模式下该物体是否被选中，被选中的物体额外渲染边。其他模式下，</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">     * 该参数无意义。</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/d4b/classObject.html#a5c13c26a5d9896e078a32de6593e5be5">render</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d69/classShader.html">Shader</a>&amp; shader, <a class="code hl_enumeration" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> mode, <span class="keywordtype">bool</span> selected);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    std::size_t id;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    std::string name;<span class="comment"></span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">    /*! \~chinese 控制物体是否可见，当前恒为真，并无实际作用。 */</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#ac2b299eaa47a407bca0e9b47205edd99">   69</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../d8/d4b/classObject.html#ac2b299eaa47a407bca0e9b47205edd99">visible</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">    /*! \~chinese 表示上一帧过后是否被修改，在第一次加载后或与半边网格不一致时为真。 */</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#abcf908134541bea512ca0148e05f1f44">   71</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../d8/d4b/classObject.html#abcf908134541bea512ca0148e05f1f44">modified</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">    ///@{</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"></span><span class="comment">    /*! \~chinese 物体的位姿属性，用于构造它的模型变换矩阵 (Model Transform Matrix)。 */</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a0e9b68376530dd18ab88b43e8456337f">   74</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d8/d4b/classObject.html#a0e9b68376530dd18ab88b43e8456337f">center</a>;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    Eigen::Vector3f scaling;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    Eigen::Quaternionf rotation;<span class="comment"></span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">    ///@}</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment"></span><span class="comment">    /*! \~chinese 物体的速度。 */</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a72eed21f81afdf95370d638db35b59e1">   79</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d8/d4b/classObject.html#a72eed21f81afdf95370d638db35b59e1">velocity</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">    /*! \~chinese 物体所受的合外力。 */</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#aa31820215a5450a83c624324258f00dd">   81</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d8/d4b/classObject.html#aa31820215a5450a83c624324258f00dd">force</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">    /*! \~chinese 物体质量 */</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a60866179af7cb2aad410ea01de546e4e">   83</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d8/d4b/classObject.html#a60866179af7cb2aad410ea01de546e4e">mass</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">    /*! \~chinese</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">     * 由于位姿参数每一帧都可能变化，mesh 中存储模型坐标系下的坐标以提高运行效率。</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">     * 如需获取世界坐标系下的坐标，请乘上模型变换矩阵。</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a3961b5381a8384cc71246ff15f7be99b">   88</a></span>    <a class="code hl_struct" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> <a class="code hl_variable" href="../../d8/d4b/classObject.html#a3961b5381a8384cc71246ff15f7be99b">mesh</a>;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">private</span>:<span class="comment"></span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">    /*! \~chinese 下一个可用的物体 ID 。 */</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a3b35c67dbc27347a7353581e64ccefad">   92</a></span>    <span class="keyword">static</span> std::size_t <a class="code hl_variable" href="../../d8/d4b/classObject.html#a3b35c67dbc27347a7353581e64ccefad">next_available_id</a>;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    std::shared_ptr&lt;spdlog::logger&gt; logger;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>};</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment"></span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment"> * \ingroup simulation</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment"> * \brief 用于备份物体物理属性的结构体。</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment"> * 在物理模拟模式下选择重置场景时，会将场景中所有物体恢复到动画开始前的状态，</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment"> * 此结构体用于备份这一状态，在重置时重新赋值给物体。</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="../../db/d1c/structObjectBackup.html">  104</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../db/d1c/structObjectBackup.html">ObjectBackup</a></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>{</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <a class="code hl_struct" href="../../db/d1c/structObjectBackup.html">ObjectBackup</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d8/d4b/classObject.html">Object</a>&amp; <span class="keywordtype">object</span>);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    Eigen::Vector3f center;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    Eigen::Quaternionf rotation;</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    Eigen::Vector3f velocity;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;Eigen/Core&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;Eigen/Geometry&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;spdlog/sinks/stdout_color_sinks.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;../platform/gl.hpp&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;../platform/shader.hpp&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;../utils/rendering.hpp&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;../utils/bvh.h&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;../utils/kinetic_state.h&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"></span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * \file scene/object.h</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"></span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * \ingroup rendering</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> * \ingroup simulation</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> * \brief 表示物体的类。</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> * “物体”由存储几何数据的 mesh、存储变换信息的位姿参数和存储颜色的材质组成，</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> * 每个 `Object` 实例对应唯一的 `GL::Mesh`、`GL::Material` 和唯一的模型变换矩阵</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> * (Model Transform Matrix)，是场景中的最小单元。</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> * 由于 `Object` 对象持有的 `GL::Mesh` 实例是不可复制的，当前的 `Object`</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> * 也是不可复制的。但“复制一个物体”在逻辑上完全合理，因此未来会实现该类的复制构造函数。</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html">   37</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d8/d4b/classObject.html">Object</a></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_class" href="../../d8/d4b/classObject.html">Object</a>(<span class="keyword">const</span> std::string&amp; object_name);<span class="comment"></span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">    ///@{</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"></span><span class="comment">    /*! \~chinese 禁止复制物体。 */</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#aef343197effbc642b3f1812ac7bd3d85">   43</a></span>    <a class="code hl_function" href="../../d8/d4b/classObject.html#aef343197effbc642b3f1812ac7bd3d85">Object</a>(<a class="code hl_class" href="../../d8/d4b/classObject.html">Object</a>&amp; other)       = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_class" href="../../d8/d4b/classObject.html">Object</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d8/d4b/classObject.html">Object</a>&amp; other) = <span class="keyword">delete</span>;<span class="comment"></span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">    ///@}</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"></span>    <a class="code hl_class" href="../../d8/d4b/classObject.html">~Object</a>() = <span class="keywordflow">default</span>;<span class="comment"></span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">    /*! \~chinese 此物体的模型变换矩阵 (Model Transform Matrix)。 */</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    Eigen::Matrix4f <a class="code hl_function" href="../../d8/d4b/classObject.html#af8f23e84a424cb6061cc9b23bb1f650c">model</a>();<span class="comment"></span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">    /*!</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">     * \~chinese</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">     * \brief 更新当前帧要渲染的运动状态。</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">     * 根据上一帧的总时长决定计算多少时间步。</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">     * \param frame_duration 一帧的时长，以秒为单位。</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/d4b/classObject.html#ab20e1de61f97accf9f2e77c1a156320a">update</a>(<span class="keywordtype">float</span> frame_duration);<span class="comment"></span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">    /*!</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">     * \~chinese</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">     * \brief 根据指定的渲染模式渲染物体。</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">     * \param shader 对一个 `Shader` 对象的引用</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">     * \param mode 渲染模式。所有模式下都渲染面片，建模模式下额外渲染边和顶点。</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">     * \param selected 布局模式下该物体是否被选中，被选中的物体额外渲染边。其他模式下，</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">     * 该参数无意义。</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/d4b/classObject.html#a5c13c26a5d9896e078a32de6593e5be5">render</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d69/classShader.html">Shader</a>&amp; shader, <a class="code hl_enumeration" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> mode, <span class="keywordtype">bool</span> selected);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment"></span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">    /*!</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">     * \~chinese</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">     * \brief 用于更新物体运动状态的函数。</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">     * 让这个静态变量指向不同的函数，就可以更换不同的求解器，默认使用前向欧拉法求解。</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a573b153aba95a8272b6808ebfe6955cb">   75</a></span>    <span class="keyword">static</span> std::function&lt;<a class="code hl_struct" href="../../d1/d96/structKineticState.html">KineticState</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../d1/d96/structKineticState.html">KineticState</a>&amp;, <span class="keyword">const</span> <a class="code hl_struct" href="../../d1/d96/structKineticState.html">KineticState</a>&amp;)&gt; <a class="code hl_variable" href="../../d8/d4b/classObject.html#a573b153aba95a8272b6808ebfe6955cb">step</a>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    std::size_t id;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    std::string name;<span class="comment"></span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">    /*! \~chinese 控制物体是否可见，当前恒为真，并无实际作用。 */</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#ac2b299eaa47a407bca0e9b47205edd99">   80</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../d8/d4b/classObject.html#ac2b299eaa47a407bca0e9b47205edd99">visible</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">    /*! \~chinese 表示上一帧过后是否被修改，在第一次加载后或与半边网格不一致时为真。 */</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#abcf908134541bea512ca0148e05f1f44">   82</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../d8/d4b/classObject.html#abcf908134541bea512ca0148e05f1f44">modified</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">    ///@{</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment"></span><span class="comment">    /*! \~chinese 物体的位姿属性，用于构造它的模型变换矩阵 (Model Transform Matrix)。 */</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a0e9b68376530dd18ab88b43e8456337f">   85</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d8/d4b/classObject.html#a0e9b68376530dd18ab88b43e8456337f">center</a>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    Eigen::Vector3f scaling;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    Eigen::Quaternionf rotation;<span class="comment"></span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">    ///@}</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment"></span><span class="comment">    /*! \~chinese 物体的速度。 */</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a72eed21f81afdf95370d638db35b59e1">   90</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d8/d4b/classObject.html#a72eed21f81afdf95370d638db35b59e1">velocity</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">    /*! \~chinese 物体所受的合外力。 */</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#aa31820215a5450a83c624324258f00dd">   92</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d8/d4b/classObject.html#aa31820215a5450a83c624324258f00dd">force</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">    /*! \~chinese 物体质量 */</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a60866179af7cb2aad410ea01de546e4e">   94</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d8/d4b/classObject.html#a60866179af7cb2aad410ea01de546e4e">mass</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">    /*! \~chinese 上一帧的状态，用于高阶求解器求解。 */</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a5fb00c4ab2fd22c033aae243bbb1e10a">   96</a></span>    <a class="code hl_struct" href="../../d1/d96/structKineticState.html">KineticState</a> <a class="code hl_variable" href="../../d8/d4b/classObject.html#a5fb00c4ab2fd22c033aae243bbb1e10a">prev_state</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">    /*! \~chinese 进入物理模拟模式后用于备份初始状态。 */</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a049e8776aaeebac897c3ae2d3fe72f77">   98</a></span>    <a class="code hl_struct" href="../../d1/d96/structKineticState.html">KineticState</a> <a class="code hl_variable" href="../../d8/d4b/classObject.html#a049e8776aaeebac897c3ae2d3fe72f77">backup</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">    /*! \~chinese</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">     * 由于位姿参数每一帧都可能变化，mesh 中存储模型坐标系下的坐标以提高运行效率。</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">     * 如需获取世界坐标系下的坐标，请乘上模型变换矩阵。</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a3961b5381a8384cc71246ff15f7be99b">  103</a></span>    <a class="code hl_struct" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> <a class="code hl_variable" href="../../d8/d4b/classObject.html#a3961b5381a8384cc71246ff15f7be99b">mesh</a>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <a class="code hl_class" href="../../d1/d7f/classBVHAccel.html">BVHAccel</a>* bvh;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="keyword">private</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">    /*! \~chinese 下一个可用的物体 ID 。 */</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a3b35c67dbc27347a7353581e64ccefad">  108</a></span>    <span class="keyword">static</span> std::size_t <a class="code hl_variable" href="../../d8/d4b/classObject.html#a3b35c67dbc27347a7353581e64ccefad">next_available_id</a>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    std::shared_ptr&lt;spdlog::logger&gt; logger;</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>};</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_SCENE_OBJECT_H</span></div>
-<div class="ttc" id="aclassObject_html"><div class="ttname"><a href="../../d8/d4b/classObject.html">Object</a></div><div class="ttdoc">表示物体的类。</div><div class="ttdef"><b>Definition:</b> object.h:35</div></div>
-<div class="ttc" id="aclassObject_html_a0e9b68376530dd18ab88b43e8456337f"><div class="ttname"><a href="../../d8/d4b/classObject.html#a0e9b68376530dd18ab88b43e8456337f">Object::center</a></div><div class="ttdeci">Eigen::Vector3f center</div><div class="ttdef"><b>Definition:</b> object.h:74</div></div>
-<div class="ttc" id="aclassObject_html_a3961b5381a8384cc71246ff15f7be99b"><div class="ttname"><a href="../../d8/d4b/classObject.html#a3961b5381a8384cc71246ff15f7be99b">Object::mesh</a></div><div class="ttdeci">GL::Mesh mesh</div><div class="ttdef"><b>Definition:</b> object.h:88</div></div>
-<div class="ttc" id="aclassObject_html_a3b35c67dbc27347a7353581e64ccefad"><div class="ttname"><a href="../../d8/d4b/classObject.html#a3b35c67dbc27347a7353581e64ccefad">Object::next_available_id</a></div><div class="ttdeci">static std::size_t next_available_id</div><div class="ttdef"><b>Definition:</b> object.h:92</div></div>
-<div class="ttc" id="aclassObject_html_a5c13c26a5d9896e078a32de6593e5be5"><div class="ttname"><a href="../../d8/d4b/classObject.html#a5c13c26a5d9896e078a32de6593e5be5">Object::render</a></div><div class="ttdeci">void render(const Shader &amp;shader, WorkingMode mode, bool selected)</div><div class="ttdoc">根据指定的渲染模式渲染物体。</div><div class="ttdef"><b>Definition:</b> object.cpp:41</div></div>
-<div class="ttc" id="aclassObject_html_a60866179af7cb2aad410ea01de546e4e"><div class="ttname"><a href="../../d8/d4b/classObject.html#a60866179af7cb2aad410ea01de546e4e">Object::mass</a></div><div class="ttdeci">float mass</div><div class="ttdef"><b>Definition:</b> object.h:83</div></div>
-<div class="ttc" id="aclassObject_html_a72eed21f81afdf95370d638db35b59e1"><div class="ttname"><a href="../../d8/d4b/classObject.html#a72eed21f81afdf95370d638db35b59e1">Object::velocity</a></div><div class="ttdeci">Eigen::Vector3f velocity</div><div class="ttdef"><b>Definition:</b> object.h:79</div></div>
-<div class="ttc" id="aclassObject_html_aa31820215a5450a83c624324258f00dd"><div class="ttname"><a href="../../d8/d4b/classObject.html#aa31820215a5450a83c624324258f00dd">Object::force</a></div><div class="ttdeci">Eigen::Vector3f force</div><div class="ttdef"><b>Definition:</b> object.h:81</div></div>
-<div class="ttc" id="aclassObject_html_aaa2867a4c1f99f99806ea093c411e861"><div class="ttname"><a href="../../d8/d4b/classObject.html#aaa2867a4c1f99f99806ea093c411e861">Object::update</a></div><div class="ttdeci">void update(float delta_t)</div><div class="ttdoc">更新当前帧的物理属性。</div><div class="ttdef"><b>Definition:</b> object.cpp:34</div></div>
-<div class="ttc" id="aclassObject_html_abcf908134541bea512ca0148e05f1f44"><div class="ttname"><a href="../../d8/d4b/classObject.html#abcf908134541bea512ca0148e05f1f44">Object::modified</a></div><div class="ttdeci">bool modified</div><div class="ttdef"><b>Definition:</b> object.h:71</div></div>
-<div class="ttc" id="aclassObject_html_ac2b299eaa47a407bca0e9b47205edd99"><div class="ttname"><a href="../../d8/d4b/classObject.html#ac2b299eaa47a407bca0e9b47205edd99">Object::visible</a></div><div class="ttdeci">bool visible</div><div class="ttdef"><b>Definition:</b> object.h:69</div></div>
+<div class="ttc" id="aclassBVHAccel_html"><div class="ttname"><a href="../../d1/d7f/classBVHAccel.html">BVHAccel</a></div><div class="ttdef"><b>Definition:</b> bvh.h:58</div></div>
+<div class="ttc" id="aclassObject_html"><div class="ttname"><a href="../../d8/d4b/classObject.html">Object</a></div><div class="ttdoc">表示物体的类。</div><div class="ttdef"><b>Definition:</b> object.h:38</div></div>
+<div class="ttc" id="aclassObject_html_a049e8776aaeebac897c3ae2d3fe72f77"><div class="ttname"><a href="../../d8/d4b/classObject.html#a049e8776aaeebac897c3ae2d3fe72f77">Object::backup</a></div><div class="ttdeci">KineticState backup</div><div class="ttdef"><b>Definition:</b> object.h:98</div></div>
+<div class="ttc" id="aclassObject_html_a0e9b68376530dd18ab88b43e8456337f"><div class="ttname"><a href="../../d8/d4b/classObject.html#a0e9b68376530dd18ab88b43e8456337f">Object::center</a></div><div class="ttdeci">Eigen::Vector3f center</div><div class="ttdef"><b>Definition:</b> object.h:85</div></div>
+<div class="ttc" id="aclassObject_html_a3961b5381a8384cc71246ff15f7be99b"><div class="ttname"><a href="../../d8/d4b/classObject.html#a3961b5381a8384cc71246ff15f7be99b">Object::mesh</a></div><div class="ttdeci">GL::Mesh mesh</div><div class="ttdef"><b>Definition:</b> object.h:103</div></div>
+<div class="ttc" id="aclassObject_html_a3b35c67dbc27347a7353581e64ccefad"><div class="ttname"><a href="../../d8/d4b/classObject.html#a3b35c67dbc27347a7353581e64ccefad">Object::next_available_id</a></div><div class="ttdeci">static std::size_t next_available_id</div><div class="ttdef"><b>Definition:</b> object.h:108</div></div>
+<div class="ttc" id="aclassObject_html_a573b153aba95a8272b6808ebfe6955cb"><div class="ttname"><a href="../../d8/d4b/classObject.html#a573b153aba95a8272b6808ebfe6955cb">Object::step</a></div><div class="ttdeci">static std::function&lt; KineticState(const KineticState &amp;, const KineticState &amp;)&gt; step</div><div class="ttdoc">用于更新物体运动状态的函数。</div><div class="ttdef"><b>Definition:</b> object.h:75</div></div>
+<div class="ttc" id="aclassObject_html_a5c13c26a5d9896e078a32de6593e5be5"><div class="ttname"><a href="../../d8/d4b/classObject.html#a5c13c26a5d9896e078a32de6593e5be5">Object::render</a></div><div class="ttdeci">void render(const Shader &amp;shader, WorkingMode mode, bool selected)</div><div class="ttdoc">根据指定的渲染模式渲染物体。</div><div class="ttdef"><b>Definition:</b> object.cpp:51</div></div>
+<div class="ttc" id="aclassObject_html_a5fb00c4ab2fd22c033aae243bbb1e10a"><div class="ttname"><a href="../../d8/d4b/classObject.html#a5fb00c4ab2fd22c033aae243bbb1e10a">Object::prev_state</a></div><div class="ttdeci">KineticState prev_state</div><div class="ttdef"><b>Definition:</b> object.h:96</div></div>
+<div class="ttc" id="aclassObject_html_a60866179af7cb2aad410ea01de546e4e"><div class="ttname"><a href="../../d8/d4b/classObject.html#a60866179af7cb2aad410ea01de546e4e">Object::mass</a></div><div class="ttdeci">float mass</div><div class="ttdef"><b>Definition:</b> object.h:94</div></div>
+<div class="ttc" id="aclassObject_html_a72eed21f81afdf95370d638db35b59e1"><div class="ttname"><a href="../../d8/d4b/classObject.html#a72eed21f81afdf95370d638db35b59e1">Object::velocity</a></div><div class="ttdeci">Eigen::Vector3f velocity</div><div class="ttdef"><b>Definition:</b> object.h:90</div></div>
+<div class="ttc" id="aclassObject_html_aa31820215a5450a83c624324258f00dd"><div class="ttname"><a href="../../d8/d4b/classObject.html#aa31820215a5450a83c624324258f00dd">Object::force</a></div><div class="ttdeci">Eigen::Vector3f force</div><div class="ttdef"><b>Definition:</b> object.h:92</div></div>
+<div class="ttc" id="aclassObject_html_ab20e1de61f97accf9f2e77c1a156320a"><div class="ttname"><a href="../../d8/d4b/classObject.html#ab20e1de61f97accf9f2e77c1a156320a">Object::update</a></div><div class="ttdeci">void update(float frame_duration)</div><div class="ttdoc">更新当前帧要渲染的运动状态。</div><div class="ttdef"><b>Definition:</b> object.cpp:38</div></div>
+<div class="ttc" id="aclassObject_html_abcf908134541bea512ca0148e05f1f44"><div class="ttname"><a href="../../d8/d4b/classObject.html#abcf908134541bea512ca0148e05f1f44">Object::modified</a></div><div class="ttdeci">bool modified</div><div class="ttdef"><b>Definition:</b> object.h:82</div></div>
+<div class="ttc" id="aclassObject_html_ac2b299eaa47a407bca0e9b47205edd99"><div class="ttname"><a href="../../d8/d4b/classObject.html#ac2b299eaa47a407bca0e9b47205edd99">Object::visible</a></div><div class="ttdeci">bool visible</div><div class="ttdef"><b>Definition:</b> object.h:80</div></div>
 <div class="ttc" id="aclassObject_html_aef343197effbc642b3f1812ac7bd3d85"><div class="ttname"><a href="../../d8/d4b/classObject.html#aef343197effbc642b3f1812ac7bd3d85">Object::Object</a></div><div class="ttdeci">Object(Object &amp;other)=delete</div></div>
-<div class="ttc" id="aclassObject_html_af8f23e84a424cb6061cc9b23bb1f650c"><div class="ttname"><a href="../../d8/d4b/classObject.html#af8f23e84a424cb6061cc9b23bb1f650c">Object::model</a></div><div class="ttdeci">Eigen::Matrix4f model()</div><div class="ttdef"><b>Definition:</b> object.cpp:26</div></div>
+<div class="ttc" id="aclassObject_html_af8f23e84a424cb6061cc9b23bb1f650c"><div class="ttname"><a href="../../d8/d4b/classObject.html#af8f23e84a424cb6061cc9b23bb1f650c">Object::model</a></div><div class="ttdeci">Eigen::Matrix4f model()</div><div class="ttdef"><b>Definition:</b> object.cpp:30</div></div>
 <div class="ttc" id="aclassShader_html"><div class="ttname"><a href="../../d9/d69/classShader.html">Shader</a></div><div class="ttdoc">对 GLSL Shader 的简单封装。</div><div class="ttdef"><b>Definition:</b> shader.hpp:24</div></div>
 <div class="ttc" id="arendering_8hpp_html_a1352c5fcb6cfad612ba26a0e91355bcb"><div class="ttname"><a href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a></div><div class="ttdeci">WorkingMode</div><div class="ttdef"><b>Definition:</b> rendering.hpp:46</div></div>
 <div class="ttc" id="astructGL_1_1Mesh_html"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a></div><div class="ttdoc">用于场景预览渲染的 Mesh 类。</div><div class="ttdef"><b>Definition:</b> gl.hpp:209</div></div>
-<div class="ttc" id="astructObjectBackup_html"><div class="ttname"><a href="../../db/d1c/structObjectBackup.html">ObjectBackup</a></div><div class="ttdoc">用于备份物体物理属性的结构体。</div><div class="ttdef"><b>Definition:</b> object.h:105</div></div>
+<div class="ttc" id="astructKineticState_html"><div class="ttname"><a href="../../d1/d96/structKineticState.html">KineticState</a></div><div class="ttdoc">表示物体的质点运动学状态。</div><div class="ttdef"><b>Definition:</b> kinetic_state.h:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

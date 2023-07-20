@@ -106,6 +106,7 @@ $(document).ready(function(){initNavTree('d8/d4b/classObject.html','../../'); in
   <div class="summary">
 <a href="#pub-methods">Public 成员函数</a> &#124;
 <a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
 <a href="#pri-attribs">Private 属性</a> &#124;
 <a href="#pri-static-attribs">静态 Private 属性</a> &#124;
 <a href="../../d7/dc8/classObject-members.html">所有成员列表</a>  </div>
@@ -125,9 +126,9 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:aa164f4cf0ebff3e52c00167953866f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8f23e84a424cb6061cc9b23bb1f650c"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix4f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#af8f23e84a424cb6061cc9b23bb1f650c">model</a> ()</td></tr>
 <tr class="separator:af8f23e84a424cb6061cc9b23bb1f650c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa2867a4c1f99f99806ea093c411e861"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#aaa2867a4c1f99f99806ea093c411e861">update</a> (float delta_t)</td></tr>
-<tr class="memdesc:aaa2867a4c1f99f99806ea093c411e861"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新当前帧的物理属性。  <br /></td></tr>
-<tr class="separator:aaa2867a4c1f99f99806ea093c411e861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab20e1de61f97accf9f2e77c1a156320a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#ab20e1de61f97accf9f2e77c1a156320a">update</a> (float frame_duration)</td></tr>
+<tr class="memdesc:ab20e1de61f97accf9f2e77c1a156320a"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新当前帧要渲染的运动状态。  <br /></td></tr>
+<tr class="separator:ab20e1de61f97accf9f2e77c1a156320a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c13c26a5d9896e078a32de6593e5be5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a5c13c26a5d9896e078a32de6593e5be5">render</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader, <a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> mode, bool selected)</td></tr>
 <tr class="memdesc:a5c13c26a5d9896e078a32de6593e5be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据指定的渲染模式渲染物体。  <br /></td></tr>
 <tr class="separator:a5c13c26a5d9896e078a32de6593e5be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,8 +157,15 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td><
 <tr class="separator:aa31820215a5450a83c624324258f00dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60866179af7cb2aad410ea01de546e4e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a60866179af7cb2aad410ea01de546e4e">mass</a></td></tr>
 <tr class="separator:a60866179af7cb2aad410ea01de546e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fb00c4ab2fd22c033aae243bbb1e10a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d96/structKineticState.html">KineticState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a5fb00c4ab2fd22c033aae243bbb1e10a">prev_state</a></td></tr>
+<tr class="separator:a5fb00c4ab2fd22c033aae243bbb1e10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a049e8776aaeebac897c3ae2d3fe72f77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d96/structKineticState.html">KineticState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a049e8776aaeebac897c3ae2d3fe72f77">backup</a></td></tr>
+<tr class="separator:a049e8776aaeebac897c3ae2d3fe72f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3961b5381a8384cc71246ff15f7be99b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a3961b5381a8384cc71246ff15f7be99b">mesh</a></td></tr>
 <tr class="separator:a3961b5381a8384cc71246ff15f7be99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad4720f5c4020d0e39a00995b2780d6f"><td class="memItemLeft" align="right" valign="top"><a id="aad4720f5c4020d0e39a00995b2780d6f" name="aad4720f5c4020d0e39a00995b2780d6f"></a>
+<a class="el" href="../../d1/d7f/classBVHAccel.html">BVHAccel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>bvh</b></td></tr>
+<tr class="separator:aad4720f5c4020d0e39a00995b2780d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a0e9b68376530dd18ab88b43e8456337f"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a0e9b68376530dd18ab88b43e8456337f">center</a></td></tr>
 <tr class="separator:a0e9b68376530dd18ab88b43e8456337f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,6 +175,12 @@ Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><b>scaling</b
 <tr class="memitem:a770438fbce9eb0bc063547f0f77e0b30"><td class="memItemLeft" align="right" valign="top"><a id="a770438fbce9eb0bc063547f0f77e0b30" name="a770438fbce9eb0bc063547f0f77e0b30"></a>
 Eigen::Quaternionf&#160;</td><td class="memItemRight" valign="bottom"><b>rotation</b></td></tr>
 <tr class="separator:a770438fbce9eb0bc063547f0f77e0b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:a573b153aba95a8272b6808ebfe6955cb"><td class="memItemLeft" align="right" valign="top">static std::function&lt; <a class="el" href="../../d1/d96/structKineticState.html">KineticState</a>(const <a class="el" href="../../d1/d96/structKineticState.html">KineticState</a> &amp;, const <a class="el" href="../../d1/d96/structKineticState.html">KineticState</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a573b153aba95a8272b6808ebfe6955cb">step</a></td></tr>
+<tr class="memdesc:a573b153aba95a8272b6808ebfe6955cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于更新物体运动状态的函数。  <br /></td></tr>
+<tr class="separator:a573b153aba95a8272b6808ebfe6955cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private 属性</h2></td></tr>
@@ -274,8 +288,8 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 
 </div>
 </div>
-<a id="aaa2867a4c1f99f99806ea093c411e861" name="aaa2867a4c1f99f99806ea093c411e861"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa2867a4c1f99f99806ea093c411e861">&#9670;&#160;</a></span>update()</h2>
+<a id="ab20e1de61f97accf9f2e77c1a156320a" name="ab20e1de61f97accf9f2e77c1a156320a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab20e1de61f97accf9f2e77c1a156320a">&#9670;&#160;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -284,17 +298,17 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
           <td class="memname">void Object::update </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>delta_t</em></td><td>)</td>
+          <td class="paramname"><em>frame_duration</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>更新当前帧的物理属性。 </p>
-<p>根据上一帧结束时物体当前的位置、速度、合外力，更新物体当前帧结束时的物理属性。</p>
+<p>更新当前帧要渲染的运动状态。 </p>
+<p>根据上一帧的总时长决定计算多少时间步。</p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">delta_t</td><td>当前帧的时长，以秒为单位。 </td></tr>
+    <tr><td class="paramname">frame_duration</td><td>一帧的时长，以秒为单位。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -302,6 +316,21 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 </div>
 </div>
 <h2 class="groupheader">类成员变量说明</h2>
+<a id="a049e8776aaeebac897c3ae2d3fe72f77" name="a049e8776aaeebac897c3ae2d3fe72f77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a049e8776aaeebac897c3ae2d3fe72f77">&#9670;&#160;</a></span>backup</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d96/structKineticState.html">KineticState</a> Object::backup</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>进入物理模拟模式后用于备份初始状态。 </p>
+
+</div>
+</div>
 <a id="a0e9b68376530dd18ab88b43e8456337f" name="a0e9b68376530dd18ab88b43e8456337f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e9b68376530dd18ab88b43e8456337f">&#9670;&#160;</a></span>center</h2>
 
@@ -397,6 +426,48 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 </table>
 </div><div class="memdoc">
 <p>下一个可用的物体 ID 。 </p>
+
+</div>
+</div>
+<a id="a5fb00c4ab2fd22c033aae243bbb1e10a" name="a5fb00c4ab2fd22c033aae243bbb1e10a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fb00c4ab2fd22c033aae243bbb1e10a">&#9670;&#160;</a></span>prev_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d96/structKineticState.html">KineticState</a> Object::prev_state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>上一帧的状态，用于高阶求解器求解。 </p>
+
+</div>
+</div>
+<a id="a573b153aba95a8272b6808ebfe6955cb" name="a573b153aba95a8272b6808ebfe6955cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a573b153aba95a8272b6808ebfe6955cb">&#9670;&#160;</a></span>step</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt; <a class="el" href="../../d1/d96/structKineticState.html">KineticState</a>(const <a class="el" href="../../d1/d96/structKineticState.html">KineticState</a> &amp;, const <a class="el" href="../../d1/d96/structKineticState.html">KineticState</a> &amp;)&gt; Object::step</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    forward_euler_step</div>
+</div><!-- fragment -->
+<p>用于更新物体运动状态的函数。 </p>
+<p>让这个静态变量指向不同的函数，就可以更换不同的求解器，默认使用前向欧拉法求解。 </p>
 
 </div>
 </div>

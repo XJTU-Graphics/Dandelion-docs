@@ -1,6 +1,7 @@
 var group__rendering =
 [
     [ "rasterizer.h", "db/d37/rasterizer_8h.html", null ],
+    [ "rasterizer_mt.h", "d3/dc0/rasterizer__mt_8h.html", null ],
     [ "camera.h", "d7/df6/camera_8h.html", null ],
     [ "group.h", "d9/dd1/group_8h.html", null ],
     [ "light.h", "dd/dd3/light_8h.html", null ],
@@ -47,12 +48,14 @@ var group__rendering =
       [ "Object", "d8/d4b/classObject.html#aef343197effbc642b3f1812ac7bd3d85", null ],
       [ "model", "d8/d4b/classObject.html#af8f23e84a424cb6061cc9b23bb1f650c", null ],
       [ "render", "d8/d4b/classObject.html#a5c13c26a5d9896e078a32de6593e5be5", null ],
-      [ "update", "d8/d4b/classObject.html#aaa2867a4c1f99f99806ea093c411e861", null ],
+      [ "update", "d8/d4b/classObject.html#ab20e1de61f97accf9f2e77c1a156320a", null ],
+      [ "backup", "d8/d4b/classObject.html#a049e8776aaeebac897c3ae2d3fe72f77", null ],
       [ "center", "d8/d4b/classObject.html#a0e9b68376530dd18ab88b43e8456337f", null ],
       [ "force", "d8/d4b/classObject.html#aa31820215a5450a83c624324258f00dd", null ],
       [ "mass", "d8/d4b/classObject.html#a60866179af7cb2aad410ea01de546e4e", null ],
       [ "mesh", "d8/d4b/classObject.html#a3961b5381a8384cc71246ff15f7be99b", null ],
       [ "modified", "d8/d4b/classObject.html#abcf908134541bea512ca0148e05f1f44", null ],
+      [ "prev_state", "d8/d4b/classObject.html#a5fb00c4ab2fd22c033aae243bbb1e10a", null ],
       [ "velocity", "d8/d4b/classObject.html#a72eed21f81afdf95370d638db35b59e1", null ],
       [ "visible", "d8/d4b/classObject.html#ac2b299eaa47a407bca0e9b47205edd99", null ]
     ] ],
@@ -68,17 +71,17 @@ var group__rendering =
       [ "start_simulation", "d5/d9c/classScene.html#a95c6652f9dab25c674e14c889a0d72db", null ],
       [ "stop_simulation", "d5/d9c/classScene.html#a60ceb60b6635b4750ea7681e358b2185", null ],
       [ "arrows", "d5/d9c/classScene.html#a65320ce4e571046f3ebea79b9ef00ece", null ],
-      [ "backups", "d5/d9c/classScene.html#ae6ed1aa756b3b0e642a7d6e7ba89a700", null ],
       [ "camera", "d5/d9c/classScene.html#afed13ec4ba2d7ab75b273d507911b498", null ],
       [ "during_animation", "d5/d9c/classScene.html#a141a7d2999cde438b69442da6bbd6d79", null ],
       [ "groups", "d5/d9c/classScene.html#a3f024af6f54b5cd0dd3ed11cd875c327", null ],
       [ "halfedge_mesh", "d5/d9c/classScene.html#aaa74b766e66ccda23ba55490a93db7bb", null ],
+      [ "last_update", "d5/d9c/classScene.html#ac27383b17bb15fffc17d3e402cf4dcd9", null ],
       [ "lights", "d5/d9c/classScene.html#ab3625e4ac3c6e47156edd23e2421e828", null ],
-      [ "selected_object_id", "d5/d9c/classScene.html#ae3f9004a2faa3f55665d6aba858b1af5", null ],
-      [ "t_prev", "d5/d9c/classScene.html#a676e3279b71bb622735aebab66bb6c72", null ]
+      [ "selected_object_id", "d5/d9c/classScene.html#ae3f9004a2faa3f55665d6aba858b1af5", null ]
     ] ],
     [ "Ray", "dd/d5e/structRay.html", null ],
     [ "Intersection", "d6/d30/structIntersection.html", [
+      [ "Intersection", "d6/d30/structIntersection.html#a67497e3efe2793b23909052eeb82c4f3", null ],
       [ "barycentric_coord", "d6/d30/structIntersection.html#aa963a5e5aad31c9dbc2484c6d1eefc7e", null ],
       [ "face_index", "d6/d30/structIntersection.html#a8eb314eb1047af071a62e692e7deec76", null ],
       [ "normal", "d6/d30/structIntersection.html#a477a228b3a9a1691c1ebad8776ec511c", null ],

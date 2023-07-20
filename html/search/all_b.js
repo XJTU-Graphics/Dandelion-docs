@@ -1,13 +1,19 @@
 var searchData=
 [
-  ['naive_5fintersect_0',['naive_intersect',['../db/d81/group__utils.html#ga1a3a6b802c525058a523c2dadaae1f2b',1,'ray.h']]],
-  ['name_1',['name',['../d0/db7/classGroup.html#abfa8bde619513cf0768c14f2e5beeca1',1,'Group']]],
-  ['near_2',['near',['../d7/d7e/structCamera.html#ad96efd3e1e4ec33dddb1d25f05d02ff2',1,'Camera']]],
-  ['new_5fedge_3',['new_edge',['../dc/d6d/classHalfedgeMesh.html#a6d1f8dc7b7973b0a5d133cd9b9ac5cd3',1,'HalfedgeMesh']]],
-  ['new_5fface_4',['new_face',['../dc/d6d/classHalfedgeMesh.html#a19cdd6ee69d015c4d73235ccfe61cff8',1,'HalfedgeMesh']]],
-  ['new_5fhalfedge_5',['new_halfedge',['../dc/d6d/classHalfedgeMesh.html#a11fb68a9c539b85f208b09337d35a831',1,'HalfedgeMesh']]],
-  ['new_5fvertex_6',['new_vertex',['../dc/d6d/classHalfedgeMesh.html#a7d376f5935581aff1d04716d063f4d4d',1,'HalfedgeMesh']]],
-  ['next_7',['next',['../d0/d65/classHalfedge.html#a39fffbfff9d7dafc64e8eea6c99dfb0b',1,'Halfedge']]],
-  ['next_5favailable_5fid_8',['next_available_id',['../dc/d6d/classHalfedgeMesh.html#ad6e3b18210454fe312f8182c8f268f1b',1,'HalfedgeMesh::next_available_id()'],['../d0/db7/classGroup.html#af245c7220a98d2531d8ebfee13fd4f37',1,'Group::next_available_id()'],['../d8/d4b/classObject.html#a3b35c67dbc27347a7353581e64ccefad',1,'Object::next_available_id()']]],
-  ['normal_9',['normal',['../d2/d51/classTriangle.html#ade47eca7a673c6aa7d7844fdd910fc70',1,'Triangle::normal()'],['../d6/d30/structIntersection.html#a477a228b3a9a1691c1ebad8776ec511c',1,'Intersection::normal()'],['../d8/d88/structGL_1_1Mesh.html#a974fc923af6b4255289ffc20046afb14',1,'GL::Mesh::normal()']]]
+  ['main_5fcamera_0',['main_camera',['../d9/d85/classController.html#a20539e548e10bce4d113f894be43665e',1,'Controller']]],
+  ['mass_1',['mass',['../d8/d4b/classObject.html#a60866179af7cb2aad410ea01de546e4e',1,'Object']]],
+  ['material_2',['Material',['../d4/d50/structGL_1_1Material.html',1,'GL']]],
+  ['material_3',['material',['../d8/d88/structGL_1_1Mesh.html#a23777f301b1c83def29d6028713fb348',1,'GL::Mesh']]],
+  ['math_2ehpp_4',['math.hpp',['../d4/d78/math_8hpp.html',1,'']]],
+  ['max_5fextent_5',['max_extent',['../d2/d1a/classAABB.html#a364b0267d4571d60dca5f391f779fdd1',1,'AABB']]],
+  ['menubar_6',['menubar',['../d9/d85/classController.html#afe600befbeedd8d86dc9bf7e373e365a',1,'Controller']]],
+  ['menubar_7',['Menubar',['../d6/de2/classUI_1_1Menubar.html',1,'UI']]],
+  ['mesh_8',['Mesh',['../d8/d88/structGL_1_1Mesh.html',1,'GL']]],
+  ['mesh_9',['mesh',['../dc/d6d/classHalfedgeMesh.html#a83064ef1f92388f61c18465849fc3bdd',1,'HalfedgeMesh']]],
+  ['mesh_10',['Mesh',['../d8/d88/structGL_1_1Mesh.html#a81afad0fc0201e1c1bc012ba41a22268',1,'GL::Mesh']]],
+  ['mesh_11',['mesh',['../d1/d7f/classBVHAccel.html#a170d97e45b15482a3de8cdb52d9ae5af',1,'BVHAccel::mesh()'],['../d8/d4b/classObject.html#a3961b5381a8384cc71246ff15f7be99b',1,'Object::mesh()']]],
+  ['mode_12',['mode',['../d1/d84/classUI_1_1Toolbar.html#a348efb8685dabb528a5ef0db3d50e0bc',1,'UI::Toolbar']]],
+  ['model_13',['model',['../d1/d7f/classBVHAccel.html#a753bbd3e1b33fc9181a7ac0b2ae16c9a',1,'BVHAccel::model()'],['../d8/d4b/classObject.html#af8f23e84a424cb6061cc9b23bb1f650c',1,'Object::model()']]],
+  ['model_5fmode_14',['model_mode',['../d1/d84/classUI_1_1Toolbar.html#a49ef414deed485a34ec70f1a10b7bf54',1,'UI::Toolbar']]],
+  ['modified_15',['modified',['../d8/d4b/classObject.html#abcf908134541bea512ca0148e05f1f44',1,'Object']]]
 ];

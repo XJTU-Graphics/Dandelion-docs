@@ -104,7 +104,9 @@ $(document).ready(function(){initNavTree('d9/d77/group__simulation.html','../../
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">类</a>  </div>
+<a href="#files">文件</a> &#124;
+<a href="#nested-classes">类</a> &#124;
+<a href="#var-members">变量</a>  </div>
   <div class="headertitle"><div class="title">物理模拟</div></div>
 </div><!--header-->
 <div class="contents">
@@ -112,21 +114,58 @@ $(document).ready(function(){initNavTree('d9/d77/group__simulation.html','../../
 <p>根据物理模拟结果生成动画的模块。  
 <a href="#details">更多...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="files" name="files"></a>
+文件</h2></td></tr>
+<tr class="memitem:d4/d20/solver_8h"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d20/solver_8h.html">solver.h</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 类</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html">Object</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">表示物体的类。  <a href="../../d8/d4b/classObject.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d1c/structObjectBackup.html">ObjectBackup</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于备份物体物理属性的结构体。  <a href="../../db/d1c/structObjectBackup.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">表示一个包含相机、光源、物体的完整场景。  <a href="../../d5/d9c/classScene.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d96/structKineticState.html">KineticState</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">表示物体的质点运动学状态。  <a href="../../d1/d96/structKineticState.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:ga6325eaa3bcfa8585cbd1eb539b7f6336"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d77/group__simulation.html#ga6325eaa3bcfa8585cbd1eb539b7f6336">time_step</a> = 1.0f / 30.0f</td></tr>
+<tr class="memdesc:ga6325eaa3bcfa8585cbd1eb539b7f6336"><td class="mdescLeft">&#160;</td><td class="mdescRight">物理模拟过程使用的固定时间步。  <br /></td></tr>
+<tr class="separator:ga6325eaa3bcfa8585cbd1eb539b7f6336"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <p>根据物理模拟结果生成动画的模块。 </p>
-<p>Dandelion 允许设置每个物体的质量、速度、合外力三种物理属性，这些属性直接附加到相应的 <code><a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a></code> 实例上，并在调用 <code><a class="el" href="../../d8/d4b/classObject.html#aaa2867a4c1f99f99806ea093c411e861" title="更新当前帧的物理属性。">Object::update</a></code> 方法时更新该物体的位置和速度。点击动画模式工具栏上的 <em>Start</em> 按钮后，场景将进入播放状态，并在每一帧调用各物体的 <code>update</code> 方法，渲染位置更新后的物体。 </p>
+<p>Dandelion 允许设置每个物体的质量、速度、合外力三种物理属性，这些属性直接附加到相应的 <code><a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a></code> 实例上，并在调用 <code><a class="el" href="../../d8/d4b/classObject.html#ab20e1de61f97accf9f2e77c1a156320a" title="更新当前帧要渲染的运动状态。">Object::update</a></code> 方法时更新该物体的位置和速度。点击动画模式工具栏上的 <em>Start</em> 按钮后，场景将进入播放状态，并在每一帧调用各物体的 <code>update</code> 方法，渲染位置更新后的物体。 </p>
+<h2 class="groupheader">变量说明</h2>
+<a id="ga6325eaa3bcfa8585cbd1eb539b7f6336" name="ga6325eaa3bcfa8585cbd1eb539b7f6336"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6325eaa3bcfa8585cbd1eb539b7f6336">&#9670;&#160;</a></span>time_step</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float time_step = 1.0f / 30.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>物理模拟过程使用的固定时间步。 </p>
+<p>这个时间步独立于渲染的帧时长，物理模拟总是以每一步经过 <code>time_step</code> 秒的方式进行。 </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

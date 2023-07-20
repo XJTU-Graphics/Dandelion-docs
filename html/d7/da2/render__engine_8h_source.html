@@ -106,8 +106,8 @@ $(document).ready(function(){initNavTree('d7/da2/render__engine_8h_source.html',
   <div class="headertitle"><div class="title">render_engine.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef DANDELION_RENDER_RENDERING_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define DANDELION_RENDER_RENDERING_H</span></div>
+<a href="../../d7/da2/render__engine_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef DANDELION_RENDER_RENDER_ENGINE_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define DANDELION_RENDER_RENDER_ENGINE_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('d7/da2/render__engine_8h_source.html',
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;../scene/scene.h&quot;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"></span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * \file render/rendering.h</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * \file render/render_engine.h</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">class </span><a class="code hl_class" href="../../d7/db0/classRasterizerRenderer.html">RasterizerRenderer</a>;</div>
@@ -149,58 +149,63 @@ $(document).ready(function(){initNavTree('d7/da2/render__engine_8h_source.html',
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">// protected:</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">float</span> width, height;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    std::unique_ptr&lt;RasterizerRenderer&gt; rasterizer_render;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    std::unique_ptr&lt;WhittedRenderer&gt; whitted_render;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="comment">// std::unique_ptr&lt;WhittedRenderer&gt; whitted_render;</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"></span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"> * \ingroup rendering</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"> * \brief 负责实现Rasterizition的整个pipeline</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="../../d7/db0/classRasterizerRenderer.html">   54</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d7/db0/classRasterizerRenderer.html">RasterizerRenderer</a></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>{</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_class" href="../../d7/db0/classRasterizerRenderer.html">RasterizerRenderer</a>(<a class="code hl_class" href="../../d3/d2f/classRenderEngine.html">RenderEngine</a>&amp; engine)</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        : width(engine.width), height(engine.height), rendering_res(engine.<a class="code hl_variable" href="../../d3/d2f/classRenderEngine.html#a8a00eff19a34210acad2447e7fd358db">rendering_res</a>){};</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">void</span> render(<a class="code hl_class" href="../../d5/d9c/classScene.html">Scene</a>&amp; scene);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">float</span>&amp; width;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">float</span>&amp; height;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    std::vector&lt;unsigned char&gt;&amp; rendering_res;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>};</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"></span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"> * \ingroup rendering</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment"> * \brief 负责实现Whitted_style的整个pipeline</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="../../da/db7/classWhittedRenderer.html">   70</a></span><span class="keyword">class </span><a class="code hl_class" href="../../da/db7/classWhittedRenderer.html">WhittedRenderer</a></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>{</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_class" href="../../da/db7/classWhittedRenderer.html">WhittedRenderer</a>(<a class="code hl_class" href="../../d3/d2f/classRenderEngine.html">RenderEngine</a>&amp; engine);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">void</span> render(<a class="code hl_class" href="../../d5/d9c/classScene.html">Scene</a>&amp; scene);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">float</span>&amp; width;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">float</span>&amp; height;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    std::vector&lt;unsigned char&gt;&amp; rendering_res;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    std::shared_ptr&lt;spdlog::logger&gt; logger;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>};</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_RENDER_RENDERING_H</span></div>
-<div class="ttc" id="aclassRasterizerRenderer_html"><div class="ttname"><a href="../../d7/db0/classRasterizerRenderer.html">RasterizerRenderer</a></div><div class="ttdoc">负责实现Rasterizition的整个pipeline</div><div class="ttdef"><b>Definition:</b> render_engine.h:55</div></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">int</span> thred;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    std::unique_ptr&lt;RasterizerRenderer&gt; rasterizer_render;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    std::unique_ptr&lt;WhittedRenderer&gt; whitted_render;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">// std::unique_ptr&lt;WhittedRenderer&gt; whitted_render;</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"></span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment"> * \ingroup rendering</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"> * \brief 负责实现Rasterizition的整个pipeline</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="../../d7/db0/classRasterizerRenderer.html">   55</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d7/db0/classRasterizerRenderer.html">RasterizerRenderer</a></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_class" href="../../d7/db0/classRasterizerRenderer.html">RasterizerRenderer</a>(<a class="code hl_class" href="../../d3/d2f/classRenderEngine.html">RenderEngine</a>&amp; engine)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        : width(engine.width), height(engine.height), thred(engine.thred),</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>          rendering_res(engine.<a class="code hl_variable" href="../../d3/d2f/classRenderEngine.html#a8a00eff19a34210acad2447e7fd358db">rendering_res</a>){};</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">void</span> render(<a class="code hl_class" href="../../d5/d9c/classScene.html">Scene</a>&amp; scene);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">void</span> render_mt(<a class="code hl_class" href="../../d5/d9c/classScene.html">Scene</a>&amp; scene);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">float</span>&amp; width;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">float</span>&amp; height;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">int</span>&amp; thred;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    std::vector&lt;unsigned char&gt;&amp; rendering_res;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>};</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment"></span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"> * \ingroup rendering</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment"> * \brief 负责实现Whitted_style的整个pipeline</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="../../da/db7/classWhittedRenderer.html">   74</a></span><span class="keyword">class </span><a class="code hl_class" href="../../da/db7/classWhittedRenderer.html">WhittedRenderer</a></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <a class="code hl_class" href="../../da/db7/classWhittedRenderer.html">WhittedRenderer</a>(<a class="code hl_class" href="../../d3/d2f/classRenderEngine.html">RenderEngine</a>&amp; engine);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">void</span> render(<a class="code hl_class" href="../../d5/d9c/classScene.html">Scene</a>&amp; scene);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">float</span>&amp; width;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">float</span>&amp; height;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">int</span>&amp; thred;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    std::vector&lt;unsigned char&gt;&amp; rendering_res;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    std::shared_ptr&lt;spdlog::logger&gt; logger;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>};</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_RENDER_RENDER_ENGINE_H</span></div>
+<div class="ttc" id="aclassRasterizerRenderer_html"><div class="ttname"><a href="../../d7/db0/classRasterizerRenderer.html">RasterizerRenderer</a></div><div class="ttdoc">负责实现Rasterizition的整个pipeline</div><div class="ttdef"><b>Definition:</b> render_engine.h:56</div></div>
 <div class="ttc" id="aclassRenderEngine_html"><div class="ttname"><a href="../../d3/d2f/classRenderEngine.html">RenderEngine</a></div><div class="ttdoc">负责实现整个渲染的接口</div><div class="ttdef"><b>Definition:</b> render_engine.h:32</div></div>
 <div class="ttc" id="aclassRenderEngine_html_a8a00eff19a34210acad2447e7fd358db"><div class="ttname"><a href="../../d3/d2f/classRenderEngine.html#a8a00eff19a34210acad2447e7fd358db">RenderEngine::rendering_res</a></div><div class="ttdeci">std::vector&lt; unsigned char &gt; rendering_res</div><div class="ttdef"><b>Definition:</b> render_engine.h:37</div></div>
 <div class="ttc" id="aclassRenderEngine_html_aa079a671bcaa22501bc07fb810cce53a"><div class="ttname"><a href="../../d3/d2f/classRenderEngine.html#aa079a671bcaa22501bc07fb810cce53a">RenderEngine::render</a></div><div class="ttdeci">void render(Scene &amp;scene, RendererType type)</div><div class="ttdef"><b>Definition:</b> render_engine.cpp:9</div></div>
 <div class="ttc" id="aclassScene_html"><div class="ttname"><a href="../../d5/d9c/classScene.html">Scene</a></div><div class="ttdoc">表示一个包含相机、光源、物体的完整场景。</div><div class="ttdef"><b>Definition:</b> scene.h:44</div></div>
-<div class="ttc" id="aclassWhittedRenderer_html"><div class="ttname"><a href="../../da/db7/classWhittedRenderer.html">WhittedRenderer</a></div><div class="ttdoc">负责实现Whitted_style的整个pipeline</div><div class="ttdef"><b>Definition:</b> render_engine.h:71</div></div>
+<div class="ttc" id="aclassWhittedRenderer_html"><div class="ttname"><a href="../../da/db7/classWhittedRenderer.html">WhittedRenderer</a></div><div class="ttdoc">负责实现Whitted_style的整个pipeline</div><div class="ttdef"><b>Definition:</b> render_engine.h:75</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_e488ee1cea97fb16abdb5ccc78d2123b.html">render</a></li><li class="navelem"><b>render_engine.h</b></li>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_e488ee1cea97fb16abdb5ccc78d2123b.html">render</a></li><li class="navelem"><a class="el" href="../../d7/da2/render__engine_8h.html">render_engine.h</a></li>
     <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>

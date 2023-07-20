@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['camera_0',['Camera',['../d7/d7e/structCamera.html',1,'']]],
-  ['controller_1',['Controller',['../d9/d85/classController.html',1,'']]]
+  ['bvhaccel_0',['BVHAccel',['../d1/d7f/classBVHAccel.html',1,'']]],
+  ['bvhnode_1',['BVHNode',['../d4/d59/structBVHNode.html',1,'']]]
 ];

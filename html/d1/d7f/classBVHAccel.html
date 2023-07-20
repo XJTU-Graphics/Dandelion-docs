@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dandelion: BVHAccel类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="../../mathjax/es5/tex-chtml.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;0.2.2</span>
+   </div>
+   <div id="projectbrief">A light-weight 3D builder for educational usage</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d1/d7f/classBVHAccel.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="../../d6/dfa/classBVHAccel-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">BVHAccel类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a09e046481a2e3d85c0d711675ae35cce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/classBVHAccel.html#a09e046481a2e3d85c0d711675ae35cce">BVHAccel</a> (const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;mesh_type)</td></tr>
+<tr class="memdesc:a09e046481a2e3d85c0d711675ae35cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">BVH加速结构的构造函数  <br /></td></tr>
+<tr class="separator:a09e046481a2e3d85c0d711675ae35cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa76c85de1ca3ce2f9cee47300685b404"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/classBVHAccel.html#aa76c85de1ca3ce2f9cee47300685b404">BVH_build</a> ()</td></tr>
+<tr class="separator:aa76c85de1ca3ce2f9cee47300685b404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af46630084a78268a1d604321def5d2c5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/classBVHAccel.html#af46630084a78268a1d604321def5d2c5">count_nodes</a> (<a class="el" href="../../d4/d59/structBVHNode.html">BVHNode</a> *node)</td></tr>
+<tr class="separator:af46630084a78268a1d604321def5d2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae485750fe876e5fbe4d5b7060333be7a"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/classBVHAccel.html#ae485750fe876e5fbe4d5b7060333be7a">BVH_intersection</a> (const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray, const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;<a class="el" href="../../d1/d7f/classBVHAccel.html#a170d97e45b15482a3de8cdb52d9ae5af">mesh</a>, const Eigen::Matrix4f obj_model)</td></tr>
+<tr class="memdesc:ae485750fe876e5fbe4d5b7060333be7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">BVH加速求交的函数调用接口  <br /></td></tr>
+<tr class="separator:ae485750fe876e5fbe4d5b7060333be7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ebdce82bd0a235b5d6bdf7f255c70a"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/classBVHAccel.html#ae7ebdce82bd0a235b5d6bdf7f255c70a">get_intersection</a> (<a class="el" href="../../d4/d59/structBVHNode.html">BVHNode</a> *node, const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray) const</td></tr>
+<tr class="memdesc:ae7ebdce82bd0a235b5d6bdf7f255c70a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取BVH求交的结果  <br /></td></tr>
+<tr class="separator:ae7ebdce82bd0a235b5d6bdf7f255c70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b58e3827ce54b2a1ca096525f9ee9ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d59/structBVHNode.html">BVHNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/classBVHAccel.html#a7b58e3827ce54b2a1ca096525f9ee9ad">recursive_build</a> (std::vector&lt; size_t &gt; faces_idx)</td></tr>
+<tr class="separator:a7b58e3827ce54b2a1ca096525f9ee9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ad5d794928dc8527e9973987388e97227"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d59/structBVHNode.html">BVHNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/classBVHAccel.html#ad5d794928dc8527e9973987388e97227">root</a></td></tr>
+<tr class="separator:ad5d794928dc8527e9973987388e97227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a170d97e45b15482a3de8cdb52d9ae5af"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/classBVHAccel.html#a170d97e45b15482a3de8cdb52d9ae5af">mesh</a></td></tr>
+<tr class="separator:a170d97e45b15482a3de8cdb52d9ae5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfc515d904fdea662932e96f40ccb094"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/classBVHAccel.html#acfc515d904fdea662932e96f40ccb094">primitives</a></td></tr>
+<tr class="separator:acfc515d904fdea662932e96f40ccb094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a753bbd3e1b33fc9181a7ac0b2ae16c9a"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix4f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/classBVHAccel.html#a753bbd3e1b33fc9181a7ac0b2ae16c9a">model</a></td></tr>
+<tr class="separator:a753bbd3e1b33fc9181a7ac0b2ae16c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a09e046481a2e3d85c0d711675ae35cce" name="a09e046481a2e3d85c0d711675ae35cce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09e046481a2e3d85c0d711675ae35cce">&#9670;&#160;</a></span>BVHAccel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BVHAccel::BVHAccel </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>mesh_type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BVH加速结构的构造函数 </p>
+<p>传入当前mesh的类型</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh_type</td><td>mesh的类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aa76c85de1ca3ce2f9cee47300685b404" name="aa76c85de1ca3ce2f9cee47300685b404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa76c85de1ca3ce2f9cee47300685b404">&#9670;&#160;</a></span>BVH_build()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BVHAccel::BVH_build </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>建立整个object的bvh的函数调用接口 </p>
+
+</div>
+</div>
+<a id="ae485750fe876e5fbe4d5b7060333be7a" name="ae485750fe876e5fbe4d5b7060333be7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae485750fe876e5fbe4d5b7060333be7a">&#9670;&#160;</a></span>BVH_intersection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a> &gt; BVHAccel::BVH_intersection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>ray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Matrix4f&#160;</td>
+          <td class="paramname"><em>obj_model</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BVH加速求交的函数调用接口 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ray</td><td>求交的射线 </td></tr>
+    <tr><td class="paramname">mesh</td><td>当前的mesh </td></tr>
+    <tr><td class="paramname">obj_model</td><td>当前mesh所在object的model矩阵 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af46630084a78268a1d604321def5d2c5" name="af46630084a78268a1d604321def5d2c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af46630084a78268a1d604321def5d2c5">&#9670;&#160;</a></span>count_nodes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t BVHAccel::count_nodes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d59/structBVHNode.html">BVHNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>统计当前bvh的节点总数 </p>
+
+</div>
+</div>
+<a id="ae7ebdce82bd0a235b5d6bdf7f255c70a" name="ae7ebdce82bd0a235b5d6bdf7f255c70a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7ebdce82bd0a235b5d6bdf7f255c70a">&#9670;&#160;</a></span>get_intersection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a> &gt; BVHAccel::get_intersection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d59/structBVHNode.html">BVHNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>ray</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取BVH求交的结果 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>求交的节点 </td></tr>
+    <tr><td class="paramname">ray</td><td>求交的射线 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7b58e3827ce54b2a1ca096525f9ee9ad" name="a7b58e3827ce54b2a1ca096525f9ee9ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b58e3827ce54b2a1ca096525f9ee9ad">&#9670;&#160;</a></span>recursive_build()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d59/structBVHNode.html">BVHNode</a> * BVHAccel::recursive_build </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; size_t &gt;&#160;</td>
+          <td class="paramname"><em>faces_idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>建立整个object的bvh的函数具体实现，边界条件为覆盖的面片数&lt;=1 </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a170d97e45b15482a3de8cdb52d9ae5af" name="a170d97e45b15482a3de8cdb52d9ae5af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a170d97e45b15482a3de8cdb52d9ae5af">&#9670;&#160;</a></span>mesh</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a>&amp; BVHAccel::mesh</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>当前bvh所在object的mesh </p>
+
+</div>
+</div>
+<a id="a753bbd3e1b33fc9181a7ac0b2ae16c9a" name="a753bbd3e1b33fc9181a7ac0b2ae16c9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a753bbd3e1b33fc9181a7ac0b2ae16c9a">&#9670;&#160;</a></span>model</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Matrix4f BVHAccel::model</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>当前bvh所在object的model矩阵 </p>
+
+</div>
+</div>
+<a id="acfc515d904fdea662932e96f40ccb094" name="acfc515d904fdea662932e96f40ccb094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfc515d904fdea662932e96f40ccb094">&#9670;&#160;</a></span>primitives</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;size_t&gt; BVHAccel::primitives</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>当前mesh的所有面片索引 </p>
+
+</div>
+</div>
+<a id="ad5d794928dc8527e9973987388e97227" name="ad5d794928dc8527e9973987388e97227"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5d794928dc8527e9973987388e97227">&#9670;&#160;</a></span>root</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d59/structBVHNode.html">BVHNode</a>* BVHAccel::root</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>整个bvh的根节点 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="../../d3/dd6/bvh_8h_source.html">bvh.h</a></li>
+<li>bvh.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d1/d7f/classBVHAccel.html">BVHAccel</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

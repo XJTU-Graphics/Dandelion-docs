@@ -110,29 +110,31 @@ $(document).ready(function(){initNavTree('d4/d70/halfedge_8h.html','../../'); in
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cstddef&gt;</code><br />
-<code>#include &lt;list&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;Eigen/Core&gt;</code><br />
 <code>#include &lt;spdlog/sinks/stdout_color_sinks.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../d7/d6a/gl_8hpp_source.html">../platform/gl.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d9/d52/shader_8hpp_source.html">../platform/shader.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d07/linked__list_8hpp_source.html">../utils/linked_list.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/d10/object_8h_source.html">../scene/object.h</a>&quot;</code><br />
 </div>
 <p><a href="../../d4/d70/halfedge_8h_source.html">浏览源代码.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 类</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d65/classHalfedge.html">Halfedge</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">半边网格中最关键的几何元素。  <a href="../../d0/d65/classHalfedge.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d02/structHalfedge.html">Halfedge</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">半边网格中最关键的几何元素。  <a href="../../df/d02/structHalfedge.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da0/classVertex.html">Vertex</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">半边网格中的顶点。  <a href="../../d2/da0/classVertex.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd0/structVertex.html">Vertex</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">半边网格中的顶点。  <a href="../../df/dd0/structVertex.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d8c/classEdge.html">Edge</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">半边网格中的边。  <a href="../../d8/d8c/classEdge.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4f/structEdge.html">Edge</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">半边网格中的边。  <a href="../../d2/d4f/structEdge.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db7/classFace.html">Face</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">半边网格中的面片。  <a href="../../d3/db7/classFace.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d02/structFace.html">Face</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">半边网格中的面片。  <a href="../../d0/d02/structFace.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">半边网格整体。  <a href="../../dc/d6d/classHalfedgeMesh.html#details">更多...</a><br /></td></tr>
@@ -140,9 +142,20 @@ $(document).ready(function(){initNavTree('d4/d70/halfedge_8h.html','../../'); in
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 枚举</h2></td></tr>
-<tr class="memitem:a61975e76d464c02410b50d5600f125da"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d70/halfedge_8h.html#a61975e76d464c02410b50d5600f125da">HalfedgeMeshFailure</a> { <b>NO_SELECTED_MESH</b>
+<tr class="memitem:a61975e76d464c02410b50d5600f125da"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d70/halfedge_8h.html#a61975e76d464c02410b50d5600f125da">HalfedgeMeshFailure</a> { <br />
+&#160;&#160;<b>NO_SELECTED_MESH</b>
 , <b>MULTIPLE_ORIENTED_EDGES</b>
 , <b>NON_MANIFOLD_VERTEX</b>
+, <b>INIFINITE_POSITION_VALUE</b>
+, <br />
+&#160;&#160;<b>INVALID_HALFEDGE_PERMUTATION</b>
+, <b>INVALID_VERTEX_CONNECTIVITY</b>
+, <b>INVALID_EDGE_CONNECTIVITY</b>
+, <b>INVALID_FACE_CONNECTIVITY</b>
+, <br />
+&#160;&#160;<b>ILL_FORMED_HALFEDGE_INVERSION</b>
+, <b>POOR_HALFEDGE_ACCESSIBILITY</b>
+<br />
  }</td></tr>
 <tr class="memdesc:a61975e76d464c02410b50d5600f125da"><td class="mdescLeft">&#160;</td><td class="mdescRight">半边网格的不合法情况。  <a href="../../d4/d70/halfedge_8h.html#a61975e76d464c02410b50d5600f125da">更多...</a><br /></td></tr>
 <tr class="separator:a61975e76d464c02410b50d5600f125da"><td class="memSeparator" colspan="2">&#160;</td></tr>

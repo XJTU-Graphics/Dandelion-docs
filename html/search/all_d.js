@@ -1,14 +1,10 @@
 var searchData=
 [
-  ['pi_0',['pi',['../db/d81/group__utils.html#ga8af16bad73ed4f92ede4dd5e7841bd7c',1,'math.hpp']]],
-  ['picking_5fenabled_5fmodes_1',['picking_enabled_modes',['../dc/df7/rendering_8hpp.html#a2d1f9d29e3d9cadcf469f07790d4be18',1,'rendering.hpp']]],
-  ['platform_2',['Platform',['../df/d1e/classPlatform.html',1,'Platform'],['../df/d1e/classPlatform.html#a52028ea2984cbfdf8e9f42ee87f66cfe',1,'Platform::Platform()']]],
-  ['platform_2eh_3',['platform.h',['../de/d03/platform_8h.html',1,'']]],
-  ['point_5fsize_4',['point_size',['../dc/df7/rendering_8hpp.html#a7040e00a64700f0d2349c23740688f56',1,'rendering.hpp']]],
-  ['pos_5',['pos',['../d2/da0/classVertex.html#af590da4b6d7ff4f46e36e866dbf18e26',1,'Vertex']]],
-  ['position_6',['position',['../d7/d7e/structCamera.html#ae52020b85d1f749f50c533fe10fc0f91',1,'Camera::position()'],['../d5/d79/structLight.html#ac485b2b57b34f6d01f316f57b40c2fed',1,'Light::position()']]],
-  ['prev_7',['prev',['../d0/d65/classHalfedge.html#a3641c6df7c8eb01d6380cd88987367fc',1,'Halfedge']]],
-  ['process_5finput_8',['process_input',['../d9/d85/classController.html#aff4ccad882e4bab51ff03428c63e88f8',1,'Controller']]],
-  ['projection_9',['projection',['../d7/d7e/structCamera.html#ade56525b5437d9e2c8a890a734bc83d1',1,'Camera']]],
-  ['px_10',['px',['../de/d60/settings_8h.html#a53072ebbe79e8cd92487137cae89d590',1,'settings.h']]]
+  ['object_0',['Object',['../d8/d4b/classObject.html',1,'Object'],['../d8/d4b/classObject.html#aef343197effbc642b3f1812ac7bd3d85',1,'Object::Object()']]],
+  ['object_2eh_1',['object.h',['../de/d10/object_8h.html',1,'']]],
+  ['objects_2',['objects',['../d0/db7/classGroup.html#a5ed3dd74efb74aa8fc1b336f6491a238',1,'Group']]],
+  ['on_5fframebuffer_5fresized_3',['on_framebuffer_resized',['../d9/d85/classController.html#a142bc68626ef6319295599d939e56cf0',1,'Controller']]],
+  ['on_5fmouse_5fclicked_4',['on_mouse_clicked',['../d9/d85/classController.html#ac03e75b3d3bf2ea41c7a889e7267316a',1,'Controller']]],
+  ['on_5fmouse_5fdragged_5',['on_mouse_dragged',['../d9/d85/classController.html#ac33cc6c318b232a74c05b2b48b2c41bb',1,'Controller']]],
+  ['on_5fwheel_5fscrolled_6',['on_wheel_scrolled',['../d9/d85/classController.html#a17e48bd3ebf3cd691b7485cfa65c3043',1,'Controller']]]
 ];
