@@ -2,6 +2,7 @@ var classBVHAccel =
 [
     [ "BVHAccel", "d1/d7f/classBVHAccel.html#a09e046481a2e3d85c0d711675ae35cce", null ],
     [ "BVH_build", "d1/d7f/classBVHAccel.html#aa76c85de1ca3ce2f9cee47300685b404", null ],
+    [ "BVH_delete", "d1/d7f/classBVHAccel.html#afd73e4ef5e1bb26cabfc52822c4c4be2", null ],
     [ "BVH_intersection", "d1/d7f/classBVHAccel.html#ae485750fe876e5fbe4d5b7060333be7a", null ],
     [ "count_nodes", "d1/d7f/classBVHAccel.html#af46630084a78268a1d604321def5d2c5", null ],
     [ "get_intersection", "d1/d7f/classBVHAccel.html#ae7ebdce82bd0a235b5d6bdf7f255c70a", null ],

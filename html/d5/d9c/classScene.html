@@ -148,12 +148,13 @@ Public 成员函数</h2></td></tr>
 Public 属性</h2></td></tr>
 <tr class="memitem:a3f024af6f54b5cd0dd3ed11cd875c327"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="../../d0/db7/classGroup.html">Group</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#a3f024af6f54b5cd0dd3ed11cd875c327">groups</a></td></tr>
 <tr class="separator:a3f024af6f54b5cd0dd3ed11cd875c327"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3f9004a2faa3f55665d6aba858b1af5"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#ae3f9004a2faa3f55665d6aba858b1af5">selected_object_id</a></td></tr>
-<tr class="separator:ae3f9004a2faa3f55665d6aba858b1af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaa5052d36de2f738beaa15dce2a63bd"><td class="memItemLeft" align="right" valign="top"><a id="adaa5052d36de2f738beaa15dce2a63bd" name="adaa5052d36de2f738beaa15dce2a63bd"></a>
+<a class="el" href="../../d8/d4b/classObject.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>selected_object</b></td></tr>
+<tr class="separator:adaa5052d36de2f738beaa15dce2a63bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afed13ec4ba2d7ab75b273d507911b498"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d7e/structCamera.html">Camera</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#afed13ec4ba2d7ab75b273d507911b498">camera</a></td></tr>
 <tr class="separator:afed13ec4ba2d7ab75b273d507911b498"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3625e4ac3c6e47156edd23e2421e828"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#ab3625e4ac3c6e47156edd23e2421e828">lights</a></td></tr>
-<tr class="separator:ab3625e4ac3c6e47156edd23e2421e828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7481b024ed1181823b38c10e663ffea7"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#a7481b024ed1181823b38c10e663ffea7">lights</a></td></tr>
+<tr class="separator:a7481b024ed1181823b38c10e663ffea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa74b766e66ccda23ba55490a93db7bb"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#aaa74b766e66ccda23ba55490a93db7bb">halfedge_mesh</a></td></tr>
 <tr class="separator:aaa74b766e66ccda23ba55490a93db7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -570,33 +571,18 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 
 </div>
 </div>
-<a id="ab3625e4ac3c6e47156edd23e2421e828" name="ab3625e4ac3c6e47156edd23e2421e828"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3625e4ac3c6e47156edd23e2421e828">&#9670;&#160;</a></span>lights</h2>
+<a id="a7481b024ed1181823b38c10e663ffea7" name="a7481b024ed1181823b38c10e663ffea7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7481b024ed1181823b38c10e663ffea7">&#9670;&#160;</a></span>lights</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="../../d5/d79/structLight.html">Light</a>&gt; Scene::lights</td>
+          <td class="memname">std::list&lt;<a class="el" href="../../d5/d79/structLight.html">Light</a>&gt; Scene::lights</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>用于 <b>离线渲染</b> 的光源，和预览时照亮物体的光源无关。 </p>
-
-</div>
-</div>
-<a id="ae3f9004a2faa3f55665d6aba858b1af5" name="ae3f9004a2faa3f55665d6aba858b1af5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3f9004a2faa3f55665d6aba858b1af5">&#9670;&#160;</a></span>selected_object_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::optional&lt;std::size_t&gt; Scene::selected_object_id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>当前选中的物体 ID，任何模式下此 ID 都可能为空。 </p>
 
 </div>
 </div>

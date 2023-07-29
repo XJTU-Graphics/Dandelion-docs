@@ -7,9 +7,14 @@ var hierarchy =
     [ "BVHNode", "d4/d59/structBVHNode.html", null ],
     [ "Camera", "d7/d7e/structCamera.html", null ],
     [ "Controller", "d9/d85/classController.html", null ],
+    [ "UI::DebugOptions", "d9/dc1/structUI_1_1DebugOptions.html", null ],
     [ "GL::ElementArrayBuffer< size >", "da/dd6/structGL_1_1ElementArrayBuffer.html", null ],
     [ "GL::ElementArrayBuffer< 2 >", "da/dd6/structGL_1_1ElementArrayBuffer.html", null ],
     [ "GL::ElementArrayBuffer< 3 >", "da/dd6/structGL_1_1ElementArrayBuffer.html", null ],
+    [ "formatter", null, [
+      [ "fmt::formatter< Eigen::Matrix< Scalar, n_dim, 1 > >", "d9/dd8/structfmt_1_1formatter_3_01Eigen_1_1Matrix_3_01Scalar_00_01n__dim_00_011_01_4_01_4.html", null ],
+      [ "fmt::formatter< Eigen::Matrix< Scalar, n_dim, n_dim > >", "d3/d6a/structfmt_1_1formatter_3_01Eigen_1_1Matrix_3_01Scalar_00_01n__dim_00_01n__dim_01_4_01_4.html", null ]
+    ] ],
     [ "FragmentShaderPayload", "db/dd4/structFragmentShaderPayload.html", null ],
     [ "Group", "d0/db7/classGroup.html", null ],
     [ "HalfedgeMesh", "dc/d6d/classHalfedgeMesh.html", null ],
@@ -51,5 +56,8 @@ var hierarchy =
     [ "Triangle", "d2/d51/classTriangle.html", null ],
     [ "GL::VertexArrayObject", "d9/d82/structGL_1_1VertexArrayObject.html", null ],
     [ "VertexShaderPayload", "d9/d78/structVertexShaderPayload.html", null ],
-    [ "WhittedRenderer", "da/db7/classWhittedRenderer.html", null ]
+    [ "WhittedRenderer", "da/db7/classWhittedRenderer.html", null ],
+    [ "Ts", null, [
+      [ "overloaded< Ts >", "d9/d94/structoverloaded.html", null ]
+    ] ]
 ];

@@ -118,6 +118,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a09e046481a2e3d85c0d711675ae35cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa76c85de1ca3ce2f9cee47300685b404"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/classBVHAccel.html#aa76c85de1ca3ce2f9cee47300685b404">BVH_build</a> ()</td></tr>
 <tr class="separator:aa76c85de1ca3ce2f9cee47300685b404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd73e4ef5e1bb26cabfc52822c4c4be2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/classBVHAccel.html#afd73e4ef5e1bb26cabfc52822c4c4be2">BVH_delete</a> (<a class="el" href="../../d4/d59/structBVHNode.html">BVHNode</a> *node)</td></tr>
+<tr class="separator:afd73e4ef5e1bb26cabfc52822c4c4be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af46630084a78268a1d604321def5d2c5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/classBVHAccel.html#af46630084a78268a1d604321def5d2c5">count_nodes</a> (<a class="el" href="../../d4/d59/structBVHNode.html">BVHNode</a> *node)</td></tr>
 <tr class="separator:af46630084a78268a1d604321def5d2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae485750fe876e5fbe4d5b7060333be7a"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/classBVHAccel.html#ae485750fe876e5fbe4d5b7060333be7a">BVH_intersection</a> (const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray, const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;<a class="el" href="../../d1/d7f/classBVHAccel.html#a170d97e45b15482a3de8cdb52d9ae5af">mesh</a>, const Eigen::Matrix4f obj_model)</td></tr>
@@ -184,6 +186,25 @@ Public 属性</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>建立整个object的bvh的函数调用接口 </p>
+
+</div>
+</div>
+<a id="afd73e4ef5e1bb26cabfc52822c4c4be2" name="afd73e4ef5e1bb26cabfc52822c4c4be2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd73e4ef5e1bb26cabfc52822c4c4be2">&#9670;&#160;</a></span>BVH_delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BVHAccel::BVH_delete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d59/structBVHNode.html">BVHNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>删除建立的整个bvh </p>
 
 </div>
 </div>

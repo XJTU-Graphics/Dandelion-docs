@@ -1,7 +1,5 @@
 var group__rendering =
 [
-    [ "rasterizer.h", "db/d37/rasterizer_8h.html", null ],
-    [ "rasterizer_mt.h", "d3/dc0/rasterizer__mt_8h.html", null ],
     [ "camera.h", "d7/df6/camera_8h.html", null ],
     [ "group.h", "d9/dd1/group_8h.html", null ],
     [ "light.h", "dd/dd3/light_8h.html", null ],
@@ -76,8 +74,7 @@ var group__rendering =
       [ "groups", "d5/d9c/classScene.html#a3f024af6f54b5cd0dd3ed11cd875c327", null ],
       [ "halfedge_mesh", "d5/d9c/classScene.html#aaa74b766e66ccda23ba55490a93db7bb", null ],
       [ "last_update", "d5/d9c/classScene.html#ac27383b17bb15fffc17d3e402cf4dcd9", null ],
-      [ "lights", "d5/d9c/classScene.html#ab3625e4ac3c6e47156edd23e2421e828", null ],
-      [ "selected_object_id", "d5/d9c/classScene.html#ae3f9004a2faa3f55665d6aba858b1af5", null ]
+      [ "lights", "d5/d9c/classScene.html#a7481b024ed1181823b38c10e663ffea7", null ]
     ] ],
     [ "Ray", "dd/d5e/structRay.html", null ],
     [ "Intersection", "d6/d30/structIntersection.html", [

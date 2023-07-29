@@ -110,11 +110,12 @@ $(document).ready(function(){initNavTree('d8/df1/build.html','../../'); initResi
 编译和运行环境</h1>
 <p>编译和运行的环境必须满足如下条件：</p>
 <ul>
-<li>提供支持 C++ 17 标准的编译器、可以运行 CMake</li>
+<li>提供支持 C++ 17 标准的编译器、不低于 3.14 版本的 CMake</li>
 <li>64 位操作系统</li>
-<li>硬件（驱动）至少支持 OpenGL 3.3 版本</li>
+<li>显卡驱动至少支持 OpenGL 3.3 Core Profile</li>
 </ul>
-<p>运行于 x86-64 硬件架构上的 Windows 10 / 11、Mac OS X 和 Debian / Ubuntu / Linux Mint / Arch Linux / Manjaro 等常见 Linux 发行版均满足条件。由于我们没有使用 Apple Scillion 处理器的设备，不保证在 Apple M 系列芯片的计算机上一定运行正常。另外，Virtual Box 支持的 OpenGL 版本太低，如欲使用虚拟机运行，请用 VMware Player / Workstation 创建虚拟机并开启硬件加速选项。</p>
+<p>运行于 x86-64 硬件架构上的 Windows 10 / 11、macOS 和 Debian / Ubuntu / Linux Mint / Fedora/ Arch Linux / Manjaro 等常见 Linux 发行版均满足条件。使用 Apple M 系列芯片 (Apple Silicon) 的 macbook 和 iMac 同样可以。</p>
+<p>请不要使用虚拟机中的系统，因为 Virtual Box 支持的 OpenGL 版本太低，而 VMware 的虚拟显卡驱动实现的 OpenGL API 疑似存在 bug。目前已经确认 VMware 创建的 Windows 虚拟机不能正常使用 Dandelion 框架，Linux 虚拟机暂时没有问题，但如果以后出现我们不会专门解决。</p>
 <h1><a class="anchor" id="dependencies"></a>
 依赖</h1>
 <p>这个项目依赖于如下的第三方库：</p>
@@ -126,30 +127,54 @@ $(document).ready(function(){initNavTree('d8/df1/build.html','../../'); initResi
 <li>Dear ImGui 1.89.3 (docking branch), MIT License</li>
 <li>stb_image 2.28, MIT License &amp; Public Domain</li>
 <li>spdlog 1.11.0, MIT License</li>
+<li>{fmt} 9.1.0, {fmt}'s License</li>
 <li>portable-file-dialogs (commit 7f852d88a480020d7f91957cbcefe514fc95000c), WTFPL License</li>
 </ul>
-<p>所有的依赖项均被包含于 deps 子目录中，不需要额外下载或安装。</p>
+<p>所有的依赖项均被包含于 <em>deps</em> 子目录中，不需要额外下载或安装。由于我们对一些库进行了修复移植或裁剪，也请不要轻易尝试替换 <em>deps</em> 目录下的第三方库，它们和官方发布的相应版本可能并不完全一样。</p>
 <h1><a class="anchor" id="requests"></a>
 工具需求</h1>
 <ul>
-<li>支持 C++ 17 标准的编译器（推荐使用 Visual Studio 2019 及以上版本附带的 MSVC、GNU G++ 10 及以上、Clang++ 12 及以上）</li>
-<li>CMake 3.8 及以上（推荐使用最新的稳定版本）</li>
+<li>支持 C++ 17 标准的编译器（推荐使用 Visual Studio 2019 及以上版本附带的 MSVC、GNU G++ 12 及以上、Clang++ 14 及以上）</li>
+<li>CMake 3.14 及以上（推荐使用最新的稳定版本）</li>
 </ul>
-<p>在基于 Debian 的 Linux 发行版环境下，请安装 <code>build-essential cmake cmake-extras</code> 软件包。</p>
+<p>在 Windows 平台上，从官方网站下载安装足够新的 Visual Studio 和 CMake 即可；在 Linux 平台上可以用包管理器安装编译器和 CMake；在 macOS 平台上，我们推荐安装 XCode 命令行工具，并使用 Homebrew 安装 CMake。</p>
+<blockquote class="doxtable">
+<p>&zwj;基于 Debian 的 Linux 发行版（使用 apt 包管理器）中，所需软件包名是 <code>build-essential cmake cmake-extras</code>，其他发行版请自行确定对应的包，亦可选择从源代码编译安装。 </p>
+</blockquote>
 <h1><a class="anchor" id="compilation"></a>
 编译</h1>
+<p>由于日志输出是调试实验的重要参考，我们始终推荐从 <b>终端</b> 启动 Dandelion。在 Windows 平台上，我们推荐使用 PowerShell 而非 cmd，并推荐使用 Windows Terminal 作为终端模拟器；在 Linux 或 macOS 平台上可以直接使用默认的 shell 和终端模拟器，更熟悉这些工具的话也可以自己挑选。</p>
+<p>以下的所有说明中，均以“终端”代指终端模拟器而非 shell。不清楚二者区别的话，可以简单认为“终端”就是指能执行命令的窗口。</p>
+<p>由于我们人力有限，Dandelion 仅支持 Debug 和 Release 两种构建类型，在不修改 <em>CMakeLists.txt</em> 的情况下，你也只能用这两个类型构建 Dandelion。这并不意味着 MinSizeRel 和 RelWithDebInfo 类型一定会构建出错，但我们不会在这两个模式下作任何测试。</p>
 <h2><a class="anchor" id="compilation-windows"></a>
 Windows</h2>
-<h2><a class="anchor" id="compilation-linux"></a>
+<p>打开终端，进入 dandelion 根目录并执行如下命令：</p>
+<div class="fragment"><div class="line">&gt; New-Item -ItemType &quot;directory&quot; build</div>
+<div class="line">&gt; Set-Location build</div>
+<div class="line">&gt; cmake -S .. -B .</div>
+<div class="line">&gt; cmake --build . --config=Debug --target dandelion --parallel 8</div>
+</div><!-- fragment --><p>此时 <em>resources</em> 目录应当已经被复制到 <em>build</em> 目录下，并且在 <em>build/Debug</em> 目录下已经生成了可执行文件 <em>dandelion.exe</em> 。由于可执行文件必须和 <em>resources</em> 目录处于同一路径下，你需要将编译好的程序移动到 <em>build</em> 目录下，然后就可以运行了：</p>
+<div class="fragment"><div class="line">&gt; Move-Item Debug\dandelion.exe .</div>
+<div class="line">&gt; .\dandelion.exe</div>
+</div><!-- fragment --><p>MSVC 和 MS Build 是 Multi-config 的构建工具，在调整构建类型时不需要重新配置 CMake 项目，只需修改参数重新编译：</p>
+<div class="fragment"><div class="line">&gt; cmake --build . --config=Release --target dandelion --parallel 8</div>
+<div class="line">&gt; Move-Item Release\dandelion.exe .</div>
+</div><!-- fragment --><h2><a class="anchor" id="compilation-linux"></a>
 Linux</h2>
 <p>打开终端，进入 dandelion 目录并执行如下命令：</p>
 <div class="fragment"><div class="line">$ mkdir build</div>
 <div class="line">$ cd build</div>
-<div class="line">$ cmake ..</div>
-<div class="line">$ make -j8</div>
+<div class="line">$ cmake -S .. -B . -DCMAKE_BUILD_TYPE=Debug</div>
+<div class="line">$ cmake --build . --parallel 8</div>
+</div><!-- fragment --><p>完成后可以直接运行程序：</p>
+<div class="fragment"><div class="line">$ ./dandelion</div>
+</div><!-- fragment --><p>GNU Make 是 Single-config 的构建工具，需要重新配置 CMake 项目才能改变构建类型：</p>
+<div class="fragment"><div class="line">$ cmake -S .. -B . =DCMAKE_BUILD_TYPE=Release</div>
+<div class="line">$ cmake --build . --parallel 8</div>
 </div><!-- fragment --><p>调整 <code>cmake</code> 命令的参数可以调整编译设置。修改 <code>make</code> 命令 <code>-j</code> 参数后接的数字可以调整编译器使用的线程数，建议和物理核心数量等同。</p>
 <h2><a class="anchor" id="compilation-macos"></a>
-Max OS</h2>
+macOS</h2>
+<p>打开终端执行和 Linux 平台相同的命令即可。 </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

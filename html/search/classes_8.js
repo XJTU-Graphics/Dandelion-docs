@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kineticstate_0',['KineticState',['../d1/d96/structKineticState.html',1,'']]]
+  ['intersection_0',['Intersection',['../d6/d30/structIntersection.html',1,'']]]
 ];

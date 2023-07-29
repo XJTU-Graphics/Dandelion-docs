@@ -33,8 +33,7 @@ var group__simulation =
       [ "groups", "d5/d9c/classScene.html#a3f024af6f54b5cd0dd3ed11cd875c327", null ],
       [ "halfedge_mesh", "d5/d9c/classScene.html#aaa74b766e66ccda23ba55490a93db7bb", null ],
       [ "last_update", "d5/d9c/classScene.html#ac27383b17bb15fffc17d3e402cf4dcd9", null ],
-      [ "lights", "d5/d9c/classScene.html#ab3625e4ac3c6e47156edd23e2421e828", null ],
-      [ "selected_object_id", "d5/d9c/classScene.html#ae3f9004a2faa3f55665d6aba858b1af5", null ]
+      [ "lights", "d5/d9c/classScene.html#a7481b024ed1181823b38c10e663ffea7", null ]
     ] ],
     [ "KineticState", "d1/d96/structKineticState.html", null ],
     [ "time_step", "d9/d77/group__simulation.html#ga6325eaa3bcfa8585cbd1eb539b7f6336", null ]

@@ -124,9 +124,9 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:ac33cc6c318b232a74c05b2b48b2c41bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#ac33cc6c318b232a74c05b2b48b2c41bb">on_mouse_dragged</a> (bool initial)</td></tr>
 <tr class="memdesc:ac33cc6c318b232a74c05b2b48b2c41bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">将鼠标拖动转换为轨迹球 (Trackball) 操作，用于旋转预览视角。  <br /></td></tr>
 <tr class="separator:ac33cc6c318b232a74c05b2b48b2c41bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac03e75b3d3bf2ea41c7a889e7267316a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#ac03e75b3d3bf2ea41c7a889e7267316a">on_mouse_clicked</a> ()</td></tr>
-<tr class="memdesc:ac03e75b3d3bf2ea41c7a889e7267316a"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据鼠标点击选取场景中的物体。  <br /></td></tr>
-<tr class="separator:ac03e75b3d3bf2ea41c7a889e7267316a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbadba65eafc040639cc668dde8f77b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#acbadba65eafc040639cc668dde8f77b6">on_picking</a> ()</td></tr>
+<tr class="memdesc:acbadba65eafc040639cc668dde8f77b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据鼠标点击选取场景中的物体。  <br /></td></tr>
+<tr class="separator:acbadba65eafc040639cc668dde8f77b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17e48bd3ebf3cd691b7485cfa65c3043"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a17e48bd3ebf3cd691b7485cfa65c3043">on_wheel_scrolled</a> ()</td></tr>
 <tr class="memdesc:a17e48bd3ebf3cd691b7485cfa65c3043"><td class="mdescLeft">&#160;</td><td class="mdescRight">将拨动鼠标滚轮的操作转换为视角拉进或远离。  <br /></td></tr>
 <tr class="separator:a17e48bd3ebf3cd691b7485cfa65c3043"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,14 +164,35 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>toolbar_width</b></t
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private 成员函数</h2></td></tr>
+<tr class="memitem:abd409e96ddd047aefda4234848d4fde5"><td class="memItemLeft" align="right" valign="top"><a id="abd409e96ddd047aefda4234848d4fde5" name="abd409e96ddd047aefda4234848d4fde5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>select</b> (SelectionType element)</td></tr>
+<tr class="separator:abd409e96ddd047aefda4234848d4fde5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69e94c079159d625ae394d3fd5fa1680"><td class="memItemLeft" align="right" valign="top"><a id="a69e94c079159d625ae394d3fd5fa1680" name="a69e94c079159d625ae394d3fd5fa1680"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>unselect</b> ()</td></tr>
+<tr class="separator:a69e94c079159d625ae394d3fd5fa1680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ed430569aa8dc4e63bbd82ad345db35"><td class="memItemLeft" align="right" valign="top"><a id="a2ed430569aa8dc4e63bbd82ad345db35" name="a2ed430569aa8dc4e63bbd82ad345db35"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>render_selected_element</b> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader)</td></tr>
+<tr class="separator:a2ed430569aa8dc4e63bbd82ad345db35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02e3ca1fde70039aca71b42a22b513b1"><td class="memItemLeft" align="right" valign="top"><a id="a02e3ca1fde70039aca71b42a22b513b1" name="a02e3ca1fde70039aca71b42a22b513b1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>select_object</b> (<a class="el" href="../../d8/d4b/classObject.html">Object</a> *object)</td></tr>
+<tr class="separator:a02e3ca1fde70039aca71b42a22b513b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03eadf6e188df2ee9a8d4b53b4066d92"><td class="memItemLeft" align="right" valign="top"><a id="a03eadf6e188df2ee9a8d4b53b4066d92" name="a03eadf6e188df2ee9a8d4b53b4066d92"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>select_light</b> (<a class="el" href="../../d5/d79/structLight.html">Light</a> *light)</td></tr>
+<tr class="separator:a03eadf6e188df2ee9a8d4b53b4066d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95c56822d667e94b031451729ce069a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a95c56822d667e94b031451729ce069a9">Controller</a> ()</td></tr>
 <tr class="separator:a95c56822d667e94b031451729ce069a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private 属性</h2></td></tr>
+<tr class="memitem:a2b60e1a9302100c28471c18a46dba481"><td class="memItemLeft" align="right" valign="top"><a id="a2b60e1a9302100c28471c18a46dba481" name="a2b60e1a9302100c28471c18a46dba481"></a>
+<a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mode</b></td></tr>
+<tr class="separator:a2b60e1a9302100c28471c18a46dba481"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace52a4008fe15ea112fc7ae6b9d22ca0"><td class="memItemLeft" align="right" valign="top"><a id="ace52a4008fe15ea112fc7ae6b9d22ca0" name="ace52a4008fe15ea112fc7ae6b9d22ca0"></a>
 std::unique_ptr&lt; <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>scene</b></td></tr>
 <tr class="separator:ace52a4008fe15ea112fc7ae6b9d22ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0300bc4b01b97244da474be4d3b7c38d"><td class="memItemLeft" align="right" valign="top"><a id="a0300bc4b01b97244da474be4d3b7c38d" name="a0300bc4b01b97244da474be4d3b7c38d"></a>
+SelectionType&#160;</td><td class="memItemRight" valign="bottom"><b>selected_element</b></td></tr>
+<tr class="separator:a0300bc4b01b97244da474be4d3b7c38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20539e548e10bce4d113f894be43665e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a20539e548e10bce4d113f894be43665e">main_camera</a></td></tr>
 <tr class="separator:a20539e548e10bce4d113f894be43665e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ac9aefe19714d124cb032e23fd23e75"><td class="memItemLeft" align="right" valign="top"><a id="a3ac9aefe19714d124cb032e23fd23e75" name="a3ac9aefe19714d124cb032e23fd23e75"></a>
@@ -179,9 +200,18 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 <tr class="separator:a3ac9aefe19714d124cb032e23fd23e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae604a933148415cb35ffd6dfdc6572b5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#ae604a933148415cb35ffd6dfdc6572b5">trackball_radius</a></td></tr>
 <tr class="separator:ae604a933148415cb35ffd6dfdc6572b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5a2db1447f9cfb2f59fb6b236ddcb61"><td class="memItemLeft" align="right" valign="top"><a id="ac5a2db1447f9cfb2f59fb6b236ddcb61" name="ac5a2db1447f9cfb2f59fb6b236ddcb61"></a>
+<a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a>&#160;</td><td class="memItemRight" valign="bottom"><b>highlighted_element</b></td></tr>
+<tr class="separator:ac5a2db1447f9cfb2f59fb6b236ddcb61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa4a1e64142b9502bb07c23a503bd74e"><td class="memItemLeft" align="right" valign="top"><a id="aaa4a1e64142b9502bb07c23a503bd74e" name="aaa4a1e64142b9502bb07c23a503bd74e"></a>
+<a class="el" href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a>&#160;</td><td class="memItemRight" valign="bottom"><b>picking_ray</b></td></tr>
+<tr class="separator:aaa4a1e64142b9502bb07c23a503bd74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:afe600befbeedd8d86dc9bf7e373e365a"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d6/de2/classUI_1_1Menubar.html">UI::Menubar</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#afe600befbeedd8d86dc9bf7e373e365a">menubar</a></td></tr>
 <tr class="separator:afe600befbeedd8d86dc9bf7e373e365a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbdb13a1e6b5471db07eb418795d513f"><td class="memItemLeft" align="right" valign="top"><a id="abbdb13a1e6b5471db07eb418795d513f" name="abbdb13a1e6b5471db07eb418795d513f"></a>
+<a class="el" href="../../d9/dc1/structUI_1_1DebugOptions.html">UI::DebugOptions</a>&#160;</td><td class="memItemRight" valign="bottom"><b>debug_options</b></td></tr>
+<tr class="separator:abbdb13a1e6b5471db07eb418795d513f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1359b487bc897978a39d647cc915cd71"><td class="memItemLeft" align="right" valign="top"><a id="a1359b487bc897978a39d647cc915cd71" name="a1359b487bc897978a39d647cc915cd71"></a>
 std::unique_ptr&lt; <a class="el" href="../../d1/d84/classUI_1_1Toolbar.html">UI::Toolbar</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>toolbar</b></td></tr>
 <tr class="separator:a1359b487bc897978a39d647cc915cd71"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -317,26 +347,6 @@ std::unique_ptr&lt; <a class="el" href="../../d1/d84/classUI_1_1Toolbar.html">UI
 
 </div>
 </div>
-<a id="ac03e75b3d3bf2ea41c7a889e7267316a" name="ac03e75b3d3bf2ea41c7a889e7267316a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac03e75b3d3bf2ea41c7a889e7267316a">&#9670;&#160;</a></span>on_mouse_clicked()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Controller::on_mouse_clicked </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>根据鼠标点击选取场景中的物体。 </p>
-<p>这个函数将鼠标点击的屏幕坐标 (screen space) 转换为观察坐标 (view space)， 然后将观察坐标转换回世界坐标 (world space)，从而构造一条从观察相机（主相机） 发出的射线，按这条射线与场景中物体的相交结果拾取（选中）物体。 </p>
-
-</div>
-</div>
 <a id="ac33cc6c318b232a74c05b2b48b2c41bb" name="ac33cc6c318b232a74c05b2b48b2c41bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac33cc6c318b232a74c05b2b48b2c41bb">&#9670;&#160;</a></span>on_mouse_dragged()</h2>
 
@@ -360,6 +370,26 @@ std::unique_ptr&lt; <a class="el" href="../../d1/d84/classUI_1_1Toolbar.html">UI
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="acbadba65eafc040639cc668dde8f77b6" name="acbadba65eafc040639cc668dde8f77b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbadba65eafc040639cc668dde8f77b6">&#9670;&#160;</a></span>on_picking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::on_picking </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>根据鼠标点击选取场景中的物体。 </p>
+<p>这个函数将鼠标点击的屏幕坐标 (screen space) 转换为观察坐标 (view space)， 然后将观察坐标转换回世界坐标 (world space)，从而构造一条从观察相机（主相机） 发出的射线，按这条射线与场景中物体的相交结果拾取（选中）物体。 </p>
 
 </div>
 </div>

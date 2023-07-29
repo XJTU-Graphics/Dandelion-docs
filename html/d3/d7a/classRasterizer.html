@@ -105,7 +105,9 @@ $(document).ready(function(){initNavTree('d3/d7a/classRasterizer.html','../../')
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
 <a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-static-methods">静态 Private 成员函数</a> &#124;
 <a href="#pri-attribs">Private 属性</a> &#124;
 <a href="../../dd/d81/classRasterizer-members.html">所有成员列表</a>  </div>
   <div class="headertitle"><div class="title">Rasterizer类 参考</div></div>
@@ -129,66 +131,63 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_projection</b> (c
 <tr class="memitem:af33938fafc4adc034697b7bf206e60d1"><td class="memItemLeft" align="right" valign="top"><a id="af33938fafc4adc034697b7bf206e60d1" name="af33938fafc4adc034697b7bf206e60d1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_vertex_shader</b> (std::function&lt; Eigen::Vector3f(<a class="el" href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a>)&gt; vert_shader)</td></tr>
 <tr class="separator:af33938fafc4adc034697b7bf206e60d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4eb73a32d3a594f4edb8e46421a67d4"><td class="memItemLeft" align="right" valign="top"><a id="ac4eb73a32d3a594f4edb8e46421a67d4" name="ac4eb73a32d3a594f4edb8e46421a67d4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_fragment_shader</b> (std::function&lt; Eigen::Vector3f(<a class="el" href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a>, <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a>, std::vector&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt;, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a>)&gt; frag_shader)</td></tr>
-<tr class="separator:ac4eb73a32d3a594f4edb8e46421a67d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8f8a08aca3a676497ef87e406a36f60"><td class="memItemLeft" align="right" valign="top"><a id="ac8f8a08aca3a676497ef87e406a36f60" name="ac8f8a08aca3a676497ef87e406a36f60"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_fragment_shader</b> (std::function&lt; Eigen::Vector3f(<a class="el" href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a>, <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a>, const std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a>)&gt; frag_shader)</td></tr>
+<tr class="separator:ac8f8a08aca3a676497ef87e406a36f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2afc14d3e92e883020ddc7d23cea4439"><td class="memItemLeft" align="right" valign="top"><a id="a2afc14d3e92e883020ddc7d23cea4439" name="a2afc14d3e92e883020ddc7d23cea4439"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_pixel</b> (const Eigen::Vector2i &amp;point, const Eigen::Vector3f &amp;color)</td></tr>
 <tr class="separator:a2afc14d3e92e883020ddc7d23cea4439"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a362fb3cfcc2666b58cbe025b9acc7b48"><td class="memItemLeft" align="right" valign="top"><a id="a362fb3cfcc2666b58cbe025b9acc7b48" name="a362fb3cfcc2666b58cbe025b9acc7b48"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> (const std::vector&lt; <a class="el" href="../../d2/d51/classTriangle.html">Triangle</a> &gt; &amp;TriangleList, const <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &amp;material, const std::vector&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;lights, const <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp;camera)</td></tr>
-<tr class="separator:a362fb3cfcc2666b58cbe025b9acc7b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8db1125e7514a596641807532970fa28"><td class="memItemLeft" align="right" valign="top"><a id="a8db1125e7514a596641807532970fa28" name="a8db1125e7514a596641807532970fa28"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> (const std::vector&lt; <a class="el" href="../../d2/d51/classTriangle.html">Triangle</a> &gt; &amp;TriangleList, const <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &amp;material, const std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;lights, const <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp;camera)</td></tr>
+<tr class="separator:a8db1125e7514a596641807532970fa28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48ad181d334bb651736be952c9d15a58"><td class="memItemLeft" align="right" valign="top"><a id="a48ad181d334bb651736be952c9d15a58" name="a48ad181d334bb651736be952c9d15a58"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>draw_mt</b> (const std::vector&lt; <a class="el" href="../../d2/d51/classTriangle.html">Triangle</a> &gt; &amp;TriangleList, const <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &amp;material, const std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;lights, const <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp;camera)</td></tr>
+<tr class="separator:a48ad181d334bb651736be952c9d15a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae59ae997aa16aeaa026486da24f67de8"><td class="memItemLeft" align="right" valign="top"><a id="ae59ae997aa16aeaa026486da24f67de8" name="ae59ae997aa16aeaa026486da24f67de8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> (BufferType buff)</td></tr>
 <tr class="separator:ae59ae997aa16aeaa026486da24f67de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4fbcfbad64825833f6d5a8eb1eba321"><td class="memItemLeft" align="right" valign="top"><a id="af4fbcfbad64825833f6d5a8eb1eba321" name="af4fbcfbad64825833f6d5a8eb1eba321"></a>
-std::vector&lt; Eigen::Vector3f &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>frame_buffer</b> ()</td></tr>
-<tr class="separator:af4fbcfbad64825833f6d5a8eb1eba321"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f93bacb61aa74392378ff0186abb7f3"><td class="memItemLeft" align="right" valign="top"><a id="a5f93bacb61aa74392378ff0186abb7f3" name="a5f93bacb61aa74392378ff0186abb7f3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Rasterizer</b> (int w, int h)</td></tr>
-<tr class="separator:a5f93bacb61aa74392378ff0186abb7f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf55464624517d1b734498c68fda9acf"><td class="memItemLeft" align="right" valign="top"><a id="adf55464624517d1b734498c68fda9acf" name="adf55464624517d1b734498c68fda9acf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_model</b> (const Eigen::Matrix4f &amp;M)</td></tr>
-<tr class="separator:adf55464624517d1b734498c68fda9acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accb4c6b50147141fafd319116761bcc6"><td class="memItemLeft" align="right" valign="top"><a id="accb4c6b50147141fafd319116761bcc6" name="accb4c6b50147141fafd319116761bcc6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_view</b> (const Eigen::Matrix4f &amp;V)</td></tr>
-<tr class="separator:accb4c6b50147141fafd319116761bcc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b73e4d4d92e92642d909abf4d8c830d"><td class="memItemLeft" align="right" valign="top"><a id="a0b73e4d4d92e92642d909abf4d8c830d" name="a0b73e4d4d92e92642d909abf4d8c830d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_projection</b> (const Eigen::Matrix4f &amp;P)</td></tr>
-<tr class="separator:a0b73e4d4d92e92642d909abf4d8c830d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af33938fafc4adc034697b7bf206e60d1"><td class="memItemLeft" align="right" valign="top"><a id="af33938fafc4adc034697b7bf206e60d1" name="af33938fafc4adc034697b7bf206e60d1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_vertex_shader</b> (std::function&lt; Eigen::Vector3f(<a class="el" href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a>)&gt; vert_shader)</td></tr>
-<tr class="separator:af33938fafc4adc034697b7bf206e60d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4eb73a32d3a594f4edb8e46421a67d4"><td class="memItemLeft" align="right" valign="top"><a id="ac4eb73a32d3a594f4edb8e46421a67d4" name="ac4eb73a32d3a594f4edb8e46421a67d4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_fragment_shader</b> (std::function&lt; Eigen::Vector3f(<a class="el" href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a>, <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a>, std::vector&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt;, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a>)&gt; frag_shader)</td></tr>
-<tr class="separator:ac4eb73a32d3a594f4edb8e46421a67d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2afc14d3e92e883020ddc7d23cea4439"><td class="memItemLeft" align="right" valign="top"><a id="a2afc14d3e92e883020ddc7d23cea4439" name="a2afc14d3e92e883020ddc7d23cea4439"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_pixel</b> (const Eigen::Vector2i &amp;point, const Eigen::Vector3f &amp;color)</td></tr>
-<tr class="separator:a2afc14d3e92e883020ddc7d23cea4439"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a362fb3cfcc2666b58cbe025b9acc7b48"><td class="memItemLeft" align="right" valign="top"><a id="a362fb3cfcc2666b58cbe025b9acc7b48" name="a362fb3cfcc2666b58cbe025b9acc7b48"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> (const std::vector&lt; <a class="el" href="../../d2/d51/classTriangle.html">Triangle</a> &gt; &amp;TriangleList, const <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &amp;material, const std::vector&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;lights, const <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp;camera)</td></tr>
-<tr class="separator:a362fb3cfcc2666b58cbe025b9acc7b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae59ae997aa16aeaa026486da24f67de8"><td class="memItemLeft" align="right" valign="top"><a id="ae59ae997aa16aeaa026486da24f67de8" name="ae59ae997aa16aeaa026486da24f67de8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> (BufferType buff)</td></tr>
-<tr class="separator:ae59ae997aa16aeaa026486da24f67de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ac0bec4b6fcbc82f729408000d2fdceeb"><td class="memItemLeft" align="right" valign="top"><a id="ac0bec4b6fcbc82f729408000d2fdceeb" name="ac0bec4b6fcbc82f729408000d2fdceeb"></a>
+std::vector&lt; Eigen::Vector3f &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>frame_buf</b></td></tr>
+<tr class="separator:ac0bec4b6fcbc82f729408000d2fdceeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3e43549449dddcd42f4f82d09c463d"><td class="memItemLeft" align="right" valign="top"><a id="a0c3e43549449dddcd42f4f82d09c463d" name="a0c3e43549449dddcd42f4f82d09c463d"></a>
+std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>depth_buf</b></td></tr>
+<tr class="separator:a0c3e43549449dddcd42f4f82d09c463d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private 成员函数</h2></td></tr>
-<tr class="memitem:a9f8e84773b6db5af6d608e830b07b411"><td class="memItemLeft" align="right" valign="top"><a id="a9f8e84773b6db5af6d608e830b07b411" name="a9f8e84773b6db5af6d608e830b07b411"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>rasterize_triangle</b> (const <a class="el" href="../../d2/d51/classTriangle.html">Triangle</a> &amp;t, const std::array&lt; Eigen::Vector3f, 3 &gt; &amp;world_pos, <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> material, std::vector&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; lights, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> camera)</td></tr>
-<tr class="separator:a9f8e84773b6db5af6d608e830b07b411"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abacd8713859a4a1061065df1f9c36d8a"><td class="memItemLeft" align="right" valign="top"><a id="abacd8713859a4a1061065df1f9c36d8a" name="abacd8713859a4a1061065df1f9c36d8a"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>get_index</b> (int x, int y)</td></tr>
-<tr class="separator:abacd8713859a4a1061065df1f9c36d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa55d87288e2a0da1da848931ac29d0ac"><td class="memItemLeft" align="right" valign="top"><a id="aa55d87288e2a0da1da848931ac29d0ac" name="aa55d87288e2a0da1da848931ac29d0ac"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>rasterize_triangle_mt</b> (const <a class="el" href="../../d2/d51/classTriangle.html">Triangle</a> &amp;t, const std::array&lt; Eigen::Vector3f, 3 &gt; &amp;world_pos, <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> material, std::vector&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; lights, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> camera)</td></tr>
-<tr class="separator:aa55d87288e2a0da1da848931ac29d0ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb3cab09f4d3aebd6768455cae586738"><td class="memItemLeft" align="right" valign="top"><a id="aeb3cab09f4d3aebd6768455cae586738" name="aeb3cab09f4d3aebd6768455cae586738"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>rasterize_triangle</b> (const <a class="el" href="../../d2/d51/classTriangle.html">Triangle</a> &amp;t, const std::array&lt; Eigen::Vector3f, 3 &gt; &amp;world_pos, <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> material, const std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;lights, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> camera)</td></tr>
+<tr class="separator:aeb3cab09f4d3aebd6768455cae586738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65c41e65e4df65d1421279ee0359de54"><td class="memItemLeft" align="right" valign="top"><a id="a65c41e65e4df65d1421279ee0359de54" name="a65c41e65e4df65d1421279ee0359de54"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>rasterize_triangle_mt</b> (const <a class="el" href="../../d2/d51/classTriangle.html">Triangle</a> &amp;t, const std::array&lt; Eigen::Vector3f, 3 &gt; &amp;world_pos, <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> material, const std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;lights, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> camera)</td></tr>
+<tr class="separator:a65c41e65e4df65d1421279ee0359de54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abacd8713859a4a1061065df1f9c36d8a"><td class="memItemLeft" align="right" valign="top"><a id="abacd8713859a4a1061065df1f9c36d8a" name="abacd8713859a4a1061065df1f9c36d8a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>get_index</b> (int x, int y)</td></tr>
 <tr class="separator:abacd8713859a4a1061065df1f9c36d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+静态 Private 成员函数</h2></td></tr>
+<tr class="memitem:a417c8579bd870e2ec9147ec606426315"><td class="memItemLeft" align="right" valign="top"><a id="a417c8579bd870e2ec9147ec606426315" name="a417c8579bd870e2ec9147ec606426315"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>inside_triangle</b> (int x, int y, const Eigen::Vector4f *vertices)</td></tr>
+<tr class="separator:a417c8579bd870e2ec9147ec606426315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afecb95c7771bd5a41030a78669ac48ef"><td class="memItemLeft" align="right" valign="top"><a id="afecb95c7771bd5a41030a78669ac48ef" name="afecb95c7771bd5a41030a78669ac48ef"></a>
+static std::tuple&lt; float, float, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>compute_barycentric_2d</b> (float x, float y, const Eigen::Vector4f *v)</td></tr>
+<tr class="separator:afecb95c7771bd5a41030a78669ac48ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27041fb4fa845aabd13048b727a6a1d6"><td class="memItemLeft" align="right" valign="top"><a id="a27041fb4fa845aabd13048b727a6a1d6" name="a27041fb4fa845aabd13048b727a6a1d6"></a>
+static Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><b>interpolate</b> (float alpha, float beta, float gamma, const Eigen::Vector3f &amp;vert1, const Eigen::Vector3f &amp;vert2, const Eigen::Vector3f &amp;vert3, float weight)</td></tr>
+<tr class="separator:a27041fb4fa845aabd13048b727a6a1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private 属性</h2></td></tr>
+<tr class="memitem:af993306b6f616f1b4e04a2707dc6e0e0"><td class="memItemLeft" align="right" valign="top"><a id="af993306b6f616f1b4e04a2707dc6e0e0" name="af993306b6f616f1b4e04a2707dc6e0e0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>width</b></td></tr>
+<tr class="separator:af993306b6f616f1b4e04a2707dc6e0e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa691b6d1fcb4677e2fec13db0857d5e1"><td class="memItemLeft" align="right" valign="top"><a id="aa691b6d1fcb4677e2fec13db0857d5e1" name="aa691b6d1fcb4677e2fec13db0857d5e1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
+<tr class="separator:aa691b6d1fcb4677e2fec13db0857d5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62eda98fe643c15e13374d74f8a064c3"><td class="memItemLeft" align="right" valign="top"><a id="a62eda98fe643c15e13374d74f8a064c3" name="a62eda98fe643c15e13374d74f8a064c3"></a>
 Eigen::Matrix4f&#160;</td><td class="memItemRight" valign="bottom"><b>model</b></td></tr>
 <tr class="separator:a62eda98fe643c15e13374d74f8a064c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,28 +197,15 @@ Eigen::Matrix4f&#160;</td><td class="memItemRight" valign="bottom"><b>view</b></
 <tr class="memitem:a32f4d6c66aa35f2ce8552832a2990989"><td class="memItemLeft" align="right" valign="top"><a id="a32f4d6c66aa35f2ce8552832a2990989" name="a32f4d6c66aa35f2ce8552832a2990989"></a>
 Eigen::Matrix4f&#160;</td><td class="memItemRight" valign="bottom"><b>projection</b></td></tr>
 <tr class="separator:a32f4d6c66aa35f2ce8552832a2990989"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac93fdb4e4e4def386dc2197b2f2dd843"><td class="memItemLeft" align="right" valign="top"><a id="ac93fdb4e4e4def386dc2197b2f2dd843" name="ac93fdb4e4e4def386dc2197b2f2dd843"></a>
-std::vector&lt; Eigen::Vector3f &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>frame_buf</b></td></tr>
-<tr class="separator:ac93fdb4e4e4def386dc2197b2f2dd843"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a448d5a270d7eebcbe295e4566c9c58a8"><td class="memItemLeft" align="right" valign="top"><a id="a448d5a270d7eebcbe295e4566c9c58a8" name="a448d5a270d7eebcbe295e4566c9c58a8"></a>
-std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>depth_buf</b></td></tr>
-<tr class="separator:a448d5a270d7eebcbe295e4566c9c58a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a534a7c4d60793a57a418f6f2beedc342"><td class="memItemLeft" align="right" valign="top"><a id="a534a7c4d60793a57a418f6f2beedc342" name="a534a7c4d60793a57a418f6f2beedc342"></a>
+<tr class="memitem:a719fd5e48199f109eb5ebca9a0aa80df"><td class="memItemLeft" align="right" valign="top"><a id="a719fd5e48199f109eb5ebca9a0aa80df" name="a719fd5e48199f109eb5ebca9a0aa80df"></a>
 std::function&lt; Eigen::Vector3f(<a class="el" href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vertex_shader</b></td></tr>
-<tr class="separator:a534a7c4d60793a57a418f6f2beedc342"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a341d92ac210103ab5c2fc1a99f78b422"><td class="memItemLeft" align="right" valign="top"><a id="a341d92ac210103ab5c2fc1a99f78b422" name="a341d92ac210103ab5c2fc1a99f78b422"></a>
-std::function&lt; Eigen::Vector3f(<a class="el" href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a>, <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a>, std::vector&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt;, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fragment_shader</b></td></tr>
-<tr class="separator:a341d92ac210103ab5c2fc1a99f78b422"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af993306b6f616f1b4e04a2707dc6e0e0"><td class="memItemLeft" align="right" valign="top"><a id="af993306b6f616f1b4e04a2707dc6e0e0" name="af993306b6f616f1b4e04a2707dc6e0e0"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>width</b></td></tr>
-<tr class="separator:af993306b6f616f1b4e04a2707dc6e0e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa691b6d1fcb4677e2fec13db0857d5e1"><td class="memItemLeft" align="right" valign="top"><a id="aa691b6d1fcb4677e2fec13db0857d5e1" name="aa691b6d1fcb4677e2fec13db0857d5e1"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
-<tr class="separator:aa691b6d1fcb4677e2fec13db0857d5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a719fd5e48199f109eb5ebca9a0aa80df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e830aa437f41ba1deb00684001b5a0e"><td class="memItemLeft" align="right" valign="top"><a id="a9e830aa437f41ba1deb00684001b5a0e" name="a9e830aa437f41ba1deb00684001b5a0e"></a>
+std::function&lt; Eigen::Vector3f(<a class="el" href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a>, <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a>, const std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fragment_shader</b></td></tr>
+<tr class="separator:a9e830aa437f41ba1deb00684001b5a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>该类的文档由以下文件生成:<ul>
 <li><a class="el" href="../../db/d37/rasterizer_8h_source.html">rasterizer.h</a></li>
-<li><a class="el" href="../../d3/dc0/rasterizer__mt_8h_source.html">rasterizer_mt.h</a></li>
 <li>rasterizer.cpp</li>
 <li>rasterizer_mt.cpp</li>
 </ul>

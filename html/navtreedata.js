@@ -33,7 +33,7 @@ var NAVTREE =
       [ "编译", "d8/df1/build.html#compilation", [
         [ "Windows", "d8/df1/build.html#compilation-windows", null ],
         [ "Linux", "d8/df1/build.html#compilation-linux", null ],
-        [ "Max OS", "d8/df1/build.html#compilation-macos", null ]
+        [ "macOS", "d8/df1/build.html#compilation-macos", null ]
       ] ]
     ] ],
     [ "开始开发", "da/d2c/startup.html", [
@@ -76,7 +76,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"da/d2c/startup.html#commit"
+"da/d2c/startup.html#code-complention"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

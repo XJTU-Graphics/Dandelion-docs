@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['halfedge_0',['Halfedge',['../df/d02/structHalfedge.html',1,'']]],
-  ['halfedgemesh_1',['HalfedgeMesh',['../dc/d6d/classHalfedgeMesh.html',1,'']]]
+  ['group_0',['Group',['../d0/db7/classGroup.html',1,'']]]
 ];

@@ -1,5 +1,9 @@
 var annotated_dup =
 [
+    [ "fmt", null, [
+      [ "formatter< Eigen::Matrix< Scalar, n_dim, 1 > >", "d9/dd8/structfmt_1_1formatter_3_01Eigen_1_1Matrix_3_01Scalar_00_01n__dim_00_011_01_4_01_4.html", null ],
+      [ "formatter< Eigen::Matrix< Scalar, n_dim, n_dim > >", "d3/d6a/structfmt_1_1formatter_3_01Eigen_1_1Matrix_3_01Scalar_00_01n__dim_00_01n__dim_01_4_01_4.html", null ]
+    ] ],
     [ "GL", null, [
       [ "ArrayBuffer", "d6/dba/structGL_1_1ArrayBuffer.html", "d6/dba/structGL_1_1ArrayBuffer" ],
       [ "ElementArrayBuffer", "da/dd6/structGL_1_1ElementArrayBuffer.html", "da/dd6/structGL_1_1ElementArrayBuffer" ],
@@ -9,6 +13,7 @@ var annotated_dup =
       [ "VertexArrayObject", "d9/d82/structGL_1_1VertexArrayObject.html", "d9/d82/structGL_1_1VertexArrayObject" ]
     ] ],
     [ "UI", null, [
+      [ "DebugOptions", "d9/dc1/structUI_1_1DebugOptions.html", null ],
       [ "Menubar", "d6/de2/classUI_1_1Menubar.html", null ],
       [ "Toolbar", "d1/d84/classUI_1_1Toolbar.html", "d1/d84/classUI_1_1Toolbar" ]
     ] ],
@@ -29,6 +34,7 @@ var annotated_dup =
     [ "LinkedList", "d7/dde/classLinkedList.html", "d7/dde/classLinkedList" ],
     [ "LinkedListNode", "d6/d73/structLinkedListNode.html", null ],
     [ "Object", "d8/d4b/classObject.html", "d8/d4b/classObject" ],
+    [ "overloaded", "d9/d94/structoverloaded.html", null ],
     [ "Platform", "df/d1e/classPlatform.html", "df/d1e/classPlatform" ],
     [ "Rasterizer", "d3/d7a/classRasterizer.html", null ],
     [ "RasterizerRenderer", "d7/db0/classRasterizerRenderer.html", null ],
