@@ -13,8 +13,8 @@ var annotated_dup =
       [ "VertexArrayObject", "d9/d82/structGL_1_1VertexArrayObject.html", "d9/d82/structGL_1_1VertexArrayObject" ]
     ] ],
     [ "UI", null, [
-      [ "DebugOptions", "d9/dc1/structUI_1_1DebugOptions.html", null ],
-      [ "Menubar", "d6/de2/classUI_1_1Menubar.html", null ],
+      [ "DebugOptions", "d9/dc1/structUI_1_1DebugOptions.html", "d9/dc1/structUI_1_1DebugOptions" ],
+      [ "Menubar", "d6/de2/classUI_1_1Menubar.html", "d6/de2/classUI_1_1Menubar" ],
       [ "Toolbar", "d1/d84/classUI_1_1Toolbar.html", "d1/d84/classUI_1_1Toolbar" ]
     ] ],
     [ "AABB", "d2/d1a/classAABB.html", "d2/d1a/classAABB" ],

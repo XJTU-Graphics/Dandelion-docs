@@ -8,6 +8,7 @@ var hierarchy =
     [ "Camera", "d7/d7e/structCamera.html", null ],
     [ "Controller", "d9/d85/classController.html", null ],
     [ "UI::DebugOptions", "d9/dc1/structUI_1_1DebugOptions.html", null ],
+    [ "HalfedgeMesh::EdgeRecord", "d7/d4b/structHalfedgeMesh_1_1EdgeRecord.html", null ],
     [ "GL::ElementArrayBuffer< size >", "da/dd6/structGL_1_1ElementArrayBuffer.html", null ],
     [ "GL::ElementArrayBuffer< 2 >", "da/dd6/structGL_1_1ElementArrayBuffer.html", null ],
     [ "GL::ElementArrayBuffer< 3 >", "da/dd6/structGL_1_1ElementArrayBuffer.html", null ],

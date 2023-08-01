@@ -133,6 +133,9 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a605a48e7c99737fb0404f54c5245be1f"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
 <tr class="memitem:a605a48e7c99737fb0404f54c5245be1f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a605a48e7c99737fb0404f54c5245be1f">append</a> (Ts... values)</td></tr>
 <tr class="separator:a605a48e7c99737fb0404f54c5245be1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25a9ab706eefcb16a992948393006cb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a25a9ab706eefcb16a992948393006cb3">update</a> (size_t index, const Eigen::Vector3f &amp;value)</td></tr>
+<tr class="memdesc:a25a9ab706eefcb16a992948393006cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新指定位置的 <code>size</code> 个数据。  <br /></td></tr>
+<tr class="separator:a25a9ab706eefcb16a992948393006cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5cac6ebe97d4f7cfdddc9b694fe6397"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dba/structGL_1_1ArrayBuffer.html#ad5cac6ebe97d4f7cfdddc9b694fe6397">count</a> () const</td></tr>
 <tr class="separator:ad5cac6ebe97d4f7cfdddc9b694fe6397"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae486606f2927953ef45babf8adef5bb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dba/structGL_1_1ArrayBuffer.html#ae486606f2927953ef45babf8adef5bb9">bind</a> ()</td></tr>
@@ -367,6 +370,45 @@ template&lt;typename T , std::size_t size&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>将数据传送到 GPU，调用前无需绑定。 </p>
+
+</div>
+</div>
+<a id="a25a9ab706eefcb16a992948393006cb3" name="a25a9ab706eefcb16a992948393006cb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25a9ab706eefcb16a992948393006cb3">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::size_t size&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d6/dba/structGL_1_1ArrayBuffer.html">GL::ArrayBuffer</a>&lt; T, size &gt;::update </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Vector3f &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>更新指定位置的 <code>size</code> 个数据。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>要更新的顶点索引 </td></tr>
+    <tr><td class="paramname">value</td><td>新的值 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

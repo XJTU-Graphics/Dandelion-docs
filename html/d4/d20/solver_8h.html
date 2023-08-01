@@ -108,6 +108,9 @@ $(document).ready(function(){initNavTree('d4/d20/solver_8h.html','../../'); init
   <div class="headertitle"><div class="title">solver.h 文件参考<div class="ingroups"><a class="el" href="../../d9/d77/group__simulation.html">物理模拟</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>求解运动方程的各种求解器。  
+<a href="#details">更多...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="../../de/d17/kinetic__state_8h_source.html">../utils/kinetic_state.h</a>&quot;</code><br />
 </div>
 <p><a href="../../d4/d20/solver_8h_source.html">浏览源代码.</a></p>
@@ -131,7 +134,16 @@ $(document).ready(function(){initNavTree('d4/d20/solver_8h.html','../../'); init
 <tr class="memdesc:a8646e59c916e93fc88f4db99ddc27722"><td class="mdescLeft">&#160;</td><td class="mdescRight">对称（半隐式）欧拉法求解器。 <br /></td></tr>
 <tr class="separator:a8646e59c916e93fc88f4db99ddc27722"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>求解运动方程的各种求解器。 </p>
+<p>恒定外力下物体的运动方程微分形式是  </p><p class="formulaDsp">
+\begin{aligned}
+    \frac{\mathrm{d}\mathbf{x}}{\mathrm{d}t}&amp;=\mathbf{v}(t) \\
+    \frac{\mathrm{d}\mathbf{v}}{\mathrm{d}t}&amp;=\mathbf{F}
+\end{aligned}
+</p>
+<p> 要求解物体的运动轨迹，就要对这个方程组进行数值积分，这个文件中声明了所有的积分求解器。 </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

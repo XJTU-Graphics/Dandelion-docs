@@ -104,7 +104,9 @@ $(document).ready(function(){initNavTree('d9/dba/group__geometry.html','../../')
 
 <div class="header">
   <div class="summary">
-<a href="#files">文件</a>  </div>
+<a href="#files">文件</a> &#124;
+<a href="#nested-classes">类</a> &#124;
+<a href="#enum-members">枚举</a>  </div>
   <div class="headertitle"><div class="title">几何处理</div></div>
 </div><!--header-->
 <div class="contents">
@@ -115,7 +117,46 @@ $(document).ready(function(){initNavTree('d9/dba/group__geometry.html','../../')
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="files" name="files"></a>
 文件</h2></td></tr>
 <tr class="memitem:d4/d70/halfedge_8h"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d70/halfedge_8h.html">halfedge.h</a></td></tr>
+<tr class="memdesc:d4/d70/halfedge_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">半边网格所需各种类型的公共头文件。 <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d02/structHalfedge.html">Halfedge</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">半边网格中最关键的几何元素。  <a href="../../df/d02/structHalfedge.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd0/structVertex.html">Vertex</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">半边网格中的顶点。  <a href="../../df/dd0/structVertex.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4f/structEdge.html">Edge</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">半边网格中的边。  <a href="../../d2/d4f/structEdge.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d02/structFace.html">Face</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">半边网格中的面片。  <a href="../../d0/d02/structFace.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">半边网格整体。  <a href="../../dc/d6d/classHalfedgeMesh.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:ga61975e76d464c02410b50d5600f125da"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dba/group__geometry.html#ga61975e76d464c02410b50d5600f125da">HalfedgeMeshFailure</a> { <br />
+&#160;&#160;<b>NO_SELECTED_MESH</b>
+, <b>MULTIPLE_ORIENTED_EDGES</b>
+, <b>NON_MANIFOLD_VERTEX</b>
+, <b>INIFINITE_POSITION_VALUE</b>
+, <br />
+&#160;&#160;<b>INVALID_HALFEDGE_PERMUTATION</b>
+, <b>INVALID_VERTEX_CONNECTIVITY</b>
+, <b>INVALID_EDGE_CONNECTIVITY</b>
+, <b>INVALID_FACE_CONNECTIVITY</b>
+, <br />
+&#160;&#160;<b>ILL_FORMED_HALFEDGE_INVERSION</b>
+, <b>POOR_HALFEDGE_ACCESSIBILITY</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:ga61975e76d464c02410b50d5600f125da"><td class="mdescLeft">&#160;</td><td class="mdescRight">半边网格的不合法情况。  <a href="../../d9/dba/group__geometry.html#ga61975e76d464c02410b50d5600f125da">更多...</a><br /></td></tr>
+<tr class="separator:ga61975e76d464c02410b50d5600f125da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <p>使用半边网格 (halfedge mesh) 进行几何处理操作的模块。 </p>
@@ -124,6 +165,43 @@ $(document).ready(function(){initNavTree('d9/dba/group__geometry.html','../../')
 <li>局部操作是只需要某个局部的信息——例如一点的 \(\mathcal{N}_1\) 邻域、一条边的邻接面片等——就能完成的操作。</li>
 <li>全局操作是需要遍历整个网格的操作，例如一次曲面细分 (subdivision) 或一次重网格化 (re-meshing)。 </li>
 </ul>
+<h2 class="groupheader">枚举类型说明</h2>
+<a id="ga61975e76d464c02410b50d5600f125da" name="ga61975e76d464c02410b50d5600f125da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga61975e76d464c02410b50d5600f125da">&#9670;&#160;</a></span>HalfedgeMeshFailure</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="../../d9/dba/group__geometry.html#ga61975e76d464c02410b50d5600f125da">HalfedgeMeshFailure</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>半边网格的不合法情况。 </p>
+<p>在创建半边网格失败或验证其合法性失败时，用该枚举类代表失败原因。</p><ul>
+<li>NO_SELECTED_MESH 表示没有选中任何 mesh，半边网格没有数据源。</li>
+<li>MULTIPLE_ORIENTED_EDGES 表示有多条重叠的半边（端点和方向都相同），该 mesh 不可定向。</li>
+<li>NON_MANIFOLD_VERTEX 表示有非流形顶点。</li>
+<li>INIFINITE_POSITION_VALUE 表示有的顶点坐标是无穷大。</li>
+<li>INVALID_HALFEDGE_PERMUTATION 表示某条半边的指针空缺或指向了不正确的元素。</li>
+<li>INVALID_VERTEX_CONNECTIVITY 表示某个顶点与半边的连接关系不正确</li>
+<li>INVALID_EDGE_CONNECTIVITY 表示某条边与半边的连接关系不正确。 = INVALID_FACE_CONNECTIVITY 表示某个面与半边的连接关系不正确。</li>
+<li>ILL_FORMED_HALFEDGE_INVERSION 表示某条半边的反向关系不正确。</li>
+<li>POOR_HALFEDGE_ACCESSIBILITY 表示某条半边不能通过其连接到的元素反向访问到。</li>
+</ul>
+<p>更详细的说明见运行时输出的日志内容。 </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

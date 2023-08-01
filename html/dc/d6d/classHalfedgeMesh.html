@@ -104,13 +104,16 @@ $(document).ready(function(){initNavTree('dc/d6d/classHalfedgeMesh.html','../../
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">类</a> &#124;
 <a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
 <a href="#pub-attribs">Public 属性</a> &#124;
 <a href="#pri-methods">Private 成员函数</a> &#124;
 <a href="#pri-attribs">Private 属性</a> &#124;
 <a href="#pri-static-attribs">静态 Private 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
 <a href="../../dc/d5b/classHalfedgeMesh-members.html">所有成员列表</a>  </div>
-  <div class="headertitle"><div class="title">HalfedgeMesh类 参考</div></div>
+  <div class="headertitle"><div class="title">HalfedgeMesh类 参考<div class="ingroups"><a class="el" href="../../d9/dba/group__geometry.html">几何处理</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -119,9 +122,15 @@ $(document).ready(function(){initNavTree('dc/d6d/classHalfedgeMesh.html','../../
 
 <p><code>#include &lt;<a class="el" href="../../d4/d70/halfedge_8h_source.html">halfedge.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4b/structHalfedgeMesh_1_1EdgeRecord.html">EdgeRecord</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">在曲面简化算法中用到的工具类。  <a href="../../d7/d4b/structHalfedgeMesh_1_1EdgeRecord.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:afee59ddbb09b6ddd751e74cc5a8664f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#afee59ddbb09b6ddd751e74cc5a8664f9">HalfedgeMesh</a> (<a class="el" href="../../d8/d4b/classObject.html">Object</a> &amp;object)</td></tr>
+<tr class="memitem:afee59ddbb09b6ddd751e74cc5a8664f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#afee59ddbb09b6ddd751e74cc5a8664f9">HalfedgeMesh</a> (<a class="el" href="../../d8/d4b/classObject.html">Object</a> &amp;<a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a2b75868a73c98d202d63dfbbb6dbeb32">object</a>)</td></tr>
 <tr class="separator:afee59ddbb09b6ddd751e74cc5a8664f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1214b2ccc858ceb5d5967ba9e9792006"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a1214b2ccc858ceb5d5967ba9e9792006">HalfedgeMesh</a> (<a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a> &amp;other)=delete</td></tr>
 <tr class="separator:a1214b2ccc858ceb5d5967ba9e9792006"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,20 +138,48 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:ab295001966ae2ead2713033ba1365720"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a581d002e76229508e3970fe1c29038ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a581d002e76229508e3970fe1c29038ab">render</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader)</td></tr>
 <tr class="separator:a581d002e76229508e3970fe1c29038ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb40de06ac1625aac7136b9da4727d9e"><td class="memItemLeft" align="right" valign="top"><a id="afb40de06ac1625aac7136b9da4727d9e" name="afb40de06ac1625aac7136b9da4727d9e"></a>
-std::optional&lt; <a class="el" href="../../d2/d4f/structEdge.html">Edge</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>flip_edge</b> (<a class="el" href="../../d2/d4f/structEdge.html">Edge</a> *e)</td></tr>
+<tr class="memitem:afb40de06ac1625aac7136b9da4727d9e"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d2/d4f/structEdge.html">Edge</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#afb40de06ac1625aac7136b9da4727d9e">flip_edge</a> (<a class="el" href="../../d2/d4f/structEdge.html">Edge</a> *e)</td></tr>
+<tr class="memdesc:afb40de06ac1625aac7136b9da4727d9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">翻转一条边。  <br /></td></tr>
 <tr class="separator:afb40de06ac1625aac7136b9da4727d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4dd8462c5e705f60d71fd5902e5eb1c"><td class="memItemLeft" align="right" valign="top"><a id="ac4dd8462c5e705f60d71fd5902e5eb1c" name="ac4dd8462c5e705f60d71fd5902e5eb1c"></a>
-std::optional&lt; <a class="el" href="../../df/dd0/structVertex.html">Vertex</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>split_edge</b> (<a class="el" href="../../d2/d4f/structEdge.html">Edge</a> *e)</td></tr>
+<tr class="memitem:ac4dd8462c5e705f60d71fd5902e5eb1c"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../df/dd0/structVertex.html">Vertex</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#ac4dd8462c5e705f60d71fd5902e5eb1c">split_edge</a> (<a class="el" href="../../d2/d4f/structEdge.html">Edge</a> *e)</td></tr>
+<tr class="memdesc:ac4dd8462c5e705f60d71fd5902e5eb1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">分裂一条边。  <br /></td></tr>
 <tr class="separator:ac4dd8462c5e705f60d71fd5902e5eb1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a195964f7408299d4733b1566487c43f5"><td class="memItemLeft" align="right" valign="top"><a id="a195964f7408299d4733b1566487c43f5" name="a195964f7408299d4733b1566487c43f5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>loop_subdivide</b> ()</td></tr>
+<tr class="memitem:a021cc1d95882fa97e294dcc508569b5d"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../df/dd0/structVertex.html">Vertex</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a021cc1d95882fa97e294dcc508569b5d">collapse_edge</a> (<a class="el" href="../../d2/d4f/structEdge.html">Edge</a> *e)</td></tr>
+<tr class="memdesc:a021cc1d95882fa97e294dcc508569b5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">坍缩一条边。  <br /></td></tr>
+<tr class="separator:a021cc1d95882fa97e294dcc508569b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a195964f7408299d4733b1566487c43f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a195964f7408299d4733b1566487c43f5">loop_subdivide</a> ()</td></tr>
+<tr class="memdesc:a195964f7408299d4733b1566487c43f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行一次 Loop 曲面细分。  <br /></td></tr>
 <tr class="separator:a195964f7408299d4733b1566487c43f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeb36cfa269c11ae95d78ffebfae16b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#aeeb36cfa269c11ae95d78ffebfae16b8">simplify</a> ()</td></tr>
+<tr class="memdesc:aeeb36cfa269c11ae95d78ffebfae16b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行一次曲面简化。  <br /></td></tr>
+<tr class="separator:aeeb36cfa269c11ae95d78ffebfae16b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59fa9525c54738f4c5c8aca8fe0ae149"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a59fa9525c54738f4c5c8aca8fe0ae149">isotropic_remesh</a> ()</td></tr>
+<tr class="memdesc:a59fa9525c54738f4c5c8aca8fe0ae149"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行一次重网格化。  <br /></td></tr>
+<tr class="separator:a59fa9525c54738f4c5c8aca8fe0ae149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a8df032b9f42e7234027c6657c36e5f05"><td class="memItemLeft" align="right" valign="top">static std::tuple&lt; Eigen::Vector3f, Eigen::Vector3f &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a8df032b9f42e7234027c6657c36e5f05">halfedge_arrow_endpoints</a> (const <a class="el" href="../../df/d02/structHalfedge.html">Halfedge</a> *h)</td></tr>
+<tr class="separator:a8df032b9f42e7234027c6657c36e5f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:a3e4d4472c21ee0c5bb36dedecafd0857"><td class="memItemLeft" align="right" valign="top"><a id="a3e4d4472c21ee0c5bb36dedecafd0857" name="a3e4d4472c21ee0c5bb36dedecafd0857"></a>
-std::optional&lt; <a class="el" href="../../d4/d70/halfedge_8h.html#a61975e76d464c02410b50d5600f125da">HalfedgeMeshFailure</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>error_info</b></td></tr>
+<tr class="memitem:a52add04034d022864df496b87b212e97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/dde/classLinkedList.html">LinkedList</a>&lt; <a class="el" href="../../df/d02/structHalfedge.html">Halfedge</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a52add04034d022864df496b87b212e97">halfedges</a></td></tr>
+<tr class="separator:a52add04034d022864df496b87b212e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b346d45b38685a327a0408d7390927b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/dde/classLinkedList.html">LinkedList</a>&lt; <a class="el" href="../../df/dd0/structVertex.html">Vertex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a8b346d45b38685a327a0408d7390927b">vertices</a></td></tr>
+<tr class="separator:a8b346d45b38685a327a0408d7390927b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6f5b6c2e48ecbf535fc116656dad2bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/dde/classLinkedList.html">LinkedList</a>&lt; <a class="el" href="../../d2/d4f/structEdge.html">Edge</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#aa6f5b6c2e48ecbf535fc116656dad2bb">edges</a></td></tr>
+<tr class="separator:aa6f5b6c2e48ecbf535fc116656dad2bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa68bf2492d3d1dcb69eec50656b61b21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/dde/classLinkedList.html">LinkedList</a>&lt; <a class="el" href="../../d0/d02/structFace.html">Face</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#aa68bf2492d3d1dcb69eec50656b61b21">faces</a></td></tr>
+<tr class="separator:aa68bf2492d3d1dcb69eec50656b61b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96bef329a770abcb1d7c9e75cb054395"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../df/dd0/structVertex.html">Vertex</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a96bef329a770abcb1d7c9e75cb054395">v_pointers</a></td></tr>
+<tr class="separator:a96bef329a770abcb1d7c9e75cb054395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8ff22838772ef95a905a84ba80426a4"><td class="memItemLeft" align="right" valign="top">std::variant&lt; std::monostate, <a class="el" href="../../df/dd0/structVertex.html">Vertex</a> *, <a class="el" href="../../d2/d4f/structEdge.html">Edge</a> *, <a class="el" href="../../d0/d02/structFace.html">Face</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#ae8ff22838772ef95a905a84ba80426a4">inconsistent_element</a></td></tr>
+<tr class="memdesc:ae8ff22838772ef95a905a84ba80426a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前处于不一致状态的几何基本元素。  <br /></td></tr>
+<tr class="separator:ae8ff22838772ef95a905a84ba80426a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a3b8bbc464e803ad81e6879c80be62"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#af5a3b8bbc464e803ad81e6879c80be62">global_inconsistent</a></td></tr>
+<tr class="separator:af5a3b8bbc464e803ad81e6879c80be62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e4d4472c21ee0c5bb36dedecafd0857"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d9/dba/group__geometry.html#ga61975e76d464c02410b50d5600f125da">HalfedgeMeshFailure</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a3e4d4472c21ee0c5bb36dedecafd0857">error_info</a></td></tr>
 <tr class="separator:a3e4d4472c21ee0c5bb36dedecafd0857"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
@@ -155,64 +192,63 @@ Private 成员函数</h2></td></tr>
 <tr class="separator:a6d1f8dc7b7973b0a5d133cd9b9ac5cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19cdd6ee69d015c4d73235ccfe61cff8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d02/structFace.html">Face</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a19cdd6ee69d015c4d73235ccfe61cff8">new_face</a> (bool is_boundary=false)</td></tr>
 <tr class="separator:a19cdd6ee69d015c4d73235ccfe61cff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5690ed2bfc1ca3557aa06beb14ed158"><td class="memItemLeft" align="right" valign="top"><a id="ac5690ed2bfc1ca3557aa06beb14ed158" name="ac5690ed2bfc1ca3557aa06beb14ed158"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>regenerate_halfedge_arrows</b> ()</td></tr>
+<tr class="memitem:ac5690ed2bfc1ca3557aa06beb14ed158"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#ac5690ed2bfc1ca3557aa06beb14ed158">regenerate_halfedge_arrows</a> ()</td></tr>
 <tr class="separator:ac5690ed2bfc1ca3557aa06beb14ed158"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d64aaeaf253f5cca066989a1cbaf127"><td class="memItemLeft" align="right" valign="top"><a id="a4d64aaeaf253f5cca066989a1cbaf127" name="a4d64aaeaf253f5cca066989a1cbaf127"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>do_erase</b> ()</td></tr>
-<tr class="separator:a4d64aaeaf253f5cca066989a1cbaf127"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8da716b691912b3cdbd69362ea345396"><td class="memItemLeft" align="right" valign="top"><a id="a8da716b691912b3cdbd69362ea345396" name="a8da716b691912b3cdbd69362ea345396"></a>
-std::optional&lt; <a class="el" href="../../d4/d70/halfedge_8h.html#a61975e76d464c02410b50d5600f125da">HalfedgeMeshFailure</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>validate</b> ()</td></tr>
+<tr class="memitem:a462ef58b4659d53a6555f6893278673a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a462ef58b4659d53a6555f6893278673a">erase</a> (<a class="el" href="../../df/d02/structHalfedge.html">Halfedge</a> *h)</td></tr>
+<tr class="separator:a462ef58b4659d53a6555f6893278673a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88c7b2cd47aa7f4683e29b12bc65f6f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a88c7b2cd47aa7f4683e29b12bc65f6f2">erase</a> (<a class="el" href="../../df/dd0/structVertex.html">Vertex</a> *v)</td></tr>
+<tr class="separator:a88c7b2cd47aa7f4683e29b12bc65f6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac18e983e0daabc0560e5e026d1b536d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#ac18e983e0daabc0560e5e026d1b536d3">erase</a> (<a class="el" href="../../d2/d4f/structEdge.html">Edge</a> *e)</td></tr>
+<tr class="separator:ac18e983e0daabc0560e5e026d1b536d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dddd55f43333c9bad1ca7465661ad29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a2dddd55f43333c9bad1ca7465661ad29">erase</a> (<a class="el" href="../../d0/d02/structFace.html">Face</a> *f)</td></tr>
+<tr class="separator:a2dddd55f43333c9bad1ca7465661ad29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf741dc10d78ce517ae4fb16233254ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#adf741dc10d78ce517ae4fb16233254ec">clear_erasure_records</a> ()</td></tr>
+<tr class="memdesc:adf741dc10d78ce517ae4fb16233254ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">清楚已删除元素的记录。  <br /></td></tr>
+<tr class="separator:adf741dc10d78ce517ae4fb16233254ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da716b691912b3cdbd69362ea345396"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d9/dba/group__geometry.html#ga61975e76d464c02410b50d5600f125da">HalfedgeMeshFailure</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a8da716b691912b3cdbd69362ea345396">validate</a> ()</td></tr>
+<tr class="memdesc:a8da716b691912b3cdbd69362ea345396"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查半边网格的状态。  <br /></td></tr>
 <tr class="separator:a8da716b691912b3cdbd69362ea345396"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f9c6797f9f2e29a8d7dfbdef7110d10"><td class="memItemLeft" align="right" valign="top"><a id="a3f9c6797f9f2e29a8d7dfbdef7110d10" name="a3f9c6797f9f2e29a8d7dfbdef7110d10"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_safe_to_collapse</b> (<a class="el" href="../../d2/d4f/structEdge.html">Edge</a> *e)</td></tr>
+<tr class="separator:a3f9c6797f9f2e29a8d7dfbdef7110d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private 属性</h2></td></tr>
-<tr class="memitem:a2b75868a73c98d202d63dfbbb6dbeb32"><td class="memItemLeft" align="right" valign="top"><a id="a2b75868a73c98d202d63dfbbb6dbeb32" name="a2b75868a73c98d202d63dfbbb6dbeb32"></a>
-<a class="el" href="../../d8/d4b/classObject.html">Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>object</b></td></tr>
+<tr class="memitem:a2b75868a73c98d202d63dfbbb6dbeb32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d4b/classObject.html">Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a2b75868a73c98d202d63dfbbb6dbeb32">object</a></td></tr>
 <tr class="separator:a2b75868a73c98d202d63dfbbb6dbeb32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83064ef1f92388f61c18465849fc3bdd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a83064ef1f92388f61c18465849fc3bdd">mesh</a></td></tr>
 <tr class="separator:a83064ef1f92388f61c18465849fc3bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52add04034d022864df496b87b212e97"><td class="memItemLeft" align="right" valign="top"><a id="a52add04034d022864df496b87b212e97" name="a52add04034d022864df496b87b212e97"></a>
-<a class="el" href="../../d7/dde/classLinkedList.html">LinkedList</a>&lt; <a class="el" href="../../df/d02/structHalfedge.html">Halfedge</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>halfedges</b></td></tr>
-<tr class="separator:a52add04034d022864df496b87b212e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b346d45b38685a327a0408d7390927b"><td class="memItemLeft" align="right" valign="top"><a id="a8b346d45b38685a327a0408d7390927b" name="a8b346d45b38685a327a0408d7390927b"></a>
-<a class="el" href="../../d7/dde/classLinkedList.html">LinkedList</a>&lt; <a class="el" href="../../df/dd0/structVertex.html">Vertex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vertices</b></td></tr>
-<tr class="separator:a8b346d45b38685a327a0408d7390927b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6f5b6c2e48ecbf535fc116656dad2bb"><td class="memItemLeft" align="right" valign="top"><a id="aa6f5b6c2e48ecbf535fc116656dad2bb" name="aa6f5b6c2e48ecbf535fc116656dad2bb"></a>
-<a class="el" href="../../d7/dde/classLinkedList.html">LinkedList</a>&lt; <a class="el" href="../../d2/d4f/structEdge.html">Edge</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>edges</b></td></tr>
-<tr class="separator:aa6f5b6c2e48ecbf535fc116656dad2bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa68bf2492d3d1dcb69eec50656b61b21"><td class="memItemLeft" align="right" valign="top"><a id="aa68bf2492d3d1dcb69eec50656b61b21" name="aa68bf2492d3d1dcb69eec50656b61b21"></a>
-<a class="el" href="../../d7/dde/classLinkedList.html">LinkedList</a>&lt; <a class="el" href="../../d0/d02/structFace.html">Face</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>faces</b></td></tr>
-<tr class="separator:aa68bf2492d3d1dcb69eec50656b61b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a24fc1e6d501794ecf06633224a4b2c"><td class="memItemLeft" align="right" valign="top"><a id="a8a24fc1e6d501794ecf06633224a4b2c" name="a8a24fc1e6d501794ecf06633224a4b2c"></a>
-std::set&lt; <a class="el" href="../../df/d02/structHalfedge.html">Halfedge</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>erased_halfedges</b></td></tr>
-<tr class="separator:a8a24fc1e6d501794ecf06633224a4b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11936dad57f2b33e67f91d18307c320a"><td class="memItemLeft" align="right" valign="top"><a id="a11936dad57f2b33e67f91d18307c320a" name="a11936dad57f2b33e67f91d18307c320a"></a>
-std::set&lt; <a class="el" href="../../df/dd0/structVertex.html">Vertex</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>erased_vertices</b></td></tr>
-<tr class="separator:a11936dad57f2b33e67f91d18307c320a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af114cf42fa0d5339c5eabfb2ce908025"><td class="memItemLeft" align="right" valign="top"><a id="af114cf42fa0d5339c5eabfb2ce908025" name="af114cf42fa0d5339c5eabfb2ce908025"></a>
-std::set&lt; <a class="el" href="../../d2/d4f/structEdge.html">Edge</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>erased_edges</b></td></tr>
-<tr class="separator:af114cf42fa0d5339c5eabfb2ce908025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41557c6d8061cb1138a6660cab6207c8"><td class="memItemLeft" align="right" valign="top"><a id="a41557c6d8061cb1138a6660cab6207c8" name="a41557c6d8061cb1138a6660cab6207c8"></a>
-std::set&lt; <a class="el" href="../../d0/d02/structFace.html">Face</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>erased_faces</b></td></tr>
-<tr class="separator:a41557c6d8061cb1138a6660cab6207c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5a3b8bbc464e803ad81e6879c80be62"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#af5a3b8bbc464e803ad81e6879c80be62">global_inconsistent</a></td></tr>
-<tr class="separator:af5a3b8bbc464e803ad81e6879c80be62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a243bb83b937892df15018e298e3061de"><td class="memItemLeft" align="right" valign="top">std::set&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a243bb83b937892df15018e298e3061de">erased_halfedges</a></td></tr>
+<tr class="separator:a243bb83b937892df15018e298e3061de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a8dae5c68bd6d7ed91b13c717bdd891"><td class="memItemLeft" align="right" valign="top">std::set&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a3a8dae5c68bd6d7ed91b13c717bdd891">erased_vertices</a></td></tr>
+<tr class="separator:a3a8dae5c68bd6d7ed91b13c717bdd891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37dce586765de694d13b82c6cd81ea7b"><td class="memItemLeft" align="right" valign="top">std::set&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a37dce586765de694d13b82c6cd81ea7b">erased_edges</a></td></tr>
+<tr class="separator:a37dce586765de694d13b82c6cd81ea7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2be3f28913ee5fca0afaa606fac56d5"><td class="memItemLeft" align="right" valign="top">std::set&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#ae2be3f28913ee5fca0afaa606fac56d5">erased_faces</a></td></tr>
+<tr class="separator:ae2be3f28913ee5fca0afaa606fac56d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acee4b40805260ef656491fb603ab7528"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; const <a class="el" href="../../df/dd0/structVertex.html">Vertex</a> *, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#acee4b40805260ef656491fb603ab7528">v_indices</a></td></tr>
+<tr class="separator:acee4b40805260ef656491fb603ab7528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2362249fef8a0c2bf90b3f84e64989c"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; const <a class="el" href="../../df/d02/structHalfedge.html">Halfedge</a> *, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#ad2362249fef8a0c2bf90b3f84e64989c">h_indices</a></td></tr>
+<tr class="separator:ad2362249fef8a0c2bf90b3f84e64989c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35ffb9ef22970a6a808a82e97899612c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a35ffb9ef22970a6a808a82e97899612c">halfedge_arrows</a></td></tr>
 <tr class="separator:a35ffb9ef22970a6a808a82e97899612c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37aa317f68032db7f5cd80e9e7c153df"><td class="memItemLeft" align="right" valign="top"><a id="a37aa317f68032db7f5cd80e9e7c153df" name="a37aa317f68032db7f5cd80e9e7c153df"></a>
-std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>logger</b></td></tr>
+<tr class="memitem:a37aa317f68032db7f5cd80e9e7c153df"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a37aa317f68032db7f5cd80e9e7c153df">logger</a></td></tr>
 <tr class="separator:a37aa317f68032db7f5cd80e9e7c153df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 静态 Private 属性</h2></td></tr>
 <tr class="memitem:ad6e3b18210454fe312f8182c8f268f1b"><td class="memItemLeft" align="right" valign="top">static std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#ad6e3b18210454fe312f8182c8f268f1b">next_available_id</a> = 0</td></tr>
 <tr class="separator:ad6e3b18210454fe312f8182c8f268f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:a1ad10e1953ae22e1a300557d5f653449"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a1ad10e1953ae22e1a300557d5f653449">operator&lt;</a> (const <a class="el" href="../../d7/d4b/structHalfedgeMesh_1_1EdgeRecord.html">EdgeRecord</a> &amp;a, const <a class="el" href="../../d7/d4b/structHalfedgeMesh_1_1EdgeRecord.html">EdgeRecord</a> &amp;b)</td></tr>
+<tr class="separator:a1ad10e1953ae22e1a300557d5f653449"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>半边网格整体。 </p>
 <p>当 Dandelion 进入建模模式时，<code><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a></code> 对象将用选中的 mesh 构造一个半边网格， 从而支持各种基于半边网格的几何算法。当几何操作完成后，需要将半边网格的几何信息 （坐标、连接关系等）同步到原先的 mesh，这样才能显示操作带来的变化。</p>
-<p>各种全局操作往往需要频繁增删几何元素，为了保证 \(O(1)\) 的增删效率， 所有的几何元素都存储于双向链表 (<code>std::list</code>) 中。 </p>
+<p>各种全局操作往往需要频繁增删几何元素，为了保证 \(O(1)\) 的增删效率， 所有的几何元素都存储于双向链表 (<code><a class="el" href="../../d7/dde/classLinkedList.html" title="侵入式双链表。">LinkedList</a></code>) 中。 </p>
 </div><h2 class="groupheader">构造及析构函数说明</h2>
 <a id="afee59ddbb09b6ddd751e74cc5a8664f9" name="afee59ddbb09b6ddd751e74cc5a8664f9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afee59ddbb09b6ddd751e74cc5a8664f9">&#9670;&#160;</a></span>HalfedgeMesh() <span class="overload">[1/2]</span></h2>
@@ -261,6 +297,264 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 </div>
 </div>
 <h2 class="groupheader">成员函数说明</h2>
+<a id="adf741dc10d78ce517ae4fb16233254ec" name="adf741dc10d78ce517ae4fb16233254ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf741dc10d78ce517ae4fb16233254ec">&#9670;&#160;</a></span>clear_erasure_records()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HalfedgeMesh::clear_erasure_records </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>清楚已删除元素的记录。 </p>
+<p>这个函数清空 <code>erased_[elements]</code> 中存储的删除记录。 </p>
+
+</div>
+</div>
+<a id="a021cc1d95882fa97e294dcc508569b5d" name="a021cc1d95882fa97e294dcc508569b5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a021cc1d95882fa97e294dcc508569b5d">&#9670;&#160;</a></span>collapse_edge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">optional&lt; <a class="el" href="../../df/dd0/structVertex.html">Vertex</a> * &gt; HalfedgeMesh::collapse_edge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d4f/structEdge.html">Edge</a> *&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>坍缩一条边。 </p>
+<p>将传入的边坍缩成一个顶点，原先连接到两个端点上的其他边全部连接到这个顶点； 如果这条边的某个邻接面是三角形面，这个邻接面会被坍缩成一条边。</p>
+<p>不加检查地坍缩一条边有可能破坏 mesh 的流形性质。假设边端点分别为 \(v_1,v_2\)， 此函数仅当  </p><p class="formulaDsp">
+\[
+    \mathcal{N}_1(v_1)\cap\mathcal{N}_1(v_2) = 2
+\]
+</p>
+<p> 时才执行坍缩，以免破坏流行性质。 </p><dl class="section return"><dt>返回</dt><dd>如果坍缩成功，返回坍缩后的顶点；反之返回 <code>std::nullopt</code> 。 </dd></dl>
+
+</div>
+</div>
+<a id="ac18e983e0daabc0560e5e026d1b536d3" name="ac18e983e0daabc0560e5e026d1b536d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac18e983e0daabc0560e5e026d1b536d3">&#9670;&#160;</a></span>erase() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HalfedgeMesh::erase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d4f/structEdge.html">Edge</a> *&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>删除一条边。 </p>
+
+</div>
+</div>
+<a id="a2dddd55f43333c9bad1ca7465661ad29" name="a2dddd55f43333c9bad1ca7465661ad29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dddd55f43333c9bad1ca7465661ad29">&#9670;&#160;</a></span>erase() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HalfedgeMesh::erase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d02/structFace.html">Face</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>删除一个面。 </p>
+
+</div>
+</div>
+<a id="a462ef58b4659d53a6555f6893278673a" name="a462ef58b4659d53a6555f6893278673a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a462ef58b4659d53a6555f6893278673a">&#9670;&#160;</a></span>erase() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HalfedgeMesh::erase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d02/structHalfedge.html">Halfedge</a> *&#160;</td>
+          <td class="paramname"><em>h</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>删除一条半边。 </p>
+
+</div>
+</div>
+<a id="a88c7b2cd47aa7f4683e29b12bc65f6f2" name="a88c7b2cd47aa7f4683e29b12bc65f6f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88c7b2cd47aa7f4683e29b12bc65f6f2">&#9670;&#160;</a></span>erase() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HalfedgeMesh::erase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd0/structVertex.html">Vertex</a> *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>删除一个顶点。 </p>
+
+</div>
+</div>
+<a id="afb40de06ac1625aac7136b9da4727d9e" name="afb40de06ac1625aac7136b9da4727d9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb40de06ac1625aac7136b9da4727d9e">&#9670;&#160;</a></span>flip_edge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">optional&lt; <a class="el" href="../../d2/d4f/structEdge.html">Edge</a> * &gt; HalfedgeMesh::flip_edge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d4f/structEdge.html">Edge</a> *&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>翻转一条边。 </p>
+<p>由于翻转边的过程中所有几何基本元素数量不变，可以在不增删元素的前提下实现这个函数。 在此情况下，返回的就是被传入的边。如果实现过程中删除了原有的边， 返回的指针可能与传入的不同。</p>
+<p>但无论采用哪种实现方法，都不应该翻转 mesh 边界上的边。 </p><dl class="section return"><dt>返回</dt><dd>如果翻转成功，返回被翻转的边；反之返回 <code>std::nullopt</code> 。 </dd></dl>
+
+</div>
+</div>
+<a id="a8df032b9f42e7234027c6657c36e5f05" name="a8df032b9f42e7234027c6657c36e5f05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8df032b9f42e7234027c6657c36e5f05">&#9670;&#160;</a></span>halfedge_arrow_endpoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple&lt; Vector3f, Vector3f &gt; HalfedgeMesh::halfedge_arrow_endpoints </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/d02/structHalfedge.html">Halfedge</a> *&#160;</td>
+          <td class="paramname"><em>h</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>返回绘制半边时的起点和终点坐标。 </p>
+
+</div>
+</div>
+<a id="a59fa9525c54738f4c5c8aca8fe0ae149" name="a59fa9525c54738f4c5c8aca8fe0ae149"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59fa9525c54738f4c5c8aca8fe0ae149">&#9670;&#160;</a></span>isotropic_remesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HalfedgeMesh::isotropic_remesh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>执行一次重网格化。 </p>
+<p>该函数采用各向同性重网格化策略调整 mesh 的边，尽可能让每个顶点的度都接近 6、 每个面片都接近正三角形。调整时它重复以下过程：</p><ol type="1">
+<li>分裂过长的边</li>
+<li>坍缩过短的边</li>
+<li>通过翻转边让顶点的度数更平均</li>
+<li>将顶点位置向它的 \(\mathcal{N}_1\) 邻域平均值移动</li>
+</ol>
+<p>各向同性重网格化只能应用于三角形网格。 </p>
+
+</div>
+</div>
+<a id="a195964f7408299d4733b1566487c43f5" name="a195964f7408299d4733b1566487c43f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a195964f7408299d4733b1566487c43f5">&#9670;&#160;</a></span>loop_subdivide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HalfedgeMesh::loop_subdivide </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>执行一次 Loop 曲面细分。 </p>
+<p>该函数使用 <code>flip_edge</code> 和 <code>split_edge</code> 完成一次 Loop 曲面细分。注意，Loop 曲面细分只能细分三角网格。 </p>
+
+</div>
+</div>
 <a id="a6d1f8dc7b7973b0a5d133cd9b9ac5cd3" name="a6d1f8dc7b7973b0a5d133cd9b9ac5cd3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6d1f8dc7b7973b0a5d133cd9b9ac5cd3">&#9670;&#160;</a></span>new_edge()</h2>
 
@@ -366,6 +660,32 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 
 </div>
 </div>
+<a id="ac5690ed2bfc1ca3557aa06beb14ed158" name="ac5690ed2bfc1ca3557aa06beb14ed158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5690ed2bfc1ca3557aa06beb14ed158">&#9670;&#160;</a></span>regenerate_halfedge_arrows()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HalfedgeMesh::regenerate_halfedge_arrows </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>重新生成所有半边对应的箭头，在更新绘制数据时使用。 </p>
+
+</div>
+</div>
 <a id="a581d002e76229508e3970fe1c29038ab" name="a581d002e76229508e3970fe1c29038ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a581d002e76229508e3970fe1c29038ab">&#9670;&#160;</a></span>render()</h2>
 
@@ -385,6 +705,47 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 
 </div>
 </div>
+<a id="aeeb36cfa269c11ae95d78ffebfae16b8" name="aeeb36cfa269c11ae95d78ffebfae16b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeb36cfa269c11ae95d78ffebfae16b8">&#9670;&#160;</a></span>simplify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HalfedgeMesh::simplify </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>执行一次曲面简化。 </p>
+<p>该函数根据二次误差度量 (Quadric Error Metric, QEM) 确定损失最小的边， 再用 <code>collapse_edge</code> 坍缩它从而减少面数，直至面数减为简化前的 1/4 或找不到可以坍缩的边为止。 </p>
+
+</div>
+</div>
+<a id="ac4dd8462c5e705f60d71fd5902e5eb1c" name="ac4dd8462c5e705f60d71fd5902e5eb1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4dd8462c5e705f60d71fd5902e5eb1c">&#9670;&#160;</a></span>split_edge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">optional&lt; <a class="el" href="../../df/dd0/structVertex.html">Vertex</a> * &gt; HalfedgeMesh::split_edge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d4f/structEdge.html">Edge</a> *&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>分裂一条边。 </p>
+<p>将传入的边分裂成两条边，分裂处新增一个顶点，并将此顶点与相对位置的两个顶点连接。 分裂操作要求指定边的两个邻接面都是三角形面。 </p><dl class="section return"><dt>返回</dt><dd>如果分裂成功，返回新增顶点；反之返回 <code>std::nullopt</code> 。 </dd></dl>
+
+</div>
+</div>
 <a id="ab295001966ae2ead2713033ba1365720" name="ab295001966ae2ead2713033ba1365720"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab295001966ae2ead2713033ba1365720">&#9670;&#160;</a></span>sync()</h2>
 
@@ -399,13 +760,12 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
         </tr>
       </table>
 </div><div class="memdoc">
-<p>将当前的半边网格同步回原先的参照 mesh。 </p>
+<p>将当前半边网格的几何结构同步到数据源 mesh。 </p>
 
 </div>
 </div>
-<h2 class="groupheader">类成员变量说明</h2>
-<a id="af5a3b8bbc464e803ad81e6879c80be62" name="af5a3b8bbc464e803ad81e6879c80be62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5a3b8bbc464e803ad81e6879c80be62">&#9670;&#160;</a></span>global_inconsistent</h2>
+<a id="a8da716b691912b3cdbd69362ea345396" name="a8da716b691912b3cdbd69362ea345396"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8da716b691912b3cdbd69362ea345396">&#9670;&#160;</a></span>validate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -414,7 +774,10 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool HalfedgeMesh::global_inconsistent</td>
+          <td class="memname">optional&lt; <a class="el" href="../../d9/dba/group__geometry.html#ga61975e76d464c02410b50d5600f125da">HalfedgeMeshFailure</a> &gt; HalfedgeMesh::validate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -423,7 +786,223 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>检查半边网格的状态。 </p>
+<p>这个函数可以检查半边网格中的连接关系是否正确、指针是否悬垂，有助于及时发现错误。 错误信息会被输出到日志，并返回一个错误枚举值（参考 <code>HalfedgeMeshFailure</code> 类的说明）。 </p><dl class="section return"><dt>返回</dt><dd>如果发现错误，返回相应的错误枚举值；反之为 <code>std::nullopt</code> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关函数文档</h2>
+<a id="a1ad10e1953ae22e1a300557d5f653449" name="a1ad10e1953ae22e1a300557d5f653449"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ad10e1953ae22e1a300557d5f653449">&#9670;&#160;</a></span>operator&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d4b/structHalfedgeMesh_1_1EdgeRecord.html">EdgeRecord</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d4b/structHalfedgeMesh_1_1EdgeRecord.html">EdgeRecord</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>排序 <code><a class="el" href="../../d7/d4b/structHalfedgeMesh_1_1EdgeRecord.html" title="在曲面简化算法中用到的工具类。">EdgeRecord</a></code> 所需的比较运算符重载。 </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="aa6f5b6c2e48ecbf535fc116656dad2bb" name="aa6f5b6c2e48ecbf535fc116656dad2bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6f5b6c2e48ecbf535fc116656dad2bb">&#9670;&#160;</a></span>edges</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/dde/classLinkedList.html">LinkedList</a>&lt;<a class="el" href="../../d2/d4f/structEdge.html">Edge</a>&gt; HalfedgeMesh::edges</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>所有边。 </p>
+
+</div>
+</div>
+<a id="a37dce586765de694d13b82c6cd81ea7b" name="a37dce586765de694d13b82c6cd81ea7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37dce586765de694d13b82c6cd81ea7b">&#9670;&#160;</a></span>erased_edges</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;size_t&gt; HalfedgeMesh::erased_edges</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>已删除的边。 </p>
+
+</div>
+</div>
+<a id="ae2be3f28913ee5fca0afaa606fac56d5" name="ae2be3f28913ee5fca0afaa606fac56d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2be3f28913ee5fca0afaa606fac56d5">&#9670;&#160;</a></span>erased_faces</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;size_t&gt; HalfedgeMesh::erased_faces</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>已删除的面。 </p>
+
+</div>
+</div>
+<a id="a243bb83b937892df15018e298e3061de" name="a243bb83b937892df15018e298e3061de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a243bb83b937892df15018e298e3061de">&#9670;&#160;</a></span>erased_halfedges</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;size_t&gt; HalfedgeMesh::erased_halfedges</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>已删除的半边。 </p>
+
+</div>
+</div>
+<a id="a3a8dae5c68bd6d7ed91b13c717bdd891" name="a3a8dae5c68bd6d7ed91b13c717bdd891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a8dae5c68bd6d7ed91b13c717bdd891">&#9670;&#160;</a></span>erased_vertices</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;size_t&gt; HalfedgeMesh::erased_vertices</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>已删除的顶点。 </p>
+
+</div>
+</div>
+<a id="a3e4d4472c21ee0c5bb36dedecafd0857" name="a3e4d4472c21ee0c5bb36dedecafd0857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e4d4472c21ee0c5bb36dedecafd0857">&#9670;&#160;</a></span>error_info</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt;<a class="el" href="../../d9/dba/group__geometry.html#ga61975e76d464c02410b50d5600f125da">HalfedgeMeshFailure</a>&gt; HalfedgeMesh::error_info</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>在创建半边网格时设置，如果创建正常则为 <code>std::nullopt</code>。 </p>
+
+</div>
+</div>
+<a id="aa68bf2492d3d1dcb69eec50656b61b21" name="aa68bf2492d3d1dcb69eec50656b61b21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa68bf2492d3d1dcb69eec50656b61b21">&#9670;&#160;</a></span>faces</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/dde/classLinkedList.html">LinkedList</a>&lt;<a class="el" href="../../d0/d02/structFace.html">Face</a>&gt; HalfedgeMesh::faces</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>所有面片。 </p>
+
+</div>
+</div>
+<a id="af5a3b8bbc464e803ad81e6879c80be62" name="af5a3b8bbc464e803ad81e6879c80be62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5a3b8bbc464e803ad81e6879c80be62">&#9670;&#160;</a></span>global_inconsistent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HalfedgeMesh::global_inconsistent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 <p>全局一致性。成功完成一次全局操作后，此变量将置为真，表示需要同步到参照 mesh。 </p>
+
+</div>
+</div>
+<a id="ad2362249fef8a0c2bf90b3f84e64989c" name="ad2362249fef8a0c2bf90b3f84e64989c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2362249fef8a0c2bf90b3f84e64989c">&#9670;&#160;</a></span>h_indices</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;const <a class="el" href="../../df/d02/structHalfedge.html">Halfedge</a>*, size_t&gt; HalfedgeMesh::h_indices</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>将半边网格的半边指针映射为 <code><a class="el" href="../../d4/d91/structGL_1_1LineSet.html" title="在预览场景时绘制若干线条。">GL::LineSet</a></code> 中的箭头索引。 </p>
 
 </div>
 </div>
@@ -450,6 +1029,61 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 
 </div>
 </div>
+<a id="a52add04034d022864df496b87b212e97" name="a52add04034d022864df496b87b212e97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52add04034d022864df496b87b212e97">&#9670;&#160;</a></span>halfedges</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/dde/classLinkedList.html">LinkedList</a>&lt;<a class="el" href="../../df/d02/structHalfedge.html">Halfedge</a>&gt; HalfedgeMesh::halfedges</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>所有半边。 </p>
+
+</div>
+</div>
+<a id="ae8ff22838772ef95a905a84ba80426a4" name="ae8ff22838772ef95a905a84ba80426a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8ff22838772ef95a905a84ba80426a4">&#9670;&#160;</a></span>inconsistent_element</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::variant&lt;std::monostate, <a class="el" href="../../df/dd0/structVertex.html">Vertex</a>*, <a class="el" href="../../d2/d4f/structEdge.html">Edge</a>*, <a class="el" href="../../d0/d02/structFace.html">Face</a>*&gt; HalfedgeMesh::inconsistent_element</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>当前处于不一致状态的几何基本元素。 </p>
+<p>在 GUI 上选中了半边网格中的某个元素后，控制器将设置该属性，<code>sync</code> 函数根据该属性的值在每一帧更新数据源 mesh 中的顶点坐标，让建模模式下可以实时预览形变效果。 </p>
+
+</div>
+</div>
+<a id="a37aa317f68032db7f5cd80e9e7c153df" name="a37aa317f68032db7f5cd80e9e7c153df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37aa317f68032db7f5cd80e9e7c153df">&#9670;&#160;</a></span>logger</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;spdlog::logger&gt; HalfedgeMesh::logger</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>日志记录器。 </p>
+
+</div>
+</div>
 <a id="a83064ef1f92388f61c18465849fc3bdd" name="a83064ef1f92388f61c18465849fc3bdd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a83064ef1f92388f61c18465849fc3bdd">&#9670;&#160;</a></span>mesh</h2>
 
@@ -469,7 +1103,7 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
   </tr>
 </table>
 </div><div class="memdoc">
-<p>参照 mesh，用于构造半边网格，需要同步修改。 </p>
+<p>数据源 mesh，用于构造半边网格，需要同步修改。 </p>
 
 </div>
 </div>
@@ -493,6 +1127,82 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 </table>
 </div><div class="memdoc">
 <p>用于构造半边网格几何元素时分配新的唯一 ID。 </p>
+
+</div>
+</div>
+<a id="a2b75868a73c98d202d63dfbbb6dbeb32" name="a2b75868a73c98d202d63dfbbb6dbeb32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b75868a73c98d202d63dfbbb6dbeb32">&#9670;&#160;</a></span>object</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d4b/classObject.html">Object</a>&amp; HalfedgeMesh::object</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>数据源 mesh 对应的物体。 </p>
+
+</div>
+</div>
+<a id="acee4b40805260ef656491fb603ab7528" name="acee4b40805260ef656491fb603ab7528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acee4b40805260ef656491fb603ab7528">&#9670;&#160;</a></span>v_indices</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;const <a class="el" href="../../df/dd0/structVertex.html">Vertex</a>*, size_t&gt; HalfedgeMesh::v_indices</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>将半边网格中的顶点指针映射为 <code><a class="el" href="../../d8/d88/structGL_1_1Mesh.html" title="用于场景预览渲染的 Mesh 类。">GL::Mesh</a></code> 使用的顶点索引。 </p>
+
+</div>
+</div>
+<a id="a96bef329a770abcb1d7c9e75cb054395" name="a96bef329a770abcb1d7c9e75cb054395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96bef329a770abcb1d7c9e75cb054395">&#9670;&#160;</a></span>v_pointers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../df/dd0/structVertex.html">Vertex</a>*&gt; HalfedgeMesh::v_pointers</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>将 <code><a class="el" href="../../d8/d88/structGL_1_1Mesh.html" title="用于场景预览渲染的 Mesh 类。">GL::Mesh</a></code> 使用的顶点索引映射为半边网格中的顶点指针。 </p>
+
+</div>
+</div>
+<a id="a8b346d45b38685a327a0408d7390927b" name="a8b346d45b38685a327a0408d7390927b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b346d45b38685a327a0408d7390927b">&#9670;&#160;</a></span>vertices</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/dde/classLinkedList.html">LinkedList</a>&lt;<a class="el" href="../../df/dd0/structVertex.html">Vertex</a>&gt; HalfedgeMesh::vertices</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>所有顶点。 </p>
 
 </div>
 </div>

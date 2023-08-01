@@ -148,8 +148,8 @@ Public 成员函数</h2></td></tr>
 Public 属性</h2></td></tr>
 <tr class="memitem:a3f024af6f54b5cd0dd3ed11cd875c327"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="../../d0/db7/classGroup.html">Group</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#a3f024af6f54b5cd0dd3ed11cd875c327">groups</a></td></tr>
 <tr class="separator:a3f024af6f54b5cd0dd3ed11cd875c327"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaa5052d36de2f738beaa15dce2a63bd"><td class="memItemLeft" align="right" valign="top"><a id="adaa5052d36de2f738beaa15dce2a63bd" name="adaa5052d36de2f738beaa15dce2a63bd"></a>
-<a class="el" href="../../d8/d4b/classObject.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>selected_object</b></td></tr>
+<tr class="memitem:adaa5052d36de2f738beaa15dce2a63bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d4b/classObject.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#adaa5052d36de2f738beaa15dce2a63bd">selected_object</a></td></tr>
+<tr class="memdesc:adaa5052d36de2f738beaa15dce2a63bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前被选中的物体。  <br /></td></tr>
 <tr class="separator:adaa5052d36de2f738beaa15dce2a63bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afed13ec4ba2d7ab75b273d507911b498"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d7e/structCamera.html">Camera</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#afed13ec4ba2d7ab75b273d507911b498">camera</a></td></tr>
 <tr class="separator:afed13ec4ba2d7ab75b273d507911b498"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,8 +181,7 @@ Private 属性</h2></td></tr>
 <tr class="separator:ac27383b17bb15fffc17d3e402cf4dcd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65320ce4e571046f3ebea79b9ef00ece"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#a65320ce4e571046f3ebea79b9ef00ece">arrows</a></td></tr>
 <tr class="separator:a65320ce4e571046f3ebea79b9ef00ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d310a617d791b73ab82bc34bcb37f69"><td class="memItemLeft" align="right" valign="top"><a id="a5d310a617d791b73ab82bc34bcb37f69" name="a5d310a617d791b73ab82bc34bcb37f69"></a>
-std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>logger</b></td></tr>
+<tr class="memitem:a5d310a617d791b73ab82bc34bcb37f69"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#a5d310a617d791b73ab82bc34bcb37f69">logger</a></td></tr>
 <tr class="separator:a5d310a617d791b73ab82bc34bcb37f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
@@ -583,6 +582,46 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
       </table>
 </div><div class="memdoc">
 <p>用于 <b>离线渲染</b> 的光源，和预览时照亮物体的光源无关。 </p>
+
+</div>
+</div>
+<a id="a5d310a617d791b73ab82bc34bcb37f69" name="a5d310a617d791b73ab82bc34bcb37f69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d310a617d791b73ab82bc34bcb37f69">&#9670;&#160;</a></span>logger</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;spdlog::logger&gt; Scene::logger</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>日志记录器。 </p>
+
+</div>
+</div>
+<a id="adaa5052d36de2f738beaa15dce2a63bd" name="adaa5052d36de2f738beaa15dce2a63bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaa5052d36de2f738beaa15dce2a63bd">&#9670;&#160;</a></span>selected_object</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d4b/classObject.html">Object</a>* Scene::selected_object</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>当前被选中的物体。 </p>
+<p>在布局模式和物理模拟模式下，它决定当前被高亮的物体；在建模模式下，仅有这个物体被绘制。 </p>
 
 </div>
 </div>

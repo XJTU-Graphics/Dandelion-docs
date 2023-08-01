@@ -131,6 +131,7 @@ Public 成员函数</h2></td></tr>
 <tr class="memdesc:a17e48bd3ebf3cd691b7485cfa65c3043"><td class="mdescLeft">&#160;</td><td class="mdescRight">将拨动鼠标滚轮的操作转换为视角拉进或远离。  <br /></td></tr>
 <tr class="separator:a17e48bd3ebf3cd691b7485cfa65c3043"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a142bc68626ef6319295599d939e56cf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a142bc68626ef6319295599d939e56cf0">on_framebuffer_resized</a> (float width, float height)</td></tr>
+<tr class="memdesc:a142bc68626ef6319295599d939e56cf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">在缩放窗口时调整轨迹球半径、预览视角（相机）Y 方向的 FoV，并更新自身记录的窗口尺寸。  <br /></td></tr>
 <tr class="separator:a142bc68626ef6319295599d939e56cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff4ccad882e4bab51ff03428c63e88f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#aff4ccad882e4bab51ff03428c63e88f8">process_input</a> ()</td></tr>
 <tr class="memdesc:aff4ccad882e4bab51ff03428c63e88f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">处理关于场景操作的输入。  <br /></td></tr>
@@ -164,57 +165,64 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>toolbar_width</b></t
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private 成员函数</h2></td></tr>
-<tr class="memitem:abd409e96ddd047aefda4234848d4fde5"><td class="memItemLeft" align="right" valign="top"><a id="abd409e96ddd047aefda4234848d4fde5" name="abd409e96ddd047aefda4234848d4fde5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>select</b> (SelectionType element)</td></tr>
-<tr class="separator:abd409e96ddd047aefda4234848d4fde5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69e94c079159d625ae394d3fd5fa1680"><td class="memItemLeft" align="right" valign="top"><a id="a69e94c079159d625ae394d3fd5fa1680" name="a69e94c079159d625ae394d3fd5fa1680"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>unselect</b> ()</td></tr>
+<tr class="memitem:ae4c72b93b65e486a002d4cb872e614de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#ae4c72b93b65e486a002d4cb872e614de">select</a> (<a class="el" href="../../dd/df1/group__ui.html#gadf4319d83c84f66dfb8994337dae0b1b">SelectableType</a> element)</td></tr>
+<tr class="memdesc:ae4c72b93b65e486a002d4cb872e614de"><td class="mdescLeft">&#160;</td><td class="mdescRight">选择一个元素。  <br /></td></tr>
+<tr class="separator:ae4c72b93b65e486a002d4cb872e614de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69e94c079159d625ae394d3fd5fa1680"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a69e94c079159d625ae394d3fd5fa1680">unselect</a> ()</td></tr>
+<tr class="memdesc:a69e94c079159d625ae394d3fd5fa1680"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消选择。  <br /></td></tr>
 <tr class="separator:a69e94c079159d625ae394d3fd5fa1680"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ed430569aa8dc4e63bbd82ad345db35"><td class="memItemLeft" align="right" valign="top"><a id="a2ed430569aa8dc4e63bbd82ad345db35" name="a2ed430569aa8dc4e63bbd82ad345db35"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>render_selected_element</b> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader)</td></tr>
+<tr class="memitem:a2ed430569aa8dc4e63bbd82ad345db35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a2ed430569aa8dc4e63bbd82ad345db35">render_selected_element</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader)</td></tr>
+<tr class="memdesc:a2ed430569aa8dc4e63bbd82ad345db35"><td class="mdescLeft">&#160;</td><td class="mdescRight">渲染当前选中的元素。  <br /></td></tr>
 <tr class="separator:a2ed430569aa8dc4e63bbd82ad345db35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02e3ca1fde70039aca71b42a22b513b1"><td class="memItemLeft" align="right" valign="top"><a id="a02e3ca1fde70039aca71b42a22b513b1" name="a02e3ca1fde70039aca71b42a22b513b1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>select_object</b> (<a class="el" href="../../d8/d4b/classObject.html">Object</a> *object)</td></tr>
+<tr class="memitem:ae6b743008bc87ed393eabf885d2f9e52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#ae6b743008bc87ed393eabf885d2f9e52">pick_object</a> (<a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray)</td></tr>
+<tr class="memdesc:ae6b743008bc87ed393eabf885d2f9e52"><td class="mdescLeft">&#160;</td><td class="mdescRight">拾取物体。  <br /></td></tr>
+<tr class="separator:ae6b743008bc87ed393eabf885d2f9e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53f6623f03b94f70e7d1a302026bbabb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a53f6623f03b94f70e7d1a302026bbabb">pick_element</a> (<a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray)</td></tr>
+<tr class="memdesc:a53f6623f03b94f70e7d1a302026bbabb"><td class="mdescLeft">&#160;</td><td class="mdescRight">拾取半边、顶点、边或面片。  <br /></td></tr>
+<tr class="separator:a53f6623f03b94f70e7d1a302026bbabb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02e3ca1fde70039aca71b42a22b513b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a02e3ca1fde70039aca71b42a22b513b1">select_object</a> (<a class="el" href="../../d8/d4b/classObject.html">Object</a> *object)</td></tr>
 <tr class="separator:a02e3ca1fde70039aca71b42a22b513b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03eadf6e188df2ee9a8d4b53b4066d92"><td class="memItemLeft" align="right" valign="top"><a id="a03eadf6e188df2ee9a8d4b53b4066d92" name="a03eadf6e188df2ee9a8d4b53b4066d92"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>select_light</b> (<a class="el" href="../../d5/d79/structLight.html">Light</a> *light)</td></tr>
+<tr class="memitem:a04cd65f89a72352c285bb9741cefefaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a04cd65f89a72352c285bb9741cefefaa">select_halfedge</a> (const <a class="el" href="../../df/d02/structHalfedge.html">Halfedge</a> *halfedge)</td></tr>
+<tr class="separator:a04cd65f89a72352c285bb9741cefefaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f2a6f6ec5eea69055addd2917cfbe73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a1f2a6f6ec5eea69055addd2917cfbe73">select_vertex</a> (<a class="el" href="../../df/dd0/structVertex.html">Vertex</a> *vertex)</td></tr>
+<tr class="separator:a1f2a6f6ec5eea69055addd2917cfbe73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af34eb88e8cfcf959435ab733a99f285b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#af34eb88e8cfcf959435ab733a99f285b">select_edge</a> (<a class="el" href="../../d2/d4f/structEdge.html">Edge</a> *edge)</td></tr>
+<tr class="separator:af34eb88e8cfcf959435ab733a99f285b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b2321e10d29a6139694c3cd6e792125"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a4b2321e10d29a6139694c3cd6e792125">select_face</a> (<a class="el" href="../../d0/d02/structFace.html">Face</a> *face)</td></tr>
+<tr class="separator:a4b2321e10d29a6139694c3cd6e792125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03eadf6e188df2ee9a8d4b53b4066d92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a03eadf6e188df2ee9a8d4b53b4066d92">select_light</a> (<a class="el" href="../../d5/d79/structLight.html">Light</a> *light)</td></tr>
 <tr class="separator:a03eadf6e188df2ee9a8d4b53b4066d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95c56822d667e94b031451729ce069a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a95c56822d667e94b031451729ce069a9">Controller</a> ()</td></tr>
 <tr class="separator:a95c56822d667e94b031451729ce069a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private 属性</h2></td></tr>
-<tr class="memitem:a2b60e1a9302100c28471c18a46dba481"><td class="memItemLeft" align="right" valign="top"><a id="a2b60e1a9302100c28471c18a46dba481" name="a2b60e1a9302100c28471c18a46dba481"></a>
-<a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mode</b></td></tr>
+<tr class="memitem:a2b60e1a9302100c28471c18a46dba481"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a2b60e1a9302100c28471c18a46dba481">mode</a></td></tr>
+<tr class="memdesc:a2b60e1a9302100c28471c18a46dba481"><td class="mdescLeft">&#160;</td><td class="mdescRight">全局工作模式。  <br /></td></tr>
 <tr class="separator:a2b60e1a9302100c28471c18a46dba481"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace52a4008fe15ea112fc7ae6b9d22ca0"><td class="memItemLeft" align="right" valign="top"><a id="ace52a4008fe15ea112fc7ae6b9d22ca0" name="ace52a4008fe15ea112fc7ae6b9d22ca0"></a>
-std::unique_ptr&lt; <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>scene</b></td></tr>
+<tr class="memitem:abbdb13a1e6b5471db07eb418795d513f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/dc1/structUI_1_1DebugOptions.html">UI::DebugOptions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#abbdb13a1e6b5471db07eb418795d513f">debug_options</a></td></tr>
+<tr class="separator:abbdb13a1e6b5471db07eb418795d513f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe600befbeedd8d86dc9bf7e373e365a"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d6/de2/classUI_1_1Menubar.html">UI::Menubar</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#afe600befbeedd8d86dc9bf7e373e365a">menubar</a></td></tr>
+<tr class="separator:afe600befbeedd8d86dc9bf7e373e365a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1359b487bc897978a39d647cc915cd71"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d1/d84/classUI_1_1Toolbar.html">UI::Toolbar</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a1359b487bc897978a39d647cc915cd71">toolbar</a></td></tr>
+<tr class="separator:a1359b487bc897978a39d647cc915cd71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace52a4008fe15ea112fc7ae6b9d22ca0"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#ace52a4008fe15ea112fc7ae6b9d22ca0">scene</a></td></tr>
 <tr class="separator:ace52a4008fe15ea112fc7ae6b9d22ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0300bc4b01b97244da474be4d3b7c38d"><td class="memItemLeft" align="right" valign="top"><a id="a0300bc4b01b97244da474be4d3b7c38d" name="a0300bc4b01b97244da474be4d3b7c38d"></a>
-SelectionType&#160;</td><td class="memItemRight" valign="bottom"><b>selected_element</b></td></tr>
-<tr class="separator:a0300bc4b01b97244da474be4d3b7c38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b715719d5d3738be94a612a5b51568a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/df1/group__ui.html#gadf4319d83c84f66dfb8994337dae0b1b">SelectableType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a6b715719d5d3738be94a612a5b51568a">selected_element</a></td></tr>
+<tr class="memdesc:a6b715719d5d3738be94a612a5b51568a"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前被选中的元素。  <br /></td></tr>
+<tr class="separator:a6b715719d5d3738be94a612a5b51568a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20539e548e10bce4d113f894be43665e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a20539e548e10bce4d113f894be43665e">main_camera</a></td></tr>
 <tr class="separator:a20539e548e10bce4d113f894be43665e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ac9aefe19714d124cb032e23fd23e75"><td class="memItemLeft" align="right" valign="top"><a id="a3ac9aefe19714d124cb032e23fd23e75" name="a3ac9aefe19714d124cb032e23fd23e75"></a>
-std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>logger</b></td></tr>
+<tr class="memitem:a3ac9aefe19714d124cb032e23fd23e75"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a3ac9aefe19714d124cb032e23fd23e75">logger</a></td></tr>
 <tr class="separator:a3ac9aefe19714d124cb032e23fd23e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae604a933148415cb35ffd6dfdc6572b5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#ae604a933148415cb35ffd6dfdc6572b5">trackball_radius</a></td></tr>
 <tr class="separator:ae604a933148415cb35ffd6dfdc6572b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5a2db1447f9cfb2f59fb6b236ddcb61"><td class="memItemLeft" align="right" valign="top"><a id="ac5a2db1447f9cfb2f59fb6b236ddcb61" name="ac5a2db1447f9cfb2f59fb6b236ddcb61"></a>
-<a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a>&#160;</td><td class="memItemRight" valign="bottom"><b>highlighted_element</b></td></tr>
+<tr class="memitem:ac5a2db1447f9cfb2f59fb6b236ddcb61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#ac5a2db1447f9cfb2f59fb6b236ddcb61">highlighted_element</a></td></tr>
 <tr class="separator:ac5a2db1447f9cfb2f59fb6b236ddcb61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa4a1e64142b9502bb07c23a503bd74e"><td class="memItemLeft" align="right" valign="top"><a id="aaa4a1e64142b9502bb07c23a503bd74e" name="aaa4a1e64142b9502bb07c23a503bd74e"></a>
-<a class="el" href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a>&#160;</td><td class="memItemRight" valign="bottom"><b>picking_ray</b></td></tr>
+<tr class="memitem:ae0f5af9db482fbbbdf22e3e08195c471"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#ae0f5af9db482fbbbdf22e3e08195c471">highlighted_halfedge</a></td></tr>
+<tr class="separator:ae0f5af9db482fbbbdf22e3e08195c471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa4a1e64142b9502bb07c23a503bd74e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#aaa4a1e64142b9502bb07c23a503bd74e">picking_ray</a></td></tr>
 <tr class="separator:aaa4a1e64142b9502bb07c23a503bd74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:afe600befbeedd8d86dc9bf7e373e365a"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d6/de2/classUI_1_1Menubar.html">UI::Menubar</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#afe600befbeedd8d86dc9bf7e373e365a">menubar</a></td></tr>
-<tr class="separator:afe600befbeedd8d86dc9bf7e373e365a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbdb13a1e6b5471db07eb418795d513f"><td class="memItemLeft" align="right" valign="top"><a id="abbdb13a1e6b5471db07eb418795d513f" name="abbdb13a1e6b5471db07eb418795d513f"></a>
-<a class="el" href="../../d9/dc1/structUI_1_1DebugOptions.html">UI::DebugOptions</a>&#160;</td><td class="memItemRight" valign="bottom"><b>debug_options</b></td></tr>
-<tr class="separator:abbdb13a1e6b5471db07eb418795d513f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1359b487bc897978a39d647cc915cd71"><td class="memItemLeft" align="right" valign="top"><a id="a1359b487bc897978a39d647cc915cd71" name="a1359b487bc897978a39d647cc915cd71"></a>
-std::unique_ptr&lt; <a class="el" href="../../d1/d84/classUI_1_1Toolbar.html">UI::Toolbar</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>toolbar</b></td></tr>
-<tr class="separator:a1359b487bc897978a39d647cc915cd71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 静态 Private 属性</h2></td></tr>
@@ -337,10 +345,12 @@ std::unique_ptr&lt; <a class="el" href="../../d1/d84/classUI_1_1Toolbar.html">UI
         </tr>
       </table>
 </div><div class="memdoc">
-<p>在缩放窗口时调整轨迹球半径、预览视角（相机）Y 方向的 FoV，并更新自身记录的窗口尺寸。 </p><dl class="params"><dt>参数</dt><dd>
+
+<p>在缩放窗口时调整轨迹球半径、预览视角（相机）Y 方向的 FoV，并更新自身记录的窗口尺寸。 </p>
+<p>虽然名字相同，但这个函数并非 GLFW 的窗口缩放回调函数。在缩放时它会被真正的回调函数 <code>Platform::on_framebuffer_resized</code> 调用。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">width</td><td>缩放后的窗口宽度。 </td></tr>
-    <tr><td class="paramname">height</td><td>缩放后的窗口高度。 </td></tr>
+    <tr><td class="paramname">width</td><td>缩放后的窗口宽度 </td></tr>
+    <tr><td class="paramname">height</td><td>缩放后的窗口高度 </td></tr>
   </table>
   </dd>
 </dl>
@@ -389,7 +399,7 @@ std::unique_ptr&lt; <a class="el" href="../../d1/d84/classUI_1_1Toolbar.html">UI
 </div><div class="memdoc">
 
 <p>根据鼠标点击选取场景中的物体。 </p>
-<p>这个函数将鼠标点击的屏幕坐标 (screen space) 转换为观察坐标 (view space)， 然后将观察坐标转换回世界坐标 (world space)，从而构造一条从观察相机（主相机） 发出的射线，按这条射线与场景中物体的相交结果拾取（选中）物体。 </p>
+<p>这个函数将鼠标点击的屏幕坐标 (screen space) 转换为观察坐标 (view space)， 然后将观察坐标转换回世界坐标 (world space)，从而构造一条从观察相机（主相机） 发出的射线，按这条射线与场景中物体的相交结果拾取（选中）场景中的可选中对象。 工作于布局模式和物理模拟模式下时，它调用 <code>pick_object</code> 函数，工作于建模模式下时， 它调用 <code>pick_element</code> 函数。 </p>
 
 </div>
 </div>
@@ -412,10 +422,78 @@ std::unique_ptr&lt; <a class="el" href="../../d1/d84/classUI_1_1Toolbar.html">UI
 <p>缩放视角的操作按指数规律执行：鼠标滚轮每滚动一个单位，观察相机到目标点的距离就乘上一个固定值 <code>wheel_scroll_factor</code>，即</p>
 <p class="formulaDsp">
 \[
-  \vec{d}_\text{new}=\text{wheel_scroll_factor}^\text{wheel_delta}\cdot\vec{d}
+  \mathbf{d}_\text{new}=\text{wheel_scroll_factor}^\text{wheel_delta}\cdot\mathbf{d}
 \]
 </p>
  
+</div>
+</div>
+<a id="a53f6623f03b94f70e7d1a302026bbabb" name="a53f6623f03b94f70e7d1a302026bbabb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53f6623f03b94f70e7d1a302026bbabb">&#9670;&#160;</a></span>pick_element()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::pick_element </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>ray</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>拾取半边、顶点、边或面片。 </p>
+<p>在建模模式下，根据射线求交的结果选择半边网格上的基本元素。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ray</td><td>根据点击位置生成的射线（世界坐标系下） </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae6b743008bc87ed393eabf885d2f9e52" name="ae6b743008bc87ed393eabf885d2f9e52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6b743008bc87ed393eabf885d2f9e52">&#9670;&#160;</a></span>pick_object()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::pick_object </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>ray</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>拾取物体。 </p>
+<p>在布局或物理模拟模式下，根据射线求交的结果选择物体。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ray</td><td>根据点击位置生成的射线（世界坐标系下） </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aff4ccad882e4bab51ff03428c63e88f8" name="aff4ccad882e4bab51ff03428c63e88f8"></a>
@@ -434,7 +512,7 @@ std::unique_ptr&lt; <a class="el" href="../../d1/d84/classUI_1_1Toolbar.html">UI
 </div><div class="memdoc">
 
 <p>处理关于场景操作的输入。 </p>
-<p>这个函数判别鼠标操作是否对应于某种场景操作（调整视角、拾取物体等），并调用相应的处理函数 （例如 <code>on_mouse_clicked</code> 或 <code>on_mouse_clicked</code>）。 </p>
+<p>这个函数判别鼠标操作是否对应于某种场景操作（调整视角、拾取物体等），并调用相应的处理函数 （例如 <code>on_mouse_clicked</code> 或 <code>on_picking</code>）。与场景操作相对的是控件操作（例如点击按钮）， 控件操作由相应的 ImGui 控件直接处理。 </p>
 
 </div>
 </div>
@@ -462,7 +540,356 @@ std::unique_ptr&lt; <a class="el" href="../../d1/d84/classUI_1_1Toolbar.html">UI
 
 </div>
 </div>
+<a id="a2ed430569aa8dc4e63bbd82ad345db35" name="a2ed430569aa8dc4e63bbd82ad345db35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ed430569aa8dc4e63bbd82ad345db35">&#9670;&#160;</a></span>render_selected_element()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::render_selected_element </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;&#160;</td>
+          <td class="paramname"><em>shader</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>渲染当前选中的元素。 </p>
+<p>渲染选中元素时会禁用深度检测 <code>GL_DEPTH_TEST</code> ，直接在原先的绘制结果上叠加。 因此，即使将视角旋转到背面也会看到高亮出来的被选中元素。 </p>
+
+</div>
+</div>
+<a id="ae4c72b93b65e486a002d4cb872e614de" name="ae4c72b93b65e486a002d4cb872e614de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4c72b93b65e486a002d4cb872e614de">&#9670;&#160;</a></span>select()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::select </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/df1/group__ui.html#gadf4319d83c84f66dfb8994337dae0b1b">SelectableType</a>&#160;</td>
+          <td class="paramname"><em>element</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>选择一个元素。 </p>
+<p>这个函数修改控制器记录的选择状态。它包括两步动作：</p><ol type="1">
+<li>调用 <code>unselect</code> 清除原先的选择状态及其副作用</li>
+<li>修改被选中元素 <code>selected_element</code>，调用 <code>select_[type]</code> 函数执行具体操作</li>
+</ol>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">element</td><td>要选择的新元素 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af34eb88e8cfcf959435ab733a99f285b" name="af34eb88e8cfcf959435ab733a99f285b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af34eb88e8cfcf959435ab733a99f285b">&#9670;&#160;</a></span>select_edge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::select_edge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d4f/structEdge.html">Edge</a> *&#160;</td>
+          <td class="paramname"><em>edge</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>选择边并更新 <code>highlighted_element</code> 。 </p>
+
+</div>
+</div>
+<a id="a4b2321e10d29a6139694c3cd6e792125" name="a4b2321e10d29a6139694c3cd6e792125"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b2321e10d29a6139694c3cd6e792125">&#9670;&#160;</a></span>select_face()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::select_face </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d02/structFace.html">Face</a> *&#160;</td>
+          <td class="paramname"><em>face</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>选择面片并更新 <code>highlighted_element</code> 。 </p>
+
+</div>
+</div>
+<a id="a04cd65f89a72352c285bb9741cefefaa" name="a04cd65f89a72352c285bb9741cefefaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04cd65f89a72352c285bb9741cefefaa">&#9670;&#160;</a></span>select_halfedge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::select_halfedge </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/d02/structHalfedge.html">Halfedge</a> *&#160;</td>
+          <td class="paramname"><em>halfedge</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>选择半边并更新 <code>highlighted_halfedge</code> 。 </p>
+
+</div>
+</div>
+<a id="a03eadf6e188df2ee9a8d4b53b4066d92" name="a03eadf6e188df2ee9a8d4b53b4066d92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03eadf6e188df2ee9a8d4b53b4066d92">&#9670;&#160;</a></span>select_light()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::select_light </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d79/structLight.html">Light</a> *&#160;</td>
+          <td class="paramname"><em>light</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>选择光源并更新 <code>highlighted_element</code> 。 </p>
+
+</div>
+</div>
+<a id="a02e3ca1fde70039aca71b42a22b513b1" name="a02e3ca1fde70039aca71b42a22b513b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02e3ca1fde70039aca71b42a22b513b1">&#9670;&#160;</a></span>select_object()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::select_object </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d4b/classObject.html">Object</a> *&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>选择物体并更新 <code><a class="el" href="../../d5/d9c/classScene.html#adaa5052d36de2f738beaa15dce2a63bd" title="当前被选中的物体。">Scene::selected_object</a></code> 。 </p>
+
+</div>
+</div>
+<a id="a1f2a6f6ec5eea69055addd2917cfbe73" name="a1f2a6f6ec5eea69055addd2917cfbe73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f2a6f6ec5eea69055addd2917cfbe73">&#9670;&#160;</a></span>select_vertex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::select_vertex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd0/structVertex.html">Vertex</a> *&#160;</td>
+          <td class="paramname"><em>vertex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>选择顶点并更新 <code>highlighted_element</code> 。 </p>
+
+</div>
+</div>
+<a id="a69e94c079159d625ae394d3fd5fa1680" name="a69e94c079159d625ae394d3fd5fa1680"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69e94c079159d625ae394d3fd5fa1680">&#9670;&#160;</a></span>unselect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::unselect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>取消选择。 </p>
+<p>这个函数清楚当前的选择状态，将<code>selected_element</code> 重置为 <code>std::monostate</code> 并清空 <code>highlighted_element</code> 或 <code>highlighted_halfedge</code> 这些高亮元素。 如果之前的被选中元素设置过 <code><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a></code> 等对象的属性，它也会一并将其重置。 </p>
+
+</div>
+</div>
 <h2 class="groupheader">类成员变量说明</h2>
+<a id="abbdb13a1e6b5471db07eb418795d513f" name="abbdb13a1e6b5471db07eb418795d513f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbdb13a1e6b5471db07eb418795d513f">&#9670;&#160;</a></span>debug_options</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/dc1/structUI_1_1DebugOptions.html">UI::DebugOptions</a> Controller::debug_options</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>一些帮助调试的选项，详见 <code><a class="el" href="../../d9/dc1/structUI_1_1DebugOptions.html" title="辅助调试的 GUI 选项。">UI::DebugOptions</a></code> 类型说明。 </p>
+
+</div>
+</div>
+<a id="ac5a2db1447f9cfb2f59fb6b236ddcb61" name="ac5a2db1447f9cfb2f59fb6b236ddcb61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5a2db1447f9cfb2f59fb6b236ddcb61">&#9670;&#160;</a></span>highlighted_element</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> Controller::highlighted_element</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>被选中元素类型为顶点、边、面片或光源时使用的绘制对象。 </p>
+
+</div>
+</div>
+<a id="ae0f5af9db482fbbbdf22e3e08195c471" name="ae0f5af9db482fbbbdf22e3e08195c471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0f5af9db482fbbbdf22e3e08195c471">&#9670;&#160;</a></span>highlighted_halfedge</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a> Controller::highlighted_halfedge</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>被选中元素类型为半边时使用的绘制对象。 </p>
+
+</div>
+</div>
+<a id="a3ac9aefe19714d124cb032e23fd23e75" name="a3ac9aefe19714d124cb032e23fd23e75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ac9aefe19714d124cb032e23fd23e75">&#9670;&#160;</a></span>logger</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;spdlog::logger&gt; Controller::logger</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>日志记录器。 </p>
+
+</div>
+</div>
 <a id="a20539e548e10bce4d113f894be43665e" name="a20539e548e10bce4d113f894be43665e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a20539e548e10bce4d113f894be43665e">&#9670;&#160;</a></span>main_camera</h2>
 
@@ -505,7 +932,126 @@ std::unique_ptr&lt; <a class="el" href="../../d1/d84/classUI_1_1Toolbar.html">UI
   </tr>
 </table>
 </div><div class="memdoc">
-<p>各 UI 组件应当被控制器独占。 </p>
+<p>菜单栏。 </p>
+
+</div>
+</div>
+<a id="a2b60e1a9302100c28471c18a46dba481" name="a2b60e1a9302100c28471c18a46dba481"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b60e1a9302100c28471c18a46dba481">&#9670;&#160;</a></span>mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> Controller::mode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>全局工作模式。 </p>
+<p>控制器维护着当前的工作模式，决定各种功能可用或禁用。其他的 GUI 组件持有对该变量的引用。 </p>
+
+</div>
+</div>
+<a id="aaa4a1e64142b9502bb07c23a503bd74e" name="aaa4a1e64142b9502bb07c23a503bd74e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa4a1e64142b9502bb07c23a503bd74e">&#9670;&#160;</a></span>picking_ray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a> Controller::picking_ray</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>显示拾取射线用的绘制对象，对应 <code><a class="el" href="../../d9/dc1/structUI_1_1DebugOptions.html#af153a5320f1fcd9b6c4730122a954e0d">UI::DebugOptions::show_picking_ray</a></code> 。 </p>
+
+</div>
+</div>
+<a id="ace52a4008fe15ea112fc7ae6b9d22ca0" name="ace52a4008fe15ea112fc7ae6b9d22ca0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace52a4008fe15ea112fc7ae6b9d22ca0">&#9670;&#160;</a></span>scene</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="../../d5/d9c/classScene.html">Scene</a>&gt; Controller::scene</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>包含所有三维数据的场景实例。 </p>
+
+</div>
+</div>
+<a id="a6b715719d5d3738be94a612a5b51568a" name="a6b715719d5d3738be94a612a5b51568a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b715719d5d3738be94a612a5b51568a">&#9670;&#160;</a></span>selected_element</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/df1/group__ui.html#gadf4319d83c84f66dfb8994337dae0b1b">SelectableType</a> Controller::selected_element</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当前被选中的元素。 </p>
+<p>根据当前所处的模式，物体、各类几何基本元素、光源都可能被选中，详见 <code>SelectableType</code> 的类型说明。当 <code>selected_element</code> 持有 <code>std::monostate</code> 类型时， 当前的选择状态为空（没有任何元素被选中）。 </p>
+
+</div>
+</div>
+<a id="a1359b487bc897978a39d647cc915cd71" name="a1359b487bc897978a39d647cc915cd71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1359b487bc897978a39d647cc915cd71">&#9670;&#160;</a></span>toolbar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="../../d1/d84/classUI_1_1Toolbar.html">UI::Toolbar</a>&gt; Controller::toolbar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>工具栏。 </p>
 
 </div>
 </div>
@@ -566,7 +1112,7 @@ std::unique_ptr&lt; <a class="el" href="../../d1/d84/classUI_1_1Toolbar.html">UI
         </tr>
       </table>
 </div><div class="memdoc">
-<p>由于 Dear ImGui 使用浮点数表示尺寸，所有和布局相关的变量都是浮点型。 </p>
+<p>由于 ImGui 使用浮点数表示尺寸，所有和布局相关的变量都是浮点型。 </p>
 
 </div>
 </div>

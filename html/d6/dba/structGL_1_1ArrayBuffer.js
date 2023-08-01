@@ -10,6 +10,7 @@ var structGL_1_1ArrayBuffer =
     [ "release", "d6/dba/structGL_1_1ArrayBuffer.html#a75e71a3f0eb57f79b044099e82065242", null ],
     [ "specify_vertex_attribute", "d6/dba/structGL_1_1ArrayBuffer.html#a4a875617acb4be2277ae1f1924e63731", null ],
     [ "to_gpu", "d6/dba/structGL_1_1ArrayBuffer.html#af0736b43512bd7183b7f5de35f4005b0", null ],
+    [ "update", "d6/dba/structGL_1_1ArrayBuffer.html#a25a9ab706eefcb16a992948393006cb3", null ],
     [ "layout_location", "d6/dba/structGL_1_1ArrayBuffer.html#a5c92fd61c3de20c99e71c48e9fa5291a", null ],
     [ "usage", "d6/dba/structGL_1_1ArrayBuffer.html#aa8ecf23830cb9969726478bccb43a01c", null ]
 ];

@@ -16,5 +16,7 @@ var classScene =
     [ "groups", "d5/d9c/classScene.html#a3f024af6f54b5cd0dd3ed11cd875c327", null ],
     [ "halfedge_mesh", "d5/d9c/classScene.html#aaa74b766e66ccda23ba55490a93db7bb", null ],
     [ "last_update", "d5/d9c/classScene.html#ac27383b17bb15fffc17d3e402cf4dcd9", null ],
-    [ "lights", "d5/d9c/classScene.html#a7481b024ed1181823b38c10e663ffea7", null ]
+    [ "lights", "d5/d9c/classScene.html#a7481b024ed1181823b38c10e663ffea7", null ],
+    [ "logger", "d5/d9c/classScene.html#a5d310a617d791b73ab82bc34bcb37f69", null ],
+    [ "selected_object", "d5/d9c/classScene.html#adaa5052d36de2f738beaa15dce2a63bd", null ]
 ];

@@ -55,9 +55,10 @@ var NAVTREE =
       [ "类索引", "classes.html", null ],
       [ "类继承关系", "hierarchy.html", "hierarchy" ],
       [ "类成员", "functions.html", [
-        [ "全部", "functions.html", null ],
+        [ "全部", "functions.html", "functions_dup" ],
         [ "函数", "functions_func.html", null ],
-        [ "变量", "functions_vars.html", null ]
+        [ "变量", "functions_vars.html", null ],
+        [ "相关函数", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "文件", "files.html", [
@@ -66,6 +67,7 @@ var NAVTREE =
         [ "全部", "globals.html", null ],
         [ "函数", "globals_func.html", null ],
         [ "变量", "globals_vars.html", null ],
+        [ "类型定义", "globals_type.html", null ],
         [ "枚举", "globals_enum.html", null ],
         [ "宏定义", "globals_defs.html", null ]
       ] ]
@@ -76,7 +78,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"da/d2c/startup.html#code-complention"
+"d8/df1/build.html#compilation-linux"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';
