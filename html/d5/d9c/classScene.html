@@ -166,6 +166,9 @@ Private 成员函数</h2></td></tr>
 <tr class="memitem:a3b43ea89d6c24ed55d7dd8f5748674eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#a3b43ea89d6c24ed55d7dd8f5748674eb">render_lights</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader)</td></tr>
 <tr class="memdesc:a3b43ea89d6c24ed55d7dd8f5748674eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">在渲染模式下绘制光源。  <br /></td></tr>
 <tr class="separator:a3b43ea89d6c24ed55d7dd8f5748674eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb092c6c00660da77286cda3d4b1e36f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#aeb092c6c00660da77286cda3d4b1e36f">simulation_update</a> ()</td></tr>
+<tr class="memdesc:aeb092c6c00660da77286cda3d4b1e36f"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算场景中所有物体下一帧要渲染的运动状态。  <br /></td></tr>
+<tr class="separator:aeb092c6c00660da77286cda3d4b1e36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 静态 Private 成员函数</h2></td></tr>
@@ -179,6 +182,8 @@ Private 属性</h2></td></tr>
 <tr class="separator:a141a7d2999cde438b69442da6bbd6d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac27383b17bb15fffc17d3e402cf4dcd9"><td class="memItemLeft" align="right" valign="top">std::chrono::time_point&lt; std::chrono::steady_clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#ac27383b17bb15fffc17d3e402cf4dcd9">last_update</a></td></tr>
 <tr class="separator:ac27383b17bb15fffc17d3e402cf4dcd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5dc85d7716e1ed0577246cb6d2e90e4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d8/d4b/classObject.html">Object</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#ac5dc85d7716e1ed0577246cb6d2e90e4">all_objects</a></td></tr>
+<tr class="separator:ac5dc85d7716e1ed0577246cb6d2e90e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65320ce4e571046f3ebea79b9ef00ece"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#a65320ce4e571046f3ebea79b9ef00ece">arrows</a></td></tr>
 <tr class="separator:a65320ce4e571046f3ebea79b9ef00ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d310a617d791b73ab82bc34bcb37f69"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html#a5d310a617d791b73ab82bc34bcb37f69">logger</a></td></tr>
@@ -419,6 +424,35 @@ Private 属性</h2></td></tr>
 
 </div>
 </div>
+<a id="aeb092c6c00660da77286cda3d4b1e36f" name="aeb092c6c00660da77286cda3d4b1e36f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb092c6c00660da77286cda3d4b1e36f">&#9670;&#160;</a></span>simulation_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scene::simulation_update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计算场景中所有物体下一帧要渲染的运动状态。 </p>
+<p>这个函数按照固定的时间步长模拟物体运动。</p>
+<p>每一帧的渲染过程可以概括为更新数据（几何、运动等等）和渲染图像两步。 约定当前屏幕上显示的是上一帧的图像，正在计算的是当前帧的数据。 更新运动状态时首先用当前时间减去 <code>last_update</code> 得到上一帧和之前帧剩余时长之和； 再循环模拟物体运动。每循环一次走过一个长度为 <code>time_step</code> 的时间步、 剩余时长减去 <code>time_step</code> ；当剩余时长不足一个 <code>time_step</code> 时停止模拟， 并将这一帧模拟走过的总时长累加到 <code>last_update</code> 上。 </p>
+
+</div>
+</div>
 <a id="a95c6652f9dab25c674e14c889a0d72db" name="a95c6652f9dab25c674e14c889a0d72db"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95c6652f9dab25c674e14c889a0d72db">&#9670;&#160;</a></span>start_simulation()</h2>
 
@@ -456,6 +490,29 @@ Private 属性</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">类成员变量说明</h2>
+<a id="ac5dc85d7716e1ed0577246cb6d2e90e4" name="ac5dc85d7716e1ed0577246cb6d2e90e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5dc85d7716e1ed0577246cb6d2e90e4">&#9670;&#160;</a></span>all_objects</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d8/d4b/classObject.html">Object</a>*&gt; Scene::all_objects</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>碰撞检测时记录所有物体，其他情况下无效。 </p>
+
+</div>
+</div>
 <a id="a65320ce4e571046f3ebea79b9ef00ece" name="a65320ce4e571046f3ebea79b9ef00ece"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a65320ce4e571046f3ebea79b9ef00ece">&#9670;&#160;</a></span>arrows</h2>
 

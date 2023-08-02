@@ -126,9 +126,9 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:aa164f4cf0ebff3e52c00167953866f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8f23e84a424cb6061cc9b23bb1f650c"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix4f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#af8f23e84a424cb6061cc9b23bb1f650c">model</a> ()</td></tr>
 <tr class="separator:af8f23e84a424cb6061cc9b23bb1f650c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab20e1de61f97accf9f2e77c1a156320a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#ab20e1de61f97accf9f2e77c1a156320a">update</a> (float frame_duration)</td></tr>
-<tr class="memdesc:ab20e1de61f97accf9f2e77c1a156320a"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新当前帧要渲染的运动状态。  <br /></td></tr>
-<tr class="separator:ab20e1de61f97accf9f2e77c1a156320a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81cff33ba1612aa43187d3e617d8edcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a81cff33ba1612aa43187d3e617d8edcc">update</a> (std::vector&lt; <a class="el" href="../../d8/d4b/classObject.html">Object</a> * &gt; &amp;all_objects)</td></tr>
+<tr class="memdesc:a81cff33ba1612aa43187d3e617d8edcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新下一个时间步的运动状态。  <br /></td></tr>
+<tr class="separator:a81cff33ba1612aa43187d3e617d8edcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c13c26a5d9896e078a32de6593e5be5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a5c13c26a5d9896e078a32de6593e5be5">render</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader, <a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> mode, bool selected)</td></tr>
 <tr class="memdesc:a5c13c26a5d9896e078a32de6593e5be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据指定的渲染模式渲染物体。  <br /></td></tr>
 <tr class="separator:a5c13c26a5d9896e078a32de6593e5be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,8 +161,9 @@ Public 属性</h2></td></tr>
 <tr class="separator:a049e8776aaeebac897c3ae2d3fe72f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3961b5381a8384cc71246ff15f7be99b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a3961b5381a8384cc71246ff15f7be99b">mesh</a></td></tr>
 <tr class="separator:a3961b5381a8384cc71246ff15f7be99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad4720f5c4020d0e39a00995b2780d6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d7f/classBVHAccel.html">BVHAccel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#aad4720f5c4020d0e39a00995b2780d6f">bvh</a></td></tr>
-<tr class="separator:aad4720f5c4020d0e39a00995b2780d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a575837d5d43ed4a85f5f099da68ddb6d"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d1/d7f/classBVHAccel.html">BVHAccel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a575837d5d43ed4a85f5f099da68ddb6d">bvh</a></td></tr>
+<tr class="memdesc:a575837d5d43ed4a85f5f099da68ddb6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据这个物体建立的 BVH 。  <br /></td></tr>
+<tr class="separator:a575837d5d43ed4a85f5f099da68ddb6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a0e9b68376530dd18ab88b43e8456337f"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a0e9b68376530dd18ab88b43e8456337f">center</a></td></tr>
 <tr class="separator:a0e9b68376530dd18ab88b43e8456337f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,6 +179,8 @@ Eigen::Quaternionf&#160;</td><td class="memItemRight" valign="bottom"><b>rotatio
 <tr class="memitem:a573b153aba95a8272b6808ebfe6955cb"><td class="memItemLeft" align="right" valign="top">static std::function&lt; <a class="el" href="../../d1/d96/structKineticState.html">KineticState</a>(const <a class="el" href="../../d1/d96/structKineticState.html">KineticState</a> &amp;, const <a class="el" href="../../d1/d96/structKineticState.html">KineticState</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a573b153aba95a8272b6808ebfe6955cb">step</a></td></tr>
 <tr class="memdesc:a573b153aba95a8272b6808ebfe6955cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于更新物体运动状态的函数。  <br /></td></tr>
 <tr class="separator:a573b153aba95a8272b6808ebfe6955cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03b1d23240bc4b367719aba1c6a63872"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a03b1d23240bc4b367719aba1c6a63872">BVH_for_collision</a> = false</td></tr>
+<tr class="separator:a03b1d23240bc4b367719aba1c6a63872"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private 属性</h2></td></tr>
@@ -284,8 +287,8 @@ Private 属性</h2></td></tr>
 
 </div>
 </div>
-<a id="ab20e1de61f97accf9f2e77c1a156320a" name="ab20e1de61f97accf9f2e77c1a156320a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab20e1de61f97accf9f2e77c1a156320a">&#9670;&#160;</a></span>update()</h2>
+<a id="a81cff33ba1612aa43187d3e617d8edcc" name="a81cff33ba1612aa43187d3e617d8edcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81cff33ba1612aa43187d3e617d8edcc">&#9670;&#160;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -293,18 +296,18 @@ Private 属性</h2></td></tr>
         <tr>
           <td class="memname">void Object::update </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>frame_duration</em></td><td>)</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="../../d8/d4b/classObject.html">Object</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>all_objects</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>更新当前帧要渲染的运动状态。 </p>
-<p>根据上一帧的总时长决定计算多少时间步。</p>
+<p>更新下一个时间步的运动状态。 </p>
+<p>首先使用 <code><a class="el" href="../../d8/d4b/classObject.html#a573b153aba95a8272b6808ebfe6955cb" title="用于更新物体运动状态的函数。">Object::step</a></code> 计算下一个时间步自身的运动状态，尝试将自身移动到算出的位置， 再检测在此位置是否会与其他物体碰撞。如果发生碰撞则自身位置回退， 并根据动量定理修改碰撞双方的速度。</p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">frame_duration</td><td>一帧的时长，以秒为单位。 </td></tr>
+    <tr><td class="paramname">all_objects</td><td>场景中所有的物体，用于碰撞检测和响应。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -327,18 +330,44 @@ Private 属性</h2></td></tr>
 
 </div>
 </div>
-<a id="aad4720f5c4020d0e39a00995b2780d6f" name="aad4720f5c4020d0e39a00995b2780d6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad4720f5c4020d0e39a00995b2780d6f">&#9670;&#160;</a></span>bvh</h2>
+<a id="a575837d5d43ed4a85f5f099da68ddb6d" name="a575837d5d43ed4a85f5f099da68ddb6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a575837d5d43ed4a85f5f099da68ddb6d">&#9670;&#160;</a></span>bvh</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d1/d7f/classBVHAccel.html">BVHAccel</a>* Object::bvh</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="../../d1/d7f/classBVHAccel.html">BVHAccel</a>&gt; Object::bvh</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>根据这个物体建立的 BVH 。 </p>
+<p>物体的 BVH 在它的 mesh 加载完成后构建。由于 mesh 数据的加载过程是在 <code><a class="el" href="../../d0/db7/classGroup.html#a3cc9d35ed0753293c7128cddf920b55b">Group::load</a></code> 中完成的，构建 BVH 的函数调用也只能在这个函数（而不是在 <code><a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a></code> 的构造函数）中进行。</p>
+<p>物体的 mesh 数据都在模型坐标系下，因此 BVH 也是建立在模型坐标系下的。这意味着物体的平移、 旋转和缩放都不改变 BVH 的结构，只有物体发生形变时才需要更新 BVH 。目前的实现是： 每次退出建模模式时，不加检查地删除原先的 BVH 并重新构建。 </p>
+
+</div>
+</div>
+<a id="a03b1d23240bc4b367719aba1c6a63872" name="a03b1d23240bc4b367719aba1c6a63872"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03b1d23240bc4b367719aba1c6a63872">&#9670;&#160;</a></span>BVH_for_collision</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Object::BVH_for_collision = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>是否启用 BVH 加速碰撞检测。 </p>
 
 </div>
 </div>

@@ -122,9 +122,9 @@ $(document).ready(function(){initNavTree('de/d17/kinetic__state_8h_source.html',
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * \brief 物理模拟过程使用的固定时间步。</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * 这个时间步独立于渲染的帧时长，物理模拟总是以每一步经过 `time_step`</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * 秒的方式进行。</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * 秒的方式进行。时间步长的默认值为 \f$1/30\f$ 秒。</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../d9/d77/group__simulation.html#ga6325eaa3bcfa8585cbd1eb539b7f6336">   19</a></span><span class="keyword">constexpr</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d9/d77/group__simulation.html#ga6325eaa3bcfa8585cbd1eb539b7f6336">time_step</a> = 1.0f / 30.0f;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d9/d77/group__simulation.html#ga4feca29d7349adc765dcdf44d396d46a">time_step</a>;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"></span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">/*!</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * \ingroup simulation</span></div>
@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('de/d17/kinetic__state_8h_source.html',
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>};</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_UTILS_KINETIC_STATE_H</span></div>
-<div class="ttc" id="agroup__simulation_html_ga6325eaa3bcfa8585cbd1eb539b7f6336"><div class="ttname"><a href="../../d9/d77/group__simulation.html#ga6325eaa3bcfa8585cbd1eb539b7f6336">time_step</a></div><div class="ttdeci">constexpr float time_step</div><div class="ttdoc">物理模拟过程使用的固定时间步。</div><div class="ttdef"><b>Definition:</b> kinetic_state.h:19</div></div>
+<div class="ttc" id="agroup__simulation_html_ga4feca29d7349adc765dcdf44d396d46a"><div class="ttname"><a href="../../d9/d77/group__simulation.html#ga4feca29d7349adc765dcdf44d396d46a">time_step</a></div><div class="ttdeci">float time_step</div><div class="ttdoc">物理模拟过程使用的固定时间步。</div><div class="ttdef"><b>Definition:</b> kinetic_state.cpp:5</div></div>
 <div class="ttc" id="astructKineticState_html"><div class="ttname"><a href="../../d1/d96/structKineticState.html">KineticState</a></div><div class="ttdoc">表示物体的质点运动学状态。</div><div class="ttdef"><b>Definition:</b> kinetic_state.h:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
