@@ -118,77 +118,33 @@ $(document).ready(function(){initNavTree('d2/d1a/classAABB.html','../../'); init
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a78ea50a3cca4ffe15c0b95f715a18d48"><td class="memItemLeft" align="right" valign="top"><a id="a78ea50a3cca4ffe15c0b95f715a18d48" name="a78ea50a3cca4ffe15c0b95f715a18d48"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AABB</b> (const Vector3f &amp;p)</td></tr>
-<tr class="separator:a78ea50a3cca4ffe15c0b95f715a18d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3f5deaf7540e0c4236dd8ca544814b1"><td class="memItemLeft" align="right" valign="top"><a id="aa3f5deaf7540e0c4236dd8ca544814b1" name="aa3f5deaf7540e0c4236dd8ca544814b1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AABB</b> (const Vector3f &amp;p1, const Vector3f &amp;p2)</td></tr>
-<tr class="separator:aa3f5deaf7540e0c4236dd8ca544814b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65d10683fc8240932c206c75506ee362"><td class="memItemLeft" align="right" valign="top">Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d1a/classAABB.html#a65d10683fc8240932c206c75506ee362">diagonal</a> () const</td></tr>
+<tr class="memitem:a613eb10216b89a74ea58bff4342ba18c"><td class="memItemLeft" align="right" valign="top"><a id="a613eb10216b89a74ea58bff4342ba18c" name="a613eb10216b89a74ea58bff4342ba18c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AABB</b> (const Eigen::Vector3f &amp;p)</td></tr>
+<tr class="separator:a613eb10216b89a74ea58bff4342ba18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96362776689a64e7f91f9431c8905107"><td class="memItemLeft" align="right" valign="top"><a id="a96362776689a64e7f91f9431c8905107" name="a96362776689a64e7f91f9431c8905107"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AABB</b> (const Eigen::Vector3f &amp;p1, const Eigen::Vector3f &amp;p2)</td></tr>
+<tr class="separator:a96362776689a64e7f91f9431c8905107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65d10683fc8240932c206c75506ee362"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d1a/classAABB.html#a65d10683fc8240932c206c75506ee362">diagonal</a> () const</td></tr>
 <tr class="separator:a65d10683fc8240932c206c75506ee362"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a364b0267d4571d60dca5f391f779fdd1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d1a/classAABB.html#a364b0267d4571d60dca5f391f779fdd1">max_extent</a> () const</td></tr>
 <tr class="separator:a364b0267d4571d60dca5f391f779fdd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a710d0fc9af1c42bf850ff900aecf015b"><td class="memItemLeft" align="right" valign="top">Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d1a/classAABB.html#a710d0fc9af1c42bf850ff900aecf015b">centroid</a> ()</td></tr>
+<tr class="memitem:a710d0fc9af1c42bf850ff900aecf015b"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d1a/classAABB.html#a710d0fc9af1c42bf850ff900aecf015b">centroid</a> ()</td></tr>
 <tr class="separator:a710d0fc9af1c42bf850ff900aecf015b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3530d5f38149ba513c982ee37a5674b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d1a/classAABB.html#a3530d5f38149ba513c982ee37a5674b8">AABB_intersect</a> (const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray, const Vector3f &amp;inv_dir, const std::array&lt; int, 3 &gt; &amp;dir_is_neg)</td></tr>
-<tr class="memdesc:a3530d5f38149ba513c982ee37a5674b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">BVH加速求交的函数调用接口  <br /></td></tr>
-<tr class="separator:a3530d5f38149ba513c982ee37a5674b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42141c44aee19eff5e2e2aa65894917d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d1a/classAABB.html#a42141c44aee19eff5e2e2aa65894917d">intersect</a> (const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray, const Eigen::Vector3f &amp;inv_dir, const std::array&lt; int, 3 &gt; &amp;dir_is_neg)</td></tr>
+<tr class="memdesc:a42141c44aee19eff5e2e2aa65894917d"><td class="mdescLeft">&#160;</td><td class="mdescRight">BVH加速求交的函数调用接口  <br /></td></tr>
+<tr class="separator:a42141c44aee19eff5e2e2aa65894917d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:acf3fc8d19c6b8723e06705490232ee45"><td class="memItemLeft" align="right" valign="top">Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d1a/classAABB.html#acf3fc8d19c6b8723e06705490232ee45">p_min</a></td></tr>
-<tr class="separator:acf3fc8d19c6b8723e06705490232ee45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c820509d5ea2bd75dfeb9086e1be1a4"><td class="memItemLeft" align="right" valign="top"><a id="a6c820509d5ea2bd75dfeb9086e1be1a4" name="a6c820509d5ea2bd75dfeb9086e1be1a4"></a>
-Vector3f&#160;</td><td class="memItemRight" valign="bottom"><b>p_max</b></td></tr>
-<tr class="separator:a6c820509d5ea2bd75dfeb9086e1be1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45c1b23f67da80c5c4383e92b5db1cc8"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d1a/classAABB.html#a45c1b23f67da80c5c4383e92b5db1cc8">p_min</a></td></tr>
+<tr class="separator:a45c1b23f67da80c5c4383e92b5db1cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad975bf8618ab52d92be656580df70b1"><td class="memItemLeft" align="right" valign="top"><a id="aad975bf8618ab52d92be656580df70b1" name="aad975bf8618ab52d92be656580df70b1"></a>
+Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><b>p_max</b></td></tr>
+<tr class="separator:aad975bf8618ab52d92be656580df70b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>BVH中的Aligned-axis bounding box </p>
 </div><h2 class="groupheader">成员函数说明</h2>
-<a id="a3530d5f38149ba513c982ee37a5674b8" name="a3530d5f38149ba513c982ee37a5674b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3530d5f38149ba513c982ee37a5674b8">&#9670;&#160;</a></span>AABB_intersect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool AABB::AABB_intersect </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;&#160;</td>
-          <td class="paramname"><em>ray</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Vector3f &amp;&#160;</td>
-          <td class="paramname"><em>inv_dir</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::array&lt; int, 3 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>dir_is_neg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>BVH加速求交的函数调用接口 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ray</td><td>求交的射线 </td></tr>
-    <tr><td class="paramname">inv_dir</td><td>(1/dir.x, 1/dir.y, 1/dir.z)，乘法比除法快 </td></tr>
-    <tr><td class="paramname">dir_is_neg</td><td>判断x,y,z方向是否为负，为负则交换t_min和t_max </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a710d0fc9af1c42bf850ff900aecf015b" name="a710d0fc9af1c42bf850ff900aecf015b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a710d0fc9af1c42bf850ff900aecf015b">&#9670;&#160;</a></span>centroid()</h2>
 
@@ -225,6 +181,50 @@ Vector3f&#160;</td><td class="memItemRight" valign="bottom"><b>p_max</b></td></t
 
 </div>
 </div>
+<a id="a42141c44aee19eff5e2e2aa65894917d" name="a42141c44aee19eff5e2e2aa65894917d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42141c44aee19eff5e2e2aa65894917d">&#9670;&#160;</a></span>intersect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AABB::intersect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>ray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Vector3f &amp;&#160;</td>
+          <td class="paramname"><em>inv_dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::array&lt; int, 3 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dir_is_neg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BVH加速求交的函数调用接口 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ray</td><td>求交的射线 </td></tr>
+    <tr><td class="paramname">inv_dir</td><td>(1/dir.x, 1/dir.y, 1/dir.z)，乘法比除法快 </td></tr>
+    <tr><td class="paramname">dir_is_neg</td><td>判断x,y,z方向是否为负，为负则交换t_min和t_max </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a364b0267d4571d60dca5f391f779fdd1" name="a364b0267d4571d60dca5f391f779fdd1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a364b0267d4571d60dca5f391f779fdd1">&#9670;&#160;</a></span>max_extent()</h2>
 
@@ -244,14 +244,14 @@ Vector3f&#160;</td><td class="memItemRight" valign="bottom"><b>p_max</b></td></t
 </div>
 </div>
 <h2 class="groupheader">类成员变量说明</h2>
-<a id="acf3fc8d19c6b8723e06705490232ee45" name="acf3fc8d19c6b8723e06705490232ee45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf3fc8d19c6b8723e06705490232ee45">&#9670;&#160;</a></span>p_min</h2>
+<a id="a45c1b23f67da80c5c4383e92b5db1cc8" name="a45c1b23f67da80c5c4383e92b5db1cc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45c1b23f67da80c5c4383e92b5db1cc8">&#9670;&#160;</a></span>p_min</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3f AABB::p_min</td>
+          <td class="memname">Eigen::Vector3f AABB::p_min</td>
         </tr>
       </table>
 </div><div class="memdoc">

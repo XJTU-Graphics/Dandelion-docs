@@ -18,7 +18,7 @@ var annotated_dup =
       [ "Toolbar", "d1/d84/classUI_1_1Toolbar.html", "d1/d84/classUI_1_1Toolbar" ]
     ] ],
     [ "AABB", "d2/d1a/classAABB.html", "d2/d1a/classAABB" ],
-    [ "BVHAccel", "d1/d7f/classBVHAccel.html", "d1/d7f/classBVHAccel" ],
+    [ "BVH", "de/de9/classBVH.html", "de/de9/classBVH" ],
     [ "BVHNode", "d4/d59/structBVHNode.html", null ],
     [ "Camera", "d7/d7e/structCamera.html", "d7/d7e/structCamera" ],
     [ "Controller", "d9/d85/classController.html", "d9/d85/classController" ],

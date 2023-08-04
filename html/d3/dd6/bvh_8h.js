@@ -1,4 +1,4 @@
 var bvh_8h =
 [
-    [ "BVHAccel", "d1/d7f/classBVHAccel.html", "d1/d7f/classBVHAccel" ]
+    [ "BVH", "de/de9/classBVH.html", "de/de9/classBVH" ]
 ];

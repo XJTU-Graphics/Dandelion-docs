@@ -5,7 +5,7 @@ var classObject =
     [ "render", "d8/d4b/classObject.html#a5c13c26a5d9896e078a32de6593e5be5", null ],
     [ "update", "d8/d4b/classObject.html#a81cff33ba1612aa43187d3e617d8edcc", null ],
     [ "backup", "d8/d4b/classObject.html#a049e8776aaeebac897c3ae2d3fe72f77", null ],
-    [ "bvh", "d8/d4b/classObject.html#a575837d5d43ed4a85f5f099da68ddb6d", null ],
+    [ "bvh", "d8/d4b/classObject.html#a9cdcb5985e95260baeb7004cbb97054c", null ],
     [ "center", "d8/d4b/classObject.html#a0e9b68376530dd18ab88b43e8456337f", null ],
     [ "force", "d8/d4b/classObject.html#aa31820215a5450a83c624324258f00dd", null ],
     [ "id", "d8/d4b/classObject.html#a8d677f7e946ed980a4b086efb74e9748", null ],

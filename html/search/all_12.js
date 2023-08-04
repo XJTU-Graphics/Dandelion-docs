@@ -11,6 +11,5 @@ var searchData=
   ['toolbar_2eh_8',['toolbar.h',['../dc/d2a/toolbar_8h.html',1,'']]],
   ['trackball_5fradius_9',['trackball_radius',['../d9/d85/classController.html#ae604a933148415cb35ffd6dfdc6572b5',1,'Controller']]],
   ['triangle_10',['Triangle',['../d2/d51/classTriangle.html',1,'']]],
-  ['triangle_2eh_11',['triangle.h',['../dd/d6a/triangle_8h.html',1,'']]],
-  ['triangle_5fintersect_12',['triangle_intersect',['../db/d81/group__utils.html#gabcae4dbb53a16ee964e6d5381f1bd6b6',1,'triangle_intersect(const Ray &amp;ray, const GL::Mesh &amp;mesh, size_t index):&#160;ray.cpp'],['../db/d81/group__utils.html#gabcae4dbb53a16ee964e6d5381f1bd6b6',1,'triangle_intersect(const Ray &amp;ray, const GL::Mesh &amp;mesh, size_t index):&#160;ray.cpp']]]
+  ['triangle_2eh_11',['triangle.h',['../dd/d6a/triangle_8h.html',1,'']]]
 ];

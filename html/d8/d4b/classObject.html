@@ -161,9 +161,9 @@ Public 属性</h2></td></tr>
 <tr class="separator:a049e8776aaeebac897c3ae2d3fe72f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3961b5381a8384cc71246ff15f7be99b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a3961b5381a8384cc71246ff15f7be99b">mesh</a></td></tr>
 <tr class="separator:a3961b5381a8384cc71246ff15f7be99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a575837d5d43ed4a85f5f099da68ddb6d"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d1/d7f/classBVHAccel.html">BVHAccel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a575837d5d43ed4a85f5f099da68ddb6d">bvh</a></td></tr>
-<tr class="memdesc:a575837d5d43ed4a85f5f099da68ddb6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据这个物体建立的 BVH 。  <br /></td></tr>
-<tr class="separator:a575837d5d43ed4a85f5f099da68ddb6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cdcb5985e95260baeb7004cbb97054c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../de/de9/classBVH.html">BVH</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a9cdcb5985e95260baeb7004cbb97054c">bvh</a></td></tr>
+<tr class="memdesc:a9cdcb5985e95260baeb7004cbb97054c"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据这个物体建立的 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 。  <br /></td></tr>
+<tr class="separator:a9cdcb5985e95260baeb7004cbb97054c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a0e9b68376530dd18ab88b43e8456337f"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a0e9b68376530dd18ab88b43e8456337f">center</a></td></tr>
 <tr class="separator:a0e9b68376530dd18ab88b43e8456337f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -330,21 +330,21 @@ Private 属性</h2></td></tr>
 
 </div>
 </div>
-<a id="a575837d5d43ed4a85f5f099da68ddb6d" name="a575837d5d43ed4a85f5f099da68ddb6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a575837d5d43ed4a85f5f099da68ddb6d">&#9670;&#160;</a></span>bvh</h2>
+<a id="a9cdcb5985e95260baeb7004cbb97054c" name="a9cdcb5985e95260baeb7004cbb97054c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cdcb5985e95260baeb7004cbb97054c">&#9670;&#160;</a></span>bvh</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="../../d1/d7f/classBVHAccel.html">BVHAccel</a>&gt; Object::bvh</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="../../de/de9/classBVH.html">BVH</a>&gt; Object::bvh</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>根据这个物体建立的 BVH 。 </p>
-<p>物体的 BVH 在它的 mesh 加载完成后构建。由于 mesh 数据的加载过程是在 <code><a class="el" href="../../d0/db7/classGroup.html#a3cc9d35ed0753293c7128cddf920b55b">Group::load</a></code> 中完成的，构建 BVH 的函数调用也只能在这个函数（而不是在 <code><a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a></code> 的构造函数）中进行。</p>
-<p>物体的 mesh 数据都在模型坐标系下，因此 BVH 也是建立在模型坐标系下的。这意味着物体的平移、 旋转和缩放都不改变 BVH 的结构，只有物体发生形变时才需要更新 BVH 。目前的实现是： 每次退出建模模式时，不加检查地删除原先的 BVH 并重新构建。 </p>
+<p>根据这个物体建立的 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 。 </p>
+<p>物体的 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 在它的 mesh 加载完成后构建。由于 mesh 数据的加载过程是在 <code><a class="el" href="../../d0/db7/classGroup.html#a3cc9d35ed0753293c7128cddf920b55b">Group::load</a></code> 中完成的，构建 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 的函数调用也只能在这个函数（而不是在 <code><a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a></code> 的构造函数）中进行。</p>
+<p>物体的 mesh 数据都在模型坐标系下，因此 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 也是建立在模型坐标系下的。这意味着物体的平移、 旋转和缩放都不改变 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 的结构，只有物体发生形变时才需要更新 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 。目前的实现是： 每次退出建模模式时，不加检查地删除原先的 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 并重新构建。 </p>
 
 </div>
 </div>
@@ -367,7 +367,7 @@ Private 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>是否启用 BVH 加速碰撞检测。 </p>
+<p>是否启用 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 加速碰撞检测。 </p>
 
 </div>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dandelion: ray.h 文件参考</title>
+<title>Dandelion: formatter.hpp 文件参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -77,7 +77,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('d5/d92/ray_8h.html','../../'); initResizable(); });
+$(document).ready(function(){initNavTree('d3/d31/formatter_8hpp.html','../../'); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -104,50 +104,35 @@ $(document).ready(function(){initNavTree('d5/d92/ray_8h.html','../../'); initRes
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">类</a> &#124;
-<a href="#func-members">函数</a>  </div>
-  <div class="headertitle"><div class="title">ray.h 文件参考<div class="ingroups"><a class="el" href="../../db/d81/group__utils.html">小工具</a></div></div></div>
+<a href="#nested-classes">类</a>  </div>
+  <div class="headertitle"><div class="title">formatter.hpp 文件参考<div class="ingroups"><a class="el" href="../../db/d81/group__utils.html">小工具</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>提供生成射线、判定相交的工具函数。  
+<p>提供对 Eigen 列向量和方阵类型的格式化支持。  
 <a href="#details">更多...</a></p>
-<div class="textblock"><code>#include &lt;cstddef&gt;</code><br />
-<code>#include &lt;optional&gt;</code><br />
-<code>#include &lt;Eigen/Core&gt;</code><br />
-<code>#include &quot;<a class="el" href="../../d7/d6a/gl_8hpp_source.html">../platform/gl.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d7/df6/camera_8h_source.html">../scene/camera.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;Eigen/Core&gt;</code><br />
+<code>#include &lt;fmt/core.h&gt;</code><br />
 </div>
-<p><a href="../../d5/d92/ray_8h_source.html">浏览源代码.</a></p>
+<p><a href="../../d3/d31/formatter_8hpp_source.html">浏览源代码.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 类</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/structRay.html">Ray</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd8/structfmt_1_1formatter_3_01Eigen_1_1Matrix_3_01Scalar_00_01n__dim_00_011_01_4_01_4.html">fmt::formatter&lt; Eigen::Matrix&lt; Scalar, n_dim, 1 &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">提供对 Eigen 列向量类型的格式化支持。  <a href="../../d9/dd8/structfmt_1_1formatter_3_01Eigen_1_1Matrix_3_01Scalar_00_01n__dim_00_011_01_4_01_4.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d30/structIntersection.html">Intersection</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">表示射线与 Mesh 相交结果的结构体。  <a href="../../d6/d30/structIntersection.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6a/structfmt_1_1formatter_3_01Eigen_1_1Matrix_3_01Scalar_00_01n__dim_00_01n__dim_01_4_01_4.html">fmt::formatter&lt; Eigen::Matrix&lt; Scalar, n_dim, n_dim &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">提供对 Eigen 方阵类型的格式化支持。  <a href="../../d3/d6a/structfmt_1_1formatter_3_01Eigen_1_1Matrix_3_01Scalar_00_01n__dim_00_01n__dim_01_4_01_4.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-函数</h2></td></tr>
-<tr class="memitem:ga058f7f5f254453b5df93c093ebde122a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d5e/structRay.html">Ray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga058f7f5f254453b5df93c093ebde122a">generate_ray</a> (int width, int height, int x, int y, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp;camera, float depth)</td></tr>
-<tr class="memdesc:ga058f7f5f254453b5df93c093ebde122a"><td class="mdescLeft">&#160;</td><td class="mdescRight">给定成像平面的宽度和高度、成像平面上的坐标、成像平面的深度和相机，生成一条射线。  <br /></td></tr>
-<tr class="separator:ga058f7f5f254453b5df93c093ebde122a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab851f3686bc57e3a8cc135f68f3871a5"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#gab851f3686bc57e3a8cc135f68f3871a5">ray_triangle_intersect</a> (const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray, const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;mesh, size_t index)</td></tr>
-<tr class="memdesc:gab851f3686bc57e3a8cc135f68f3871a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断光线ray是否与某个面片相交  <br /></td></tr>
-<tr class="separator:gab851f3686bc57e3a8cc135f68f3871a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1a3a6b802c525058a523c2dadaae1f2b"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga1a3a6b802c525058a523c2dadaae1f2b">naive_intersect</a> (const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray, const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;mesh, const Eigen::Matrix4f model)</td></tr>
-<tr class="memdesc:ga1a3a6b802c525058a523c2dadaae1f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">用朴素方法判断射线是否与给定的 mesh 相交。  <br /></td></tr>
-<tr class="separator:ga1a3a6b802c525058a523c2dadaae1f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p>提供生成射线、判定相交的工具函数。 </p>
+<div class="textblock"><p>提供对 Eigen 列向量和方阵类型的格式化支持。 </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_313caf1132e152dd9b58bea13a4052ca.html">utils</a></li><li class="navelem"><a class="el" href="../../d5/d92/ray_8h.html">ray.h</a></li>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_313caf1132e152dd9b58bea13a4052ca.html">utils</a></li><li class="navelem"><a class="el" href="../../d3/d31/formatter_8hpp.html">formatter.hpp</a></li>
     <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>

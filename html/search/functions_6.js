@@ -4,6 +4,5 @@ var searchData=
   ['get_5faabb_1',['get_aabb',['../da/d70/aabb_8h.html#a57c55234c2237bd8e3c68da0a930c095',1,'aabb.cpp']]],
   ['get_5fdpi_2',['get_dpi',['../df/d1e/classPlatform.html#a9de7ff9bee337082d0f8802b5bf8fabe',1,'Platform']]],
   ['get_5fgl_5ftype_5fenum_3',['get_GL_type_enum',['../de/d8b/group__platform.html#ga6efffcb404895fd65d719751e0c1a617',1,'GL']]],
-  ['get_5fintersection_4',['get_intersection',['../d1/d7f/classBVHAccel.html#ae7ebdce82bd0a235b5d6bdf7f255c70a',1,'BVHAccel']]],
-  ['group_5',['Group',['../d0/db7/classGroup.html#a0ab5261ef821603e3cb624915ac6af32',1,'Group::Group(const std::string &amp;group_name)'],['../d0/db7/classGroup.html#a0b6265dee2b5d160e5154140d808019a',1,'Group::Group(Group &amp;other)=delete']]]
+  ['group_4',['Group',['../d0/db7/classGroup.html#a0ab5261ef821603e3cb624915ac6af32',1,'Group::Group(const std::string &amp;group_name)'],['../d0/db7/classGroup.html#a0b6265dee2b5d160e5154140d808019a',1,'Group::Group(Group &amp;other)=delete']]]
 ];

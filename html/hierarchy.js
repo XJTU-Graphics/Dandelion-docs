@@ -3,7 +3,7 @@ var hierarchy =
     [ "AABB", "d2/d1a/classAABB.html", null ],
     [ "GL::ArrayBuffer< T, size >", "d6/dba/structGL_1_1ArrayBuffer.html", null ],
     [ "GL::ArrayBuffer< float, 3 >", "d6/dba/structGL_1_1ArrayBuffer.html", null ],
-    [ "BVHAccel", "d1/d7f/classBVHAccel.html", null ],
+    [ "BVH", "de/de9/classBVH.html", null ],
     [ "BVHNode", "d4/d59/structBVHNode.html", null ],
     [ "Camera", "d7/d7e/structCamera.html", null ],
     [ "Controller", "d9/d85/classController.html", null ],
