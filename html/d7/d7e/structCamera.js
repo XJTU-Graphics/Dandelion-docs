@@ -3,6 +3,8 @@ var structCamera =
     [ "Camera", "d7/d7e/structCamera.html#a1207b991b04502fb760f76be67530119", null ],
     [ "projection", "d7/d7e/structCamera.html#ade56525b5437d9e2c8a890a734bc83d1", null ],
     [ "view", "d7/d7e/structCamera.html#a4551bfb7cb5ed86cc5427e370fda0bdb", null ],
+    [ "aspect_ratio", "d7/d7e/structCamera.html#a5742c2c47c7afc5a6d49b6e5759db3cd", null ],
+    [ "far", "d7/d7e/structCamera.html#a9f30b77edf6485e001a98d21ff5f17fe", null ],
     [ "fov_y_degrees", "d7/d7e/structCamera.html#aa3f6b2c9df678347897554480099e342", null ],
     [ "near", "d7/d7e/structCamera.html#ad96efd3e1e4ec33dddb1d25f05d02ff2", null ],
     [ "position", "d7/d7e/structCamera.html#ae52020b85d1f749f50c533fe10fc0f91", null ],

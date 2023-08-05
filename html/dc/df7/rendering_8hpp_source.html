@@ -169,27 +169,28 @@ $(document).ready(function(){initNavTree('dc/df7/rendering_8hpp_source.html','..
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"> * 这个常量数组指定允许拾取物体（直接在屏幕上点击选取物体）的工作模式，</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment"> * 当前为布局模式（用于操纵物体）和物理模拟模式（用于修改物理属性）。</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="../../dc/df7/rendering_8hpp.html#a2d1f9d29e3d9cadcf469f07790d4be18">   64</a></span><span class="keyword">constexpr</span> <a class="code hl_enumeration" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> <a class="code hl_variable" href="../../dc/df7/rendering_8hpp.html#a2d1f9d29e3d9cadcf469f07790d4be18">picking_enabled_modes</a>[] = {WorkingMode::LAYOUT, WorkingMode::MODEL, WorkingMode::SIMULATE};</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment"></span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment"> * \brief 判断指定模式是否允许拾取物体。</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"> * \param mode 表示当前的工作模式。</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="../../dc/df7/rendering_8hpp.html#a0ad2a7688f4c2a3f1e99d3b03bfd1715">   72</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../dc/df7/rendering_8hpp.html#a0ad2a7688f4c2a3f1e99d3b03bfd1715">check_picking_enabled</a>(<a class="code hl_enumeration" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> mode)</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>{</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> enabled_mode : <a class="code hl_variable" href="../../dc/df7/rendering_8hpp.html#a2d1f9d29e3d9cadcf469f07790d4be18">picking_enabled_modes</a>) {</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">if</span> (mode == enabled_mode) {</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        }</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_UTILS_RENDERING_HPP</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="../../dc/df7/rendering_8hpp.html#a2d1f9d29e3d9cadcf469f07790d4be18">   64</a></span><span class="keyword">constexpr</span> <a class="code hl_enumeration" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> <a class="code hl_variable" href="../../dc/df7/rendering_8hpp.html#a2d1f9d29e3d9cadcf469f07790d4be18">picking_enabled_modes</a>[] = {WorkingMode::LAYOUT, WorkingMode::MODEL,</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                                                 WorkingMode::SIMULATE};</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"></span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"> * \brief 判断指定模式是否允许拾取物体。</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"> * \param mode 表示当前的工作模式。</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="../../dc/df7/rendering_8hpp.html#a0ad2a7688f4c2a3f1e99d3b03bfd1715">   73</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../dc/df7/rendering_8hpp.html#a0ad2a7688f4c2a3f1e99d3b03bfd1715">check_picking_enabled</a>(<a class="code hl_enumeration" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> mode)</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>{</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> enabled_mode : <a class="code hl_variable" href="../../dc/df7/rendering_8hpp.html#a2d1f9d29e3d9cadcf469f07790d4be18">picking_enabled_modes</a>) {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">if</span> (mode == enabled_mode) {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_UTILS_RENDERING_HPP</span></div>
 <div class="ttc" id="agroup__utils_html_ga59f39d17248f4e72b89867b326d1cd76"><div class="ttname"><a href="../../db/d81/group__utils.html#ga59f39d17248f4e72b89867b326d1cd76">vertex_position_location</a></div><div class="ttdeci">constexpr unsigned int vertex_position_location</div><div class="ttdef"><b>Definition:</b> rendering.hpp:29</div></div>
-<div class="ttc" id="arendering_8hpp_html_a0ad2a7688f4c2a3f1e99d3b03bfd1715"><div class="ttname"><a href="../../dc/df7/rendering_8hpp.html#a0ad2a7688f4c2a3f1e99d3b03bfd1715">check_picking_enabled</a></div><div class="ttdeci">bool check_picking_enabled(WorkingMode mode)</div><div class="ttdoc">判断指定模式是否允许拾取物体。</div><div class="ttdef"><b>Definition:</b> rendering.hpp:72</div></div>
+<div class="ttc" id="arendering_8hpp_html_a0ad2a7688f4c2a3f1e99d3b03bfd1715"><div class="ttname"><a href="../../dc/df7/rendering_8hpp.html#a0ad2a7688f4c2a3f1e99d3b03bfd1715">check_picking_enabled</a></div><div class="ttdeci">bool check_picking_enabled(WorkingMode mode)</div><div class="ttdoc">判断指定模式是否允许拾取物体。</div><div class="ttdef"><b>Definition:</b> rendering.hpp:73</div></div>
 <div class="ttc" id="arendering_8hpp_html_a1352c5fcb6cfad612ba26a0e91355bcb"><div class="ttname"><a href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a></div><div class="ttdeci">WorkingMode</div><div class="ttdef"><b>Definition:</b> rendering.hpp:50</div></div>
 <div class="ttc" id="arendering_8hpp_html_a2d1f9d29e3d9cadcf469f07790d4be18"><div class="ttname"><a href="../../dc/df7/rendering_8hpp.html#a2d1f9d29e3d9cadcf469f07790d4be18">picking_enabled_modes</a></div><div class="ttdeci">constexpr WorkingMode picking_enabled_modes[]</div><div class="ttdoc">允许拾取物体的模式。</div><div class="ttdef"><b>Definition:</b> rendering.hpp:64</div></div>
 <div class="ttc" id="arendering_8hpp_html_a3ca9a822f7e8866ae1e5f1e29a3e20b2"><div class="ttname"><a href="../../dc/df7/rendering_8hpp.html#a3ca9a822f7e8866ae1e5f1e29a3e20b2">line_width</a></div><div class="ttdeci">constexpr float line_width</div><div class="ttdef"><b>Definition:</b> rendering.hpp:43</div></div>
