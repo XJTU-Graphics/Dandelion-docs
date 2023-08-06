@@ -15,6 +15,7 @@ var group__ui =
       [ "pick_object", "d9/d85/classController.html#ae6b743008bc87ed393eabf885d2f9e52", null ],
       [ "process_input", "d9/d85/classController.html#aff4ccad882e4bab51ff03428c63e88f8", null ],
       [ "render", "d9/d85/classController.html#a9070f68e2830fac28bb8c61af10fdb47", null ],
+      [ "render_debug_helpers", "d9/d85/classController.html#a0afa257dd629821865bd1dcbdf6986a8", null ],
       [ "render_selected_element", "d9/d85/classController.html#a2ed430569aa8dc4e63bbd82ad345db35", null ],
       [ "select", "d9/d85/classController.html#ae4c72b93b65e486a002d4cb872e614de", null ],
       [ "select_edge", "d9/d85/classController.html#af34eb88e8cfcf959435ab733a99f285b", null ],
@@ -40,6 +41,7 @@ var group__ui =
     ] ],
     [ "UI::DebugOptions", "d9/dc1/structUI_1_1DebugOptions.html", [
       [ "DebugOptions", "d9/dc1/structUI_1_1DebugOptions.html#a0fdd3fc49c91d91ab12d2fcdc2a3ed29", null ],
+      [ "show_BVH", "d9/dc1/structUI_1_1DebugOptions.html#af134cbc30d92ad59488fee0c2cf72797", null ],
       [ "show_picking_ray", "d9/dc1/structUI_1_1DebugOptions.html#af153a5320f1fcd9b6c4730122a954e0d", null ]
     ] ],
     [ "UI::Menubar", "d6/de2/classUI_1_1Menubar.html", [

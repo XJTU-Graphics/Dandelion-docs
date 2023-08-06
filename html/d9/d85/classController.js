@@ -10,6 +10,7 @@ var classController =
     [ "pick_object", "d9/d85/classController.html#ae6b743008bc87ed393eabf885d2f9e52", null ],
     [ "process_input", "d9/d85/classController.html#aff4ccad882e4bab51ff03428c63e88f8", null ],
     [ "render", "d9/d85/classController.html#a9070f68e2830fac28bb8c61af10fdb47", null ],
+    [ "render_debug_helpers", "d9/d85/classController.html#a0afa257dd629821865bd1dcbdf6986a8", null ],
     [ "render_selected_element", "d9/d85/classController.html#a2ed430569aa8dc4e63bbd82ad345db35", null ],
     [ "select", "d9/d85/classController.html#ae4c72b93b65e486a002d4cb872e614de", null ],
     [ "select_edge", "d9/d85/classController.html#af34eb88e8cfcf959435ab733a99f285b", null ],

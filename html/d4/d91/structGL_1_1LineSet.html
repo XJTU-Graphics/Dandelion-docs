@@ -130,15 +130,16 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a3f29f9d457134a056b69ab382d67710d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3379115b62a105e7091db128c012f69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html#ae3379115b62a105e7091db128c012f69">add_arrow</a> (const Eigen::Vector3f &amp;from, const Eigen::Vector3f &amp;to)</td></tr>
 <tr class="separator:ae3379115b62a105e7091db128c012f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba1205eaffc7d02be1e2c87ad2c4f6c4"><td class="memItemLeft" align="right" valign="top"><a id="aba1205eaffc7d02be1e2c87ad2c4f6c4" name="aba1205eaffc7d02be1e2c87ad2c4f6c4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update_arrow</b> (size_t index, const Eigen::Vector3f &amp;from, const Eigen::Vector3f &amp;to)</td></tr>
+<tr class="memitem:aba1205eaffc7d02be1e2c87ad2c4f6c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html#aba1205eaffc7d02be1e2c87ad2c4f6c4">update_arrow</a> (size_t index, const Eigen::Vector3f &amp;from, const Eigen::Vector3f &amp;to)</td></tr>
 <tr class="separator:aba1205eaffc7d02be1e2c87ad2c4f6c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a517c4b363acd6859345d4b231d143263"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html#a517c4b363acd6859345d4b231d143263">add_AABB</a> (const Eigen::Vector3f &amp;p_min, const Eigen::Vector3f &amp;p_max)</td></tr>
+<tr class="separator:a517c4b363acd6859345d4b231d143263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae828a479016a57b411291662f3ab7d16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html#ae828a479016a57b411291662f3ab7d16">clear</a> ()</td></tr>
 <tr class="separator:ae828a479016a57b411291662f3ab7d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10af9f331ed602321162b0e4a31d5a74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html#a10af9f331ed602321162b0e4a31d5a74">to_gpu</a> ()</td></tr>
 <tr class="separator:a10af9f331ed602321162b0e4a31d5a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b0c4b7f0f49b6ba88c6235a6d8fa5c1"><td class="memItemLeft" align="right" valign="top"><a id="a5b0c4b7f0f49b6ba88c6235a6d8fa5c1" name="a5b0c4b7f0f49b6ba88c6235a6d8fa5c1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>render</b> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader)</td></tr>
+<tr class="memitem:a5b0c4b7f0f49b6ba88c6235a6d8fa5c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html#a5b0c4b7f0f49b6ba88c6235a6d8fa5c1">render</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader)</td></tr>
+<tr class="memdesc:a5b0c4b7f0f49b6ba88c6235a6d8fa5c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">渲染该线条集。  <br /></td></tr>
 <tr class="separator:a5b0c4b7f0f49b6ba88c6235a6d8fa5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -190,6 +191,35 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td><
 </div>
 </div>
 <h2 class="groupheader">成员函数说明</h2>
+<a id="a517c4b363acd6859345d4b231d143263" name="a517c4b363acd6859345d4b231d143263"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a517c4b363acd6859345d4b231d143263">&#9670;&#160;</a></span>add_AABB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LineSet::add_AABB </td>
+          <td>(</td>
+          <td class="paramtype">const Eigen::Vector3f &amp;&#160;</td>
+          <td class="paramname"><em>p_min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Vector3f &amp;&#160;</td>
+          <td class="paramname"><em>p_max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>加入一个轴对齐包围盒 (Axis-Aligned Bouding Box, <a class="el" href="../../d2/d1a/classAABB.html" title="BVH中的Aligned-axis bounding box">AABB</a>) 。 </p>
+
+</div>
+</div>
 <a id="ae3379115b62a105e7091db128c012f69" name="ae3379115b62a105e7091db128c012f69"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae3379115b62a105e7091db128c012f69">&#9670;&#160;</a></span>add_arrow()</h2>
 
@@ -266,6 +296,27 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td><
 
 </div>
 </div>
+<a id="a5b0c4b7f0f49b6ba88c6235a6d8fa5c1" name="a5b0c4b7f0f49b6ba88c6235a6d8fa5c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b0c4b7f0f49b6ba88c6235a6d8fa5c1">&#9670;&#160;</a></span>render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LineSet::render </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;&#160;</td>
+          <td class="paramname"><em>shader</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>渲染该线条集。 </p>
+<p>这个函数只会设置对应全局颜色的 uniform 变量，其他所有变量都需要由调用者自行设置。 </p>
+
+</div>
+</div>
 <a id="a10af9f331ed602321162b0e4a31d5a74" name="a10af9f331ed602321162b0e4a31d5a74"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a10af9f331ed602321162b0e4a31d5a74">&#9670;&#160;</a></span>to_gpu()</h2>
 
@@ -281,6 +332,41 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td><
       </table>
 </div><div class="memdoc">
 <p>将修改同步到显存。 </p>
+
+</div>
+</div>
+<a id="aba1205eaffc7d02be1e2c87ad2c4f6c4" name="aba1205eaffc7d02be1e2c87ad2c4f6c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba1205eaffc7d02be1e2c87ad2c4f6c4">&#9670;&#160;</a></span>update_arrow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LineSet::update_arrow </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Vector3f &amp;&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Vector3f &amp;&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>更新索引为 <code>index</code> 的箭头，仅当该 <code><a class="el" href="../../d4/d91/structGL_1_1LineSet.html" title="在预览场景时绘制若干线条。">LineSet</a></code> 内全部是箭头时才是安全的。 </p>
 
 </div>
 </div>

@@ -2,10 +2,12 @@ var classObject =
 [
     [ "Object", "d8/d4b/classObject.html#aef343197effbc642b3f1812ac7bd3d85", null ],
     [ "model", "d8/d4b/classObject.html#af8f23e84a424cb6061cc9b23bb1f650c", null ],
+    [ "rebuild_BVH", "d8/d4b/classObject.html#a4eae75848cc2f863a790d8da3014549f", null ],
     [ "render", "d8/d4b/classObject.html#a5c13c26a5d9896e078a32de6593e5be5", null ],
     [ "update", "d8/d4b/classObject.html#a81cff33ba1612aa43187d3e617d8edcc", null ],
     [ "backup", "d8/d4b/classObject.html#a049e8776aaeebac897c3ae2d3fe72f77", null ],
     [ "bvh", "d8/d4b/classObject.html#a9cdcb5985e95260baeb7004cbb97054c", null ],
+    [ "BVH_boxes", "d8/d4b/classObject.html#a55b13c86eb0225e7e6e28f6b35490ca9", null ],
     [ "center", "d8/d4b/classObject.html#a0e9b68376530dd18ab88b43e8456337f", null ],
     [ "force", "d8/d4b/classObject.html#aa31820215a5450a83c624324258f00dd", null ],
     [ "id", "d8/d4b/classObject.html#a8d677f7e946ed980a4b086efb74e9748", null ],

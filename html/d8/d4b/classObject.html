@@ -107,6 +107,7 @@ $(document).ready(function(){initNavTree('d8/d4b/classObject.html','../../'); in
 <a href="#pub-methods">Public 成员函数</a> &#124;
 <a href="#pub-attribs">Public 属性</a> &#124;
 <a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
 <a href="#pri-attribs">Private 属性</a> &#124;
 <a href="#pri-static-attribs">静态 Private 属性</a> &#124;
 <a href="../../d7/dc8/classObject-members.html">所有成员列表</a>  </div>
@@ -132,6 +133,9 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a5c13c26a5d9896e078a32de6593e5be5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a5c13c26a5d9896e078a32de6593e5be5">render</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader, <a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> mode, bool selected)</td></tr>
 <tr class="memdesc:a5c13c26a5d9896e078a32de6593e5be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据指定的渲染模式渲染物体。  <br /></td></tr>
 <tr class="separator:a5c13c26a5d9896e078a32de6593e5be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eae75848cc2f863a790d8da3014549f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a4eae75848cc2f863a790d8da3014549f">rebuild_BVH</a> ()</td></tr>
+<tr class="memdesc:a4eae75848cc2f863a790d8da3014549f"><td class="mdescLeft">&#160;</td><td class="mdescRight">重新构建 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 。  <br /></td></tr>
+<tr class="separator:a4eae75848cc2f863a790d8da3014549f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:aef343197effbc642b3f1812ac7bd3d85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#aef343197effbc642b3f1812ac7bd3d85">Object</a> (<a class="el" href="../../d8/d4b/classObject.html">Object</a> &amp;other)=delete</td></tr>
 <tr class="separator:aef343197effbc642b3f1812ac7bd3d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,6 +168,8 @@ Public 属性</h2></td></tr>
 <tr class="memitem:a9cdcb5985e95260baeb7004cbb97054c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../de/de9/classBVH.html">BVH</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a9cdcb5985e95260baeb7004cbb97054c">bvh</a></td></tr>
 <tr class="memdesc:a9cdcb5985e95260baeb7004cbb97054c"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据这个物体建立的 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 。  <br /></td></tr>
 <tr class="separator:a9cdcb5985e95260baeb7004cbb97054c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55b13c86eb0225e7e6e28f6b35490ca9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a55b13c86eb0225e7e6e28f6b35490ca9">BVH_boxes</a></td></tr>
+<tr class="separator:a55b13c86eb0225e7e6e28f6b35490ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a0e9b68376530dd18ab88b43e8456337f"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a0e9b68376530dd18ab88b43e8456337f">center</a></td></tr>
 <tr class="separator:a0e9b68376530dd18ab88b43e8456337f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,6 +187,12 @@ Eigen::Quaternionf&#160;</td><td class="memItemRight" valign="bottom"><b>rotatio
 <tr class="separator:a573b153aba95a8272b6808ebfe6955cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03b1d23240bc4b367719aba1c6a63872"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html#a03b1d23240bc4b367719aba1c6a63872">BVH_for_collision</a> = false</td></tr>
 <tr class="separator:a03b1d23240bc4b367719aba1c6a63872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:adca04f4c328648ed754a8c3d846f4d96"><td class="memItemLeft" align="right" valign="top"><a id="adca04f4c328648ed754a8c3d846f4d96" name="adca04f4c328648ed754a8c3d846f4d96"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>refresh_BVH_boxes</b> (<a class="el" href="../../d4/d59/structBVHNode.html">BVHNode</a> *node)</td></tr>
+<tr class="separator:adca04f4c328648ed754a8c3d846f4d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private 属性</h2></td></tr>
@@ -240,6 +252,26 @@ Private 属性</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>此物体的模型变换矩阵 (Model Transform Matrix)。 </p>
+
+</div>
+</div>
+<a id="a4eae75848cc2f863a790d8da3014549f" name="a4eae75848cc2f863a790d8da3014549f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eae75848cc2f863a790d8da3014549f">&#9670;&#160;</a></span>rebuild_BVH()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Object::rebuild_BVH </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>重新构建 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 。 </p>
+<p>原先没有构建过 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 的情况下调用这个函数也是安全的。 </p>
 
 </div>
 </div>
@@ -345,6 +377,21 @@ Private 属性</h2></td></tr>
 <p>根据这个物体建立的 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 。 </p>
 <p>物体的 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 在它的 mesh 加载完成后构建。由于 mesh 数据的加载过程是在 <code><a class="el" href="../../d0/db7/classGroup.html#a3cc9d35ed0753293c7128cddf920b55b">Group::load</a></code> 中完成的，构建 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 的函数调用也只能在这个函数（而不是在 <code><a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a></code> 的构造函数）中进行。</p>
 <p>物体的 mesh 数据都在模型坐标系下，因此 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 也是建立在模型坐标系下的。这意味着物体的平移、 旋转和缩放都不改变 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 的结构，只有物体发生形变时才需要更新 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 。目前的实现是： 每次退出建模模式时，不加检查地删除原先的 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 并重新构建。 </p>
+
+</div>
+</div>
+<a id="a55b13c86eb0225e7e6e28f6b35490ca9" name="a55b13c86eb0225e7e6e28f6b35490ca9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55b13c86eb0225e7e6e28f6b35490ca9">&#9670;&#160;</a></span>BVH_boxes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a> Object::BVH_boxes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>代表 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 所有包围盒的线框。 </p>
 
 </div>
 </div>

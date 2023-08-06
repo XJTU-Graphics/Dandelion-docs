@@ -78,7 +78,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d8/df1/build.html#requests"
+"d8/df1/build.html",
+"index.html#功能定位"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';
