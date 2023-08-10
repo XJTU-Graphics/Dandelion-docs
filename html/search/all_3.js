@@ -7,9 +7,10 @@ var searchData=
   ['debugoptions_4',['DebugOptions',['../d9/dc1/structUI_1_1DebugOptions.html#a0fdd3fc49c91d91ab12d2fcdc2a3ed29',1,'UI::DebugOptions::DebugOptions()'],['../d9/dc1/structUI_1_1DebugOptions.html',1,'UI::DebugOptions']]],
   ['degree_5',['degree',['../df/dd0/structVertex.html#a5ef22265cb57aa7e8a8ecdbec97bf41d',1,'Vertex']]],
   ['degrees_6',['degrees',['../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f',1,'math.hpp']]],
-  ['diagonal_7',['diagonal',['../d2/d1a/classAABB.html#a65d10683fc8240932c206c75506ee362',1,'AABB']]],
-  ['diffuse_8',['diffuse',['../d4/d50/structGL_1_1Material.html#a2e6bfa1497546db65f1c363985b4a52e',1,'GL::Material']]],
-  ['disable_9',['disable',['../d6/dba/structGL_1_1ArrayBuffer.html#acae88854f303cdab9f1d23bd338bb32a',1,'GL::ArrayBuffer']]],
-  ['draw_10',['draw',['../d9/d82/structGL_1_1VertexArrayObject.html#af7313fe7cf566758819a19108694d828',1,'GL::VertexArrayObject']]],
-  ['during_5fanimation_11',['during_animation',['../d5/d9c/classScene.html#a141a7d2999cde438b69442da6bbd6d79',1,'Scene']]]
+  ['depth_5fbuf_7',['depth_buf',['../d3/d7a/classRasterizer.html#a0c3e43549449dddcd42f4f82d09c463d',1,'Rasterizer']]],
+  ['diagonal_8',['diagonal',['../d2/d1a/classAABB.html#a65d10683fc8240932c206c75506ee362',1,'AABB']]],
+  ['diffuse_9',['diffuse',['../d4/d50/structGL_1_1Material.html#a2e6bfa1497546db65f1c363985b4a52e',1,'GL::Material']]],
+  ['disable_10',['disable',['../d6/dba/structGL_1_1ArrayBuffer.html#acae88854f303cdab9f1d23bd338bb32a',1,'GL::ArrayBuffer']]],
+  ['draw_11',['draw',['../d9/d82/structGL_1_1VertexArrayObject.html#af7313fe7cf566758819a19108694d828',1,'GL::VertexArrayObject::draw()'],['../d3/d7a/classRasterizer.html#a8db1125e7514a596641807532970fa28',1,'Rasterizer::draw()']]],
+  ['during_5fanimation_12',['during_animation',['../d5/d9c/classScene.html#a141a7d2999cde438b69442da6bbd6d79',1,'Scene']]]
 ];

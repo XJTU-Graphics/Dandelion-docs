@@ -55,6 +55,7 @@ var hierarchy =
     [ "SortNode", "d9/d4d/structSortNode.html", null ],
     [ "UI::Toolbar", "d1/d84/classUI_1_1Toolbar.html", null ],
     [ "Triangle", "d2/d51/classTriangle.html", null ],
+    [ "Uniforms", "de/d97/structUniforms.html", null ],
     [ "GL::VertexArrayObject", "d9/d82/structGL_1_1VertexArrayObject.html", null ],
     [ "VertexShaderPayload", "d9/d78/structVertexShaderPayload.html", null ],
     [ "WhittedRenderer", "da/db7/classWhittedRenderer.html", null ],

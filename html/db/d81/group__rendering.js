@@ -11,11 +11,33 @@ var group__rendering =
       [ "shininess", "d4/d50/structGL_1_1Material.html#a593816847c0d6811a2fc6c625670ef27", null ],
       [ "specular", "d4/d50/structGL_1_1Material.html#a886340a3db61c4e1139bc795a89fe2f7", null ]
     ] ],
+    [ "Rasterizer", "d3/d7a/classRasterizer.html", [
+      [ "Rasterizer", "d3/d7a/classRasterizer.html#a5f93bacb61aa74392378ff0186abb7f3", null ],
+      [ "clear", "d3/d7a/classRasterizer.html#ae59ae997aa16aeaa026486da24f67de8", null ],
+      [ "draw", "d3/d7a/classRasterizer.html#a8db1125e7514a596641807532970fa28", null ],
+      [ "get_index", "d3/d7a/classRasterizer.html#abacd8713859a4a1061065df1f9c36d8a", null ],
+      [ "rasterize_triangle", "d3/d7a/classRasterizer.html#a99fe62cf68f66aa1fee0aa55f2d1f601", null ],
+      [ "set_pixel", "d3/d7a/classRasterizer.html#a2afc14d3e92e883020ddc7d23cea4439", null ],
+      [ "depth_buf", "d3/d7a/classRasterizer.html#a0c3e43549449dddcd42f4f82d09c463d", null ],
+      [ "fragment_shader", "d3/d7a/classRasterizer.html#a9e830aa437f41ba1deb00684001b5a0e", null ],
+      [ "frame_buf", "d3/d7a/classRasterizer.html#ac0bec4b6fcbc82f729408000d2fdceeb", null ],
+      [ "model", "d3/d7a/classRasterizer.html#a62eda98fe643c15e13374d74f8a064c3", null ],
+      [ "projection", "d3/d7a/classRasterizer.html#a32f4d6c66aa35f2ce8552832a2990989", null ],
+      [ "vertex_shader", "d3/d7a/classRasterizer.html#a9b0cc52b11adea979a6b213a7cf4df79", null ],
+      [ "view", "d3/d7a/classRasterizer.html#ab254e9dbab2a3bacc4a4829ab1b5d5a2", null ]
+    ] ],
     [ "RenderEngine", "d3/d2f/classRenderEngine.html", [
       [ "render", "d3/d2f/classRenderEngine.html#aa079a671bcaa22501bc07fb810cce53a", null ],
-      [ "rendering_res", "d3/d2f/classRenderEngine.html#a8a00eff19a34210acad2447e7fd358db", null ]
+      [ "n_threads", "d3/d2f/classRenderEngine.html#a1c6688fe583a42b4b936e2bc869427d4", null ],
+      [ "rasterizer_render", "d3/d2f/classRenderEngine.html#adaf01cee431df0859ef5f2f580e8ebc0", null ],
+      [ "rendering_res", "d3/d2f/classRenderEngine.html#a8a00eff19a34210acad2447e7fd358db", null ],
+      [ "whitted_render", "d3/d2f/classRenderEngine.html#a6cdfad591cb7e9f8260537aaf79a5df4", null ],
+      [ "width", "d3/d2f/classRenderEngine.html#ac7a96cfda8281176abe4c57c093a889f", null ]
     ] ],
-    [ "RasterizerRenderer", "d7/db0/classRasterizerRenderer.html", null ],
+    [ "RasterizerRenderer", "d7/db0/classRasterizerRenderer.html", [
+      [ "render", "d7/db0/classRasterizerRenderer.html#a7ff3f7eae7d21265a6f4e8c196645736", null ],
+      [ "render_mt", "d7/db0/classRasterizerRenderer.html#ad9aa891691c756d2dd480c1fda3d6dee", null ]
+    ] ],
     [ "WhittedRenderer", "da/db7/classWhittedRenderer.html", null ],
     [ "Triangle", "d2/d51/classTriangle.html", [
       [ "normal", "d2/d51/classTriangle.html#ade47eca7a673c6aa7d7844fdd910fc70", null ],

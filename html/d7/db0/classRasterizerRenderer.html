@@ -122,11 +122,9 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a7dab10be331759ad231dcb5ea0ad0bf6"><td class="memItemLeft" align="right" valign="top"><a id="a7dab10be331759ad231dcb5ea0ad0bf6" name="a7dab10be331759ad231dcb5ea0ad0bf6"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>RasterizerRenderer</b> (<a class="el" href="../../d3/d2f/classRenderEngine.html">RenderEngine</a> &amp;render_engine)</td></tr>
 <tr class="separator:a7dab10be331759ad231dcb5ea0ad0bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ff3f7eae7d21265a6f4e8c196645736"><td class="memItemLeft" align="right" valign="top"><a id="a7ff3f7eae7d21265a6f4e8c196645736" name="a7ff3f7eae7d21265a6f4e8c196645736"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>render</b> (const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
+<tr class="memitem:a7ff3f7eae7d21265a6f4e8c196645736"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db0/classRasterizerRenderer.html#a7ff3f7eae7d21265a6f4e8c196645736">render</a> (const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
 <tr class="separator:a7ff3f7eae7d21265a6f4e8c196645736"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9aa891691c756d2dd480c1fda3d6dee"><td class="memItemLeft" align="right" valign="top"><a id="ad9aa891691c756d2dd480c1fda3d6dee" name="ad9aa891691c756d2dd480c1fda3d6dee"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>render_mt</b> (const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
+<tr class="memitem:ad9aa891691c756d2dd480c1fda3d6dee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db0/classRasterizerRenderer.html#ad9aa891691c756d2dd480c1fda3d6dee">render_mt</a> (const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
 <tr class="separator:ad9aa891691c756d2dd480c1fda3d6dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -152,7 +150,46 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>负责实现Rasterizition的整个pipeline </p>
-</div><hr/>该类的文档由以下文件生成:<ul>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a7ff3f7eae7d21265a6f4e8c196645736" name="a7ff3f7eae7d21265a6f4e8c196645736"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ff3f7eae7d21265a6f4e8c196645736">&#9670;&#160;</a></span>render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RasterizerRenderer::render </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;&#160;</td>
+          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>光栅化渲染器的渲染调用接口 </p>
+
+</div>
+</div>
+<a id="ad9aa891691c756d2dd480c1fda3d6dee" name="ad9aa891691c756d2dd480c1fda3d6dee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9aa891691c756d2dd480c1fda3d6dee">&#9670;&#160;</a></span>render_mt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RasterizerRenderer::render_mt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;&#160;</td>
+          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>多线程光栅化渲染器的渲染调用接口 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
 <li><a class="el" href="../../d7/da2/render__engine_8h_source.html">render_engine.h</a></li>
 <li>rasterizer_renderer.cpp</li>
 <li>rasterizer_renderer_mt.cpp</li>

@@ -3,6 +3,7 @@ var group__utils =
     [ "formatter.hpp", "d3/d31/formatter_8hpp.html", null ],
     [ "kinetic_state.h", "de/d17/kinetic__state_8h.html", null ],
     [ "linked_list.hpp", "d4/d07/linked__list_8hpp.html", null ],
+    [ "logger.h", "d1/d8c/logger_8h.html", null ],
     [ "math.hpp", "d4/d78/math_8hpp.html", null ],
     [ "ray.h", "d5/d92/ray_8h.html", null ],
     [ "rendering.hpp", "dc/df7/rendering_8hpp.html", null ],
