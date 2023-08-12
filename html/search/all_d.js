@@ -13,5 +13,6 @@ var searchData=
   ['on_5fselection_5fcanceled_10',['on_selection_canceled',['../d1/d84/classUI_1_1Toolbar.html#afc398afcfb71e5cf3c8a2aca31559eb9',1,'UI::Toolbar']]],
   ['on_5fwheel_5fscrolled_11',['on_wheel_scrolled',['../d9/d85/classController.html#a17e48bd3ebf3cd691b7485cfa65c3043',1,'Controller']]],
   ['operator_3c_12',['operator&lt;',['../dc/d6d/classHalfedgeMesh.html#a1ad10e1953ae22e1a300557d5f653449',1,'HalfedgeMesh']]],
-  ['overloaded_13',['overloaded',['../d9/d94/structoverloaded.html',1,'']]]
+  ['optimal_5fpos_13',['optimal_pos',['../d7/d4b/structHalfedgeMesh_1_1EdgeRecord.html#a842ca5d33e1e8a60b75982e26d9974d6',1,'HalfedgeMesh::EdgeRecord']]],
+  ['overloaded_14',['overloaded',['../d9/d94/structoverloaded.html',1,'']]]
 ];

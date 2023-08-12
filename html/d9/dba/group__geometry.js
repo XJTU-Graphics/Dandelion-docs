@@ -44,7 +44,12 @@ var group__geometry =
       [ "is_boundary", "d0/d02/structFace.html#af35c64cb87cc4785e499fc6d8f28b6e3", null ]
     ] ],
     [ "HalfedgeMesh", "dc/d6d/classHalfedgeMesh.html", [
-      [ "EdgeRecord", "d7/d4b/structHalfedgeMesh_1_1EdgeRecord.html", null ],
+      [ "EdgeRecord", "d7/d4b/structHalfedgeMesh_1_1EdgeRecord.html", [
+        [ "EdgeRecord", "d7/d4b/structHalfedgeMesh_1_1EdgeRecord.html#a3bec3b437db436fc0a39465498c85895", null ],
+        [ "cost", "d7/d4b/structHalfedgeMesh_1_1EdgeRecord.html#aa00f2f9835dc52c9a588d4eecc40daf4", null ],
+        [ "edge", "d7/d4b/structHalfedgeMesh_1_1EdgeRecord.html#a411d439937e3aaf554401eb835ed5353", null ],
+        [ "optimal_pos", "d7/d4b/structHalfedgeMesh_1_1EdgeRecord.html#a842ca5d33e1e8a60b75982e26d9974d6", null ]
+      ] ],
       [ "HalfedgeMesh", "dc/d6d/classHalfedgeMesh.html#afee59ddbb09b6ddd751e74cc5a8664f9", null ],
       [ "HalfedgeMesh", "dc/d6d/classHalfedgeMesh.html#a1214b2ccc858ceb5d5967ba9e9792006", null ],
       [ "clear_erasure_records", "dc/d6d/classHalfedgeMesh.html#adf741dc10d78ce517ae4fb16233254ec", null ],

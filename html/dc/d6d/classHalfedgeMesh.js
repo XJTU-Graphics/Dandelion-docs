@@ -1,6 +1,6 @@
 var classHalfedgeMesh =
 [
-    [ "EdgeRecord", "d7/d4b/structHalfedgeMesh_1_1EdgeRecord.html", null ],
+    [ "EdgeRecord", "d7/d4b/structHalfedgeMesh_1_1EdgeRecord.html", "d7/d4b/structHalfedgeMesh_1_1EdgeRecord" ],
     [ "HalfedgeMesh", "dc/d6d/classHalfedgeMesh.html#afee59ddbb09b6ddd751e74cc5a8664f9", null ],
     [ "HalfedgeMesh", "dc/d6d/classHalfedgeMesh.html#a1214b2ccc858ceb5d5967ba9e9792006", null ],
     [ "clear_erasure_records", "dc/d6d/classHalfedgeMesh.html#adf741dc10d78ce517ae4fb16233254ec", null ],
