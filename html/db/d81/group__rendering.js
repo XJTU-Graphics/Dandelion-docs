@@ -1,5 +1,6 @@
 var group__rendering =
 [
+    [ "shader.h", "d1/df4/shader_8h.html", null ],
     [ "camera.h", "d7/df6/camera_8h.html", null ],
     [ "group.h", "d9/dd1/group_8h.html", null ],
     [ "light.h", "dd/dd3/light_8h.html", null ],

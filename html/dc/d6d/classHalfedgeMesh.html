@@ -134,6 +134,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:afee59ddbb09b6ddd751e74cc5a8664f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1214b2ccc858ceb5d5967ba9e9792006"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a1214b2ccc858ceb5d5967ba9e9792006">HalfedgeMesh</a> (<a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a> &amp;other)=delete</td></tr>
 <tr class="separator:a1214b2ccc858ceb5d5967ba9e9792006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac06e941b7d2959e94acf4dd253caebc7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#ac06e941b7d2959e94acf4dd253caebc7">~HalfedgeMesh</a> ()</td></tr>
+<tr class="separator:ac06e941b7d2959e94acf4dd253caebc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab295001966ae2ead2713033ba1365720"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#ab295001966ae2ead2713033ba1365720">sync</a> ()</td></tr>
 <tr class="separator:ab295001966ae2ead2713033ba1365720"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a581d002e76229508e3970fe1c29038ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a581d002e76229508e3970fe1c29038ab">render</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader)</td></tr>
@@ -290,6 +292,24 @@ Private 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>全局只有一个半边网格实例，因此不允许复制构造。 </p>
+
+</div>
+</div>
+<a id="ac06e941b7d2959e94acf4dd253caebc7" name="ac06e941b7d2959e94acf4dd253caebc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac06e941b7d2959e94acf4dd253caebc7">&#9670;&#160;</a></span>~HalfedgeMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HalfedgeMesh::~HalfedgeMesh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>析构时会调用 <code>clear_erasure_records</code> 释放所有已删除元素占据的内存。 </p>
 
 </div>
 </div>

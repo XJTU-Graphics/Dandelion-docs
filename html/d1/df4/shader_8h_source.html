@@ -123,98 +123,99 @@ $(document).ready(function(){initNavTree('d1/df4/shader_8h_source.html','../../'
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"></span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">/*!</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * \file render/shader.h</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * \brief 软渲染器使用的模拟着色器。</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"></span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * \brief 用于存储shader所需的全局变量</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../de/d97/structUniforms.html">   26</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../de/d97/structUniforms.html">Uniforms</a></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{<span class="comment"></span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">    /*! \~chinese 当前渲染物体的MVP矩阵 */</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../de/d97/structUniforms.html#abb3ceec66f95622f4f2de92593daa350">   29</a></span>    <span class="keyword">static</span> Eigen::Matrix4f <a class="code hl_variable" href="../../de/d97/structUniforms.html#abb3ceec66f95622f4f2de92593daa350">MVP</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">    /*! \~chinese 当前渲染物体的(view*model).inverse().transpose() */</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../de/d97/structUniforms.html#aae60ad2a362bdacdce9d5372e56963c6">   31</a></span>    <span class="keyword">static</span> Eigen::Matrix4f <a class="code hl_variable" href="../../de/d97/structUniforms.html#aae60ad2a362bdacdce9d5372e56963c6">inv_MV</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">    ///@{</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"></span><span class="comment">    /*! \~chinese 当前成像平面的长和宽 */</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../de/d97/structUniforms.html#a0ced151699f824c314f407df9f69da60">   34</a></span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="../../de/d97/structUniforms.html#a0ced151699f824c314f407df9f69da60">width</a>;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> height;<span class="comment"></span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">    ///@}</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"></span>};</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"></span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> * \brief 作用于每个屏幕上的片元，通常是计算颜色。</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../db/dd4/structFragmentShaderPayload.html">   43</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_struct" href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a>(<span class="keyword">const</span> Vector3f&amp; <a class="code hl_variable" href="../../db/dd4/structFragmentShaderPayload.html#ac327c9c0d7e05777c819a1fd2194cc7f">view_pos</a>, <span class="keyword">const</span> Vector3f&amp; <a class="code hl_variable" href="../../db/dd4/structFragmentShaderPayload.html#a6623c16c332803f65780d51186c1e482">normal</a>)</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        : <a class="code hl_variable" href="../../db/dd4/structFragmentShaderPayload.html#ac327c9c0d7e05777c819a1fd2194cc7f">view_pos</a>(<a class="code hl_variable" href="../../db/dd4/structFragmentShaderPayload.html#ac327c9c0d7e05777c819a1fd2194cc7f">view_pos</a>), <a class="code hl_variable" href="../../db/dd4/structFragmentShaderPayload.html#a6623c16c332803f65780d51186c1e482">normal</a>(<a class="code hl_variable" href="../../db/dd4/structFragmentShaderPayload.html#a6623c16c332803f65780d51186c1e482">normal</a>)</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }<span class="comment"></span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">    /*! \~chinese 相机坐标系下的位置 */</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../db/dd4/structFragmentShaderPayload.html#ac327c9c0d7e05777c819a1fd2194cc7f">   50</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../db/dd4/structFragmentShaderPayload.html#ac327c9c0d7e05777c819a1fd2194cc7f">view_pos</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">    /*! \~chinese 相机坐标系下的法向量 */</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../db/dd4/structFragmentShaderPayload.html#a6623c16c332803f65780d51186c1e482">   52</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../db/dd4/structFragmentShaderPayload.html#a6623c16c332803f65780d51186c1e482">normal</a>;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"></span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"> * \brief 作用于每个顶点，通常是处理从世界空间到屏幕空间的坐标变化，后面紧接着光栅化。</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../d9/d78/structVertexShaderPayload.html">   59</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>{<span class="comment"></span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">    /*! \~chinese 顶点位置 */</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../d9/d78/structVertexShaderPayload.html#a3c40f970f62777cdd19e3257314c08cf">   62</a></span>    Eigen::Vector4f <a class="code hl_variable" href="../../d9/d78/structVertexShaderPayload.html#a3c40f970f62777cdd19e3257314c08cf">position</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">    /*! \~chinese 法线向量 */</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="../../d9/d78/structVertexShaderPayload.html#ab46f2135883b35652d9c2289c6490dea">   64</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d9/d78/structVertexShaderPayload.html#ab46f2135883b35652d9c2289c6490dea">normal</a>;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>};</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"></span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"> * \brief 计算顶点的各项属性几何变化</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"> * 首先是将顶点坐标变换到投影平面，再进行视口变换；</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment"> * 其次是将法线向量变换到相机坐标系</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"> * \param payload 输入时顶点和法线均为模型坐标系</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"> * 输出时顶点经过视口变换变换到了屏幕空间，法线向量则为相机坐标系</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><a class="code hl_struct" href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a> <a class="code hl_function" href="../../d1/df4/shader_8h.html#af95c1a4382cc7c01a134fbdd9e7db1c4">vertex_shader</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a>&amp; payload);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment"></span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment"> * \brief 计算每个片元（像素）的颜色</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"> * 根据输入参数：计算好的片元的位置和法线方向；材质(ka,kd,ks);场景光源以及视角</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment"> * 计算当前片元的颜色</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment"> * \param payload 装的是相机坐标系下的片元位置以及法向量</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment"> * \param material 当前片元所在物体的材质，包括ka,kd,ks</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment"> * \param lights 当前场景中的所有光源</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment"> * \param camera 当前观察相机</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>Eigen::Vector3f <a class="code hl_function" href="../../d1/df4/shader_8h.html#a5727fd2e9dd9d5b09eefb9cf03271241">phong_fragment_shader</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a>&amp; payload, <a class="code hl_struct" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> material,</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                                      <span class="keyword">const</span> std::list&lt;Light&gt;&amp; lights, <a class="code hl_struct" href="../../d7/d7e/structCamera.html">Camera</a> camera);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_RENDER_SHADER_PAYLOAD_H</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * \ingroup rendering</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * \brief 软渲染器使用的模拟着色器。</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"></span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * \brief 用于存储shader所需的全局变量</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../de/d97/structUniforms.html">   27</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../de/d97/structUniforms.html">Uniforms</a></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{<span class="comment"></span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">    /*! \~chinese 当前渲染物体的MVP矩阵 */</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../de/d97/structUniforms.html#abb3ceec66f95622f4f2de92593daa350">   30</a></span>    <span class="keyword">static</span> Eigen::Matrix4f <a class="code hl_variable" href="../../de/d97/structUniforms.html#abb3ceec66f95622f4f2de92593daa350">MVP</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">    /*! \~chinese 当前渲染物体的(view*model).inverse().transpose() */</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../de/d97/structUniforms.html#aae60ad2a362bdacdce9d5372e56963c6">   32</a></span>    <span class="keyword">static</span> Eigen::Matrix4f <a class="code hl_variable" href="../../de/d97/structUniforms.html#aae60ad2a362bdacdce9d5372e56963c6">inv_MV</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">    ///@{</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"></span><span class="comment">    /*! \~chinese 当前成像平面的长和宽 */</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../de/d97/structUniforms.html#a0ced151699f824c314f407df9f69da60">   35</a></span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="../../de/d97/structUniforms.html#a0ced151699f824c314f407df9f69da60">width</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> height;<span class="comment"></span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">    ///@}</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"></span>};</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"></span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> * \brief 作用于每个屏幕上的片元，通常是计算颜色。</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../db/dd4/structFragmentShaderPayload.html">   44</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>{</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_struct" href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a>(<span class="keyword">const</span> Vector3f&amp; <a class="code hl_variable" href="../../db/dd4/structFragmentShaderPayload.html#ac327c9c0d7e05777c819a1fd2194cc7f">view_pos</a>, <span class="keyword">const</span> Vector3f&amp; <a class="code hl_variable" href="../../db/dd4/structFragmentShaderPayload.html#a6623c16c332803f65780d51186c1e482">normal</a>)</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        : <a class="code hl_variable" href="../../db/dd4/structFragmentShaderPayload.html#ac327c9c0d7e05777c819a1fd2194cc7f">view_pos</a>(<a class="code hl_variable" href="../../db/dd4/structFragmentShaderPayload.html#ac327c9c0d7e05777c819a1fd2194cc7f">view_pos</a>), <a class="code hl_variable" href="../../db/dd4/structFragmentShaderPayload.html#a6623c16c332803f65780d51186c1e482">normal</a>(<a class="code hl_variable" href="../../db/dd4/structFragmentShaderPayload.html#a6623c16c332803f65780d51186c1e482">normal</a>)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }<span class="comment"></span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">    /*! \~chinese 相机坐标系下的位置 */</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../db/dd4/structFragmentShaderPayload.html#ac327c9c0d7e05777c819a1fd2194cc7f">   51</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../db/dd4/structFragmentShaderPayload.html#ac327c9c0d7e05777c819a1fd2194cc7f">view_pos</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">    /*! \~chinese 相机坐标系下的法向量 */</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../db/dd4/structFragmentShaderPayload.html#a6623c16c332803f65780d51186c1e482">   53</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../db/dd4/structFragmentShaderPayload.html#a6623c16c332803f65780d51186c1e482">normal</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"></span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"> * \brief 作用于每个顶点，通常是处理从世界空间到屏幕空间的坐标变化，后面紧接着光栅化。</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../d9/d78/structVertexShaderPayload.html">   60</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>{<span class="comment"></span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">    /*! \~chinese 顶点位置 */</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../d9/d78/structVertexShaderPayload.html#a3c40f970f62777cdd19e3257314c08cf">   63</a></span>    Eigen::Vector4f <a class="code hl_variable" href="../../d9/d78/structVertexShaderPayload.html#a3c40f970f62777cdd19e3257314c08cf">position</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">    /*! \~chinese 法线向量 */</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="../../d9/d78/structVertexShaderPayload.html#ab46f2135883b35652d9c2289c6490dea">   65</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d9/d78/structVertexShaderPayload.html#ab46f2135883b35652d9c2289c6490dea">normal</a>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>};</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"></span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"> * \brief 计算顶点的各项属性几何变化</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment"> * 首先是将顶点坐标变换到投影平面，再进行视口变换；</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"> * 其次是将法线向量变换到相机坐标系</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"> * \param payload 输入时顶点和法线均为模型坐标系</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"> * 输出时顶点经过视口变换变换到了屏幕空间，法线向量则为相机坐标系</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><a class="code hl_struct" href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a> <a class="code hl_function" href="../../d1/df4/shader_8h.html#af95c1a4382cc7c01a134fbdd9e7db1c4">vertex_shader</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a>&amp; payload);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"></span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment"> * \brief 计算每个片元（像素）的颜色</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment"> * 根据输入参数：计算好的片元的位置和法线方向；材质(ka,kd,ks);场景光源以及视角</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment"> * 计算当前片元的颜色</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment"> * \param payload 装的是相机坐标系下的片元位置以及法向量</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment"> * \param material 当前片元所在物体的材质，包括ka,kd,ks</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment"> * \param lights 当前场景中的所有光源</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment"> * \param camera 当前观察相机</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>Eigen::Vector3f <a class="code hl_function" href="../../d1/df4/shader_8h.html#a5727fd2e9dd9d5b09eefb9cf03271241">phong_fragment_shader</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a>&amp; payload, <a class="code hl_struct" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> material,</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                                      <span class="keyword">const</span> std::list&lt;Light&gt;&amp; lights, <a class="code hl_struct" href="../../d7/d7e/structCamera.html">Camera</a> camera);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_RENDER_SHADER_PAYLOAD_H</span></div>
 <div class="ttc" id="ashader_8h_html_a5727fd2e9dd9d5b09eefb9cf03271241"><div class="ttname"><a href="../../d1/df4/shader_8h.html#a5727fd2e9dd9d5b09eefb9cf03271241">phong_fragment_shader</a></div><div class="ttdeci">Eigen::Vector3f phong_fragment_shader(const FragmentShaderPayload &amp;payload, GL::Material material, const std::list&lt; Light &gt; &amp;lights, Camera camera)</div><div class="ttdoc">计算每个片元（像素）的颜色</div><div class="ttdef"><b>Definition:</b> render/shader.cpp:44</div></div>
 <div class="ttc" id="ashader_8h_html_af95c1a4382cc7c01a134fbdd9e7db1c4"><div class="ttname"><a href="../../d1/df4/shader_8h.html#af95c1a4382cc7c01a134fbdd9e7db1c4">vertex_shader</a></div><div class="ttdeci">VertexShaderPayload vertex_shader(const VertexShaderPayload &amp;payload)</div><div class="ttdoc">计算顶点的各项属性几何变化</div><div class="ttdef"><b>Definition:</b> render/shader.cpp:20</div></div>
 <div class="ttc" id="astructCamera_html"><div class="ttname"><a href="../../d7/d7e/structCamera.html">Camera</a></div><div class="ttdoc">表示观察点的相机，既可以用于预览视角，也可以用于渲染视角。</div><div class="ttdef"><b>Definition:</b> camera.h:27</div></div>
-<div class="ttc" id="astructFragmentShaderPayload_html"><div class="ttname"><a href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a></div><div class="ttdoc">作用于每个屏幕上的片元，通常是计算颜色。</div><div class="ttdef"><b>Definition:</b> shader.h:44</div></div>
-<div class="ttc" id="astructFragmentShaderPayload_html_a6623c16c332803f65780d51186c1e482"><div class="ttname"><a href="../../db/dd4/structFragmentShaderPayload.html#a6623c16c332803f65780d51186c1e482">FragmentShaderPayload::normal</a></div><div class="ttdeci">Eigen::Vector3f normal</div><div class="ttdef"><b>Definition:</b> shader.h:52</div></div>
-<div class="ttc" id="astructFragmentShaderPayload_html_ac327c9c0d7e05777c819a1fd2194cc7f"><div class="ttname"><a href="../../db/dd4/structFragmentShaderPayload.html#ac327c9c0d7e05777c819a1fd2194cc7f">FragmentShaderPayload::view_pos</a></div><div class="ttdeci">Eigen::Vector3f view_pos</div><div class="ttdef"><b>Definition:</b> shader.h:50</div></div>
+<div class="ttc" id="astructFragmentShaderPayload_html"><div class="ttname"><a href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a></div><div class="ttdoc">作用于每个屏幕上的片元，通常是计算颜色。</div><div class="ttdef"><b>Definition:</b> shader.h:45</div></div>
+<div class="ttc" id="astructFragmentShaderPayload_html_a6623c16c332803f65780d51186c1e482"><div class="ttname"><a href="../../db/dd4/structFragmentShaderPayload.html#a6623c16c332803f65780d51186c1e482">FragmentShaderPayload::normal</a></div><div class="ttdeci">Eigen::Vector3f normal</div><div class="ttdef"><b>Definition:</b> shader.h:53</div></div>
+<div class="ttc" id="astructFragmentShaderPayload_html_ac327c9c0d7e05777c819a1fd2194cc7f"><div class="ttname"><a href="../../db/dd4/structFragmentShaderPayload.html#ac327c9c0d7e05777c819a1fd2194cc7f">FragmentShaderPayload::view_pos</a></div><div class="ttdeci">Eigen::Vector3f view_pos</div><div class="ttdef"><b>Definition:</b> shader.h:51</div></div>
 <div class="ttc" id="astructGL_1_1Material_html"><div class="ttname"><a href="../../d4/d50/structGL_1_1Material.html">GL::Material</a></div><div class="ttdoc">物体材质。</div><div class="ttdef"><b>Definition:</b> gl.hpp:189</div></div>
-<div class="ttc" id="astructUniforms_html"><div class="ttname"><a href="../../de/d97/structUniforms.html">Uniforms</a></div><div class="ttdoc">用于存储shader所需的全局变量</div><div class="ttdef"><b>Definition:</b> shader.h:27</div></div>
-<div class="ttc" id="astructUniforms_html_a0ced151699f824c314f407df9f69da60"><div class="ttname"><a href="../../de/d97/structUniforms.html#a0ced151699f824c314f407df9f69da60">Uniforms::width</a></div><div class="ttdeci">static int width</div><div class="ttdef"><b>Definition:</b> shader.h:34</div></div>
-<div class="ttc" id="astructUniforms_html_aae60ad2a362bdacdce9d5372e56963c6"><div class="ttname"><a href="../../de/d97/structUniforms.html#aae60ad2a362bdacdce9d5372e56963c6">Uniforms::inv_MV</a></div><div class="ttdeci">static Eigen::Matrix4f inv_MV</div><div class="ttdef"><b>Definition:</b> shader.h:31</div></div>
-<div class="ttc" id="astructUniforms_html_abb3ceec66f95622f4f2de92593daa350"><div class="ttname"><a href="../../de/d97/structUniforms.html#abb3ceec66f95622f4f2de92593daa350">Uniforms::MVP</a></div><div class="ttdeci">static Eigen::Matrix4f MVP</div><div class="ttdef"><b>Definition:</b> shader.h:29</div></div>
-<div class="ttc" id="astructVertexShaderPayload_html"><div class="ttname"><a href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a></div><div class="ttdoc">作用于每个顶点，通常是处理从世界空间到屏幕空间的坐标变化，后面紧接着光栅化。</div><div class="ttdef"><b>Definition:</b> shader.h:60</div></div>
-<div class="ttc" id="astructVertexShaderPayload_html_a3c40f970f62777cdd19e3257314c08cf"><div class="ttname"><a href="../../d9/d78/structVertexShaderPayload.html#a3c40f970f62777cdd19e3257314c08cf">VertexShaderPayload::position</a></div><div class="ttdeci">Eigen::Vector4f position</div><div class="ttdef"><b>Definition:</b> shader.h:62</div></div>
-<div class="ttc" id="astructVertexShaderPayload_html_ab46f2135883b35652d9c2289c6490dea"><div class="ttname"><a href="../../d9/d78/structVertexShaderPayload.html#ab46f2135883b35652d9c2289c6490dea">VertexShaderPayload::normal</a></div><div class="ttdeci">Eigen::Vector3f normal</div><div class="ttdef"><b>Definition:</b> shader.h:64</div></div>
+<div class="ttc" id="astructUniforms_html"><div class="ttname"><a href="../../de/d97/structUniforms.html">Uniforms</a></div><div class="ttdoc">用于存储shader所需的全局变量</div><div class="ttdef"><b>Definition:</b> shader.h:28</div></div>
+<div class="ttc" id="astructUniforms_html_a0ced151699f824c314f407df9f69da60"><div class="ttname"><a href="../../de/d97/structUniforms.html#a0ced151699f824c314f407df9f69da60">Uniforms::width</a></div><div class="ttdeci">static int width</div><div class="ttdef"><b>Definition:</b> shader.h:35</div></div>
+<div class="ttc" id="astructUniforms_html_aae60ad2a362bdacdce9d5372e56963c6"><div class="ttname"><a href="../../de/d97/structUniforms.html#aae60ad2a362bdacdce9d5372e56963c6">Uniforms::inv_MV</a></div><div class="ttdeci">static Eigen::Matrix4f inv_MV</div><div class="ttdef"><b>Definition:</b> shader.h:32</div></div>
+<div class="ttc" id="astructUniforms_html_abb3ceec66f95622f4f2de92593daa350"><div class="ttname"><a href="../../de/d97/structUniforms.html#abb3ceec66f95622f4f2de92593daa350">Uniforms::MVP</a></div><div class="ttdeci">static Eigen::Matrix4f MVP</div><div class="ttdef"><b>Definition:</b> shader.h:30</div></div>
+<div class="ttc" id="astructVertexShaderPayload_html"><div class="ttname"><a href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a></div><div class="ttdoc">作用于每个顶点，通常是处理从世界空间到屏幕空间的坐标变化，后面紧接着光栅化。</div><div class="ttdef"><b>Definition:</b> shader.h:61</div></div>
+<div class="ttc" id="astructVertexShaderPayload_html_a3c40f970f62777cdd19e3257314c08cf"><div class="ttname"><a href="../../d9/d78/structVertexShaderPayload.html#a3c40f970f62777cdd19e3257314c08cf">VertexShaderPayload::position</a></div><div class="ttdeci">Eigen::Vector4f position</div><div class="ttdef"><b>Definition:</b> shader.h:63</div></div>
+<div class="ttc" id="astructVertexShaderPayload_html_ab46f2135883b35652d9c2289c6490dea"><div class="ttname"><a href="../../d9/d78/structVertexShaderPayload.html#ab46f2135883b35652d9c2289c6490dea">VertexShaderPayload::normal</a></div><div class="ttdeci">Eigen::Vector3f normal</div><div class="ttdef"><b>Definition:</b> shader.h:65</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
