@@ -39,7 +39,12 @@ var group__rendering =
       [ "render", "d7/db0/classRasterizerRenderer.html#a7ff3f7eae7d21265a6f4e8c196645736", null ],
       [ "render_mt", "d7/db0/classRasterizerRenderer.html#ad9aa891691c756d2dd480c1fda3d6dee", null ]
     ] ],
-    [ "WhittedRenderer", "da/db7/classWhittedRenderer.html", null ],
+    [ "WhittedRenderer", "da/db7/classWhittedRenderer.html", [
+      [ "cast_ray", "da/db7/classWhittedRenderer.html#a2e43a419ed22f6f4ae6c340456a8bf4d", null ],
+      [ "fresnel", "da/db7/classWhittedRenderer.html#aae05cbee4a886faacbfeb68721f81b90", null ],
+      [ "render", "da/db7/classWhittedRenderer.html#a37457260b903ef3742b741cde1795db3", null ],
+      [ "use_bvh", "da/db7/classWhittedRenderer.html#a9bd446f848764a7bfd5ce3737094ec59", null ]
+    ] ],
     [ "Triangle", "d2/d51/classTriangle.html", [
       [ "normal", "d2/d51/classTriangle.html#ade47eca7a673c6aa7d7844fdd910fc70", null ],
       [ "vertex", "d2/d51/classTriangle.html#a3f3bbd24c7501750c607875d0a34c97a", null ]

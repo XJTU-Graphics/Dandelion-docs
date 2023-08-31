@@ -47,5 +47,5 @@ var annotated_dup =
     [ "Uniforms", "de/d97/structUniforms.html", null ],
     [ "Vertex", "df/dd0/structVertex.html", "df/dd0/structVertex" ],
     [ "VertexShaderPayload", "d9/d78/structVertexShaderPayload.html", "d9/d78/structVertexShaderPayload" ],
-    [ "WhittedRenderer", "da/db7/classWhittedRenderer.html", null ]
+    [ "WhittedRenderer", "da/db7/classWhittedRenderer.html", "da/db7/classWhittedRenderer" ]
 ];

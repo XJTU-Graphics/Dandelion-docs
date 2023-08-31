@@ -16,5 +16,6 @@ var searchData=
   ['fragment_5fshader_13',['fragment_shader',['../d3/d7a/classRasterizer.html#a9e830aa437f41ba1deb00684001b5a0e',1,'Rasterizer']]],
   ['fragmentshaderpayload_14',['FragmentShaderPayload',['../db/dd4/structFragmentShaderPayload.html',1,'']]],
   ['frame_5fbuf_15',['frame_buf',['../d3/d7a/classRasterizer.html#ac0bec4b6fcbc82f729408000d2fdceeb',1,'Rasterizer']]],
-  ['from_16',['from',['../df/d02/structHalfedge.html#a3bb515eebb9177fbc2fde1f0893a93c7',1,'Halfedge']]]
+  ['fresnel_16',['fresnel',['../da/db7/classWhittedRenderer.html#aae05cbee4a886faacbfeb68721f81b90',1,'WhittedRenderer']]],
+  ['from_17',['from',['../df/d02/structHalfedge.html#a3bb515eebb9177fbc2fde1f0893a93c7',1,'Halfedge']]]
 ];
