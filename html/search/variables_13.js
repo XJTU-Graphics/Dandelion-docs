@@ -4,5 +4,7 @@ var searchData=
   ['whitted_5frender_1',['whitted_render',['../d3/d2f/classRenderEngine.html#a6cdfad591cb7e9f8260537aaf79a5df4',1,'RenderEngine']]],
   ['width_2',['width',['../d3/d2f/classRenderEngine.html#ac7a96cfda8281176abe4c57c093a889f',1,'RenderEngine::width()'],['../de/d97/structUniforms.html#a0ced151699f824c314f407df9f69da60',1,'Uniforms::width()']]],
   ['window_5fwidth_3',['window_width',['../d9/d85/classController.html#ad186fddab2ac94aa2c8d5c004a106905',1,'Controller']]],
-  ['world_5fup_4',['world_up',['../d7/d7e/structCamera.html#ad8f6527347bebb52dfe3e4bfa963c3b1',1,'Camera']]]
+  ['world_5fnormal_4',['world_normal',['../db/dd4/structFragmentShaderPayload.html#a952eb10b8fe886ed0d2aa0be7e9fbdb6',1,'FragmentShaderPayload']]],
+  ['world_5fpos_5',['world_pos',['../db/dd4/structFragmentShaderPayload.html#ac5203ae9ef88e6f029b5f62704cb3137',1,'FragmentShaderPayload']]],
+  ['world_5fup_6',['world_up',['../d7/d7e/structCamera.html#ad8f6527347bebb52dfe3e4bfa963c3b1',1,'Camera']]]
 ];

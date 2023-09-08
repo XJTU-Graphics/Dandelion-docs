@@ -160,12 +160,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private 成员函数</h2></td></tr>
-<tr class="memitem:a99fe62cf68f66aa1fee0aa55f2d1f601"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7a/classRasterizer.html#a99fe62cf68f66aa1fee0aa55f2d1f601">rasterize_triangle</a> (const <a class="el" href="../../d2/d51/classTriangle.html">Triangle</a> &amp;t, const std::array&lt; Eigen::Vector3f, 3 &gt; &amp;view_pos, <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> material, const std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;lights, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> camera)</td></tr>
-<tr class="memdesc:a99fe62cf68f66aa1fee0aa55f2d1f601"><td class="mdescLeft">&#160;</td><td class="mdescRight">光栅化当前三角形  <br /></td></tr>
-<tr class="separator:a99fe62cf68f66aa1fee0aa55f2d1f601"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afac36f6fc81b6ffee1af5cca0ee78033"><td class="memItemLeft" align="right" valign="top"><a id="afac36f6fc81b6ffee1af5cca0ee78033" name="afac36f6fc81b6ffee1af5cca0ee78033"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>rasterize_triangle_mt</b> (const <a class="el" href="../../d2/d51/classTriangle.html">Triangle</a> &amp;t, const std::array&lt; Eigen::Vector3f, 3 &gt; &amp;view_pos, <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> material, const std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;lights, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> camera)</td></tr>
-<tr class="separator:afac36f6fc81b6ffee1af5cca0ee78033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb3cab09f4d3aebd6768455cae586738"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7a/classRasterizer.html#aeb3cab09f4d3aebd6768455cae586738">rasterize_triangle</a> (const <a class="el" href="../../d2/d51/classTriangle.html">Triangle</a> &amp;t, const std::array&lt; Eigen::Vector3f, 3 &gt; &amp;world_pos, <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> material, const std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;lights, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> camera)</td></tr>
+<tr class="memdesc:aeb3cab09f4d3aebd6768455cae586738"><td class="mdescLeft">&#160;</td><td class="mdescRight">光栅化当前三角形  <br /></td></tr>
+<tr class="separator:aeb3cab09f4d3aebd6768455cae586738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65c41e65e4df65d1421279ee0359de54"><td class="memItemLeft" align="right" valign="top"><a id="a65c41e65e4df65d1421279ee0359de54" name="a65c41e65e4df65d1421279ee0359de54"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>rasterize_triangle_mt</b> (const <a class="el" href="../../d2/d51/classTriangle.html">Triangle</a> &amp;t, const std::array&lt; Eigen::Vector3f, 3 &gt; &amp;world_pos, <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> material, const std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;lights, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> camera)</td></tr>
+<tr class="separator:a65c41e65e4df65d1421279ee0359de54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abacd8713859a4a1061065df1f9c36d8a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7a/classRasterizer.html#abacd8713859a4a1061065df1f9c36d8a">get_index</a> (int x, int y)</td></tr>
 <tr class="separator:abacd8713859a4a1061065df1f9c36d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -175,9 +175,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rasterize_triangle_mt
 <tr class="separator:a417c8579bd870e2ec9147ec606426315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afecb95c7771bd5a41030a78669ac48ef"><td class="memItemLeft" align="right" valign="top">static std::tuple&lt; float, float, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7a/classRasterizer.html#afecb95c7771bd5a41030a78669ac48ef">compute_barycentric_2d</a> (float x, float y, const Eigen::Vector4f *v)</td></tr>
 <tr class="separator:afecb95c7771bd5a41030a78669ac48ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27041fb4fa845aabd13048b727a6a1d6"><td class="memItemLeft" align="right" valign="top">static Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7a/classRasterizer.html#a27041fb4fa845aabd13048b727a6a1d6">interpolate</a> (float alpha, float beta, float gamma, const Eigen::Vector3f &amp;vert1, const Eigen::Vector3f &amp;vert2, const Eigen::Vector3f &amp;vert3, float weight)</td></tr>
-<tr class="memdesc:a27041fb4fa845aabd13048b727a6a1d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">对顶点的任意属性（如view space坐标，法线向量）利用屏幕空间进行插值  <br /></td></tr>
-<tr class="separator:a27041fb4fa845aabd13048b727a6a1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9825a3a34decc7ce9591d407296f0531"><td class="memItemLeft" align="right" valign="top">static Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7a/classRasterizer.html#a9825a3a34decc7ce9591d407296f0531">interpolate</a> (float alpha, float beta, float gamma, const Eigen::Vector3f &amp;vert1, const Eigen::Vector3f &amp;vert2, const Eigen::Vector3f &amp;vert3, const Eigen::Vector3f &amp;weight, const float &amp;Z)</td></tr>
+<tr class="memdesc:a9825a3a34decc7ce9591d407296f0531"><td class="mdescLeft">&#160;</td><td class="mdescRight">对顶点的任意属性（如view space坐标，法线向量）利用屏幕空间进行插值  <br /></td></tr>
+<tr class="separator:a9825a3a34decc7ce9591d407296f0531"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>软光栅渲染器 </p>
@@ -415,8 +415,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rasterize_triangle_mt
 
 </div>
 </div>
-<a id="a27041fb4fa845aabd13048b727a6a1d6" name="a27041fb4fa845aabd13048b727a6a1d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27041fb4fa845aabd13048b727a6a1d6">&#9670;&#160;</a></span>interpolate()</h2>
+<a id="a9825a3a34decc7ce9591d407296f0531" name="a9825a3a34decc7ce9591d407296f0531"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9825a3a34decc7ce9591d407296f0531">&#9670;&#160;</a></span>interpolate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -463,8 +463,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rasterize_triangle_mt
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>weight</em>&#160;</td>
+          <td class="paramtype">const Eigen::Vector3f &amp;&#160;</td>
+          <td class="paramname"><em>weight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>Z</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -480,20 +486,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rasterize_triangle_mt
 </div><div class="memdoc">
 
 <p>对顶点的任意属性（如view space坐标，法线向量）利用屏幕空间进行插值 </p>
-<p>这里的插值直接简化即可，和透视校正的插值误差不大</p>
+<p>这里的插值使用了透视矫正插值</p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">alpha,beta,gamma</td><td>计算出的重心坐标 </td></tr>
     <tr><td class="paramname">vert1,vert2,vert3</td><td>三角形的三个顶点的任意待插值属性 </td></tr>
-    <tr><td class="paramname">weight</td><td>用于手动设置进行透视矫正，直接设定为1即可 </td></tr>
+    <tr><td class="paramname">weight</td><td>Vector3f{v[0].w(), v[1].w(), v[2].w()} </td></tr>
+    <tr><td class="paramname">Z</td><td>1 / (alpha / v[0].w() + beta / v[1].w() + gamma / v[2].w()); </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a99fe62cf68f66aa1fee0aa55f2d1f601" name="a99fe62cf68f66aa1fee0aa55f2d1f601"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99fe62cf68f66aa1fee0aa55f2d1f601">&#9670;&#160;</a></span>rasterize_triangle()</h2>
+<a id="aeb3cab09f4d3aebd6768455cae586738" name="aeb3cab09f4d3aebd6768455cae586738"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb3cab09f4d3aebd6768455cae586738">&#9670;&#160;</a></span>rasterize_triangle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -511,7 +518,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rasterize_triangle_mt
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::array&lt; Eigen::Vector3f, 3 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>view_pos</em>, </td>
+          <td class="paramname"><em>world_pos</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -549,9 +556,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rasterize_triangle_mt
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>当前进行光栅化的三角形 </td></tr>
-    <tr><td class="paramname">view_pos</td><td>三角形三个顶点的坐标(已经变换到view_space下) </td></tr>
+    <tr><td class="paramname">world_pos</td><td>三角形三个顶点的坐标(已经变换到world_space下) </td></tr>
     <tr><td class="paramname">material</td><td>当前三角形所在物体的材质 </td></tr>
-    <tr><td class="paramname">lights</td><td>当前场景的所有光源(已经变换到view_space下) </td></tr>
+    <tr><td class="paramname">lights</td><td>当前场景的所有光源(已经变换到world_space下) </td></tr>
     <tr><td class="paramname">camera</td><td>当前使用的相机（观察点） </td></tr>
   </table>
   </dd>

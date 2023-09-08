@@ -5,11 +5,11 @@ var searchData=
   ['init_5fui_2',['init_ui',['../df/d1e/classPlatform.html#afca9d338fc86be846ac3835b443faf02',1,'Platform']]],
   ['inside_5ftriangle_3',['inside_triangle',['../d3/d7a/classRasterizer.html#a417c8579bd870e2ec9147ec606426315',1,'Rasterizer']]],
   ['intensity_4',['intensity',['../d5/d79/structLight.html#a1071eaa556f4bb2a9345fdfba7e6f220',1,'Light']]],
-  ['interpolate_5',['interpolate',['../d3/d7a/classRasterizer.html#a27041fb4fa845aabd13048b727a6a1d6',1,'Rasterizer']]],
+  ['interpolate_5',['interpolate',['../d3/d7a/classRasterizer.html#a9825a3a34decc7ce9591d407296f0531',1,'Rasterizer']]],
   ['intersect_6',['intersect',['../d2/d1a/classAABB.html#a42141c44aee19eff5e2e2aa65894917d',1,'AABB::intersect()'],['../de/de9/classBVH.html#a65132562f2496be0beba9883bc159fe8',1,'BVH::intersect()']]],
   ['intersection_7',['Intersection',['../d6/d30/structIntersection.html',1,'Intersection'],['../d6/d30/structIntersection.html#a67497e3efe2793b23909052eeb82c4f3',1,'Intersection::Intersection()']]],
   ['inv_8',['inv',['../df/d02/structHalfedge.html#a4f982336fcb5cfe922ef05489010ab56',1,'Halfedge']]],
-  ['inv_5fmv_9',['inv_MV',['../de/d97/structUniforms.html#aae60ad2a362bdacdce9d5372e56963c6',1,'Uniforms']]],
+  ['inv_5ftrans_5fm_9',['inv_trans_M',['../de/d97/structUniforms.html#a9fec7e95a81c71553d6ba10ef240b5ae',1,'Uniforms']]],
   ['is_5fboundary_10',['is_boundary',['../d0/d02/structFace.html#af35c64cb87cc4785e499fc6d8f28b6e3',1,'Face::is_boundary()'],['../df/d02/structHalfedge.html#a417c41407d754472bea866ce19ccd0f1',1,'Halfedge::is_boundary()']]],
   ['is_5fnew_11',['is_new',['../df/dd0/structVertex.html#a57aa9335fe7a7fb14797fe255d8a5308',1,'Vertex::is_new()'],['../d2/d4f/structEdge.html#a5a1954a17c020b7380a57b643cdecc8d',1,'Edge::is_new()']]],
   ['isotropic_5fremesh_12',['isotropic_remesh',['../dc/d6d/classHalfedgeMesh.html#a59fa9525c54738f4c5c8aca8fe0ae149',1,'HalfedgeMesh']]]

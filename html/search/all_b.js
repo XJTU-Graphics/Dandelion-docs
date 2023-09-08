@@ -20,5 +20,6 @@ var searchData=
   ['model_17',['model',['../d3/d7a/classRasterizer.html#a62eda98fe643c15e13374d74f8a064c3',1,'Rasterizer::model()'],['../de/de9/classBVH.html#a361736e4284afa96bc9b713d09f08465',1,'BVH::model()'],['../d8/d4b/classObject.html#af8f23e84a424cb6061cc9b23bb1f650c',1,'Object::model()']]],
   ['model_5fmode_18',['model_mode',['../d1/d84/classUI_1_1Toolbar.html#a49ef414deed485a34ec70f1a10b7bf54',1,'UI::Toolbar']]],
   ['modified_19',['modified',['../d8/d4b/classObject.html#abcf908134541bea512ca0148e05f1f44',1,'Object']]],
-  ['mvp_20',['MVP',['../de/d97/structUniforms.html#abb3ceec66f95622f4f2de92593daa350',1,'Uniforms']]]
+  ['mouse_5ftranslation_5ffactor_20',['mouse_translation_factor',['../d9/d85/classController.html#a55561237581cbe501830f6500beeb0d6',1,'Controller']]],
+  ['mvp_21',['MVP',['../de/d97/structUniforms.html#abb3ceec66f95622f4f2de92593daa350',1,'Uniforms']]]
 ];

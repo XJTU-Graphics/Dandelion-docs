@@ -4,7 +4,7 @@ var searchData=
   ['inconsistent_5felement_1',['inconsistent_element',['../dc/d6d/classHalfedgeMesh.html#ae8ff22838772ef95a905a84ba80426a4',1,'HalfedgeMesh']]],
   ['intensity_2',['intensity',['../d5/d79/structLight.html#a1071eaa556f4bb2a9345fdfba7e6f220',1,'Light']]],
   ['inv_3',['inv',['../df/d02/structHalfedge.html#a4f982336fcb5cfe922ef05489010ab56',1,'Halfedge']]],
-  ['inv_5fmv_4',['inv_MV',['../de/d97/structUniforms.html#aae60ad2a362bdacdce9d5372e56963c6',1,'Uniforms']]],
+  ['inv_5ftrans_5fm_4',['inv_trans_M',['../de/d97/structUniforms.html#a9fec7e95a81c71553d6ba10ef240b5ae',1,'Uniforms']]],
   ['is_5fboundary_5',['is_boundary',['../d0/d02/structFace.html#af35c64cb87cc4785e499fc6d8f28b6e3',1,'Face']]],
   ['is_5fnew_6',['is_new',['../df/dd0/structVertex.html#a57aa9335fe7a7fb14797fe255d8a5308',1,'Vertex::is_new()'],['../d2/d4f/structEdge.html#a5a1954a17c020b7380a57b643cdecc8d',1,'Edge::is_new()']]]
 ];

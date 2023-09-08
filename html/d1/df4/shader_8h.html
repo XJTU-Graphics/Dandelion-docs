@@ -215,10 +215,10 @@ $(document).ready(function(){initNavTree('d1/df4/shader_8h.html','../../'); init
 </div><div class="memdoc">
 
 <p>计算顶点的各项属性几何变化 </p>
-<p>首先是将顶点坐标变换到投影平面，再进行视口变换； 其次是将法线向量变换到相机坐标系</p>
+<p>首先是将顶点坐标变换到投影平面，再进行视口变换； 其次是将法线向量变换到世界坐标系</p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">payload</td><td>输入时顶点和法线均为模型坐标系 输出时顶点经过视口变换变换到了屏幕空间，法线向量则为相机坐标系 </td></tr>
+    <tr><td class="paramname">payload</td><td>输入时顶点和法线均为模型坐标系 输出时顶点经过视口变换变换到了屏幕空间，法线向量则为世界坐标系 </td></tr>
   </table>
   </dd>
 </dl>

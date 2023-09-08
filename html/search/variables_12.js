@@ -8,6 +8,5 @@ var searchData=
   ['vertex_5fshader_5',['vertex_shader',['../d3/d7a/classRasterizer.html#a9b0cc52b11adea979a6b213a7cf4df79',1,'Rasterizer']]],
   ['vertices_6',['vertices',['../dc/d6d/classHalfedgeMesh.html#a8b346d45b38685a327a0408d7390927b',1,'HalfedgeMesh']]],
   ['view_7',['view',['../d3/d7a/classRasterizer.html#ab254e9dbab2a3bacc4a4829ab1b5d5a2',1,'Rasterizer']]],
-  ['view_5fpos_8',['view_pos',['../db/dd4/structFragmentShaderPayload.html#ac327c9c0d7e05777c819a1fd2194cc7f',1,'FragmentShaderPayload']]],
-  ['visible_9',['visible',['../d8/d4b/classObject.html#ac2b299eaa47a407bca0e9b47205edd99',1,'Object']]]
+  ['visible_8',['visible',['../d8/d4b/classObject.html#ac2b299eaa47a407bca0e9b47205edd99',1,'Object']]]
 ];

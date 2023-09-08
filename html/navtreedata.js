@@ -79,7 +79,7 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "d8/d4b/classObject.html#a81cff33ba1612aa43187d3e617d8edcc",
-"functions.html"
+"files.html"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

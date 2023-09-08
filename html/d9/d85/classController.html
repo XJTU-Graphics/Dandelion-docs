@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('d9/d85/classController.html','../../')
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:ac33cc6c318b232a74c05b2b48b2c41bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#ac33cc6c318b232a74c05b2b48b2c41bb">on_mouse_dragged</a> (bool initial)</td></tr>
-<tr class="memdesc:ac33cc6c318b232a74c05b2b48b2c41bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">将鼠标拖动转换为轨迹球 (Trackball) 操作，用于旋转预览视角。  <br /></td></tr>
+<tr class="memdesc:ac33cc6c318b232a74c05b2b48b2c41bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">将鼠标拖动转换为旋转视角或平移视角操作。  <br /></td></tr>
 <tr class="separator:ac33cc6c318b232a74c05b2b48b2c41bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbadba65eafc040639cc668dde8f77b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#acbadba65eafc040639cc668dde8f77b6">on_picking</a> ()</td></tr>
 <tr class="memdesc:acbadba65eafc040639cc668dde8f77b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据鼠标点击选取场景中的物体。  <br /></td></tr>
@@ -195,6 +195,12 @@ Private 成员函数</h2></td></tr>
 <tr class="separator:a4b2321e10d29a6139694c3cd6e792125"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03eadf6e188df2ee9a8d4b53b4066d92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a03eadf6e188df2ee9a8d4b53b4066d92">select_light</a> (<a class="el" href="../../d5/d79/structLight.html">Light</a> *light)</td></tr>
 <tr class="separator:a03eadf6e188df2ee9a8d4b53b4066d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08f2827387da4b092832f926315d14f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a08f2827387da4b092832f926315d14f7">on_rotating</a> (bool initial)</td></tr>
+<tr class="memdesc:a08f2827387da4b092832f926315d14f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">将鼠标拖动转换为轨迹球 (Trackball) 操作，用于旋转预览视角。  <br /></td></tr>
+<tr class="separator:a08f2827387da4b092832f926315d14f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2209fae13d7c08547caf5b120141c84f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a2209fae13d7c08547caf5b120141c84f">on_translating</a> (bool initial)</td></tr>
+<tr class="memdesc:a2209fae13d7c08547caf5b120141c84f"><td class="mdescLeft">&#160;</td><td class="mdescRight">将鼠标拖动转换为视角平移。  <br /></td></tr>
+<tr class="separator:a2209fae13d7c08547caf5b120141c84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95c56822d667e94b031451729ce069a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a95c56822d667e94b031451729ce069a9">Controller</a> ()</td></tr>
 <tr class="separator:a95c56822d667e94b031451729ce069a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -231,6 +237,8 @@ Private 属性</h2></td></tr>
 静态 Private 属性</h2></td></tr>
 <tr class="memitem:a6d58d96a5298afd8338ca4d39127053b"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a6d58d96a5298afd8338ca4d39127053b">wheel_scroll_factor</a> = 0.8f</td></tr>
 <tr class="separator:a6d58d96a5298afd8338ca4d39127053b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55561237581cbe501830f6500beeb0d6"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d85/classController.html#a55561237581cbe501830f6500beeb0d6">mouse_translation_factor</a> = 0.001f</td></tr>
+<tr class="separator:a55561237581cbe501830f6500beeb0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>控制器管理所有的界面组件，并处理和预览视角操作（例如旋转、缩放或者平移）相关的输入。 </p>
@@ -376,8 +384,9 @@ Private 属性</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>将鼠标拖动转换为轨迹球 (Trackball) 操作，用于旋转预览视角。 </p>
-<p>轨迹球曲面的推导参考 <a href="https://www.khronos.org/opengl/wiki/Object_Mouse_Trackball">Object Mouse Trackball</a>。 </p><dl class="params"><dt>参数</dt><dd>
+<p>将鼠标拖动转换为旋转视角或平移视角操作。 </p>
+<p>当按下鼠标中键（或 Alt+鼠标左键）拖动时旋转视角，按下 Ctrl+鼠标左键拖动时平移视角。 同时按下 Alt 和 Ctrl 的效果与只按下 Alt 相同（只旋转不平移）。</p>
+<dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">initial</td><td>为真表示开始拖动时调用，为假表示拖动过程中调用。 </td></tr>
   </table>
@@ -403,6 +412,75 @@ Private 属性</h2></td></tr>
 
 <p>根据鼠标点击选取场景中的物体。 </p>
 <p>这个函数将鼠标点击的屏幕坐标 (screen space) 转换为观察坐标 (view space)， 然后将观察坐标转换回世界坐标 (world space)，从而构造一条从观察相机（主相机） 发出的射线，按这条射线与场景中物体的相交结果拾取（选中）场景中的可选中对象。 工作于布局模式和物理模拟模式下时，它调用 <code>pick_object</code> 函数，工作于建模模式下时， 它调用 <code>pick_element</code> 函数。 </p>
+
+</div>
+</div>
+<a id="a08f2827387da4b092832f926315d14f7" name="a08f2827387da4b092832f926315d14f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08f2827387da4b092832f926315d14f7">&#9670;&#160;</a></span>on_rotating()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::on_rotating </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>initial</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将鼠标拖动转换为轨迹球 (Trackball) 操作，用于旋转预览视角。 </p>
+<p>轨迹球曲面的推导参考 <a href="https://www.khronos.org/opengl/wiki/Object_Mouse_Trackball">Object Mouse Trackball</a>。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">initial</td><td>为真表示开始拖动时调用，为假表示拖动过程中调用。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2209fae13d7c08547caf5b120141c84f" name="a2209fae13d7c08547caf5b120141c84f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2209fae13d7c08547caf5b120141c84f">&#9670;&#160;</a></span>on_translating()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::on_translating </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>initial</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将鼠标拖动转换为视角平移。 </p>
+<p>将鼠标拖动时屏幕坐标的变化量换算为观察空间 (view space) 中的坐标变化， 光标向右移动对应相机向左移动，光标向上移动对应相机向下移动。 相应的变化量会累加到主相机的 <code>position</code> 和 <code>target</code> 属性上，因此平移过程中视线方向不会改变。</p>
+<p>视点到观察点的距离增大（减小）时，相同屏幕坐标变化量对应的观察坐标变化量也增大（减小）， 平移量正比于视角远近，比例系数为 <code>mouse_translation_factor</code> 。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">initial</td><td>为真表示开始拖动时调用，为假表示拖动过程中调用。 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -990,6 +1068,29 @@ Private 属性</h2></td></tr>
 
 <p>全局工作模式。 </p>
 <p>控制器维护着当前的工作模式，决定各种功能可用或禁用。其他的 GUI 组件持有对该变量的引用。 </p>
+
+</div>
+</div>
+<a id="a55561237581cbe501830f6500beeb0d6" name="a55561237581cbe501830f6500beeb0d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55561237581cbe501830f6500beeb0d6">&#9670;&#160;</a></span>mouse_translation_factor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float Controller::mouse_translation_factor = 0.001f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>平移视角时屏幕坐标到观察坐标换算系数的固定部分。 </p>
 
 </div>
 </div>

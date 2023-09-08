@@ -5,6 +5,8 @@ var classController =
     [ "on_framebuffer_resized", "d9/d85/classController.html#a142bc68626ef6319295599d939e56cf0", null ],
     [ "on_mouse_dragged", "d9/d85/classController.html#ac33cc6c318b232a74c05b2b48b2c41bb", null ],
     [ "on_picking", "d9/d85/classController.html#acbadba65eafc040639cc668dde8f77b6", null ],
+    [ "on_rotating", "d9/d85/classController.html#a08f2827387da4b092832f926315d14f7", null ],
+    [ "on_translating", "d9/d85/classController.html#a2209fae13d7c08547caf5b120141c84f", null ],
     [ "on_wheel_scrolled", "d9/d85/classController.html#a17e48bd3ebf3cd691b7485cfa65c3043", null ],
     [ "pick_element", "d9/d85/classController.html#a53f6623f03b94f70e7d1a302026bbabb", null ],
     [ "pick_object", "d9/d85/classController.html#ae6b743008bc87ed393eabf885d2f9e52", null ],

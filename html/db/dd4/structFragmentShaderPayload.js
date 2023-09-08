@@ -1,5 +1,5 @@
 var structFragmentShaderPayload =
 [
-    [ "normal", "db/dd4/structFragmentShaderPayload.html#a6623c16c332803f65780d51186c1e482", null ],
-    [ "view_pos", "db/dd4/structFragmentShaderPayload.html#ac327c9c0d7e05777c819a1fd2194cc7f", null ]
+    [ "world_normal", "db/dd4/structFragmentShaderPayload.html#a952eb10b8fe886ed0d2aa0be7e9fbdb6", null ],
+    [ "world_pos", "db/dd4/structFragmentShaderPayload.html#ac5203ae9ef88e6f029b5f62704cb3137", null ]
 ];

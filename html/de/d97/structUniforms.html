@@ -119,8 +119,8 @@ $(document).ready(function(){initNavTree('de/d97/structUniforms.html','../../');
 静态 Public 属性</h2></td></tr>
 <tr class="memitem:abb3ceec66f95622f4f2de92593daa350"><td class="memItemLeft" align="right" valign="top">static Eigen::Matrix4f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/structUniforms.html#abb3ceec66f95622f4f2de92593daa350">MVP</a></td></tr>
 <tr class="separator:abb3ceec66f95622f4f2de92593daa350"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae60ad2a362bdacdce9d5372e56963c6"><td class="memItemLeft" align="right" valign="top">static Eigen::Matrix4f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/structUniforms.html#aae60ad2a362bdacdce9d5372e56963c6">inv_MV</a></td></tr>
-<tr class="separator:aae60ad2a362bdacdce9d5372e56963c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fec7e95a81c71553d6ba10ef240b5ae"><td class="memItemLeft" align="right" valign="top">static Eigen::Matrix4f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/structUniforms.html#a9fec7e95a81c71553d6ba10ef240b5ae">inv_trans_M</a></td></tr>
+<tr class="separator:a9fec7e95a81c71553d6ba10ef240b5ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a0ced151699f824c314f407df9f69da60"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/structUniforms.html#a0ced151699f824c314f407df9f69da60">width</a></td></tr>
 <tr class="separator:a0ced151699f824c314f407df9f69da60"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,8 +131,8 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>用于存储shader所需的全局变量 </p>
 </div><h2 class="groupheader">类成员变量说明</h2>
-<a id="aae60ad2a362bdacdce9d5372e56963c6" name="aae60ad2a362bdacdce9d5372e56963c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae60ad2a362bdacdce9d5372e56963c6">&#9670;&#160;</a></span>inv_MV</h2>
+<a id="a9fec7e95a81c71553d6ba10ef240b5ae" name="a9fec7e95a81c71553d6ba10ef240b5ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fec7e95a81c71553d6ba10ef240b5ae">&#9670;&#160;</a></span>inv_trans_M</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,7 +141,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Matrix4f Uniforms::inv_MV</td>
+          <td class="memname">Eigen::Matrix4f Uniforms::inv_trans_M</td>
         </tr>
       </table>
   </td>
@@ -150,7 +150,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>当前渲染物体的(view*model).inverse().transpose() </p>
+<p>当前渲染物体的model.inverse().transpose() </p>
 
 </div>
 </div>
