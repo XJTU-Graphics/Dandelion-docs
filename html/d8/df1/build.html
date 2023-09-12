@@ -158,7 +158,8 @@ $(document).ready(function(){initNavTree('d8/df1/build.html','../../'); initResi
 </ul>
 <p>在 Windows 平台上，从官方网站下载安装足够新的 Visual Studio 和 CMake 即可；在 Linux 平台上可以用包管理器安装编译器和 CMake；在 macOS 平台上，我们推荐安装 Xcode 命令行工具（不是 Xcode IDE），并使用 Homebrew 安装 CMake。</p>
 <blockquote class="doxtable">
-<p>&zwj;基于 Debian 的 Linux 发行版（使用 apt 包管理器）中，所需软件包名是 <code>build-essential cmake cmake-extras</code>，其他发行版请自行确定对应的包，亦可选择从源代码编译安装。 </p>
+<p>&zwj;基于 Debian 的 Linux 发行版（使用 apt 包管理器）中，所需软件包名是 <code>build-essential cmake cmake-extras</code>，其他发行版请自行确定对应的包，亦可选择从源代码编译安装。</p>
+<p>当前版本的代码在使用 GCC 13 编译时，会由于新增加的警告 <code>-Wdangling-reference</code> 而失败。已经确认该警告是被 fmt 触发，并非框架代码的问题，我们无力修改。因此，请使用 GCC 13 的同学在 CMakeLists 中禁用该警告。 </p>
 </blockquote>
 <h1><a class="anchor" id="compilation"></a>
 编译</h1>

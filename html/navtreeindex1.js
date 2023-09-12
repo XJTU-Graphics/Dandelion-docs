@@ -1,11 +1,10 @@
 var NAVTREEINDEX1 =
 {
 "d8/d4b/classObject.html#a81cff33ba1612aa43187d3e617d8edcc":[4,3,2,4],
-"d8/d4b/classObject.html#a81cff33ba1612aa43187d3e617d8edcc":[4,2,15,4],
-"d8/d4b/classObject.html#a8d677f7e946ed980a4b086efb74e9748":[4,3,2,10],
 "d8/d4b/classObject.html#a8d677f7e946ed980a4b086efb74e9748":[4,2,15,10],
-"d8/d4b/classObject.html#a9cdcb5985e95260baeb7004cbb97054c":[4,3,2,6],
+"d8/d4b/classObject.html#a8d677f7e946ed980a4b086efb74e9748":[4,3,2,10],
 "d8/d4b/classObject.html#a9cdcb5985e95260baeb7004cbb97054c":[4,2,15,6],
+"d8/d4b/classObject.html#a9cdcb5985e95260baeb7004cbb97054c":[4,3,2,6],
 "d8/d4b/classObject.html#aa31820215a5450a83c624324258f00dd":[4,2,15,9],
 "d8/d4b/classObject.html#aa31820215a5450a83c624324258f00dd":[4,3,2,9],
 "d8/d4b/classObject.html#abcf908134541bea512ca0148e05f1f44":[4,2,15,14],
@@ -184,6 +183,7 @@ var NAVTREEINDEX1 =
 "dc/d6d/classHalfedgeMesh.html#afb40de06ac1625aac7136b9da4727d9e":[4,0,5,10],
 "dc/d6d/classHalfedgeMesh.html#afee59ddbb09b6ddd751e74cc5a8664f9":[4,0,5,1],
 "dc/df7/rendering_8hpp.html":[4,5,6],
+"dc/df9/structfmt_1_1formatter_3_01Eigen_1_1Matrix_3_01Scalar_00_01n__dim_00_01n__dim_00_010_00_01n__dim_00_01n__dim_01_4_01_4.html":[5,0,0,1],
 "dd/d5e/structRay.html":[4,2,17],
 "dd/d5e/structRay.html":[4,5,11],
 "dd/d6a/triangle_8h.html":[6,0,0,2,3],
