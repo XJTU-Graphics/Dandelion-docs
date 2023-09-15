@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.1</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -115,6 +115,7 @@ $(document).ready(function(){initNavTree('d8/df1/build.html','../../'); initResi
 <li>显卡驱动至少支持 OpenGL 3.3 Core Profile</li>
 </ul>
 <p>运行于 x86-64 硬件架构上的 Windows 10 / 11、macOS 和 Debian / Ubuntu / Linux Mint / Fedora/ Arch Linux / Manjaro 等常见 Linux 发行版均满足条件。使用 Apple M 系列芯片 (Apple Silicon) 的 macbook 和 iMac 同样可以。</p>
+<p>在 Linux 平台上，我们仅对 KDE 和 GNOME 两种桌面环境提供支持。其他的桌面环境上也许可以运行，但我们不提供任何保证。</p>
 <blockquote class="doxtable">
 <p>&zwj;请不要使用虚拟机中的系统，因为 Virtual Box 支持的 OpenGL 版本太低，而 VMware 的虚拟显卡驱动实现的 OpenGL API 疑似存在 bug。</p>
 <p>目前已经确认 VMware 创建的 Windows 虚拟机不能正常使用 Dandelion 框架，Linux 虚拟机暂时没有问题，但如果以后出现我们不会专门解决。 </p>
@@ -161,6 +162,15 @@ $(document).ready(function(){initNavTree('d8/df1/build.html','../../'); initResi
 <p>&zwj;基于 Debian 的 Linux 发行版（使用 apt 包管理器）中，所需软件包名是 <code>build-essential cmake cmake-extras</code>，其他发行版请自行确定对应的包，亦可选择从源代码编译安装。</p>
 <p>当前版本的代码在使用 GCC 13 编译时，会由于新增加的警告 <code>-Wdangling-reference</code> 而失败。已经确认该警告是被 fmt 触发，并非框架代码的问题，我们无力修改。因此，请使用 GCC 13 的同学在 CMakeLists 中禁用该警告。 </p>
 </blockquote>
+<p>我们使用 portable-file-dialogs 实现模型文件选择的对话框，这个库使在不同的平台上使用不同的原生命令或 API。在 Linux 平台上需要额外注意一些问题：</p>
+<ul>
+<li>在 KDE 桌面环境下它使用 <code>kdialog</code> 命令，使用 KDE 桌面环境的同学请尝试执行 <code>kdialog</code> 命令以检查此命令是否存在。如不存在，你的 Dandelion 将无法加载模型文件，此时你应当安装包含该命令的软件包。 <blockquote class="doxtable">
+<p>&zwj;目前已发现 Manjaro KDE 不自带 <code>kdialog</code> 命令，请执行 <code>sudo pacman -S kdialog</code> 来安装它。其他发行版请自行查找对应的软件包名称。 </p>
+</blockquote>
+</li>
+<li>在 GNOME 桌面面环境下它使用 <code>zenity</code>、<code>matedialog</code> 或 <code>qarma</code> 命令，使用 GNOME 桌面环境的同学请确认你的系统上至少可以执行其中一个命令。如果全都不能执行，请安装其中之一。</li>
+<li>其他桌面环境不受支持。理论上 KDE 或 GNOME 的衍生版本也许可以通过 <code>kdialog</code> 或 <code>zenity</code> 命令创建对话框，但我们不对此提供任何保证，也不会分散精力解决非 KDE / GNOME 桌面环境的任何问题。</li>
+</ul>
 <h1><a class="anchor" id="compilation"></a>
 编译</h1>
 <p>由于日志输出是调试实验的重要参考，我们始终推荐从 <b>终端</b> 启动 Dandelion。在 Windows 平台上，我们推荐使用 PowerShell 而非 cmd，并推荐使用 Windows Terminal 作为终端模拟器；在 Linux 或 macOS 平台上可以直接使用默认的 shell 和终端模拟器，更熟悉这些工具的话也可以自己挑选。</p>
