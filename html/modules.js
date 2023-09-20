@@ -5,5 +5,5 @@ var modules =
     [ "离线渲染", "db/d81/group__rendering.html", "db/d81/group__rendering" ],
     [ "物理模拟", "d9/d77/group__simulation.html", "d9/d77/group__simulation" ],
     [ "UI 界面", "dd/df1/group__ui.html", "dd/df1/group__ui" ],
-    [ "小工具", "db/d81/group__utils.html", "db/d81/group__utils" ]
+    [ "杂项工具", "db/d81/group__utils.html", "db/d81/group__utils" ]
 ];

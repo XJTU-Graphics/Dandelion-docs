@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.1</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('d4/d78/math_8hpp.html','../../'); init
   <div class="summary">
 <a href="#func-members">函数</a> &#124;
 <a href="#var-members">变量</a>  </div>
-  <div class="headertitle"><div class="title">math.hpp 文件参考<div class="ingroups"><a class="el" href="../../db/d81/group__utils.html">小工具</a></div></div></div>
+  <div class="headertitle"><div class="title">math.hpp 文件参考<div class="ingroups"><a class="el" href="../../db/d81/group__utils.html">杂项工具</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -125,13 +125,11 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ga8af16bad73ed4f92ede4dd5e7841bd7c"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>pi</b> ()</td></tr>
 <tr class="memdesc:ga8af16bad73ed4f92ede4dd5e7841bd7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回 float 或 double 类型的 \(\pi\) 值。 <br /></td></tr>
 <tr class="separator:ga8af16bad73ed4f92ede4dd5e7841bd7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a375c8412919ad185761dc5613dd1fb3d"><td class="memItemLeft" align="right" valign="top"><a id="a375c8412919ad185761dc5613dd1fb3d" name="a375c8412919ad185761dc5613dd1fb3d"></a>
-template&lt;&gt; </td></tr>
-<tr class="memitem:a375c8412919ad185761dc5613dd1fb3d"><td class="memTemplItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memTemplItemRight" valign="bottom"><b>pi&lt; double &gt;</b> ()</td></tr>
+<tr class="memitem:a375c8412919ad185761dc5613dd1fb3d"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a375c8412919ad185761dc5613dd1fb3d"><td class="memTemplItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/d78/math_8hpp.html#a375c8412919ad185761dc5613dd1fb3d">pi&lt; double &gt;</a> ()</td></tr>
 <tr class="separator:a375c8412919ad185761dc5613dd1fb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fc2131b54ddf0cfaf2be1dd2bb779ca"><td class="memItemLeft" align="right" valign="top"><a id="a7fc2131b54ddf0cfaf2be1dd2bb779ca" name="a7fc2131b54ddf0cfaf2be1dd2bb779ca"></a>
-template&lt;&gt; </td></tr>
-<tr class="memitem:a7fc2131b54ddf0cfaf2be1dd2bb779ca"><td class="memTemplItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memTemplItemRight" valign="bottom"><b>pi&lt; float &gt;</b> ()</td></tr>
+<tr class="memitem:a7fc2131b54ddf0cfaf2be1dd2bb779ca"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a7fc2131b54ddf0cfaf2be1dd2bb779ca"><td class="memTemplItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/d78/math_8hpp.html#a7fc2131b54ddf0cfaf2be1dd2bb779ca">pi&lt; float &gt;</a> ()</td></tr>
 <tr class="separator:a7fc2131b54ddf0cfaf2be1dd2bb779ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadc516f532c93b92333ea8e8962393300"><td class="memTemplParams" colspan="2">
 template&lt;typename T &gt; </td></tr>
@@ -153,10 +151,9 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ga46f6553c90bf08999d0ba4c86130986d"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>clamp</b> (T low, T high, T value)</td></tr>
 <tr class="memdesc:ga46f6553c90bf08999d0ba4c86130986d"><td class="mdescLeft">&#160;</td><td class="mdescRight">将一个数截断在给定的上下界之间 <br /></td></tr>
 <tr class="separator:ga46f6553c90bf08999d0ba4c86130986d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4d6e55d71f27749e7802ef2d17f4fed1"><td class="memTemplParams" colspan="2">
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga4d6e55d71f27749e7802ef2d17f4fed1"><td class="memTemplItemLeft" align="right" valign="top">constexpr Eigen::Vector&lt; T, 4 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_vec4</b> (Eigen::Vector&lt; T, 3 &gt; vec3)</td></tr>
-<tr class="memdesc:ga4d6e55d71f27749e7802ef2d17f4fed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">将一个 \(1\times 3\)方向向量转化为 \(1\times 4\)的方向向量 <br /></td></tr>
+<tr class="memitem:ga4d6e55d71f27749e7802ef2d17f4fed1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga4d6e55d71f27749e7802ef2d17f4fed1"><td class="memTemplItemLeft" align="right" valign="top">constexpr Eigen::Vector&lt; T, 4 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga4d6e55d71f27749e7802ef2d17f4fed1">to_vec4</a> (Eigen::Vector&lt; T, 3 &gt; vec3)</td></tr>
+<tr class="memdesc:ga4d6e55d71f27749e7802ef2d17f4fed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">将代表方向的三维向量转换为它的齐次坐标形式。  <br /></td></tr>
 <tr class="separator:ga4d6e55d71f27749e7802ef2d17f4fed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga45d287464d22e5ef6cc281294b2d9c44"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga45d287464d22e5ef6cc281294b2d9c44">reflect</a> (const Eigen::Vector3f &amp;I, const Eigen::Vector3f &amp;N)</td></tr>
 <tr class="memdesc:ga45d287464d22e5ef6cc281294b2d9c44"><td class="mdescLeft">&#160;</td><td class="mdescRight">求向量 \(\mathbf{I}\) 关于向量 \(\mathbf{N}\) 的反射。  <br /></td></tr>
@@ -173,16 +170,102 @@ template&lt;typename T &gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 变量</h2></td></tr>
-<tr class="memitem:af561c357ce00686b0487f0e55558c503"><td class="memItemLeft" align="right" valign="top"><a id="af561c357ce00686b0487f0e55558c503" name="af561c357ce00686b0487f0e55558c503"></a>
-const Eigen::Matrix3f&#160;</td><td class="memItemRight" valign="bottom"><b>I3f</b> = Eigen::Matrix3f::Identity()</td></tr>
+<tr class="memitem:af561c357ce00686b0487f0e55558c503"><td class="memItemLeft" align="right" valign="top">const Eigen::Matrix3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d78/math_8hpp.html#af561c357ce00686b0487f0e55558c503">I3f</a> = Eigen::Matrix3f::Identity()</td></tr>
 <tr class="separator:af561c357ce00686b0487f0e55558c503"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b964c8b0a76c7743c378e0b62607536"><td class="memItemLeft" align="right" valign="top"><a id="a3b964c8b0a76c7743c378e0b62607536" name="a3b964c8b0a76c7743c378e0b62607536"></a>
-const Eigen::Matrix4f&#160;</td><td class="memItemRight" valign="bottom"><b>I4f</b> = Eigen::Matrix4f::Identity()</td></tr>
+<tr class="memitem:a3b964c8b0a76c7743c378e0b62607536"><td class="memItemLeft" align="right" valign="top">const Eigen::Matrix4f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d78/math_8hpp.html#a3b964c8b0a76c7743c378e0b62607536">I4f</a> = Eigen::Matrix4f::Identity()</td></tr>
 <tr class="separator:a3b964c8b0a76c7743c378e0b62607536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>这个文件提供一些方便使用的数学函数。 </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a375c8412919ad185761dc5613dd1fb3d" name="a375c8412919ad185761dc5613dd1fb3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a375c8412919ad185761dc5613dd1fb3d">&#9670;&#160;</a></span>pi&lt; double &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr double <a class="el" href="../../db/d81/group__utils.html#ga8af16bad73ed4f92ede4dd5e7841bd7c">pi</a>&lt; double &gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>返回 double 类型的特化。 </p>
+
+</div>
+</div>
+<a id="a7fc2131b54ddf0cfaf2be1dd2bb779ca" name="a7fc2131b54ddf0cfaf2be1dd2bb779ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fc2131b54ddf0cfaf2be1dd2bb779ca">&#9670;&#160;</a></span>pi&lt; float &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float <a class="el" href="../../db/d81/group__utils.html#ga8af16bad73ed4f92ede4dd5e7841bd7c">pi</a>&lt; float &gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>返回 float 类型的特化。 </p>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="af561c357ce00686b0487f0e55558c503" name="af561c357ce00686b0487f0e55558c503"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af561c357ce00686b0487f0e55558c503">&#9670;&#160;</a></span>I3f</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Eigen::Matrix3f I3f = Eigen::Matrix3f::Identity()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>由于 Eigen 的 Identity 方法返回的并非 Matrix 实例，在此创建一个含义相同的矩阵。 </p>
+
+</div>
+</div>
+<a id="a3b964c8b0a76c7743c378e0b62607536" name="a3b964c8b0a76c7743c378e0b62607536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b964c8b0a76c7743c378e0b62607536">&#9670;&#160;</a></span>I4f</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Eigen::Matrix4f I4f = Eigen::Matrix4f::Identity()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>由于 Eigen 的 Identity 方法返回的并非 Matrix 实例，在此创建一个含义相同的矩阵。 </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

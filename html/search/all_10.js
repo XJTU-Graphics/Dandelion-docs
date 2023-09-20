@@ -8,7 +8,7 @@ var searchData=
   ['ray_5',['Ray',['../dd/d5e/structRay.html',1,'']]],
   ['ray_2eh_6',['ray.h',['../d5/d92/ray_8h.html',1,'']]],
   ['ray_5fnode_5fintersect_7',['ray_node_intersect',['../de/de9/classBVH.html#ac67108b0bb7416848901ec8337113751',1,'BVH']]],
-  ['ray_5ftriangle_5fintersect_8',['ray_triangle_intersect',['../db/d81/group__utils.html#gab851f3686bc57e3a8cc135f68f3871a5',1,'ray_triangle_intersect(const Ray &amp;ray, const GL::Mesh &amp;mesh, size_t index):&#160;ray.cpp'],['../db/d81/group__utils.html#gab851f3686bc57e3a8cc135f68f3871a5',1,'ray_triangle_intersect(const Ray &amp;ray, const GL::Mesh &amp;mesh, size_t index):&#160;ray.cpp']]],
+  ['ray_5ftriangle_5fintersect_8',['ray_triangle_intersect',['../db/d81/group__rendering.html#gab851f3686bc57e3a8cc135f68f3871a5',1,'ray_triangle_intersect(const Ray &amp;ray, const GL::Mesh &amp;mesh, size_t index):&#160;ray.cpp'],['../db/d81/group__rendering.html#gab851f3686bc57e3a8cc135f68f3871a5',1,'ray_triangle_intersect(const Ray &amp;ray, const GL::Mesh &amp;mesh, size_t index):&#160;ray.cpp']]],
   ['rebuild_5fbvh_9',['rebuild_BVH',['../d8/d4b/classObject.html#a4eae75848cc2f863a790d8da3014549f',1,'Object']]],
   ['recursively_5fbuild_10',['recursively_build',['../de/de9/classBVH.html#a5348f49eeeaac185c9fd06bec7c35286',1,'BVH']]],
   ['recursively_5fdelete_11',['recursively_delete',['../de/de9/classBVH.html#a542dfefd482d2b59254e010e78a20c43',1,'BVH']]],
@@ -31,5 +31,6 @@ var searchData=
   ['resize_5fwindow_28',['resize_window',['../df/d1e/classPlatform.html#abc7c9ebc5b95dfc19864a639839bd986',1,'Platform']]],
   ['rgb_29',['RGB',['../db/d81/group__utils.html#ga4a118ad3ee36468a3fa616977a64864e',1,'rendering.hpp']]],
   ['root_30',['root',['../de/de9/classBVH.html#a346e43d1b1a64c1f5db8876fbe350ffb',1,'BVH']]],
-  ['runge_5fkutta_5fstep_31',['runge_kutta_step',['../d4/d20/solver_8h.html#a1658b0d74382082614c979f76f65d69a',1,'solver.cpp']]]
+  ['rotation_31',['rotation',['../d8/d4b/classObject.html#a770438fbce9eb0bc063547f0f77e0b30',1,'Object']]],
+  ['runge_5fkutta_5fstep_32',['runge_kutta_step',['../d4/d20/solver_8h.html#a1658b0d74382082614c979f76f65d69a',1,'solver.cpp']]]
 ];

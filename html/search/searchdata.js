@@ -1,6 +1,6 @@
 var indexSectionsWithContent =
 {
-  0: "abcdefghiklmnopqrstuvwx~几小平开构物离项",
+  0: "abcdefghiklmnopqrstuvwx~几平开杂构物离项",
   1: "abcdefghiklmoprstuvw",
   2: "abcfghklmoprst",
   3: "abcdefghilmnopqrstuvx~",
@@ -8,7 +8,7 @@ var indexSectionsWithContent =
   5: "s",
   6: "hw",
   7: "o",
-  8: "u几小平物离",
+  8: "u几平杂物离",
   9: "d开构项"
 };
 

@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.1</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -120,166 +120,177 @@ $(document).ready(function(){initNavTree('d4/d78/math_8hpp_source.html','../../'
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * \~chinese</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * \brief 这个文件提供一些方便使用的数学函数。</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">const</span> Eigen::Matrix3f I3f = Eigen::Matrix3f::Identity();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">const</span> Eigen::Matrix4f I4f = Eigen::Matrix4f::Identity();</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"></span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * \ingroup utils</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * \brief 返回 float 或 double 类型的 \f$\pi\f$ 值。</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#ga8af16bad73ed4f92ede4dd5e7841bd7c">   25</a></span>T <a class="code hl_function" href="../../db/d81/group__utils.html#ga8af16bad73ed4f92ede4dd5e7841bd7c">pi</a>();</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> pi&lt;double&gt;()</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">return</span> 3.141592653589793238462643383279;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> pi&lt;float&gt;()</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">return</span> 3.14159265358f;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"></span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"> * \ingroup utils</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> * \brief 将角度转换为弧度。</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#gadc516f532c93b92333ea8e8962393300">   45</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> T <a class="code hl_function" href="../../db/d81/group__utils.html#gadc516f532c93b92333ea8e8962393300">radians</a>(T <a class="code hl_function" href="../../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">degrees</a>)</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>{</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">degrees</a> / <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(180.0) * pi&lt;T&gt;();</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"></span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment"> * \ingroup utils</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"> * \brief 将弧度转换为角度。</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">   56</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> T <a class="code hl_function" href="../../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">degrees</a>(T <a class="code hl_function" href="../../db/d81/group__utils.html#gadc516f532c93b92333ea8e8962393300">radians</a>)</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>{</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../db/d81/group__utils.html#gadc516f532c93b92333ea8e8962393300">radians</a> / pi&lt;T&gt;() * <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(180.0);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment"></span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment"> * \ingroup utils</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"> * \brief 求一个数的平方。</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">   67</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> T <a class="code hl_function" href="../../db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">squ</a>(T x)</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>{</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">return</span> x * x;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"></span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"> * \ingroup utils</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"> * \brief 将一个数截断在给定的上下界之间</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#ga46f6553c90bf08999d0ba4c86130986d">   78</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> T <a class="code hl_function" href="../../db/d81/group__utils.html#ga46f6553c90bf08999d0ba4c86130986d">clamp</a>(T low, T high, T value)</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>{</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">return</span> std::max(low, std::min(high, value));</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment"></span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment"> * \ingroup utils</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment"> * \brief 将一个\f$1\times 3\f$方向向量转化为\f$1\times 4\f$的方向向量</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#ga4d6e55d71f27749e7802ef2d17f4fed1">   89</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> Eigen::Vector&lt;T, 4&gt; <a class="code hl_function" href="../../db/d81/group__utils.html#ga4d6e55d71f27749e7802ef2d17f4fed1">to_vec4</a>(Eigen::Vector&lt;T, 3&gt; vec3)</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>{</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordflow">return</span> Eigen::Vector&lt;T, 4&gt;(vec3.x(), vec3.y(), vec3.z(), <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0.0));</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>}</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment"></span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment"> * \ingroup utils</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment"> * \brief 求向量 \f$\mathbf{I}\f$ 关于向量 \f$\mathbf{N}\f$ 的反射。</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment"> * \param I 表示入射射线的向量（不必是单位向量）</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment"> * \param N 反射平面的法线（必须是单位向量）</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#ga45d287464d22e5ef6cc281294b2d9c44">  101</a></span><span class="keyword">inline</span> Eigen::Vector3f <a class="code hl_function" href="../../db/d81/group__utils.html#ga45d287464d22e5ef6cc281294b2d9c44">reflect</a>(<span class="keyword">const</span> Eigen::Vector3f&amp; I, <span class="keyword">const</span> Eigen::Vector3f&amp; N)</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>{</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordflow">return</span> I - 2 * I.dot(N) * N;</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment"></span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment"> * \ingroup utils</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment"> * \brief 符号函数，正数的求值结果为 1，负数为 -1，零的求值结果是 0.</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#ga9394636a770c3d784a10b8334c33f5d2">  112</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> T <a class="code hl_function" href="../../db/d81/group__utils.html#ga9394636a770c3d784a10b8334c33f5d2">sign</a>(T x)</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>{</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordflow">if</span> (x &gt; <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0.0)) {</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(1.0);</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    }</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordflow">if</span> (x &lt; <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0.0)) {</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(-1.0);</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    }</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0.0);</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>}</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment"></span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment"> * \ingroup utils</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment"> * \brief 将旋转的四元数表示形式转换为 ZYX 欧拉角表示形式。</span></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment"> * 这个函数采用 ZYX 顺规（即依次绕自身 \f$z, y, x\f$ 轴旋转）。在 Dandelion</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment"> * 的坐标系约定下，ZYX 顺规对应 roll-yaw-pitch 旋转顺序（滚转、航向、俯仰）。</span></div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment"> * 由于欧拉角固有的缺陷，这个函数并不能消除航向角（或称方向角 yaw）在 \f$\pm 90^\circ\f$</span></div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment"> * 附近时产生的万向锁和抖动问题。</span></div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment"> * 虽然函数的返回值是 `tuple`，但使用 `tuple` 接受返回值并不方便，建议用结构化绑定</span></div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment"> * ```cpp</span></div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment"> * auto [x_angle, y_angle, z_angle] = quaternion_to_ZYX_euler(w, x, y, z);</span></div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment"> * ```</span></div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment"> * 或 `std::tie` 来接受返回值。</span></div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment"> * \returns 一个元组，它的三个分量依次是绕 x 轴、绕 y 轴和绕 z 轴的旋转角。</span></div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#ga35871f456d2ecb7c9d8ea653197c12cf">  143</a></span><span class="keyword">inline</span> std::tuple&lt;T, T, T&gt; <a class="code hl_function" href="../../db/d81/group__utils.html#ga35871f456d2ecb7c9d8ea653197c12cf">quaternion_to_ZYX_euler</a>(T w, T x, T y, T z)</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>{</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keyword">const</span> T test          = x * z + w * y;</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keyword">constexpr</span> T threshold = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0.5 - 1e-6);</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    T x_rad, y_rad, z_rad;</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keywordflow">if</span> (std::abs(test) &gt; threshold) {</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        x_rad = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0.0);</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        y_rad = <a class="code hl_function" href="../../db/d81/group__utils.html#ga9394636a770c3d784a10b8334c33f5d2">sign</a>(test) * pi&lt;T&gt;() / <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(2.0);</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        z_rad = <a class="code hl_function" href="../../db/d81/group__utils.html#ga9394636a770c3d784a10b8334c33f5d2">sign</a>(test) * <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(2.0) * std::atan2(x, w);</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        x_rad =</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            std::atan2(<span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(-2.0) * (y * z - w * x), <a class="code hl_function" href="../../db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">squ</a>(w) - <a class="code hl_function" href="../../db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">squ</a>(x) - <a class="code hl_function" href="../../db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">squ</a>(y) + <a class="code hl_function" href="../../db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">squ</a>(z));</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        y_rad = std::asin(<span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(2.0) * (x * z + w * y));</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        z_rad =</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            std::atan2(<span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(-2.0) * (x * y - w * z), <a class="code hl_function" href="../../db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">squ</a>(w) + <a class="code hl_function" href="../../db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">squ</a>(x) - <a class="code hl_function" href="../../db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">squ</a>(y) - <a class="code hl_function" href="../../db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">squ</a>(z));</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    }</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keyword">const</span> T x_angle = <a class="code hl_function" href="../../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">degrees</a>(x_rad);</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="keyword">const</span> T y_angle = <a class="code hl_function" href="../../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">degrees</a>(y_rad);</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keyword">const</span> T z_angle = <a class="code hl_function" href="../../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">degrees</a>(z_rad);</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keywordflow">return</span> std::make_tuple(x_angle, y_angle, z_angle);</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>}</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_UTILS_MATH_HPP</span></div>
-<div class="ttc" id="agroup__utils_html_ga35871f456d2ecb7c9d8ea653197c12cf"><div class="ttname"><a href="../../db/d81/group__utils.html#ga35871f456d2ecb7c9d8ea653197c12cf">quaternion_to_ZYX_euler</a></div><div class="ttdeci">std::tuple&lt; T, T, T &gt; quaternion_to_ZYX_euler(T w, T x, T y, T z)</div><div class="ttdoc">将旋转的四元数表示形式转换为 ZYX 欧拉角表示形式。</div><div class="ttdef"><b>Definition:</b> math.hpp:143</div></div>
-<div class="ttc" id="agroup__utils_html_ga45d287464d22e5ef6cc281294b2d9c44"><div class="ttname"><a href="../../db/d81/group__utils.html#ga45d287464d22e5ef6cc281294b2d9c44">reflect</a></div><div class="ttdeci">Eigen::Vector3f reflect(const Eigen::Vector3f &amp;I, const Eigen::Vector3f &amp;N)</div><div class="ttdoc">求向量  关于向量  的反射。</div><div class="ttdef"><b>Definition:</b> math.hpp:101</div></div>
-<div class="ttc" id="agroup__utils_html_ga46f6553c90bf08999d0ba4c86130986d"><div class="ttname"><a href="../../db/d81/group__utils.html#ga46f6553c90bf08999d0ba4c86130986d">clamp</a></div><div class="ttdeci">constexpr T clamp(T low, T high, T value)</div><div class="ttdoc">将一个数截断在给定的上下界之间</div><div class="ttdef"><b>Definition:</b> math.hpp:78</div></div>
-<div class="ttc" id="agroup__utils_html_ga4d6e55d71f27749e7802ef2d17f4fed1"><div class="ttname"><a href="../../db/d81/group__utils.html#ga4d6e55d71f27749e7802ef2d17f4fed1">to_vec4</a></div><div class="ttdeci">constexpr Eigen::Vector&lt; T, 4 &gt; to_vec4(Eigen::Vector&lt; T, 3 &gt; vec3)</div><div class="ttdoc">将一个 方向向量转化为 的方向向量</div><div class="ttdef"><b>Definition:</b> math.hpp:89</div></div>
-<div class="ttc" id="agroup__utils_html_ga69c7787a7d4d90c5abd1cd155532202f"><div class="ttname"><a href="../../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">degrees</a></div><div class="ttdeci">constexpr T degrees(T radians)</div><div class="ttdoc">将弧度转换为角度。</div><div class="ttdef"><b>Definition:</b> math.hpp:56</div></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"></span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">/*! \~chinese 由于 Eigen 的 Identity 方法返回的并非 Matrix 实例，在此创建一个含义相同的矩阵。 */</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="../../d4/d78/math_8hpp.html#af561c357ce00686b0487f0e55558c503">   17</a></span><span class="keyword">const</span> Eigen::Matrix3f <a class="code hl_variable" href="../../d4/d78/math_8hpp.html#af561c357ce00686b0487f0e55558c503">I3f</a> = Eigen::Matrix3f::Identity();<span class="comment"></span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">/*! \~chinese 由于 Eigen 的 Identity 方法返回的并非 Matrix 实例，在此创建一个含义相同的矩阵。 */</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../d4/d78/math_8hpp.html#a3b964c8b0a76c7743c378e0b62607536">   19</a></span><span class="keyword">const</span> Eigen::Matrix4f <a class="code hl_variable" href="../../d4/d78/math_8hpp.html#a3b964c8b0a76c7743c378e0b62607536">I4f</a> = Eigen::Matrix4f::Identity();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"></span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * \ingroup utils</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * \brief 返回 float 或 double 类型的 \f$\pi\f$ 值。</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#ga8af16bad73ed4f92ede4dd5e7841bd7c">   27</a></span>T <a class="code hl_function" href="../../db/d81/group__utils.html#ga8af16bad73ed4f92ede4dd5e7841bd7c">pi</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"></span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/*! \~chinese 返回 double 类型的特化。 */</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../d4/d78/math_8hpp.html#a375c8412919ad185761dc5613dd1fb3d">   31</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> <a class="code hl_function" href="../../d4/d78/math_8hpp.html#a375c8412919ad185761dc5613dd1fb3d">pi&lt;double&gt;</a>()</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">return</span> 3.141592653589793238462643383279;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"></span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">/*! \~chinese 返回 float 类型的特化。 */</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../d4/d78/math_8hpp.html#a7fc2131b54ddf0cfaf2be1dd2bb779ca">   38</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> <a class="code hl_function" href="../../d4/d78/math_8hpp.html#a7fc2131b54ddf0cfaf2be1dd2bb779ca">pi&lt;float&gt;</a>()</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">return</span> 3.14159265358f;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"></span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"> * \ingroup utils</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"> * \brief 将角度转换为弧度。</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#gadc516f532c93b92333ea8e8962393300">   49</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> T <a class="code hl_function" href="../../db/d81/group__utils.html#gadc516f532c93b92333ea8e8962393300">radians</a>(T <a class="code hl_function" href="../../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">degrees</a>)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">degrees</a> / <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(180.0) * pi&lt;T&gt;();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"></span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"> * \ingroup utils</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"> * \brief 将弧度转换为角度。</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">   60</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> T <a class="code hl_function" href="../../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">degrees</a>(T <a class="code hl_function" href="../../db/d81/group__utils.html#gadc516f532c93b92333ea8e8962393300">radians</a>)</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../db/d81/group__utils.html#gadc516f532c93b92333ea8e8962393300">radians</a> / pi&lt;T&gt;() * <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(180.0);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"></span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"> * \ingroup utils</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment"> * \brief 求一个数的平方。</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">   71</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> T <a class="code hl_function" href="../../db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">squ</a>(T x)</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>{</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordflow">return</span> x * x;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"></span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment"> * \ingroup utils</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"> * \brief 将一个数截断在给定的上下界之间</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#ga46f6553c90bf08999d0ba4c86130986d">   82</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> T <a class="code hl_function" href="../../db/d81/group__utils.html#ga46f6553c90bf08999d0ba4c86130986d">clamp</a>(T low, T high, T value)</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>{</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordflow">return</span> std::max(low, std::min(high, value));</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment"></span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment"> * \ingroup utils</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment"> * \brief 将代表方向的三维向量转换为它的齐次坐标形式。</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment"> * 该函数在一个\f$3\times 1\f$的向量的末尾补 0 ，从而将其转换为\f$4\times 1\f$的方向向量。</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment"> * 如欲将三维的点转换为齐次坐标形式，请直接调用 `Eigen::Vector` 类型的 `homogeneous` 方法。</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#ga4d6e55d71f27749e7802ef2d17f4fed1">   96</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> Eigen::Vector&lt;T, 4&gt; <a class="code hl_function" href="../../db/d81/group__utils.html#ga4d6e55d71f27749e7802ef2d17f4fed1">to_vec4</a>(Eigen::Vector&lt;T, 3&gt; vec3)</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>{</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordflow">return</span> Eigen::Vector&lt;T, 4&gt;(vec3.x(), vec3.y(), vec3.z(), <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0.0));</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>}</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment"></span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment"> * \ingroup utils</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment"> * \brief 求向量 \f$\mathbf{I}\f$ 关于向量 \f$\mathbf{N}\f$ 的反射。</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment"> * \param I 表示入射射线的向量（不必是单位向量）</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment"> * \param N 反射平面的法线（必须是单位向量）</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#ga45d287464d22e5ef6cc281294b2d9c44">  108</a></span><span class="keyword">inline</span> Eigen::Vector3f <a class="code hl_function" href="../../db/d81/group__utils.html#ga45d287464d22e5ef6cc281294b2d9c44">reflect</a>(<span class="keyword">const</span> Eigen::Vector3f&amp; I, <span class="keyword">const</span> Eigen::Vector3f&amp; N)</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>{</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordflow">return</span> I - 2 * I.dot(N) * N;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>}</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment"></span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment"> * \ingroup utils</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment"> * \brief 符号函数，正数的求值结果为 1，负数为 -1，零的求值结果是 0.</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#ga9394636a770c3d784a10b8334c33f5d2">  119</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> T <a class="code hl_function" href="../../db/d81/group__utils.html#ga9394636a770c3d784a10b8334c33f5d2">sign</a>(T x)</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>{</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keywordflow">if</span> (x &gt; <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0.0)) {</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(1.0);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordflow">if</span> (x &lt; <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0.0)) {</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(-1.0);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    }</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0.0);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>}</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment"></span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment"> * \ingroup utils</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment"> * \brief 将旋转的四元数表示形式转换为 ZYX 欧拉角表示形式。</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment"> * 这个函数采用 ZYX 顺规（即依次绕自身 \f$z, y, x\f$ 轴旋转）。在 Dandelion</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment"> * 的坐标系约定下，ZYX 顺规对应 roll-yaw-pitch 旋转顺序（滚转、航向、俯仰）。</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment"> * 由于欧拉角固有的缺陷，这个函数并不能消除航向角（或称方向角 yaw）在 \f$\pm 90^\circ\f$</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment"> * 附近时产生的万向锁和抖动问题。</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment"> * 虽然函数的返回值是 `tuple`，但使用 `tuple` 接受返回值并不方便，建议用结构化绑定</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment"> * ```cpp</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment"> * auto [x_angle, y_angle, z_angle] = quaternion_to_ZYX_euler(w, x, y, z);</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment"> * ```</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment"> * 或 `std::tie` 来接受返回值。</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment"> * \returns 一个元组，它的三个分量依次是绕 x 轴、绕 y 轴和绕 z 轴的旋转角（角度制）。</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#ga35871f456d2ecb7c9d8ea653197c12cf">  150</a></span><span class="keyword">inline</span> std::tuple&lt;T, T, T&gt; <a class="code hl_function" href="../../db/d81/group__utils.html#ga35871f456d2ecb7c9d8ea653197c12cf">quaternion_to_ZYX_euler</a>(T w, T x, T y, T z)</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>{</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keyword">const</span> T test          = x * z + w * y;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="keyword">constexpr</span> T threshold = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0.5 - 1e-6);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    T x_rad, y_rad, z_rad;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keywordflow">if</span> (std::abs(test) &gt; threshold) {</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        x_rad = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0.0);</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        y_rad = <a class="code hl_function" href="../../db/d81/group__utils.html#ga9394636a770c3d784a10b8334c33f5d2">sign</a>(test) * pi&lt;T&gt;() / <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(2.0);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        z_rad = <a class="code hl_function" href="../../db/d81/group__utils.html#ga9394636a770c3d784a10b8334c33f5d2">sign</a>(test) * <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(2.0) * std::atan2(x, w);</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        x_rad =</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            std::atan2(<span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(-2.0) * (y * z - w * x), <a class="code hl_function" href="../../db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">squ</a>(w) - <a class="code hl_function" href="../../db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">squ</a>(x) - <a class="code hl_function" href="../../db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">squ</a>(y) + <a class="code hl_function" href="../../db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">squ</a>(z));</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        y_rad = std::asin(<span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(2.0) * (x * z + w * y));</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        z_rad =</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            std::atan2(<span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(-2.0) * (x * y - w * z), <a class="code hl_function" href="../../db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">squ</a>(w) + <a class="code hl_function" href="../../db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">squ</a>(x) - <a class="code hl_function" href="../../db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">squ</a>(y) - <a class="code hl_function" href="../../db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">squ</a>(z));</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    }</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keyword">const</span> T x_angle = <a class="code hl_function" href="../../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">degrees</a>(x_rad);</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="keyword">const</span> T y_angle = <a class="code hl_function" href="../../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">degrees</a>(y_rad);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keyword">const</span> T z_angle = <a class="code hl_function" href="../../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">degrees</a>(z_rad);</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="keywordflow">return</span> std::make_tuple(x_angle, y_angle, z_angle);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>}</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_UTILS_MATH_HPP</span></div>
+<div class="ttc" id="agroup__utils_html_ga35871f456d2ecb7c9d8ea653197c12cf"><div class="ttname"><a href="../../db/d81/group__utils.html#ga35871f456d2ecb7c9d8ea653197c12cf">quaternion_to_ZYX_euler</a></div><div class="ttdeci">std::tuple&lt; T, T, T &gt; quaternion_to_ZYX_euler(T w, T x, T y, T z)</div><div class="ttdoc">将旋转的四元数表示形式转换为 ZYX 欧拉角表示形式。</div><div class="ttdef"><b>Definition:</b> math.hpp:150</div></div>
+<div class="ttc" id="agroup__utils_html_ga45d287464d22e5ef6cc281294b2d9c44"><div class="ttname"><a href="../../db/d81/group__utils.html#ga45d287464d22e5ef6cc281294b2d9c44">reflect</a></div><div class="ttdeci">Eigen::Vector3f reflect(const Eigen::Vector3f &amp;I, const Eigen::Vector3f &amp;N)</div><div class="ttdoc">求向量  关于向量  的反射。</div><div class="ttdef"><b>Definition:</b> math.hpp:108</div></div>
+<div class="ttc" id="agroup__utils_html_ga46f6553c90bf08999d0ba4c86130986d"><div class="ttname"><a href="../../db/d81/group__utils.html#ga46f6553c90bf08999d0ba4c86130986d">clamp</a></div><div class="ttdeci">constexpr T clamp(T low, T high, T value)</div><div class="ttdoc">将一个数截断在给定的上下界之间</div><div class="ttdef"><b>Definition:</b> math.hpp:82</div></div>
+<div class="ttc" id="agroup__utils_html_ga4d6e55d71f27749e7802ef2d17f4fed1"><div class="ttname"><a href="../../db/d81/group__utils.html#ga4d6e55d71f27749e7802ef2d17f4fed1">to_vec4</a></div><div class="ttdeci">constexpr Eigen::Vector&lt; T, 4 &gt; to_vec4(Eigen::Vector&lt; T, 3 &gt; vec3)</div><div class="ttdoc">将代表方向的三维向量转换为它的齐次坐标形式。</div><div class="ttdef"><b>Definition:</b> math.hpp:96</div></div>
+<div class="ttc" id="agroup__utils_html_ga69c7787a7d4d90c5abd1cd155532202f"><div class="ttname"><a href="../../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">degrees</a></div><div class="ttdeci">constexpr T degrees(T radians)</div><div class="ttdoc">将弧度转换为角度。</div><div class="ttdef"><b>Definition:</b> math.hpp:60</div></div>
 <div class="ttc" id="agroup__utils_html_ga8af16bad73ed4f92ede4dd5e7841bd7c"><div class="ttname"><a href="../../db/d81/group__utils.html#ga8af16bad73ed4f92ede4dd5e7841bd7c">pi</a></div><div class="ttdeci">T pi()</div><div class="ttdoc">返回 float 或 double 类型的  值。</div></div>
-<div class="ttc" id="agroup__utils_html_ga9394636a770c3d784a10b8334c33f5d2"><div class="ttname"><a href="../../db/d81/group__utils.html#ga9394636a770c3d784a10b8334c33f5d2">sign</a></div><div class="ttdeci">constexpr T sign(T x)</div><div class="ttdoc">符号函数，正数的求值结果为 1，负数为 -1，零的求值结果是 0.</div><div class="ttdef"><b>Definition:</b> math.hpp:112</div></div>
-<div class="ttc" id="agroup__utils_html_ga94c1d99deed7f3b1a05d8edc8f05219c"><div class="ttname"><a href="../../db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">squ</a></div><div class="ttdeci">constexpr T squ(T x)</div><div class="ttdoc">求一个数的平方。</div><div class="ttdef"><b>Definition:</b> math.hpp:67</div></div>
-<div class="ttc" id="agroup__utils_html_gadc516f532c93b92333ea8e8962393300"><div class="ttname"><a href="../../db/d81/group__utils.html#gadc516f532c93b92333ea8e8962393300">radians</a></div><div class="ttdeci">constexpr T radians(T degrees)</div><div class="ttdoc">将角度转换为弧度。</div><div class="ttdef"><b>Definition:</b> math.hpp:45</div></div>
+<div class="ttc" id="agroup__utils_html_ga9394636a770c3d784a10b8334c33f5d2"><div class="ttname"><a href="../../db/d81/group__utils.html#ga9394636a770c3d784a10b8334c33f5d2">sign</a></div><div class="ttdeci">constexpr T sign(T x)</div><div class="ttdoc">符号函数，正数的求值结果为 1，负数为 -1，零的求值结果是 0.</div><div class="ttdef"><b>Definition:</b> math.hpp:119</div></div>
+<div class="ttc" id="agroup__utils_html_ga94c1d99deed7f3b1a05d8edc8f05219c"><div class="ttname"><a href="../../db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">squ</a></div><div class="ttdeci">constexpr T squ(T x)</div><div class="ttdoc">求一个数的平方。</div><div class="ttdef"><b>Definition:</b> math.hpp:71</div></div>
+<div class="ttc" id="agroup__utils_html_gadc516f532c93b92333ea8e8962393300"><div class="ttname"><a href="../../db/d81/group__utils.html#gadc516f532c93b92333ea8e8962393300">radians</a></div><div class="ttdeci">constexpr T radians(T degrees)</div><div class="ttdoc">将角度转换为弧度。</div><div class="ttdef"><b>Definition:</b> math.hpp:49</div></div>
+<div class="ttc" id="amath_8hpp_html_a375c8412919ad185761dc5613dd1fb3d"><div class="ttname"><a href="../../d4/d78/math_8hpp.html#a375c8412919ad185761dc5613dd1fb3d">pi&lt; double &gt;</a></div><div class="ttdeci">constexpr double pi&lt; double &gt;()</div><div class="ttdef"><b>Definition:</b> math.hpp:31</div></div>
+<div class="ttc" id="amath_8hpp_html_a3b964c8b0a76c7743c378e0b62607536"><div class="ttname"><a href="../../d4/d78/math_8hpp.html#a3b964c8b0a76c7743c378e0b62607536">I4f</a></div><div class="ttdeci">const Eigen::Matrix4f I4f</div><div class="ttdef"><b>Definition:</b> math.hpp:19</div></div>
+<div class="ttc" id="amath_8hpp_html_a7fc2131b54ddf0cfaf2be1dd2bb779ca"><div class="ttname"><a href="../../d4/d78/math_8hpp.html#a7fc2131b54ddf0cfaf2be1dd2bb779ca">pi&lt; float &gt;</a></div><div class="ttdeci">constexpr float pi&lt; float &gt;()</div><div class="ttdef"><b>Definition:</b> math.hpp:38</div></div>
+<div class="ttc" id="amath_8hpp_html_af561c357ce00686b0487f0e55558c503"><div class="ttname"><a href="../../d4/d78/math_8hpp.html#af561c357ce00686b0487f0e55558c503">I3f</a></div><div class="ttdeci">const Eigen::Matrix3f I3f</div><div class="ttdef"><b>Definition:</b> math.hpp:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

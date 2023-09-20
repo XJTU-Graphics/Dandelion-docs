@@ -17,6 +17,8 @@ var classObject =
     [ "modified", "d8/d4b/classObject.html#abcf908134541bea512ca0148e05f1f44", null ],
     [ "name", "d8/d4b/classObject.html#a24457e0a387492c80594aec7681a2277", null ],
     [ "prev_state", "d8/d4b/classObject.html#a5fb00c4ab2fd22c033aae243bbb1e10a", null ],
+    [ "rotation", "d8/d4b/classObject.html#a770438fbce9eb0bc063547f0f77e0b30", null ],
+    [ "scaling", "d8/d4b/classObject.html#ad39b7fd1eb954cc7890dd2713be6d3f6", null ],
     [ "velocity", "d8/d4b/classObject.html#a72eed21f81afdf95370d638db35b59e1", null ],
     [ "visible", "d8/d4b/classObject.html#ac2b299eaa47a407bca0e9b47205edd99", null ]
 ];

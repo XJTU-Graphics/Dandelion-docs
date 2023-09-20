@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.1</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -105,7 +105,8 @@ $(document).ready(function(){initNavTree('db/d81/group__rendering.html','../../'
 <div class="header">
   <div class="summary">
 <a href="#files">文件</a> &#124;
-<a href="#nested-classes">类</a>  </div>
+<a href="#nested-classes">类</a> &#124;
+<a href="#func-members">函数</a>  </div>
   <div class="headertitle"><div class="title">离线渲染</div></div>
 </div><!--header-->
 <div class="contents">
@@ -169,6 +170,18 @@ $(document).ready(function(){initNavTree('db/d81/group__rendering.html','../../'
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d30/structIntersection.html">Intersection</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">表示射线与 Mesh 相交结果的结构体。  <a href="../../d6/d30/structIntersection.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ga058f7f5f254453b5df93c093ebde122a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d5e/structRay.html">Ray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__rendering.html#ga058f7f5f254453b5df93c093ebde122a">generate_ray</a> (int width, int height, int x, int y, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp;camera, float depth)</td></tr>
+<tr class="memdesc:ga058f7f5f254453b5df93c093ebde122a"><td class="mdescLeft">&#160;</td><td class="mdescRight">给定成像平面的宽度和高度、成像平面上的坐标、成像平面的深度和相机，生成一条射线。  <br /></td></tr>
+<tr class="separator:ga058f7f5f254453b5df93c093ebde122a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab851f3686bc57e3a8cc135f68f3871a5"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__rendering.html#gab851f3686bc57e3a8cc135f68f3871a5">ray_triangle_intersect</a> (const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray, const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;mesh, size_t index)</td></tr>
+<tr class="memdesc:gab851f3686bc57e3a8cc135f68f3871a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断光线ray是否与某个面片相交  <br /></td></tr>
+<tr class="separator:gab851f3686bc57e3a8cc135f68f3871a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1a3a6b802c525058a523c2dadaae1f2b"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__rendering.html#ga1a3a6b802c525058a523c2dadaae1f2b">naive_intersect</a> (const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray, const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;mesh, const Eigen::Matrix4f model)</td></tr>
+<tr class="memdesc:ga1a3a6b802c525058a523c2dadaae1f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">用朴素方法判断射线是否与给定的 mesh 相交。  <br /></td></tr>
+<tr class="separator:ga1a3a6b802c525058a523c2dadaae1f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <p>针对与渲染相关的实验，Dandelion 提供由 CPU 进行软渲染的功能。 </p>
@@ -184,6 +197,165 @@ $(document).ready(function(){initNavTree('db/d81/group__rendering.html','../../'
 <li>相机：加入 <code><a class="el" href="../../d7/d7e/structCamera.html" title="表示观察点的相机，既可以用于预览视角，也可以用于渲染视角。">Camera</a></code> 对象并设置位置、朝向、视角大小、近平面和远平面。</li>
 </ul>
 <p>这些要素都被包含于一个 <code><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a></code> 对象中。渲染器应当提供一个 <code>render</code> 方法，接受一个 <code><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a>&amp;</code> 类型的输入，按相机指定的视角，遍历场景中的物体和光源进行渲染。渲染结果应当写入到一个总长为图片宽度 \(\times\) 图片高度 \(\times\) 颜色通道数的 <b>一维数组</b> 中。这个一维数组应该是行优先的，可以被外界直接访问。 </p>
+<h2 class="groupheader">函数说明</h2>
+<a id="ga058f7f5f254453b5df93c093ebde122a" name="ga058f7f5f254453b5df93c093ebde122a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga058f7f5f254453b5df93c093ebde122a">&#9670;&#160;</a></span>generate_ray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d5e/structRay.html">Ray</a> generate_ray </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp;&#160;</td>
+          <td class="paramname"><em>camera</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>depth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>给定成像平面的宽度和高度、成像平面上的坐标、成像平面的深度和相机，生成一条射线。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>成像平面的宽度（以像素计） </td></tr>
+    <tr><td class="paramname">height</td><td>成像平面的高度（以像素计） </td></tr>
+    <tr><td class="paramname">x</td><td>成像平面上指定点的 x 坐标（宽度方向，以像素计） </td></tr>
+    <tr><td class="paramname">y</td><td>成像平面上指定点的 y 坐标（高度方向，以像素计） </td></tr>
+    <tr><td class="paramname">camera</td><td>指定的相机 </td></tr>
+    <tr><td class="paramname">depth</td><td>成像平面在指定相机观察空间 (view space) 下的深度值（应当为正数）</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>构造出的射线 </dd></dl>
+
+</div>
+</div>
+<a id="ga1a3a6b802c525058a523c2dadaae1f2b" name="ga1a3a6b802c525058a523c2dadaae1f2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1a3a6b802c525058a523c2dadaae1f2b">&#9670;&#160;</a></span>naive_intersect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a> &gt; naive_intersect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>ray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Matrix4f&#160;</td>
+          <td class="paramname"><em>model</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用朴素方法判断射线是否与给定的 mesh 相交。 </p>
+<p>这个函数顺序遍历 mesh 中的所有面片，逐一判断射线是否与之相交，最终取所有交点中 \(t\) 值最小的一个作为结果。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ray</td><td>射线 </td></tr>
+    <tr><td class="paramname">mesh</td><td>指定的 mesh </td></tr>
+    <tr><td class="paramname">model</td><td>这个 mesh 对应的模型变换矩阵 (model transform)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>一个 <code>std::optional</code> 对象，若相交，则此对象有值 (<code>has_value() == true</code>)；不相交则返回 <code>std::nullopt</code> 。 </dd></dl>
+
+</div>
+</div>
+<a id="gab851f3686bc57e3a8cc135f68f3871a5" name="gab851f3686bc57e3a8cc135f68f3871a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab851f3686bc57e3a8cc135f68f3871a5">&#9670;&#160;</a></span>ray_triangle_intersect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a> &gt; ray_triangle_intersect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>ray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>判断光线ray是否与某个面片相交 </p>
+<p>这个函数判断是否与一个三角形面片相交</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ray</td><td>射线 </td></tr>
+    <tr><td class="paramname">mesh</td><td>面片所在的mesh </td></tr>
+    <tr><td class="paramname">index</td><td>面片的索引</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>一个 <code>std::optional</code> 对象，若相交，则此对象有值 (<code>has_value() == true</code>)；不相交则返回 <code>std::nullopt</code> 。 </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

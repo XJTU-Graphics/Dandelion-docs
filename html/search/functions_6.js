@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['generate_5fray_0',['generate_ray',['../db/d81/group__utils.html#ga058f7f5f254453b5df93c093ebde122a',1,'generate_ray(int width, int height, int x, int y, Camera &amp;camera, float depth):&#160;ray.cpp'],['../db/d81/group__utils.html#ga058f7f5f254453b5df93c093ebde122a',1,'generate_ray(int width, int height, int x, int y, Camera &amp;camera, float depth):&#160;ray.cpp']]],
+  ['generate_5fray_0',['generate_ray',['../db/d81/group__rendering.html#ga058f7f5f254453b5df93c093ebde122a',1,'generate_ray(int width, int height, int x, int y, Camera &amp;camera, float depth):&#160;ray.cpp'],['../db/d81/group__rendering.html#ga058f7f5f254453b5df93c093ebde122a',1,'generate_ray(int width, int height, int x, int y, Camera &amp;camera, float depth):&#160;ray.cpp']]],
   ['get_5faabb_1',['get_aabb',['../da/d70/aabb_8h.html#a57c55234c2237bd8e3c68da0a930c095',1,'aabb.cpp']]],
   ['get_5fdpi_2',['get_dpi',['../df/d1e/classPlatform.html#a9de7ff9bee337082d0f8802b5bf8fabe',1,'Platform']]],
   ['get_5fgl_5ftype_5fenum_3',['get_GL_type_enum',['../de/d8b/group__platform.html#ga6efffcb404895fd65d719751e0c1a617',1,'GL']]],

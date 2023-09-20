@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.1</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('d5/d92/ray_8h.html','../../'); initRes
   <div class="summary">
 <a href="#nested-classes">类</a> &#124;
 <a href="#func-members">函数</a>  </div>
-  <div class="headertitle"><div class="title">ray.h 文件参考<div class="ingroups"><a class="el" href="../../db/d81/group__utils.html">小工具</a></div></div></div>
+  <div class="headertitle"><div class="title">ray.h 文件参考<div class="ingroups"><a class="el" href="../../db/d81/group__utils.html">杂项工具</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -130,13 +130,13 @@ $(document).ready(function(){initNavTree('d5/d92/ray_8h.html','../../'); initRes
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 函数</h2></td></tr>
-<tr class="memitem:ga058f7f5f254453b5df93c093ebde122a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d5e/structRay.html">Ray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga058f7f5f254453b5df93c093ebde122a">generate_ray</a> (int width, int height, int x, int y, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp;camera, float depth)</td></tr>
+<tr class="memitem:ga058f7f5f254453b5df93c093ebde122a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d5e/structRay.html">Ray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__rendering.html#ga058f7f5f254453b5df93c093ebde122a">generate_ray</a> (int width, int height, int x, int y, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp;camera, float depth)</td></tr>
 <tr class="memdesc:ga058f7f5f254453b5df93c093ebde122a"><td class="mdescLeft">&#160;</td><td class="mdescRight">给定成像平面的宽度和高度、成像平面上的坐标、成像平面的深度和相机，生成一条射线。  <br /></td></tr>
 <tr class="separator:ga058f7f5f254453b5df93c093ebde122a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab851f3686bc57e3a8cc135f68f3871a5"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#gab851f3686bc57e3a8cc135f68f3871a5">ray_triangle_intersect</a> (const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray, const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;mesh, size_t index)</td></tr>
+<tr class="memitem:gab851f3686bc57e3a8cc135f68f3871a5"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__rendering.html#gab851f3686bc57e3a8cc135f68f3871a5">ray_triangle_intersect</a> (const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray, const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;mesh, size_t index)</td></tr>
 <tr class="memdesc:gab851f3686bc57e3a8cc135f68f3871a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断光线ray是否与某个面片相交  <br /></td></tr>
 <tr class="separator:gab851f3686bc57e3a8cc135f68f3871a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1a3a6b802c525058a523c2dadaae1f2b"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga1a3a6b802c525058a523c2dadaae1f2b">naive_intersect</a> (const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray, const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;mesh, const Eigen::Matrix4f model)</td></tr>
+<tr class="memitem:ga1a3a6b802c525058a523c2dadaae1f2b"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__rendering.html#ga1a3a6b802c525058a523c2dadaae1f2b">naive_intersect</a> (const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray, const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;mesh, const Eigen::Matrix4f model)</td></tr>
 <tr class="memdesc:ga1a3a6b802c525058a523c2dadaae1f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">用朴素方法判断射线是否与给定的 mesh 相交。  <br /></td></tr>
 <tr class="separator:ga1a3a6b802c525058a523c2dadaae1f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

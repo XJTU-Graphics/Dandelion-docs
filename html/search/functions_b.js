@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['naive_5fintersect_0',['naive_intersect',['../db/d81/group__utils.html#ga1a3a6b802c525058a523c2dadaae1f2b',1,'ray.h']]],
+  ['naive_5fintersect_0',['naive_intersect',['../db/d81/group__rendering.html#ga1a3a6b802c525058a523c2dadaae1f2b',1,'ray.h']]],
   ['neighborhood_5fcenter_1',['neighborhood_center',['../df/dd0/structVertex.html#a49dd65c5b9eedff013131bbae9264f49',1,'Vertex']]],
   ['new_5fedge_2',['new_edge',['../dc/d6d/classHalfedgeMesh.html#a6d1f8dc7b7973b0a5d133cd9b9ac5cd3',1,'HalfedgeMesh']]],
   ['new_5fface_3',['new_face',['../dc/d6d/classHalfedgeMesh.html#a19cdd6ee69d015c4d73235ccfe61cff8',1,'HalfedgeMesh']]],

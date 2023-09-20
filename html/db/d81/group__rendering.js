@@ -92,6 +92,8 @@ var group__rendering =
       [ "modified", "d8/d4b/classObject.html#abcf908134541bea512ca0148e05f1f44", null ],
       [ "name", "d8/d4b/classObject.html#a24457e0a387492c80594aec7681a2277", null ],
       [ "prev_state", "d8/d4b/classObject.html#a5fb00c4ab2fd22c033aae243bbb1e10a", null ],
+      [ "rotation", "d8/d4b/classObject.html#a770438fbce9eb0bc063547f0f77e0b30", null ],
+      [ "scaling", "d8/d4b/classObject.html#ad39b7fd1eb954cc7890dd2713be6d3f6", null ],
       [ "velocity", "d8/d4b/classObject.html#a72eed21f81afdf95370d638db35b59e1", null ],
       [ "visible", "d8/d4b/classObject.html#ac2b299eaa47a407bca0e9b47205edd99", null ]
     ] ],
@@ -125,5 +127,8 @@ var group__rendering =
       [ "face_index", "d6/d30/structIntersection.html#a8eb314eb1047af071a62e692e7deec76", null ],
       [ "normal", "d6/d30/structIntersection.html#a477a228b3a9a1691c1ebad8776ec511c", null ],
       [ "t", "d6/d30/structIntersection.html#a369acde39ebf5283fb012181cd262055", null ]
-    ] ]
+    ] ],
+    [ "generate_ray", "db/d81/group__rendering.html#ga058f7f5f254453b5df93c093ebde122a", null ],
+    [ "naive_intersect", "db/d81/group__rendering.html#ga1a3a6b802c525058a523c2dadaae1f2b", null ],
+    [ "ray_triangle_intersect", "db/d81/group__rendering.html#gab851f3686bc57e3a8cc135f68f3871a5", null ]
 ];

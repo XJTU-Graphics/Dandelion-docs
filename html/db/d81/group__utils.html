@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dandelion: 小工具</title>
+<title>Dandelion: 杂项工具</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.1</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('db/d81/group__utils.html','../../'); i
 <a href="#nested-classes">类</a> &#124;
 <a href="#define-members">宏定义</a> &#124;
 <a href="#func-members">函数</a>  </div>
-  <div class="headertitle"><div class="title">小工具</div></div>
+  <div class="headertitle"><div class="title">杂项工具</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -189,10 +189,9 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ga46f6553c90bf08999d0ba4c86130986d"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>clamp</b> (T low, T high, T value)</td></tr>
 <tr class="memdesc:ga46f6553c90bf08999d0ba4c86130986d"><td class="mdescLeft">&#160;</td><td class="mdescRight">将一个数截断在给定的上下界之间 <br /></td></tr>
 <tr class="separator:ga46f6553c90bf08999d0ba4c86130986d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4d6e55d71f27749e7802ef2d17f4fed1"><td class="memTemplParams" colspan="2"><a id="ga4d6e55d71f27749e7802ef2d17f4fed1" name="ga4d6e55d71f27749e7802ef2d17f4fed1"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga4d6e55d71f27749e7802ef2d17f4fed1"><td class="memTemplItemLeft" align="right" valign="top">constexpr Eigen::Vector&lt; T, 4 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_vec4</b> (Eigen::Vector&lt; T, 3 &gt; vec3)</td></tr>
-<tr class="memdesc:ga4d6e55d71f27749e7802ef2d17f4fed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">将一个 \(1\times 3\)方向向量转化为 \(1\times 4\)的方向向量 <br /></td></tr>
+<tr class="memitem:ga4d6e55d71f27749e7802ef2d17f4fed1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga4d6e55d71f27749e7802ef2d17f4fed1"><td class="memTemplItemLeft" align="right" valign="top">constexpr Eigen::Vector&lt; T, 4 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga4d6e55d71f27749e7802ef2d17f4fed1">to_vec4</a> (Eigen::Vector&lt; T, 3 &gt; vec3)</td></tr>
+<tr class="memdesc:ga4d6e55d71f27749e7802ef2d17f4fed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">将代表方向的三维向量转换为它的齐次坐标形式。  <br /></td></tr>
 <tr class="separator:ga4d6e55d71f27749e7802ef2d17f4fed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga45d287464d22e5ef6cc281294b2d9c44"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga45d287464d22e5ef6cc281294b2d9c44">reflect</a> (const Eigen::Vector3f &amp;I, const Eigen::Vector3f &amp;N)</td></tr>
 <tr class="memdesc:ga45d287464d22e5ef6cc281294b2d9c44"><td class="mdescLeft">&#160;</td><td class="mdescRight">求向量 \(\mathbf{I}\) 关于向量 \(\mathbf{N}\) 的反射。  <br /></td></tr>
@@ -206,15 +205,6 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ga35871f456d2ecb7c9d8ea653197c12cf"><td class="memTemplItemLeft" align="right" valign="top">std::tuple&lt; T, T, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga35871f456d2ecb7c9d8ea653197c12cf">quaternion_to_ZYX_euler</a> (T w, T x, T y, T z)</td></tr>
 <tr class="memdesc:ga35871f456d2ecb7c9d8ea653197c12cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">将旋转的四元数表示形式转换为 ZYX 欧拉角表示形式。  <br /></td></tr>
 <tr class="separator:ga35871f456d2ecb7c9d8ea653197c12cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga058f7f5f254453b5df93c093ebde122a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d5e/structRay.html">Ray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga058f7f5f254453b5df93c093ebde122a">generate_ray</a> (int width, int height, int x, int y, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp;camera, float depth)</td></tr>
-<tr class="memdesc:ga058f7f5f254453b5df93c093ebde122a"><td class="mdescLeft">&#160;</td><td class="mdescRight">给定成像平面的宽度和高度、成像平面上的坐标、成像平面的深度和相机，生成一条射线。  <br /></td></tr>
-<tr class="separator:ga058f7f5f254453b5df93c093ebde122a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab851f3686bc57e3a8cc135f68f3871a5"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#gab851f3686bc57e3a8cc135f68f3871a5">ray_triangle_intersect</a> (const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray, const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;mesh, size_t index)</td></tr>
-<tr class="memdesc:gab851f3686bc57e3a8cc135f68f3871a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断光线ray是否与某个面片相交  <br /></td></tr>
-<tr class="separator:gab851f3686bc57e3a8cc135f68f3871a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1a3a6b802c525058a523c2dadaae1f2b"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga1a3a6b802c525058a523c2dadaae1f2b">naive_intersect</a> (const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray, const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;mesh, const Eigen::Matrix4f model)</td></tr>
-<tr class="memdesc:ga1a3a6b802c525058a523c2dadaae1f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">用朴素方法判断射线是否与给定的 mesh 相交。  <br /></td></tr>
-<tr class="separator:ga1a3a6b802c525058a523c2dadaae1f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga59f39d17248f4e72b89867b326d1cd76"><td class="memItemLeft" align="right" valign="top">constexpr unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d81/group__utils.html#ga59f39d17248f4e72b89867b326d1cd76">vertex_position_location</a> = 0</td></tr>
 <tr class="separator:ga59f39d17248f4e72b89867b326d1cd76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa30b93e8006d140b22dc6d5a7cd167eb"><td class="memItemLeft" align="right" valign="top"><a id="gaa30b93e8006d140b22dc6d5a7cd167eb" name="gaa30b93e8006d140b22dc6d5a7cd167eb"></a>
@@ -263,118 +253,6 @@ constexpr unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>ver
 </div>
 </div>
 <h2 class="groupheader">函数说明</h2>
-<a id="ga058f7f5f254453b5df93c093ebde122a" name="ga058f7f5f254453b5df93c093ebde122a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga058f7f5f254453b5df93c093ebde122a">&#9670;&#160;</a></span>generate_ray()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../dd/d5e/structRay.html">Ray</a> generate_ray </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp;&#160;</td>
-          <td class="paramname"><em>camera</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>depth</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>给定成像平面的宽度和高度、成像平面上的坐标、成像平面的深度和相机，生成一条射线。 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">width</td><td>成像平面的宽度（以像素计） </td></tr>
-    <tr><td class="paramname">height</td><td>成像平面的高度（以像素计） </td></tr>
-    <tr><td class="paramname">x</td><td>成像平面上指定点的 x 坐标（宽度方向，以像素计） </td></tr>
-    <tr><td class="paramname">y</td><td>成像平面上指定点的 y 坐标（高度方向，以像素计） </td></tr>
-    <tr><td class="paramname">camera</td><td>指定的相机 </td></tr>
-    <tr><td class="paramname">depth</td><td>成像平面在指定相机观察空间 (view space) 下的深度值（应当为正数）</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>构造出的射线 </dd></dl>
-
-</div>
-</div>
-<a id="ga1a3a6b802c525058a523c2dadaae1f2b" name="ga1a3a6b802c525058a523c2dadaae1f2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1a3a6b802c525058a523c2dadaae1f2b">&#9670;&#160;</a></span>naive_intersect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::optional&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a> &gt; naive_intersect </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;&#160;</td>
-          <td class="paramname"><em>ray</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;&#160;</td>
-          <td class="paramname"><em>mesh</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Eigen::Matrix4f&#160;</td>
-          <td class="paramname"><em>model</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>用朴素方法判断射线是否与给定的 mesh 相交。 </p>
-<p>这个函数顺序遍历 mesh 中的所有面片，逐一判断射线是否与之相交，最终取所有交点中 \(t\) 值最小的一个作为结果。</p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ray</td><td>射线 </td></tr>
-    <tr><td class="paramname">mesh</td><td>指定的 mesh </td></tr>
-    <tr><td class="paramname">model</td><td>这个 mesh 对应的模型变换矩阵 (model transform)</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>一个 <code>std::optional</code> 对象，若相交，则此对象有值 (<code>has_value() == true</code>)；不相交则返回 <code>std::nullopt</code> 。 </dd></dl>
-
-</div>
-</div>
 <a id="ga35871f456d2ecb7c9d8ea653197c12cf" name="ga35871f456d2ecb7c9d8ea653197c12cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga35871f456d2ecb7c9d8ea653197c12cf">&#9670;&#160;</a></span>quaternion_to_ZYX_euler()</h2>
 
@@ -427,55 +305,9 @@ template&lt;typename T &gt; </div>
 <p>这个函数采用 ZYX 顺规（即依次绕自身 \(z, y, x\) 轴旋转）。在 Dandelion 的坐标系约定下，ZYX 顺规对应 roll-yaw-pitch 旋转顺序（滚转、航向、俯仰）。</p>
 <p>由于欧拉角固有的缺陷，这个函数并不能消除航向角（或称方向角 yaw）在 \(\pm 90^\circ\) 附近时产生的万向锁和抖动问题。</p>
 <p>虽然函数的返回值是 <code>tuple</code>，但使用 <code>tuple</code> 接受返回值并不方便，建议用结构化绑定 </p><div class="fragment"><div class="line"><span class="keyword">auto</span> [x_angle, y_angle, z_angle] = <a class="code hl_function" href="../../db/d81/group__utils.html#ga35871f456d2ecb7c9d8ea653197c12cf">quaternion_to_ZYX_euler</a>(w, x, y, z);</div>
-<div class="ttc" id="agroup__utils_html_ga35871f456d2ecb7c9d8ea653197c12cf"><div class="ttname"><a href="../../db/d81/group__utils.html#ga35871f456d2ecb7c9d8ea653197c12cf">quaternion_to_ZYX_euler</a></div><div class="ttdeci">std::tuple&lt; T, T, T &gt; quaternion_to_ZYX_euler(T w, T x, T y, T z)</div><div class="ttdoc">将旋转的四元数表示形式转换为 ZYX 欧拉角表示形式。</div><div class="ttdef"><b>Definition:</b> math.hpp:143</div></div>
+<div class="ttc" id="agroup__utils_html_ga35871f456d2ecb7c9d8ea653197c12cf"><div class="ttname"><a href="../../db/d81/group__utils.html#ga35871f456d2ecb7c9d8ea653197c12cf">quaternion_to_ZYX_euler</a></div><div class="ttdeci">std::tuple&lt; T, T, T &gt; quaternion_to_ZYX_euler(T w, T x, T y, T z)</div><div class="ttdoc">将旋转的四元数表示形式转换为 ZYX 欧拉角表示形式。</div><div class="ttdef"><b>Definition:</b> math.hpp:150</div></div>
 </div><!-- fragment --><p> 或 <code>std::tie</code> 来接受返回值。</p>
-<dl class="section return"><dt>返回</dt><dd>一个元组，它的三个分量依次是绕 x 轴、绕 y 轴和绕 z 轴的旋转角。 </dd></dl>
-
-</div>
-</div>
-<a id="gab851f3686bc57e3a8cc135f68f3871a5" name="gab851f3686bc57e3a8cc135f68f3871a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab851f3686bc57e3a8cc135f68f3871a5">&#9670;&#160;</a></span>ray_triangle_intersect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::optional&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a> &gt; ray_triangle_intersect </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;&#160;</td>
-          <td class="paramname"><em>ray</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;&#160;</td>
-          <td class="paramname"><em>mesh</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>index</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>判断光线ray是否与某个面片相交 </p>
-<p>这个函数判断是否与一个三角形面片相交</p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ray</td><td>射线 </td></tr>
-    <tr><td class="paramname">mesh</td><td>面片所在的mesh </td></tr>
-    <tr><td class="paramname">index</td><td>面片的索引</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>一个 <code>std::optional</code> 对象，若相交，则此对象有值 (<code>has_value() == true</code>)；不相交则返回 <code>std::nullopt</code> 。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>一个元组，它的三个分量依次是绕 x 轴、绕 y 轴和绕 z 轴的旋转角（角度制）。 </dd></dl>
 
 </div>
 </div>
@@ -521,6 +353,37 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ga4d6e55d71f27749e7802ef2d17f4fed1" name="ga4d6e55d71f27749e7802ef2d17f4fed1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4d6e55d71f27749e7802ef2d17f4fed1">&#9670;&#160;</a></span>to_vec4()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr Eigen::Vector&lt; T, 4 &gt; to_vec4 </td>
+          <td>(</td>
+          <td class="paramtype">Eigen::Vector&lt; T, 3 &gt;&#160;</td>
+          <td class="paramname"><em>vec3</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将代表方向的三维向量转换为它的齐次坐标形式。 </p>
+<p>该函数在一个 \(3\times 1\)的向量的末尾补 0 ，从而将其转换为 \(4\times 1\)的方向向量。 如欲将三维的点转换为齐次坐标形式，请直接调用 <code>Eigen::Vector</code> 类型的 <code>homogeneous</code> 方法。 </p>
 
 </div>
 </div>

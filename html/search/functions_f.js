@@ -4,7 +4,7 @@ var searchData=
   ['rasterize_5ftriangle_1',['rasterize_triangle',['../d3/d7a/classRasterizer.html#aeb3cab09f4d3aebd6768455cae586738',1,'Rasterizer']]],
   ['rasterizer_2',['Rasterizer',['../d3/d7a/classRasterizer.html#a5f93bacb61aa74392378ff0186abb7f3',1,'Rasterizer']]],
   ['ray_5fnode_5fintersect_3',['ray_node_intersect',['../de/de9/classBVH.html#ac67108b0bb7416848901ec8337113751',1,'BVH']]],
-  ['ray_5ftriangle_5fintersect_4',['ray_triangle_intersect',['../db/d81/group__utils.html#gab851f3686bc57e3a8cc135f68f3871a5',1,'ray_triangle_intersect(const Ray &amp;ray, const GL::Mesh &amp;mesh, size_t index):&#160;ray.cpp'],['../db/d81/group__utils.html#gab851f3686bc57e3a8cc135f68f3871a5',1,'ray_triangle_intersect(const Ray &amp;ray, const GL::Mesh &amp;mesh, size_t index):&#160;ray.cpp']]],
+  ['ray_5ftriangle_5fintersect_4',['ray_triangle_intersect',['../db/d81/group__rendering.html#gab851f3686bc57e3a8cc135f68f3871a5',1,'ray_triangle_intersect(const Ray &amp;ray, const GL::Mesh &amp;mesh, size_t index):&#160;ray.cpp'],['../db/d81/group__rendering.html#gab851f3686bc57e3a8cc135f68f3871a5',1,'ray_triangle_intersect(const Ray &amp;ray, const GL::Mesh &amp;mesh, size_t index):&#160;ray.cpp']]],
   ['rebuild_5fbvh_5',['rebuild_BVH',['../d8/d4b/classObject.html#a4eae75848cc2f863a790d8da3014549f',1,'Object']]],
   ['recursively_5fbuild_6',['recursively_build',['../de/de9/classBVH.html#a5348f49eeeaac185c9fd06bec7c35286',1,'BVH']]],
   ['recursively_5fdelete_7',['recursively_delete',['../de/de9/classBVH.html#a542dfefd482d2b59254e010e78a20c43',1,'BVH']]],
