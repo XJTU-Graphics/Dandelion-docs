@@ -3,20 +3,21 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: solver.h 文件参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type="text/javascript">
 window.MathJax = {
   options: {
@@ -28,7 +29,6 @@ window.MathJax = {
 <script type="text/javascript" id="MathJax-script" async="async" src="../../mathjax/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.2</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,7 +47,7 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.9.6 -->
+<!-- 制作者 Doxygen 1.10.0 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -59,7 +59,7 @@ var searchBox = new SearchBox("searchBox", "../../search/",'.html');
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('../../',true,false,'search.php','搜索');
-  $(document).ready(function() { init_search(); });
+  $(function() { init_search(); });
 });
 /* @license-end */
 </script>
@@ -77,7 +77,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('d4/d20/solver_8h.html','../../'); initResizable(); });
+$(function(){initNavTree('d4/d20/solver_8h.html','../../'); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -117,19 +117,19 @@ $(document).ready(function(){initNavTree('d4/d20/solver_8h.html','../../'); init
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 函数</h2></td></tr>
-<tr class="memitem:a723827a55b0f6b55f9ec9a87b7a2d0b5"><td class="memItemLeft" align="right" valign="top"><a id="a723827a55b0f6b55f9ec9a87b7a2d0b5" name="a723827a55b0f6b55f9ec9a87b7a2d0b5"></a>
+<tr class="memitem:a723827a55b0f6b55f9ec9a87b7a2d0b5" id="r_a723827a55b0f6b55f9ec9a87b7a2d0b5"><td class="memItemLeft" align="right" valign="top"><a id="a723827a55b0f6b55f9ec9a87b7a2d0b5" name="a723827a55b0f6b55f9ec9a87b7a2d0b5"></a>
 <a class="el" href="../../d1/d96/structKineticState.html">KineticState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>forward_euler_step</b> (const <a class="el" href="../../d1/d96/structKineticState.html">KineticState</a> &amp;previous, const <a class="el" href="../../d1/d96/structKineticState.html">KineticState</a> &amp;current)</td></tr>
 <tr class="memdesc:a723827a55b0f6b55f9ec9a87b7a2d0b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">前向欧拉法求解器。 <br /></td></tr>
 <tr class="separator:a723827a55b0f6b55f9ec9a87b7a2d0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1658b0d74382082614c979f76f65d69a"><td class="memItemLeft" align="right" valign="top"><a id="a1658b0d74382082614c979f76f65d69a" name="a1658b0d74382082614c979f76f65d69a"></a>
+<tr class="memitem:a1658b0d74382082614c979f76f65d69a" id="r_a1658b0d74382082614c979f76f65d69a"><td class="memItemLeft" align="right" valign="top"><a id="a1658b0d74382082614c979f76f65d69a" name="a1658b0d74382082614c979f76f65d69a"></a>
 <a class="el" href="../../d1/d96/structKineticState.html">KineticState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>runge_kutta_step</b> (const <a class="el" href="../../d1/d96/structKineticState.html">KineticState</a> &amp;previous, const <a class="el" href="../../d1/d96/structKineticState.html">KineticState</a> &amp;current)</td></tr>
 <tr class="memdesc:a1658b0d74382082614c979f76f65d69a"><td class="mdescLeft">&#160;</td><td class="mdescRight">四阶龙格-库塔法求解器。 <br /></td></tr>
 <tr class="separator:a1658b0d74382082614c979f76f65d69a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e9a67b000cd934b584bda19d460c837"><td class="memItemLeft" align="right" valign="top"><a id="a0e9a67b000cd934b584bda19d460c837" name="a0e9a67b000cd934b584bda19d460c837"></a>
+<tr class="memitem:a0e9a67b000cd934b584bda19d460c837" id="r_a0e9a67b000cd934b584bda19d460c837"><td class="memItemLeft" align="right" valign="top"><a id="a0e9a67b000cd934b584bda19d460c837" name="a0e9a67b000cd934b584bda19d460c837"></a>
 <a class="el" href="../../d1/d96/structKineticState.html">KineticState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>backward_euler_step</b> (const <a class="el" href="../../d1/d96/structKineticState.html">KineticState</a> &amp;previous, const <a class="el" href="../../d1/d96/structKineticState.html">KineticState</a> &amp;current)</td></tr>
 <tr class="memdesc:a0e9a67b000cd934b584bda19d460c837"><td class="mdescLeft">&#160;</td><td class="mdescRight">后向（隐式）欧拉法求解器。 <br /></td></tr>
 <tr class="separator:a0e9a67b000cd934b584bda19d460c837"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8646e59c916e93fc88f4db99ddc27722"><td class="memItemLeft" align="right" valign="top"><a id="a8646e59c916e93fc88f4db99ddc27722" name="a8646e59c916e93fc88f4db99ddc27722"></a>
+<tr class="memitem:a8646e59c916e93fc88f4db99ddc27722" id="r_a8646e59c916e93fc88f4db99ddc27722"><td class="memItemLeft" align="right" valign="top"><a id="a8646e59c916e93fc88f4db99ddc27722" name="a8646e59c916e93fc88f4db99ddc27722"></a>
 <a class="el" href="../../d1/d96/structKineticState.html">KineticState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>symplectic_euler_step</b> (const <a class="el" href="../../d1/d96/structKineticState.html">KineticState</a> &amp;previous, const <a class="el" href="../../d1/d96/structKineticState.html">KineticState</a> &amp;current)</td></tr>
 <tr class="memdesc:a8646e59c916e93fc88f4db99ddc27722"><td class="mdescLeft">&#160;</td><td class="mdescRight">对称（半隐式）欧拉法求解器。 <br /></td></tr>
 <tr class="separator:a8646e59c916e93fc88f4db99ddc27722"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('d4/d20/solver_8h.html','../../'); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_d73d1ee04cc237a5854777ea99c55872.html">simulation</a></li><li class="navelem"><a class="el" href="../../d4/d20/solver_8h.html">solver.h</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

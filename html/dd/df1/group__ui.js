@@ -74,6 +74,6 @@ var group__ui =
       [ "on_selection_canceled", "d1/d84/classUI_1_1Toolbar.html#afc398afcfb71e5cf3c8a2aca31559eb9", null ],
       [ "selected_element", "d1/d84/classUI_1_1Toolbar.html#a0dcd3ac429afd8adfed64e5039dc89e3", null ]
     ] ],
-    [ "SelectableType", "dd/df1/group__ui.html#gadf4319d83c84f66dfb8994337dae0b1b", null ],
+    [ "SelectableType", "dd/df1/group__ui.html#ga638a76ca8c5a67cdc5a1e918f7c6e5c1", null ],
     [ "UI::MAX_SCENE_NODES", "dd/df1/group__ui.html#ga517fcfd7da21de45b1dda1b08d77bfb9", null ]
 ];

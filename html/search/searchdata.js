@@ -1,6 +1,6 @@
 var indexSectionsWithContent =
 {
-  0: "abcdefghiklmnopqrstuvwx~几平开杂构物离项",
+  0: "abcdefghiklmnopqrstuvwx~代依几工平开拼提杂构物界离组编非项",
   1: "abcdefghiklmoprstuvw",
   2: "abcfghklmoprst",
   3: "abcdefghilmnopqrstuvx~",
@@ -8,7 +8,7 @@ var indexSectionsWithContent =
   5: "s",
   6: "hw",
   7: "o",
-  8: "u几平杂物离",
+  8: "u几平杂物界离",
   9: "d开构项"
 };
 

@@ -9,15 +9,15 @@ var searchData=
   ['pick_5fobject_6',['pick_object',['../d9/d85/classController.html#ae6b743008bc87ed393eabf885d2f9e52',1,'Controller']]],
   ['picking_5fenabled_5fmodes_7',['picking_enabled_modes',['../dc/df7/rendering_8hpp.html#a2d1f9d29e3d9cadcf469f07790d4be18',1,'rendering.hpp']]],
   ['picking_5fray_8',['picking_ray',['../d9/d85/classController.html#aaa4a1e64142b9502bb07c23a503bd74e',1,'Controller']]],
-  ['platform_9',['Platform',['../df/d1e/classPlatform.html#a52028ea2984cbfdf8e9f42ee87f66cfe',1,'Platform::Platform()'],['../df/d1e/classPlatform.html',1,'Platform']]],
+  ['platform_9',['Platform',['../df/d1e/classPlatform.html',1,'Platform'],['../df/d1e/classPlatform.html#a52028ea2984cbfdf8e9f42ee87f66cfe',1,'Platform::Platform()']]],
   ['platform_2eh_10',['platform.h',['../de/d03/platform_8h.html',1,'']]],
   ['point_5fsize_11',['point_size',['../dc/df7/rendering_8hpp.html#a7040e00a64700f0d2349c23740688f56',1,'rendering.hpp']]],
   ['pos_12',['pos',['../df/dd0/structVertex.html#af590da4b6d7ff4f46e36e866dbf18e26',1,'Vertex']]],
-  ['position_13',['position',['../d5/d79/structLight.html#ac485b2b57b34f6d01f316f57b40c2fed',1,'Light::position()'],['../d7/d7e/structCamera.html#ae52020b85d1f749f50c533fe10fc0f91',1,'Camera::position()'],['../d9/d78/structVertexShaderPayload.html#a3c40f970f62777cdd19e3257314c08cf',1,'VertexShaderPayload::position()']]],
+  ['position_13',['position',['../d9/d78/structVertexShaderPayload.html#a3c40f970f62777cdd19e3257314c08cf',1,'VertexShaderPayload::position'],['../d7/d7e/structCamera.html#ae52020b85d1f749f50c533fe10fc0f91',1,'Camera::position'],['../d5/d79/structLight.html#ac485b2b57b34f6d01f316f57b40c2fed',1,'Light::position']]],
   ['prev_14',['prev',['../df/d02/structHalfedge.html#a3641c6df7c8eb01d6380cd88987367fc',1,'Halfedge']]],
   ['prev_5fstate_15',['prev_state',['../d8/d4b/classObject.html#a5fb00c4ab2fd22c033aae243bbb1e10a',1,'Object']]],
   ['primitives_16',['primitives',['../de/de9/classBVH.html#a119c6238bc15396b707c46d0da433127',1,'BVH']]],
   ['process_5finput_17',['process_input',['../d9/d85/classController.html#aff4ccad882e4bab51ff03428c63e88f8',1,'Controller']]],
-  ['projection_18',['projection',['../d7/d7e/structCamera.html#ade56525b5437d9e2c8a890a734bc83d1',1,'Camera::projection()'],['../d3/d7a/classRasterizer.html#a32f4d6c66aa35f2ce8552832a2990989',1,'Rasterizer::projection()']]],
+  ['projection_18',['projection',['../d3/d7a/classRasterizer.html#a32f4d6c66aa35f2ce8552832a2990989',1,'Rasterizer::projection'],['../d7/d7e/structCamera.html#ade56525b5437d9e2c8a890a734bc83d1',1,'Camera::projection()']]],
   ['px_19',['px',['../de/d60/settings_8h.html#a53072ebbe79e8cd92487137cae89d590',1,'settings.h']]]
 ];

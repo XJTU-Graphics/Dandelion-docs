@@ -3,20 +3,21 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: render_engine.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type="text/javascript">
 window.MathJax = {
   options: {
@@ -28,7 +29,6 @@ window.MathJax = {
 <script type="text/javascript" id="MathJax-script" async="async" src="../../mathjax/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.2</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,7 +47,7 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.9.6 -->
+<!-- 制作者 Doxygen 1.10.0 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -59,11 +59,16 @@ var searchBox = new SearchBox("searchBox", "../../search/",'.html');
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('../../',true,false,'search.php','搜索');
-  $(document).ready(function() { init_search(); });
+  $(function() { init_search(); });
 });
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -77,7 +82,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('d7/da2/render__engine_8h_source.html','../../'); initResizable(); });
+$(function(){initNavTree('d7/da2/render__engine_8h_source.html','../../'); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -116,7 +121,7 @@ $(document).ready(function(){initNavTree('d7/da2/render__engine_8h_source.html',
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;Eigen/Geometry&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;spdlog/spdlog.h&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;../scene/scene.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="../../db/d83/scene_8h.html">../scene/scene.h</a>&quot;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"></span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">/*!</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * \file render/render_engine.h</span></div>
@@ -137,6 +142,7 @@ $(document).ready(function(){initNavTree('d7/da2/render__engine_8h_source.html',
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> * \~chinese</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> * \brief 负责实现整个渲染的接口</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="};">
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../d3/d2f/classRenderEngine.html">   32</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d3/d2f/classRenderEngine.html">RenderEngine</a></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">public</span>:</div>
@@ -167,12 +173,14 @@ $(document).ready(function(){initNavTree('d7/da2/render__engine_8h_source.html',
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">    /*! \~chinese whitted style渲染器*/</span></div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../d3/d2f/classRenderEngine.html#a6cdfad591cb7e9f8260537aaf79a5df4">   60</a></span>    std::unique_ptr&lt;WhittedRenderer&gt; <a class="code hl_variable" href="../../d3/d2f/classRenderEngine.html#a6cdfad591cb7e9f8260537aaf79a5df4">whitted_render</a>;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>};</div>
+</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment"></span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">/*!</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"> * \ingroup rendering</span></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment"> * \~chinese</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"> * \brief 负责实现Rasterizition的整个pipeline</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="};">
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../d7/db0/classRasterizerRenderer.html">   68</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d7/db0/classRasterizerRenderer.html">RasterizerRenderer</a></div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>{</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keyword">public</span>:</div>
@@ -189,12 +197,14 @@ $(document).ready(function(){initNavTree('d7/da2/render__engine_8h_source.html',
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    std::shared_ptr&lt;spdlog::logger&gt; logger;</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>};</div>
+</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment"></span> </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">/*!</span></div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment"> * \ingroup rendering</span></div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment"> * \~chinese</span></div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment"> * \brief 负责实现Whitted_style的整个pipeline</span></div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00090" data-start="{" data-end="};">
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="../../da/db7/classWhittedRenderer.html">   90</a></span><span class="keyword">class </span><a class="code hl_class" href="../../da/db7/classWhittedRenderer.html">WhittedRenderer</a></div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>{</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keyword">public</span>:</div>
@@ -234,34 +244,36 @@ $(document).ready(function(){initNavTree('d7/da2/render__engine_8h_source.html',
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    Eigen::Vector3f <a class="code hl_function" href="../../da/db7/classWhittedRenderer.html#a2e43a419ed22f6f4ae6c340456a8bf4d">cast_ray</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../dd/d5e/structRay.html">Ray</a>&amp; ray, <span class="keyword">const</span> <a class="code hl_class" href="../../d5/d9c/classScene.html">Scene</a>&amp; scene, <span class="keywordtype">int</span> depth);</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    std::shared_ptr&lt;spdlog::logger&gt; logger;</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>};</div>
+</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_RENDER_RENDER_ENGINE_H</span></div>
-<div class="ttc" id="aclassRasterizerRenderer_html"><div class="ttname"><a href="../../d7/db0/classRasterizerRenderer.html">RasterizerRenderer</a></div><div class="ttdoc">负责实现Rasterizition的整个pipeline</div><div class="ttdef"><b>Definition:</b> render_engine.h:69</div></div>
-<div class="ttc" id="aclassRasterizerRenderer_html_a7ff3f7eae7d21265a6f4e8c196645736"><div class="ttname"><a href="../../d7/db0/classRasterizerRenderer.html#a7ff3f7eae7d21265a6f4e8c196645736">RasterizerRenderer::render</a></div><div class="ttdeci">void render(const Scene &amp;scene)</div><div class="ttdef"><b>Definition:</b> rasterizer_renderer.cpp:32</div></div>
-<div class="ttc" id="aclassRasterizerRenderer_html_ad9aa891691c756d2dd480c1fda3d6dee"><div class="ttname"><a href="../../d7/db0/classRasterizerRenderer.html#ad9aa891691c756d2dd480c1fda3d6dee">RasterizerRenderer::render_mt</a></div><div class="ttdeci">void render_mt(const Scene &amp;scene)</div><div class="ttdef"><b>Definition:</b> rasterizer_renderer_mt.cpp:28</div></div>
-<div class="ttc" id="aclassRenderEngine_html"><div class="ttname"><a href="../../d3/d2f/classRenderEngine.html">RenderEngine</a></div><div class="ttdoc">负责实现整个渲染的接口</div><div class="ttdef"><b>Definition:</b> render_engine.h:33</div></div>
-<div class="ttc" id="aclassRenderEngine_html_a1c6688fe583a42b4b936e2bc869427d4"><div class="ttname"><a href="../../d3/d2f/classRenderEngine.html#a1c6688fe583a42b4b936e2bc869427d4">RenderEngine::n_threads</a></div><div class="ttdeci">int n_threads</div><div class="ttdef"><b>Definition:</b> render_engine.h:42</div></div>
-<div class="ttc" id="aclassRenderEngine_html_a3a417ded22847afe1b09d820d9016111"><div class="ttname"><a href="../../d3/d2f/classRenderEngine.html#a3a417ded22847afe1b09d820d9016111">RenderEngine::background_color</a></div><div class="ttdeci">static Eigen::Vector3f background_color</div><div class="ttdef"><b>Definition:</b> render_engine.h:55</div></div>
-<div class="ttc" id="aclassRenderEngine_html_a6cdfad591cb7e9f8260537aaf79a5df4"><div class="ttname"><a href="../../d3/d2f/classRenderEngine.html#a6cdfad591cb7e9f8260537aaf79a5df4">RenderEngine::whitted_render</a></div><div class="ttdeci">std::unique_ptr&lt; WhittedRenderer &gt; whitted_render</div><div class="ttdef"><b>Definition:</b> render_engine.h:60</div></div>
-<div class="ttc" id="aclassRenderEngine_html_a8a00eff19a34210acad2447e7fd358db"><div class="ttname"><a href="../../d3/d2f/classRenderEngine.html#a8a00eff19a34210acad2447e7fd358db">RenderEngine::rendering_res</a></div><div class="ttdeci">std::vector&lt; unsigned char &gt; rendering_res</div><div class="ttdef"><b>Definition:</b> render_engine.h:38</div></div>
-<div class="ttc" id="aclassRenderEngine_html_aa079a671bcaa22501bc07fb810cce53a"><div class="ttname"><a href="../../d3/d2f/classRenderEngine.html#aa079a671bcaa22501bc07fb810cce53a">RenderEngine::render</a></div><div class="ttdeci">void render(Scene &amp;scene, RendererType type)</div><div class="ttdoc">渲染器的渲染函数</div><div class="ttdef"><b>Definition:</b> render_engine.cpp:16</div></div>
-<div class="ttc" id="aclassRenderEngine_html_ac7a96cfda8281176abe4c57c093a889f"><div class="ttname"><a href="../../d3/d2f/classRenderEngine.html#ac7a96cfda8281176abe4c57c093a889f">RenderEngine::width</a></div><div class="ttdeci">float width</div><div class="ttdef"><b>Definition:</b> render_engine.h:40</div></div>
-<div class="ttc" id="aclassRenderEngine_html_adaf01cee431df0859ef5f2f580e8ebc0"><div class="ttname"><a href="../../d3/d2f/classRenderEngine.html#adaf01cee431df0859ef5f2f580e8ebc0">RenderEngine::rasterizer_render</a></div><div class="ttdeci">std::unique_ptr&lt; RasterizerRenderer &gt; rasterizer_render</div><div class="ttdef"><b>Definition:</b> render_engine.h:58</div></div>
-<div class="ttc" id="aclassScene_html"><div class="ttname"><a href="../../d5/d9c/classScene.html">Scene</a></div><div class="ttdoc">表示一个包含相机、光源、物体的完整场景。</div><div class="ttdef"><b>Definition:</b> scene.h:46</div></div>
-<div class="ttc" id="aclassWhittedRenderer_html"><div class="ttname"><a href="../../da/db7/classWhittedRenderer.html">WhittedRenderer</a></div><div class="ttdoc">负责实现Whitted_style的整个pipeline</div><div class="ttdef"><b>Definition:</b> render_engine.h:91</div></div>
-<div class="ttc" id="aclassWhittedRenderer_html_a2e43a419ed22f6f4ae6c340456a8bf4d"><div class="ttname"><a href="../../da/db7/classWhittedRenderer.html#a2e43a419ed22f6f4ae6c340456a8bf4d">WhittedRenderer::cast_ray</a></div><div class="ttdeci">Eigen::Vector3f cast_ray(const Ray &amp;ray, const Scene &amp;scene, int depth)</div><div class="ttdoc">实现光线追踪</div><div class="ttdef"><b>Definition:</b> whitted_renderer.cpp:162</div></div>
-<div class="ttc" id="aclassWhittedRenderer_html_a37457260b903ef3742b741cde1795db3"><div class="ttname"><a href="../../da/db7/classWhittedRenderer.html#a37457260b903ef3742b741cde1795db3">WhittedRenderer::render</a></div><div class="ttdeci">void render(Scene &amp;scene)</div><div class="ttdef"><b>Definition:</b> whitted_renderer.cpp:63</div></div>
-<div class="ttc" id="aclassWhittedRenderer_html_a9bd446f848764a7bfd5ce3737094ec59"><div class="ttname"><a href="../../da/db7/classWhittedRenderer.html#a9bd446f848764a7bfd5ce3737094ec59">WhittedRenderer::use_bvh</a></div><div class="ttdeci">bool use_bvh</div><div class="ttdef"><b>Definition:</b> render_engine.h:102</div></div>
-<div class="ttc" id="aclassWhittedRenderer_html_aae05cbee4a886faacbfeb68721f81b90"><div class="ttname"><a href="../../da/db7/classWhittedRenderer.html#aae05cbee4a886faacbfeb68721f81b90">WhittedRenderer::fresnel</a></div><div class="ttdeci">float fresnel(const Eigen::Vector3f &amp;I, const Eigen::Vector3f &amp;N, const float &amp;ior)</div><div class="ttdoc">菲涅尔方程根据观察角度计算反射光线的所占百分比</div><div class="ttdef"><b>Definition:</b> whitted_renderer.cpp:106</div></div>
-<div class="ttc" id="aclassWhittedRenderer_html_abefb80c7762a3c7d0a23af1cc765d36f"><div class="ttname"><a href="../../da/db7/classWhittedRenderer.html#abefb80c7762a3c7d0a23af1cc765d36f">WhittedRenderer::mirror_threshold</a></div><div class="ttdeci">static constexpr float mirror_threshold</div><div class="ttdef"><b>Definition:</b> render_engine.h:97</div></div>
-<div class="ttc" id="astructRay_html"><div class="ttname"><a href="../../dd/d5e/structRay.html">Ray</a></div><div class="ttdef"><b>Definition:</b> ray.h:24</div></div>
+<div class="ttc" id="aclassRasterizerRenderer_html"><div class="ttname"><a href="../../d7/db0/classRasterizerRenderer.html">RasterizerRenderer</a></div><div class="ttdoc">负责实现Rasterizition的整个pipeline</div><div class="ttdef"><b>Definition</b> render_engine.h:69</div></div>
+<div class="ttc" id="aclassRasterizerRenderer_html_a7ff3f7eae7d21265a6f4e8c196645736"><div class="ttname"><a href="../../d7/db0/classRasterizerRenderer.html#a7ff3f7eae7d21265a6f4e8c196645736">RasterizerRenderer::render</a></div><div class="ttdeci">void render(const Scene &amp;scene)</div><div class="ttdef"><b>Definition</b> rasterizer_renderer.cpp:32</div></div>
+<div class="ttc" id="aclassRasterizerRenderer_html_ad9aa891691c756d2dd480c1fda3d6dee"><div class="ttname"><a href="../../d7/db0/classRasterizerRenderer.html#ad9aa891691c756d2dd480c1fda3d6dee">RasterizerRenderer::render_mt</a></div><div class="ttdeci">void render_mt(const Scene &amp;scene)</div><div class="ttdef"><b>Definition</b> rasterizer_renderer_mt.cpp:28</div></div>
+<div class="ttc" id="aclassRenderEngine_html"><div class="ttname"><a href="../../d3/d2f/classRenderEngine.html">RenderEngine</a></div><div class="ttdoc">负责实现整个渲染的接口</div><div class="ttdef"><b>Definition</b> render_engine.h:33</div></div>
+<div class="ttc" id="aclassRenderEngine_html_a1c6688fe583a42b4b936e2bc869427d4"><div class="ttname"><a href="../../d3/d2f/classRenderEngine.html#a1c6688fe583a42b4b936e2bc869427d4">RenderEngine::n_threads</a></div><div class="ttdeci">int n_threads</div><div class="ttdef"><b>Definition</b> render_engine.h:42</div></div>
+<div class="ttc" id="aclassRenderEngine_html_a3a417ded22847afe1b09d820d9016111"><div class="ttname"><a href="../../d3/d2f/classRenderEngine.html#a3a417ded22847afe1b09d820d9016111">RenderEngine::background_color</a></div><div class="ttdeci">static Eigen::Vector3f background_color</div><div class="ttdef"><b>Definition</b> render_engine.h:55</div></div>
+<div class="ttc" id="aclassRenderEngine_html_a6cdfad591cb7e9f8260537aaf79a5df4"><div class="ttname"><a href="../../d3/d2f/classRenderEngine.html#a6cdfad591cb7e9f8260537aaf79a5df4">RenderEngine::whitted_render</a></div><div class="ttdeci">std::unique_ptr&lt; WhittedRenderer &gt; whitted_render</div><div class="ttdef"><b>Definition</b> render_engine.h:60</div></div>
+<div class="ttc" id="aclassRenderEngine_html_a8a00eff19a34210acad2447e7fd358db"><div class="ttname"><a href="../../d3/d2f/classRenderEngine.html#a8a00eff19a34210acad2447e7fd358db">RenderEngine::rendering_res</a></div><div class="ttdeci">std::vector&lt; unsigned char &gt; rendering_res</div><div class="ttdef"><b>Definition</b> render_engine.h:38</div></div>
+<div class="ttc" id="aclassRenderEngine_html_aa079a671bcaa22501bc07fb810cce53a"><div class="ttname"><a href="../../d3/d2f/classRenderEngine.html#aa079a671bcaa22501bc07fb810cce53a">RenderEngine::render</a></div><div class="ttdeci">void render(Scene &amp;scene, RendererType type)</div><div class="ttdoc">渲染器的渲染函数</div><div class="ttdef"><b>Definition</b> render_engine.cpp:16</div></div>
+<div class="ttc" id="aclassRenderEngine_html_ac7a96cfda8281176abe4c57c093a889f"><div class="ttname"><a href="../../d3/d2f/classRenderEngine.html#ac7a96cfda8281176abe4c57c093a889f">RenderEngine::width</a></div><div class="ttdeci">float width</div><div class="ttdef"><b>Definition</b> render_engine.h:40</div></div>
+<div class="ttc" id="aclassRenderEngine_html_adaf01cee431df0859ef5f2f580e8ebc0"><div class="ttname"><a href="../../d3/d2f/classRenderEngine.html#adaf01cee431df0859ef5f2f580e8ebc0">RenderEngine::rasterizer_render</a></div><div class="ttdeci">std::unique_ptr&lt; RasterizerRenderer &gt; rasterizer_render</div><div class="ttdef"><b>Definition</b> render_engine.h:58</div></div>
+<div class="ttc" id="aclassScene_html"><div class="ttname"><a href="../../d5/d9c/classScene.html">Scene</a></div><div class="ttdoc">表示一个包含相机、光源、物体的完整场景。</div><div class="ttdef"><b>Definition</b> scene.h:46</div></div>
+<div class="ttc" id="aclassWhittedRenderer_html"><div class="ttname"><a href="../../da/db7/classWhittedRenderer.html">WhittedRenderer</a></div><div class="ttdoc">负责实现Whitted_style的整个pipeline</div><div class="ttdef"><b>Definition</b> render_engine.h:91</div></div>
+<div class="ttc" id="aclassWhittedRenderer_html_a2e43a419ed22f6f4ae6c340456a8bf4d"><div class="ttname"><a href="../../da/db7/classWhittedRenderer.html#a2e43a419ed22f6f4ae6c340456a8bf4d">WhittedRenderer::cast_ray</a></div><div class="ttdeci">Eigen::Vector3f cast_ray(const Ray &amp;ray, const Scene &amp;scene, int depth)</div><div class="ttdoc">实现光线追踪</div><div class="ttdef"><b>Definition</b> whitted_renderer.cpp:162</div></div>
+<div class="ttc" id="aclassWhittedRenderer_html_a37457260b903ef3742b741cde1795db3"><div class="ttname"><a href="../../da/db7/classWhittedRenderer.html#a37457260b903ef3742b741cde1795db3">WhittedRenderer::render</a></div><div class="ttdeci">void render(Scene &amp;scene)</div><div class="ttdef"><b>Definition</b> whitted_renderer.cpp:63</div></div>
+<div class="ttc" id="aclassWhittedRenderer_html_a9bd446f848764a7bfd5ce3737094ec59"><div class="ttname"><a href="../../da/db7/classWhittedRenderer.html#a9bd446f848764a7bfd5ce3737094ec59">WhittedRenderer::use_bvh</a></div><div class="ttdeci">bool use_bvh</div><div class="ttdef"><b>Definition</b> render_engine.h:102</div></div>
+<div class="ttc" id="aclassWhittedRenderer_html_aae05cbee4a886faacbfeb68721f81b90"><div class="ttname"><a href="../../da/db7/classWhittedRenderer.html#aae05cbee4a886faacbfeb68721f81b90">WhittedRenderer::fresnel</a></div><div class="ttdeci">float fresnel(const Eigen::Vector3f &amp;I, const Eigen::Vector3f &amp;N, const float &amp;ior)</div><div class="ttdoc">菲涅尔方程根据观察角度计算反射光线的所占百分比</div><div class="ttdef"><b>Definition</b> whitted_renderer.cpp:106</div></div>
+<div class="ttc" id="aclassWhittedRenderer_html_abefb80c7762a3c7d0a23af1cc765d36f"><div class="ttname"><a href="../../da/db7/classWhittedRenderer.html#abefb80c7762a3c7d0a23af1cc765d36f">WhittedRenderer::mirror_threshold</a></div><div class="ttdeci">static constexpr float mirror_threshold</div><div class="ttdef"><b>Definition</b> render_engine.h:97</div></div>
+<div class="ttc" id="ascene_8h_html"><div class="ttname"><a href="../../db/d83/scene_8h.html">scene.h</a></div></div>
+<div class="ttc" id="astructRay_html"><div class="ttname"><a href="../../dd/d5e/structRay.html">Ray</a></div><div class="ttdef"><b>Definition</b> ray.h:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_e488ee1cea97fb16abdb5ccc78d2123b.html">render</a></li><li class="navelem"><a class="el" href="../../d7/da2/render__engine_8h.html">render_engine.h</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

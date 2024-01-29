@@ -10,7 +10,8 @@ var searchData=
   ['gl_5ficon_5ftexture_7',['gl_icon_texture',['../d6/de2/classUI_1_1Menubar.html#afdd9e1de6d82c2fe734891ae414575a3',1,'UI::Menubar']]],
   ['gl_5frendered_5ftexture_8',['gl_rendered_texture',['../d1/d84/classUI_1_1Toolbar.html#af5b4ea4e22b1ef5ff94c988fc4ce6adf',1,'UI::Toolbar']]],
   ['global_5finconsistent_9',['global_inconsistent',['../dc/d6d/classHalfedgeMesh.html#af5a3b8bbc464e803ad81e6879c80be62',1,'HalfedgeMesh']]],
-  ['group_10',['Group',['../d0/db7/classGroup.html',1,'Group'],['../d0/db7/classGroup.html#a0ab5261ef821603e3cb624915ac6af32',1,'Group::Group(const std::string &amp;group_name)'],['../d0/db7/classGroup.html#a0b6265dee2b5d160e5154140d808019a',1,'Group::Group(Group &amp;other)=delete']]],
-  ['group_2eh_11',['group.h',['../d9/dd1/group_8h.html',1,'']]],
-  ['groups_12',['groups',['../d5/d9c/classScene.html#a3f024af6f54b5cd0dd3ed11cd875c327',1,'Scene']]]
+  ['graphics_20组织成员_10',['XJTU-Graphics 组织成员',['../da/d2c/startup.html#member-submission',1,'']]],
+  ['group_11',['Group',['../d0/db7/classGroup.html',1,'Group'],['../d0/db7/classGroup.html#a0ab5261ef821603e3cb624915ac6af32',1,'Group::Group(const std::string &amp;group_name)'],['../d0/db7/classGroup.html#a0b6265dee2b5d160e5154140d808019a',1,'Group::Group(Group &amp;other)=delete']]],
+  ['group_2eh_12',['group.h',['../d9/dd1/group_8h.html',1,'']]],
+  ['groups_13',['groups',['../d5/d9c/classScene.html#a3f024af6f54b5cd0dd3ed11cd875c327',1,'Scene']]]
 ];

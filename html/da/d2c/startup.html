@@ -3,20 +3,21 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: 开始开发</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type="text/javascript">
 window.MathJax = {
   options: {
@@ -28,7 +29,6 @@ window.MathJax = {
 <script type="text/javascript" id="MathJax-script" async="async" src="../../mathjax/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.2</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,7 +47,7 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.9.6 -->
+<!-- 制作者 Doxygen 1.10.0 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -59,7 +59,7 @@ var searchBox = new SearchBox("searchBox", "../../search/",'.html');
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('../../',true,false,'search.php','搜索');
-  $(document).ready(function() { init_search(); });
+  $(function() { init_search(); });
 });
 /* @license-end */
 </script>
@@ -77,7 +77,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('da/d2c/startup.html','../../'); initResizable(); });
+$(function(){initNavTree('da/d2c/startup.html','../../'); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('da/d2c/startup.html','../../'); initRe
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">开始开发 </div></div>
+  <div class="headertitle"><div class="title">开始开发</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>在开始编写代码前，请稍微花一点时间阅读以下的约定和帮助，这将有助于你更加顺利地参与到 Dandelion 的开发中。使用 Dandelion 做实验的同学可以不必遵守这些，直接开始实验。</p>
@@ -172,10 +172,10 @@ $(document).ready(function(){initNavTree('da/d2c/startup.html','../../'); initRe
 <div class="line"><span class="comment">    /*! \~chinese 构造函数是私有的。 */</span></div>
 <div class="line">    <a class="code hl_function" href="../../d9/d85/classController.html#a95c56822d667e94b031451729ce069a9">Controller</a>();</div>
 <div class="line">};</div>
-<div class="ttc" id="aclassController_html"><div class="ttname"><a href="../../d9/d85/classController.html">Controller</a></div><div class="ttdoc">控制器管理所有的界面组件，并处理和预览视角操作（例如旋转、缩放或者平移）相关的输入。</div><div class="ttdef"><b>Definition:</b> controller.h:39</div></div>
-<div class="ttc" id="aclassController_html_a142bc68626ef6319295599d939e56cf0"><div class="ttname"><a href="../../d9/d85/classController.html#a142bc68626ef6319295599d939e56cf0">Controller::on_framebuffer_resized</a></div><div class="ttdeci">void on_framebuffer_resized(float width, float height)</div><div class="ttdoc">在缩放窗口时调整轨迹球半径、预览视角（相机）Y 方向的 FoV，并更新自身记录的窗口尺寸。</div><div class="ttdef"><b>Definition:</b> controller.cpp:149</div></div>
-<div class="ttc" id="aclassController_html_a6301902226747ccdef81ee281c9abc6e"><div class="ttname"><a href="../../d9/d85/classController.html#a6301902226747ccdef81ee281c9abc6e">Controller::controller</a></div><div class="ttdeci">static Controller &amp; controller()</div><div class="ttdoc">获取 Controller 类的唯一实例。</div><div class="ttdef"><b>Definition:</b> controller.cpp:35</div></div>
-<div class="ttc" id="aclassController_html_a95c56822d667e94b031451729ce069a9"><div class="ttname"><a href="../../d9/d85/classController.html#a95c56822d667e94b031451729ce069a9">Controller::Controller</a></div><div class="ttdeci">Controller()</div><div class="ttdef"><b>Definition:</b> controller.cpp:41</div></div>
+<div class="ttc" id="aclassController_html"><div class="ttname"><a href="../../d9/d85/classController.html">Controller</a></div><div class="ttdoc">控制器管理所有的界面组件，并处理和预览视角操作（例如旋转、缩放或者平移）相关的输入。</div><div class="ttdef"><b>Definition</b> controller.h:39</div></div>
+<div class="ttc" id="aclassController_html_a142bc68626ef6319295599d939e56cf0"><div class="ttname"><a href="../../d9/d85/classController.html#a142bc68626ef6319295599d939e56cf0">Controller::on_framebuffer_resized</a></div><div class="ttdeci">void on_framebuffer_resized(float width, float height)</div><div class="ttdoc">在缩放窗口时调整轨迹球半径、预览视角（相机）Y 方向的 FoV，并更新自身记录的窗口尺寸。</div><div class="ttdef"><b>Definition</b> controller.cpp:149</div></div>
+<div class="ttc" id="aclassController_html_a6301902226747ccdef81ee281c9abc6e"><div class="ttname"><a href="../../d9/d85/classController.html#a6301902226747ccdef81ee281c9abc6e">Controller::controller</a></div><div class="ttdeci">static Controller &amp; controller()</div><div class="ttdoc">获取 Controller 类的唯一实例。</div><div class="ttdef"><b>Definition</b> controller.cpp:35</div></div>
+<div class="ttc" id="aclassController_html_a95c56822d667e94b031451729ce069a9"><div class="ttname"><a href="../../d9/d85/classController.html#a95c56822d667e94b031451729ce069a9">Controller::Controller</a></div><div class="ttdeci">Controller()</div><div class="ttdef"><b>Definition</b> controller.cpp:41</div></div>
 </div><!-- fragment --><p>而在 cpp 文件中写注释只是为了帮助它人读懂代码，这时请不要用 Doxygen 注释块，否则这部分内容将会出现在生成的开发者文档中。</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> foo()</div>
 <div class="line">{</div>
@@ -194,28 +194,26 @@ XJTU-Graphics 组织成员</h2>
 </div><!-- fragment --></li>
 <li>在新的分支下修改代码、进行提交 (<code>git commit</code>)</li>
 <li>切换到 <code>main</code> 分支并从远程下载最新的版本： <div class="fragment"><div class="line">$ git checkout main</div>
-<div class="line">$ git pull origin main</div>
+<div class="line">$ git pull --rebase origin main</div>
 </div><!-- fragment --></li>
 <li>切换回自己的分支，再 <code>rebase</code> 到 <code>main</code> 分支的最新修改上： <div class="fragment"><div class="line">$ git checkout your_new_branch_name</div>
 <div class="line">$ git rebase main</div>
 </div><!-- fragment --></li>
-<li>切换到 <code>main</code> 分支，合并自己的修改，并推送到远程仓库： <div class="fragment"><div class="line">$ git checkout main</div>
-<div class="line">$ git merge your_new_branch_name</div>
-<div class="line">$ git push origin main</div>
+<li>解决冲突后，将自己的分支推送到远程仓库，向 <code>main</code> 分支发起一次 Pull Request： <div class="fragment"><div class="line">$ git posh origin your_new_branch_name</div>
 </div><!-- fragment --></li>
-<li>完成修改后，建议删除新创建的分支，下次修改时再新建： <div class="fragment"><div class="line">$ git branch -d your_new_branch_name</div>
+<li>PR 被合并后，建议删除新创建的分支，下次修改时再新建： <div class="fragment"><div class="line">$ git branch -d your_new_branch_name</div>
 </div><!-- fragment --></li>
 </ol>
 <p>我们倾向于使用 rebase 操作来维持主分支的提交记录是线性的，如果不了解 Git 的 rebase 操作，请阅读<a href="https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%8F%98%E5%9F%BA">Git-变基</a></p>
 <p>总之，</p>
 <ul>
 <li>新建自己的分支，请勿直接在 <code>main</code> 分支上修改代码。</li>
-<li>任何提交被推送到远程仓库后禁止再次修改，严禁使用 <code>git push -f</code> (<code>git push --force</code>) 强制覆盖远程仓库。如果需要修正已经推送的错误，请新建一个提交。</li>
-<li>在推送到远程仓库前，保证自己的 <code>main</code> 分支已经是最新的。</li>
+<li>通常情况下请不要使用 revert 回退，任何情况下禁止修改一个已经被推送到远程仓库的 commit、禁止使用 <code>git push -f</code> (<code>git push --force</code>) 强制覆盖远程仓库。如果需要修正已经推送的错误，请新建一个提交。</li>
+<li>在推送到远程仓库前，保证自己已经 rebase 到了最新的 <code>main</code> 分支上。</li>
 </ul>
 <h2><a class="anchor" id="non-member-submission"></a>
 非组织成员</h2>
-<p>请在 GitHub 上 Fork XJTU-Graphics/dandelion 项目，修改后提交 Pull Request 。Gitee 仅用作发布镜像，issue 和 pull request 很可能得不到回复。</p>
+<p>请在 GitHub 上 Fork XJTU-Graphics/dandelion 项目，修改后提交 Pull Request 。Gitee 仅用作发布镜像，issue 很可能得不到回复，PR 则不会被接受。</p>
 <h1><a class="anchor" id="tools"></a>
 开发工具</h1>
 <h2><a class="anchor" id="code-format"></a>
@@ -228,9 +226,9 @@ XJTU-Graphics 组织成员</h2>
 <p>我们目前使用的 clang-format 版本是 14，格式化配置文件应当与 15 版本兼容。更高版本会提示 .clang-format 文件中有些配置项已被废弃 (deprecated)，但由于新版本相同功能的配置项并不兼容旧版本，我们暂时不打算升级 clang-format。</p>
 <h2><a class="anchor" id="spell-check"></a>
 拼写检查</h2>
-<p>一个拼写错误的单词可能给后期开发带来很大麻烦，我们在发现拼写错误后 <b>一定会更正它</b> 。推荐使用 cSpell 检查单词拼写，省得在写错后回头修改。</p>
+<p>一个拼写错误的单词可能给后期开发带来很大麻烦，我们在发现拼写错误后 <b>一定会更正它</b> 。推荐使用插件检查单词拼写，省得在写错后回头修改。</p>
 <ul>
-<li>VS Code 用户可以直接安装 cSpell 插件。</li>
+<li>VS Code 用户可以直接安装 Code Spell Checker 插件。</li>
 <li>Vim 用户可以使用 coc.nvim 并安装 coc-spell-checker 插件。</li>
 </ul>
 <h2><a class="anchor" id="code-complention"></a>
@@ -249,7 +247,7 @@ XJTU-Graphics 组织成员</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

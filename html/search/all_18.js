@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['几何处理_0',['几何处理',['../d9/dba/group__geometry.html',1,'']]]
+  ['代码格式_0',['代码格式',['../da/d2c/startup.html#code-format',1,'']]],
+  ['代码补全_1',['代码补全',['../da/d2c/startup.html#code-complention',1,'']]]
 ];

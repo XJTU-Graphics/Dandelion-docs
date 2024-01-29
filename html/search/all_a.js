@@ -21,9 +21,10 @@ var searchData=
   ['linkedlistnode_3c_20face_20_3e_18',['LinkedListNode&lt; Face &gt;',['../d6/d73/structLinkedListNode.html',1,'']]],
   ['linkedlistnode_3c_20halfedge_20_3e_19',['LinkedListNode&lt; Halfedge &gt;',['../d6/d73/structLinkedListNode.html',1,'']]],
   ['linkedlistnode_3c_20vertex_20_3e_20',['LinkedListNode&lt; Vertex &gt;',['../d6/d73/structLinkedListNode.html',1,'']]],
-  ['load_21',['load',['../d0/db7/classGroup.html#a3cc9d35ed0753293c7128cddf920b55b',1,'Group::load()'],['../d5/d9c/classScene.html#aa78f982d2d987f8e4bc6748a834bdccc',1,'Scene::load()']]],
-  ['logger_22',['logger',['../dc/d6d/classHalfedgeMesh.html#a37aa317f68032db7f5cd80e9e7c153df',1,'HalfedgeMesh::logger()'],['../d8/d4b/classObject.html#a1bdaceb3171dfb3a26e71bc996d7ff1b',1,'Object::logger()'],['../d5/d9c/classScene.html#a5d310a617d791b73ab82bc34bcb37f69',1,'Scene::logger()'],['../d9/d85/classController.html#a3ac9aefe19714d124cb032e23fd23e75',1,'Controller::logger()']]],
-  ['logger_2eh_23',['logger.h',['../d1/d8c/logger_8h.html',1,'']]],
-  ['logging_5flevels_5fmenu_24',['logging_levels_menu',['../d6/de2/classUI_1_1Menubar.html#a39e6b1e3ec013ed974343ec0d8aad228',1,'UI::Menubar']]],
-  ['loop_5fsubdivide_25',['loop_subdivide',['../dc/d6d/classHalfedgeMesh.html#a195964f7408299d4733b1566487c43f5',1,'HalfedgeMesh']]]
+  ['linux_21',['Linux',['../d8/df1/build.html#compilation-linux',1,'']]],
+  ['load_22',['load',['../d0/db7/classGroup.html#a3cc9d35ed0753293c7128cddf920b55b',1,'Group::load()'],['../d5/d9c/classScene.html#aa78f982d2d987f8e4bc6748a834bdccc',1,'Scene::load()']]],
+  ['logger_23',['logger',['../dc/d6d/classHalfedgeMesh.html#a37aa317f68032db7f5cd80e9e7c153df',1,'HalfedgeMesh::logger'],['../d8/d4b/classObject.html#a1bdaceb3171dfb3a26e71bc996d7ff1b',1,'Object::logger'],['../d5/d9c/classScene.html#a5d310a617d791b73ab82bc34bcb37f69',1,'Scene::logger'],['../d9/d85/classController.html#a3ac9aefe19714d124cb032e23fd23e75',1,'Controller::logger']]],
+  ['logger_2eh_24',['logger.h',['../d1/d8c/logger_8h.html',1,'']]],
+  ['logging_5flevels_5fmenu_25',['logging_levels_menu',['../d6/de2/classUI_1_1Menubar.html#a39e6b1e3ec013ed974343ec0d8aad228',1,'UI::Menubar']]],
+  ['loop_5fsubdivide_26',['loop_subdivide',['../dc/d6d/classHalfedgeMesh.html#a195964f7408299d4733b1566487c43f5',1,'HalfedgeMesh']]]
 ];

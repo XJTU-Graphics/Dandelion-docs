@@ -3,20 +3,21 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: GL::Material结构体 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type="text/javascript">
 window.MathJax = {
   options: {
@@ -28,7 +29,6 @@ window.MathJax = {
 <script type="text/javascript" id="MathJax-script" async="async" src="../../mathjax/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.2</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,7 +47,7 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.9.6 -->
+<!-- 制作者 Doxygen 1.10.0 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -59,7 +59,7 @@ var searchBox = new SearchBox("searchBox", "../../search/",'.html');
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('../../',true,false,'search.php','搜索');
-  $(document).ready(function() { init_search(); });
+  $(function() { init_search(); });
 });
 /* @license-end */
 </script>
@@ -77,7 +77,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('d4/d50/structGL_1_1Material.html','../../'); initResizable(); });
+$(function(){initNavTree('d4/d50/structGL_1_1Material.html','../../'); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -112,25 +112,25 @@ $(document).ready(function(){initNavTree('d4/d50/structGL_1_1Material.html','../
 <div class="contents">
 
 <p>物体材质。  
- <a href="../../d4/d50/structGL_1_1Material.html#details">更多...</a></p>
+ <a href="#details">更多...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d7/d6a/gl_8hpp_source.html">gl.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a9a17374d79c8ea20803efc9076b7b132"><td class="memItemLeft" align="right" valign="top"><a id="a9a17374d79c8ea20803efc9076b7b132" name="a9a17374d79c8ea20803efc9076b7b132"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Material</b> (const Eigen::Vector3f &amp;K_ambient=Eigen::Vector3f(1.0f, 1.0f, 1.0f), const Eigen::Vector3f &amp;K_diffuse=Eigen::Vector3f(0.5f, 0.5f, 0.5f), const Eigen::Vector3f &amp;K_specular=Eigen::Vector3f(0.0f, 0.0f, 0.0f), float <a class="el" href="../../d4/d50/structGL_1_1Material.html#a593816847c0d6811a2fc6c625670ef27">shininess</a>=5.0f)</td></tr>
+<tr class="memitem:a9a17374d79c8ea20803efc9076b7b132" id="r_a9a17374d79c8ea20803efc9076b7b132"><td class="memItemLeft" align="right" valign="top"><a id="a9a17374d79c8ea20803efc9076b7b132" name="a9a17374d79c8ea20803efc9076b7b132"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Material</b> (const Eigen::Vector3f &amp;K_ambient=Eigen::Vector3f(1.0f, 1.0f, 1.0f), const Eigen::Vector3f &amp;K_diffuse=Eigen::Vector3f(0.5f, 0.5f, 0.5f), const Eigen::Vector3f &amp;K_specular=Eigen::Vector3f(0.0f, 0.0f, 0.0f), float <a class="el" href="#a593816847c0d6811a2fc6c625670ef27">shininess</a>=5.0f)</td></tr>
 <tr class="separator:a9a17374d79c8ea20803efc9076b7b132"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:afbe14a21e57e922a86e202772688f2ef"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d50/structGL_1_1Material.html#afbe14a21e57e922a86e202772688f2ef">ambient</a></td></tr>
+<tr class="memitem:afbe14a21e57e922a86e202772688f2ef" id="r_afbe14a21e57e922a86e202772688f2ef"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbe14a21e57e922a86e202772688f2ef">ambient</a></td></tr>
 <tr class="separator:afbe14a21e57e922a86e202772688f2ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e6bfa1497546db65f1c363985b4a52e"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d50/structGL_1_1Material.html#a2e6bfa1497546db65f1c363985b4a52e">diffuse</a></td></tr>
+<tr class="memitem:a2e6bfa1497546db65f1c363985b4a52e" id="r_a2e6bfa1497546db65f1c363985b4a52e"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e6bfa1497546db65f1c363985b4a52e">diffuse</a></td></tr>
 <tr class="separator:a2e6bfa1497546db65f1c363985b4a52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a886340a3db61c4e1139bc795a89fe2f7"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d50/structGL_1_1Material.html#a886340a3db61c4e1139bc795a89fe2f7">specular</a></td></tr>
+<tr class="memitem:a886340a3db61c4e1139bc795a89fe2f7" id="r_a886340a3db61c4e1139bc795a89fe2f7"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a886340a3db61c4e1139bc795a89fe2f7">specular</a></td></tr>
 <tr class="separator:a886340a3db61c4e1139bc795a89fe2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a593816847c0d6811a2fc6c625670ef27"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d50/structGL_1_1Material.html#a593816847c0d6811a2fc6c625670ef27">shininess</a></td></tr>
+<tr class="memitem:a593816847c0d6811a2fc6c625670ef27" id="r_a593816847c0d6811a2fc6c625670ef27"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a593816847c0d6811a2fc6c625670ef27">shininess</a></td></tr>
 <tr class="separator:a593816847c0d6811a2fc6c625670ef27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
@@ -198,7 +198,7 @@ Public 属性</h2></td></tr>
 </div>
 <hr/>该结构体的文档由以下文件生成:<ul>
 <li><a class="el" href="../../d7/d6a/gl_8hpp_source.html">gl.hpp</a></li>
-<li>gl.cpp</li>
+<li><b>gl.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -206,7 +206,7 @@ Public 属性</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>GL</b></li><li class="navelem"><a class="el" href="../../d4/d50/structGL_1_1Material.html">Material</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

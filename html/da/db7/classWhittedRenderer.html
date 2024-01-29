@@ -3,20 +3,21 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: WhittedRenderer类 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type="text/javascript">
 window.MathJax = {
   options: {
@@ -28,7 +29,6 @@ window.MathJax = {
 <script type="text/javascript" id="MathJax-script" async="async" src="../../mathjax/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.2</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,7 +47,7 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.9.6 -->
+<!-- 制作者 Doxygen 1.10.0 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -59,7 +59,7 @@ var searchBox = new SearchBox("searchBox", "../../search/",'.html');
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('../../',true,false,'search.php','搜索');
-  $(document).ready(function() { init_search(); });
+  $(function() { init_search(); });
 });
 /* @license-end */
 </script>
@@ -77,7 +77,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('da/db7/classWhittedRenderer.html','../../'); initResizable(); });
+$(function(){initNavTree('da/db7/classWhittedRenderer.html','../../'); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -115,55 +115,55 @@ $(document).ready(function(){initNavTree('da/db7/classWhittedRenderer.html','../
 <div class="contents">
 
 <p>负责实现Whitted_style的整个pipeline  
- <a href="../../da/db7/classWhittedRenderer.html#details">更多...</a></p>
+ <a href="#details">更多...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d7/da2/render__engine_8h_source.html">render_engine.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:afe30523132cfb416a5acb7ba6eda3e6d"><td class="memItemLeft" align="right" valign="top"><a id="afe30523132cfb416a5acb7ba6eda3e6d" name="afe30523132cfb416a5acb7ba6eda3e6d"></a>
+<tr class="memitem:afe30523132cfb416a5acb7ba6eda3e6d" id="r_afe30523132cfb416a5acb7ba6eda3e6d"><td class="memItemLeft" align="right" valign="top"><a id="afe30523132cfb416a5acb7ba6eda3e6d" name="afe30523132cfb416a5acb7ba6eda3e6d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>WhittedRenderer</b> (<a class="el" href="../../d3/d2f/classRenderEngine.html">RenderEngine</a> &amp;engine)</td></tr>
 <tr class="separator:afe30523132cfb416a5acb7ba6eda3e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37457260b903ef3742b741cde1795db3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db7/classWhittedRenderer.html#a37457260b903ef3742b741cde1795db3">render</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
+<tr class="memitem:a37457260b903ef3742b741cde1795db3" id="r_a37457260b903ef3742b741cde1795db3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37457260b903ef3742b741cde1795db3">render</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
 <tr class="separator:a37457260b903ef3742b741cde1795db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:a9547bf82dec429f3a5f82f58e34f11e3"><td class="memItemLeft" align="right" valign="top"><a id="a9547bf82dec429f3a5f82f58e34f11e3" name="a9547bf82dec429f3a5f82f58e34f11e3"></a>
+<tr class="memitem:a9547bf82dec429f3a5f82f58e34f11e3" id="r_a9547bf82dec429f3a5f82f58e34f11e3"><td class="memItemLeft" align="right" valign="top"><a id="a9547bf82dec429f3a5f82f58e34f11e3" name="a9547bf82dec429f3a5f82f58e34f11e3"></a>
 float &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>width</b></td></tr>
 <tr class="separator:a9547bf82dec429f3a5f82f58e34f11e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad4af6bf2b64b3d8a523ff30cf593a5a"><td class="memItemLeft" align="right" valign="top"><a id="aad4af6bf2b64b3d8a523ff30cf593a5a" name="aad4af6bf2b64b3d8a523ff30cf593a5a"></a>
+<tr class="memitem:aad4af6bf2b64b3d8a523ff30cf593a5a" id="r_aad4af6bf2b64b3d8a523ff30cf593a5a"><td class="memItemLeft" align="right" valign="top"><a id="aad4af6bf2b64b3d8a523ff30cf593a5a" name="aad4af6bf2b64b3d8a523ff30cf593a5a"></a>
 float &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
 <tr class="separator:aad4af6bf2b64b3d8a523ff30cf593a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadf47f5c33126a55d01c77fcd051e651"><td class="memItemLeft" align="right" valign="top"><a id="aadf47f5c33126a55d01c77fcd051e651" name="aadf47f5c33126a55d01c77fcd051e651"></a>
+<tr class="memitem:aadf47f5c33126a55d01c77fcd051e651" id="r_aadf47f5c33126a55d01c77fcd051e651"><td class="memItemLeft" align="right" valign="top"><a id="aadf47f5c33126a55d01c77fcd051e651" name="aadf47f5c33126a55d01c77fcd051e651"></a>
 int &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>n_threads</b></td></tr>
 <tr class="separator:aadf47f5c33126a55d01c77fcd051e651"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bd446f848764a7bfd5ce3737094ec59"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db7/classWhittedRenderer.html#a9bd446f848764a7bfd5ce3737094ec59">use_bvh</a></td></tr>
+<tr class="memitem:a9bd446f848764a7bfd5ce3737094ec59" id="r_a9bd446f848764a7bfd5ce3737094ec59"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9bd446f848764a7bfd5ce3737094ec59">use_bvh</a></td></tr>
 <tr class="separator:a9bd446f848764a7bfd5ce3737094ec59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77fe466c7f12472255eeaf32941e6d4b"><td class="memItemLeft" align="right" valign="top"><a id="a77fe466c7f12472255eeaf32941e6d4b" name="a77fe466c7f12472255eeaf32941e6d4b"></a>
+<tr class="memitem:a77fe466c7f12472255eeaf32941e6d4b" id="r_a77fe466c7f12472255eeaf32941e6d4b"><td class="memItemLeft" align="right" valign="top"><a id="a77fe466c7f12472255eeaf32941e6d4b" name="a77fe466c7f12472255eeaf32941e6d4b"></a>
 std::vector&lt; unsigned char &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>rendering_res</b></td></tr>
 <tr class="separator:a77fe466c7f12472255eeaf32941e6d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 静态 Public 属性</h2></td></tr>
-<tr class="memitem:abefb80c7762a3c7d0a23af1cc765d36f"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db7/classWhittedRenderer.html#abefb80c7762a3c7d0a23af1cc765d36f">mirror_threshold</a> = 1000.0f</td></tr>
+<tr class="memitem:abefb80c7762a3c7d0a23af1cc765d36f" id="r_abefb80c7762a3c7d0a23af1cc765d36f"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abefb80c7762a3c7d0a23af1cc765d36f">mirror_threshold</a> = 1000.0f</td></tr>
 <tr class="separator:abefb80c7762a3c7d0a23af1cc765d36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private 成员函数</h2></td></tr>
-<tr class="memitem:aae05cbee4a886faacbfeb68721f81b90"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db7/classWhittedRenderer.html#aae05cbee4a886faacbfeb68721f81b90">fresnel</a> (const Eigen::Vector3f &amp;I, const Eigen::Vector3f &amp;N, const float &amp;ior)</td></tr>
+<tr class="memitem:aae05cbee4a886faacbfeb68721f81b90" id="r_aae05cbee4a886faacbfeb68721f81b90"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae05cbee4a886faacbfeb68721f81b90">fresnel</a> (const Eigen::Vector3f &amp;I, const Eigen::Vector3f &amp;N, const float &amp;ior)</td></tr>
 <tr class="memdesc:aae05cbee4a886faacbfeb68721f81b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">菲涅尔方程根据观察角度计算反射光线的所占百分比  <br /></td></tr>
 <tr class="separator:aae05cbee4a886faacbfeb68721f81b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad102975d06de8046ebf872ed2fe0717c"><td class="memItemLeft" align="right" valign="top"><a id="ad102975d06de8046ebf872ed2fe0717c" name="ad102975d06de8046ebf872ed2fe0717c"></a>
+<tr class="memitem:ad102975d06de8046ebf872ed2fe0717c" id="r_ad102975d06de8046ebf872ed2fe0717c"><td class="memItemLeft" align="right" valign="top"><a id="ad102975d06de8046ebf872ed2fe0717c" name="ad102975d06de8046ebf872ed2fe0717c"></a>
 std::optional&lt; std::tuple&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a>, <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>trace</b> (const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray, const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
 <tr class="separator:ad102975d06de8046ebf872ed2fe0717c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e43a419ed22f6f4ae6c340456a8bf4d"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db7/classWhittedRenderer.html#a2e43a419ed22f6f4ae6c340456a8bf4d">cast_ray</a> (const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray, const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene, int depth)</td></tr>
+<tr class="memitem:a2e43a419ed22f6f4ae6c340456a8bf4d" id="r_a2e43a419ed22f6f4ae6c340456a8bf4d"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e43a419ed22f6f4ae6c340456a8bf4d">cast_ray</a> (const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray, const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene, int depth)</td></tr>
 <tr class="memdesc:a2e43a419ed22f6f4ae6c340456a8bf4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">实现光线追踪  <br /></td></tr>
 <tr class="separator:a2e43a419ed22f6f4ae6c340456a8bf4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private 属性</h2></td></tr>
-<tr class="memitem:a86ad368f968ad85e87c1ac4433e6d93c"><td class="memItemLeft" align="right" valign="top"><a id="a86ad368f968ad85e87c1ac4433e6d93c" name="a86ad368f968ad85e87c1ac4433e6d93c"></a>
+<tr class="memitem:a86ad368f968ad85e87c1ac4433e6d93c" id="r_a86ad368f968ad85e87c1ac4433e6d93c"><td class="memItemLeft" align="right" valign="top"><a id="a86ad368f968ad85e87c1ac4433e6d93c" name="a86ad368f968ad85e87c1ac4433e6d93c"></a>
 std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>logger</b></td></tr>
 <tr class="separator:a86ad368f968ad85e87c1ac4433e6d93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -182,25 +182,17 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
         <tr>
           <td class="memname">Vector3f WhittedRenderer::cast_ray </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;&#160;</td>
-          <td class="paramname"><em>ray</em>, </td>
+          <td class="paramtype">const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ray</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;&#160;</td>
-          <td class="paramname"><em>scene</em>, </td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>depth</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>depth</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -234,25 +226,17 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
         <tr>
           <td class="memname">float WhittedRenderer::fresnel </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Vector3f &amp;&#160;</td>
-          <td class="paramname"><em>I</em>, </td>
+          <td class="paramtype">const Eigen::Vector3f &amp;</td>          <td class="paramname"><span class="paramname"><em>I</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::Vector3f &amp;&#160;</td>
-          <td class="paramname"><em>N</em>, </td>
+          <td class="paramtype">const Eigen::Vector3f &amp;</td>          <td class="paramname"><span class="paramname"><em>N</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float &amp;&#160;</td>
-          <td class="paramname"><em>ior</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">const float &amp;</td>          <td class="paramname"><span class="paramname"><em>ior</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -283,8 +267,7 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
         <tr>
           <td class="memname">void WhittedRenderer::render </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;&#160;</td>
-          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -334,7 +317,7 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 </div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li><a class="el" href="../../d7/da2/render__engine_8h_source.html">render_engine.h</a></li>
-<li>whitted_renderer.cpp</li>
+<li><b>whitted_renderer.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -342,7 +325,7 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/db7/classWhittedRenderer.html">WhittedRenderer</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

@@ -20,7 +20,7 @@ var group__rendering =
       [ "rasterize_triangle", "d3/d7a/classRasterizer.html#aeb3cab09f4d3aebd6768455cae586738", null ],
       [ "set_pixel", "d3/d7a/classRasterizer.html#a2afc14d3e92e883020ddc7d23cea4439", null ],
       [ "depth_buf", "d3/d7a/classRasterizer.html#a0c3e43549449dddcd42f4f82d09c463d", null ],
-      [ "fragment_shader", "d3/d7a/classRasterizer.html#a9e830aa437f41ba1deb00684001b5a0e", null ],
+      [ "fragment_shader", "d3/d7a/classRasterizer.html#a9ea9b47e0b0f0f749140404b837c8496", null ],
       [ "frame_buf", "d3/d7a/classRasterizer.html#ac0bec4b6fcbc82f729408000d2fdceeb", null ],
       [ "model", "d3/d7a/classRasterizer.html#a62eda98fe643c15e13374d74f8a064c3", null ],
       [ "projection", "d3/d7a/classRasterizer.html#a32f4d6c66aa35f2ce8552832a2990989", null ],

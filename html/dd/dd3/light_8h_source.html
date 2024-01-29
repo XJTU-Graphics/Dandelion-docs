@@ -3,20 +3,21 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: light.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type="text/javascript">
 window.MathJax = {
   options: {
@@ -28,7 +29,6 @@ window.MathJax = {
 <script type="text/javascript" id="MathJax-script" async="async" src="../../mathjax/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.2</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,7 +47,7 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.9.6 -->
+<!-- 制作者 Doxygen 1.10.0 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -59,11 +59,16 @@ var searchBox = new SearchBox("searchBox", "../../search/",'.html');
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('../../',true,false,'search.php','搜索');
-  $(document).ready(function() { init_search(); });
+  $(function() { init_search(); });
 });
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -77,7 +82,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('dd/dd3/light_8h_source.html','../../'); initResizable(); });
+$(function(){initNavTree('dd/dd3/light_8h_source.html','../../'); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -121,6 +126,7 @@ $(document).ready(function(){initNavTree('dd/dd3/light_8h_source.html','../../')
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * \~chinese</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * \brief 一个点光源。</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../d5/d79/structLight.html">   16</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d5/d79/structLight.html">Light</a></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{<span class="comment"></span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">    /*! \~chinese 禁止无参构造。 */</span></div>
@@ -132,11 +138,12 @@ $(document).ready(function(){initNavTree('dd/dd3/light_8h_source.html','../../')
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">    /*! \~chinese 光源强度。 */</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../d5/d79/structLight.html#a1071eaa556f4bb2a9345fdfba7e6f220">   25</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d5/d79/structLight.html#a1071eaa556f4bb2a9345fdfba7e6f220">intensity</a>;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
+</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_LIGHT_H</span></div>
-<div class="ttc" id="astructLight_html"><div class="ttname"><a href="../../d5/d79/structLight.html">Light</a></div><div class="ttdoc">一个点光源。</div><div class="ttdef"><b>Definition:</b> light.h:17</div></div>
-<div class="ttc" id="astructLight_html_a1071eaa556f4bb2a9345fdfba7e6f220"><div class="ttname"><a href="../../d5/d79/structLight.html#a1071eaa556f4bb2a9345fdfba7e6f220">Light::intensity</a></div><div class="ttdeci">float intensity</div><div class="ttdef"><b>Definition:</b> light.h:25</div></div>
-<div class="ttc" id="astructLight_html_ac485b2b57b34f6d01f316f57b40c2fed"><div class="ttname"><a href="../../d5/d79/structLight.html#ac485b2b57b34f6d01f316f57b40c2fed">Light::position</a></div><div class="ttdeci">Eigen::Vector3f position</div><div class="ttdef"><b>Definition:</b> light.h:23</div></div>
+<div class="ttc" id="astructLight_html"><div class="ttname"><a href="../../d5/d79/structLight.html">Light</a></div><div class="ttdoc">一个点光源。</div><div class="ttdef"><b>Definition</b> light.h:17</div></div>
+<div class="ttc" id="astructLight_html_a1071eaa556f4bb2a9345fdfba7e6f220"><div class="ttname"><a href="../../d5/d79/structLight.html#a1071eaa556f4bb2a9345fdfba7e6f220">Light::intensity</a></div><div class="ttdeci">float intensity</div><div class="ttdef"><b>Definition</b> light.h:25</div></div>
+<div class="ttc" id="astructLight_html_ac485b2b57b34f6d01f316f57b40c2fed"><div class="ttname"><a href="../../d5/d79/structLight.html#ac485b2b57b34f6d01f316f57b40c2fed">Light::position</a></div><div class="ttdeci">Eigen::Vector3f position</div><div class="ttdef"><b>Definition</b> light.h:23</div></div>
 <div class="ttc" id="astructLight_html_aff5011d911a33e38dba5ea174679736e"><div class="ttname"><a href="../../d5/d79/structLight.html#aff5011d911a33e38dba5ea174679736e">Light::Light</a></div><div class="ttdeci">Light()=delete</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -144,7 +151,7 @@ $(document).ready(function(){initNavTree('dd/dd3/light_8h_source.html','../../')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_35781f0e74aa8deac19fa31b37174dc2.html">scene</a></li><li class="navelem"><a class="el" href="../../dd/dd3/light_8h.html">light.h</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

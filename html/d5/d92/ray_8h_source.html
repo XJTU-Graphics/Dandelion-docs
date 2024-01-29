@@ -3,20 +3,21 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: ray.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type="text/javascript">
 window.MathJax = {
   options: {
@@ -28,7 +29,6 @@ window.MathJax = {
 <script type="text/javascript" id="MathJax-script" async="async" src="../../mathjax/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.2</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,7 +47,7 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.9.6 -->
+<!-- 制作者 Doxygen 1.10.0 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -59,11 +59,16 @@ var searchBox = new SearchBox("searchBox", "../../search/",'.html');
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('../../',true,false,'search.php','搜索');
-  $(document).ready(function() { init_search(); });
+  $(function() { init_search(); });
 });
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -77,7 +82,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('d5/d92/ray_8h_source.html','../../'); initResizable(); });
+$(function(){initNavTree('d5/d92/ray_8h_source.html','../../'); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -121,18 +126,20 @@ $(document).ready(function(){initNavTree('d5/d92/ray_8h_source.html','../../'); 
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;Eigen/Core&gt;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;../platform/gl.hpp&quot;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;../scene/camera.h&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="../../d7/d6a/gl_8hpp.html">../platform/gl.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="../../d7/df6/camera_8h.html">../scene/camera.h</a>&quot;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"></span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">/*!</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * \ingroup rendering</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * \ingroup utils</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="../../dd/d5e/structRay.html">   23</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../dd/d5e/structRay.html">Ray</a></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    Eigen::Vector3f origin;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    Eigen::Vector3f direction;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>};</div>
+</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"></span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/*!</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> * \ingroup rendering</span></div>
@@ -142,6 +149,7 @@ $(document).ready(function(){initNavTree('d5/d92/ray_8h_source.html','../../'); 
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> * Intersection 对象总是有意义的，一旦被创建就表示相交确实发生了。</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="};">
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d6/d30/structIntersection.html">   37</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d6/d30/structIntersection.html">Intersection</a></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{<span class="comment"></span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">    /*! \~chinese Intersection的构造函数：将t设置为无穷，face_index为零 */</span></div>
@@ -155,6 +163,7 @@ $(document).ready(function(){initNavTree('d5/d92/ray_8h_source.html','../../'); 
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">    /*! \~chinese 交点所在面片的法向量。 */</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../d6/d30/structIntersection.html#a477a228b3a9a1691c1ebad8776ec511c">   48</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d6/d30/structIntersection.html#a477a228b3a9a1691c1ebad8776ec511c">normal</a>;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
+</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"></span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">/*!</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"> * \ingroup rendering</span></div>
@@ -208,25 +217,27 @@ $(document).ready(function(){initNavTree('d5/d92/ray_8h_source.html','../../'); 
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                                            <span class="keyword">const</span> Eigen::Matrix4f model);</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_UTILS_RAY_H</span></div>
-<div class="ttc" id="agroup__rendering_html_ga058f7f5f254453b5df93c093ebde122a"><div class="ttname"><a href="../../db/d81/group__rendering.html#ga058f7f5f254453b5df93c093ebde122a">generate_ray</a></div><div class="ttdeci">Ray generate_ray(int width, int height, int x, int y, Camera &amp;camera, float depth)</div><div class="ttdoc">给定成像平面的宽度和高度、成像平面上的坐标、成像平面的深度和相机，生成一条射线。</div><div class="ttdef"><b>Definition:</b> ray.cpp:28</div></div>
+<div class="ttc" id="acamera_8h_html"><div class="ttname"><a href="../../d7/df6/camera_8h.html">camera.h</a></div></div>
+<div class="ttc" id="agl_8hpp_html"><div class="ttname"><a href="../../d7/d6a/gl_8hpp.html">gl.hpp</a></div></div>
+<div class="ttc" id="agroup__rendering_html_ga058f7f5f254453b5df93c093ebde122a"><div class="ttname"><a href="../../db/d81/group__rendering.html#ga058f7f5f254453b5df93c093ebde122a">generate_ray</a></div><div class="ttdeci">Ray generate_ray(int width, int height, int x, int y, Camera &amp;camera, float depth)</div><div class="ttdoc">给定成像平面的宽度和高度、成像平面上的坐标、成像平面的深度和相机，生成一条射线。</div><div class="ttdef"><b>Definition</b> ray.cpp:28</div></div>
 <div class="ttc" id="agroup__rendering_html_ga1a3a6b802c525058a523c2dadaae1f2b"><div class="ttname"><a href="../../db/d81/group__rendering.html#ga1a3a6b802c525058a523c2dadaae1f2b">naive_intersect</a></div><div class="ttdeci">std::optional&lt; Intersection &gt; naive_intersect(const Ray &amp;ray, const GL::Mesh &amp;mesh, const Eigen::Matrix4f model)</div><div class="ttdoc">用朴素方法判断射线是否与给定的 mesh 相交。</div></div>
-<div class="ttc" id="agroup__rendering_html_gab851f3686bc57e3a8cc135f68f3871a5"><div class="ttname"><a href="../../db/d81/group__rendering.html#gab851f3686bc57e3a8cc135f68f3871a5">ray_triangle_intersect</a></div><div class="ttdeci">std::optional&lt; Intersection &gt; ray_triangle_intersect(const Ray &amp;ray, const GL::Mesh &amp;mesh, size_t index)</div><div class="ttdoc">判断光线ray是否与某个面片相交</div><div class="ttdef"><b>Definition:</b> ray.cpp:44</div></div>
-<div class="ttc" id="astructCamera_html"><div class="ttname"><a href="../../d7/d7e/structCamera.html">Camera</a></div><div class="ttdoc">表示观察点的相机，既可以用于预览视角，也可以用于渲染视角。</div><div class="ttdef"><b>Definition:</b> camera.h:27</div></div>
-<div class="ttc" id="astructGL_1_1Mesh_html"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a></div><div class="ttdoc">用于场景预览渲染的 Mesh 类。</div><div class="ttdef"><b>Definition:</b> gl.hpp:220</div></div>
-<div class="ttc" id="astructIntersection_html"><div class="ttname"><a href="../../d6/d30/structIntersection.html">Intersection</a></div><div class="ttdoc">表示射线与 Mesh 相交结果的结构体。</div><div class="ttdef"><b>Definition:</b> ray.h:38</div></div>
-<div class="ttc" id="astructIntersection_html_a369acde39ebf5283fb012181cd262055"><div class="ttname"><a href="../../d6/d30/structIntersection.html#a369acde39ebf5283fb012181cd262055">Intersection::t</a></div><div class="ttdeci">float t</div><div class="ttdef"><b>Definition:</b> ray.h:42</div></div>
-<div class="ttc" id="astructIntersection_html_a477a228b3a9a1691c1ebad8776ec511c"><div class="ttname"><a href="../../d6/d30/structIntersection.html#a477a228b3a9a1691c1ebad8776ec511c">Intersection::normal</a></div><div class="ttdeci">Eigen::Vector3f normal</div><div class="ttdef"><b>Definition:</b> ray.h:48</div></div>
-<div class="ttc" id="astructIntersection_html_a67497e3efe2793b23909052eeb82c4f3"><div class="ttname"><a href="../../d6/d30/structIntersection.html#a67497e3efe2793b23909052eeb82c4f3">Intersection::Intersection</a></div><div class="ttdeci">Intersection()</div><div class="ttdef"><b>Definition:</b> ray.cpp:24</div></div>
-<div class="ttc" id="astructIntersection_html_a8eb314eb1047af071a62e692e7deec76"><div class="ttname"><a href="../../d6/d30/structIntersection.html#a8eb314eb1047af071a62e692e7deec76">Intersection::face_index</a></div><div class="ttdeci">std::size_t face_index</div><div class="ttdef"><b>Definition:</b> ray.h:44</div></div>
-<div class="ttc" id="astructIntersection_html_aa963a5e5aad31c9dbc2484c6d1eefc7e"><div class="ttname"><a href="../../d6/d30/structIntersection.html#aa963a5e5aad31c9dbc2484c6d1eefc7e">Intersection::barycentric_coord</a></div><div class="ttdeci">Eigen::Vector3f barycentric_coord</div><div class="ttdef"><b>Definition:</b> ray.h:46</div></div>
-<div class="ttc" id="astructRay_html"><div class="ttname"><a href="../../dd/d5e/structRay.html">Ray</a></div><div class="ttdef"><b>Definition:</b> ray.h:24</div></div>
+<div class="ttc" id="agroup__rendering_html_gab851f3686bc57e3a8cc135f68f3871a5"><div class="ttname"><a href="../../db/d81/group__rendering.html#gab851f3686bc57e3a8cc135f68f3871a5">ray_triangle_intersect</a></div><div class="ttdeci">std::optional&lt; Intersection &gt; ray_triangle_intersect(const Ray &amp;ray, const GL::Mesh &amp;mesh, size_t index)</div><div class="ttdoc">判断光线ray是否与某个面片相交</div><div class="ttdef"><b>Definition</b> ray.cpp:44</div></div>
+<div class="ttc" id="astructCamera_html"><div class="ttname"><a href="../../d7/d7e/structCamera.html">Camera</a></div><div class="ttdoc">表示观察点的相机，既可以用于预览视角，也可以用于渲染视角。</div><div class="ttdef"><b>Definition</b> camera.h:27</div></div>
+<div class="ttc" id="astructGL_1_1Mesh_html"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a></div><div class="ttdoc">用于场景预览渲染的 Mesh 类。</div><div class="ttdef"><b>Definition</b> gl.hpp:220</div></div>
+<div class="ttc" id="astructIntersection_html"><div class="ttname"><a href="../../d6/d30/structIntersection.html">Intersection</a></div><div class="ttdoc">表示射线与 Mesh 相交结果的结构体。</div><div class="ttdef"><b>Definition</b> ray.h:38</div></div>
+<div class="ttc" id="astructIntersection_html_a369acde39ebf5283fb012181cd262055"><div class="ttname"><a href="../../d6/d30/structIntersection.html#a369acde39ebf5283fb012181cd262055">Intersection::t</a></div><div class="ttdeci">float t</div><div class="ttdef"><b>Definition</b> ray.h:42</div></div>
+<div class="ttc" id="astructIntersection_html_a477a228b3a9a1691c1ebad8776ec511c"><div class="ttname"><a href="../../d6/d30/structIntersection.html#a477a228b3a9a1691c1ebad8776ec511c">Intersection::normal</a></div><div class="ttdeci">Eigen::Vector3f normal</div><div class="ttdef"><b>Definition</b> ray.h:48</div></div>
+<div class="ttc" id="astructIntersection_html_a67497e3efe2793b23909052eeb82c4f3"><div class="ttname"><a href="../../d6/d30/structIntersection.html#a67497e3efe2793b23909052eeb82c4f3">Intersection::Intersection</a></div><div class="ttdeci">Intersection()</div><div class="ttdef"><b>Definition</b> ray.cpp:24</div></div>
+<div class="ttc" id="astructIntersection_html_a8eb314eb1047af071a62e692e7deec76"><div class="ttname"><a href="../../d6/d30/structIntersection.html#a8eb314eb1047af071a62e692e7deec76">Intersection::face_index</a></div><div class="ttdeci">std::size_t face_index</div><div class="ttdef"><b>Definition</b> ray.h:44</div></div>
+<div class="ttc" id="astructIntersection_html_aa963a5e5aad31c9dbc2484c6d1eefc7e"><div class="ttname"><a href="../../d6/d30/structIntersection.html#aa963a5e5aad31c9dbc2484c6d1eefc7e">Intersection::barycentric_coord</a></div><div class="ttdeci">Eigen::Vector3f barycentric_coord</div><div class="ttdef"><b>Definition</b> ray.h:46</div></div>
+<div class="ttc" id="astructRay_html"><div class="ttname"><a href="../../dd/d5e/structRay.html">Ray</a></div><div class="ttdef"><b>Definition</b> ray.h:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_313caf1132e152dd9b58bea13a4052ca.html">utils</a></li><li class="navelem"><a class="el" href="../../d5/d92/ray_8h.html">ray.h</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

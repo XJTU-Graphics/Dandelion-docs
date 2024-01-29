@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['edge_0',['edge',['../df/d02/structHalfedge.html#a0465cf62d0c9580ba6739bf1b73e76e3',1,'Halfedge::edge()'],['../d7/d4b/structHalfedgeMesh_1_1EdgeRecord.html#a411d439937e3aaf554401eb835ed5353',1,'HalfedgeMesh::EdgeRecord::edge()']]],
+  ['edge_0',['edge',['../df/d02/structHalfedge.html#a0465cf62d0c9580ba6739bf1b73e76e3',1,'Halfedge::edge'],['../d7/d4b/structHalfedgeMesh_1_1EdgeRecord.html#a411d439937e3aaf554401eb835ed5353',1,'HalfedgeMesh::EdgeRecord::edge']]],
   ['edges_1',['edges',['../dc/d6d/classHalfedgeMesh.html#aa6f5b6c2e48ecbf535fc116656dad2bb',1,'HalfedgeMesh']]],
   ['erased_5fedges_2',['erased_edges',['../dc/d6d/classHalfedgeMesh.html#ac085d71d902a54f06beb9628a93a417f',1,'HalfedgeMesh']]],
   ['erased_5ffaces_3',['erased_faces',['../dc/d6d/classHalfedgeMesh.html#a49442b91e9f6fa4929de53ae6343c06e',1,'HalfedgeMesh']]],

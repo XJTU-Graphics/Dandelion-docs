@@ -49,7 +49,7 @@ var NAVTREE =
       ] ]
     ] ],
     [ "项目结构", "d9/d2f/structure.html", null ],
-    [ "模块", "modules.html", "modules" ],
+    [ "Topics", "topics.html", "topics" ],
     [ "类", "annotated.html", [
       [ "类列表", "annotated.html", "annotated_dup" ],
       [ "类索引", "classes.html", null ],
@@ -78,8 +78,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d8/d4b/classObject.html#a770438fbce9eb0bc063547f0f77e0b30",
-"dir_68267d1309a1af8e8297ef4c3efbcdba.html"
+"d8/d4b/classObject.html#a72eed21f81afdf95370d638db35b59e1",
+"dir_405fd32de3649961a5f009c7a3fe84df.html"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

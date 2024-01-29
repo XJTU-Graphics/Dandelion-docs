@@ -3,20 +3,21 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: UI::Toolbar类 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type="text/javascript">
 window.MathJax = {
   options: {
@@ -28,7 +29,6 @@ window.MathJax = {
 <script type="text/javascript" id="MathJax-script" async="async" src="../../mathjax/es5/tex-chtml.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.2</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,7 +47,7 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.9.6 -->
+<!-- 制作者 Doxygen 1.10.0 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -59,7 +59,7 @@ var searchBox = new SearchBox("searchBox", "../../search/",'.html');
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('../../',true,false,'search.php','搜索');
-  $(document).ready(function() { init_search(); });
+  $(function() { init_search(); });
 });
 /* @license-end */
 </script>
@@ -77,7 +77,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('d1/d84/classUI_1_1Toolbar.html','../../'); initResizable(); });
+$(function(){initNavTree('d1/d84/classUI_1_1Toolbar.html','../../'); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -114,49 +114,49 @@ $(document).ready(function(){initNavTree('d1/d84/classUI_1_1Toolbar.html','../..
 <div class="contents">
 
 <p>工具栏提供大部分对场景、物体、相机和光源的操作。  
- <a href="../../d1/d84/classUI_1_1Toolbar.html#details">更多...</a></p>
+ <a href="#details">更多...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../dc/d2a/toolbar_8h_source.html">toolbar.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:aff62aaa8d997eb9bbe317086bc09363d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d84/classUI_1_1Toolbar.html#aff62aaa8d997eb9bbe317086bc09363d">Toolbar</a> (<a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> &amp;<a class="el" href="../../d1/d84/classUI_1_1Toolbar.html#add08621ffdcd3f942f5b60b43f562c8f">mode</a>, const <a class="el" href="../../dd/df1/group__ui.html#gadf4319d83c84f66dfb8994337dae0b1b">SelectableType</a> &amp;<a class="el" href="../../d1/d84/classUI_1_1Toolbar.html#a0dcd3ac429afd8adfed64e5039dc89e3">selected_element</a>)</td></tr>
+<tr class="memitem:aff62aaa8d997eb9bbe317086bc09363d" id="r_aff62aaa8d997eb9bbe317086bc09363d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff62aaa8d997eb9bbe317086bc09363d">Toolbar</a> (<a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> &amp;<a class="el" href="#add08621ffdcd3f942f5b60b43f562c8f">mode</a>, const <a class="el" href="../../dd/df1/group__ui.html#ga638a76ca8c5a67cdc5a1e918f7c6e5c1">SelectableType</a> &amp;<a class="el" href="#a0dcd3ac429afd8adfed64e5039dc89e3">selected_element</a>)</td></tr>
 <tr class="memdesc:aff62aaa8d997eb9bbe317086bc09363d"><td class="mdescLeft">&#160;</td><td class="mdescRight">工具栏持有对工作模式的引用和对选中元素的引用，构造时必须传递。  <br /></td></tr>
 <tr class="separator:aff62aaa8d997eb9bbe317086bc09363d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37fdcc0bb4811b139392c198e160fcc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d84/classUI_1_1Toolbar.html#a37fdcc0bb4811b139392c198e160fcc9">render</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
+<tr class="memitem:a37fdcc0bb4811b139392c198e160fcc9" id="r_a37fdcc0bb4811b139392c198e160fcc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37fdcc0bb4811b139392c198e160fcc9">render</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
 <tr class="separator:a37fdcc0bb4811b139392c198e160fcc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:ad5fcda1faa3917c08110df1ff206feee"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(<a class="el" href="../../dd/df1/group__ui.html#gadf4319d83c84f66dfb8994337dae0b1b">SelectableType</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d84/classUI_1_1Toolbar.html#ad5fcda1faa3917c08110df1ff206feee">on_element_selected</a></td></tr>
+<tr class="memitem:ad5fcda1faa3917c08110df1ff206feee" id="r_ad5fcda1faa3917c08110df1ff206feee"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(<a class="el" href="../../dd/df1/group__ui.html#ga638a76ca8c5a67cdc5a1e918f7c6e5c1">SelectableType</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5fcda1faa3917c08110df1ff206feee">on_element_selected</a></td></tr>
 <tr class="separator:ad5fcda1faa3917c08110df1ff206feee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc398afcfb71e5cf3c8a2aca31559eb9"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d84/classUI_1_1Toolbar.html#afc398afcfb71e5cf3c8a2aca31559eb9">on_selection_canceled</a></td></tr>
+<tr class="memitem:afc398afcfb71e5cf3c8a2aca31559eb9" id="r_afc398afcfb71e5cf3c8a2aca31559eb9"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc398afcfb71e5cf3c8a2aca31559eb9">on_selection_canceled</a></td></tr>
 <tr class="separator:afc398afcfb71e5cf3c8a2aca31559eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private 成员函数</h2></td></tr>
-<tr class="memitem:a84d933b6a271924fe5fc548189ded079"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d84/classUI_1_1Toolbar.html#a84d933b6a271924fe5fc548189ded079">scene_hierarchies</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
+<tr class="memitem:a84d933b6a271924fe5fc548189ded079" id="r_a84d933b6a271924fe5fc548189ded079"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84d933b6a271924fe5fc548189ded079">scene_hierarchies</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
 <tr class="separator:a84d933b6a271924fe5fc548189ded079"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94b7f785c6e51be73447e8d10df9532c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d84/classUI_1_1Toolbar.html#a94b7f785c6e51be73447e8d10df9532c">xyz_drag</a> (float *x, float *y, float *z, float v_speed, const char *format=&quot;%.2f&quot;)</td></tr>
+<tr class="memitem:a94b7f785c6e51be73447e8d10df9532c" id="r_a94b7f785c6e51be73447e8d10df9532c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94b7f785c6e51be73447e8d10df9532c">xyz_drag</a> (float *x, float *y, float *z, float v_speed, const char *format=&quot;%.2f&quot;)</td></tr>
 <tr class="separator:a94b7f785c6e51be73447e8d10df9532c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a797214ffc12efbe2ff3df22c0f14e6a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d84/classUI_1_1Toolbar.html#a797214ffc12efbe2ff3df22c0f14e6a7">material_editor</a> (<a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &amp;material)</td></tr>
+<tr class="memitem:a797214ffc12efbe2ff3df22c0f14e6a7" id="r_a797214ffc12efbe2ff3df22c0f14e6a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a797214ffc12efbe2ff3df22c0f14e6a7">material_editor</a> (<a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &amp;material)</td></tr>
 <tr class="separator:a797214ffc12efbe2ff3df22c0f14e6a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cf3bc8527c3d840dde41d2eb3d6a6d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d84/classUI_1_1Toolbar.html#a8cf3bc8527c3d840dde41d2eb3d6a6d7">layout_mode</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
+<tr class="memitem:a8cf3bc8527c3d840dde41d2eb3d6a6d7" id="r_a8cf3bc8527c3d840dde41d2eb3d6a6d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cf3bc8527c3d840dde41d2eb3d6a6d7">layout_mode</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
 <tr class="separator:a8cf3bc8527c3d840dde41d2eb3d6a6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49ef414deed485a34ec70f1a10b7bf54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d84/classUI_1_1Toolbar.html#a49ef414deed485a34ec70f1a10b7bf54">model_mode</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
+<tr class="memitem:a49ef414deed485a34ec70f1a10b7bf54" id="r_a49ef414deed485a34ec70f1a10b7bf54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49ef414deed485a34ec70f1a10b7bf54">model_mode</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
 <tr class="separator:a49ef414deed485a34ec70f1a10b7bf54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23e737df11534a74a7eda73edf362423"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d84/classUI_1_1Toolbar.html#a23e737df11534a74a7eda73edf362423">render_mode</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
+<tr class="memitem:a23e737df11534a74a7eda73edf362423" id="r_a23e737df11534a74a7eda73edf362423"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23e737df11534a74a7eda73edf362423">render_mode</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
 <tr class="separator:a23e737df11534a74a7eda73edf362423"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab772e3adb26059c23e482a4e8332f34d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d84/classUI_1_1Toolbar.html#ab772e3adb26059c23e482a4e8332f34d">simulate_mode</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
+<tr class="memitem:ab772e3adb26059c23e482a4e8332f34d" id="r_ab772e3adb26059c23e482a4e8332f34d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab772e3adb26059c23e482a4e8332f34d">simulate_mode</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
 <tr class="separator:ab772e3adb26059c23e482a4e8332f34d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private 属性</h2></td></tr>
-<tr class="memitem:add08621ffdcd3f942f5b60b43f562c8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d84/classUI_1_1Toolbar.html#add08621ffdcd3f942f5b60b43f562c8f">mode</a></td></tr>
+<tr class="memitem:add08621ffdcd3f942f5b60b43f562c8f" id="r_add08621ffdcd3f942f5b60b43f562c8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add08621ffdcd3f942f5b60b43f562c8f">mode</a></td></tr>
 <tr class="separator:add08621ffdcd3f942f5b60b43f562c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dcd3ac429afd8adfed64e5039dc89e3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../dd/df1/group__ui.html#gadf4319d83c84f66dfb8994337dae0b1b">SelectableType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d84/classUI_1_1Toolbar.html#a0dcd3ac429afd8adfed64e5039dc89e3">selected_element</a></td></tr>
+<tr class="memitem:a0dcd3ac429afd8adfed64e5039dc89e3" id="r_a0dcd3ac429afd8adfed64e5039dc89e3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../dd/df1/group__ui.html#ga638a76ca8c5a67cdc5a1e918f7c6e5c1">SelectableType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dcd3ac429afd8adfed64e5039dc89e3">selected_element</a></td></tr>
 <tr class="separator:a0dcd3ac429afd8adfed64e5039dc89e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5b4ea4e22b1ef5ff94c988fc4ce6adf"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d84/classUI_1_1Toolbar.html#af5b4ea4e22b1ef5ff94c988fc4ce6adf">gl_rendered_texture</a></td></tr>
+<tr class="memitem:af5b4ea4e22b1ef5ff94c988fc4ce6adf" id="r_af5b4ea4e22b1ef5ff94c988fc4ce6adf"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5b4ea4e22b1ef5ff94c988fc4ce6adf">gl_rendered_texture</a></td></tr>
 <tr class="separator:af5b4ea4e22b1ef5ff94c988fc4ce6adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
@@ -171,19 +171,12 @@ Private 属性</h2></td></tr>
         <tr>
           <td class="memname">Toolbar::Toolbar </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> &amp;&#160;</td>
-          <td class="paramname"><em>mode</em>, </td>
+          <td class="paramtype"><a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>mode</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../dd/df1/group__ui.html#gadf4319d83c84f66dfb8994337dae0b1b">SelectableType</a> &amp;&#160;</td>
-          <td class="paramname"><em>selected_element</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">const <a class="el" href="../../dd/df1/group__ui.html#ga638a76ca8c5a67cdc5a1e918f7c6e5c1">SelectableType</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>selected_element</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -210,8 +203,7 @@ Private 属性</h2></td></tr>
         <tr>
           <td class="memname">void Toolbar::layout_mode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;&#160;</td>
-          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -237,8 +229,7 @@ Private 属性</h2></td></tr>
         <tr>
           <td class="memname">void Toolbar::material_editor </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &amp;&#160;</td>
-          <td class="paramname"><em>material</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>material</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -264,8 +255,7 @@ Private 属性</h2></td></tr>
         <tr>
           <td class="memname">void Toolbar::model_mode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;&#160;</td>
-          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -288,8 +278,7 @@ Private 属性</h2></td></tr>
         <tr>
           <td class="memname">void Toolbar::render </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;&#160;</td>
-          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -310,8 +299,7 @@ Private 属性</h2></td></tr>
         <tr>
           <td class="memname">void Toolbar::render_mode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;&#160;</td>
-          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -337,8 +325,7 @@ Private 属性</h2></td></tr>
         <tr>
           <td class="memname">void Toolbar::scene_hierarchies </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;&#160;</td>
-          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -364,8 +351,7 @@ Private 属性</h2></td></tr>
         <tr>
           <td class="memname">void Toolbar::simulate_mode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;&#160;</td>
-          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -391,37 +377,27 @@ Private 属性</h2></td></tr>
         <tr>
           <td class="memname">void Toolbar::xyz_drag </td>
           <td>(</td>
-          <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
+          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>x</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
+          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>y</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>z</em>, </td>
+          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>z</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>v_speed</em>, </td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>v_speed</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>format</em> = <code>&quot;%.2f&quot;</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>format</em><span class="paramdefsep"> = </span><span class="paramdefval">&quot;%.2f&quot;</span></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -488,7 +464,7 @@ Private 属性</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(<a class="el" href="../../dd/df1/group__ui.html#gadf4319d83c84f66dfb8994337dae0b1b">SelectableType</a>)&gt; UI::Toolbar::on_element_selected</td>
+          <td class="memname">std::function&lt;void(<a class="el" href="../../dd/df1/group__ui.html#ga638a76ca8c5a67cdc5a1e918f7c6e5c1">SelectableType</a>)&gt; UI::Toolbar::on_element_selected</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -521,7 +497,7 @@ Private 属性</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../dd/df1/group__ui.html#gadf4319d83c84f66dfb8994337dae0b1b">SelectableType</a>&amp; UI::Toolbar::selected_element</td>
+          <td class="memname">const <a class="el" href="../../dd/df1/group__ui.html#ga638a76ca8c5a67cdc5a1e918f7c6e5c1">SelectableType</a>&amp; UI::Toolbar::selected_element</td>
         </tr>
       </table>
   </td>
@@ -536,7 +512,7 @@ Private 属性</h2></td></tr>
 </div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li><a class="el" href="../../dc/d2a/toolbar_8h_source.html">toolbar.h</a></li>
-<li>toolbar.cpp</li>
+<li><b>toolbar.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -544,7 +520,7 @@ Private 属性</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>UI</b></li><li class="navelem"><a class="el" href="../../d1/d84/classUI_1_1Toolbar.html">Toolbar</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

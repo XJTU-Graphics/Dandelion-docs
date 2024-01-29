@@ -60,6 +60,7 @@ var hierarchy =
     [ "VertexShaderPayload", "d9/d78/structVertexShaderPayload.html", null ],
     [ "WhittedRenderer", "da/db7/classWhittedRenderer.html", null ],
     [ "Ts", null, [
+      [ "overloaded< Ts >", "d9/d94/structoverloaded.html", null ],
       [ "overloaded< Ts >", "d9/d94/structoverloaded.html", null ]
     ] ]
 ];

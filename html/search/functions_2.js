@@ -7,7 +7,7 @@ var searchData=
   ['check_5fduring_5fsimulation_4',['check_during_simulation',['../d5/d9c/classScene.html#a296ce2b55947a1a276ab86291eeeaacf',1,'Scene']]],
   ['check_5fpicking_5fenabled_5',['check_picking_enabled',['../dc/df7/rendering_8hpp.html#a0ad2a7688f4c2a3f1e99d3b03bfd1715',1,'rendering.hpp']]],
   ['clamp_6',['clamp',['../db/d81/group__utils.html#ga46f6553c90bf08999d0ba4c86130986d',1,'math.hpp']]],
-  ['clear_7',['clear',['../d3/d7a/classRasterizer.html#ae59ae997aa16aeaa026486da24f67de8',1,'Rasterizer::clear()'],['../d4/d91/structGL_1_1LineSet.html#ae828a479016a57b411291662f3ab7d16',1,'GL::LineSet::clear()']]],
+  ['clear_7',['clear',['../d4/d91/structGL_1_1LineSet.html#ae828a479016a57b411291662f3ab7d16',1,'GL::LineSet::clear()'],['../d3/d7a/classRasterizer.html#ae59ae997aa16aeaa026486da24f67de8',1,'Rasterizer::clear()']]],
   ['clear_5ferasure_5frecords_8',['clear_erasure_records',['../dc/d6d/classHalfedgeMesh.html#adf741dc10d78ce517ae4fb16233254ec',1,'HalfedgeMesh']]],
   ['collapse_5fedge_9',['collapse_edge',['../dc/d6d/classHalfedgeMesh.html#a021cc1d95882fa97e294dcc508569b5d',1,'HalfedgeMesh']]],
   ['compute_5fbarycentric_5f2d_10',['compute_barycentric_2d',['../d3/d7a/classRasterizer.html#afecb95c7771bd5a41030a78669ac48ef',1,'Rasterizer']]],
