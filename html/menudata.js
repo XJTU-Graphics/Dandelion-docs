@@ -25,7 +25,7 @@
 var menudata={children:[
 {text:"首页",url:"index.html"},
 {text:"相关页面",url:"pages.html"},
-{text:"Topics",url:"topics.html"},
+{text:"专题",url:"topics.html"},
 {text:"类",url:"annotated.html",children:[
 {text:"类列表",url:"annotated.html"},
 {text:"类索引",url:"classes.html"},
@@ -97,7 +97,7 @@ var menudata={children:[
 {text:"u",url:"functions_vars.html#index_u"},
 {text:"v",url:"functions_vars.html#index_v"},
 {text:"w",url:"functions_vars.html#index_w"}]},
-{text:"相关函数",url:"functions_rela.html"}]}]},
+{text:"相关符号",url:"functions_rela.html"}]}]},
 {text:"文件",url:"files.html",children:[
 {text:"文件列表",url:"files.html"},
 {text:"文件成员",url:"globals.html",children:[

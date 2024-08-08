@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: gl.hpp 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -11,9 +11,9 @@
 <script type="text/javascript" src="../../dynsections.js"></script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../cookie.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.2</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,10 +47,15 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.10.0 -->
+<!-- 制作者 Doxygen 1.11.0 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
 /* @license-end */
 </script>
 <script type="text/javascript" src="../../menudata.js"></script>
@@ -58,17 +63,12 @@ var searchBox = new SearchBox("searchBox", "../../search/",'.html');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('../../',true,false,'search.php','搜索');
+  initMenu('../../',true,false,'search.php','搜索',true);
   $(function() { init_search(); });
 });
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() { codefold.init(1); });
-/* @license-end */
-</script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -82,7 +82,7 @@ $(function() { codefold.init(1); });
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable(); });
+$(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -385,10 +385,10 @@ $(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable()
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    <span class="keyword">const</span> <span class="keyword">static</span> Eigen::Vector3f highlight_wireframe_color;</div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    <span class="keyword">const</span> <span class="keyword">static</span> Eigen::Vector3f highlight_face_color;</div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <a class="code hl_struct" href="../../d9/d82/structGL_1_1VertexArrayObject.html">VertexArrayObject</a> VAO;</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    ArrayBuffer&lt;float, 3&gt; vertices;</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    ArrayBuffer&lt;float, 3&gt; normals;</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    ElementArrayBuffer&lt;2&gt; edges;</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    ElementArrayBuffer&lt;3&gt; faces;<span class="comment"></span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    <a class="code hl_struct" href="../../d6/dba/structGL_1_1ArrayBuffer.html">ArrayBuffer&lt;float, 3&gt;</a> vertices;</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    <a class="code hl_struct" href="../../d6/dba/structGL_1_1ArrayBuffer.html">ArrayBuffer&lt;float, 3&gt;</a> normals;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    <a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer&lt;2&gt;</a> edges;</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer&lt;3&gt;</a> faces;<span class="comment"></span></div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="comment">    /*! \~chinese 每个 Mesh 只能有一个材质 */</span></div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="../../d8/d88/structGL_1_1Mesh.html#a23777f301b1c83def29d6028713fb348">  259</a></span>    <a class="code hl_struct" href="../../d4/d50/structGL_1_1Material.html">Material</a> <a class="code hl_variable" href="../../d8/d88/structGL_1_1Mesh.html#a23777f301b1c83def29d6028713fb348">material</a>;</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>};</div>
@@ -431,8 +431,8 @@ $(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable()
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="comment">    /*! \~chinese 绘制的线条颜色。 */</span></div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno"><a class="line" href="../../d4/d91/structGL_1_1LineSet.html#aa6a75a492ac9dccd1f60c6daa24b7caa">  296</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d4/d91/structGL_1_1LineSet.html#aa6a75a492ac9dccd1f60c6daa24b7caa">line_color</a>;</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    <a class="code hl_struct" href="../../d9/d82/structGL_1_1VertexArrayObject.html">VertexArrayObject</a> VAO;</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    ArrayBuffer&lt;float, 3&gt; vertices;</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    ElementArrayBuffer&lt;2&gt; lines;</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    <a class="code hl_struct" href="../../d6/dba/structGL_1_1ArrayBuffer.html">ArrayBuffer&lt;float, 3&gt;</a> vertices;</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    <a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer&lt;2&gt;</a> lines;</div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    std::string name;</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>};</div>
 </div>
@@ -549,7 +549,7 @@ $(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable()
 <div class="foldopen" id="foldopen00394" data-start="{" data-end="}">
 <div class="line"><a id="l00394" name="l00394"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a4a875617acb4be2277ae1f1924e63731">  394</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a4a875617acb4be2277ae1f1924e63731">ArrayBuffer&lt;T, size&gt;::specify_vertex_attribute</a>()</div>
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>{</div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    GLenum data_type = get_GL_type_enum&lt;T&gt;();</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    GLenum data_type = <a class="code hl_function" href="../../de/d8b/group__platform.html#ga6efffcb404895fd65d719751e0c1a617">get_GL_type_enum&lt;T&gt;</a>();</div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>    glVertexAttribPointer(this-&gt;layout_location, size, data_type, GL_FALSE, size * <span class="keyword">sizeof</span>(T),</div>
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>                          (<span class="keywordtype">void</span>*)0);</div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>    glEnableVertexAttribArray(this-&gt;layout_location);</div>
@@ -660,65 +660,65 @@ $(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable()
 </div>
 </div>
 </div>
-<div class="ttc" id="aclassShader_html"><div class="ttname"><a href="../../d9/d69/classShader.html">Shader</a></div><div class="ttdoc">对 GLSL Shader 的简单封装。</div><div class="ttdef"><b>Definition</b> shader.hpp:24</div></div>
-<div class="ttc" id="agroup__platform_html_ga6efffcb404895fd65d719751e0c1a617"><div class="ttname"><a href="../../de/d8b/group__platform.html#ga6efffcb404895fd65d719751e0c1a617">GL::get_GL_type_enum</a></div><div class="ttdeci">constexpr GLenum get_GL_type_enum()</div><div class="ttdoc">获取某个基本数据类型对应的枚举值（用于传递给某些 OpenGL API）。</div><div class="ttdef"><b>Definition</b> gl.hpp:309</div></div>
+<div class="ttc" id="aclassShader_html"><div class="ttname"><a href="../../d9/d69/classShader.html">Shader</a></div><div class="ttdoc">对 GLSL Shader 的简单封装。</div><div class="ttdef"><b>定义</b> shader.hpp:24</div></div>
+<div class="ttc" id="agroup__platform_html_ga6efffcb404895fd65d719751e0c1a617"><div class="ttname"><a href="../../de/d8b/group__platform.html#ga6efffcb404895fd65d719751e0c1a617">GL::get_GL_type_enum</a></div><div class="ttdeci">constexpr GLenum get_GL_type_enum()</div><div class="ttdoc">获取某个基本数据类型对应的枚举值（用于传递给某些 OpenGL API）。</div><div class="ttdef"><b>定义</b> gl.hpp:309</div></div>
 <div class="ttc" id="arendering_8hpp_html"><div class="ttname"><a href="../../dc/df7/rendering_8hpp.html">rendering.hpp</a></div><div class="ttdoc">这个文件定义了一些和渲染（离线渲染或场景预览）相关的常量、枚举等。</div></div>
 <div class="ttc" id="ashader_8hpp_html"><div class="ttname"><a href="../../d9/d52/shader_8hpp.html">shader.hpp</a></div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html">GL::ArrayBuffer</a></div><div class="ttdoc">对 OpenGL 数组缓冲 (Array Buffer) 的封装。</div><div class="ttdef"><b>Definition</b> gl.hpp:92</div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a20dda9b009642ee54f0b260b3622f3e2"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">GL::ArrayBuffer::ArrayBuffer</a></div><div class="ttdeci">ArrayBuffer(GLenum buffer_usage, unsigned int layout_location)</div><div class="ttdef"><b>Definition</b> gl.hpp:331</div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a25a9ab706eefcb16a992948393006cb3"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a25a9ab706eefcb16a992948393006cb3">GL::ArrayBuffer::update</a></div><div class="ttdeci">void update(size_t index, const Eigen::Vector3f &amp;value)</div><div class="ttdoc">更新指定位置的 size 个数据。</div><div class="ttdef"><b>Definition</b> gl.hpp:365</div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a4a875617acb4be2277ae1f1924e63731"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a4a875617acb4be2277ae1f1924e63731">GL::ArrayBuffer::specify_vertex_attribute</a></div><div class="ttdeci">void specify_vertex_attribute()</div><div class="ttdef"><b>Definition</b> gl.hpp:394</div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a5c92fd61c3de20c99e71c48e9fa5291a"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a5c92fd61c3de20c99e71c48e9fa5291a">GL::ArrayBuffer::layout_location</a></div><div class="ttdeci">unsigned int layout_location</div><div class="ttdef"><b>Definition</b> gl.hpp:143</div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a605a48e7c99737fb0404f54c5245be1f"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a605a48e7c99737fb0404f54c5245be1f">GL::ArrayBuffer::append</a></div><div class="ttdeci">void append(Ts... values)</div><div class="ttdef"><b>Definition</b> gl.hpp:355</div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a75e71a3f0eb57f79b044099e82065242"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a75e71a3f0eb57f79b044099e82065242">GL::ArrayBuffer::release</a></div><div class="ttdeci">void release()</div><div class="ttdef"><b>Definition</b> gl.hpp:388</div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a7e97dda8fc89ec9da70ffc4f63d5ea12"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a7e97dda8fc89ec9da70ffc4f63d5ea12">GL::ArrayBuffer::~ArrayBuffer</a></div><div class="ttdeci">~ArrayBuffer()</div><div class="ttdef"><b>Definition</b> gl.hpp:346</div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html_aa8ecf23830cb9969726478bccb43a01c"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#aa8ecf23830cb9969726478bccb43a01c">GL::ArrayBuffer::usage</a></div><div class="ttdeci">unsigned int usage</div><div class="ttdef"><b>Definition</b> gl.hpp:139</div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html_acae88854f303cdab9f1d23bd338bb32a"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#acae88854f303cdab9f1d23bd338bb32a">GL::ArrayBuffer::disable</a></div><div class="ttdeci">void disable()</div><div class="ttdef"><b>Definition</b> gl.hpp:403</div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html_ad5cac6ebe97d4f7cfdddc9b694fe6397"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#ad5cac6ebe97d4f7cfdddc9b694fe6397">GL::ArrayBuffer::count</a></div><div class="ttdeci">std::size_t count() const</div><div class="ttdef"><b>Definition</b> gl.hpp:376</div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html_ae486606f2927953ef45babf8adef5bb9"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#ae486606f2927953ef45babf8adef5bb9">GL::ArrayBuffer::bind</a></div><div class="ttdeci">void bind()</div><div class="ttdef"><b>Definition</b> gl.hpp:382</div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html_af0736b43512bd7183b7f5de35f4005b0"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#af0736b43512bd7183b7f5de35f4005b0">GL::ArrayBuffer::to_gpu</a></div><div class="ttdeci">void to_gpu()</div><div class="ttdef"><b>Definition</b> gl.hpp:409</div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html_af87b261e58ef9cb2bcf77f4e4c9eb86b"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#af87b261e58ef9cb2bcf77f4e4c9eb86b">GL::ArrayBuffer::ArrayBuffer</a></div><div class="ttdeci">ArrayBuffer(ArrayBuffer &amp;&amp;other)</div><div class="ttdef"><b>Definition</b> gl.hpp:338</div></div>
-<div class="ttc" id="astructGL_1_1ElementArrayBuffer_html"><div class="ttname"><a href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">GL::ElementArrayBuffer</a></div><div class="ttdoc">对 OpenGL 索引数组缓冲 (Element Array Buffer) 的封装。</div><div class="ttdef"><b>Definition</b> gl.hpp:160</div></div>
-<div class="ttc" id="astructGL_1_1ElementArrayBuffer_html_a25fd1f84717b224a566b84214ce33ead"><div class="ttname"><a href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a25fd1f84717b224a566b84214ce33ead">GL::ElementArrayBuffer::count</a></div><div class="ttdeci">std::size_t count() const</div><div class="ttdef"><b>Definition</b> gl.hpp:440</div></div>
-<div class="ttc" id="astructGL_1_1ElementArrayBuffer_html_a2f7352881659cbf5f07d9026409dac29"><div class="ttname"><a href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a2f7352881659cbf5f07d9026409dac29">GL::ElementArrayBuffer::ElementArrayBuffer</a></div><div class="ttdeci">ElementArrayBuffer(ElementArrayBuffer &amp;&amp;other)</div><div class="ttdef"><b>Definition</b> gl.hpp:425</div></div>
-<div class="ttc" id="astructGL_1_1ElementArrayBuffer_html_aa826a419aae7eb87828ceb781ee780cf"><div class="ttname"><a href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#aa826a419aae7eb87828ceb781ee780cf">GL::ElementArrayBuffer::append</a></div><div class="ttdeci">void append(Ts... values)</div><div class="ttdef"><b>Definition</b> gl.hpp:447</div></div>
-<div class="ttc" id="astructGL_1_1ElementArrayBuffer_html_ac8146ee6a703d9e3076aaccee1ab8642"><div class="ttname"><a href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#ac8146ee6a703d9e3076aaccee1ab8642">GL::ElementArrayBuffer::data</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; data</div><div class="ttdef"><b>Definition</b> gl.hpp:179</div></div>
-<div class="ttc" id="astructGL_1_1LineSet_html"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a></div><div class="ttdoc">在预览场景时绘制若干线条。</div><div class="ttdef"><b>Definition</b> gl.hpp:270</div></div>
-<div class="ttc" id="astructGL_1_1LineSet_html_a10af9f331ed602321162b0e4a31d5a74"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html#a10af9f331ed602321162b0e4a31d5a74">GL::LineSet::to_gpu</a></div><div class="ttdeci">void to_gpu()</div><div class="ttdef"><b>Definition</b> gl.cpp:281</div></div>
-<div class="ttc" id="astructGL_1_1LineSet_html_a3f29f9d457134a056b69ab382d67710d"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html#a3f29f9d457134a056b69ab382d67710d">GL::LineSet::add_line_segment</a></div><div class="ttdeci">void add_line_segment(const Eigen::Vector3f &amp;a, const Eigen::Vector3f &amp;b)</div><div class="ttdef"><b>Definition</b> gl.cpp:202</div></div>
-<div class="ttc" id="astructGL_1_1LineSet_html_a517c4b363acd6859345d4b231d143263"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html#a517c4b363acd6859345d4b231d143263">GL::LineSet::add_AABB</a></div><div class="ttdeci">void add_AABB(const Eigen::Vector3f &amp;p_min, const Eigen::Vector3f &amp;p_max)</div><div class="ttdef"><b>Definition</b> gl.cpp:245</div></div>
-<div class="ttc" id="astructGL_1_1LineSet_html_a5b0c4b7f0f49b6ba88c6235a6d8fa5c1"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html#a5b0c4b7f0f49b6ba88c6235a6d8fa5c1">GL::LineSet::render</a></div><div class="ttdeci">void render(const Shader &amp;shader)</div><div class="ttdoc">渲染该线条集。</div><div class="ttdef"><b>Definition</b> gl.cpp:289</div></div>
-<div class="ttc" id="astructGL_1_1LineSet_html_aa6a75a492ac9dccd1f60c6daa24b7caa"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html#aa6a75a492ac9dccd1f60c6daa24b7caa">GL::LineSet::line_color</a></div><div class="ttdeci">Eigen::Vector3f line_color</div><div class="ttdef"><b>Definition</b> gl.hpp:296</div></div>
-<div class="ttc" id="astructGL_1_1LineSet_html_aba1205eaffc7d02be1e2c87ad2c4f6c4"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html#aba1205eaffc7d02be1e2c87ad2c4f6c4">GL::LineSet::update_arrow</a></div><div class="ttdeci">void update_arrow(size_t index, const Eigen::Vector3f &amp;from, const Eigen::Vector3f &amp;to)</div><div class="ttdef"><b>Definition</b> gl.cpp:232</div></div>
-<div class="ttc" id="astructGL_1_1LineSet_html_ae3379115b62a105e7091db128c012f69"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html#ae3379115b62a105e7091db128c012f69">GL::LineSet::add_arrow</a></div><div class="ttdeci">void add_arrow(const Eigen::Vector3f &amp;from, const Eigen::Vector3f &amp;to)</div><div class="ttdef"><b>Definition</b> gl.cpp:217</div></div>
-<div class="ttc" id="astructGL_1_1LineSet_html_ae828a479016a57b411291662f3ab7d16"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html#ae828a479016a57b411291662f3ab7d16">GL::LineSet::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition</b> gl.cpp:275</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html">GL::ArrayBuffer</a></div><div class="ttdoc">对 OpenGL 数组缓冲 (Array Buffer) 的封装。</div><div class="ttdef"><b>定义</b> gl.hpp:92</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a20dda9b009642ee54f0b260b3622f3e2"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">GL::ArrayBuffer::ArrayBuffer</a></div><div class="ttdeci">ArrayBuffer(GLenum buffer_usage, unsigned int layout_location)</div><div class="ttdef"><b>定义</b> gl.hpp:331</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a25a9ab706eefcb16a992948393006cb3"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a25a9ab706eefcb16a992948393006cb3">GL::ArrayBuffer::update</a></div><div class="ttdeci">void update(size_t index, const Eigen::Vector3f &amp;value)</div><div class="ttdoc">更新指定位置的 size 个数据。</div><div class="ttdef"><b>定义</b> gl.hpp:365</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a4a875617acb4be2277ae1f1924e63731"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a4a875617acb4be2277ae1f1924e63731">GL::ArrayBuffer::specify_vertex_attribute</a></div><div class="ttdeci">void specify_vertex_attribute()</div><div class="ttdef"><b>定义</b> gl.hpp:394</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a5c92fd61c3de20c99e71c48e9fa5291a"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a5c92fd61c3de20c99e71c48e9fa5291a">GL::ArrayBuffer::layout_location</a></div><div class="ttdeci">unsigned int layout_location</div><div class="ttdef"><b>定义</b> gl.hpp:143</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a605a48e7c99737fb0404f54c5245be1f"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a605a48e7c99737fb0404f54c5245be1f">GL::ArrayBuffer::append</a></div><div class="ttdeci">void append(Ts... values)</div><div class="ttdef"><b>定义</b> gl.hpp:355</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a75e71a3f0eb57f79b044099e82065242"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a75e71a3f0eb57f79b044099e82065242">GL::ArrayBuffer::release</a></div><div class="ttdeci">void release()</div><div class="ttdef"><b>定义</b> gl.hpp:388</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a7e97dda8fc89ec9da70ffc4f63d5ea12"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a7e97dda8fc89ec9da70ffc4f63d5ea12">GL::ArrayBuffer::~ArrayBuffer</a></div><div class="ttdeci">~ArrayBuffer()</div><div class="ttdef"><b>定义</b> gl.hpp:346</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html_aa8ecf23830cb9969726478bccb43a01c"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#aa8ecf23830cb9969726478bccb43a01c">GL::ArrayBuffer::usage</a></div><div class="ttdeci">unsigned int usage</div><div class="ttdef"><b>定义</b> gl.hpp:139</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html_acae88854f303cdab9f1d23bd338bb32a"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#acae88854f303cdab9f1d23bd338bb32a">GL::ArrayBuffer::disable</a></div><div class="ttdeci">void disable()</div><div class="ttdef"><b>定义</b> gl.hpp:403</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html_ad5cac6ebe97d4f7cfdddc9b694fe6397"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#ad5cac6ebe97d4f7cfdddc9b694fe6397">GL::ArrayBuffer::count</a></div><div class="ttdeci">std::size_t count() const</div><div class="ttdef"><b>定义</b> gl.hpp:376</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html_ae486606f2927953ef45babf8adef5bb9"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#ae486606f2927953ef45babf8adef5bb9">GL::ArrayBuffer::bind</a></div><div class="ttdeci">void bind()</div><div class="ttdef"><b>定义</b> gl.hpp:382</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html_af0736b43512bd7183b7f5de35f4005b0"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#af0736b43512bd7183b7f5de35f4005b0">GL::ArrayBuffer::to_gpu</a></div><div class="ttdeci">void to_gpu()</div><div class="ttdef"><b>定义</b> gl.hpp:409</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html_af87b261e58ef9cb2bcf77f4e4c9eb86b"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#af87b261e58ef9cb2bcf77f4e4c9eb86b">GL::ArrayBuffer::ArrayBuffer</a></div><div class="ttdeci">ArrayBuffer(ArrayBuffer &amp;&amp;other)</div><div class="ttdef"><b>定义</b> gl.hpp:338</div></div>
+<div class="ttc" id="astructGL_1_1ElementArrayBuffer_html"><div class="ttname"><a href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">GL::ElementArrayBuffer</a></div><div class="ttdoc">对 OpenGL 索引数组缓冲 (Element Array Buffer) 的封装。</div><div class="ttdef"><b>定义</b> gl.hpp:160</div></div>
+<div class="ttc" id="astructGL_1_1ElementArrayBuffer_html_a25fd1f84717b224a566b84214ce33ead"><div class="ttname"><a href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a25fd1f84717b224a566b84214ce33ead">GL::ElementArrayBuffer::count</a></div><div class="ttdeci">std::size_t count() const</div><div class="ttdef"><b>定义</b> gl.hpp:440</div></div>
+<div class="ttc" id="astructGL_1_1ElementArrayBuffer_html_a2f7352881659cbf5f07d9026409dac29"><div class="ttname"><a href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a2f7352881659cbf5f07d9026409dac29">GL::ElementArrayBuffer::ElementArrayBuffer</a></div><div class="ttdeci">ElementArrayBuffer(ElementArrayBuffer &amp;&amp;other)</div><div class="ttdef"><b>定义</b> gl.hpp:425</div></div>
+<div class="ttc" id="astructGL_1_1ElementArrayBuffer_html_aa826a419aae7eb87828ceb781ee780cf"><div class="ttname"><a href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#aa826a419aae7eb87828ceb781ee780cf">GL::ElementArrayBuffer::append</a></div><div class="ttdeci">void append(Ts... values)</div><div class="ttdef"><b>定义</b> gl.hpp:447</div></div>
+<div class="ttc" id="astructGL_1_1ElementArrayBuffer_html_ac8146ee6a703d9e3076aaccee1ab8642"><div class="ttname"><a href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#ac8146ee6a703d9e3076aaccee1ab8642">GL::ElementArrayBuffer::data</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; data</div><div class="ttdef"><b>定义</b> gl.hpp:179</div></div>
+<div class="ttc" id="astructGL_1_1LineSet_html"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a></div><div class="ttdoc">在预览场景时绘制若干线条。</div><div class="ttdef"><b>定义</b> gl.hpp:270</div></div>
+<div class="ttc" id="astructGL_1_1LineSet_html_a10af9f331ed602321162b0e4a31d5a74"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html#a10af9f331ed602321162b0e4a31d5a74">GL::LineSet::to_gpu</a></div><div class="ttdeci">void to_gpu()</div><div class="ttdef"><b>定义</b> gl.cpp:281</div></div>
+<div class="ttc" id="astructGL_1_1LineSet_html_a3f29f9d457134a056b69ab382d67710d"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html#a3f29f9d457134a056b69ab382d67710d">GL::LineSet::add_line_segment</a></div><div class="ttdeci">void add_line_segment(const Eigen::Vector3f &amp;a, const Eigen::Vector3f &amp;b)</div><div class="ttdef"><b>定义</b> gl.cpp:202</div></div>
+<div class="ttc" id="astructGL_1_1LineSet_html_a517c4b363acd6859345d4b231d143263"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html#a517c4b363acd6859345d4b231d143263">GL::LineSet::add_AABB</a></div><div class="ttdeci">void add_AABB(const Eigen::Vector3f &amp;p_min, const Eigen::Vector3f &amp;p_max)</div><div class="ttdef"><b>定义</b> gl.cpp:245</div></div>
+<div class="ttc" id="astructGL_1_1LineSet_html_a5b0c4b7f0f49b6ba88c6235a6d8fa5c1"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html#a5b0c4b7f0f49b6ba88c6235a6d8fa5c1">GL::LineSet::render</a></div><div class="ttdeci">void render(const Shader &amp;shader)</div><div class="ttdoc">渲染该线条集。</div><div class="ttdef"><b>定义</b> gl.cpp:289</div></div>
+<div class="ttc" id="astructGL_1_1LineSet_html_aa6a75a492ac9dccd1f60c6daa24b7caa"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html#aa6a75a492ac9dccd1f60c6daa24b7caa">GL::LineSet::line_color</a></div><div class="ttdeci">Eigen::Vector3f line_color</div><div class="ttdef"><b>定义</b> gl.hpp:296</div></div>
+<div class="ttc" id="astructGL_1_1LineSet_html_aba1205eaffc7d02be1e2c87ad2c4f6c4"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html#aba1205eaffc7d02be1e2c87ad2c4f6c4">GL::LineSet::update_arrow</a></div><div class="ttdeci">void update_arrow(size_t index, const Eigen::Vector3f &amp;from, const Eigen::Vector3f &amp;to)</div><div class="ttdef"><b>定义</b> gl.cpp:232</div></div>
+<div class="ttc" id="astructGL_1_1LineSet_html_ae3379115b62a105e7091db128c012f69"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html#ae3379115b62a105e7091db128c012f69">GL::LineSet::add_arrow</a></div><div class="ttdeci">void add_arrow(const Eigen::Vector3f &amp;from, const Eigen::Vector3f &amp;to)</div><div class="ttdef"><b>定义</b> gl.cpp:217</div></div>
+<div class="ttc" id="astructGL_1_1LineSet_html_ae828a479016a57b411291662f3ab7d16"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html#ae828a479016a57b411291662f3ab7d16">GL::LineSet::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>定义</b> gl.cpp:275</div></div>
 <div class="ttc" id="astructGL_1_1LineSet_html_afd590478026675e92c7aa324936088c9"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html#afd590478026675e92c7aa324936088c9">GL::LineSet::LineSet</a></div><div class="ttdeci">LineSet(const LineSet &amp;other)=delete</div></div>
-<div class="ttc" id="astructGL_1_1Material_html"><div class="ttname"><a href="../../d4/d50/structGL_1_1Material.html">GL::Material</a></div><div class="ttdoc">物体材质。</div><div class="ttdef"><b>Definition</b> gl.hpp:189</div></div>
-<div class="ttc" id="astructGL_1_1Material_html_a2e6bfa1497546db65f1c363985b4a52e"><div class="ttname"><a href="../../d4/d50/structGL_1_1Material.html#a2e6bfa1497546db65f1c363985b4a52e">GL::Material::diffuse</a></div><div class="ttdeci">Eigen::Vector3f diffuse</div><div class="ttdef"><b>Definition</b> gl.hpp:197</div></div>
-<div class="ttc" id="astructGL_1_1Material_html_a593816847c0d6811a2fc6c625670ef27"><div class="ttname"><a href="../../d4/d50/structGL_1_1Material.html#a593816847c0d6811a2fc6c625670ef27">GL::Material::shininess</a></div><div class="ttdeci">float shininess</div><div class="ttdef"><b>Definition</b> gl.hpp:201</div></div>
-<div class="ttc" id="astructGL_1_1Material_html_a886340a3db61c4e1139bc795a89fe2f7"><div class="ttname"><a href="../../d4/d50/structGL_1_1Material.html#a886340a3db61c4e1139bc795a89fe2f7">GL::Material::specular</a></div><div class="ttdeci">Eigen::Vector3f specular</div><div class="ttdef"><b>Definition</b> gl.hpp:199</div></div>
-<div class="ttc" id="astructGL_1_1Material_html_afbe14a21e57e922a86e202772688f2ef"><div class="ttname"><a href="../../d4/d50/structGL_1_1Material.html#afbe14a21e57e922a86e202772688f2ef">GL::Material::ambient</a></div><div class="ttdeci">Eigen::Vector3f ambient</div><div class="ttdef"><b>Definition</b> gl.hpp:195</div></div>
-<div class="ttc" id="astructGL_1_1Mesh_html"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a></div><div class="ttdoc">用于场景预览渲染的 Mesh 类。</div><div class="ttdef"><b>Definition</b> gl.hpp:220</div></div>
-<div class="ttc" id="astructGL_1_1Mesh_html_a2207633400950588ddd94676412bd9f0"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#a2207633400950588ddd94676412bd9f0">GL::Mesh::face</a></div><div class="ttdeci">std::array&lt; size_t, 3 &gt; face(size_t index) const</div><div class="ttdef"><b>Definition</b> gl.cpp:112</div></div>
-<div class="ttc" id="astructGL_1_1Mesh_html_a23777f301b1c83def29d6028713fb348"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#a23777f301b1c83def29d6028713fb348">GL::Mesh::material</a></div><div class="ttdeci">Material material</div><div class="ttdef"><b>Definition</b> gl.hpp:259</div></div>
-<div class="ttc" id="astructGL_1_1Mesh_html_a58c8d1b5f9fdc2e1657c9d3491dc0770"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#a58c8d1b5f9fdc2e1657c9d3491dc0770">GL::Mesh::render</a></div><div class="ttdeci">void render(const Shader &amp;shader, unsigned int element_flags, bool face_shading=true, const Eigen::Vector3f &amp;global_color=default_wireframe_color)</div><div class="ttdoc">渲染这个 mesh。</div><div class="ttdef"><b>Definition</b> gl.cpp:137</div></div>
+<div class="ttc" id="astructGL_1_1Material_html"><div class="ttname"><a href="../../d4/d50/structGL_1_1Material.html">GL::Material</a></div><div class="ttdoc">物体材质。</div><div class="ttdef"><b>定义</b> gl.hpp:189</div></div>
+<div class="ttc" id="astructGL_1_1Material_html_a2e6bfa1497546db65f1c363985b4a52e"><div class="ttname"><a href="../../d4/d50/structGL_1_1Material.html#a2e6bfa1497546db65f1c363985b4a52e">GL::Material::diffuse</a></div><div class="ttdeci">Eigen::Vector3f diffuse</div><div class="ttdef"><b>定义</b> gl.hpp:197</div></div>
+<div class="ttc" id="astructGL_1_1Material_html_a593816847c0d6811a2fc6c625670ef27"><div class="ttname"><a href="../../d4/d50/structGL_1_1Material.html#a593816847c0d6811a2fc6c625670ef27">GL::Material::shininess</a></div><div class="ttdeci">float shininess</div><div class="ttdef"><b>定义</b> gl.hpp:201</div></div>
+<div class="ttc" id="astructGL_1_1Material_html_a886340a3db61c4e1139bc795a89fe2f7"><div class="ttname"><a href="../../d4/d50/structGL_1_1Material.html#a886340a3db61c4e1139bc795a89fe2f7">GL::Material::specular</a></div><div class="ttdeci">Eigen::Vector3f specular</div><div class="ttdef"><b>定义</b> gl.hpp:199</div></div>
+<div class="ttc" id="astructGL_1_1Material_html_afbe14a21e57e922a86e202772688f2ef"><div class="ttname"><a href="../../d4/d50/structGL_1_1Material.html#afbe14a21e57e922a86e202772688f2ef">GL::Material::ambient</a></div><div class="ttdeci">Eigen::Vector3f ambient</div><div class="ttdef"><b>定义</b> gl.hpp:195</div></div>
+<div class="ttc" id="astructGL_1_1Mesh_html"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a></div><div class="ttdoc">用于场景预览渲染的 Mesh 类。</div><div class="ttdef"><b>定义</b> gl.hpp:220</div></div>
+<div class="ttc" id="astructGL_1_1Mesh_html_a2207633400950588ddd94676412bd9f0"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#a2207633400950588ddd94676412bd9f0">GL::Mesh::face</a></div><div class="ttdeci">std::array&lt; size_t, 3 &gt; face(size_t index) const</div><div class="ttdef"><b>定义</b> gl.cpp:112</div></div>
+<div class="ttc" id="astructGL_1_1Mesh_html_a23777f301b1c83def29d6028713fb348"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#a23777f301b1c83def29d6028713fb348">GL::Mesh::material</a></div><div class="ttdeci">Material material</div><div class="ttdef"><b>定义</b> gl.hpp:259</div></div>
+<div class="ttc" id="astructGL_1_1Mesh_html_a58c8d1b5f9fdc2e1657c9d3491dc0770"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#a58c8d1b5f9fdc2e1657c9d3491dc0770">GL::Mesh::render</a></div><div class="ttdeci">void render(const Shader &amp;shader, unsigned int element_flags, bool face_shading=true, const Eigen::Vector3f &amp;global_color=default_wireframe_color)</div><div class="ttdoc">渲染这个 mesh。</div><div class="ttdef"><b>定义</b> gl.cpp:137</div></div>
 <div class="ttc" id="astructGL_1_1Mesh_html_a81afad0fc0201e1c1bc012ba41a22268"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#a81afad0fc0201e1c1bc012ba41a22268">GL::Mesh::Mesh</a></div><div class="ttdeci">Mesh(const Mesh &amp;other)=delete</div></div>
-<div class="ttc" id="astructGL_1_1Mesh_html_a974fc923af6b4255289ffc20046afb14"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#a974fc923af6b4255289ffc20046afb14">GL::Mesh::normal</a></div><div class="ttdeci">Eigen::Vector3f normal(size_t index) const</div><div class="ttdef"><b>Definition</b> gl.cpp:102</div></div>
-<div class="ttc" id="astructGL_1_1Mesh_html_abb6cfaaf78c29740bc6dbf215347b203"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#abb6cfaaf78c29740bc6dbf215347b203">GL::Mesh::vertex</a></div><div class="ttdeci">Eigen::Vector3f vertex(size_t index) const</div><div class="ttdef"><b>Definition</b> gl.cpp:97</div></div>
-<div class="ttc" id="astructGL_1_1Mesh_html_afbd5496ce294b47446f8af09fe33dbb8"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#afbd5496ce294b47446f8af09fe33dbb8">GL::Mesh::edge</a></div><div class="ttdeci">std::array&lt; size_t, 2 &gt; edge(size_t index) const</div><div class="ttdef"><b>Definition</b> gl.cpp:107</div></div>
-<div class="ttc" id="astructGL_1_1VertexArrayObject_html"><div class="ttname"><a href="../../d9/d82/structGL_1_1VertexArrayObject.html">GL::VertexArrayObject</a></div><div class="ttdoc">对 OpenGL 顶点数组对象 (Vertex Array Object) 的封装。</div><div class="ttdef"><b>Definition</b> gl.hpp:52</div></div>
-<div class="ttc" id="astructGL_1_1VertexArrayObject_html_a1666f5d4a67792d9895330c2c86e76da"><div class="ttname"><a href="../../d9/d82/structGL_1_1VertexArrayObject.html#a1666f5d4a67792d9895330c2c86e76da">GL::VertexArrayObject::bind</a></div><div class="ttdeci">void bind()</div><div class="ttdef"><b>Definition</b> gl.cpp:34</div></div>
-<div class="ttc" id="astructGL_1_1VertexArrayObject_html_a37ca7e8bff292e3f334544dd6ba4ab37"><div class="ttname"><a href="../../d9/d82/structGL_1_1VertexArrayObject.html#a37ca7e8bff292e3f334544dd6ba4ab37">GL::VertexArrayObject::~VertexArrayObject</a></div><div class="ttdeci">~VertexArrayObject()</div><div class="ttdef"><b>Definition</b> gl.cpp:27</div></div>
-<div class="ttc" id="astructGL_1_1VertexArrayObject_html_a73e2208fff05d22519dfad0309339f75"><div class="ttname"><a href="../../d9/d82/structGL_1_1VertexArrayObject.html#a73e2208fff05d22519dfad0309339f75">GL::VertexArrayObject::VertexArrayObject</a></div><div class="ttdeci">VertexArrayObject()</div><div class="ttdef"><b>Definition</b> gl.cpp:17</div></div>
-<div class="ttc" id="astructGL_1_1VertexArrayObject_html_aa106084d1d1a66a1c19fe7828b674830"><div class="ttname"><a href="../../d9/d82/structGL_1_1VertexArrayObject.html#aa106084d1d1a66a1c19fe7828b674830">GL::VertexArrayObject::release</a></div><div class="ttdeci">void release()</div><div class="ttdef"><b>Definition</b> gl.cpp:39</div></div>
-<div class="ttc" id="astructGL_1_1VertexArrayObject_html_af7313fe7cf566758819a19108694d828"><div class="ttname"><a href="../../d9/d82/structGL_1_1VertexArrayObject.html#af7313fe7cf566758819a19108694d828">GL::VertexArrayObject::draw</a></div><div class="ttdeci">void draw(GLenum mode, int first, std::size_t count)</div><div class="ttdef"><b>Definition</b> gl.cpp:44</div></div>
+<div class="ttc" id="astructGL_1_1Mesh_html_a974fc923af6b4255289ffc20046afb14"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#a974fc923af6b4255289ffc20046afb14">GL::Mesh::normal</a></div><div class="ttdeci">Eigen::Vector3f normal(size_t index) const</div><div class="ttdef"><b>定义</b> gl.cpp:102</div></div>
+<div class="ttc" id="astructGL_1_1Mesh_html_abb6cfaaf78c29740bc6dbf215347b203"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#abb6cfaaf78c29740bc6dbf215347b203">GL::Mesh::vertex</a></div><div class="ttdeci">Eigen::Vector3f vertex(size_t index) const</div><div class="ttdef"><b>定义</b> gl.cpp:97</div></div>
+<div class="ttc" id="astructGL_1_1Mesh_html_afbd5496ce294b47446f8af09fe33dbb8"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#afbd5496ce294b47446f8af09fe33dbb8">GL::Mesh::edge</a></div><div class="ttdeci">std::array&lt; size_t, 2 &gt; edge(size_t index) const</div><div class="ttdef"><b>定义</b> gl.cpp:107</div></div>
+<div class="ttc" id="astructGL_1_1VertexArrayObject_html"><div class="ttname"><a href="../../d9/d82/structGL_1_1VertexArrayObject.html">GL::VertexArrayObject</a></div><div class="ttdoc">对 OpenGL 顶点数组对象 (Vertex Array Object) 的封装。</div><div class="ttdef"><b>定义</b> gl.hpp:52</div></div>
+<div class="ttc" id="astructGL_1_1VertexArrayObject_html_a1666f5d4a67792d9895330c2c86e76da"><div class="ttname"><a href="../../d9/d82/structGL_1_1VertexArrayObject.html#a1666f5d4a67792d9895330c2c86e76da">GL::VertexArrayObject::bind</a></div><div class="ttdeci">void bind()</div><div class="ttdef"><b>定义</b> gl.cpp:34</div></div>
+<div class="ttc" id="astructGL_1_1VertexArrayObject_html_a37ca7e8bff292e3f334544dd6ba4ab37"><div class="ttname"><a href="../../d9/d82/structGL_1_1VertexArrayObject.html#a37ca7e8bff292e3f334544dd6ba4ab37">GL::VertexArrayObject::~VertexArrayObject</a></div><div class="ttdeci">~VertexArrayObject()</div><div class="ttdef"><b>定义</b> gl.cpp:27</div></div>
+<div class="ttc" id="astructGL_1_1VertexArrayObject_html_a73e2208fff05d22519dfad0309339f75"><div class="ttname"><a href="../../d9/d82/structGL_1_1VertexArrayObject.html#a73e2208fff05d22519dfad0309339f75">GL::VertexArrayObject::VertexArrayObject</a></div><div class="ttdeci">VertexArrayObject()</div><div class="ttdef"><b>定义</b> gl.cpp:17</div></div>
+<div class="ttc" id="astructGL_1_1VertexArrayObject_html_aa106084d1d1a66a1c19fe7828b674830"><div class="ttname"><a href="../../d9/d82/structGL_1_1VertexArrayObject.html#aa106084d1d1a66a1c19fe7828b674830">GL::VertexArrayObject::release</a></div><div class="ttdeci">void release()</div><div class="ttdef"><b>定义</b> gl.cpp:39</div></div>
+<div class="ttc" id="astructGL_1_1VertexArrayObject_html_af7313fe7cf566758819a19108694d828"><div class="ttname"><a href="../../d9/d82/structGL_1_1VertexArrayObject.html#af7313fe7cf566758819a19108694d828">GL::VertexArrayObject::draw</a></div><div class="ttdeci">void draw(GLenum mode, int first, std::size_t count)</div><div class="ttdef"><b>定义</b> gl.cpp:44</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_4b68c2fef3e151b6b93d5e93b14f1857.html">platform</a></li><li class="navelem"><a class="el" href="../../d7/d6a/gl_8hpp.html">gl.hpp</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: camera.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -11,9 +11,9 @@
 <script type="text/javascript" src="../../dynsections.js"></script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../cookie.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.2</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,10 +47,15 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.10.0 -->
+<!-- 制作者 Doxygen 1.11.0 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
 /* @license-end */
 </script>
 <script type="text/javascript" src="../../menudata.js"></script>
@@ -58,17 +63,12 @@ var searchBox = new SearchBox("searchBox", "../../search/",'.html');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('../../',true,false,'search.php','搜索');
+  initMenu('../../',true,false,'search.php','搜索',true);
   $(function() { init_search(); });
 });
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() { codefold.init(1); });
-/* @license-end */
-</script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -82,7 +82,7 @@ $(function() { codefold.init(1); });
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('d7/df6/camera_8h_source.html','../../'); initResizable(); });
+$(function(){initNavTree('d7/df6/camera_8h_source.html','../../'); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -175,23 +175,23 @@ $(function(){initNavTree('d7/df6/camera_8h_source.html','../../'); initResizable
 </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_SCENE_CAMERA_H</span></div>
-<div class="ttc" id="astructCamera_html"><div class="ttname"><a href="../../d7/d7e/structCamera.html">Camera</a></div><div class="ttdoc">表示观察点的相机，既可以用于预览视角，也可以用于渲染视角。</div><div class="ttdef"><b>Definition</b> camera.h:27</div></div>
-<div class="ttc" id="astructCamera_html_a4551bfb7cb5ed86cc5427e370fda0bdb"><div class="ttname"><a href="../../d7/d7e/structCamera.html#a4551bfb7cb5ed86cc5427e370fda0bdb">Camera::view</a></div><div class="ttdeci">Eigen::Matrix4f view()</div><div class="ttdef"><b>Definition</b> camera.cpp:29</div></div>
-<div class="ttc" id="astructCamera_html_a5742c2c47c7afc5a6d49b6e5759db3cd"><div class="ttname"><a href="../../d7/d7e/structCamera.html#a5742c2c47c7afc5a6d49b6e5759db3cd">Camera::aspect_ratio</a></div><div class="ttdeci">float aspect_ratio</div><div class="ttdef"><b>Definition</b> camera.h:57</div></div>
-<div class="ttc" id="astructCamera_html_a9f30b77edf6485e001a98d21ff5f17fe"><div class="ttname"><a href="../../d7/d7e/structCamera.html#a9f30b77edf6485e001a98d21ff5f17fe">Camera::far</a></div><div class="ttdeci">float far</div><div class="ttdef"><b>Definition</b> camera.h:53</div></div>
-<div class="ttc" id="astructCamera_html_aa3f6b2c9df678347897554480099e342"><div class="ttname"><a href="../../d7/d7e/structCamera.html#aa3f6b2c9df678347897554480099e342">Camera::fov_y_degrees</a></div><div class="ttdeci">float fov_y_degrees</div><div class="ttdef"><b>Definition</b> camera.h:55</div></div>
-<div class="ttc" id="astructCamera_html_aa46269efc05d0aea46f8b0540ccb9d01"><div class="ttname"><a href="../../d7/d7e/structCamera.html#aa46269efc05d0aea46f8b0540ccb9d01">Camera::target</a></div><div class="ttdeci">Eigen::Vector3f target</div><div class="ttdef"><b>Definition</b> camera.h:49</div></div>
-<div class="ttc" id="astructCamera_html_ad8f6527347bebb52dfe3e4bfa963c3b1"><div class="ttname"><a href="../../d7/d7e/structCamera.html#ad8f6527347bebb52dfe3e4bfa963c3b1">Camera::world_up</a></div><div class="ttdeci">Eigen::Vector3f world_up</div><div class="ttdef"><b>Definition</b> camera.h:59</div></div>
-<div class="ttc" id="astructCamera_html_ad96efd3e1e4ec33dddb1d25f05d02ff2"><div class="ttname"><a href="../../d7/d7e/structCamera.html#ad96efd3e1e4ec33dddb1d25f05d02ff2">Camera::near</a></div><div class="ttdeci">float near</div><div class="ttdef"><b>Definition</b> camera.h:51</div></div>
-<div class="ttc" id="astructCamera_html_ade56525b5437d9e2c8a890a734bc83d1"><div class="ttname"><a href="../../d7/d7e/structCamera.html#ade56525b5437d9e2c8a890a734bc83d1">Camera::projection</a></div><div class="ttdeci">Eigen::Matrix4f projection()</div><div class="ttdef"><b>Definition</b> camera.cpp:49</div></div>
-<div class="ttc" id="astructCamera_html_ae52020b85d1f749f50c533fe10fc0f91"><div class="ttname"><a href="../../d7/d7e/structCamera.html#ae52020b85d1f749f50c533fe10fc0f91">Camera::position</a></div><div class="ttdeci">Eigen::Vector3f position</div><div class="ttdef"><b>Definition</b> camera.h:47</div></div>
+<div class="ttc" id="astructCamera_html"><div class="ttname"><a href="../../d7/d7e/structCamera.html">Camera</a></div><div class="ttdoc">表示观察点的相机，既可以用于预览视角，也可以用于渲染视角。</div><div class="ttdef"><b>定义</b> camera.h:27</div></div>
+<div class="ttc" id="astructCamera_html_a4551bfb7cb5ed86cc5427e370fda0bdb"><div class="ttname"><a href="../../d7/d7e/structCamera.html#a4551bfb7cb5ed86cc5427e370fda0bdb">Camera::view</a></div><div class="ttdeci">Eigen::Matrix4f view()</div><div class="ttdef"><b>定义</b> camera.cpp:29</div></div>
+<div class="ttc" id="astructCamera_html_a5742c2c47c7afc5a6d49b6e5759db3cd"><div class="ttname"><a href="../../d7/d7e/structCamera.html#a5742c2c47c7afc5a6d49b6e5759db3cd">Camera::aspect_ratio</a></div><div class="ttdeci">float aspect_ratio</div><div class="ttdef"><b>定义</b> camera.h:57</div></div>
+<div class="ttc" id="astructCamera_html_a9f30b77edf6485e001a98d21ff5f17fe"><div class="ttname"><a href="../../d7/d7e/structCamera.html#a9f30b77edf6485e001a98d21ff5f17fe">Camera::far</a></div><div class="ttdeci">float far</div><div class="ttdef"><b>定义</b> camera.h:53</div></div>
+<div class="ttc" id="astructCamera_html_aa3f6b2c9df678347897554480099e342"><div class="ttname"><a href="../../d7/d7e/structCamera.html#aa3f6b2c9df678347897554480099e342">Camera::fov_y_degrees</a></div><div class="ttdeci">float fov_y_degrees</div><div class="ttdef"><b>定义</b> camera.h:55</div></div>
+<div class="ttc" id="astructCamera_html_aa46269efc05d0aea46f8b0540ccb9d01"><div class="ttname"><a href="../../d7/d7e/structCamera.html#aa46269efc05d0aea46f8b0540ccb9d01">Camera::target</a></div><div class="ttdeci">Eigen::Vector3f target</div><div class="ttdef"><b>定义</b> camera.h:49</div></div>
+<div class="ttc" id="astructCamera_html_ad8f6527347bebb52dfe3e4bfa963c3b1"><div class="ttname"><a href="../../d7/d7e/structCamera.html#ad8f6527347bebb52dfe3e4bfa963c3b1">Camera::world_up</a></div><div class="ttdeci">Eigen::Vector3f world_up</div><div class="ttdef"><b>定义</b> camera.h:59</div></div>
+<div class="ttc" id="astructCamera_html_ad96efd3e1e4ec33dddb1d25f05d02ff2"><div class="ttname"><a href="../../d7/d7e/structCamera.html#ad96efd3e1e4ec33dddb1d25f05d02ff2">Camera::near</a></div><div class="ttdeci">float near</div><div class="ttdef"><b>定义</b> camera.h:51</div></div>
+<div class="ttc" id="astructCamera_html_ade56525b5437d9e2c8a890a734bc83d1"><div class="ttname"><a href="../../d7/d7e/structCamera.html#ade56525b5437d9e2c8a890a734bc83d1">Camera::projection</a></div><div class="ttdeci">Eigen::Matrix4f projection()</div><div class="ttdef"><b>定义</b> camera.cpp:49</div></div>
+<div class="ttc" id="astructCamera_html_ae52020b85d1f749f50c533fe10fc0f91"><div class="ttname"><a href="../../d7/d7e/structCamera.html#ae52020b85d1f749f50c533fe10fc0f91">Camera::position</a></div><div class="ttdeci">Eigen::Vector3f position</div><div class="ttdef"><b>定义</b> camera.h:47</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_35781f0e74aa8deac19fa31b37174dc2.html">scene</a></li><li class="navelem"><a class="el" href="../../d7/df6/camera_8h.html">camera.h</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: math.hpp 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -11,9 +11,9 @@
 <script type="text/javascript" src="../../dynsections.js"></script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../cookie.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.2</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,10 +47,15 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.10.0 -->
+<!-- 制作者 Doxygen 1.11.0 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
 /* @license-end */
 </script>
 <script type="text/javascript" src="../../menudata.js"></script>
@@ -58,17 +63,12 @@ var searchBox = new SearchBox("searchBox", "../../search/",'.html');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('../../',true,false,'search.php','搜索');
+  initMenu('../../',true,false,'search.php','搜索',true);
   $(function() { init_search(); });
 });
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() { codefold.init(1); });
-/* @license-end */
-</script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -82,7 +82,7 @@ $(function() { codefold.init(1); });
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('d4/d78/math_8hpp_source.html','../../'); initResizable(); });
+$(function(){initNavTree('d4/d78/math_8hpp_source.html','../../'); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -166,7 +166,7 @@ $(function(){initNavTree('d4/d78/math_8hpp_source.html','../../'); initResizable
 <div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#gadc516f532c93b92333ea8e8962393300">   49</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> T <a class="code hl_function" href="../../db/d81/group__utils.html#gadc516f532c93b92333ea8e8962393300">radians</a>(T <a class="code hl_function" href="../../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">degrees</a>)</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">degrees</a> / <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(180.0) * pi&lt;T&gt;();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">degrees</a> / <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(180.0) * <a class="code hl_function" href="../../db/d81/group__utils.html#ga8af16bad73ed4f92ede4dd5e7841bd7c">pi&lt;T&gt;</a>();</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
 </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"></span> </div>
@@ -179,7 +179,7 @@ $(function(){initNavTree('d4/d78/math_8hpp_source.html','../../'); initResizable
 <div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">   60</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> T <a class="code hl_function" href="../../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">degrees</a>(T <a class="code hl_function" href="../../db/d81/group__utils.html#gadc516f532c93b92333ea8e8962393300">radians</a>)</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>{</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../db/d81/group__utils.html#gadc516f532c93b92333ea8e8962393300">radians</a> / pi&lt;T&gt;() * <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(180.0);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../db/d81/group__utils.html#gadc516f532c93b92333ea8e8962393300">radians</a> / <a class="code hl_function" href="../../db/d81/group__utils.html#ga8af16bad73ed4f92ede4dd5e7841bd7c">pi&lt;T&gt;</a>() * <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(180.0);</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
 </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"></span> </div>
@@ -286,7 +286,7 @@ $(function(){initNavTree('d4/d78/math_8hpp_source.html','../../'); initResizable
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    T x_rad, y_rad, z_rad;</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keywordflow">if</span> (std::abs(test) &gt; threshold) {</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        x_rad = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0.0);</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        y_rad = <a class="code hl_function" href="../../db/d81/group__utils.html#ga9394636a770c3d784a10b8334c33f5d2">sign</a>(test) * pi&lt;T&gt;() / <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(2.0);</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        y_rad = <a class="code hl_function" href="../../db/d81/group__utils.html#ga9394636a770c3d784a10b8334c33f5d2">sign</a>(test) * <a class="code hl_function" href="../../db/d81/group__utils.html#ga8af16bad73ed4f92ede4dd5e7841bd7c">pi&lt;T&gt;</a>() / <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(2.0);</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        z_rad = <a class="code hl_function" href="../../db/d81/group__utils.html#ga9394636a770c3d784a10b8334c33f5d2">sign</a>(test) * <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(2.0) * std::atan2(x, w);</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        x_rad =</div>
@@ -303,26 +303,26 @@ $(function(){initNavTree('d4/d78/math_8hpp_source.html','../../'); initResizable
 </div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_UTILS_MATH_HPP</span></div>
-<div class="ttc" id="agroup__utils_html_ga35871f456d2ecb7c9d8ea653197c12cf"><div class="ttname"><a href="../../db/d81/group__utils.html#ga35871f456d2ecb7c9d8ea653197c12cf">quaternion_to_ZYX_euler</a></div><div class="ttdeci">std::tuple&lt; T, T, T &gt; quaternion_to_ZYX_euler(T w, T x, T y, T z)</div><div class="ttdoc">将旋转的四元数表示形式转换为 ZYX 欧拉角表示形式。</div><div class="ttdef"><b>Definition</b> math.hpp:150</div></div>
-<div class="ttc" id="agroup__utils_html_ga45d287464d22e5ef6cc281294b2d9c44"><div class="ttname"><a href="../../db/d81/group__utils.html#ga45d287464d22e5ef6cc281294b2d9c44">reflect</a></div><div class="ttdeci">Eigen::Vector3f reflect(const Eigen::Vector3f &amp;I, const Eigen::Vector3f &amp;N)</div><div class="ttdoc">求向量  关于向量  的反射。</div><div class="ttdef"><b>Definition</b> math.hpp:108</div></div>
-<div class="ttc" id="agroup__utils_html_ga46f6553c90bf08999d0ba4c86130986d"><div class="ttname"><a href="../../db/d81/group__utils.html#ga46f6553c90bf08999d0ba4c86130986d">clamp</a></div><div class="ttdeci">constexpr T clamp(T low, T high, T value)</div><div class="ttdoc">将一个数截断在给定的上下界之间</div><div class="ttdef"><b>Definition</b> math.hpp:82</div></div>
-<div class="ttc" id="agroup__utils_html_ga4d6e55d71f27749e7802ef2d17f4fed1"><div class="ttname"><a href="../../db/d81/group__utils.html#ga4d6e55d71f27749e7802ef2d17f4fed1">to_vec4</a></div><div class="ttdeci">constexpr Eigen::Vector&lt; T, 4 &gt; to_vec4(Eigen::Vector&lt; T, 3 &gt; vec3)</div><div class="ttdoc">将代表方向的三维向量转换为它的齐次坐标形式。</div><div class="ttdef"><b>Definition</b> math.hpp:96</div></div>
-<div class="ttc" id="agroup__utils_html_ga69c7787a7d4d90c5abd1cd155532202f"><div class="ttname"><a href="../../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">degrees</a></div><div class="ttdeci">constexpr T degrees(T radians)</div><div class="ttdoc">将弧度转换为角度。</div><div class="ttdef"><b>Definition</b> math.hpp:60</div></div>
+<div class="ttc" id="agroup__utils_html_ga35871f456d2ecb7c9d8ea653197c12cf"><div class="ttname"><a href="../../db/d81/group__utils.html#ga35871f456d2ecb7c9d8ea653197c12cf">quaternion_to_ZYX_euler</a></div><div class="ttdeci">std::tuple&lt; T, T, T &gt; quaternion_to_ZYX_euler(T w, T x, T y, T z)</div><div class="ttdoc">将旋转的四元数表示形式转换为 ZYX 欧拉角表示形式。</div><div class="ttdef"><b>定义</b> math.hpp:150</div></div>
+<div class="ttc" id="agroup__utils_html_ga45d287464d22e5ef6cc281294b2d9c44"><div class="ttname"><a href="../../db/d81/group__utils.html#ga45d287464d22e5ef6cc281294b2d9c44">reflect</a></div><div class="ttdeci">Eigen::Vector3f reflect(const Eigen::Vector3f &amp;I, const Eigen::Vector3f &amp;N)</div><div class="ttdoc">求向量  关于向量  的反射。</div><div class="ttdef"><b>定义</b> math.hpp:108</div></div>
+<div class="ttc" id="agroup__utils_html_ga46f6553c90bf08999d0ba4c86130986d"><div class="ttname"><a href="../../db/d81/group__utils.html#ga46f6553c90bf08999d0ba4c86130986d">clamp</a></div><div class="ttdeci">constexpr T clamp(T low, T high, T value)</div><div class="ttdoc">将一个数截断在给定的上下界之间</div><div class="ttdef"><b>定义</b> math.hpp:82</div></div>
+<div class="ttc" id="agroup__utils_html_ga4d6e55d71f27749e7802ef2d17f4fed1"><div class="ttname"><a href="../../db/d81/group__utils.html#ga4d6e55d71f27749e7802ef2d17f4fed1">to_vec4</a></div><div class="ttdeci">constexpr Eigen::Vector&lt; T, 4 &gt; to_vec4(Eigen::Vector&lt; T, 3 &gt; vec3)</div><div class="ttdoc">将代表方向的三维向量转换为它的齐次坐标形式。</div><div class="ttdef"><b>定义</b> math.hpp:96</div></div>
+<div class="ttc" id="agroup__utils_html_ga69c7787a7d4d90c5abd1cd155532202f"><div class="ttname"><a href="../../db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">degrees</a></div><div class="ttdeci">constexpr T degrees(T radians)</div><div class="ttdoc">将弧度转换为角度。</div><div class="ttdef"><b>定义</b> math.hpp:60</div></div>
 <div class="ttc" id="agroup__utils_html_ga8af16bad73ed4f92ede4dd5e7841bd7c"><div class="ttname"><a href="../../db/d81/group__utils.html#ga8af16bad73ed4f92ede4dd5e7841bd7c">pi</a></div><div class="ttdeci">T pi()</div><div class="ttdoc">返回 float 或 double 类型的  值。</div></div>
-<div class="ttc" id="agroup__utils_html_ga9394636a770c3d784a10b8334c33f5d2"><div class="ttname"><a href="../../db/d81/group__utils.html#ga9394636a770c3d784a10b8334c33f5d2">sign</a></div><div class="ttdeci">constexpr T sign(T x)</div><div class="ttdoc">符号函数，正数的求值结果为 1，负数为 -1，零的求值结果是 0.</div><div class="ttdef"><b>Definition</b> math.hpp:119</div></div>
-<div class="ttc" id="agroup__utils_html_ga94c1d99deed7f3b1a05d8edc8f05219c"><div class="ttname"><a href="../../db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">squ</a></div><div class="ttdeci">constexpr T squ(T x)</div><div class="ttdoc">求一个数的平方。</div><div class="ttdef"><b>Definition</b> math.hpp:71</div></div>
-<div class="ttc" id="agroup__utils_html_gadc516f532c93b92333ea8e8962393300"><div class="ttname"><a href="../../db/d81/group__utils.html#gadc516f532c93b92333ea8e8962393300">radians</a></div><div class="ttdeci">constexpr T radians(T degrees)</div><div class="ttdoc">将角度转换为弧度。</div><div class="ttdef"><b>Definition</b> math.hpp:49</div></div>
-<div class="ttc" id="amath_8hpp_html_a375c8412919ad185761dc5613dd1fb3d"><div class="ttname"><a href="../../d4/d78/math_8hpp.html#a375c8412919ad185761dc5613dd1fb3d">pi&lt; double &gt;</a></div><div class="ttdeci">constexpr double pi&lt; double &gt;()</div><div class="ttdef"><b>Definition</b> math.hpp:31</div></div>
-<div class="ttc" id="amath_8hpp_html_a3b964c8b0a76c7743c378e0b62607536"><div class="ttname"><a href="../../d4/d78/math_8hpp.html#a3b964c8b0a76c7743c378e0b62607536">I4f</a></div><div class="ttdeci">const Eigen::Matrix4f I4f</div><div class="ttdef"><b>Definition</b> math.hpp:19</div></div>
-<div class="ttc" id="amath_8hpp_html_a7fc2131b54ddf0cfaf2be1dd2bb779ca"><div class="ttname"><a href="../../d4/d78/math_8hpp.html#a7fc2131b54ddf0cfaf2be1dd2bb779ca">pi&lt; float &gt;</a></div><div class="ttdeci">constexpr float pi&lt; float &gt;()</div><div class="ttdef"><b>Definition</b> math.hpp:38</div></div>
-<div class="ttc" id="amath_8hpp_html_af561c357ce00686b0487f0e55558c503"><div class="ttname"><a href="../../d4/d78/math_8hpp.html#af561c357ce00686b0487f0e55558c503">I3f</a></div><div class="ttdeci">const Eigen::Matrix3f I3f</div><div class="ttdef"><b>Definition</b> math.hpp:17</div></div>
+<div class="ttc" id="agroup__utils_html_ga9394636a770c3d784a10b8334c33f5d2"><div class="ttname"><a href="../../db/d81/group__utils.html#ga9394636a770c3d784a10b8334c33f5d2">sign</a></div><div class="ttdeci">constexpr T sign(T x)</div><div class="ttdoc">符号函数，正数的求值结果为 1，负数为 -1，零的求值结果是 0.</div><div class="ttdef"><b>定义</b> math.hpp:119</div></div>
+<div class="ttc" id="agroup__utils_html_ga94c1d99deed7f3b1a05d8edc8f05219c"><div class="ttname"><a href="../../db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">squ</a></div><div class="ttdeci">constexpr T squ(T x)</div><div class="ttdoc">求一个数的平方。</div><div class="ttdef"><b>定义</b> math.hpp:71</div></div>
+<div class="ttc" id="agroup__utils_html_gadc516f532c93b92333ea8e8962393300"><div class="ttname"><a href="../../db/d81/group__utils.html#gadc516f532c93b92333ea8e8962393300">radians</a></div><div class="ttdeci">constexpr T radians(T degrees)</div><div class="ttdoc">将角度转换为弧度。</div><div class="ttdef"><b>定义</b> math.hpp:49</div></div>
+<div class="ttc" id="amath_8hpp_html_a375c8412919ad185761dc5613dd1fb3d"><div class="ttname"><a href="../../d4/d78/math_8hpp.html#a375c8412919ad185761dc5613dd1fb3d">pi&lt; double &gt;</a></div><div class="ttdeci">constexpr double pi&lt; double &gt;()</div><div class="ttdef"><b>定义</b> math.hpp:31</div></div>
+<div class="ttc" id="amath_8hpp_html_a3b964c8b0a76c7743c378e0b62607536"><div class="ttname"><a href="../../d4/d78/math_8hpp.html#a3b964c8b0a76c7743c378e0b62607536">I4f</a></div><div class="ttdeci">const Eigen::Matrix4f I4f</div><div class="ttdef"><b>定义</b> math.hpp:19</div></div>
+<div class="ttc" id="amath_8hpp_html_a7fc2131b54ddf0cfaf2be1dd2bb779ca"><div class="ttname"><a href="../../d4/d78/math_8hpp.html#a7fc2131b54ddf0cfaf2be1dd2bb779ca">pi&lt; float &gt;</a></div><div class="ttdeci">constexpr float pi&lt; float &gt;()</div><div class="ttdef"><b>定义</b> math.hpp:38</div></div>
+<div class="ttc" id="amath_8hpp_html_af561c357ce00686b0487f0e55558c503"><div class="ttname"><a href="../../d4/d78/math_8hpp.html#af561c357ce00686b0487f0e55558c503">I3f</a></div><div class="ttdeci">const Eigen::Matrix3f I3f</div><div class="ttdef"><b>定义</b> math.hpp:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_313caf1132e152dd9b58bea13a4052ca.html">utils</a></li><li class="navelem"><a class="el" href="../../d4/d78/math_8hpp.html">math.hpp</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

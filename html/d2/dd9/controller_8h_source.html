@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: controller.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -11,9 +11,9 @@
 <script type="text/javascript" src="../../dynsections.js"></script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../cookie.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.2</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,10 +47,15 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.10.0 -->
+<!-- 制作者 Doxygen 1.11.0 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
 /* @license-end */
 </script>
 <script type="text/javascript" src="../../menudata.js"></script>
@@ -58,17 +63,12 @@ var searchBox = new SearchBox("searchBox", "../../search/",'.html');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('../../',true,false,'search.php','搜索');
+  initMenu('../../',true,false,'search.php','搜索',true);
   $(function() { init_search(); });
 });
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() { codefold.init(1); });
-/* @license-end */
-</script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -82,7 +82,7 @@ $(function() { codefold.init(1); });
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('d2/dd9/controller_8h_source.html','../../'); initResizable(); });
+$(function(){initNavTree('d2/dd9/controller_8h_source.html','../../'); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -366,63 +366,63 @@ $(function(){initNavTree('d2/dd9/controller_8h_source.html','../../'); initResiz
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_UI_CONTROLLER_H</span></div>
 <div class="ttc" id="acamera_8h_html"><div class="ttname"><a href="../../d7/df6/camera_8h.html">camera.h</a></div></div>
-<div class="ttc" id="aclassController_html"><div class="ttname"><a href="../../d9/d85/classController.html">Controller</a></div><div class="ttdoc">控制器管理所有的界面组件，并处理和预览视角操作（例如旋转、缩放或者平移）相关的输入。</div><div class="ttdef"><b>Definition</b> controller.h:39</div></div>
-<div class="ttc" id="aclassController_html_a02e3ca1fde70039aca71b42a22b513b1"><div class="ttname"><a href="../../d9/d85/classController.html#a02e3ca1fde70039aca71b42a22b513b1">Controller::select_object</a></div><div class="ttdeci">void select_object(Object *object)</div><div class="ttdef"><b>Definition</b> controller.cpp:457</div></div>
-<div class="ttc" id="aclassController_html_a03eadf6e188df2ee9a8d4b53b4066d92"><div class="ttname"><a href="../../d9/d85/classController.html#a03eadf6e188df2ee9a8d4b53b4066d92">Controller::select_light</a></div><div class="ttdeci">void select_light(Light *light)</div><div class="ttdef"><b>Definition</b> controller.cpp:508</div></div>
-<div class="ttc" id="aclassController_html_a04cd65f89a72352c285bb9741cefefaa"><div class="ttname"><a href="../../d9/d85/classController.html#a04cd65f89a72352c285bb9741cefefaa">Controller::select_halfedge</a></div><div class="ttdeci">void select_halfedge(const Halfedge *halfedge)</div><div class="ttdef"><b>Definition</b> controller.cpp:463</div></div>
-<div class="ttc" id="aclassController_html_a08f2827387da4b092832f926315d14f7"><div class="ttname"><a href="../../d9/d85/classController.html#a08f2827387da4b092832f926315d14f7">Controller::on_rotating</a></div><div class="ttdeci">void on_rotating(bool initial)</div><div class="ttdoc">将鼠标拖动转换为轨迹球 (Trackball) 操作，用于旋转预览视角。</div><div class="ttdef"><b>Definition</b> controller.cpp:521</div></div>
-<div class="ttc" id="aclassController_html_a0afa257dd629821865bd1dcbdf6986a8"><div class="ttname"><a href="../../d9/d85/classController.html#a0afa257dd629821865bd1dcbdf6986a8">Controller::render_debug_helpers</a></div><div class="ttdeci">void render_debug_helpers(const Shader &amp;shader)</div><div class="ttdoc">渲染帮助调试的元素。</div><div class="ttdef"><b>Definition</b> controller.cpp:353</div></div>
-<div class="ttc" id="aclassController_html_a1359b487bc897978a39d647cc915cd71"><div class="ttname"><a href="../../d9/d85/classController.html#a1359b487bc897978a39d647cc915cd71">Controller::toolbar</a></div><div class="ttdeci">std::unique_ptr&lt; UI::Toolbar &gt; toolbar</div><div class="ttdef"><b>Definition</b> controller.h:226</div></div>
-<div class="ttc" id="aclassController_html_a142bc68626ef6319295599d939e56cf0"><div class="ttname"><a href="../../d9/d85/classController.html#a142bc68626ef6319295599d939e56cf0">Controller::on_framebuffer_resized</a></div><div class="ttdeci">void on_framebuffer_resized(float width, float height)</div><div class="ttdoc">在缩放窗口时调整轨迹球半径、预览视角（相机）Y 方向的 FoV，并更新自身记录的窗口尺寸。</div><div class="ttdef"><b>Definition</b> controller.cpp:149</div></div>
-<div class="ttc" id="aclassController_html_a17e48bd3ebf3cd691b7485cfa65c3043"><div class="ttname"><a href="../../d9/d85/classController.html#a17e48bd3ebf3cd691b7485cfa65c3043">Controller::on_wheel_scrolled</a></div><div class="ttdeci">void on_wheel_scrolled()</div><div class="ttdoc">将拨动鼠标滚轮的操作转换为视角拉进或远离。</div><div class="ttdef"><b>Definition</b> controller.cpp:139</div></div>
-<div class="ttc" id="aclassController_html_a1f2a6f6ec5eea69055addd2917cfbe73"><div class="ttname"><a href="../../d9/d85/classController.html#a1f2a6f6ec5eea69055addd2917cfbe73">Controller::select_vertex</a></div><div class="ttdeci">void select_vertex(Vertex *vertex)</div><div class="ttdef"><b>Definition</b> controller.cpp:471</div></div>
-<div class="ttc" id="aclassController_html_a20539e548e10bce4d113f894be43665e"><div class="ttname"><a href="../../d9/d85/classController.html#a20539e548e10bce4d113f894be43665e">Controller::main_camera</a></div><div class="ttdeci">std::unique_ptr&lt; Camera &gt; main_camera</div><div class="ttdef"><b>Definition</b> controller.h:239</div></div>
-<div class="ttc" id="aclassController_html_a2209fae13d7c08547caf5b120141c84f"><div class="ttname"><a href="../../d9/d85/classController.html#a2209fae13d7c08547caf5b120141c84f">Controller::on_translating</a></div><div class="ttdeci">void on_translating(bool initial)</div><div class="ttdoc">将鼠标拖动转换为视角平移。</div><div class="ttdef"><b>Definition</b> controller.cpp:575</div></div>
-<div class="ttc" id="aclassController_html_a2b60e1a9302100c28471c18a46dba481"><div class="ttname"><a href="../../d9/d85/classController.html#a2b60e1a9302100c28471c18a46dba481">Controller::mode</a></div><div class="ttdeci">WorkingMode mode</div><div class="ttdoc">全局工作模式。</div><div class="ttdef"><b>Definition</b> controller.h:220</div></div>
-<div class="ttc" id="aclassController_html_a2ed430569aa8dc4e63bbd82ad345db35"><div class="ttname"><a href="../../d9/d85/classController.html#a2ed430569aa8dc4e63bbd82ad345db35">Controller::render_selected_element</a></div><div class="ttdeci">void render_selected_element(const Shader &amp;shader)</div><div class="ttdoc">渲染当前选中的元素。</div><div class="ttdef"><b>Definition</b> controller.cpp:297</div></div>
-<div class="ttc" id="aclassController_html_a3ac9aefe19714d124cb032e23fd23e75"><div class="ttname"><a href="../../d9/d85/classController.html#a3ac9aefe19714d124cb032e23fd23e75">Controller::logger</a></div><div class="ttdeci">std::shared_ptr&lt; spdlog::logger &gt; logger</div><div class="ttdef"><b>Definition</b> controller.h:241</div></div>
-<div class="ttc" id="aclassController_html_a4b2321e10d29a6139694c3cd6e792125"><div class="ttname"><a href="../../d9/d85/classController.html#a4b2321e10d29a6139694c3cd6e792125">Controller::select_face</a></div><div class="ttdeci">void select_face(Face *face)</div><div class="ttdef"><b>Definition</b> controller.cpp:491</div></div>
-<div class="ttc" id="aclassController_html_a53f6623f03b94f70e7d1a302026bbabb"><div class="ttname"><a href="../../d9/d85/classController.html#a53f6623f03b94f70e7d1a302026bbabb">Controller::pick_element</a></div><div class="ttdeci">void pick_element(Ray &amp;ray)</div><div class="ttdoc">拾取半边、顶点、边或面片。</div><div class="ttdef"><b>Definition</b> controller.cpp:396</div></div>
-<div class="ttc" id="aclassController_html_a55561237581cbe501830f6500beeb0d6"><div class="ttname"><a href="../../d9/d85/classController.html#a55561237581cbe501830f6500beeb0d6">Controller::mouse_translation_factor</a></div><div class="ttdeci">static constexpr float mouse_translation_factor</div><div class="ttdef"><b>Definition</b> controller.h:211</div></div>
-<div class="ttc" id="aclassController_html_a6301902226747ccdef81ee281c9abc6e"><div class="ttname"><a href="../../d9/d85/classController.html#a6301902226747ccdef81ee281c9abc6e">Controller::controller</a></div><div class="ttdeci">static Controller &amp; controller()</div><div class="ttdoc">获取 Controller 类的唯一实例。</div><div class="ttdef"><b>Definition</b> controller.cpp:35</div></div>
-<div class="ttc" id="aclassController_html_a69e94c079159d625ae394d3fd5fa1680"><div class="ttname"><a href="../../d9/d85/classController.html#a69e94c079159d625ae394d3fd5fa1680">Controller::unselect</a></div><div class="ttdeci">void unselect()</div><div class="ttdoc">取消选择。</div><div class="ttdef"><b>Definition</b> controller.cpp:268</div></div>
-<div class="ttc" id="aclassController_html_a6b715719d5d3738be94a612a5b51568a"><div class="ttname"><a href="../../d9/d85/classController.html#a6b715719d5d3738be94a612a5b51568a">Controller::selected_element</a></div><div class="ttdeci">SelectableType selected_element</div><div class="ttdoc">当前被选中的元素。</div><div class="ttdef"><b>Definition</b> controller.h:237</div></div>
-<div class="ttc" id="aclassController_html_a6d58d96a5298afd8338ca4d39127053b"><div class="ttname"><a href="../../d9/d85/classController.html#a6d58d96a5298afd8338ca4d39127053b">Controller::wheel_scroll_factor</a></div><div class="ttdeci">static constexpr float wheel_scroll_factor</div><div class="ttdef"><b>Definition</b> controller.h:209</div></div>
-<div class="ttc" id="aclassController_html_a9070f68e2830fac28bb8c61af10fdb47"><div class="ttname"><a href="../../d9/d85/classController.html#a9070f68e2830fac28bb8c61af10fdb47">Controller::render</a></div><div class="ttdeci">void render(const Shader &amp;shader)</div><div class="ttdef"><b>Definition</b> controller.cpp:237</div></div>
-<div class="ttc" id="aclassController_html_a95c56822d667e94b031451729ce069a9"><div class="ttname"><a href="../../d9/d85/classController.html#a95c56822d667e94b031451729ce069a9">Controller::Controller</a></div><div class="ttdeci">Controller()</div><div class="ttdef"><b>Definition</b> controller.cpp:41</div></div>
-<div class="ttc" id="aclassController_html_aaa4a1e64142b9502bb07c23a503bd74e"><div class="ttname"><a href="../../d9/d85/classController.html#aaa4a1e64142b9502bb07c23a503bd74e">Controller::picking_ray</a></div><div class="ttdeci">GL::LineSet picking_ray</div><div class="ttdef"><b>Definition</b> controller.h:249</div></div>
-<div class="ttc" id="aclassController_html_abbdb13a1e6b5471db07eb418795d513f"><div class="ttname"><a href="../../d9/d85/classController.html#abbdb13a1e6b5471db07eb418795d513f">Controller::debug_options</a></div><div class="ttdeci">UI::DebugOptions debug_options</div><div class="ttdef"><b>Definition</b> controller.h:222</div></div>
-<div class="ttc" id="aclassController_html_ac33cc6c318b232a74c05b2b48b2c41bb"><div class="ttname"><a href="../../d9/d85/classController.html#ac33cc6c318b232a74c05b2b48b2c41bb">Controller::on_mouse_dragged</a></div><div class="ttdeci">void on_mouse_dragged(bool initial)</div><div class="ttdoc">将鼠标拖动转换为旋转视角或平移视角操作。</div><div class="ttdef"><b>Definition</b> controller.cpp:98</div></div>
-<div class="ttc" id="aclassController_html_ac5a2db1447f9cfb2f59fb6b236ddcb61"><div class="ttname"><a href="../../d9/d85/classController.html#ac5a2db1447f9cfb2f59fb6b236ddcb61">Controller::highlighted_element</a></div><div class="ttdeci">GL::Mesh highlighted_element</div><div class="ttdef"><b>Definition</b> controller.h:245</div></div>
-<div class="ttc" id="aclassController_html_acbadba65eafc040639cc668dde8f77b6"><div class="ttname"><a href="../../d9/d85/classController.html#acbadba65eafc040639cc668dde8f77b6">Controller::on_picking</a></div><div class="ttdeci">void on_picking()</div><div class="ttdoc">根据鼠标点击选取场景中的物体。</div><div class="ttdef"><b>Definition</b> controller.cpp:112</div></div>
-<div class="ttc" id="aclassController_html_ace52a4008fe15ea112fc7ae6b9d22ca0"><div class="ttname"><a href="../../d9/d85/classController.html#ace52a4008fe15ea112fc7ae6b9d22ca0">Controller::scene</a></div><div class="ttdeci">std::unique_ptr&lt; Scene &gt; scene</div><div class="ttdef"><b>Definition</b> controller.h:228</div></div>
-<div class="ttc" id="aclassController_html_ad186fddab2ac94aa2c8d5c004a106905"><div class="ttname"><a href="../../d9/d85/classController.html#ad186fddab2ac94aa2c8d5c004a106905">Controller::window_width</a></div><div class="ttdeci">float window_width</div><div class="ttdef"><b>Definition</b> controller.h:117</div></div>
+<div class="ttc" id="aclassController_html"><div class="ttname"><a href="../../d9/d85/classController.html">Controller</a></div><div class="ttdoc">控制器管理所有的界面组件，并处理和预览视角操作（例如旋转、缩放或者平移）相关的输入。</div><div class="ttdef"><b>定义</b> controller.h:39</div></div>
+<div class="ttc" id="aclassController_html_a02e3ca1fde70039aca71b42a22b513b1"><div class="ttname"><a href="../../d9/d85/classController.html#a02e3ca1fde70039aca71b42a22b513b1">Controller::select_object</a></div><div class="ttdeci">void select_object(Object *object)</div><div class="ttdef"><b>定义</b> controller.cpp:457</div></div>
+<div class="ttc" id="aclassController_html_a03eadf6e188df2ee9a8d4b53b4066d92"><div class="ttname"><a href="../../d9/d85/classController.html#a03eadf6e188df2ee9a8d4b53b4066d92">Controller::select_light</a></div><div class="ttdeci">void select_light(Light *light)</div><div class="ttdef"><b>定义</b> controller.cpp:508</div></div>
+<div class="ttc" id="aclassController_html_a04cd65f89a72352c285bb9741cefefaa"><div class="ttname"><a href="../../d9/d85/classController.html#a04cd65f89a72352c285bb9741cefefaa">Controller::select_halfedge</a></div><div class="ttdeci">void select_halfedge(const Halfedge *halfedge)</div><div class="ttdef"><b>定义</b> controller.cpp:463</div></div>
+<div class="ttc" id="aclassController_html_a08f2827387da4b092832f926315d14f7"><div class="ttname"><a href="../../d9/d85/classController.html#a08f2827387da4b092832f926315d14f7">Controller::on_rotating</a></div><div class="ttdeci">void on_rotating(bool initial)</div><div class="ttdoc">将鼠标拖动转换为轨迹球 (Trackball) 操作，用于旋转预览视角。</div><div class="ttdef"><b>定义</b> controller.cpp:521</div></div>
+<div class="ttc" id="aclassController_html_a0afa257dd629821865bd1dcbdf6986a8"><div class="ttname"><a href="../../d9/d85/classController.html#a0afa257dd629821865bd1dcbdf6986a8">Controller::render_debug_helpers</a></div><div class="ttdeci">void render_debug_helpers(const Shader &amp;shader)</div><div class="ttdoc">渲染帮助调试的元素。</div><div class="ttdef"><b>定义</b> controller.cpp:353</div></div>
+<div class="ttc" id="aclassController_html_a1359b487bc897978a39d647cc915cd71"><div class="ttname"><a href="../../d9/d85/classController.html#a1359b487bc897978a39d647cc915cd71">Controller::toolbar</a></div><div class="ttdeci">std::unique_ptr&lt; UI::Toolbar &gt; toolbar</div><div class="ttdef"><b>定义</b> controller.h:226</div></div>
+<div class="ttc" id="aclassController_html_a142bc68626ef6319295599d939e56cf0"><div class="ttname"><a href="../../d9/d85/classController.html#a142bc68626ef6319295599d939e56cf0">Controller::on_framebuffer_resized</a></div><div class="ttdeci">void on_framebuffer_resized(float width, float height)</div><div class="ttdoc">在缩放窗口时调整轨迹球半径、预览视角（相机）Y 方向的 FoV，并更新自身记录的窗口尺寸。</div><div class="ttdef"><b>定义</b> controller.cpp:149</div></div>
+<div class="ttc" id="aclassController_html_a17e48bd3ebf3cd691b7485cfa65c3043"><div class="ttname"><a href="../../d9/d85/classController.html#a17e48bd3ebf3cd691b7485cfa65c3043">Controller::on_wheel_scrolled</a></div><div class="ttdeci">void on_wheel_scrolled()</div><div class="ttdoc">将拨动鼠标滚轮的操作转换为视角拉进或远离。</div><div class="ttdef"><b>定义</b> controller.cpp:139</div></div>
+<div class="ttc" id="aclassController_html_a1f2a6f6ec5eea69055addd2917cfbe73"><div class="ttname"><a href="../../d9/d85/classController.html#a1f2a6f6ec5eea69055addd2917cfbe73">Controller::select_vertex</a></div><div class="ttdeci">void select_vertex(Vertex *vertex)</div><div class="ttdef"><b>定义</b> controller.cpp:471</div></div>
+<div class="ttc" id="aclassController_html_a20539e548e10bce4d113f894be43665e"><div class="ttname"><a href="../../d9/d85/classController.html#a20539e548e10bce4d113f894be43665e">Controller::main_camera</a></div><div class="ttdeci">std::unique_ptr&lt; Camera &gt; main_camera</div><div class="ttdef"><b>定义</b> controller.h:239</div></div>
+<div class="ttc" id="aclassController_html_a2209fae13d7c08547caf5b120141c84f"><div class="ttname"><a href="../../d9/d85/classController.html#a2209fae13d7c08547caf5b120141c84f">Controller::on_translating</a></div><div class="ttdeci">void on_translating(bool initial)</div><div class="ttdoc">将鼠标拖动转换为视角平移。</div><div class="ttdef"><b>定义</b> controller.cpp:575</div></div>
+<div class="ttc" id="aclassController_html_a2b60e1a9302100c28471c18a46dba481"><div class="ttname"><a href="../../d9/d85/classController.html#a2b60e1a9302100c28471c18a46dba481">Controller::mode</a></div><div class="ttdeci">WorkingMode mode</div><div class="ttdoc">全局工作模式。</div><div class="ttdef"><b>定义</b> controller.h:220</div></div>
+<div class="ttc" id="aclassController_html_a2ed430569aa8dc4e63bbd82ad345db35"><div class="ttname"><a href="../../d9/d85/classController.html#a2ed430569aa8dc4e63bbd82ad345db35">Controller::render_selected_element</a></div><div class="ttdeci">void render_selected_element(const Shader &amp;shader)</div><div class="ttdoc">渲染当前选中的元素。</div><div class="ttdef"><b>定义</b> controller.cpp:297</div></div>
+<div class="ttc" id="aclassController_html_a3ac9aefe19714d124cb032e23fd23e75"><div class="ttname"><a href="../../d9/d85/classController.html#a3ac9aefe19714d124cb032e23fd23e75">Controller::logger</a></div><div class="ttdeci">std::shared_ptr&lt; spdlog::logger &gt; logger</div><div class="ttdef"><b>定义</b> controller.h:241</div></div>
+<div class="ttc" id="aclassController_html_a4b2321e10d29a6139694c3cd6e792125"><div class="ttname"><a href="../../d9/d85/classController.html#a4b2321e10d29a6139694c3cd6e792125">Controller::select_face</a></div><div class="ttdeci">void select_face(Face *face)</div><div class="ttdef"><b>定义</b> controller.cpp:491</div></div>
+<div class="ttc" id="aclassController_html_a53f6623f03b94f70e7d1a302026bbabb"><div class="ttname"><a href="../../d9/d85/classController.html#a53f6623f03b94f70e7d1a302026bbabb">Controller::pick_element</a></div><div class="ttdeci">void pick_element(Ray &amp;ray)</div><div class="ttdoc">拾取半边、顶点、边或面片。</div><div class="ttdef"><b>定义</b> controller.cpp:396</div></div>
+<div class="ttc" id="aclassController_html_a55561237581cbe501830f6500beeb0d6"><div class="ttname"><a href="../../d9/d85/classController.html#a55561237581cbe501830f6500beeb0d6">Controller::mouse_translation_factor</a></div><div class="ttdeci">static constexpr float mouse_translation_factor</div><div class="ttdef"><b>定义</b> controller.h:211</div></div>
+<div class="ttc" id="aclassController_html_a6301902226747ccdef81ee281c9abc6e"><div class="ttname"><a href="../../d9/d85/classController.html#a6301902226747ccdef81ee281c9abc6e">Controller::controller</a></div><div class="ttdeci">static Controller &amp; controller()</div><div class="ttdoc">获取 Controller 类的唯一实例。</div><div class="ttdef"><b>定义</b> controller.cpp:35</div></div>
+<div class="ttc" id="aclassController_html_a69e94c079159d625ae394d3fd5fa1680"><div class="ttname"><a href="../../d9/d85/classController.html#a69e94c079159d625ae394d3fd5fa1680">Controller::unselect</a></div><div class="ttdeci">void unselect()</div><div class="ttdoc">取消选择。</div><div class="ttdef"><b>定义</b> controller.cpp:268</div></div>
+<div class="ttc" id="aclassController_html_a6b715719d5d3738be94a612a5b51568a"><div class="ttname"><a href="../../d9/d85/classController.html#a6b715719d5d3738be94a612a5b51568a">Controller::selected_element</a></div><div class="ttdeci">SelectableType selected_element</div><div class="ttdoc">当前被选中的元素。</div><div class="ttdef"><b>定义</b> controller.h:237</div></div>
+<div class="ttc" id="aclassController_html_a6d58d96a5298afd8338ca4d39127053b"><div class="ttname"><a href="../../d9/d85/classController.html#a6d58d96a5298afd8338ca4d39127053b">Controller::wheel_scroll_factor</a></div><div class="ttdeci">static constexpr float wheel_scroll_factor</div><div class="ttdef"><b>定义</b> controller.h:209</div></div>
+<div class="ttc" id="aclassController_html_a9070f68e2830fac28bb8c61af10fdb47"><div class="ttname"><a href="../../d9/d85/classController.html#a9070f68e2830fac28bb8c61af10fdb47">Controller::render</a></div><div class="ttdeci">void render(const Shader &amp;shader)</div><div class="ttdef"><b>定义</b> controller.cpp:237</div></div>
+<div class="ttc" id="aclassController_html_a95c56822d667e94b031451729ce069a9"><div class="ttname"><a href="../../d9/d85/classController.html#a95c56822d667e94b031451729ce069a9">Controller::Controller</a></div><div class="ttdeci">Controller()</div><div class="ttdef"><b>定义</b> controller.cpp:41</div></div>
+<div class="ttc" id="aclassController_html_aaa4a1e64142b9502bb07c23a503bd74e"><div class="ttname"><a href="../../d9/d85/classController.html#aaa4a1e64142b9502bb07c23a503bd74e">Controller::picking_ray</a></div><div class="ttdeci">GL::LineSet picking_ray</div><div class="ttdef"><b>定义</b> controller.h:249</div></div>
+<div class="ttc" id="aclassController_html_abbdb13a1e6b5471db07eb418795d513f"><div class="ttname"><a href="../../d9/d85/classController.html#abbdb13a1e6b5471db07eb418795d513f">Controller::debug_options</a></div><div class="ttdeci">UI::DebugOptions debug_options</div><div class="ttdef"><b>定义</b> controller.h:222</div></div>
+<div class="ttc" id="aclassController_html_ac33cc6c318b232a74c05b2b48b2c41bb"><div class="ttname"><a href="../../d9/d85/classController.html#ac33cc6c318b232a74c05b2b48b2c41bb">Controller::on_mouse_dragged</a></div><div class="ttdeci">void on_mouse_dragged(bool initial)</div><div class="ttdoc">将鼠标拖动转换为旋转视角或平移视角操作。</div><div class="ttdef"><b>定义</b> controller.cpp:98</div></div>
+<div class="ttc" id="aclassController_html_ac5a2db1447f9cfb2f59fb6b236ddcb61"><div class="ttname"><a href="../../d9/d85/classController.html#ac5a2db1447f9cfb2f59fb6b236ddcb61">Controller::highlighted_element</a></div><div class="ttdeci">GL::Mesh highlighted_element</div><div class="ttdef"><b>定义</b> controller.h:245</div></div>
+<div class="ttc" id="aclassController_html_acbadba65eafc040639cc668dde8f77b6"><div class="ttname"><a href="../../d9/d85/classController.html#acbadba65eafc040639cc668dde8f77b6">Controller::on_picking</a></div><div class="ttdeci">void on_picking()</div><div class="ttdoc">根据鼠标点击选取场景中的物体。</div><div class="ttdef"><b>定义</b> controller.cpp:112</div></div>
+<div class="ttc" id="aclassController_html_ace52a4008fe15ea112fc7ae6b9d22ca0"><div class="ttname"><a href="../../d9/d85/classController.html#ace52a4008fe15ea112fc7ae6b9d22ca0">Controller::scene</a></div><div class="ttdeci">std::unique_ptr&lt; Scene &gt; scene</div><div class="ttdef"><b>定义</b> controller.h:228</div></div>
+<div class="ttc" id="aclassController_html_ad186fddab2ac94aa2c8d5c004a106905"><div class="ttname"><a href="../../d9/d85/classController.html#ad186fddab2ac94aa2c8d5c004a106905">Controller::window_width</a></div><div class="ttdeci">float window_width</div><div class="ttdef"><b>定义</b> controller.h:117</div></div>
 <div class="ttc" id="aclassController_html_adb5f21653407293de30f649a8d2fc52c"><div class="ttname"><a href="../../d9/d85/classController.html#adb5f21653407293de30f649a8d2fc52c">Controller::Controller</a></div><div class="ttdeci">Controller(Controller &amp;other)=delete</div></div>
-<div class="ttc" id="aclassController_html_ae0f5af9db482fbbbdf22e3e08195c471"><div class="ttname"><a href="../../d9/d85/classController.html#ae0f5af9db482fbbbdf22e3e08195c471">Controller::highlighted_halfedge</a></div><div class="ttdeci">GL::LineSet highlighted_halfedge</div><div class="ttdef"><b>Definition</b> controller.h:247</div></div>
-<div class="ttc" id="aclassController_html_ae4c72b93b65e486a002d4cb872e614de"><div class="ttname"><a href="../../d9/d85/classController.html#ae4c72b93b65e486a002d4cb872e614de">Controller::select</a></div><div class="ttdeci">void select(SelectableType element)</div><div class="ttdoc">选择一个元素。</div><div class="ttdef"><b>Definition</b> controller.cpp:255</div></div>
-<div class="ttc" id="aclassController_html_ae604a933148415cb35ffd6dfdc6572b5"><div class="ttname"><a href="../../d9/d85/classController.html#ae604a933148415cb35ffd6dfdc6572b5">Controller::trackball_radius</a></div><div class="ttdeci">float trackball_radius</div><div class="ttdef"><b>Definition</b> controller.h:243</div></div>
-<div class="ttc" id="aclassController_html_ae6b743008bc87ed393eabf885d2f9e52"><div class="ttname"><a href="../../d9/d85/classController.html#ae6b743008bc87ed393eabf885d2f9e52">Controller::pick_object</a></div><div class="ttdeci">void pick_object(Ray &amp;ray)</div><div class="ttdoc">拾取物体。</div><div class="ttdef"><b>Definition</b> controller.cpp:369</div></div>
-<div class="ttc" id="aclassController_html_af34eb88e8cfcf959435ab733a99f285b"><div class="ttname"><a href="../../d9/d85/classController.html#af34eb88e8cfcf959435ab733a99f285b">Controller::select_edge</a></div><div class="ttdeci">void select_edge(Edge *edge)</div><div class="ttdef"><b>Definition</b> controller.cpp:479</div></div>
-<div class="ttc" id="aclassController_html_afe600befbeedd8d86dc9bf7e373e365a"><div class="ttname"><a href="../../d9/d85/classController.html#afe600befbeedd8d86dc9bf7e373e365a">Controller::menubar</a></div><div class="ttdeci">std::unique_ptr&lt; UI::Menubar &gt; menubar</div><div class="ttdef"><b>Definition</b> controller.h:224</div></div>
-<div class="ttc" id="aclassController_html_aff4ccad882e4bab51ff03428c63e88f8"><div class="ttname"><a href="../../d9/d85/classController.html#aff4ccad882e4bab51ff03428c63e88f8">Controller::process_input</a></div><div class="ttdeci">void process_input()</div><div class="ttdoc">处理关于场景操作的输入。</div><div class="ttdef"><b>Definition</b> controller.cpp:157</div></div>
-<div class="ttc" id="aclassObject_html"><div class="ttname"><a href="../../d8/d4b/classObject.html">Object</a></div><div class="ttdoc">表示物体的类。</div><div class="ttdef"><b>Definition</b> object.h:40</div></div>
-<div class="ttc" id="aclassShader_html"><div class="ttname"><a href="../../d9/d69/classShader.html">Shader</a></div><div class="ttdoc">对 GLSL Shader 的简单封装。</div><div class="ttdef"><b>Definition</b> shader.hpp:24</div></div>
+<div class="ttc" id="aclassController_html_ae0f5af9db482fbbbdf22e3e08195c471"><div class="ttname"><a href="../../d9/d85/classController.html#ae0f5af9db482fbbbdf22e3e08195c471">Controller::highlighted_halfedge</a></div><div class="ttdeci">GL::LineSet highlighted_halfedge</div><div class="ttdef"><b>定义</b> controller.h:247</div></div>
+<div class="ttc" id="aclassController_html_ae4c72b93b65e486a002d4cb872e614de"><div class="ttname"><a href="../../d9/d85/classController.html#ae4c72b93b65e486a002d4cb872e614de">Controller::select</a></div><div class="ttdeci">void select(SelectableType element)</div><div class="ttdoc">选择一个元素。</div><div class="ttdef"><b>定义</b> controller.cpp:255</div></div>
+<div class="ttc" id="aclassController_html_ae604a933148415cb35ffd6dfdc6572b5"><div class="ttname"><a href="../../d9/d85/classController.html#ae604a933148415cb35ffd6dfdc6572b5">Controller::trackball_radius</a></div><div class="ttdeci">float trackball_radius</div><div class="ttdef"><b>定义</b> controller.h:243</div></div>
+<div class="ttc" id="aclassController_html_ae6b743008bc87ed393eabf885d2f9e52"><div class="ttname"><a href="../../d9/d85/classController.html#ae6b743008bc87ed393eabf885d2f9e52">Controller::pick_object</a></div><div class="ttdeci">void pick_object(Ray &amp;ray)</div><div class="ttdoc">拾取物体。</div><div class="ttdef"><b>定义</b> controller.cpp:369</div></div>
+<div class="ttc" id="aclassController_html_af34eb88e8cfcf959435ab733a99f285b"><div class="ttname"><a href="../../d9/d85/classController.html#af34eb88e8cfcf959435ab733a99f285b">Controller::select_edge</a></div><div class="ttdeci">void select_edge(Edge *edge)</div><div class="ttdef"><b>定义</b> controller.cpp:479</div></div>
+<div class="ttc" id="aclassController_html_afe600befbeedd8d86dc9bf7e373e365a"><div class="ttname"><a href="../../d9/d85/classController.html#afe600befbeedd8d86dc9bf7e373e365a">Controller::menubar</a></div><div class="ttdeci">std::unique_ptr&lt; UI::Menubar &gt; menubar</div><div class="ttdef"><b>定义</b> controller.h:224</div></div>
+<div class="ttc" id="aclassController_html_aff4ccad882e4bab51ff03428c63e88f8"><div class="ttname"><a href="../../d9/d85/classController.html#aff4ccad882e4bab51ff03428c63e88f8">Controller::process_input</a></div><div class="ttdeci">void process_input()</div><div class="ttdoc">处理关于场景操作的输入。</div><div class="ttdef"><b>定义</b> controller.cpp:157</div></div>
+<div class="ttc" id="aclassObject_html"><div class="ttname"><a href="../../d8/d4b/classObject.html">Object</a></div><div class="ttdoc">表示物体的类。</div><div class="ttdef"><b>定义</b> object.h:40</div></div>
+<div class="ttc" id="aclassShader_html"><div class="ttname"><a href="../../d9/d69/classShader.html">Shader</a></div><div class="ttdoc">对 GLSL Shader 的简单封装。</div><div class="ttdef"><b>定义</b> shader.hpp:24</div></div>
 <div class="ttc" id="agl_8hpp_html"><div class="ttname"><a href="../../d7/d6a/gl_8hpp.html">gl.hpp</a></div></div>
-<div class="ttc" id="agroup__ui_html_ga638a76ca8c5a67cdc5a1e918f7c6e5c1"><div class="ttname"><a href="../../dd/df1/group__ui.html#ga638a76ca8c5a67cdc5a1e918f7c6e5c1">SelectableType</a></div><div class="ttdeci">std::variant&lt; std::monostate, Object *, const Halfedge *, Vertex *, Edge *, Face *, Light * &gt; SelectableType</div><div class="ttdoc">场景中可被选择的元素类型。</div><div class="ttdef"><b>Definition</b> selection_helper.h:38</div></div>
+<div class="ttc" id="agroup__ui_html_ga638a76ca8c5a67cdc5a1e918f7c6e5c1"><div class="ttname"><a href="../../dd/df1/group__ui.html#ga638a76ca8c5a67cdc5a1e918f7c6e5c1">SelectableType</a></div><div class="ttdeci">std::variant&lt; std::monostate, Object *, const Halfedge *, Vertex *, Edge *, Face *, Light * &gt; SelectableType</div><div class="ttdoc">场景中可被选择的元素类型。</div><div class="ttdef"><b>定义</b> selection_helper.h:38</div></div>
 <div class="ttc" id="amenubar_8h_html"><div class="ttname"><a href="../../d0/d61/menubar_8h.html">menubar.h</a></div></div>
-<div class="ttc" id="arendering_8hpp_html_a1352c5fcb6cfad612ba26a0e91355bcb"><div class="ttname"><a href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a></div><div class="ttdeci">WorkingMode</div><div class="ttdef"><b>Definition</b> rendering.hpp:50</div></div>
+<div class="ttc" id="arendering_8hpp_html_a1352c5fcb6cfad612ba26a0e91355bcb"><div class="ttname"><a href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a></div><div class="ttdeci">WorkingMode</div><div class="ttdef"><b>定义</b> rendering.hpp:50</div></div>
 <div class="ttc" id="ascene_8h_html"><div class="ttname"><a href="../../db/d83/scene_8h.html">scene.h</a></div></div>
 <div class="ttc" id="aselection__helper_8h_html"><div class="ttname"><a href="../../d6/d7f/selection__helper_8h.html">selection_helper.h</a></div></div>
 <div class="ttc" id="ashader_8hpp_html"><div class="ttname"><a href="../../d9/d52/shader_8hpp.html">shader.hpp</a></div></div>
-<div class="ttc" id="astructEdge_html"><div class="ttname"><a href="../../d2/d4f/structEdge.html">Edge</a></div><div class="ttdoc">半边网格中的边。</div><div class="ttdef"><b>Definition</b> halfedge.h:117</div></div>
-<div class="ttc" id="astructFace_html"><div class="ttname"><a href="../../d0/d02/structFace.html">Face</a></div><div class="ttdoc">半边网格中的面片。</div><div class="ttdef"><b>Definition</b> halfedge.h:150</div></div>
-<div class="ttc" id="astructGL_1_1LineSet_html"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a></div><div class="ttdoc">在预览场景时绘制若干线条。</div><div class="ttdef"><b>Definition</b> gl.hpp:270</div></div>
-<div class="ttc" id="astructGL_1_1Mesh_html"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a></div><div class="ttdoc">用于场景预览渲染的 Mesh 类。</div><div class="ttdef"><b>Definition</b> gl.hpp:220</div></div>
-<div class="ttc" id="astructHalfedge_html"><div class="ttname"><a href="../../df/d02/structHalfedge.html">Halfedge</a></div><div class="ttdoc">半边网格中最关键的几何元素。</div><div class="ttdef"><b>Definition</b> halfedge.h:46</div></div>
-<div class="ttc" id="astructLight_html"><div class="ttname"><a href="../../d5/d79/structLight.html">Light</a></div><div class="ttdoc">一个点光源。</div><div class="ttdef"><b>Definition</b> light.h:17</div></div>
-<div class="ttc" id="astructRay_html"><div class="ttname"><a href="../../dd/d5e/structRay.html">Ray</a></div><div class="ttdef"><b>Definition</b> ray.h:24</div></div>
-<div class="ttc" id="astructUI_1_1DebugOptions_html"><div class="ttname"><a href="../../d9/dc1/structUI_1_1DebugOptions.html">UI::DebugOptions</a></div><div class="ttdoc">辅助调试的 GUI 选项。</div><div class="ttdef"><b>Definition</b> menubar.h:21</div></div>
-<div class="ttc" id="astructVertex_html"><div class="ttname"><a href="../../df/dd0/structVertex.html">Vertex</a></div><div class="ttdoc">半边网格中的顶点。</div><div class="ttdef"><b>Definition</b> halfedge.h:85</div></div>
+<div class="ttc" id="astructEdge_html"><div class="ttname"><a href="../../d2/d4f/structEdge.html">Edge</a></div><div class="ttdoc">半边网格中的边。</div><div class="ttdef"><b>定义</b> halfedge.h:117</div></div>
+<div class="ttc" id="astructFace_html"><div class="ttname"><a href="../../d0/d02/structFace.html">Face</a></div><div class="ttdoc">半边网格中的面片。</div><div class="ttdef"><b>定义</b> halfedge.h:150</div></div>
+<div class="ttc" id="astructGL_1_1LineSet_html"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a></div><div class="ttdoc">在预览场景时绘制若干线条。</div><div class="ttdef"><b>定义</b> gl.hpp:270</div></div>
+<div class="ttc" id="astructGL_1_1Mesh_html"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a></div><div class="ttdoc">用于场景预览渲染的 Mesh 类。</div><div class="ttdef"><b>定义</b> gl.hpp:220</div></div>
+<div class="ttc" id="astructHalfedge_html"><div class="ttname"><a href="../../df/d02/structHalfedge.html">Halfedge</a></div><div class="ttdoc">半边网格中最关键的几何元素。</div><div class="ttdef"><b>定义</b> halfedge.h:46</div></div>
+<div class="ttc" id="astructLight_html"><div class="ttname"><a href="../../d5/d79/structLight.html">Light</a></div><div class="ttdoc">一个点光源。</div><div class="ttdef"><b>定义</b> light.h:17</div></div>
+<div class="ttc" id="astructRay_html"><div class="ttname"><a href="../../dd/d5e/structRay.html">Ray</a></div><div class="ttdef"><b>定义</b> ray.h:24</div></div>
+<div class="ttc" id="astructUI_1_1DebugOptions_html"><div class="ttname"><a href="../../d9/dc1/structUI_1_1DebugOptions.html">UI::DebugOptions</a></div><div class="ttdoc">辅助调试的 GUI 选项。</div><div class="ttdef"><b>定义</b> menubar.h:21</div></div>
+<div class="ttc" id="astructVertex_html"><div class="ttname"><a href="../../df/dd0/structVertex.html">Vertex</a></div><div class="ttdoc">半边网格中的顶点。</div><div class="ttdef"><b>定义</b> halfedge.h:85</div></div>
 <div class="ttc" id="atoolbar_8h_html"><div class="ttname"><a href="../../dc/d2a/toolbar_8h.html">toolbar.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -430,7 +430,7 @@ $(function(){initNavTree('d2/dd9/controller_8h_source.html','../../'); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_da5c6b39c0a2f54e57df6799511cd3ab.html">ui</a></li><li class="navelem"><a class="el" href="../../d2/dd9/controller_8h.html">controller.h</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

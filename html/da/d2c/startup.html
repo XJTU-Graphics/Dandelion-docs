@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: 开始开发</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -11,9 +11,9 @@
 <script type="text/javascript" src="../../dynsections.js"></script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../cookie.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.2</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,10 +47,15 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.10.0 -->
+<!-- 制作者 Doxygen 1.11.0 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
 /* @license-end */
 </script>
 <script type="text/javascript" src="../../menudata.js"></script>
@@ -58,7 +63,7 @@ var searchBox = new SearchBox("searchBox", "../../search/",'.html');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('../../',true,false,'search.php','搜索');
+  initMenu('../../',true,false,'search.php','搜索',true);
   $(function() { init_search(); });
 });
 /* @license-end */
@@ -77,7 +82,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('da/d2c/startup.html','../../'); initResizable(); });
+$(function(){initNavTree('da/d2c/startup.html','../../'); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -172,10 +177,10 @@ $(function(){initNavTree('da/d2c/startup.html','../../'); initResizable(); });
 <div class="line"><span class="comment">    /*! \~chinese 构造函数是私有的。 */</span></div>
 <div class="line">    <a class="code hl_function" href="../../d9/d85/classController.html#a95c56822d667e94b031451729ce069a9">Controller</a>();</div>
 <div class="line">};</div>
-<div class="ttc" id="aclassController_html"><div class="ttname"><a href="../../d9/d85/classController.html">Controller</a></div><div class="ttdoc">控制器管理所有的界面组件，并处理和预览视角操作（例如旋转、缩放或者平移）相关的输入。</div><div class="ttdef"><b>Definition</b> controller.h:39</div></div>
-<div class="ttc" id="aclassController_html_a142bc68626ef6319295599d939e56cf0"><div class="ttname"><a href="../../d9/d85/classController.html#a142bc68626ef6319295599d939e56cf0">Controller::on_framebuffer_resized</a></div><div class="ttdeci">void on_framebuffer_resized(float width, float height)</div><div class="ttdoc">在缩放窗口时调整轨迹球半径、预览视角（相机）Y 方向的 FoV，并更新自身记录的窗口尺寸。</div><div class="ttdef"><b>Definition</b> controller.cpp:149</div></div>
-<div class="ttc" id="aclassController_html_a6301902226747ccdef81ee281c9abc6e"><div class="ttname"><a href="../../d9/d85/classController.html#a6301902226747ccdef81ee281c9abc6e">Controller::controller</a></div><div class="ttdeci">static Controller &amp; controller()</div><div class="ttdoc">获取 Controller 类的唯一实例。</div><div class="ttdef"><b>Definition</b> controller.cpp:35</div></div>
-<div class="ttc" id="aclassController_html_a95c56822d667e94b031451729ce069a9"><div class="ttname"><a href="../../d9/d85/classController.html#a95c56822d667e94b031451729ce069a9">Controller::Controller</a></div><div class="ttdeci">Controller()</div><div class="ttdef"><b>Definition</b> controller.cpp:41</div></div>
+<div class="ttc" id="aclassController_html"><div class="ttname"><a href="../../d9/d85/classController.html">Controller</a></div><div class="ttdoc">控制器管理所有的界面组件，并处理和预览视角操作（例如旋转、缩放或者平移）相关的输入。</div><div class="ttdef"><b>定义</b> controller.h:39</div></div>
+<div class="ttc" id="aclassController_html_a142bc68626ef6319295599d939e56cf0"><div class="ttname"><a href="../../d9/d85/classController.html#a142bc68626ef6319295599d939e56cf0">Controller::on_framebuffer_resized</a></div><div class="ttdeci">void on_framebuffer_resized(float width, float height)</div><div class="ttdoc">在缩放窗口时调整轨迹球半径、预览视角（相机）Y 方向的 FoV，并更新自身记录的窗口尺寸。</div><div class="ttdef"><b>定义</b> controller.cpp:149</div></div>
+<div class="ttc" id="aclassController_html_a6301902226747ccdef81ee281c9abc6e"><div class="ttname"><a href="../../d9/d85/classController.html#a6301902226747ccdef81ee281c9abc6e">Controller::controller</a></div><div class="ttdeci">static Controller &amp; controller()</div><div class="ttdoc">获取 Controller 类的唯一实例。</div><div class="ttdef"><b>定义</b> controller.cpp:35</div></div>
+<div class="ttc" id="aclassController_html_a95c56822d667e94b031451729ce069a9"><div class="ttname"><a href="../../d9/d85/classController.html#a95c56822d667e94b031451729ce069a9">Controller::Controller</a></div><div class="ttdeci">Controller()</div><div class="ttdef"><b>定义</b> controller.cpp:41</div></div>
 </div><!-- fragment --><p>而在 cpp 文件中写注释只是为了帮助它人读懂代码，这时请不要用 Doxygen 注释块，否则这部分内容将会出现在生成的开发者文档中。</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> foo()</div>
 <div class="line">{</div>
@@ -247,7 +252,7 @@ XJTU-Graphics 组织成员</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

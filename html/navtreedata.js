@@ -49,7 +49,7 @@ var NAVTREE =
       ] ]
     ] ],
     [ "项目结构", "d9/d2f/structure.html", null ],
-    [ "Topics", "topics.html", "topics" ],
+    [ "专题", "topics.html", "topics" ],
     [ "类", "annotated.html", [
       [ "类列表", "annotated.html", "annotated_dup" ],
       [ "类索引", "classes.html", null ],
@@ -58,7 +58,7 @@ var NAVTREE =
         [ "全部", "functions.html", "functions_dup" ],
         [ "函数", "functions_func.html", null ],
         [ "变量", "functions_vars.html", null ],
-        [ "相关函数", "functions_rela.html", null ]
+        [ "相关符号", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "文件", "files.html", [
