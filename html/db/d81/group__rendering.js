@@ -145,7 +145,7 @@ var group__rendering =
     [ "RendererType", "db/d81/group__rendering.html#gae9c668e3a273ce92b9f4e134d0cbd6ce", null ],
     [ "generate_ray", "db/d81/group__rendering.html#ga058f7f5f254453b5df93c093ebde122a", null ],
     [ "naive_intersect", "db/d81/group__rendering.html#ga1a3a6b802c525058a523c2dadaae1f2b", null ],
-    [ "phong_fragment_shader", "db/d81/group__rendering.html#ga5727fd2e9dd9d5b09eefb9cf03271241", null ],
+    [ "phong_fragment_shader", "db/d81/group__rendering.html#ga23e48f4922a0422f0e9679f65daaef5f", null ],
     [ "ray_triangle_intersect", "db/d81/group__rendering.html#gab851f3686bc57e3a8cc135f68f3871a5", null ],
     [ "vertex_shader", "db/d81/group__rendering.html#gaf95c1a4382cc7c01a134fbdd9e7db1c4", null ]
 ];

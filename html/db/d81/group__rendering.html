@@ -224,9 +224,9 @@ $(function(){initNavTree('db/d81/group__rendering.html','../../'); initResizable
 <tr class="memitem:gaf95c1a4382cc7c01a134fbdd9e7db1c4" id="r_gaf95c1a4382cc7c01a134fbdd9e7db1c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf95c1a4382cc7c01a134fbdd9e7db1c4">vertex_shader</a> (const <a class="el" href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a> &amp;payload)</td></tr>
 <tr class="memdesc:gaf95c1a4382cc7c01a134fbdd9e7db1c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算顶点的各项属性几何变化。  <br /></td></tr>
 <tr class="separator:gaf95c1a4382cc7c01a134fbdd9e7db1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5727fd2e9dd9d5b09eefb9cf03271241" id="r_ga5727fd2e9dd9d5b09eefb9cf03271241"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5727fd2e9dd9d5b09eefb9cf03271241">phong_fragment_shader</a> (const <a class="el" href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a> &amp;payload, <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> material, const std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;lights, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> camera)</td></tr>
-<tr class="memdesc:ga5727fd2e9dd9d5b09eefb9cf03271241"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用 Blinn Phong 着色模型计算每个片元（像素）的颜色。  <br /></td></tr>
-<tr class="separator:ga5727fd2e9dd9d5b09eefb9cf03271241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga23e48f4922a0422f0e9679f65daaef5f" id="r_ga23e48f4922a0422f0e9679f65daaef5f"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga23e48f4922a0422f0e9679f65daaef5f">phong_fragment_shader</a> (const <a class="el" href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a> &amp;payload, const <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &amp;material, const std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;lights, const <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp;camera)</td></tr>
+<tr class="memdesc:ga23e48f4922a0422f0e9679f65daaef5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用 Blinn Phong 着色模型计算每个片元（像素）的颜色。  <br /></td></tr>
+<tr class="separator:ga23e48f4922a0422f0e9679f65daaef5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga058f7f5f254453b5df93c093ebde122a" id="r_ga058f7f5f254453b5df93c093ebde122a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d5e/structRay.html">Ray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga058f7f5f254453b5df93c093ebde122a">generate_ray</a> (int width, int height, int x, int y, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp;camera, float depth)</td></tr>
 <tr class="memdesc:ga058f7f5f254453b5df93c093ebde122a"><td class="mdescLeft">&#160;</td><td class="mdescRight">给定成像平面的宽度和高度、成像平面上的坐标、成像平面的深度和相机，生成一条射线。  <br /></td></tr>
 <tr class="separator:ga058f7f5f254453b5df93c093ebde122a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -345,8 +345,8 @@ $(function(){initNavTree('db/d81/group__rendering.html','../../'); initResizable
 
 </div>
 </div>
-<a id="ga5727fd2e9dd9d5b09eefb9cf03271241" name="ga5727fd2e9dd9d5b09eefb9cf03271241"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5727fd2e9dd9d5b09eefb9cf03271241">&#9670;&#160;</a></span>phong_fragment_shader()</h2>
+<a id="ga23e48f4922a0422f0e9679f65daaef5f" name="ga23e48f4922a0422f0e9679f65daaef5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga23e48f4922a0422f0e9679f65daaef5f">&#9670;&#160;</a></span>phong_fragment_shader()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -359,7 +359,7 @@ $(function(){initNavTree('db/d81/group__rendering.html','../../'); initResizable
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a></td>          <td class="paramname"><span class="paramname"><em>material</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>material</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -369,7 +369,7 @@ $(function(){initNavTree('db/d81/group__rendering.html','../../'); initResizable
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d7/d7e/structCamera.html">Camera</a></td>          <td class="paramname"><span class="paramname"><em>camera</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>camera</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
