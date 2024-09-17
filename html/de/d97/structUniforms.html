@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: Uniforms结构体 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -47,7 +47,7 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.11.0 -->
+<!-- 制作者 Doxygen 1.12.0 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -111,14 +111,14 @@ $(function(){initNavTree('de/d97/structUniforms.html','../../'); initResizable(t
   <div class="summary">
 <a href="#pub-static-attribs">静态 Public 属性</a> &#124;
 <a href="../../dc/d4d/structUniforms-members.html">所有成员列表</a>  </div>
-  <div class="headertitle"><div class="title">Uniforms结构体 参考</div></div>
+  <div class="headertitle"><div class="title">Uniforms结构体 参考<div class="ingroups"><a class="el" href="../../db/d81/group__rendering.html">离线渲染</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>用于存储shader所需的全局变量  
+<p>用于存储 <a class="el" href="../../d7/db0/classRasterizerRenderer.html" title="实现光栅化渲染管线。">RasterizerRenderer</a> 所需的全局变量。  
  <a href="#details">更多...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../d1/df4/shader_8h_source.html">shader.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../da/d22/graphics__interface_8h_source.html">graphics_interface.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 静态 Public 属性</h2></td></tr>
@@ -126,16 +126,45 @@ $(function(){initNavTree('de/d97/structUniforms.html','../../'); initResizable(t
 <tr class="separator:abb3ceec66f95622f4f2de92593daa350"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fec7e95a81c71553d6ba10ef240b5ae" id="r_a9fec7e95a81c71553d6ba10ef240b5ae"><td class="memItemLeft" align="right" valign="top">static Eigen::Matrix4f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fec7e95a81c71553d6ba10ef240b5ae">inv_trans_M</a></td></tr>
 <tr class="separator:a9fec7e95a81c71553d6ba10ef240b5ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd0587ccdef535d3dea64d3c26efed11" id="r_afd0587ccdef535d3dea64d3c26efed11"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd0587ccdef535d3dea64d3c26efed11">material</a> = ini_material</td></tr>
+<tr class="separator:afd0587ccdef535d3dea64d3c26efed11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7ca999430bdf9968ba1508803d95c90" id="r_ac7ca999430bdf9968ba1508803d95c90"><td class="memItemLeft" align="right" valign="top">static std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7ca999430bdf9968ba1508803d95c90">lights</a> = ini_lights</td></tr>
+<tr class="separator:ac7ca999430bdf9968ba1508803d95c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb8a644cfc6e13017e52eec5fdc24da6" id="r_adb8a644cfc6e13017e52eec5fdc24da6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb8a644cfc6e13017e52eec5fdc24da6">camera</a> = ini_camera</td></tr>
+<tr class="separator:adb8a644cfc6e13017e52eec5fdc24da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a0ced151699f824c314f407df9f69da60" id="r_a0ced151699f824c314f407df9f69da60"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ced151699f824c314f407df9f69da60">width</a></td></tr>
+<tr class="memitem:a0ced151699f824c314f407df9f69da60" id="r_a0ced151699f824c314f407df9f69da60"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ced151699f824c314f407df9f69da60">width</a> = 0</td></tr>
 <tr class="separator:a0ced151699f824c314f407df9f69da60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad839d1f923bbd41d63690168986cd60e" id="r_ad839d1f923bbd41d63690168986cd60e"><td class="memItemLeft" align="right" valign="top"><a id="ad839d1f923bbd41d63690168986cd60e" name="ad839d1f923bbd41d63690168986cd60e"></a>
-static int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b> = 0</td></tr>
 <tr class="separator:ad839d1f923bbd41d63690168986cd60e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p>用于存储shader所需的全局变量 </p>
+<div class="textblock"><p>用于存储 <a class="el" href="../../d7/db0/classRasterizerRenderer.html" title="实现光栅化渲染管线。">RasterizerRenderer</a> 所需的全局变量。 </p>
 </div><h2 class="groupheader">类成员变量说明</h2>
+<a id="adb8a644cfc6e13017e52eec5fdc24da6" name="adb8a644cfc6e13017e52eec5fdc24da6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb8a644cfc6e13017e52eec5fdc24da6">&#9670;&#160;</a></span>camera</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp; Uniforms::camera = ini_camera</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>当前渲染视角的相机 </p>
+
+</div>
+</div>
 <a id="a9fec7e95a81c71553d6ba10ef240b5ae" name="a9fec7e95a81c71553d6ba10ef240b5ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9fec7e95a81c71553d6ba10ef240b5ae">&#9670;&#160;</a></span>inv_trans_M</h2>
 
@@ -159,6 +188,52 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td>
 
 </div>
 </div>
+<a id="ac7ca999430bdf9968ba1508803d95c90" name="ac7ca999430bdf9968ba1508803d95c90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7ca999430bdf9968ba1508803d95c90">&#9670;&#160;</a></span>lights</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp; Uniforms::lights = ini_lights</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>场景内的光源 </p>
+
+</div>
+</div>
+<a id="afd0587ccdef535d3dea64d3c26efed11" name="afd0587ccdef535d3dea64d3c26efed11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd0587ccdef535d3dea64d3c26efed11">&#9670;&#160;</a></span>material</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &amp; Uniforms::material = ini_material</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>渲染物体的材质 </p>
+
+</div>
+</div>
 <a id="abb3ceec66f95622f4f2de92593daa350" name="abb3ceec66f95622f4f2de92593daa350"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abb3ceec66f95622f4f2de92593daa350">&#9670;&#160;</a></span>MVP</h2>
 
@@ -178,7 +253,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>当前渲染物体的MVP矩阵 </p>
+<p>当前渲染物体的 MVP 矩阵 </p>
 
 </div>
 </div>
@@ -192,7 +267,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Uniforms::width</td>
+          <td class="memname">int Uniforms::width = 0</td>
         </tr>
       </table>
   </td>
@@ -206,8 +281,8 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td>
 </div>
 </div>
 <hr/>该结构体的文档由以下文件生成:<ul>
-<li><a class="el" href="../../d1/df4/shader_8h_source.html">shader.h</a></li>
-<li><b>render/shader.cpp</b></li>
+<li><a class="el" href="../../da/d22/graphics__interface_8h_source.html">graphics_interface.h</a></li>
+<li><b>rasterizer_renderer.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -215,7 +290,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/d97/structUniforms.html">Uniforms</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: HalfedgeMesh类 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -47,7 +47,7 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.11.0 -->
+<!-- 制作者 Doxygen 1.12.0 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -210,7 +210,7 @@ Private 成员函数</h2></td></tr>
 <tr class="memitem:a2dddd55f43333c9bad1ca7465661ad29" id="r_a2dddd55f43333c9bad1ca7465661ad29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2dddd55f43333c9bad1ca7465661ad29">erase</a> (<a class="el" href="../../d0/d02/structFace.html">Face</a> *f)</td></tr>
 <tr class="separator:a2dddd55f43333c9bad1ca7465661ad29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf741dc10d78ce517ae4fb16233254ec" id="r_adf741dc10d78ce517ae4fb16233254ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf741dc10d78ce517ae4fb16233254ec">clear_erasure_records</a> ()</td></tr>
-<tr class="memdesc:adf741dc10d78ce517ae4fb16233254ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">清楚已删除元素的记录。  <br /></td></tr>
+<tr class="memdesc:adf741dc10d78ce517ae4fb16233254ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放内存并清除已删除元素的记录。  <br /></td></tr>
 <tr class="separator:adf741dc10d78ce517ae4fb16233254ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8da716b691912b3cdbd69362ea345396" id="r_a8da716b691912b3cdbd69362ea345396"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d9/dba/group__geometry.html#ga61975e76d464c02410b50d5600f125da">HalfedgeMeshFailure</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8da716b691912b3cdbd69362ea345396">validate</a> ()</td></tr>
 <tr class="memdesc:a8da716b691912b3cdbd69362ea345396"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查半边网格的状态。  <br /></td></tr>
@@ -340,8 +340,8 @@ Private 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>清楚已删除元素的记录。 </p>
-<p>这个函数清空 <code>erased_[elements]</code> 中存储的删除记录。 </p>
+<p>释放内存并清除已删除元素的记录。 </p>
+<p>这个函数执行 <code>delete</code> 释放内存，并清空各 <code>erased_[elements]</code> 容器中存储的删除记录。 </p>
 
 </div>
 </div>
@@ -564,7 +564,7 @@ Private 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>执行一次 Loop 曲面细分。 </p>
-<p>该函数使用 <code>flip_edge</code> 和 <code>split_edge</code> 完成一次 Loop 曲面细分。注意，Loop 曲面细分只能细分三角网格。 </p>
+<p>该函数使用 <code>flip_edge</code> 和 <code>split_edge</code> 完成一次 Loop 曲面细分。注意，Loop 曲面细分只能细分三角网格。细分过程使用 <code>is_boundary</code> 和 <code>on_boundary</code> 等 API 来判断 mesh 边界并进行处理。 </p>
 
 </div>
 </div>
@@ -1220,7 +1220,7 @@ Private 属性</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

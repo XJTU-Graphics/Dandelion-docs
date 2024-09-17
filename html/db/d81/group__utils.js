@@ -8,6 +8,11 @@ var group__utils =
     [ "ray.h", "d5/d92/ray_8h.html", null ],
     [ "rendering.hpp", "dc/df7/rendering_8hpp.html", null ],
     [ "stb_image_wrapper.cpp", "d0/d13/stb__image__wrapper_8cpp.html", null ],
+    [ "SpinLock", "dd/d57/classSpinLock.html", [
+      [ "lock", "dd/d57/classSpinLock.html#a2db046cb75c8febd532923ce36c4c3ad", null ],
+      [ "unlock", "dd/d57/classSpinLock.html#a25ef6814d1e3fbd621db947ae7522d0e", null ],
+      [ "locked", "dd/d57/classSpinLock.html#a0cccda43e75479574324ea47ce05d7f3", null ]
+    ] ],
     [ "AABB", "d2/d1a/classAABB.html", [
       [ "centroid", "d2/d1a/classAABB.html#a710d0fc9af1c42bf850ff900aecf015b", null ],
       [ "diagonal", "d2/d1a/classAABB.html#a65d10683fc8240932c206c75506ee362", null ],

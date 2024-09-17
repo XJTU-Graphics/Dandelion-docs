@@ -6,7 +6,7 @@ var searchData=
   ['length_3',['length',['../d2/d4f/structEdge.html#a80763919d0ed41bbe6a275c9a5829b7b',1,'Edge']]],
   ['light_4',['Light',['../d5/d79/structLight.html',1,'Light'],['../d5/d79/structLight.html#aff5011d911a33e38dba5ea174679736e',1,'Light::Light()']]],
   ['light_2eh_5',['light.h',['../dd/dd3/light_8h.html',1,'']]],
-  ['lights_6',['lights',['../d5/d9c/classScene.html#a7481b024ed1181823b38c10e663ffea7',1,'Scene']]],
+  ['lights_6',['lights',['../de/d97/structUniforms.html#ac7ca999430bdf9968ba1508803d95c90',1,'Uniforms::lights'],['../d5/d9c/classScene.html#a7481b024ed1181823b38c10e663ffea7',1,'Scene::lights']]],
   ['line_5fcolor_7',['line_color',['../d4/d91/structGL_1_1LineSet.html#aa6a75a492ac9dccd1f60c6daa24b7caa',1,'GL::LineSet']]],
   ['line_5fwidth_8',['line_width',['../dc/df7/rendering_8hpp.html#a3ca9a822f7e8866ae1e5f1e29a3e20b2',1,'rendering.hpp']]],
   ['lineset_9',['LineSet',['../d4/d91/structGL_1_1LineSet.html',1,'GL::LineSet'],['../d4/d91/structGL_1_1LineSet.html#afd590478026675e92c7aa324936088c9',1,'GL::LineSet::LineSet()']]],
@@ -23,8 +23,10 @@ var searchData=
   ['linkedlistnode_3c_20vertex_20_3e_20',['LinkedListNode&lt; Vertex &gt;',['../d6/d73/structLinkedListNode.html',1,'']]],
   ['linux_21',['Linux',['../d8/df1/build.html#compilation-linux',1,'']]],
   ['load_22',['load',['../d0/db7/classGroup.html#a3cc9d35ed0753293c7128cddf920b55b',1,'Group::load()'],['../d5/d9c/classScene.html#aa78f982d2d987f8e4bc6748a834bdccc',1,'Scene::load()']]],
-  ['logger_23',['logger',['../dc/d6d/classHalfedgeMesh.html#a37aa317f68032db7f5cd80e9e7c153df',1,'HalfedgeMesh::logger'],['../d8/d4b/classObject.html#a1bdaceb3171dfb3a26e71bc996d7ff1b',1,'Object::logger'],['../d5/d9c/classScene.html#a5d310a617d791b73ab82bc34bcb37f69',1,'Scene::logger'],['../d9/d85/classController.html#a3ac9aefe19714d124cb032e23fd23e75',1,'Controller::logger']]],
-  ['logger_2eh_24',['logger.h',['../d1/d8c/logger_8h.html',1,'']]],
-  ['logging_5flevels_5fmenu_25',['logging_levels_menu',['../d6/de2/classUI_1_1Menubar.html#a39e6b1e3ec013ed974343ec0d8aad228',1,'UI::Menubar']]],
-  ['loop_5fsubdivide_26',['loop_subdivide',['../dc/d6d/classHalfedgeMesh.html#a195964f7408299d4733b1566487c43f5',1,'HalfedgeMesh']]]
+  ['lock_23',['lock',['../dd/d57/classSpinLock.html#a2db046cb75c8febd532923ce36c4c3ad',1,'SpinLock']]],
+  ['locked_24',['locked',['../dd/d57/classSpinLock.html#a0cccda43e75479574324ea47ce05d7f3',1,'SpinLock']]],
+  ['logger_25',['logger',['../dc/d6d/classHalfedgeMesh.html#a37aa317f68032db7f5cd80e9e7c153df',1,'HalfedgeMesh::logger'],['../d8/d4b/classObject.html#a1bdaceb3171dfb3a26e71bc996d7ff1b',1,'Object::logger'],['../d5/d9c/classScene.html#a5d310a617d791b73ab82bc34bcb37f69',1,'Scene::logger'],['../d9/d85/classController.html#a3ac9aefe19714d124cb032e23fd23e75',1,'Controller::logger']]],
+  ['logger_2eh_26',['logger.h',['../d1/d8c/logger_8h.html',1,'']]],
+  ['logging_5flevels_5fmenu_27',['logging_levels_menu',['../d6/de2/classUI_1_1Menubar.html#a39e6b1e3ec013ed974343ec0d8aad228',1,'UI::Menubar']]],
+  ['loop_5fsubdivide_28',['loop_subdivide',['../dc/d6d/classHalfedgeMesh.html#a195964f7408299d4733b1566487c43f5',1,'HalfedgeMesh']]]
 ];

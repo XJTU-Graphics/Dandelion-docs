@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['halfedgemeshfailure_0',['HalfedgeMeshFailure',['../d9/dba/group__geometry.html#ga61975e76d464c02410b50d5600f125da',1,'halfedge.h']]]
+  ['buffertype_0',['BufferType',['../db/d81/group__rendering.html#gadf8e136713c0691010d2bec6ba63e9cf',1,'graphics_interface.h']]]
 ];

@@ -11,7 +11,7 @@ var searchData=
   ['select_5fvertex_8',['select_vertex',['../d9/d85/classController.html#a1f2a6f6ec5eea69055addd2917cfbe73',1,'Controller']]],
   ['set_5fneighbors_9',['set_neighbors',['../df/d02/structHalfedge.html#abf1c78e7f1b53433a83b744c0552b1e1',1,'Halfedge']]],
   ['set_5fopengl_5fproperties_10',['set_opengl_properties',['../df/d1e/classPlatform.html#ae68d7112482e9e731697b5569e4afeef',1,'Platform']]],
-  ['set_5fpixel_11',['set_pixel',['../d3/d7a/classRasterizer.html#a2afc14d3e92e883020ddc7d23cea4439',1,'Rasterizer']]],
+  ['set_5fpixel_11',['set_pixel',['../dc/d5b/classFrameBuffer.html#a02e942da4a5306a5222032bf7ba17e83',1,'FrameBuffer']]],
   ['set_5funiform_12',['set_uniform',['../d9/d69/classShader.html#a4362b3c351e543ec784db0ce4e043239',1,'Shader']]],
   ['sign_13',['sign',['../db/d81/group__utils.html#ga9394636a770c3d784a10b8334c33f5d2',1,'math.hpp']]],
   ['simplify_14',['simplify',['../dc/d6d/classHalfedgeMesh.html#aeeb36cfa269c11ae95d78ffebfae16b8',1,'HalfedgeMesh']]],

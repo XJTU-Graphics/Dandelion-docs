@@ -4,9 +4,9 @@ var indexSectionsWithContent =
   1: "abcdefghiklmoprstuvw",
   2: "abcfghklmoprst",
   3: "abcdefghilmnopqrstuvx~",
-  4: "abcdefghilmnoprstuvw",
+  4: "abcdefghilmnoprstuvwx",
   5: "s",
-  6: "hw",
+  6: "bhrw",
   7: "o",
   8: "u几平杂物界离",
   9: "d开构项"

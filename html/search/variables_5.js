@@ -6,7 +6,7 @@ var searchData=
   ['far_3',['far',['../d7/d7e/structCamera.html#a9f30b77edf6485e001a98d21ff5f17fe',1,'Camera']]],
   ['force_4',['force',['../d8/d4b/classObject.html#aa31820215a5450a83c624324258f00dd',1,'Object']]],
   ['fov_5fy_5fdegrees_5',['fov_y_degrees',['../d7/d7e/structCamera.html#aa3f6b2c9df678347897554480099e342',1,'Camera']]],
-  ['fragment_5fshader_6',['fragment_shader',['../d3/d7a/classRasterizer.html#a9e830aa437f41ba1deb00684001b5a0e',1,'Rasterizer']]],
-  ['frame_5fbuf_7',['frame_buf',['../d3/d7a/classRasterizer.html#ac0bec4b6fcbc82f729408000d2fdceeb',1,'Rasterizer']]],
+  ['fragment_5ffinish_6',['fragment_finish',['../d6/d7a/structContext.html#ad351622199d79d9380134d89e79c168d',1,'Context']]],
+  ['frame_5fbuffer_7',['frame_buffer',['../d6/d7a/structContext.html#ab2f4106ab57a441b533f2bf4c91fe501',1,'Context']]],
   ['from_8',['from',['../df/d02/structHalfedge.html#a3bb515eebb9177fbc2fde1f0893a93c7',1,'Halfedge']]]
 ];

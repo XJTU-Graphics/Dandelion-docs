@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: VertexShaderPayload结构体 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -47,7 +47,7 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.11.0 -->
+<!-- 制作者 Doxygen 1.12.0 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -114,22 +114,17 @@ $(function(){initNavTree('d9/d78/structVertexShaderPayload.html','../../'); init
   <div class="headertitle"><div class="title">VertexShaderPayload结构体 参考</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>作用于每个顶点，通常是处理从世界空间到屏幕空间的坐标变化，后面紧接着光栅化。  
- <a href="#details">更多...</a></p>
-
-<p><code>#include &lt;<a class="el" href="../../d1/df4/shader_8h_source.html">shader.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:a3c40f970f62777cdd19e3257314c08cf" id="r_a3c40f970f62777cdd19e3257314c08cf"><td class="memItemLeft" align="right" valign="top">Eigen::Vector4f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c40f970f62777cdd19e3257314c08cf">position</a></td></tr>
-<tr class="separator:a3c40f970f62777cdd19e3257314c08cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016e759fcf153cdfe1e118468b9116d2" id="r_a016e759fcf153cdfe1e118468b9116d2"><td class="memItemLeft" align="right" valign="top">Eigen::Vector4f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a016e759fcf153cdfe1e118468b9116d2">world_position</a></td></tr>
+<tr class="separator:a016e759fcf153cdfe1e118468b9116d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6388ee8ab1ad8965acbd41dfc0bff328" id="r_a6388ee8ab1ad8965acbd41dfc0bff328"><td class="memItemLeft" align="right" valign="top">Eigen::Vector4f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6388ee8ab1ad8965acbd41dfc0bff328">viewport_position</a></td></tr>
+<tr class="separator:a6388ee8ab1ad8965acbd41dfc0bff328"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab46f2135883b35652d9c2289c6490dea" id="r_ab46f2135883b35652d9c2289c6490dea"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab46f2135883b35652d9c2289c6490dea">normal</a></td></tr>
 <tr class="separator:ab46f2135883b35652d9c2289c6490dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p>作用于每个顶点，通常是处理从世界空间到屏幕空间的坐标变化，后面紧接着光栅化。 </p>
-</div><h2 class="groupheader">类成员变量说明</h2>
+<h2 class="groupheader">类成员变量说明</h2>
 <a id="ab46f2135883b35652d9c2289c6490dea" name="ab46f2135883b35652d9c2289c6490dea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab46f2135883b35652d9c2289c6490dea">&#9670;&#160;</a></span>normal</h2>
 
@@ -141,27 +136,42 @@ Public 属性</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>法线向量 </p>
+<p>顶点法线 </p>
 
 </div>
 </div>
-<a id="a3c40f970f62777cdd19e3257314c08cf" name="a3c40f970f62777cdd19e3257314c08cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c40f970f62777cdd19e3257314c08cf">&#9670;&#160;</a></span>position</h2>
+<a id="a6388ee8ab1ad8965acbd41dfc0bff328" name="a6388ee8ab1ad8965acbd41dfc0bff328"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6388ee8ab1ad8965acbd41dfc0bff328">&#9670;&#160;</a></span>viewport_position</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Vector4f VertexShaderPayload::position</td>
+          <td class="memname">Eigen::Vector4f VertexShaderPayload::viewport_position</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>顶点位置 </p>
+<p>顶点视口坐标系坐标 </p>
+
+</div>
+</div>
+<a id="a016e759fcf153cdfe1e118468b9116d2" name="a016e759fcf153cdfe1e118468b9116d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a016e759fcf153cdfe1e118468b9116d2">&#9670;&#160;</a></span>world_position</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Vector4f VertexShaderPayload::world_position</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>顶点世界坐标系坐标 </p>
 
 </div>
 </div>
 <hr/>该结构体的文档由以下文件生成:<ul>
-<li><a class="el" href="../../d1/df4/shader_8h_source.html">shader.h</a></li>
+<li><a class="el" href="../../da/d22/graphics__interface_8h_source.html">graphics_interface.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -169,7 +179,7 @@ Public 属性</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

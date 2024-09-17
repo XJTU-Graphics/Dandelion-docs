@@ -1,6 +1,10 @@
 var group__rendering =
 [
-    [ "shader.h", "d1/df4/shader_8h.html", null ],
+    [ "graphics_interface.h", "da/d22/graphics__interface_8h.html", null ],
+    [ "rasterizer.h", "db/d37/rasterizer_8h.html", null ],
+    [ "rasterizer_renderer.h", "d9/dbd/rasterizer__renderer_8h.html", null ],
+    [ "render_engine.h", "d7/da2/render__engine_8h.html", null ],
+    [ "triangle.h", "dd/d6a/triangle_8h.html", null ],
     [ "camera.h", "d7/df6/camera_8h.html", null ],
     [ "group.h", "d9/dd1/group_8h.html", null ],
     [ "light.h", "dd/dd3/light_8h.html", null ],
@@ -12,21 +16,29 @@ var group__rendering =
       [ "shininess", "d4/d50/structGL_1_1Material.html#a593816847c0d6811a2fc6c625670ef27", null ],
       [ "specular", "d4/d50/structGL_1_1Material.html#a886340a3db61c4e1139bc795a89fe2f7", null ]
     ] ],
-    [ "Rasterizer", "d3/d7a/classRasterizer.html", [
-      [ "Rasterizer", "d3/d7a/classRasterizer.html#a5f93bacb61aa74392378ff0186abb7f3", null ],
-      [ "clear", "d3/d7a/classRasterizer.html#ae59ae997aa16aeaa026486da24f67de8", null ],
-      [ "draw", "d3/d7a/classRasterizer.html#a8db1125e7514a596641807532970fa28", null ],
-      [ "get_index", "d3/d7a/classRasterizer.html#abacd8713859a4a1061065df1f9c36d8a", null ],
-      [ "rasterize_triangle", "d3/d7a/classRasterizer.html#aeb3cab09f4d3aebd6768455cae586738", null ],
-      [ "set_pixel", "d3/d7a/classRasterizer.html#a2afc14d3e92e883020ddc7d23cea4439", null ],
-      [ "depth_buf", "d3/d7a/classRasterizer.html#a0c3e43549449dddcd42f4f82d09c463d", null ],
-      [ "fragment_shader", "d3/d7a/classRasterizer.html#a9e830aa437f41ba1deb00684001b5a0e", null ],
-      [ "frame_buf", "d3/d7a/classRasterizer.html#ac0bec4b6fcbc82f729408000d2fdceeb", null ],
-      [ "model", "d3/d7a/classRasterizer.html#a62eda98fe643c15e13374d74f8a064c3", null ],
-      [ "projection", "d3/d7a/classRasterizer.html#a32f4d6c66aa35f2ce8552832a2990989", null ],
-      [ "vertex_shader", "d3/d7a/classRasterizer.html#a9b0cc52b11adea979a6b213a7cf4df79", null ],
-      [ "view", "d3/d7a/classRasterizer.html#ab254e9dbab2a3bacc4a4829ab1b5d5a2", null ]
+    [ "FragmentShaderPayload", "db/dd4/structFragmentShaderPayload.html", [
+      [ "color", "db/dd4/structFragmentShaderPayload.html#a1628ee5cd555e4c6b61526b90970aeba", null ],
+      [ "depth", "db/dd4/structFragmentShaderPayload.html#a642f61c3dd4d7b433de3c308251bd7f5", null ],
+      [ "world_normal", "db/dd4/structFragmentShaderPayload.html#a952eb10b8fe886ed0d2aa0be7e9fbdb6", null ],
+      [ "world_pos", "db/dd4/structFragmentShaderPayload.html#ac5203ae9ef88e6f029b5f62704cb3137", null ],
+      [ "x", "db/dd4/structFragmentShaderPayload.html#a8f1c24334a9943c205652d4a5c39a5b6", null ]
     ] ],
+    [ "FrameBuffer", "dc/d5b/classFrameBuffer.html", [
+      [ "FrameBuffer", "dc/d5b/classFrameBuffer.html#aab4c897d360f51c5a96b4782e67e98a9", null ],
+      [ "clear", "dc/d5b/classFrameBuffer.html#ac18ac65f8408c16c944c1be0778c6ce6", null ],
+      [ "set_pixel", "dc/d5b/classFrameBuffer.html#a02e942da4a5306a5222032bf7ba17e83", null ],
+      [ "color_buffer", "dc/d5b/classFrameBuffer.html#ab86b310a53e82a8709fe1baa0d3f6797", null ],
+      [ "depth_buffer", "dc/d5b/classFrameBuffer.html#a1817272cc755bb8255c479b508058676", null ],
+      [ "spin_locks", "dc/d5b/classFrameBuffer.html#ad315b40bb4342c6d1e5d0ab358b43cbd", null ],
+      [ "width", "dc/d5b/classFrameBuffer.html#ac09ee7577229126ecb519c0d9efb284b", null ]
+    ] ],
+    [ "Uniforms", "de/d97/structUniforms.html", null ],
+    [ "Context", "d6/d7a/structContext.html", null ],
+    [ "Rasterizer", "d3/d7a/classRasterizer.html", [
+      [ "rasterize_triangle", "d3/d7a/classRasterizer.html#a1919db79cf2ee65e79a72ffe5990d01b", null ]
+    ] ],
+    [ "VertexProcessor", "d1/d19/classVertexProcessor.html", null ],
+    [ "FragmentProcessor", "d6/d3d/classFragmentProcessor.html", null ],
     [ "RenderEngine", "d3/d2f/classRenderEngine.html", [
       [ "render", "d3/d2f/classRenderEngine.html#aa079a671bcaa22501bc07fb810cce53a", null ],
       [ "n_threads", "d3/d2f/classRenderEngine.html#a1c6688fe583a42b4b936e2bc869427d4", null ],
@@ -37,7 +49,7 @@ var group__rendering =
     ] ],
     [ "RasterizerRenderer", "d7/db0/classRasterizerRenderer.html", [
       [ "render", "d7/db0/classRasterizerRenderer.html#a7ff3f7eae7d21265a6f4e8c196645736", null ],
-      [ "render_mt", "d7/db0/classRasterizerRenderer.html#ad9aa891691c756d2dd480c1fda3d6dee", null ]
+      [ "width", "d7/db0/classRasterizerRenderer.html#a4d122df9cd3b18fec2278a1193aa24b0", null ]
     ] ],
     [ "WhittedRenderer", "da/db7/classWhittedRenderer.html", [
       [ "cast_ray", "da/db7/classWhittedRenderer.html#a2e43a419ed22f6f4ae6c340456a8bf4d", null ],
@@ -47,7 +59,8 @@ var group__rendering =
     ] ],
     [ "Triangle", "d2/d51/classTriangle.html", [
       [ "normal", "d2/d51/classTriangle.html#ade47eca7a673c6aa7d7844fdd910fc70", null ],
-      [ "vertex", "d2/d51/classTriangle.html#a3f3bbd24c7501750c607875d0a34c97a", null ]
+      [ "viewport_pos", "d2/d51/classTriangle.html#a116be0b7e53383377d774f87d28e4c92", null ],
+      [ "world_pos", "d2/d51/classTriangle.html#a5dda71c2a78dde1b9644370f60f4edc8", null ]
     ] ],
     [ "Camera", "d7/d7e/structCamera.html", [
       [ "Camera", "d7/d7e/structCamera.html#a1207b991b04502fb760f76be67530119", null ],
@@ -128,7 +141,11 @@ var group__rendering =
       [ "normal", "d6/d30/structIntersection.html#a477a228b3a9a1691c1ebad8776ec511c", null ],
       [ "t", "d6/d30/structIntersection.html#a369acde39ebf5283fb012181cd262055", null ]
     ] ],
+    [ "BufferType", "db/d81/group__rendering.html#gadf8e136713c0691010d2bec6ba63e9cf", null ],
+    [ "RendererType", "db/d81/group__rendering.html#gae9c668e3a273ce92b9f4e134d0cbd6ce", null ],
     [ "generate_ray", "db/d81/group__rendering.html#ga058f7f5f254453b5df93c093ebde122a", null ],
     [ "naive_intersect", "db/d81/group__rendering.html#ga1a3a6b802c525058a523c2dadaae1f2b", null ],
-    [ "ray_triangle_intersect", "db/d81/group__rendering.html#gab851f3686bc57e3a8cc135f68f3871a5", null ]
+    [ "phong_fragment_shader", "db/d81/group__rendering.html#ga5727fd2e9dd9d5b09eefb9cf03271241", null ],
+    [ "ray_triangle_intersect", "db/d81/group__rendering.html#gab851f3686bc57e3a8cc135f68f3871a5", null ],
+    [ "vertex_shader", "db/d81/group__rendering.html#gaf95c1a4382cc7c01a134fbdd9e7db1c4", null ]
 ];

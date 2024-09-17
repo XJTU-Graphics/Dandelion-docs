@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: RenderEngine类 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -47,7 +47,7 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.11.0 -->
+<!-- 制作者 Doxygen 1.12.0 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -117,15 +117,15 @@ $(function(){initNavTree('d3/d2f/classRenderEngine.html','../../'); initResizabl
 </div><!--header-->
 <div class="contents">
 
-<p>负责实现整个渲染的接口  
+<p>离线渲染的执行入口  
  <a href="#details">更多...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d7/da2/render__engine_8h_source.html">render_engine.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:aa079a671bcaa22501bc07fb810cce53a" id="r_aa079a671bcaa22501bc07fb810cce53a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa079a671bcaa22501bc07fb810cce53a">render</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene, RendererType type)</td></tr>
-<tr class="memdesc:aa079a671bcaa22501bc07fb810cce53a"><td class="mdescLeft">&#160;</td><td class="mdescRight">渲染器的渲染函数  <br /></td></tr>
+<tr class="memitem:aa079a671bcaa22501bc07fb810cce53a" id="r_aa079a671bcaa22501bc07fb810cce53a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa079a671bcaa22501bc07fb810cce53a">render</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene, <a class="el" href="../../db/d81/group__rendering.html#gae9c668e3a273ce92b9f4e134d0cbd6ce">RendererType</a> type)</td></tr>
+<tr class="memdesc:aa079a671bcaa22501bc07fb810cce53a"><td class="mdescLeft">&#160;</td><td class="mdescRight">离线渲染入口，负责调用渲染器的渲染函数  <br /></td></tr>
 <tr class="separator:aa079a671bcaa22501bc07fb810cce53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -150,7 +150,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
 <tr class="separator:a3a417ded22847afe1b09d820d9016111"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p>负责实现整个渲染的接口 </p>
+<div class="textblock"><p>离线渲染的执行入口 </p>
 </div><h2 class="groupheader">成员函数说明</h2>
 <a id="aa079a671bcaa22501bc07fb810cce53a" name="aa079a671bcaa22501bc07fb810cce53a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa079a671bcaa22501bc07fb810cce53a">&#9670;&#160;</a></span>render()</h2>
@@ -166,12 +166,12 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">RendererType</td>          <td class="paramname"><span class="paramname"><em>type</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../db/d81/group__rendering.html#gae9c668e3a273ce92b9f4e134d0cbd6ce">RendererType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>渲染器的渲染函数 </p>
+<p>离线渲染入口，负责调用渲染器的渲染函数 </p>
 <p>可以选择不同的渲染方式，在设置好场景之后，执行该函数能够得到 使用选定方式对当前场景的渲染结果</p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
@@ -218,7 +218,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>使用多线程时的线程数设置 </p>
+<p>whitted_style renderer使用多线程时的线程数设置 </p>
 
 </div>
 </div>
@@ -292,7 +292,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d2f/classRenderEngine.html">RenderEngine</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

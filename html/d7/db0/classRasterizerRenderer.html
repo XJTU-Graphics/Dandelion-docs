@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: RasterizerRenderer类 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -47,7 +47,7 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.11.0 -->
+<!-- 制作者 Doxygen 1.12.0 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -117,32 +117,44 @@ $(function(){initNavTree('d7/db0/classRasterizerRenderer.html','../../'); initRe
 </div><!--header-->
 <div class="contents">
 
-<p>负责实现Rasterizition的整个pipeline  
+<p>实现光栅化渲染管线。  
  <a href="#details">更多...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d7/da2/render__engine_8h_source.html">render_engine.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a7dab10be331759ad231dcb5ea0ad0bf6" id="r_a7dab10be331759ad231dcb5ea0ad0bf6"><td class="memItemLeft" align="right" valign="top"><a id="a7dab10be331759ad231dcb5ea0ad0bf6" name="a7dab10be331759ad231dcb5ea0ad0bf6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RasterizerRenderer</b> (<a class="el" href="../../d3/d2f/classRenderEngine.html">RenderEngine</a> &amp;render_engine)</td></tr>
-<tr class="separator:a7dab10be331759ad231dcb5ea0ad0bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74db69460ba11e8076c6cc73d6baf5ad" id="r_a74db69460ba11e8076c6cc73d6baf5ad"><td class="memItemLeft" align="right" valign="top"><a id="a74db69460ba11e8076c6cc73d6baf5ad" name="a74db69460ba11e8076c6cc73d6baf5ad"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RasterizerRenderer</b> (<a class="el" href="../../d3/d2f/classRenderEngine.html">RenderEngine</a> &amp;engine, int num_vertex_threads, int num_rasterizer_threads, int num_fragment_threads)</td></tr>
+<tr class="separator:a74db69460ba11e8076c6cc73d6baf5ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ff3f7eae7d21265a6f4e8c196645736" id="r_a7ff3f7eae7d21265a6f4e8c196645736"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ff3f7eae7d21265a6f4e8c196645736">render</a> (const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
 <tr class="separator:a7ff3f7eae7d21265a6f4e8c196645736"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9aa891691c756d2dd480c1fda3d6dee" id="r_ad9aa891691c756d2dd480c1fda3d6dee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9aa891691c756d2dd480c1fda3d6dee">render_mt</a> (const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
-<tr class="separator:ad9aa891691c756d2dd480c1fda3d6dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:a4d122df9cd3b18fec2278a1193aa24b0" id="r_a4d122df9cd3b18fec2278a1193aa24b0"><td class="memItemLeft" align="right" valign="top"><a id="a4d122df9cd3b18fec2278a1193aa24b0" name="a4d122df9cd3b18fec2278a1193aa24b0"></a>
-float &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>width</b></td></tr>
+<tr class="memitem:a4d122df9cd3b18fec2278a1193aa24b0" id="r_a4d122df9cd3b18fec2278a1193aa24b0"><td class="memItemLeft" align="right" valign="top">float &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d122df9cd3b18fec2278a1193aa24b0">width</a></td></tr>
 <tr class="separator:a4d122df9cd3b18fec2278a1193aa24b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd61281b380c8f9e57d4691a98052a70" id="r_afd61281b380c8f9e57d4691a98052a70"><td class="memItemLeft" align="right" valign="top"><a id="afd61281b380c8f9e57d4691a98052a70" name="afd61281b380c8f9e57d4691a98052a70"></a>
 float &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
 <tr class="separator:afd61281b380c8f9e57d4691a98052a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2a20c4501e74386f5e6beec52dbe7e3" id="r_ae2a20c4501e74386f5e6beec52dbe7e3"><td class="memItemLeft" align="right" valign="top"><a id="ae2a20c4501e74386f5e6beec52dbe7e3" name="ae2a20c4501e74386f5e6beec52dbe7e3"></a>
-int &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>n_threads</b></td></tr>
-<tr class="separator:ae2a20c4501e74386f5e6beec52dbe7e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ca3e2c4f6e731f7e26802513990fb4c" id="r_a2ca3e2c4f6e731f7e26802513990fb4c"><td class="memItemLeft" align="right" valign="top"><a id="a2ca3e2c4f6e731f7e26802513990fb4c" name="a2ca3e2c4f6e731f7e26802513990fb4c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>n_vertex_threads</b></td></tr>
+<tr class="separator:a2ca3e2c4f6e731f7e26802513990fb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad89575002a313296e547e9d7580dcd73" id="r_ad89575002a313296e547e9d7580dcd73"><td class="memItemLeft" align="right" valign="top"><a id="ad89575002a313296e547e9d7580dcd73" name="ad89575002a313296e547e9d7580dcd73"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>n_rasterizer_threads</b></td></tr>
+<tr class="separator:ad89575002a313296e547e9d7580dcd73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed532ae7b4b7e6dcf17e6b3906a78496" id="r_aed532ae7b4b7e6dcf17e6b3906a78496"><td class="memItemLeft" align="right" valign="top"><a id="aed532ae7b4b7e6dcf17e6b3906a78496" name="aed532ae7b4b7e6dcf17e6b3906a78496"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>n_fragment_threads</b></td></tr>
+<tr class="separator:aed532ae7b4b7e6dcf17e6b3906a78496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d9d691f9da68dfe9df2913b764a48a3" id="r_a9d9d691f9da68dfe9df2913b764a48a3"><td class="memItemLeft" align="right" valign="top"><a id="a9d9d691f9da68dfe9df2913b764a48a3" name="a9d9d691f9da68dfe9df2913b764a48a3"></a>
+<a class="el" href="../../d1/d19/classVertexProcessor.html">VertexProcessor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>vertex_processor</b></td></tr>
+<tr class="separator:a9d9d691f9da68dfe9df2913b764a48a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa67c7e430f97e75f865928d51947a6a6" id="r_aa67c7e430f97e75f865928d51947a6a6"><td class="memItemLeft" align="right" valign="top"><a id="aa67c7e430f97e75f865928d51947a6a6" name="aa67c7e430f97e75f865928d51947a6a6"></a>
+<a class="el" href="../../d3/d7a/classRasterizer.html">Rasterizer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rasterizer</b></td></tr>
+<tr class="separator:aa67c7e430f97e75f865928d51947a6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ef87f7cfe5b9f10f3bcabd80185077b" id="r_a6ef87f7cfe5b9f10f3bcabd80185077b"><td class="memItemLeft" align="right" valign="top"><a id="a6ef87f7cfe5b9f10f3bcabd80185077b" name="a6ef87f7cfe5b9f10f3bcabd80185077b"></a>
+<a class="el" href="../../d6/d3d/classFragmentProcessor.html">FragmentProcessor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fragment_processor</b></td></tr>
+<tr class="separator:a6ef87f7cfe5b9f10f3bcabd80185077b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3576faa5982d3eeac1de5a468886ae48" id="r_a3576faa5982d3eeac1de5a468886ae48"><td class="memItemLeft" align="right" valign="top"><a id="a3576faa5982d3eeac1de5a468886ae48" name="a3576faa5982d3eeac1de5a468886ae48"></a>
 std::vector&lt; unsigned char &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>rendering_res</b></td></tr>
 <tr class="separator:a3576faa5982d3eeac1de5a468886ae48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,7 +166,7 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 <tr class="separator:abe9fe70d0768eab0a1fd3c6df5075d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p>负责实现Rasterizition的整个pipeline </p>
+<div class="textblock"><p>实现光栅化渲染管线。 </p>
 </div><h2 class="groupheader">成员函数说明</h2>
 <a id="a7ff3f7eae7d21265a6f4e8c196645736" name="a7ff3f7eae7d21265a6f4e8c196645736"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ff3f7eae7d21265a6f4e8c196645736">&#9670;&#160;</a></span>render()</h2>
@@ -174,17 +186,15 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 
 </div>
 </div>
-<a id="ad9aa891691c756d2dd480c1fda3d6dee" name="ad9aa891691c756d2dd480c1fda3d6dee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9aa891691c756d2dd480c1fda3d6dee">&#9670;&#160;</a></span>render_mt()</h2>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a4d122df9cd3b18fec2278a1193aa24b0" name="a4d122df9cd3b18fec2278a1193aa24b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d122df9cd3b18fec2278a1193aa24b0">&#9670;&#160;</a></span>width</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void RasterizerRenderer::render_mt </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span></td><td>)</td>
-          <td></td>
+          <td class="memname">float&amp; RasterizerRenderer::width</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -195,7 +205,6 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 <hr/>该类的文档由以下文件生成:<ul>
 <li><a class="el" href="../../d7/da2/render__engine_8h_source.html">render_engine.h</a></li>
 <li><b>rasterizer_renderer.cpp</b></li>
-<li><b>rasterizer_renderer_mt.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -203,7 +212,7 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/db0/classRasterizerRenderer.html">RasterizerRenderer</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: Rasterizer类 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -47,7 +47,7 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.11.0 -->
+<!-- 制作者 Doxygen 1.12.0 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -110,7 +110,6 @@ $(function(){initNavTree('d3/d7a/classRasterizer.html','../../'); initResizable(
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public 成员函数</a> &#124;
-<a href="#pub-attribs">Public 属性</a> &#124;
 <a href="#pri-methods">Private 成员函数</a> &#124;
 <a href="#pri-static-methods">静态 Private 成员函数</a> &#124;
 <a href="../../dd/d81/classRasterizer-members.html">所有成员列表</a>  </div>
@@ -118,61 +117,22 @@ $(function(){initNavTree('d3/d7a/classRasterizer.html','../../'); initResizable(
 </div><!--header-->
 <div class="contents">
 
-<p>软光栅渲染器  
+<p>光栅化器  
  <a href="#details">更多...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../db/d37/rasterizer_8h_source.html">rasterizer.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a5f93bacb61aa74392378ff0186abb7f3" id="r_a5f93bacb61aa74392378ff0186abb7f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f93bacb61aa74392378ff0186abb7f3">Rasterizer</a> (int w, int h)</td></tr>
-<tr class="separator:a5f93bacb61aa74392378ff0186abb7f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2afc14d3e92e883020ddc7d23cea4439" id="r_a2afc14d3e92e883020ddc7d23cea4439"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2afc14d3e92e883020ddc7d23cea4439">set_pixel</a> (const Eigen::Vector2i &amp;point, const Eigen::Vector3f &amp;color)</td></tr>
-<tr class="memdesc:a2afc14d3e92e883020ddc7d23cea4439"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置当前像素点的颜色  <br /></td></tr>
-<tr class="separator:a2afc14d3e92e883020ddc7d23cea4439"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8db1125e7514a596641807532970fa28" id="r_a8db1125e7514a596641807532970fa28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8db1125e7514a596641807532970fa28">draw</a> (const std::vector&lt; <a class="el" href="../../d2/d51/classTriangle.html">Triangle</a> &gt; &amp;TriangleList, const <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &amp;material, const std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;lights, const <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp;camera)</td></tr>
-<tr class="memdesc:a8db1125e7514a596641807532970fa28"><td class="mdescLeft">&#160;</td><td class="mdescRight">对整个物体进行光栅化渲染  <br /></td></tr>
-<tr class="separator:a8db1125e7514a596641807532970fa28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48ad181d334bb651736be952c9d15a58" id="r_a48ad181d334bb651736be952c9d15a58"><td class="memItemLeft" align="right" valign="top"><a id="a48ad181d334bb651736be952c9d15a58" name="a48ad181d334bb651736be952c9d15a58"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>draw_mt</b> (const std::vector&lt; <a class="el" href="../../d2/d51/classTriangle.html">Triangle</a> &gt; &amp;TriangleList, const <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &amp;material, const std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;lights, const <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp;camera)</td></tr>
-<tr class="separator:a48ad181d334bb651736be952c9d15a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae59ae997aa16aeaa026486da24f67de8" id="r_ae59ae997aa16aeaa026486da24f67de8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae59ae997aa16aeaa026486da24f67de8">clear</a> (BufferType buff)</td></tr>
-<tr class="memdesc:ae59ae997aa16aeaa026486da24f67de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">将frame buffer和depth buffer内容初始化  <br /></td></tr>
-<tr class="separator:ae59ae997aa16aeaa026486da24f67de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public 属性</h2></td></tr>
-<tr class="memitem:af993306b6f616f1b4e04a2707dc6e0e0" id="r_af993306b6f616f1b4e04a2707dc6e0e0"><td class="memItemLeft" align="right" valign="top"><a id="af993306b6f616f1b4e04a2707dc6e0e0" name="af993306b6f616f1b4e04a2707dc6e0e0"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>width</b></td></tr>
-<tr class="separator:af993306b6f616f1b4e04a2707dc6e0e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa691b6d1fcb4677e2fec13db0857d5e1" id="r_aa691b6d1fcb4677e2fec13db0857d5e1"><td class="memItemLeft" align="right" valign="top"><a id="aa691b6d1fcb4677e2fec13db0857d5e1" name="aa691b6d1fcb4677e2fec13db0857d5e1"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
-<tr class="separator:aa691b6d1fcb4677e2fec13db0857d5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62eda98fe643c15e13374d74f8a064c3" id="r_a62eda98fe643c15e13374d74f8a064c3"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix4f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62eda98fe643c15e13374d74f8a064c3">model</a></td></tr>
-<tr class="separator:a62eda98fe643c15e13374d74f8a064c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab254e9dbab2a3bacc4a4829ab1b5d5a2" id="r_ab254e9dbab2a3bacc4a4829ab1b5d5a2"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix4f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab254e9dbab2a3bacc4a4829ab1b5d5a2">view</a></td></tr>
-<tr class="separator:ab254e9dbab2a3bacc4a4829ab1b5d5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32f4d6c66aa35f2ce8552832a2990989" id="r_a32f4d6c66aa35f2ce8552832a2990989"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix4f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32f4d6c66aa35f2ce8552832a2990989">projection</a></td></tr>
-<tr class="separator:a32f4d6c66aa35f2ce8552832a2990989"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b0cc52b11adea979a6b213a7cf4df79" id="r_a9b0cc52b11adea979a6b213a7cf4df79"><td class="memItemLeft" align="right" valign="top">std::function&lt; <a class="el" href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a>(<a class="el" href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b0cc52b11adea979a6b213a7cf4df79">vertex_shader</a></td></tr>
-<tr class="separator:a9b0cc52b11adea979a6b213a7cf4df79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e830aa437f41ba1deb00684001b5a0e" id="r_a9e830aa437f41ba1deb00684001b5a0e"><td class="memItemLeft" align="right" valign="top">std::function&lt; Eigen::Vector3f(<a class="el" href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a>, <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a>, const std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e830aa437f41ba1deb00684001b5a0e">fragment_shader</a></td></tr>
-<tr class="separator:a9e830aa437f41ba1deb00684001b5a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0bec4b6fcbc82f729408000d2fdceeb" id="r_ac0bec4b6fcbc82f729408000d2fdceeb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Eigen::Vector3f &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0bec4b6fcbc82f729408000d2fdceeb">frame_buf</a></td></tr>
-<tr class="separator:ac0bec4b6fcbc82f729408000d2fdceeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c3e43549449dddcd42f4f82d09c463d" id="r_a0c3e43549449dddcd42f4f82d09c463d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c3e43549449dddcd42f4f82d09c463d">depth_buf</a></td></tr>
-<tr class="separator:a0c3e43549449dddcd42f4f82d09c463d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae9de98cad8fde08e456e35c0f00d433" id="r_aae9de98cad8fde08e456e35c0f00d433"><td class="memItemLeft" align="right" valign="top"><a id="aae9de98cad8fde08e456e35c0f00d433" name="aae9de98cad8fde08e456e35c0f00d433"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>worker_thread</b> ()</td></tr>
+<tr class="separator:aae9de98cad8fde08e456e35c0f00d433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private 成员函数</h2></td></tr>
-<tr class="memitem:aeb3cab09f4d3aebd6768455cae586738" id="r_aeb3cab09f4d3aebd6768455cae586738"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb3cab09f4d3aebd6768455cae586738">rasterize_triangle</a> (const <a class="el" href="../../d2/d51/classTriangle.html">Triangle</a> &amp;t, const std::array&lt; Eigen::Vector3f, 3 &gt; &amp;world_pos, <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> material, const std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;lights, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> camera)</td></tr>
-<tr class="memdesc:aeb3cab09f4d3aebd6768455cae586738"><td class="mdescLeft">&#160;</td><td class="mdescRight">光栅化当前三角形  <br /></td></tr>
-<tr class="separator:aeb3cab09f4d3aebd6768455cae586738"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65c41e65e4df65d1421279ee0359de54" id="r_a65c41e65e4df65d1421279ee0359de54"><td class="memItemLeft" align="right" valign="top"><a id="a65c41e65e4df65d1421279ee0359de54" name="a65c41e65e4df65d1421279ee0359de54"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>rasterize_triangle_mt</b> (const <a class="el" href="../../d2/d51/classTriangle.html">Triangle</a> &amp;t, const std::array&lt; Eigen::Vector3f, 3 &gt; &amp;world_pos, <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> material, const std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;lights, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> camera)</td></tr>
-<tr class="separator:a65c41e65e4df65d1421279ee0359de54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abacd8713859a4a1061065df1f9c36d8a" id="r_abacd8713859a4a1061065df1f9c36d8a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abacd8713859a4a1061065df1f9c36d8a">get_index</a> (int x, int y)</td></tr>
-<tr class="separator:abacd8713859a4a1061065df1f9c36d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1919db79cf2ee65e79a72ffe5990d01b" id="r_a1919db79cf2ee65e79a72ffe5990d01b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1919db79cf2ee65e79a72ffe5990d01b">rasterize_triangle</a> (<a class="el" href="../../d2/d51/classTriangle.html">Triangle</a> &amp;t)</td></tr>
+<tr class="memdesc:a1919db79cf2ee65e79a72ffe5990d01b"><td class="mdescLeft">&#160;</td><td class="mdescRight">将指定三角形光栅化为片元。  <br /></td></tr>
+<tr class="separator:a1919db79cf2ee65e79a72ffe5990d01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 静态 Private 成员函数</h2></td></tr>
@@ -185,58 +145,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rasterize_triangle_mt
 <tr class="separator:a9825a3a34decc7ce9591d407296f0531"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p>软光栅渲染器 </p>
-<p>这个类主要由光栅化所需的各种属性（如成像平面的长宽，以及M,V,P矩阵等），以及光栅化 整个流程所需的各种操作对应的函数构成（如vertex shader, fragment shader,等） </p>
-</div><h2 class="groupheader">构造及析构函数说明</h2>
-<a id="a5f93bacb61aa74392378ff0186abb7f3" name="a5f93bacb61aa74392378ff0186abb7f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f93bacb61aa74392378ff0186abb7f3">&#9670;&#160;</a></span>Rasterizer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Rasterizer::Rasterizer </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>h</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>构造函数：指定成像平面的长宽 </p>
-
-</div>
-</div>
-<h2 class="groupheader">成员函数说明</h2>
-<a id="ae59ae997aa16aeaa026486da24f67de8" name="ae59ae997aa16aeaa026486da24f67de8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae59ae997aa16aeaa026486da24f67de8">&#9670;&#160;</a></span>clear()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Rasterizer::clear </td>
-          <td>(</td>
-          <td class="paramtype">BufferType</td>          <td class="paramname"><span class="paramname"><em>buff</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>将frame buffer和depth buffer内容初始化 </p>
-<p>frame buffer最后会传递给rendering_res，所以可以直接初始化为背景颜色， depth buffer则可以初始化为最大值</p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buff</td><td>根据传入的buffer类型，初始化相应类型的buffer </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
+<div class="textblock"><p>光栅化器 </p>
+</div><h2 class="groupheader">成员函数说明</h2>
 <a id="afecb95c7771bd5a41030a78669ac48ef" name="afecb95c7771bd5a41030a78669ac48ef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afecb95c7771bd5a41030a78669ac48ef">&#9670;&#160;</a></span>compute_barycentric_2d()</h2>
 
@@ -268,80 +178,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rasterize_triangle_mt
   </tr>
 </table>
 </div><div class="memdoc">
-<p>计算像素坐标(x,y)在给定三个顶点的三角形内的重心坐标 </p>
-
-</div>
-</div>
-<a id="a8db1125e7514a596641807532970fa28" name="a8db1125e7514a596641807532970fa28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8db1125e7514a596641807532970fa28">&#9670;&#160;</a></span>draw()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Rasterizer::draw </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="../../d2/d51/classTriangle.html">Triangle</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>TriangleList</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>material</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>lights</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>camera</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>对整个物体进行光栅化渲染 </p>
-<p>对物体的所有三角形面片进行遍历，对三角形的顶点应用vertex shader，对顶点的坐标和法线方向 进行变化；同时获取三角形每个顶点在world space下的坐标便于后续的插值操作；对顶点的法线同样 需要变换到world space下用于后续的插值，最后执行光栅化</p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">TriangleList</td><td>存储了当前渲染物体的所有三角形面片 </td></tr>
-    <tr><td class="paramname">material</td><td>当前渲染物体的材质 </td></tr>
-    <tr><td class="paramname">lights</td><td>存储了当前场景中的所有光源 </td></tr>
-    <tr><td class="paramname">camera</td><td>当前使用的相机（观察点） </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="abacd8713859a4a1061065df1f9c36d8a" name="abacd8713859a4a1061065df1f9c36d8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abacd8713859a4a1061065df1f9c36d8a">&#9670;&#160;</a></span>get_index()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Rasterizer::get_index </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>获取给定坐标(x,y)，计算在frame buffer中对应的index </p>
+<p>计算像素坐标 (x,y) 在给定三个顶点的三角形内的重心坐标 </p>
 
 </div>
 </div>
@@ -376,7 +213,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rasterize_triangle_mt
   </tr>
 </table>
 </div><div class="memdoc">
-<p>判断像素坐标(x,y)是否在给定三个顶点的三角形内 </p>
+<p>判断像素坐标 (x,y) 是否在给定三个顶点的三角形内 </p>
 
 </div>
 </div>
@@ -443,7 +280,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rasterize_triangle_mt
   <table class="params">
     <tr><td class="paramname">alpha,beta,gamma</td><td>计算出的重心坐标 </td></tr>
     <tr><td class="paramname">vert1,vert2,vert3</td><td>三角形的三个顶点的任意待插值属性 </td></tr>
-    <tr><td class="paramname">weight</td><td>Vector3f{v[0].w(), v[1].w(), v[2].w()} </td></tr>
+    <tr><td class="paramname">weight</td><td>三个顶点的 w 坐标 (<code>Vector3f{v[0].w(), v[1].w(), v[2].w()}</code>) </td></tr>
     <tr><td class="paramname">Z</td><td>1 / (alpha / v[0].w() + beta / v[1].w() + gamma / v[2].w()); </td></tr>
   </table>
   </dd>
@@ -451,8 +288,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rasterize_triangle_mt
 
 </div>
 </div>
-<a id="aeb3cab09f4d3aebd6768455cae586738" name="aeb3cab09f4d3aebd6768455cae586738"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb3cab09f4d3aebd6768455cae586738">&#9670;&#160;</a></span>rasterize_triangle()</h2>
+<a id="a1919db79cf2ee65e79a72ffe5990d01b" name="a1919db79cf2ee65e79a72ffe5990d01b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1919db79cf2ee65e79a72ffe5990d01b">&#9670;&#160;</a></span>rasterize_triangle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -463,27 +300,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rasterize_triangle_mt
         <tr>
           <td class="memname">void Rasterizer::rasterize_triangle </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d2/d51/classTriangle.html">Triangle</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>t</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="../../d2/d51/classTriangle.html">Triangle</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>t</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">const std::array&lt; Eigen::Vector3f, 3 &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>world_pos</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a></td>          <td class="paramname"><span class="paramname"><em>material</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>lights</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d7/d7e/structCamera.html">Camera</a></td>          <td class="paramname"><span class="paramname"><em>camera</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -493,162 +311,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rasterize_triangle_mt
 </table>
 </div><div class="memdoc">
 
-<p>光栅化当前三角形 </p>
-<p>整个光栅化渲染应当包含：VERTEX SHADER -&gt; MVP -&gt; Clipping -&gt; VIEWPORT -&gt; DRAWLINE/DRAWTRI -&gt; FRAGMENT SHADER 在进入rasterize_triangle之前已经完成了VERTEX SHADER到VIEWPORT的整个过程，可以被看作几何阶段 在进入rasterize_triangle之后，就开始进行真正的光栅化了，逐片元的进行着色</p>
+<p>将指定三角形光栅化为片元。 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>当前进行光栅化的三角形 </td></tr>
-    <tr><td class="paramname">world_pos</td><td>三角形三个顶点的坐标(已经变换到world_space下) </td></tr>
-    <tr><td class="paramname">material</td><td>当前三角形所在物体的材质 </td></tr>
-    <tr><td class="paramname">lights</td><td>当前场景的所有光源(已经变换到world_space下) </td></tr>
-    <tr><td class="paramname">camera</td><td>当前使用的相机（观察点） </td></tr>
+    <tr><td class="paramname">t</td><td>要进行光栅化的三角形 </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a2afc14d3e92e883020ddc7d23cea4439" name="a2afc14d3e92e883020ddc7d23cea4439"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2afc14d3e92e883020ddc7d23cea4439">&#9670;&#160;</a></span>set_pixel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Rasterizer::set_pixel </td>
-          <td>(</td>
-          <td class="paramtype">const Eigen::Vector2i &amp;</td>          <td class="paramname"><span class="paramname"><em>point</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Eigen::Vector3f &amp;</td>          <td class="paramname"><span class="paramname"><em>color</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>设置当前像素点的颜色 </p>
-<p>首先根据成像平面的width,height以及point的x,y计算出当前点在frame buffer中的索引 再将frame buffer中对应索引处赋值为color</p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">point</td><td>当前着色点在成像平面对应的坐标 </td></tr>
-    <tr><td class="paramname">color</td><td>当前着色点计算出的颜色值 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">类成员变量说明</h2>
-<a id="a0c3e43549449dddcd42f4f82d09c463d" name="a0c3e43549449dddcd42f4f82d09c463d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c3e43549449dddcd42f4f82d09c463d">&#9670;&#160;</a></span>depth_buf</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;float&gt; Rasterizer::depth_buf</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>depth buffer也可以叫做z-buffer，用于判断像素点相较于观察点的前后关系 </p>
-
-</div>
-</div>
-<a id="a9e830aa437f41ba1deb00684001b5a0e" name="a9e830aa437f41ba1deb00684001b5a0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e830aa437f41ba1deb00684001b5a0e">&#9670;&#160;</a></span>fragment_shader</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;Eigen::Vector3f(<a class="el" href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a>, <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a>, const std::list&lt;<a class="el" href="../../d5/d79/structLight.html">Light</a>&gt;&amp;, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a>)&gt; Rasterizer::fragment_shader</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>指定使用的fragment shader </p>
-
-</div>
-</div>
-<a id="ac0bec4b6fcbc82f729408000d2fdceeb" name="ac0bec4b6fcbc82f729408000d2fdceeb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0bec4b6fcbc82f729408000d2fdceeb">&#9670;&#160;</a></span>frame_buf</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;Eigen::Vector3f&gt; Rasterizer::frame_buf</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>frame buffer的存储元素为Eigen::Vector3f,范围在[0,255]，三个分量分别表示(R,G,B) </p>
-
-</div>
-</div>
-<a id="a62eda98fe643c15e13374d74f8a064c3" name="a62eda98fe643c15e13374d74f8a064c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62eda98fe643c15e13374d74f8a064c3">&#9670;&#160;</a></span>model</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Eigen::Matrix4f Rasterizer::model</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>当前渲染物体的model矩阵 </p>
-
-</div>
-</div>
-<a id="a32f4d6c66aa35f2ce8552832a2990989" name="a32f4d6c66aa35f2ce8552832a2990989"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32f4d6c66aa35f2ce8552832a2990989">&#9670;&#160;</a></span>projection</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Eigen::Matrix4f Rasterizer::projection</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>当前相机的projection矩阵 </p>
-
-</div>
-</div>
-<a id="a9b0cc52b11adea979a6b213a7cf4df79" name="a9b0cc52b11adea979a6b213a7cf4df79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b0cc52b11adea979a6b213a7cf4df79">&#9670;&#160;</a></span>vertex_shader</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;<a class="el" href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a>(<a class="el" href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a>)&gt; Rasterizer::vertex_shader</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>指定使用的vertex shader </p>
-
-</div>
-</div>
-<a id="ab254e9dbab2a3bacc4a4829ab1b5d5a2" name="ab254e9dbab2a3bacc4a4829ab1b5d5a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab254e9dbab2a3bacc4a4829ab1b5d5a2">&#9670;&#160;</a></span>view</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Eigen::Matrix4f Rasterizer::view</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>当前相机的view矩阵 </p>
 
 </div>
 </div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li><a class="el" href="../../db/d37/rasterizer_8h_source.html">rasterizer.h</a></li>
 <li><b>rasterizer.cpp</b></li>
-<li><b>rasterizer_mt.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -656,7 +331,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rasterize_triangle_mt
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d7a/classRasterizer.html">Rasterizer</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>
