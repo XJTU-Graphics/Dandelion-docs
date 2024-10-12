@@ -3,7 +3,7 @@ var searchData=
   ['n_5fthreads_0',['n_threads',['../d3/d2f/classRenderEngine.html#a1c6688fe583a42b4b936e2bc869427d4',1,'RenderEngine']]],
   ['naive_5fintersect_1',['naive_intersect',['../db/d81/group__rendering.html#ga1a3a6b802c525058a523c2dadaae1f2b',1,'ray.h']]],
   ['name_2',['name',['../d0/db7/classGroup.html#abfa8bde619513cf0768c14f2e5beeca1',1,'Group::name'],['../d8/d4b/classObject.html#a24457e0a387492c80594aec7681a2277',1,'Object::name']]],
-  ['near_3',['near',['../d7/d7e/structCamera.html#ad96efd3e1e4ec33dddb1d25f05d02ff2',1,'Camera']]],
+  ['near_5fplane_3',['near_plane',['../d7/d7e/structCamera.html#a430f769a9227b6cd41fe336122fbb9dc',1,'Camera']]],
   ['neighborhood_5fcenter_4',['neighborhood_center',['../df/dd0/structVertex.html#a49dd65c5b9eedff013131bbae9264f49',1,'Vertex']]],
   ['new_5fedge_5',['new_edge',['../dc/d6d/classHalfedgeMesh.html#a6d1f8dc7b7973b0a5d133cd9b9ac5cd3',1,'HalfedgeMesh']]],
   ['new_5fface_6',['new_face',['../dc/d6d/classHalfedgeMesh.html#a19cdd6ee69d015c4d73235ccfe61cff8',1,'HalfedgeMesh']]],

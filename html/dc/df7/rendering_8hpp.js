@@ -1,6 +1,6 @@
 var rendering_8hpp =
 [
-    [ "RGB", "db/d81/group__utils.html#ga4a118ad3ee36468a3fa616977a64864e", null ],
+    [ "RGB_COLOR", "db/d81/group__utils.html#gab2596a38a2a89ebf334c84f916360771", null ],
     [ "WorkingMode", "dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb", [
       [ "LAYOUT", "dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcba2a279a31181940fb63fec9ac5bee340c", null ],
       [ "MODEL", "dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcba7a03bac2692f8d17e2cda1b0721ffd0e", null ],

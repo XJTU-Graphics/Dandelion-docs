@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.1</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -114,77 +114,72 @@ $(function(){initNavTree('d7/df6/camera_8h_source.html','../../'); initResizable
 <a href="../../d7/df6/camera_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef DANDELION_SCENE_CAMERA_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define DANDELION_SCENE_CAMERA_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#ifdef _WIN32</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#undef near</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#undef far</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;Eigen/Core&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;Eigen/Core&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * \ingroup rendering</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * \file scene/camera.h</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"></span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/*!</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * \ingroup rendering</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * \file scene/camera.h</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"></span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * \ingroup rendering</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * \brief 表示观察点的相机，既可以用于预览视角，也可以用于渲染视角。</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * 这个类封装了从观察点、按一定视角去观察目标点的功能，可以完成相应的几何计算，</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * 包括观察矩阵和投影矩阵 (view &amp; projection matrix)。</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * 预览场景中相机的显示不由 Camera 类自己负责，它的功能只是存储参数并构造变换矩阵。</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * Dandelion 工作于渲染模式下时，Scene 对象将主动渲染一个相机视锥。</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> */</span></div>
-<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../d7/d7e/structCamera.html">   26</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d7/d7e/structCamera.html">Camera</a></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_struct" href="../../d7/d7e/structCamera.html">Camera</a>() = <span class="keyword">delete</span>;<span class="comment"></span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">    /*!</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">     * \~chinese</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">     * \param position 相机位置（观察点）</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">     * \param target 相机指向的目标点</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">     * \param near_plane 可视范围近平面到观察坐标系原点的距离（正值）</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">     * \param far_plane 可视范围远平面到观察坐标系原点的距离（正值）</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">     * \param fov_y_degrees 高度方向（Y 方向）的视角大小，单位是角度</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">     * \param aspect_ratio 宽高比，即视角的宽度 / 高度</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_struct" href="../../d7/d7e/structCamera.html">Camera</a>(<span class="keyword">const</span> Eigen::Vector3f&amp; <a class="code hl_variable" href="../../d7/d7e/structCamera.html#ae52020b85d1f749f50c533fe10fc0f91">position</a>, <span class="keyword">const</span> Eigen::Vector3f&amp; <a class="code hl_variable" href="../../d7/d7e/structCamera.html#aa46269efc05d0aea46f8b0540ccb9d01">target</a>, <span class="keywordtype">float</span> near_plane = 0.1f,</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>           <span class="keywordtype">float</span> far_plane = 10.0f, <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d7/d7e/structCamera.html#aa3f6b2c9df678347897554480099e342">fov_y_degrees</a> = 45.0f, <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d7/d7e/structCamera.html#a5742c2c47c7afc5a6d49b6e5759db3cd">aspect_ratio</a> = 1.33f);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_struct" href="../../d7/d7e/structCamera.html">~Camera</a>() = <span class="keywordflow">default</span>;<span class="comment"></span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">    /*! \~chinese 获取该相机的 View 矩阵，对应观察变换。 */</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    Eigen::Matrix4f <a class="code hl_function" href="../../d7/d7e/structCamera.html#a4551bfb7cb5ed86cc5427e370fda0bdb">view</a>();<span class="comment"></span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">    /*! \~chinese 获取该相机的 Projection 矩阵，对应投影变换。 */</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    Eigen::Matrix4f <a class="code hl_function" href="../../d7/d7e/structCamera.html#ade56525b5437d9e2c8a890a734bc83d1">projection</a>();<span class="comment"></span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">    /*! \~chinese 相机的位置（视点）。 */</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../d7/d7e/structCamera.html#ae52020b85d1f749f50c533fe10fc0f91">   47</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d7/d7e/structCamera.html#ae52020b85d1f749f50c533fe10fc0f91">position</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">    /*! \~chinese 相机看向的位置（目标点）。 */</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../d7/d7e/structCamera.html#aa46269efc05d0aea46f8b0540ccb9d01">   49</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d7/d7e/structCamera.html#aa46269efc05d0aea46f8b0540ccb9d01">target</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">    /*! \~chinese 可视范围近平面到观察坐标系原点的距离（正值）。 */</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d7/d7e/structCamera.html#ad96efd3e1e4ec33dddb1d25f05d02ff2">   51</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d7/d7e/structCamera.html#ad96efd3e1e4ec33dddb1d25f05d02ff2">near</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">    /*! \~chinese 可视范围远平面到观察坐标系原点的距离（正值）。 */</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../d7/d7e/structCamera.html#a9f30b77edf6485e001a98d21ff5f17fe">   53</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d7/d7e/structCamera.html#a9f30b77edf6485e001a98d21ff5f17fe">far</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">    /*! \~chinese Y 方向（上下）的视角大小。 */</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="../../d7/d7e/structCamera.html#aa3f6b2c9df678347897554480099e342">   55</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d7/d7e/structCamera.html#aa3f6b2c9df678347897554480099e342">fov_y_degrees</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">    /*! \~chinese 可视范围的宽度与高度之比。 */</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../d7/d7e/structCamera.html#a5742c2c47c7afc5a6d49b6e5759db3cd">   57</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d7/d7e/structCamera.html#a5742c2c47c7afc5a6d49b6e5759db3cd">aspect_ratio</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">    /*! \~chinese 世界坐标系中的“上”方向向量，用于求相机坐标系的正交基。 */</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../d7/d7e/structCamera.html#ad8f6527347bebb52dfe3e4bfa963c3b1">   59</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d7/d7e/structCamera.html#ad8f6527347bebb52dfe3e4bfa963c3b1">world_up</a>;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * \brief 表示观察点的相机，既可以用于预览视角，也可以用于渲染视角。</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * 这个类封装了从观察点、按一定视角去观察目标点的功能，可以完成相应的几何计算，</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * 包括观察矩阵和投影矩阵 (view &amp; projection matrix)。</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * 预览场景中相机的显示不由 Camera 类自己负责，它的功能只是存储参数并构造变换矩阵。</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * Dandelion 工作于渲染模式下时，Scene 对象将主动渲染一个相机视锥。</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="../../d7/d7e/structCamera.html">   21</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d7/d7e/structCamera.html">Camera</a></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_struct" href="../../d7/d7e/structCamera.html">Camera</a>() = <span class="keyword">delete</span>;<span class="comment"></span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">    /*!</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">     * \~chinese</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">     * \param position 相机位置（观察点）</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">     * \param target 相机指向的目标点</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">     * \param near_plane 可视范围近平面到观察坐标系原点的距离（正值）</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">     * \param far_plane 可视范围远平面到观察坐标系原点的距离（正值）</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">     * \param fov_y_degrees 高度方向（Y 方向）的视角大小，单位是角度</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">     * \param aspect_ratio 宽高比，即视角的宽度 / 高度</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_struct" href="../../d7/d7e/structCamera.html">Camera</a>(<span class="keyword">const</span> Eigen::Vector3f&amp; <a class="code hl_variable" href="../../d7/d7e/structCamera.html#ae52020b85d1f749f50c533fe10fc0f91">position</a>, <span class="keyword">const</span> Eigen::Vector3f&amp; <a class="code hl_variable" href="../../d7/d7e/structCamera.html#aa46269efc05d0aea46f8b0540ccb9d01">target</a>, <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d7/d7e/structCamera.html#a430f769a9227b6cd41fe336122fbb9dc">near_plane</a> = 0.1f,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>           <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d7/d7e/structCamera.html#a141934c2b78b48d9dd0042e8d7c87c32">far_plane</a> = 10.0f, <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d7/d7e/structCamera.html#aa3f6b2c9df678347897554480099e342">fov_y_degrees</a> = 45.0f, <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d7/d7e/structCamera.html#a5742c2c47c7afc5a6d49b6e5759db3cd">aspect_ratio</a> = 1.33f);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_struct" href="../../d7/d7e/structCamera.html">~Camera</a>() = <span class="keywordflow">default</span>;<span class="comment"></span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">    /*! \~chinese 获取该相机的 View 矩阵，对应观察变换。 */</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    Eigen::Matrix4f <a class="code hl_function" href="../../d7/d7e/structCamera.html#a4551bfb7cb5ed86cc5427e370fda0bdb">view</a>();<span class="comment"></span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">    /*! \~chinese 获取该相机的 Projection 矩阵，对应投影变换。 */</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    Eigen::Matrix4f <a class="code hl_function" href="../../d7/d7e/structCamera.html#ade56525b5437d9e2c8a890a734bc83d1">projection</a>();<span class="comment"></span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">    /*! \~chinese 相机的位置（视点）。 */</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../d7/d7e/structCamera.html#ae52020b85d1f749f50c533fe10fc0f91">   42</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d7/d7e/structCamera.html#ae52020b85d1f749f50c533fe10fc0f91">position</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">    /*! \~chinese 相机看向的位置（目标点）。 */</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../d7/d7e/structCamera.html#aa46269efc05d0aea46f8b0540ccb9d01">   44</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d7/d7e/structCamera.html#aa46269efc05d0aea46f8b0540ccb9d01">target</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">    /*! \~chinese 可视范围近平面到观察坐标系原点的距离（正值）。 */</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../d7/d7e/structCamera.html#a430f769a9227b6cd41fe336122fbb9dc">   46</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d7/d7e/structCamera.html#a430f769a9227b6cd41fe336122fbb9dc">near_plane</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">    /*! \~chinese 可视范围远平面到观察坐标系原点的距离（正值）。 */</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../d7/d7e/structCamera.html#a141934c2b78b48d9dd0042e8d7c87c32">   48</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d7/d7e/structCamera.html#a141934c2b78b48d9dd0042e8d7c87c32">far_plane</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">    /*! \~chinese Y 方向（上下）的视角大小。 */</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../d7/d7e/structCamera.html#aa3f6b2c9df678347897554480099e342">   50</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d7/d7e/structCamera.html#aa3f6b2c9df678347897554480099e342">fov_y_degrees</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">    /*! \~chinese 可视范围的宽度与高度之比。 */</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../d7/d7e/structCamera.html#a5742c2c47c7afc5a6d49b6e5759db3cd">   52</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d7/d7e/structCamera.html#a5742c2c47c7afc5a6d49b6e5759db3cd">aspect_ratio</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">    /*! \~chinese 世界坐标系中的“上”方向向量，用于求相机坐标系的正交基。 */</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="../../d7/d7e/structCamera.html#ad8f6527347bebb52dfe3e4bfa963c3b1">   54</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d7/d7e/structCamera.html#ad8f6527347bebb52dfe3e4bfa963c3b1">world_up</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>};</div>
 </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_SCENE_CAMERA_H</span></div>
-<div class="ttc" id="astructCamera_html"><div class="ttname"><a href="../../d7/d7e/structCamera.html">Camera</a></div><div class="ttdoc">表示观察点的相机，既可以用于预览视角，也可以用于渲染视角。</div><div class="ttdef"><b>定义</b> camera.h:27</div></div>
-<div class="ttc" id="astructCamera_html_a4551bfb7cb5ed86cc5427e370fda0bdb"><div class="ttname"><a href="../../d7/d7e/structCamera.html#a4551bfb7cb5ed86cc5427e370fda0bdb">Camera::view</a></div><div class="ttdeci">Eigen::Matrix4f view()</div><div class="ttdef"><b>定义</b> camera.cpp:29</div></div>
-<div class="ttc" id="astructCamera_html_a5742c2c47c7afc5a6d49b6e5759db3cd"><div class="ttname"><a href="../../d7/d7e/structCamera.html#a5742c2c47c7afc5a6d49b6e5759db3cd">Camera::aspect_ratio</a></div><div class="ttdeci">float aspect_ratio</div><div class="ttdef"><b>定义</b> camera.h:57</div></div>
-<div class="ttc" id="astructCamera_html_a9f30b77edf6485e001a98d21ff5f17fe"><div class="ttname"><a href="../../d7/d7e/structCamera.html#a9f30b77edf6485e001a98d21ff5f17fe">Camera::far</a></div><div class="ttdeci">float far</div><div class="ttdef"><b>定义</b> camera.h:53</div></div>
-<div class="ttc" id="astructCamera_html_aa3f6b2c9df678347897554480099e342"><div class="ttname"><a href="../../d7/d7e/structCamera.html#aa3f6b2c9df678347897554480099e342">Camera::fov_y_degrees</a></div><div class="ttdeci">float fov_y_degrees</div><div class="ttdef"><b>定义</b> camera.h:55</div></div>
-<div class="ttc" id="astructCamera_html_aa46269efc05d0aea46f8b0540ccb9d01"><div class="ttname"><a href="../../d7/d7e/structCamera.html#aa46269efc05d0aea46f8b0540ccb9d01">Camera::target</a></div><div class="ttdeci">Eigen::Vector3f target</div><div class="ttdef"><b>定义</b> camera.h:49</div></div>
-<div class="ttc" id="astructCamera_html_ad8f6527347bebb52dfe3e4bfa963c3b1"><div class="ttname"><a href="../../d7/d7e/structCamera.html#ad8f6527347bebb52dfe3e4bfa963c3b1">Camera::world_up</a></div><div class="ttdeci">Eigen::Vector3f world_up</div><div class="ttdef"><b>定义</b> camera.h:59</div></div>
-<div class="ttc" id="astructCamera_html_ad96efd3e1e4ec33dddb1d25f05d02ff2"><div class="ttname"><a href="../../d7/d7e/structCamera.html#ad96efd3e1e4ec33dddb1d25f05d02ff2">Camera::near</a></div><div class="ttdeci">float near</div><div class="ttdef"><b>定义</b> camera.h:51</div></div>
-<div class="ttc" id="astructCamera_html_ade56525b5437d9e2c8a890a734bc83d1"><div class="ttname"><a href="../../d7/d7e/structCamera.html#ade56525b5437d9e2c8a890a734bc83d1">Camera::projection</a></div><div class="ttdeci">Eigen::Matrix4f projection()</div><div class="ttdef"><b>定义</b> camera.cpp:49</div></div>
-<div class="ttc" id="astructCamera_html_ae52020b85d1f749f50c533fe10fc0f91"><div class="ttname"><a href="../../d7/d7e/structCamera.html#ae52020b85d1f749f50c533fe10fc0f91">Camera::position</a></div><div class="ttdeci">Eigen::Vector3f position</div><div class="ttdef"><b>定义</b> camera.h:47</div></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_SCENE_CAMERA_H</span></div>
+<div class="ttc" id="astructCamera_html"><div class="ttname"><a href="../../d7/d7e/structCamera.html">Camera</a></div><div class="ttdoc">表示观察点的相机，既可以用于预览视角，也可以用于渲染视角。</div><div class="ttdef"><b>定义</b> camera.h:22</div></div>
+<div class="ttc" id="astructCamera_html_a141934c2b78b48d9dd0042e8d7c87c32"><div class="ttname"><a href="../../d7/d7e/structCamera.html#a141934c2b78b48d9dd0042e8d7c87c32">Camera::far_plane</a></div><div class="ttdeci">float far_plane</div><div class="ttdef"><b>定义</b> camera.h:48</div></div>
+<div class="ttc" id="astructCamera_html_a430f769a9227b6cd41fe336122fbb9dc"><div class="ttname"><a href="../../d7/d7e/structCamera.html#a430f769a9227b6cd41fe336122fbb9dc">Camera::near_plane</a></div><div class="ttdeci">float near_plane</div><div class="ttdef"><b>定义</b> camera.h:46</div></div>
+<div class="ttc" id="astructCamera_html_a4551bfb7cb5ed86cc5427e370fda0bdb"><div class="ttname"><a href="../../d7/d7e/structCamera.html#a4551bfb7cb5ed86cc5427e370fda0bdb">Camera::view</a></div><div class="ttdeci">Eigen::Matrix4f view()</div><div class="ttdef"><b>定义</b> camera.cpp:24</div></div>
+<div class="ttc" id="astructCamera_html_a5742c2c47c7afc5a6d49b6e5759db3cd"><div class="ttname"><a href="../../d7/d7e/structCamera.html#a5742c2c47c7afc5a6d49b6e5759db3cd">Camera::aspect_ratio</a></div><div class="ttdeci">float aspect_ratio</div><div class="ttdef"><b>定义</b> camera.h:52</div></div>
+<div class="ttc" id="astructCamera_html_aa3f6b2c9df678347897554480099e342"><div class="ttname"><a href="../../d7/d7e/structCamera.html#aa3f6b2c9df678347897554480099e342">Camera::fov_y_degrees</a></div><div class="ttdeci">float fov_y_degrees</div><div class="ttdef"><b>定义</b> camera.h:50</div></div>
+<div class="ttc" id="astructCamera_html_aa46269efc05d0aea46f8b0540ccb9d01"><div class="ttname"><a href="../../d7/d7e/structCamera.html#aa46269efc05d0aea46f8b0540ccb9d01">Camera::target</a></div><div class="ttdeci">Eigen::Vector3f target</div><div class="ttdef"><b>定义</b> camera.h:44</div></div>
+<div class="ttc" id="astructCamera_html_ad8f6527347bebb52dfe3e4bfa963c3b1"><div class="ttname"><a href="../../d7/d7e/structCamera.html#ad8f6527347bebb52dfe3e4bfa963c3b1">Camera::world_up</a></div><div class="ttdeci">Eigen::Vector3f world_up</div><div class="ttdef"><b>定义</b> camera.h:54</div></div>
+<div class="ttc" id="astructCamera_html_ade56525b5437d9e2c8a890a734bc83d1"><div class="ttname"><a href="../../d7/d7e/structCamera.html#ade56525b5437d9e2c8a890a734bc83d1">Camera::projection</a></div><div class="ttdeci">Eigen::Matrix4f projection()</div><div class="ttdef"><b>定义</b> camera.cpp:44</div></div>
+<div class="ttc" id="astructCamera_html_ae52020b85d1f749f50c533fe10fc0f91"><div class="ttname"><a href="../../d7/d7e/structCamera.html#ae52020b85d1f749f50c533fe10fc0f91">Camera::position</a></div><div class="ttdeci">Eigen::Vector3f position</div><div class="ttdef"><b>定义</b> camera.h:42</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -4,7 +4,7 @@ var searchData=
   ['rasterize_5ftriangle_1',['rasterize_triangle',['../d3/d7a/classRasterizer.html#a1919db79cf2ee65e79a72ffe5990d01b',1,'Rasterizer']]],
   ['rasterizer_2',['Rasterizer',['../d3/d7a/classRasterizer.html',1,'']]],
   ['rasterizer_2eh_3',['rasterizer.h',['../db/d37/rasterizer_8h.html',1,'']]],
-  ['rasterizer_5ffinish_4',['rasterizer_finish',['../d6/d7a/structContext.html#a50ba5acf38108fb26e4a68c84f3dfb8a',1,'Context']]],
+  ['rasterizer_5ffinish_4',['rasterizer_finish',['../d6/d7a/structContext.html#a9104b0a053080be147c6ad58118ec35c',1,'Context']]],
   ['rasterizer_5foutput_5fqueue_5',['rasterizer_output_queue',['../d6/d7a/structContext.html#a85d16a14fd111f935c83eacf96ccbe91',1,'Context']]],
   ['rasterizer_5frender_6',['rasterizer_render',['../d3/d2f/classRenderEngine.html#adaf01cee431df0859ef5f2f580e8ebc0',1,'RenderEngine']]],
   ['rasterizer_5frenderer_2eh_7',['rasterizer_renderer.h',['../d9/dbd/rasterizer__renderer_8h.html',1,'']]],
@@ -33,7 +33,7 @@ var searchData=
   ['rendering_5fres_30',['rendering_res',['../d3/d2f/classRenderEngine.html#a8a00eff19a34210acad2447e7fd358db',1,'RenderEngine']]],
   ['reset_5fsimulation_31',['reset_simulation',['../d5/d9c/classScene.html#a22359fce4b3d3f44275aa5d6b2dd3dc1',1,'Scene']]],
   ['resize_5fwindow_32',['resize_window',['../df/d1e/classPlatform.html#abc7c9ebc5b95dfc19864a639839bd986',1,'Platform']]],
-  ['rgb_33',['RGB',['../db/d81/group__utils.html#ga4a118ad3ee36468a3fa616977a64864e',1,'rendering.hpp']]],
+  ['rgb_5fcolor_33',['RGB_COLOR',['../db/d81/group__utils.html#gab2596a38a2a89ebf334c84f916360771',1,'rendering.hpp']]],
   ['root_34',['root',['../de/de9/classBVH.html#a346e43d1b1a64c1f5db8876fbe350ffb',1,'BVH']]],
   ['rotation_35',['rotation',['../d8/d4b/classObject.html#a770438fbce9eb0bc063547f0f77e0b30',1,'Object']]],
   ['runge_5fkutta_5fstep_36',['runge_kutta_step',['../d4/d20/solver_8h.html#a1658b0d74382082614c979f76f65d69a',1,'solver.cpp']]]

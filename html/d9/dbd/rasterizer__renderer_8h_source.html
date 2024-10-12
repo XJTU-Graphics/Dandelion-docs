@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.1</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -117,69 +117,70 @@ $(function(){initNavTree('d9/dbd/rasterizer__renderer_8h_source.html','../../');
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;list&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;queue&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;Eigen/Core&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;Eigen/Geometry&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="../../d7/d6a/gl_8hpp.html">../platform/gl.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="../../dd/dd3/light_8h.html">../scene/light.h</a>&quot;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="../../d7/df6/camera_8h.html">../scene/camera.h</a>&quot;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="../../da/d22/graphics__interface_8h.html">graphics_interface.h</a>&quot;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"></span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * \file render/rasterizer_renderer.h</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * \ingroup rendering</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * \brief 光栅化渲染器中顶点处理、片元处理两个阶段的实现。</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"></span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * \ingroup rendering</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> * \brief 负责执行顶点着色器的工作线程。</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> */</span></div>
-<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../d1/d19/classVertexProcessor.html">   28</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d1/d19/classVertexProcessor.html">VertexProcessor</a></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">void</span> input_vertices(<span class="keyword">const</span> Eigen::Vector4f&amp; positions, <span class="keyword">const</span> Eigen::Vector3f&amp; normals);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_struct" href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a> (*vertex_shader_ptr)(<span class="keyword">const</span> <a class="code hl_struct" href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a>&amp; payload);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> worker_thread();</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    std::queue&lt;VertexShaderPayload&gt; vertex_queue;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    std::mutex queue_mutex;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>};</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;Eigen/Core&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;Eigen/Geometry&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="../../d7/d6a/gl_8hpp.html">../platform/gl.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="../../dd/dd3/light_8h.html">../scene/light.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="../../d7/df6/camera_8h.html">../scene/camera.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="../../da/d22/graphics__interface_8h.html">graphics_interface.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"></span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * \file render/rasterizer_renderer.h</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * \ingroup rendering</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * \brief 光栅化渲染器中顶点处理、片元处理两个阶段的实现。</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"></span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * \ingroup rendering</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> * \brief 负责执行顶点着色器的工作线程。</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="};">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d1/d19/classVertexProcessor.html">   29</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d1/d19/classVertexProcessor.html">VertexProcessor</a></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> input_vertices(<span class="keyword">const</span> Eigen::Vector4f&amp; positions, <span class="keyword">const</span> Eigen::Vector3f&amp; normals);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_struct" href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a> (*vertex_shader_ptr)(<span class="keyword">const</span> <a class="code hl_struct" href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a>&amp; payload);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> worker_thread();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    std::queue&lt;VertexShaderPayload&gt; vertex_queue;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    std::mutex queue_mutex;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
 </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"></span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> * \ingroup rendering</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> * \brief 负责执行片元着色器的工作线程。</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"> */</span></div>
-<div class="foldopen" id="foldopen00045" data-start="{" data-end="};">
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../d6/d3d/classFragmentProcessor.html">   45</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d6/d3d/classFragmentProcessor.html">FragmentProcessor</a></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>{</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">void</span> worker_thread();</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    Eigen::Vector3f (*fragment_shader_ptr)(<span class="keyword">const</span> <a class="code hl_struct" href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a>&amp; payload,</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                                           <span class="keyword">const</span> <a class="code hl_struct" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a>&amp; material, <span class="keyword">const</span> std::list&lt;Light&gt;&amp; lights,</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                                           <span class="keyword">const</span> <a class="code hl_struct" href="../../d7/d7e/structCamera.html">Camera</a>&amp; camera);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>};</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"></span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> * \ingroup rendering</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"> * \brief 负责执行片元着色器的工作线程。</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00046" data-start="{" data-end="};">
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../d6/d3d/classFragmentProcessor.html">   46</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d6/d3d/classFragmentProcessor.html">FragmentProcessor</a></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>{</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">void</span> worker_thread();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    Eigen::Vector3f (*fragment_shader_ptr)(<span class="keyword">const</span> <a class="code hl_struct" href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a>&amp; payload,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                                           <span class="keyword">const</span> <a class="code hl_struct" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a>&amp; material,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                                           <span class="keyword">const</span> std::list&lt;Light&gt;&amp; lights, <span class="keyword">const</span> <a class="code hl_struct" href="../../d7/d7e/structCamera.html">Camera</a>&amp; camera);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
 </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_RENDER_RASTERIZER_RENDERER_H</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_RENDER_RASTERIZER_RENDERER_H</span></div>
 <div class="ttc" id="acamera_8h_html"><div class="ttname"><a href="../../d7/df6/camera_8h.html">camera.h</a></div></div>
-<div class="ttc" id="aclassFragmentProcessor_html"><div class="ttname"><a href="../../d6/d3d/classFragmentProcessor.html">FragmentProcessor</a></div><div class="ttdoc">负责执行片元着色器的工作线程。</div><div class="ttdef"><b>定义</b> rasterizer_renderer.h:46</div></div>
-<div class="ttc" id="aclassVertexProcessor_html"><div class="ttname"><a href="../../d1/d19/classVertexProcessor.html">VertexProcessor</a></div><div class="ttdoc">负责执行顶点着色器的工作线程。</div><div class="ttdef"><b>定义</b> rasterizer_renderer.h:29</div></div>
+<div class="ttc" id="aclassFragmentProcessor_html"><div class="ttname"><a href="../../d6/d3d/classFragmentProcessor.html">FragmentProcessor</a></div><div class="ttdoc">负责执行片元着色器的工作线程。</div><div class="ttdef"><b>定义</b> rasterizer_renderer.h:47</div></div>
+<div class="ttc" id="aclassVertexProcessor_html"><div class="ttname"><a href="../../d1/d19/classVertexProcessor.html">VertexProcessor</a></div><div class="ttdoc">负责执行顶点着色器的工作线程。</div><div class="ttdef"><b>定义</b> rasterizer_renderer.h:30</div></div>
 <div class="ttc" id="agl_8hpp_html"><div class="ttname"><a href="../../d7/d6a/gl_8hpp.html">gl.hpp</a></div></div>
 <div class="ttc" id="agraphics__interface_8h_html"><div class="ttname"><a href="../../da/d22/graphics__interface_8h.html">graphics_interface.h</a></div><div class="ttdoc">一些公用的渲染管线接口。</div></div>
 <div class="ttc" id="alight_8h_html"><div class="ttname"><a href="../../dd/dd3/light_8h.html">light.h</a></div></div>
-<div class="ttc" id="astructCamera_html"><div class="ttname"><a href="../../d7/d7e/structCamera.html">Camera</a></div><div class="ttdoc">表示观察点的相机，既可以用于预览视角，也可以用于渲染视角。</div><div class="ttdef"><b>定义</b> camera.h:27</div></div>
-<div class="ttc" id="astructFragmentShaderPayload_html"><div class="ttname"><a href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a></div><div class="ttdoc">片元着色器的输入单位。</div><div class="ttdef"><b>定义</b> graphics_interface.h:44</div></div>
+<div class="ttc" id="astructCamera_html"><div class="ttname"><a href="../../d7/d7e/structCamera.html">Camera</a></div><div class="ttdoc">表示观察点的相机，既可以用于预览视角，也可以用于渲染视角。</div><div class="ttdef"><b>定义</b> camera.h:22</div></div>
+<div class="ttc" id="astructFragmentShaderPayload_html"><div class="ttname"><a href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a></div><div class="ttdoc">片元着色器的输入单位。</div><div class="ttdef"><b>定义</b> graphics_interface.h:45</div></div>
 <div class="ttc" id="astructGL_1_1Material_html"><div class="ttname"><a href="../../d4/d50/structGL_1_1Material.html">GL::Material</a></div><div class="ttdoc">物体材质。</div><div class="ttdef"><b>定义</b> gl.hpp:189</div></div>
 <div class="ttc" id="astructVertexShaderPayload_html"><div class="ttname"><a href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a></div><div class="ttdef"><b>定义</b> graphics_interface.h:27</div></div>
 </div><!-- fragment --></div><!-- contents -->

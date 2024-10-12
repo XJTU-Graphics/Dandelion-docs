@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.1</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -132,10 +132,11 @@ $(function(){initNavTree('d8/df1/build.html','../../'); initResizable(true); });
 <ul>
 <li>GLFW 3.3.8, Zlib License</li>
 <li>GLAD (OpenGL Core Profile, version &gt;= 3.3), MIT &amp; Apache License</li>
-<li>Eigen 3.4.0, Mozilla Public License</li>
+<li>Eigen (commit 12068cbcdb835d7bd88b09d8439d2171e856be06), Mozilla Public License</li>
 <li>Assimp 5.2.5, Open Assert Import Library License</li>
 <li>Dear ImGui 1.89.3 (docking branch), MIT License</li>
 <li>stb_image 2.30, MIT License &amp; Public Domain</li>
+<li>stb_image_write 1.16 (modified for AppleClang compatibility), MIT License &amp; Public Domain</li>
 <li>spdlog 1.14.1, MIT License</li>
 <li>{fmt} 11.0.2, {fmt}'s License</li>
 <li>portable-file-dialogs (commit 7f852d88a480020d7f91957cbcefe514fc95000c), WTFPL License</li>
@@ -158,7 +159,7 @@ $(function(){initNavTree('d8/df1/build.html','../../'); initResizable(true); });
 <ul>
 <li>支持 C++ 20 标准的编译器<ul>
 <li>最低要求 Visual Studio 2019、GNU GCC 11、Clang 14 。由于我们开启的警告等级很高，更低版本的编译器可能会产生错误的警告。</li>
-<li>推荐使用 Visual Studio 2022、GNU GCC 12+、Clang 15+ ，可以使用最新的稳定版本。</li>
+<li>推荐使用 Visual Studio 2022、GNU GCC 12+、Clang 15+ ，推荐使用最新的稳定版本。</li>
 </ul>
 </li>
 <li>CMake 3.14 及以上（推荐使用最新的稳定版本）</li>

@@ -38,7 +38,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.1</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -132,20 +132,20 @@ static std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>rasteriz
 <tr class="separator:a2c108d6bd3955d6324c2f860a3d9bf74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85d16a14fd111f935c83eacf96ccbe91" id="r_a85d16a14fd111f935c83eacf96ccbe91"><td class="memItemLeft" align="right" valign="top">static std::queue&lt; <a class="el" href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85d16a14fd111f935c83eacf96ccbe91">rasterizer_output_queue</a></td></tr>
 <tr class="separator:a85d16a14fd111f935c83eacf96ccbe91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90b23ff05a8c7fb8e1c715706c764c01" id="r_a90b23ff05a8c7fb8e1c715706c764c01"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90b23ff05a8c7fb8e1c715706c764c01">vertex_finish</a> = false</td></tr>
-<tr class="separator:a90b23ff05a8c7fb8e1c715706c764c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50ba5acf38108fb26e4a68c84f3dfb8a" id="r_a50ba5acf38108fb26e4a68c84f3dfb8a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50ba5acf38108fb26e4a68c84f3dfb8a">rasterizer_finish</a> = false</td></tr>
-<tr class="separator:a50ba5acf38108fb26e4a68c84f3dfb8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad351622199d79d9380134d89e79c168d" id="r_ad351622199d79d9380134d89e79c168d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad351622199d79d9380134d89e79c168d">fragment_finish</a> = false</td></tr>
-<tr class="separator:ad351622199d79d9380134d89e79c168d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a869a047ca9aa1690320d8edbb79eb4f3" id="r_a869a047ca9aa1690320d8edbb79eb4f3"><td class="memItemLeft" align="right" valign="top">static volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a869a047ca9aa1690320d8edbb79eb4f3">vertex_finish</a> = false</td></tr>
+<tr class="separator:a869a047ca9aa1690320d8edbb79eb4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9104b0a053080be147c6ad58118ec35c" id="r_a9104b0a053080be147c6ad58118ec35c"><td class="memItemLeft" align="right" valign="top">static volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9104b0a053080be147c6ad58118ec35c">rasterizer_finish</a> = false</td></tr>
+<tr class="separator:a9104b0a053080be147c6ad58118ec35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a204dca72ea4c522cdc99fea995b659aa" id="r_a204dca72ea4c522cdc99fea995b659aa"><td class="memItemLeft" align="right" valign="top">static volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a204dca72ea4c522cdc99fea995b659aa">fragment_finish</a> = false</td></tr>
+<tr class="separator:a204dca72ea4c522cdc99fea995b659aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2f4106ab57a441b533f2bf4c91fe501" id="r_ab2f4106ab57a441b533f2bf4c91fe501"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dc/d5b/classFrameBuffer.html">FrameBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2f4106ab57a441b533f2bf4c91fe501">frame_buffer</a></td></tr>
 <tr class="separator:ab2f4106ab57a441b533f2bf4c91fe501"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>存放实现渲染管线所需的一些全局数据。 </p>
 </div><h2 class="groupheader">类成员变量说明</h2>
-<a id="ad351622199d79d9380134d89e79c168d" name="ad351622199d79d9380134d89e79c168d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad351622199d79d9380134d89e79c168d">&#9670;&#160;</a></span>fragment_finish</h2>
+<a id="a204dca72ea4c522cdc99fea995b659aa" name="a204dca72ea4c522cdc99fea995b659aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a204dca72ea4c522cdc99fea995b659aa">&#9670;&#160;</a></span>fragment_finish</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -154,7 +154,7 @@ static std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>rasteriz
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Context::fragment_finish = false</td>
+          <td class="memname">volatile bool Context::fragment_finish = false</td>
         </tr>
       </table>
   </td>
@@ -190,8 +190,8 @@ static std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>rasteriz
 
 </div>
 </div>
-<a id="a50ba5acf38108fb26e4a68c84f3dfb8a" name="a50ba5acf38108fb26e4a68c84f3dfb8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50ba5acf38108fb26e4a68c84f3dfb8a">&#9670;&#160;</a></span>rasterizer_finish</h2>
+<a id="a9104b0a053080be147c6ad58118ec35c" name="a9104b0a053080be147c6ad58118ec35c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9104b0a053080be147c6ad58118ec35c">&#9670;&#160;</a></span>rasterizer_finish</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -200,7 +200,7 @@ static std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>rasteriz
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Context::rasterizer_finish = false</td>
+          <td class="memname">volatile bool Context::rasterizer_finish = false</td>
         </tr>
       </table>
   </td>
@@ -236,8 +236,8 @@ static std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>rasteriz
 
 </div>
 </div>
-<a id="a90b23ff05a8c7fb8e1c715706c764c01" name="a90b23ff05a8c7fb8e1c715706c764c01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90b23ff05a8c7fb8e1c715706c764c01">&#9670;&#160;</a></span>vertex_finish</h2>
+<a id="a869a047ca9aa1690320d8edbb79eb4f3" name="a869a047ca9aa1690320d8edbb79eb4f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a869a047ca9aa1690320d8edbb79eb4f3">&#9670;&#160;</a></span>vertex_finish</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -246,7 +246,7 @@ static std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>rasteriz
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Context::vertex_finish = false</td>
+          <td class="memname">volatile bool Context::vertex_finish = false</td>
         </tr>
       </table>
   </td>
