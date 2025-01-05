@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="generator" content="Doxygen 1.13.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: graphics_interface.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -47,7 +47,7 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.12.0 -->
+<!-- 制作者 Doxygen 1.13.1 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -253,7 +253,7 @@ $(function(){initNavTree('da/d22/graphics__interface_8h_source.html','../../'); 
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment"> * 要渲染一帧，通常至少需要一个 color buffer 用于输出颜色、一个 depth buffer 用于记录深度。</span></div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment"> */</span></div>
 <div class="foldopen" id="foldopen00134" data-start="{" data-end="};">
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="../../dc/d5b/classFrameBuffer.html">  134</a></span><span class="keyword">class </span><a class="code hl_class" href="../../dc/d5b/classFrameBuffer.html">FrameBuffer</a></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="../../dc/d5b/classFrameBuffer.html">  134</a></span><span class="keyword">class </span><a class="code hl_function" href="../../dc/d5b/classFrameBuffer.html#aab4c897d360f51c5a96b4782e67e98a9">FrameBuffer</a></div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>{</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="keyword">public</span>:<span class="comment"></span></div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">    /*! \~chinese 初始化一个 frame buffer 。 */</span></div>
@@ -311,11 +311,11 @@ $(function(){initNavTree('da/d22/graphics__interface_8h_source.html','../../'); 
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment">    /*! \~chinese 当前渲染物体的model.inverse().transpose() */</span></div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="../../de/d97/structUniforms.html#a9fec7e95a81c71553d6ba10ef240b5ae">  188</a></span>    <span class="keyword">static</span> Eigen::Matrix4f <a class="code hl_variable" href="../../de/d97/structUniforms.html#a9fec7e95a81c71553d6ba10ef240b5ae">inv_trans_M</a>;<span class="comment"></span></div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment">    ///@{</span></div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment"></span><span class="comment">    /*! \~chinese 当前成像平面的长和宽 */</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment">    /*! \~chinese 当前成像平面的长和宽 */</span></div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="../../de/d97/structUniforms.html#a0ced151699f824c314f407df9f69da60">  191</a></span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="../../de/d97/structUniforms.html#a0ced151699f824c314f407df9f69da60">width</a>;</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> height;<span class="comment"></span></div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">    ///@}</span></div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment"></span><span class="comment"></span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment"></span> </div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment">    /*! \~chinese 渲染物体的材质 */</span></div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="../../de/d97/structUniforms.html#afd0587ccdef535d3dea64d3c26efed11">  196</a></span>    <span class="keyword">static</span> <a class="code hl_struct" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a>&amp; <a class="code hl_variable" href="../../de/d97/structUniforms.html#afd0587ccdef535d3dea64d3c26efed11">material</a>;<span class="comment"></span></div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">    /*! \~chinese 场景内的光源 */</span></div>
@@ -403,7 +403,7 @@ $(function(){initNavTree('da/d22/graphics__interface_8h_source.html','../../'); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_e488ee1cea97fb16abdb5ccc78d2123b.html">render</a></li><li class="navelem"><a class="el" href="../../da/d22/graphics__interface_8h.html">graphics_interface.h</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1 </li>
   </ul>
 </div>
 </body>

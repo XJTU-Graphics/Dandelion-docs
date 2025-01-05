@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="generator" content="Doxygen 1.13.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: camera.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -47,7 +47,7 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.12.0 -->
+<!-- 制作者 Doxygen 1.13.1 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -132,10 +132,10 @@ $(function(){initNavTree('d7/df6/camera_8h_source.html','../../'); initResizable
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * Dandelion 工作于渲染模式下时，Scene 对象将主动渲染一个相机视锥。</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
 <div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="../../d7/d7e/structCamera.html">   21</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d7/d7e/structCamera.html">Camera</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="../../d7/d7e/structCamera.html">   21</a></span><span class="keyword">struct </span>Camera</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_struct" href="../../d7/d7e/structCamera.html">Camera</a>() = <span class="keyword">delete</span>;<span class="comment"></span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    Camera() = <span class="keyword">delete</span>;<span class="comment"></span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">    /*!</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">     * \~chinese</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">     * \param position 相机位置（观察点）</span></div>
@@ -145,9 +145,9 @@ $(function(){initNavTree('d7/df6/camera_8h_source.html','../../'); initResizable
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">     * \param fov_y_degrees 高度方向（Y 方向）的视角大小，单位是角度</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">     * \param aspect_ratio 宽高比，即视角的宽度 / 高度</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_struct" href="../../d7/d7e/structCamera.html">Camera</a>(<span class="keyword">const</span> Eigen::Vector3f&amp; <a class="code hl_variable" href="../../d7/d7e/structCamera.html#ae52020b85d1f749f50c533fe10fc0f91">position</a>, <span class="keyword">const</span> Eigen::Vector3f&amp; <a class="code hl_variable" href="../../d7/d7e/structCamera.html#aa46269efc05d0aea46f8b0540ccb9d01">target</a>, <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d7/d7e/structCamera.html#a430f769a9227b6cd41fe336122fbb9dc">near_plane</a> = 0.1f,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    Camera(<span class="keyword">const</span> Eigen::Vector3f&amp; <a class="code hl_variable" href="../../d7/d7e/structCamera.html#ae52020b85d1f749f50c533fe10fc0f91">position</a>, <span class="keyword">const</span> Eigen::Vector3f&amp; <a class="code hl_variable" href="../../d7/d7e/structCamera.html#aa46269efc05d0aea46f8b0540ccb9d01">target</a>, <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d7/d7e/structCamera.html#a430f769a9227b6cd41fe336122fbb9dc">near_plane</a> = 0.1f,</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>           <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d7/d7e/structCamera.html#a141934c2b78b48d9dd0042e8d7c87c32">far_plane</a> = 10.0f, <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d7/d7e/structCamera.html#aa3f6b2c9df678347897554480099e342">fov_y_degrees</a> = 45.0f, <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d7/d7e/structCamera.html#a5742c2c47c7afc5a6d49b6e5759db3cd">aspect_ratio</a> = 1.33f);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_struct" href="../../d7/d7e/structCamera.html">~Camera</a>() = <span class="keywordflow">default</span>;<span class="comment"></span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    ~Camera() = <span class="keywordflow">default</span>;<span class="comment"></span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">    /*! \~chinese 获取该相机的 View 矩阵，对应观察变换。 */</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    Eigen::Matrix4f <a class="code hl_function" href="../../d7/d7e/structCamera.html#a4551bfb7cb5ed86cc5427e370fda0bdb">view</a>();<span class="comment"></span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">    /*! \~chinese 获取该相机的 Projection 矩阵，对应投影变换。 */</span></div>
@@ -170,7 +170,6 @@ $(function(){initNavTree('d7/df6/camera_8h_source.html','../../'); initResizable
 </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_SCENE_CAMERA_H</span></div>
-<div class="ttc" id="astructCamera_html"><div class="ttname"><a href="../../d7/d7e/structCamera.html">Camera</a></div><div class="ttdoc">表示观察点的相机，既可以用于预览视角，也可以用于渲染视角。</div><div class="ttdef"><b>定义</b> camera.h:22</div></div>
 <div class="ttc" id="astructCamera_html_a141934c2b78b48d9dd0042e8d7c87c32"><div class="ttname"><a href="../../d7/d7e/structCamera.html#a141934c2b78b48d9dd0042e8d7c87c32">Camera::far_plane</a></div><div class="ttdeci">float far_plane</div><div class="ttdef"><b>定义</b> camera.h:48</div></div>
 <div class="ttc" id="astructCamera_html_a430f769a9227b6cd41fe336122fbb9dc"><div class="ttname"><a href="../../d7/d7e/structCamera.html#a430f769a9227b6cd41fe336122fbb9dc">Camera::near_plane</a></div><div class="ttdeci">float near_plane</div><div class="ttdef"><b>定义</b> camera.h:46</div></div>
 <div class="ttc" id="astructCamera_html_a4551bfb7cb5ed86cc5427e370fda0bdb"><div class="ttname"><a href="../../d7/d7e/structCamera.html#a4551bfb7cb5ed86cc5427e370fda0bdb">Camera::view</a></div><div class="ttdeci">Eigen::Matrix4f view()</div><div class="ttdef"><b>定义</b> camera.cpp:24</div></div>
@@ -186,7 +185,7 @@ $(function(){initNavTree('d7/df6/camera_8h_source.html','../../'); initResizable
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_35781f0e74aa8deac19fa31b37174dc2.html">scene</a></li><li class="navelem"><a class="el" href="../../d7/df6/camera_8h.html">camera.h</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1 </li>
   </ul>
 </div>
 </body>

@@ -1,4 +1,4 @@
 var toolbar_8h =
 [
-    [ "MAX_SCENE_NODES", "dc/d2a/toolbar_8h.html#ga517fcfd7da21de45b1dda1b08d77bfb9", null ]
+    [ "UI::MAX_SCENE_NODES", "dd/df1/group__ui.html#ga517fcfd7da21de45b1dda1b08d77bfb9", null ]
 ];

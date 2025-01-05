@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="generator" content="Doxygen 1.13.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: gl.hpp 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -47,7 +47,7 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.12.0 -->
+<!-- 制作者 Doxygen 1.13.1 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -162,20 +162,20 @@ $(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable(t
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"> * 的过程。由于此结构体的实例将持有 OpenGL VAO 的名字 (name) 或者叫描述符，它不允许被复制构造。</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"> */</span></div>
 <div class="foldopen" id="foldopen00051" data-start="{" data-end="};">
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d9/d82/structGL_1_1VertexArrayObject.html">   51</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d9/d82/structGL_1_1VertexArrayObject.html">VertexArrayObject</a></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d9/d82/structGL_1_1VertexArrayObject.html">   51</a></span><span class="keyword">struct </span><a class="code hl_function" href="../../d9/d82/structGL_1_1VertexArrayObject.html#a73e2208fff05d22519dfad0309339f75">VertexArrayObject</a></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>{<span class="comment"></span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">    /*! \~chinese</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">     *  构造函数将调用 glGenVertexArrays 创建一个 OpenGL VAO，其名字存储于 `descriptor` 属性中。</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">     */</span></div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_function" href="../../d9/d82/structGL_1_1VertexArrayObject.html#a73e2208fff05d22519dfad0309339f75">VertexArrayObject</a>();</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_function" href="../../d9/d82/structGL_1_1VertexArrayObject.html#a73e2208fff05d22519dfad0309339f75">VertexArrayObject</a>(<a class="code hl_struct" href="../../d9/d82/structGL_1_1VertexArrayObject.html">VertexArrayObject</a>&amp; other)            = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_struct" href="../../d9/d82/structGL_1_1VertexArrayObject.html">VertexArrayObject</a>&amp; operator=(<a class="code hl_struct" href="../../d9/d82/structGL_1_1VertexArrayObject.html">VertexArrayObject</a>&amp; other) = <span class="keyword">delete</span>;<span class="comment"></span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_function" href="../../d9/d82/structGL_1_1VertexArrayObject.html#a73e2208fff05d22519dfad0309339f75">VertexArrayObject</a>(<a class="code hl_function" href="../../d9/d82/structGL_1_1VertexArrayObject.html#a73e2208fff05d22519dfad0309339f75">VertexArrayObject</a>&amp; other)            = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_function" href="../../d9/d82/structGL_1_1VertexArrayObject.html#a73e2208fff05d22519dfad0309339f75">VertexArrayObject</a>&amp; operator=(<a class="code hl_function" href="../../d9/d82/structGL_1_1VertexArrayObject.html#a73e2208fff05d22519dfad0309339f75">VertexArrayObject</a>&amp; other) = <span class="keyword">delete</span>;<span class="comment"></span></div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">    /*! \~chinese</span></div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">     * 移动构造函数是为满足 MoveInsertable 条件而写的，保证持有 VAO 的其他对象能使用 `std::vector`</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">     * 之类的容器存储。此构造函数会将 `other` 的 `descriptor` 设置成 0，从而避免 `other`</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">     * 析构时将真正的 OpenGL VAO 删除掉。</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <a class="code hl_function" href="../../d9/d82/structGL_1_1VertexArrayObject.html#a73e2208fff05d22519dfad0309339f75">VertexArrayObject</a>(<a class="code hl_struct" href="../../d9/d82/structGL_1_1VertexArrayObject.html">VertexArrayObject</a>&amp;&amp; other);<span class="comment"></span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <a class="code hl_function" href="../../d9/d82/structGL_1_1VertexArrayObject.html#a73e2208fff05d22519dfad0309339f75">VertexArrayObject</a>(<a class="code hl_function" href="../../d9/d82/structGL_1_1VertexArrayObject.html#a73e2208fff05d22519dfad0309339f75">VertexArrayObject</a>&amp;&amp; other);<span class="comment"></span></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">    /*! \~chinese 调用 glDeleteVertexArrays 删除 VAO。 */</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <a class="code hl_function" href="../../d9/d82/structGL_1_1VertexArrayObject.html#a37ca7e8bff292e3f334544dd6ba4ab37">~VertexArrayObject</a>();<span class="comment"></span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">    /*! \~chinese 绑定 VAO，仅用于更新它持有的 buffer 数据或格式时才需要专门调用。 */</span></div>
@@ -204,7 +204,7 @@ $(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable(t
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> size&gt;</div>
 <div class="foldopen" id="foldopen00091" data-start="{" data-end="};">
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html">   91</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d6/dba/structGL_1_1ArrayBuffer.html">ArrayBuffer</a></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html">   91</a></span><span class="keyword">struct </span><a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">ArrayBuffer</a></div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>{<span class="comment"></span></div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">    /*! \~chinese</span></div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">     * 调用 glGenBuffers 创建 Array Buffer，并设置此缓冲区绘制时的 hint 信息。</span></div>
@@ -212,13 +212,13 @@ $(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable(t
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">     */</span></div>
 <div class="foldopen" id="foldopen00097" data-start="{" data-end="}">
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">   97</a></span>    <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">ArrayBuffer</a>(GLenum buffer_usage, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a5c92fd61c3de20c99e71c48e9fa5291a">layout_location</a>);</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">ArrayBuffer</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../d6/dba/structGL_1_1ArrayBuffer.html">ArrayBuffer</a>&amp; other)      = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <a class="code hl_struct" href="../../d6/dba/structGL_1_1ArrayBuffer.html">ArrayBuffer</a>&amp; operator=(<a class="code hl_struct" href="../../d6/dba/structGL_1_1ArrayBuffer.html">ArrayBuffer</a>&amp; other) = <span class="keyword">delete</span>;<span class="comment"></span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">ArrayBuffer</a>(<span class="keyword">const</span> <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">ArrayBuffer</a>&amp; other)      = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">ArrayBuffer</a>&amp; operator=(<a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">ArrayBuffer</a>&amp; other) = <span class="keyword">delete</span>;<span class="comment"></span></div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">    /*! \~chinese</span></div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">     * 为满足 MoveInsertable 编写的移动构造函数，参考 `VertexArrayObject` 的移动构造函数。</span></div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">     */</span></div>
 <div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#af87b261e58ef9cb2bcf77f4e4c9eb86b">  103</a></span>    <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#af87b261e58ef9cb2bcf77f4e4c9eb86b">ArrayBuffer</a>(<a class="code hl_struct" href="../../d6/dba/structGL_1_1ArrayBuffer.html">ArrayBuffer</a>&amp;&amp; other);<span class="comment"></span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#af87b261e58ef9cb2bcf77f4e4c9eb86b">  103</a></span>    <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#af87b261e58ef9cb2bcf77f4e4c9eb86b">ArrayBuffer</a>(<a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">ArrayBuffer</a>&amp;&amp; other);<span class="comment"></span></div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">    /*! \~chinese 调用 glDeleteBuffers 删除 Array Buffer。 */</span></div>
 <div class="foldopen" id="foldopen00105" data-start="{" data-end="}">
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a7e97dda8fc89ec9da70ffc4f63d5ea12">  105</a></span>    <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a7e97dda8fc89ec9da70ffc4f63d5ea12">~ArrayBuffer</a>();<span class="comment"></span></div>
@@ -284,15 +284,15 @@ $(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable(t
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> size&gt;</div>
 <div class="foldopen" id="foldopen00159" data-start="{" data-end="};">
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">  159</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer</a></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">  159</a></span><span class="keyword">struct </span>ElementArrayBuffer</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>{</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> buffer_usage);</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer</a>&amp; other)      = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer</a>&amp; operator=(<a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer</a>&amp; other) = <span class="keyword">delete</span>;<span class="comment"></span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    ElementArrayBuffer(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> buffer_usage);</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    ElementArrayBuffer(<span class="keyword">const</span> ElementArrayBuffer&amp; other)      = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    ElementArrayBuffer&amp; operator=(ElementArrayBuffer&amp; other) = <span class="keyword">delete</span>;<span class="comment"></span></div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">    /*! \~chinese 参考 `VertexArrayObject` 的移动构造函数。 */</span></div>
 <div class="foldopen" id="foldopen00165" data-start="{" data-end="}">
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a2f7352881659cbf5f07d9026409dac29">  165</a></span>    <a class="code hl_function" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a2f7352881659cbf5f07d9026409dac29">ElementArrayBuffer</a>(<a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer</a>&amp;&amp; other);</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">~ElementArrayBuffer</a>();<span class="comment"></span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a2f7352881659cbf5f07d9026409dac29">  165</a></span>    <a class="code hl_function" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a2f7352881659cbf5f07d9026409dac29">ElementArrayBuffer</a>(ElementArrayBuffer&amp;&amp; other);</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    ~ElementArrayBuffer();<span class="comment"></span></div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">    /*! \~chinese 将 `size` 个数据附加到末尾。 */</span></div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Ts&gt;</div>
 <div class="foldopen" id="foldopen00169" data-start="{" data-end="}">
@@ -317,9 +317,9 @@ $(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable(t
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment"> * \brief 物体材质。</span></div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment"> */</span></div>
 <div class="foldopen" id="foldopen00188" data-start="{" data-end="};">
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="../../d4/d50/structGL_1_1Material.html">  188</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d4/d50/structGL_1_1Material.html">Material</a></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="../../d4/d50/structGL_1_1Material.html">  188</a></span><span class="keyword">struct </span>Material</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>{</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <a class="code hl_struct" href="../../d4/d50/structGL_1_1Material.html">Material</a>(<span class="keyword">const</span> Eigen::Vector3f&amp; K_ambient  = Eigen::Vector3f(1.0f, 1.0f, 1.0f),</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    Material(<span class="keyword">const</span> Eigen::Vector3f&amp; K_ambient  = Eigen::Vector3f(1.0f, 1.0f, 1.0f),</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>             <span class="keyword">const</span> Eigen::Vector3f&amp; K_diffuse  = Eigen::Vector3f(0.5f, 0.5f, 0.5f),</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>             <span class="keyword">const</span> Eigen::Vector3f&amp; K_specular = Eigen::Vector3f(0.0f, 0.0f, 0.0f),</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>             <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d4/d50/structGL_1_1Material.html#a593816847c0d6811a2fc6c625670ef27">shininess</a>                   = 5.0f);<span class="comment"></span></div>
@@ -350,12 +350,12 @@ $(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable(t
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment"> * 其他情况下都不必也不应该使用这些扁平存储的数据。</span></div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment"> */</span></div>
 <div class="foldopen" id="foldopen00219" data-start="{" data-end="};">
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="../../d8/d88/structGL_1_1Mesh.html">  219</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d8/d88/structGL_1_1Mesh.html">Mesh</a></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="../../d8/d88/structGL_1_1Mesh.html">  219</a></span><span class="keyword">struct </span>Mesh</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>{</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    <a class="code hl_struct" href="../../d8/d88/structGL_1_1Mesh.html">Mesh</a>();<span class="comment"></span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    Mesh();<span class="comment"></span></div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment">    /*! \~chinese 由于 VAO 和 ArrayBuffer 不允许复制构造，Mesh 也不允许复制构造。 */</span></div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="../../d8/d88/structGL_1_1Mesh.html#a81afad0fc0201e1c1bc012ba41a22268">  223</a></span>    <a class="code hl_function" href="../../d8/d88/structGL_1_1Mesh.html#a81afad0fc0201e1c1bc012ba41a22268">Mesh</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../d8/d88/structGL_1_1Mesh.html">Mesh</a>&amp; other) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    <a class="code hl_struct" href="../../d8/d88/structGL_1_1Mesh.html">Mesh</a>(<a class="code hl_struct" href="../../d8/d88/structGL_1_1Mesh.html">Mesh</a>&amp;&amp; other);<span class="comment"></span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="../../d8/d88/structGL_1_1Mesh.html#a81afad0fc0201e1c1bc012ba41a22268">  223</a></span>    <a class="code hl_function" href="../../d8/d88/structGL_1_1Mesh.html#a81afad0fc0201e1c1bc012ba41a22268">Mesh</a>(<span class="keyword">const</span> Mesh&amp; other) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    Mesh(Mesh&amp;&amp; other);<span class="comment"></span></div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="comment">    /*! \~chinese 读取编号为 index 的顶点。 */</span></div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    Eigen::Vector3f <a class="code hl_function" href="../../d8/d88/structGL_1_1Mesh.html#abb6cfaaf78c29740bc6dbf215347b203">vertex</a>(<span class="keywordtype">size_t</span> index) <span class="keyword">const</span>;<span class="comment"></span></div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="comment">    /*! \~chinese 读取编号为 index 的顶点法线。 */</span></div>
@@ -402,12 +402,12 @@ $(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable(t
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="comment"> * 半边等线条元素。</span></div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="comment"> */</span></div>
 <div class="foldopen" id="foldopen00269" data-start="{" data-end="};">
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno"><a class="line" href="../../d4/d91/structGL_1_1LineSet.html">  269</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d4/d91/structGL_1_1LineSet.html">LineSet</a></div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno"><a class="line" href="../../d4/d91/structGL_1_1LineSet.html">  269</a></span><span class="keyword">struct </span>LineSet</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>{</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <a class="code hl_struct" href="../../d4/d91/structGL_1_1LineSet.html">LineSet</a>(<span class="keyword">const</span> std::string&amp; name, Eigen::Vector3f color = GL::Mesh::default_wireframe_color);<span class="comment"></span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    LineSet(<span class="keyword">const</span> std::string&amp; name, Eigen::Vector3f color = GL::Mesh::default_wireframe_color);<span class="comment"></span></div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="comment">    /*! \~chinese 由于 VAO 和 ArrayBuffer 不允许复制构造，LineSet 也不允许复制构造。 */</span></div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="../../d4/d91/structGL_1_1LineSet.html#afd590478026675e92c7aa324936088c9">  273</a></span>    <a class="code hl_function" href="../../d4/d91/structGL_1_1LineSet.html#afd590478026675e92c7aa324936088c9">LineSet</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../d4/d91/structGL_1_1LineSet.html">LineSet</a>&amp; other) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    <a class="code hl_struct" href="../../d4/d91/structGL_1_1LineSet.html">LineSet</a>(<a class="code hl_struct" href="../../d4/d91/structGL_1_1LineSet.html">LineSet</a>&amp;&amp; other);<span class="comment"></span></div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="../../d4/d91/structGL_1_1LineSet.html#afd590478026675e92c7aa324936088c9">  273</a></span>    <a class="code hl_function" href="../../d4/d91/structGL_1_1LineSet.html#afd590478026675e92c7aa324936088c9">LineSet</a>(<span class="keyword">const</span> LineSet&amp; other) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    LineSet(LineSet&amp;&amp; other);<span class="comment"></span></div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="comment">    /*! \~chinese 加入一条从 a 到 b 的线段。 */</span></div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d4/d91/structGL_1_1LineSet.html#a3f29f9d457134a056b69ab382d67710d">add_line_segment</a>(<span class="keyword">const</span> Eigen::Vector3f&amp; a, <span class="keyword">const</span> Eigen::Vector3f&amp; b);<span class="comment"></span></div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="comment">    /*! \~chinese 加入一个从 from 到 to 的箭头。 */</span></div>
@@ -468,8 +468,8 @@ $(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable(t
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> size&gt;</div>
 <div class="foldopen" id="foldopen00331" data-start="{" data-end="}">
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">  331</a></span><a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">ArrayBuffer&lt;T, size&gt;::ArrayBuffer</a>(GLenum buffer_usage, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> layout_location)</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    : usage(buffer_usage), layout_location(layout_location)</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">  331</a></span><a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">ArrayBuffer&lt;T, size&gt;::ArrayBuffer</a>(GLenum buffer_usage, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a5c92fd61c3de20c99e71c48e9fa5291a">layout_location</a>)</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    : <a class="code hl_variable" href="../../d6/dba/structGL_1_1ArrayBuffer.html#aa8ecf23830cb9969726478bccb43a01c">usage</a>(buffer_usage), <a class="code hl_variable" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a5c92fd61c3de20c99e71c48e9fa5291a">layout_location</a>(<a class="code hl_variable" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a5c92fd61c3de20c99e71c48e9fa5291a">layout_location</a>)</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>{</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    glGenBuffers(1, &amp;(this-&gt;descriptor));</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>}</div>
@@ -477,8 +477,8 @@ $(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable(t
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> size&gt;</div>
 <div class="foldopen" id="foldopen00338" data-start="{" data-end="}">
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#af87b261e58ef9cb2bcf77f4e4c9eb86b">  338</a></span><a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">ArrayBuffer&lt;T, size&gt;::ArrayBuffer</a>(<a class="code hl_struct" href="../../d6/dba/structGL_1_1ArrayBuffer.html">ArrayBuffer</a>&amp;&amp; other)</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>    : descriptor(other.descriptor), usage(other.usage), layout_location(other.layout_location),</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#af87b261e58ef9cb2bcf77f4e4c9eb86b">  338</a></span><a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">ArrayBuffer&lt;T, size&gt;::ArrayBuffer</a>(<a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">ArrayBuffer</a>&amp;&amp; other)</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>    : descriptor(other.descriptor), <a class="code hl_variable" href="../../d6/dba/structGL_1_1ArrayBuffer.html#aa8ecf23830cb9969726478bccb43a01c">usage</a>(other.<a class="code hl_variable" href="../../d6/dba/structGL_1_1ArrayBuffer.html#aa8ecf23830cb9969726478bccb43a01c">usage</a>), <a class="code hl_variable" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a5c92fd61c3de20c99e71c48e9fa5291a">layout_location</a>(other.<a class="code hl_variable" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a5c92fd61c3de20c99e71c48e9fa5291a">layout_location</a>),</div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>      data(std::move(other.data))</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>{</div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    other.descriptor = 0;</div>
@@ -516,7 +516,7 @@ $(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable(t
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>    data[index * 3]       = value.x();</div>
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>    data[index * 3 + 1]   = value.y();</div>
 <div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>    data[index * 3 + 2]   = value.z();</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>    bind();</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>    <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#ae486606f2927953ef45babf8adef5bb9">bind</a>();</div>
 <div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>    glBufferSubData(GL_ARRAY_BUFFER, offset, 3 * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>), value.data());</div>
 <div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>}</div>
 </div>
@@ -550,9 +550,9 @@ $(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable(t
 <div class="line"><a id="l00394" name="l00394"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a4a875617acb4be2277ae1f1924e63731">  394</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a4a875617acb4be2277ae1f1924e63731">ArrayBuffer&lt;T, size&gt;::specify_vertex_attribute</a>()</div>
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>{</div>
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    GLenum data_type = <a class="code hl_function" href="../../de/d8b/group__platform.html#ga6efffcb404895fd65d719751e0c1a617">get_GL_type_enum&lt;T&gt;</a>();</div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>    glVertexAttribPointer(this-&gt;layout_location, size, data_type, GL_FALSE, size * <span class="keyword">sizeof</span>(T),</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>    glVertexAttribPointer(this-&gt;<a class="code hl_variable" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a5c92fd61c3de20c99e71c48e9fa5291a">layout_location</a>, size, data_type, GL_FALSE, size * <span class="keyword">sizeof</span>(T),</div>
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>                          (<span class="keywordtype">void</span>*)0);</div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>    glEnableVertexAttribArray(this-&gt;layout_location);</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>    glEnableVertexAttribArray(this-&gt;<a class="code hl_variable" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a5c92fd61c3de20c99e71c48e9fa5291a">layout_location</a>);</div>
 <div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>}</div>
 </div>
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span> </div>
@@ -560,7 +560,7 @@ $(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable(t
 <div class="foldopen" id="foldopen00403" data-start="{" data-end="}">
 <div class="line"><a id="l00403" name="l00403"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#acae88854f303cdab9f1d23bd338bb32a">  403</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#acae88854f303cdab9f1d23bd338bb32a">ArrayBuffer&lt;T, size&gt;::disable</a>()</div>
 <div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>{</div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>    glDisableVertexAttribArray(this-&gt;layout_location);</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>    glDisableVertexAttribArray(this-&gt;<a class="code hl_variable" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a5c92fd61c3de20c99e71c48e9fa5291a">layout_location</a>);</div>
 <div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>}</div>
 </div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span> </div>
@@ -568,31 +568,31 @@ $(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable(t
 <div class="foldopen" id="foldopen00409" data-start="{" data-end="}">
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno"><a class="line" href="../../d6/dba/structGL_1_1ArrayBuffer.html#af0736b43512bd7183b7f5de35f4005b0">  409</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#af0736b43512bd7183b7f5de35f4005b0">ArrayBuffer&lt;T, size&gt;::to_gpu</a>()</div>
 <div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>{</div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>    this-&gt;bind();</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>    this-&gt;<a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#ae486606f2927953ef45babf8adef5bb9">bind</a>();</div>
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>    glBufferData(GL_ARRAY_BUFFER, <span class="keyword">sizeof</span>(T) * this-&gt;data.size(), this-&gt;data.data(), this-&gt;usage);</div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>    this-&gt;specify_vertex_attribute();</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>    this-&gt;<a class="code hl_function" href="../../d6/dba/structGL_1_1ArrayBuffer.html#a4a875617acb4be2277ae1f1924e63731">specify_vertex_attribute</a>();</div>
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>}</div>
 </div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span> </div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span><span class="comment">// ElementArrayBuffer --------------------------------------</span></div>
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span> </div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> size&gt;</div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span><a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer&lt;size&gt;::ElementArrayBuffer</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> buffer_usage) : usage(buffer_usage)</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>ElementArrayBuffer&lt;size&gt;::ElementArrayBuffer(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> buffer_usage) : usage(buffer_usage)</div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>{</div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>    glGenBuffers(1, &amp;(this-&gt;descriptor));</div>
 <div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>}</div>
 <div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span> </div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> size&gt;</div>
 <div class="foldopen" id="foldopen00425" data-start="{" data-end="}">
-<div class="line"><a id="l00425" name="l00425"></a><span class="lineno"><a class="line" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a2f7352881659cbf5f07d9026409dac29">  425</a></span><a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer&lt;size&gt;::ElementArrayBuffer</a>(<a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer</a>&amp;&amp; other)</div>
-<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>    : descriptor(other.descriptor), usage(other.usage), data(std::move(other.data))</div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno"><a class="line" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a2f7352881659cbf5f07d9026409dac29">  425</a></span>ElementArrayBuffer&lt;size&gt;::ElementArrayBuffer(ElementArrayBuffer&amp;&amp; other)</div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>    : descriptor(other.descriptor), usage(other.usage), <a class="code hl_variable" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#ac8146ee6a703d9e3076aaccee1ab8642">data</a>(std::move(other.<a class="code hl_variable" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#ac8146ee6a703d9e3076aaccee1ab8642">data</a>))</div>
 <div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>{</div>
 <div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>    other.descriptor = 0;</div>
 <div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>}</div>
 </div>
 <div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span> </div>
 <div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> size&gt;</div>
-<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span><a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer&lt;size&gt;::~ElementArrayBuffer</a>()</div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>ElementArrayBuffer&lt;size&gt;::~ElementArrayBuffer()</div>
 <div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>{</div>
 <div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>    <span class="keywordflow">if</span> (this-&gt;descriptor != 0) {</div>
 <div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>        glDeleteBuffers(1, &amp;(this-&gt;descriptor));</div>
@@ -603,7 +603,7 @@ $(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable(t
 <div class="foldopen" id="foldopen00440" data-start="{" data-end="}">
 <div class="line"><a id="l00440" name="l00440"></a><span class="lineno"><a class="line" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a25fd1f84717b224a566b84214ce33ead">  440</a></span>std::size_t <a class="code hl_function" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a25fd1f84717b224a566b84214ce33ead">ElementArrayBuffer&lt;size&gt;::count</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>    <span class="keywordflow">return</span> this-&gt;data.size() / size;</div>
+<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>    <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#ac8146ee6a703d9e3076aaccee1ab8642">data</a>.size() / size;</div>
 <div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>}</div>
 </div>
 </div>
@@ -618,13 +618,13 @@ $(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable(t
 <div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>    <span class="keyword">static_assert</span>(</div>
 <div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>        <span class="keyword">sizeof</span>...(values) == size,</div>
 <div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>        <span class="stringliteral">&quot;ElementArrayBuffer: number of values to be appended must be as same as size per vertex&quot;</span>);</div>
-<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>    (this-&gt;data.push_back(values), ...);</div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>    (this-&gt;<a class="code hl_variable" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#ac8146ee6a703d9e3076aaccee1ab8642">data</a>.push_back(values), ...);</div>
 <div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>}</div>
 </div>
 </div>
 <div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span> </div>
 <div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> size&gt;</div>
-<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span><span class="keywordtype">void</span> <a class="code hl_struct" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">ElementArrayBuffer&lt;size&gt;::bind</a>()</div>
+<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span><span class="keywordtype">void</span> ElementArrayBuffer&lt;size&gt;::bind()</div>
 <div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>{</div>
 <div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span>    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, this-&gt;descriptor);</div>
 <div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>}</div>
@@ -668,7 +668,7 @@ $(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable(t
 <div class="ttc" id="astructGL_1_1ArrayBuffer_html_a20dda9b009642ee54f0b260b3622f3e2"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2">GL::ArrayBuffer::ArrayBuffer</a></div><div class="ttdeci">ArrayBuffer(GLenum buffer_usage, unsigned int layout_location)</div><div class="ttdef"><b>定义</b> gl.hpp:331</div></div>
 <div class="ttc" id="astructGL_1_1ArrayBuffer_html_a25a9ab706eefcb16a992948393006cb3"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a25a9ab706eefcb16a992948393006cb3">GL::ArrayBuffer::update</a></div><div class="ttdeci">void update(size_t index, const Eigen::Vector3f &amp;value)</div><div class="ttdoc">更新指定位置的 size 个数据。</div><div class="ttdef"><b>定义</b> gl.hpp:365</div></div>
 <div class="ttc" id="astructGL_1_1ArrayBuffer_html_a4a875617acb4be2277ae1f1924e63731"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a4a875617acb4be2277ae1f1924e63731">GL::ArrayBuffer::specify_vertex_attribute</a></div><div class="ttdeci">void specify_vertex_attribute()</div><div class="ttdef"><b>定义</b> gl.hpp:394</div></div>
-<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a5c92fd61c3de20c99e71c48e9fa5291a"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a5c92fd61c3de20c99e71c48e9fa5291a">GL::ArrayBuffer::layout_location</a></div><div class="ttdeci">unsigned int layout_location</div><div class="ttdef"><b>定义</b> gl.hpp:143</div></div>
+<div class="ttc" id="astructGL_1_1ArrayBuffer_html_a5c92fd61c3de20c99e71c48e9fa5291a"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a5c92fd61c3de20c99e71c48e9fa5291a">GL::ArrayBuffer&lt; float, 3 &gt;::layout_location</a></div><div class="ttdeci">unsigned int layout_location</div><div class="ttdef"><b>定义</b> gl.hpp:143</div></div>
 <div class="ttc" id="astructGL_1_1ArrayBuffer_html_a605a48e7c99737fb0404f54c5245be1f"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a605a48e7c99737fb0404f54c5245be1f">GL::ArrayBuffer::append</a></div><div class="ttdeci">void append(Ts... values)</div><div class="ttdef"><b>定义</b> gl.hpp:355</div></div>
 <div class="ttc" id="astructGL_1_1ArrayBuffer_html_a75e71a3f0eb57f79b044099e82065242"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a75e71a3f0eb57f79b044099e82065242">GL::ArrayBuffer::release</a></div><div class="ttdeci">void release()</div><div class="ttdef"><b>定义</b> gl.hpp:388</div></div>
 <div class="ttc" id="astructGL_1_1ArrayBuffer_html_a7e97dda8fc89ec9da70ffc4f63d5ea12"><div class="ttname"><a href="../../d6/dba/structGL_1_1ArrayBuffer.html#a7e97dda8fc89ec9da70ffc4f63d5ea12">GL::ArrayBuffer::~ArrayBuffer</a></div><div class="ttdeci">~ArrayBuffer()</div><div class="ttdef"><b>定义</b> gl.hpp:346</div></div>
@@ -683,7 +683,6 @@ $(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable(t
 <div class="ttc" id="astructGL_1_1ElementArrayBuffer_html_a2f7352881659cbf5f07d9026409dac29"><div class="ttname"><a href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a2f7352881659cbf5f07d9026409dac29">GL::ElementArrayBuffer::ElementArrayBuffer</a></div><div class="ttdeci">ElementArrayBuffer(ElementArrayBuffer &amp;&amp;other)</div><div class="ttdef"><b>定义</b> gl.hpp:425</div></div>
 <div class="ttc" id="astructGL_1_1ElementArrayBuffer_html_aa826a419aae7eb87828ceb781ee780cf"><div class="ttname"><a href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#aa826a419aae7eb87828ceb781ee780cf">GL::ElementArrayBuffer::append</a></div><div class="ttdeci">void append(Ts... values)</div><div class="ttdef"><b>定义</b> gl.hpp:447</div></div>
 <div class="ttc" id="astructGL_1_1ElementArrayBuffer_html_ac8146ee6a703d9e3076aaccee1ab8642"><div class="ttname"><a href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#ac8146ee6a703d9e3076aaccee1ab8642">GL::ElementArrayBuffer::data</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; data</div><div class="ttdef"><b>定义</b> gl.hpp:179</div></div>
-<div class="ttc" id="astructGL_1_1LineSet_html"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a></div><div class="ttdoc">在预览场景时绘制若干线条。</div><div class="ttdef"><b>定义</b> gl.hpp:270</div></div>
 <div class="ttc" id="astructGL_1_1LineSet_html_a10af9f331ed602321162b0e4a31d5a74"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html#a10af9f331ed602321162b0e4a31d5a74">GL::LineSet::to_gpu</a></div><div class="ttdeci">void to_gpu()</div><div class="ttdef"><b>定义</b> gl.cpp:281</div></div>
 <div class="ttc" id="astructGL_1_1LineSet_html_a3f29f9d457134a056b69ab382d67710d"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html#a3f29f9d457134a056b69ab382d67710d">GL::LineSet::add_line_segment</a></div><div class="ttdeci">void add_line_segment(const Eigen::Vector3f &amp;a, const Eigen::Vector3f &amp;b)</div><div class="ttdef"><b>定义</b> gl.cpp:202</div></div>
 <div class="ttc" id="astructGL_1_1LineSet_html_a517c4b363acd6859345d4b231d143263"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html#a517c4b363acd6859345d4b231d143263">GL::LineSet::add_AABB</a></div><div class="ttdeci">void add_AABB(const Eigen::Vector3f &amp;p_min, const Eigen::Vector3f &amp;p_max)</div><div class="ttdef"><b>定义</b> gl.cpp:245</div></div>
@@ -698,7 +697,6 @@ $(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable(t
 <div class="ttc" id="astructGL_1_1Material_html_a593816847c0d6811a2fc6c625670ef27"><div class="ttname"><a href="../../d4/d50/structGL_1_1Material.html#a593816847c0d6811a2fc6c625670ef27">GL::Material::shininess</a></div><div class="ttdeci">float shininess</div><div class="ttdef"><b>定义</b> gl.hpp:201</div></div>
 <div class="ttc" id="astructGL_1_1Material_html_a886340a3db61c4e1139bc795a89fe2f7"><div class="ttname"><a href="../../d4/d50/structGL_1_1Material.html#a886340a3db61c4e1139bc795a89fe2f7">GL::Material::specular</a></div><div class="ttdeci">Eigen::Vector3f specular</div><div class="ttdef"><b>定义</b> gl.hpp:199</div></div>
 <div class="ttc" id="astructGL_1_1Material_html_afbe14a21e57e922a86e202772688f2ef"><div class="ttname"><a href="../../d4/d50/structGL_1_1Material.html#afbe14a21e57e922a86e202772688f2ef">GL::Material::ambient</a></div><div class="ttdeci">Eigen::Vector3f ambient</div><div class="ttdef"><b>定义</b> gl.hpp:195</div></div>
-<div class="ttc" id="astructGL_1_1Mesh_html"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a></div><div class="ttdoc">用于场景预览渲染的 Mesh 类。</div><div class="ttdef"><b>定义</b> gl.hpp:220</div></div>
 <div class="ttc" id="astructGL_1_1Mesh_html_a2207633400950588ddd94676412bd9f0"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#a2207633400950588ddd94676412bd9f0">GL::Mesh::face</a></div><div class="ttdeci">std::array&lt; size_t, 3 &gt; face(size_t index) const</div><div class="ttdef"><b>定义</b> gl.cpp:112</div></div>
 <div class="ttc" id="astructGL_1_1Mesh_html_a23777f301b1c83def29d6028713fb348"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#a23777f301b1c83def29d6028713fb348">GL::Mesh::material</a></div><div class="ttdeci">Material material</div><div class="ttdef"><b>定义</b> gl.hpp:259</div></div>
 <div class="ttc" id="astructGL_1_1Mesh_html_a58c8d1b5f9fdc2e1657c9d3491dc0770"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html#a58c8d1b5f9fdc2e1657c9d3491dc0770">GL::Mesh::render</a></div><div class="ttdeci">void render(const Shader &amp;shader, unsigned int element_flags, bool face_shading=true, const Eigen::Vector3f &amp;global_color=default_wireframe_color)</div><div class="ttdoc">渲染这个 mesh。</div><div class="ttdef"><b>定义</b> gl.cpp:137</div></div>
@@ -718,7 +716,7 @@ $(function(){initNavTree('d7/d6a/gl_8hpp_source.html','../../'); initResizable(t
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_4b68c2fef3e151b6b93d5e93b14f1857.html">platform</a></li><li class="navelem"><a class="el" href="../../d7/d6a/gl_8hpp.html">gl.hpp</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1 </li>
   </ul>
 </div>
 </body>

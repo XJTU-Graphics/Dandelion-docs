@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="generator" content="Doxygen 1.13.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: scene.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -47,7 +47,7 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.12.0 -->
+<!-- 制作者 Doxygen 1.13.1 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -156,18 +156,18 @@ $(function(){initNavTree('db/d83/scene_8h_source.html','../../'); initResizable(
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> * 物体都会自行析构。</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"> */</span></div>
 <div class="foldopen" id="foldopen00045" data-start="{" data-end="};">
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../d5/d9c/classScene.html">   45</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d5/d9c/classScene.html">Scene</a></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../d5/d9c/classScene.html">   45</a></span><span class="keyword">class </span>Scene</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>{</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_class" href="../../d5/d9c/classScene.html">Scene</a>();<span class="comment"></span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    Scene();<span class="comment"></span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">    ///@{</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"></span><span class="comment">    /*! \~chinese 禁止复制场景。 */</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d5/d9c/classScene.html#a2dced7c96389ef0c6688ad20c8d01e81">   51</a></span>    <a class="code hl_function" href="../../d5/d9c/classScene.html#a2dced7c96389ef0c6688ad20c8d01e81">Scene</a>(<a class="code hl_class" href="../../d5/d9c/classScene.html">Scene</a>&amp; other)       = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_class" href="../../d5/d9c/classScene.html">Scene</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d5/d9c/classScene.html">Scene</a>&amp; other) = <span class="keyword">delete</span>;<span class="comment"></span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">    /*! \~chinese 禁止复制场景。 */</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d5/d9c/classScene.html#a2dced7c96389ef0c6688ad20c8d01e81">   51</a></span>    <a class="code hl_function" href="../../d5/d9c/classScene.html#a2dced7c96389ef0c6688ad20c8d01e81">Scene</a>(Scene&amp; other)       = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    Scene(<span class="keyword">const</span> Scene&amp; other) = <span class="keyword">delete</span>;<span class="comment"></span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">    ///@}</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"></span><span class="comment">    /*! \~chinese 禁止移动场景。 */</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="../../d5/d9c/classScene.html#adb7836c08d271fb2f2faebf720d7b5e2">   55</a></span>    <a class="code hl_function" href="../../d5/d9c/classScene.html#adb7836c08d271fb2f2faebf720d7b5e2">Scene</a>(<a class="code hl_class" href="../../d5/d9c/classScene.html">Scene</a>&amp;&amp; other) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_class" href="../../d5/d9c/classScene.html">~Scene</a>()             = <span class="keywordflow">default</span>;<span class="comment"></span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">    /*! \~chinese 禁止移动场景。 */</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="../../d5/d9c/classScene.html#adb7836c08d271fb2f2faebf720d7b5e2">   55</a></span>    <a class="code hl_function" href="../../d5/d9c/classScene.html#adb7836c08d271fb2f2faebf720d7b5e2">Scene</a>(Scene&amp;&amp; other) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    ~Scene()             = <span class="keywordflow">default</span>;<span class="comment"></span></div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">    /*!</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">     * \~chinese</span></div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">     * \brief 从指定路径加载模型文件到这个场景中。</span></div>
@@ -259,7 +259,6 @@ $(function(){initNavTree('db/d83/scene_8h_source.html','../../'); initResizable(
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_SCENE_SCENE_H</span></div>
 <div class="ttc" id="acamera_8h_html"><div class="ttname"><a href="../../d7/df6/camera_8h.html">camera.h</a></div></div>
 <div class="ttc" id="aclassObject_html"><div class="ttname"><a href="../../d8/d4b/classObject.html">Object</a></div><div class="ttdoc">表示物体的类。</div><div class="ttdef"><b>定义</b> object.h:40</div></div>
-<div class="ttc" id="aclassScene_html"><div class="ttname"><a href="../../d5/d9c/classScene.html">Scene</a></div><div class="ttdoc">表示一个包含相机、光源、物体的完整场景。</div><div class="ttdef"><b>定义</b> scene.h:46</div></div>
 <div class="ttc" id="aclassScene_html_a141a7d2999cde438b69442da6bbd6d79"><div class="ttname"><a href="../../d5/d9c/classScene.html#a141a7d2999cde438b69442da6bbd6d79">Scene::during_animation</a></div><div class="ttdeci">bool during_animation</div><div class="ttdef"><b>定义</b> scene.h:133</div></div>
 <div class="ttc" id="aclassScene_html_a22359fce4b3d3f44275aa5d6b2dd3dc1"><div class="ttname"><a href="../../d5/d9c/classScene.html#a22359fce4b3d3f44275aa5d6b2dd3dc1">Scene::reset_simulation</a></div><div class="ttdeci">void reset_simulation()</div><div class="ttdef"><b>定义</b> scene.cpp:224</div></div>
 <div class="ttc" id="aclassScene_html_a296ce2b55947a1a276ab86291eeeaacf"><div class="ttname"><a href="../../d5/d9c/classScene.html#a296ce2b55947a1a276ab86291eeeaacf">Scene::check_during_simulation</a></div><div class="ttdeci">bool check_during_simulation()</div><div class="ttdef"><b>定义</b> scene.cpp:237</div></div>
@@ -298,7 +297,7 @@ $(function(){initNavTree('db/d83/scene_8h_source.html','../../'); initResizable(
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_35781f0e74aa8deac19fa31b37174dc2.html">scene</a></li><li class="navelem"><a class="el" href="../../db/d83/scene_8h.html">scene.h</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1 </li>
   </ul>
 </div>
 </body>
