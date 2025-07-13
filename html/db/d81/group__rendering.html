@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.13.1"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: 离线渲染</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -13,7 +13,6 @@
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
-<script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../cookie.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
@@ -38,7 +37,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.1</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,26 +46,20 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.13.1 -->
+<!-- 制作者 Doxygen 1.14.0 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
-/* @license-end */
 </script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() { codefold.init(1); });
-/* @license-end */
+$(function() { codefold.init(); });
 </script>
 <script type="text/javascript" src="../../menudata.js"></script>
 <script type="text/javascript" src="../../menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('../../',true,false,'search.php','搜索',true);
   $(function() { init_search(); });
 });
-/* @license-end */
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
@@ -81,10 +74,9 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('db/d81/group__rendering.html','../../'); initResizable(true); });
-/* @license-end */
+$(function(){initNavTree('db/d81/group__rendering.html','../../',''); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -108,136 +100,95 @@ $(function(){initNavTree('db/d81/group__rendering.html','../../'); initResizable
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#files">文件</a> &#124;
-<a href="#nested-classes">类</a> &#124;
-<a href="#enum-members">枚举</a> &#124;
-<a href="#func-members">函数</a>  </div>
-  <div class="headertitle"><div class="title">离线渲染</div></div>
+  <div class="headertitle"><div class="title">离线渲染 </div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>针对与渲染相关的实验，Dandelion 提供由 CPU 进行软渲染的功能。  
 <a href="#details">更多...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="files" name="files"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-files" class="groupheader"><a id="files" name="files"></a>
 文件</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d22/graphics__interface_8h.html">graphics_interface.h</a></td></tr>
+<tr class="memitem:graphics_5Finterface_2Eh" id="r_graphics_5Finterface_2Eh"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d22/graphics__interface_8h.html">graphics_interface.h</a></td></tr>
 <tr class="memdesc:da/d22/graphics__interface_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">一些公用的渲染管线接口。 <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d37/rasterizer_8h.html">rasterizer.h</a></td></tr>
+<tr class="memitem:rasterizer_2Eh" id="r_rasterizer_2Eh"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d37/rasterizer_8h.html">rasterizer.h</a></td></tr>
 <tr class="memdesc:db/d37/rasterizer_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">光栅化渲染器中光栅化阶段的实现。 <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbd/rasterizer__renderer_8h.html">rasterizer_renderer.h</a></td></tr>
+<tr class="memitem:rasterizer_5Frenderer_2Eh" id="r_rasterizer_5Frenderer_2Eh"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbd/rasterizer__renderer_8h.html">rasterizer_renderer.h</a></td></tr>
 <tr class="memdesc:d9/dbd/rasterizer__renderer_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">光栅化渲染器中顶点处理、片元处理两个阶段的实现。 <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da2/render__engine_8h.html">render_engine.h</a></td></tr>
+<tr class="memitem:render_5Fengine_2Eh" id="r_render_5Fengine_2Eh"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da2/render__engine_8h.html">render_engine.h</a></td></tr>
 <tr class="memdesc:d7/da2/render__engine_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义了渲染引擎和渲染器。 <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6a/triangle_8h.html">triangle.h</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df6/camera_8h.html">camera.h</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd1/group_8h.html">group.h</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd3/light_8h.html">light.h</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d10/object_8h.html">object.h</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d83/scene_8h.html">scene.h</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:triangle_2Eh" id="r_triangle_2Eh"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6a/triangle_8h.html">triangle.h</a></td></tr>
+<tr class="memitem:camera_2Eh" id="r_camera_2Eh"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df6/camera_8h.html">camera.h</a></td></tr>
+<tr class="memitem:group_2Eh" id="r_group_2Eh"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd1/group_8h.html">group.h</a></td></tr>
+<tr class="memitem:light_2Eh" id="r_light_2Eh"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd3/light_8h.html">light.h</a></td></tr>
+<tr class="memitem:object_2Eh" id="r_object_2Eh"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d10/object_8h.html">object.h</a></td></tr>
+<tr class="memitem:scene_2Eh" id="r_scene_2Eh"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d83/scene_8h.html">scene.h</a></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 类</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a></td></tr>
+<tr class="memitem:GL_3A_3AMaterial" id="r_GL_3A_3AMaterial"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">物体材质。  <a href="../../d4/d50/structGL_1_1Material.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a></td></tr>
+<tr class="memitem:FragmentShaderPayload" id="r_FragmentShaderPayload"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">片元着色器的输入单位。  <a href="../../db/dd4/structFragmentShaderPayload.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d5b/classFrameBuffer.html">FrameBuffer</a></td></tr>
+<tr class="memitem:FrameBuffer" id="r_FrameBuffer"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d5b/classFrameBuffer.html">FrameBuffer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">一个最简化的 Frame Buffer 。  <a href="../../dc/d5b/classFrameBuffer.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/structUniforms.html">Uniforms</a></td></tr>
+<tr class="memitem:Uniforms" id="r_Uniforms"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/structUniforms.html">Uniforms</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于存储 <a class="el" href="../../d7/db0/classRasterizerRenderer.html" title="实现光栅化渲染管线。">RasterizerRenderer</a> 所需的全局变量。  <a href="../../de/d97/structUniforms.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d7a/structContext.html">Context</a></td></tr>
+<tr class="memitem:Context" id="r_Context"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d7a/structContext.html">Context</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">存放实现渲染管线所需的一些全局数据。  <a href="../../d6/d7a/structContext.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7a/classRasterizer.html">Rasterizer</a></td></tr>
+<tr class="memitem:Rasterizer" id="r_Rasterizer"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7a/classRasterizer.html">Rasterizer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">光栅化器  <a href="../../d3/d7a/classRasterizer.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d19/classVertexProcessor.html">VertexProcessor</a></td></tr>
+<tr class="memitem:VertexProcessor" id="r_VertexProcessor"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d19/classVertexProcessor.html">VertexProcessor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">负责执行顶点着色器的工作线程。  <a href="../../d1/d19/classVertexProcessor.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d3d/classFragmentProcessor.html">FragmentProcessor</a></td></tr>
+<tr class="memitem:FragmentProcessor" id="r_FragmentProcessor"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d3d/classFragmentProcessor.html">FragmentProcessor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">负责执行片元着色器的工作线程。  <a href="../../d6/d3d/classFragmentProcessor.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2f/classRenderEngine.html">RenderEngine</a></td></tr>
+<tr class="memitem:RenderEngine" id="r_RenderEngine"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2f/classRenderEngine.html">RenderEngine</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">离线渲染的执行入口  <a href="../../d3/d2f/classRenderEngine.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db0/classRasterizerRenderer.html">RasterizerRenderer</a></td></tr>
+<tr class="memitem:RasterizerRenderer" id="r_RasterizerRenderer"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db0/classRasterizerRenderer.html">RasterizerRenderer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">实现光栅化渲染管线。  <a href="../../d7/db0/classRasterizerRenderer.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db7/classWhittedRenderer.html">WhittedRenderer</a></td></tr>
+<tr class="memitem:WhittedRenderer" id="r_WhittedRenderer"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db7/classWhittedRenderer.html">WhittedRenderer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">实现 Whitted-Style 光线追踪管线。  <a href="../../da/db7/classWhittedRenderer.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d51/classTriangle.html">Triangle</a></td></tr>
+<tr class="memitem:Triangle" id="r_Triangle"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d51/classTriangle.html">Triangle</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">表示一个三角形，包括三个顶点的世界坐标,视口坐标以及每个顶点的法向向量  <a href="../../d2/d51/classTriangle.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d7e/structCamera.html">Camera</a></td></tr>
+<tr class="memitem:Camera" id="r_Camera"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d7e/structCamera.html">Camera</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">表示观察点的相机，既可以用于预览视角，也可以用于渲染视角。  <a href="../../d7/d7e/structCamera.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db7/classGroup.html">Group</a></td></tr>
+<tr class="memitem:Group" id="r_Group"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db7/classGroup.html">Group</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">表示物体组的类。  <a href="../../d0/db7/classGroup.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d79/structLight.html">Light</a></td></tr>
+<tr class="memitem:Light" id="r_Light"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d79/structLight.html">Light</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">一个点光源。  <a href="../../d5/d79/structLight.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html">Object</a></td></tr>
+<tr class="memitem:Object" id="r_Object"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/classObject.html">Object</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">表示物体的类。  <a href="../../d8/d4b/classObject.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td></tr>
+<tr class="memitem:Scene" id="r_Scene"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">表示一个包含相机、光源、物体的完整场景。  <a href="../../d5/d9c/classScene.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/structRay.html">Ray</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d30/structIntersection.html">Intersection</a></td></tr>
+<tr class="memitem:Ray" id="r_Ray"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/structRay.html">Ray</a></td></tr>
+<tr class="memitem:Intersection" id="r_Intersection"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d30/structIntersection.html">Intersection</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">表示射线与 Mesh 相交结果的结构体。  <a href="../../d6/d30/structIntersection.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
 枚举</h2></td></tr>
 <tr class="memitem:gadf8e136713c0691010d2bec6ba63e9cf" id="r_gadf8e136713c0691010d2bec6ba63e9cf"><td class="memItemLeft" align="right" valign="top"><a id="gadf8e136713c0691010d2bec6ba63e9cf" name="gadf8e136713c0691010d2bec6ba63e9cf"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gadf8e136713c0691010d2bec6ba63e9cf">BufferType</a> { <b>Color</b> = 1
 , <b>Depth</b> = 2
  }</td></tr>
 <tr class="memdesc:gadf8e136713c0691010d2bec6ba63e9cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于选择 buffer 的类型 <br /></td></tr>
-<tr class="separator:gadf8e136713c0691010d2bec6ba63e9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae9c668e3a273ce92b9f4e134d0cbd6ce" id="r_gae9c668e3a273ce92b9f4e134d0cbd6ce"><td class="memItemLeft" align="right" valign="top"><a id="gae9c668e3a273ce92b9f4e134d0cbd6ce" name="gae9c668e3a273ce92b9f4e134d0cbd6ce"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae9c668e3a273ce92b9f4e134d0cbd6ce">RendererType</a> { <b>RASTERIZER</b>
 , <b>WHITTED_STYLE</b>
  }</td></tr>
 <tr class="memdesc:gae9c668e3a273ce92b9f4e134d0cbd6ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">可用的渲染器类型 <br /></td></tr>
-<tr class="separator:gae9c668e3a273ce92b9f4e134d0cbd6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 函数</h2></td></tr>
 <tr class="memitem:gaf95c1a4382cc7c01a134fbdd9e7db1c4" id="r_gaf95c1a4382cc7c01a134fbdd9e7db1c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf95c1a4382cc7c01a134fbdd9e7db1c4">vertex_shader</a> (const <a class="el" href="../../d9/d78/structVertexShaderPayload.html">VertexShaderPayload</a> &amp;payload)</td></tr>
 <tr class="memdesc:gaf95c1a4382cc7c01a134fbdd9e7db1c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算顶点的各项属性几何变化。  <br /></td></tr>
-<tr class="separator:gaf95c1a4382cc7c01a134fbdd9e7db1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga23e48f4922a0422f0e9679f65daaef5f" id="r_ga23e48f4922a0422f0e9679f65daaef5f"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga23e48f4922a0422f0e9679f65daaef5f">phong_fragment_shader</a> (const <a class="el" href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a> &amp;payload, const <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &amp;material, const std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;lights, const <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp;camera)</td></tr>
 <tr class="memdesc:ga23e48f4922a0422f0e9679f65daaef5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用 Blinn Phong 着色模型计算每个片元（像素）的颜色。  <br /></td></tr>
-<tr class="separator:ga23e48f4922a0422f0e9679f65daaef5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga058f7f5f254453b5df93c093ebde122a" id="r_ga058f7f5f254453b5df93c093ebde122a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d5e/structRay.html">Ray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga058f7f5f254453b5df93c093ebde122a">generate_ray</a> (int width, int height, int x, int y, <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp;camera, float depth)</td></tr>
 <tr class="memdesc:ga058f7f5f254453b5df93c093ebde122a"><td class="mdescLeft">&#160;</td><td class="mdescRight">给定成像平面的宽度和高度、成像平面上的坐标、成像平面的深度和相机，生成一条射线。  <br /></td></tr>
-<tr class="separator:ga058f7f5f254453b5df93c093ebde122a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab851f3686bc57e3a8cc135f68f3871a5" id="r_gab851f3686bc57e3a8cc135f68f3871a5"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab851f3686bc57e3a8cc135f68f3871a5">ray_triangle_intersect</a> (const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray, const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;mesh, size_t index)</td></tr>
 <tr class="memdesc:gab851f3686bc57e3a8cc135f68f3871a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断光线ray是否与某个面片相交  <br /></td></tr>
-<tr class="separator:gab851f3686bc57e3a8cc135f68f3871a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1a3a6b802c525058a523c2dadaae1f2b" id="r_ga1a3a6b802c525058a523c2dadaae1f2b"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1a3a6b802c525058a523c2dadaae1f2b">naive_intersect</a> (const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray, const <a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> &amp;mesh, const Eigen::Matrix4f model)</td></tr>
 <tr class="memdesc:ga1a3a6b802c525058a523c2dadaae1f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">用朴素方法判断射线是否与给定的 mesh 相交。  <br /></td></tr>
-<tr class="separator:ga1a3a6b802c525058a523c2dadaae1f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <p>针对与渲染相关的实验，Dandelion 提供由 CPU 进行软渲染的功能。 </p>
 <p>虽然运行在 GPU 上的着色器语言 (shading language) 适合高效渲染，但由于 GPU 编程和 CPU 编程差异不小，单独讲授着色器语言会导致实验内容比较分裂。为了让同学更专注于光照、着色两类重要的渲染模型，我们统一使用软渲染的方式实现了两种渲染方法：</p>
 <ul>
@@ -246,12 +197,12 @@ $(function(){initNavTree('db/d81/group__rendering.html','../../'); initResizable
 </ul>
 <p>进行一次渲染需要三个要素：</p>
 <ul>
-<li>物体：若干个 <code><a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a></code> 对象。</li>
-<li>光源：加入 <code><a class="el" href="../../d5/d79/structLight.html" title="一个点光源。">Light</a></code> 对象并设置位置和光照强度。</li>
-<li>相机：加入 <code><a class="el" href="../../d7/d7e/structCamera.html" title="表示观察点的相机，既可以用于预览视角，也可以用于渲染视角。">Camera</a></code> 对象并设置位置、朝向、视角大小、近平面和远平面。</li>
+<li>物体：若干个 <span class="tt"><a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a></span> 对象。</li>
+<li>光源：加入 <span class="tt"><a class="el" href="../../d5/d79/structLight.html" title="一个点光源。">Light</a></span> 对象并设置位置和光照强度。</li>
+<li>相机：加入 <span class="tt"><a class="el" href="../../d7/d7e/structCamera.html" title="表示观察点的相机，既可以用于预览视角，也可以用于渲染视角。">Camera</a></span> 对象并设置位置、朝向、视角大小、近平面和远平面。</li>
 </ul>
-<p>这些要素都被包含于一个 <code><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a></code> 对象中。渲染器应当提供一个 <code>render</code> 方法，接受一个 <code><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a>&amp;</code> 类型的输入，按相机指定的视角，遍历场景中的物体和光源进行渲染。渲染结果应当写入到一个总长为图片宽度 \(\times\) 图片高度 \(\times\) 颜色通道数的 <b>一维数组</b> 中。这个一维数组应该是行优先的，可以被外界直接访问。 </p>
-<h2 class="groupheader">函数说明</h2>
+<p>这些要素都被包含于一个 <span class="tt"><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a></span> 对象中。渲染器应当提供一个 <span class="tt">render</span> 方法，接受一个 <span class="tt"><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a>&amp;</span> 类型的输入，按相机指定的视角，遍历场景中的物体和光源进行渲染。渲染结果应当写入到一个总长为图片宽度 \(\times\) 图片高度 \(\times\) 颜色通道数的 <b>一维数组</b> 中。这个一维数组应该是行优先的，可以被外界直接访问。 </p>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
 <a id="ga058f7f5f254453b5df93c093ebde122a" name="ga058f7f5f254453b5df93c093ebde122a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga058f7f5f254453b5df93c093ebde122a">&#9670;&#160;</a></span>generate_ray()</h2>
 
@@ -341,7 +292,7 @@ $(function(){initNavTree('db/d81/group__rendering.html','../../'); initResizable
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>返回</dt><dd>一个 <code>std::optional</code> 对象，若相交，则此对象有值 (<code>has_value() == true</code>)；不相交则返回 <code>std::nullopt</code> 。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>一个 <span class="tt">std::optional</span> 对象，若相交，则此对象有值 (<span class="tt">has_value() == true</span>)；不相交则返回 <span class="tt">std::nullopt</span> 。 </dd></dl>
 
 </div>
 </div>
@@ -421,7 +372,7 @@ $(function(){initNavTree('db/d81/group__rendering.html','../../'); initResizable
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>返回</dt><dd>一个 <code>std::optional</code> 对象，若相交，则此对象有值 (<code>has_value() == true</code>)；不相交则返回 <code>std::nullopt</code> 。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>一个 <span class="tt">std::optional</span> 对象，若相交，则此对象有值 (<span class="tt">has_value() == true</span>)；不相交则返回 <span class="tt">std::nullopt</span> 。 </dd></dl>
 
 </div>
 </div>
@@ -453,10 +404,18 @@ $(function(){initNavTree('db/d81/group__rendering.html','../../'); initResizable
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>
 </body>

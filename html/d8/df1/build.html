@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.13.1"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: 构建</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -13,7 +13,6 @@
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
-<script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../cookie.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
@@ -38,7 +37,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.1</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,26 +46,20 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.13.1 -->
+<!-- 制作者 Doxygen 1.14.0 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
-/* @license-end */
 </script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() { codefold.init(1); });
-/* @license-end */
+$(function() { codefold.init(); });
 </script>
 <script type="text/javascript" src="../../menudata.js"></script>
 <script type="text/javascript" src="../../menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('../../',true,false,'search.php','搜索',true);
   $(function() { init_search(); });
 });
-/* @license-end */
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
@@ -81,10 +74,9 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('d8/df1/build.html','../../'); initResizable(true); });
-/* @license-end */
+$(function(){initNavTree('d8/df1/build.html','../../',''); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -108,10 +100,10 @@ $(function(){initNavTree('d8/df1/build.html','../../'); initResizable(true); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">构建</div></div>
+  <div class="headertitle"><div class="title">构建 </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="environment"></a>
+<div class="textblock"><h1 class="doxsection"><a class="anchor" id="environment"></a>
 编译和运行环境</h1>
 <p>编译和运行的环境必须满足如下条件：</p>
 <ul>
@@ -122,24 +114,24 @@ $(function(){initNavTree('d8/df1/build.html','../../'); initResizable(true); });
 <p>运行于 x86-64 硬件架构上的 Windows 10 / 11、macOS 和 Debian / Ubuntu / Linux Mint / Fedora / Arch Linux / Manjaro 等常见 Linux 发行版均满足条件。使用 Apple M 系列芯片 (Apple Silicon) 的 macbook 和 iMac 同样可以。</p>
 <p>在 Linux 平台上，我们仅对 KDE 和 GNOME 两种桌面环境提供支持。其他的桌面环境上也许可以运行，但我们不提供任何保证。</p>
 <blockquote class="doxtable">
-<p>&zwj;非常不建议使用虚拟机中的系统，因为 Virtual Box 支持的 OpenGL 版本太低，而 VMware 的虚拟显卡驱动实现的 OpenGL API 疑似存在 bug。</p>
+<p>非常不建议使用虚拟机中的系统，因为 Virtual Box 支持的 OpenGL 版本太低，而 VMware 的虚拟显卡驱动实现的 OpenGL API 疑似存在 bug。</p>
 <p>目前已经确认 VMware 创建的 Windows 虚拟机完全不能正常使用 Dandelion 框架；Linux 虚拟机也许可以运行，但依然有可能出现问题，并且我们 <b>不负责解决任何在虚拟机下运行产生的问题</b> 。</p>
 <p>同理，不建议使用 WSL 进行实验。因为 WSL2 本质上也是一个虚拟机，我们确实没有精力去解决虚拟环境带来的问题。 </p>
 </blockquote>
-<h1><a class="anchor" id="dependencies"></a>
+<h1 class="doxsection"><a class="anchor" id="dependencies"></a>
 依赖</h1>
 <p>这个项目依赖于如下的第三方库：</p>
 <ul>
 <li>GLFW 3.3.8, Zlib License</li>
 <li>GLAD (OpenGL Core Profile, version &gt;= 3.3), MIT &amp; Apache License</li>
 <li>Eigen (commit 12068cbcdb835d7bd88b09d8439d2171e856be06), Mozilla Public License</li>
-<li>Assimp 5.2.5, Open Assert Import Library License</li>
-<li>Dear ImGui 1.89.3 (docking branch), MIT License</li>
+<li>Assimp 6.0.2, Open Assert Import Library License</li>
+<li>Dear ImGui 1.92.1 (docking branch), MIT License</li>
 <li>stb_image 2.30, MIT License &amp; Public Domain</li>
-<li>stb_image_write 1.16 (modified for AppleClang compatibility), MIT License &amp; Public Domain</li>
-<li>spdlog 1.14.1, MIT License</li>
-<li>{fmt} 11.0.2, {fmt}'s License</li>
+<li>spdlog 1.15.3, MIT License</li>
+<li>{fmt} 11.2.0, {fmt}'s License</li>
 <li>portable-file-dialogs (commit 7f852d88a480020d7f91957cbcefe514fc95000c), WTFPL License</li>
+<li>Catch2 3.8.1, BOOST Software License</li>
 </ul>
 <p>在 Linux 平台上，为了编译 GLFW ，你可能需要按照 <a href="https://www.glfw.org/docs/latest/compile_guide.html">Compiling GLFW</a> 的要求安装相应的依赖库。除此以外，所有的依赖项均被包含于 <em>deps</em> 子目录中，不需要额外下载或安装。由于我们对一些库进行了修复移植或裁剪，也请不要轻易尝试替换 <em>deps</em> 目录下的第三方库，它们和官方发布的相应版本可能并不完全一样。</p>
 <p>由于 Dandelion 首先是一个实验框架，用于西安交通大学计算机图形学课程教学，我们在 Dandelion 的公开频道上删去了所有实验题目的参考答案。然而物体拾取 (picking) 等功能依赖于射线求交，这部分代码被删去后会造成相当的不便。对此，我们的解决方案是将 <em>utils</em> 目录下的 <em>aabb.cpp</em>, <em>bvh.cpp</em> 和 <em>ray.cpp</em> 文件编译成两个静态库 <em>dandelion-ray</em> 和 <em>dandelion-bvh</em> ，只要在编译时链接它们就可以直接使用我们提供的实现。我们目前编译了这些版本的库：</p>
@@ -148,43 +140,45 @@ $(function(){initNavTree('d8/df1/build.html','../../'); initResizable(true); });
 <li>Linux: GCC 11 / Clang 14</li>
 <li>macOS: AppleClang 14.0</li>
 </ul>
-<p>如果你想要使用这个静态库，请到仓库 Release 中下载符合自己操作系统、编译器的版本。带有 <code>-debug</code> 后缀的库用于 Debug 模式，不带此后缀的用于 Release 模式。相应的链接指令在 CMakeLists.txt 中已经写好，将四个文件都放置于 <em>deps</em> 目录下即可通过编译。</p>
+<p>如果你想要使用这个静态库，请到仓库 Release 中下载符合自己操作系统、编译器的版本。带有 <span class="tt">-debug</span> 后缀的库用于 Debug 模式，不带此后缀的用于 Release 模式。相应的链接指令在 CMakeLists.txt 中已经写好，将四个文件都放置于 <em>deps</em> 目录下即可通过编译。</p>
 <p>源代码、静态库和预编译的可执行文件都发布在 GitHub 和 Gitee 两个平台，仓库地址分别为：</p>
 <ul>
 <li><a href="https://github.com/XJTU-Graphics/dandelion">https://github.com/XJTU-Graphics/dandelion</a></li>
 <li><a href="https://gitee.com/xjtu-graphics/dandelion">https://gitee.com/xjtu-graphics/dandelion</a></li>
 </ul>
-<h1><a class="anchor" id="requests"></a>
+<h1 class="doxsection"><a class="anchor" id="requests"></a>
 工具需求</h1>
 <ul>
 <li>支持 C++ 20 标准的编译器<ul>
 <li>最低要求 Visual Studio 2019、GNU GCC 11、Clang 14 。由于我们开启的警告等级很高，更低版本的编译器可能会产生错误的警告。</li>
-<li>推荐使用 Visual Studio 2022、GNU GCC 12+、Clang 15+ ，推荐使用最新的稳定版本。</li>
+<li>推荐使用 Visual Studio 2022、GNU GCC 12+、Clang 15+ ，可以使用最新的稳定版本。</li>
 </ul>
 </li>
 <li>CMake 3.14 及以上（推荐使用最新的稳定版本）</li>
 </ul>
 <p>在 Windows 平台上，从官方网站下载安装足够新的 Visual Studio 和 CMake 即可；在 Linux 平台上可以用包管理器安装编译器和 CMake；在 macOS 平台上，我们推荐安装 Xcode 命令行工具（不是 Xcode IDE），并使用 Homebrew 安装 CMake。</p>
 <blockquote class="doxtable">
-<p>&zwj;基于 Debian 的 Linux 发行版（使用 apt 包管理器）中，所需软件包名是 <code>build-essential cmake cmake-extras</code>，其他发行版请自行确定对应的包，亦可选择从源代码编译安装。 </p>
+<p>基于 Debian 的 Linux 发行版（使用 apt 包管理器）中，所需软件包名是 <span class="tt">build-essential cmake cmake-extras</span>，其他发行版请自行确定对应的包，亦可选择从源代码编译安装。 </p>
 </blockquote>
 <p>我们使用 portable-file-dialogs 实现模型文件选择的对话框，这个库使在不同的平台上使用不同的原生命令或 API。在 Linux 平台上需要额外注意一些问题：</p>
 <ul>
-<li>在 KDE 桌面环境下它使用 <code>kdialog</code> 命令，使用 KDE 桌面环境的同学请尝试执行 <code>kdialog</code> 命令以检查此命令是否存在。如不存在，你的 Dandelion 将无法加载模型文件，此时你应当安装包含该命令的软件包。 <blockquote class="doxtable">
-<p>&zwj;目前已发现 Manjaro KDE 不自带 <code>kdialog</code> 命令，请执行 <code>sudo pacman -S kdialog</code> 来安装它。其他发行版请自行查找对应的软件包名称。 </p>
+<li>在 KDE 桌面环境下它使用 <span class="tt">kdialog</span> 命令，使用 KDE 桌面环境的同学请尝试执行 <span class="tt">kdialog</span> 命令以检查此命令是否存在。如不存在，你的 Dandelion 将无法加载模型文件，此时你应当安装包含该命令的软件包。 <blockquote class="doxtable">
+<p>目前已发现 Manjaro KDE 不自带 <span class="tt">kdialog</span> 命令，请执行 <span class="tt">sudo pacman -S kdialog</span> 来安装它。其他发行版请自行查找对应的软件包名称。 </p>
 </blockquote>
 </li>
-<li>在 GNOME 桌面面环境下它使用 <code>zenity</code>、<code>matedialog</code> 或 <code>qarma</code> 命令，使用 GNOME 桌面环境的同学请确认你的系统上至少可以执行其中一个命令。如果全都不能执行，请安装其中之一。</li>
-<li>其他桌面环境不受支持。理论上 KDE 或 GNOME 的衍生版本也许可以通过 <code>kdialog</code> 或 <code>zenity</code> 命令创建对话框，但我们不对此提供任何保证，也不会分散精力解决非 KDE / GNOME 桌面环境的任何问题。</li>
 </ul>
-<h1><a class="anchor" id="compilation"></a>
+<ul>
+<li>在 GNOME 桌面面环境下它使用 <span class="tt">zenity</span>、<span class="tt">matedialog</span> 或 <span class="tt">qarma</span> 命令，使用 GNOME 桌面环境的同学请确认你的系统上至少可以执行其中一个命令。如果全都不能执行，请安装其中之一。</li>
+<li>其他桌面环境不受支持。理论上 KDE 或 GNOME 的衍生版本也许可以通过 <span class="tt">kdialog</span> 或 <span class="tt">zenity</span> 命令创建对话框，但我们不对此提供任何保证，也不会分散精力解决非 KDE / GNOME 桌面环境的任何问题。</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="compilation"></a>
 编译</h1>
 <p>由于日志输出是调试实验的重要参考，我们始终推荐从 <b>终端</b> 启动 Dandelion。在 Windows 平台上，我们推荐使用 PowerShell 而非 cmd，并推荐使用 Windows Terminal 作为终端模拟器；在 Linux 或 macOS 平台上可以直接使用默认的 shell 和终端模拟器，更熟悉这些工具的话也可以自己挑选。</p>
 <p>以下的所有说明中，均以“终端”代指终端模拟器而非 shell。不清楚二者区别的话，可以简单认为“终端”就是指能执行命令的窗口。</p>
 <p>由于我们人力有限，Dandelion 仅支持 Debug 和 Release 两种构建类型，在不修改 <em>CMakeLists.txt</em> 的情况下，你也只能用这两个类型构建 Dandelion。这并不意味着 MinSizeRel 和 RelWithDebInfo 类型一定会构建出错，但我们不会在这两个模式下作任何测试。</p>
-<h2><a class="anchor" id="compilation-windows"></a>
+<h2 class="doxsection"><a class="anchor" id="compilation-windows"></a>
 Windows</h2>
-<p>由于 Dandelion 的源文件中包含 UTF-8 编码的中文，整个项目需要开启 <code>/utf-8</code> 选项编译，而 Windows 文件系统默认的中文编码是 GBK ，这可能导致兼容性问题（表现为“无访问权限”等）。因此，Dandelion 的源代码必须位于全英文路径下。</p>
+<p>由于 Dandelion 的源文件中包含 UTF-8 编码的中文，整个项目需要开启 <span class="tt">/utf-8</span> 选项编译，而 Windows 文件系统默认的中文编码是 GBK ，这可能导致兼容性问题（表现为“无访问权限”等）。因此，Dandelion 的源代码必须位于全英文路径下。</p>
 <p>打开终端，进入 dandelion 根目录并执行如下命令：</p>
 <div class="fragment"><div class="line">&gt; New-Item -ItemType &quot;directory&quot; build</div>
 <div class="line">&gt; Set-Location build</div>
@@ -196,7 +190,7 @@ Windows</h2>
 <div class="fragment"><div class="line">&gt; cmake --build . --config Release --target dandelion --parallel 8</div>
 <div class="line">&gt; .\Release\dandelion.exe</div>
 </div><!-- fragment --><p>如果你希望在 Windows 平台上使用 MinGW 工具链构建，请注意 MinGW 是 Single-config 构建工具，执行命令的方式与 Linux 平台相同。</p>
-<h2><a class="anchor" id="compilation-linux"></a>
+<h2 class="doxsection"><a class="anchor" id="compilation-linux"></a>
 Linux</h2>
 <p>打开终端，进入 dandelion 目录并执行如下命令：</p>
 <div class="fragment"><div class="line">$ mkdir build</div>
@@ -208,18 +202,26 @@ Linux</h2>
 </div><!-- fragment --><p>GNU Make 是 Single-config 的构建工具，需要重新配置 CMake 项目才能改变构建类型：</p>
 <div class="fragment"><div class="line">$ cmake -S .. -B . -DCMAKE_BUILD_TYPE=Release</div>
 <div class="line">$ cmake --build . --parallel 8</div>
-</div><!-- fragment --><p>调整 <code>cmake</code> 命令的参数可以调整编译设置。修改 <code>--parallel</code> 参数后接的数字可以调整编译器使用的线程数，建议和物理核心数量等同。</p>
-<h2><a class="anchor" id="compilation-macos"></a>
+</div><!-- fragment --><p>调整 <span class="tt">cmake</span> 命令的参数可以调整编译设置。修改 <span class="tt">--parallel</span> 参数后接的数字可以调整编译器使用的线程数，建议和物理核心数量等同。</p>
+<h2 class="doxsection"><a class="anchor" id="compilation-macos"></a>
 macOS</h2>
 <p>macOS 同样支持 GNU Make 工具，因此打开终端执行和 Linux 平台相同的命令即可。</p>
 <p>Dandelion 应当可以使用 Xcode 编译，请注意 Xcode 和 Visual Studio 一样是 Multi-config 的构建系统，应该参照 Windows 的命令编译。我们人力有限，目前不会测试 Xcode 兼容性。 </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>
 </body>

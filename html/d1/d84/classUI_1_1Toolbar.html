@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.13.1"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: UI::Toolbar类 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -13,7 +13,6 @@
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
-<script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../cookie.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
@@ -38,7 +37,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.1</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,26 +46,20 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.13.1 -->
+<!-- 制作者 Doxygen 1.14.0 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
-/* @license-end */
 </script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() { codefold.init(1); });
-/* @license-end */
+$(function() { codefold.init(); });
 </script>
 <script type="text/javascript" src="../../menudata.js"></script>
 <script type="text/javascript" src="../../menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('../../',true,false,'search.php','搜索',true);
   $(function() { init_search(); });
 });
-/* @license-end */
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
@@ -81,10 +74,9 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('d1/d84/classUI_1_1Toolbar.html','../../'); initResizable(true); });
-/* @license-end */
+$(function(){initNavTree('d1/d84/classUI_1_1Toolbar.html','../../','de/dfb/classUI_1_1Toolbar-members'); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -108,12 +100,6 @@ $(function(){initNavTree('d1/d84/classUI_1_1Toolbar.html','../../'); initResizab
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public 成员函数</a> &#124;
-<a href="#pub-attribs">Public 属性</a> &#124;
-<a href="#pri-methods">Private 成员函数</a> &#124;
-<a href="#pri-attribs">Private 属性</a> &#124;
-<a href="../../de/dfb/classUI_1_1Toolbar-members.html">所有成员列表</a>  </div>
   <div class="headertitle"><div class="title">UI::Toolbar类 参考<div class="ingroups"><a class="el" href="../../dd/df1/group__ui.html">UI 界面</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -123,50 +109,36 @@ $(function(){initNavTree('d1/d84/classUI_1_1Toolbar.html','../../'); initResizab
 
 <p><code>#include &lt;<a class="el" href="../../dc/d2a/toolbar_8h_source.html">toolbar.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:aff62aaa8d997eb9bbe317086bc09363d" id="r_aff62aaa8d997eb9bbe317086bc09363d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff62aaa8d997eb9bbe317086bc09363d">Toolbar</a> (<a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> &amp;<a class="el" href="#add08621ffdcd3f942f5b60b43f562c8f">mode</a>, const <a class="el" href="../../dd/df1/group__ui.html#ga638a76ca8c5a67cdc5a1e918f7c6e5c1">SelectableType</a> &amp;<a class="el" href="#a0dcd3ac429afd8adfed64e5039dc89e3">selected_element</a>)</td></tr>
 <tr class="memdesc:aff62aaa8d997eb9bbe317086bc09363d"><td class="mdescLeft">&#160;</td><td class="mdescRight">工具栏持有对工作模式的引用和对选中元素的引用，构造时必须传递。  <br /></td></tr>
-<tr class="separator:aff62aaa8d997eb9bbe317086bc09363d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37fdcc0bb4811b139392c198e160fcc9" id="r_a37fdcc0bb4811b139392c198e160fcc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37fdcc0bb4811b139392c198e160fcc9">render</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
-<tr class="separator:a37fdcc0bb4811b139392c198e160fcc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
 <tr class="memitem:ad5fcda1faa3917c08110df1ff206feee" id="r_ad5fcda1faa3917c08110df1ff206feee"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(<a class="el" href="../../dd/df1/group__ui.html#ga638a76ca8c5a67cdc5a1e918f7c6e5c1">SelectableType</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5fcda1faa3917c08110df1ff206feee">on_element_selected</a></td></tr>
-<tr class="separator:ad5fcda1faa3917c08110df1ff206feee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc398afcfb71e5cf3c8a2aca31559eb9" id="r_afc398afcfb71e5cf3c8a2aca31559eb9"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc398afcfb71e5cf3c8a2aca31559eb9">on_selection_canceled</a></td></tr>
-<tr class="separator:afc398afcfb71e5cf3c8a2aca31559eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private 成员函数</h2></td></tr>
 <tr class="memitem:a84d933b6a271924fe5fc548189ded079" id="r_a84d933b6a271924fe5fc548189ded079"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84d933b6a271924fe5fc548189ded079">scene_hierarchies</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
-<tr class="separator:a84d933b6a271924fe5fc548189ded079"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94b7f785c6e51be73447e8d10df9532c" id="r_a94b7f785c6e51be73447e8d10df9532c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94b7f785c6e51be73447e8d10df9532c">xyz_drag</a> (float *x, float *y, float *z, float v_speed, const char *format=&quot;%.2f&quot;)</td></tr>
-<tr class="separator:a94b7f785c6e51be73447e8d10df9532c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a797214ffc12efbe2ff3df22c0f14e6a7" id="r_a797214ffc12efbe2ff3df22c0f14e6a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a797214ffc12efbe2ff3df22c0f14e6a7">material_editor</a> (<a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &amp;material)</td></tr>
-<tr class="separator:a797214ffc12efbe2ff3df22c0f14e6a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cf3bc8527c3d840dde41d2eb3d6a6d7" id="r_a8cf3bc8527c3d840dde41d2eb3d6a6d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cf3bc8527c3d840dde41d2eb3d6a6d7">layout_mode</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
-<tr class="separator:a8cf3bc8527c3d840dde41d2eb3d6a6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49ef414deed485a34ec70f1a10b7bf54" id="r_a49ef414deed485a34ec70f1a10b7bf54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49ef414deed485a34ec70f1a10b7bf54">model_mode</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
-<tr class="separator:a49ef414deed485a34ec70f1a10b7bf54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23e737df11534a74a7eda73edf362423" id="r_a23e737df11534a74a7eda73edf362423"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23e737df11534a74a7eda73edf362423">render_mode</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
-<tr class="separator:a23e737df11534a74a7eda73edf362423"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab772e3adb26059c23e482a4e8332f34d" id="r_ab772e3adb26059c23e482a4e8332f34d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab772e3adb26059c23e482a4e8332f34d">simulate_mode</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
-<tr class="separator:ab772e3adb26059c23e482a4e8332f34d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private 属性</h2></td></tr>
 <tr class="memitem:add08621ffdcd3f942f5b60b43f562c8f" id="r_add08621ffdcd3f942f5b60b43f562c8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add08621ffdcd3f942f5b60b43f562c8f">mode</a></td></tr>
-<tr class="separator:add08621ffdcd3f942f5b60b43f562c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dcd3ac429afd8adfed64e5039dc89e3" id="r_a0dcd3ac429afd8adfed64e5039dc89e3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../dd/df1/group__ui.html#ga638a76ca8c5a67cdc5a1e918f7c6e5c1">SelectableType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dcd3ac429afd8adfed64e5039dc89e3">selected_element</a></td></tr>
-<tr class="separator:a0dcd3ac429afd8adfed64e5039dc89e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5b4ea4e22b1ef5ff94c988fc4ce6adf" id="r_af5b4ea4e22b1ef5ff94c988fc4ce6adf"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5b4ea4e22b1ef5ff94c988fc4ce6adf">gl_rendered_texture</a></td></tr>
-<tr class="separator:af5b4ea4e22b1ef5ff94c988fc4ce6adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>工具栏提供大部分对场景、物体、相机和光源的操作。 </p>
-</div><h2 class="groupheader">构造及析构函数说明</h2>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
 <a id="aff62aaa8d997eb9bbe317086bc09363d" name="aff62aaa8d997eb9bbe317086bc09363d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aff62aaa8d997eb9bbe317086bc09363d">&#9670;&#160;</a></span>Toolbar()</h2>
 
@@ -187,15 +159,15 @@ Private 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>工具栏持有对工作模式的引用和对选中元素的引用，构造时必须传递。 </p>
-<p>工具栏还有 <code>on_element_selected</code> 和 <code>on_selection_canceled</code> 两个与选择和拾取有关的回调函数，如果没有设置这两个回调函数，工具栏将不能正常工作。 但构造函数并不会设置它们，而是由控制器在创建工具栏时设置。目前，</p>
+<p>工具栏还有 <span class="tt">on_element_selected</span> 和 <span class="tt">on_selection_canceled</span> 两个与选择和拾取有关的回调函数，如果没有设置这两个回调函数，工具栏将不能正常工作。 但构造函数并不会设置它们，而是由控制器在创建工具栏时设置。目前，</p>
 <ul>
-<li><code>on_element_selected</code> 回调对应 <code><a class="el" href="../../d9/d85/classController.html#ae4c72b93b65e486a002d4cb872e614de" title="选择一个元素。">Controller::select</a></code></li>
-<li><code>on_selection_canceled</code> 回调对应 <code><a class="el" href="../../d9/d85/classController.html#a69e94c079159d625ae394d3fd5fa1680" title="取消选择。">Controller::unselect</a></code> </li>
+<li><span class="tt">on_element_selected</span> 回调对应 <span class="tt"><a class="el" href="../../d9/d85/classController.html#ae4c72b93b65e486a002d4cb872e614de" title="选择一个元素。">Controller::select</a></span></li>
+<li><span class="tt">on_selection_canceled</span> 回调对应 <span class="tt"><a class="el" href="../../d9/d85/classController.html#a69e94c079159d625ae394d3fd5fa1680" title="取消选择。">Controller::unselect</a></span> </li>
 </ul>
 
 </div>
 </div>
-<h2 class="groupheader">成员函数说明</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
 <a id="a8cf3bc8527c3d840dde41d2eb3d6a6d7" name="a8cf3bc8527c3d840dde41d2eb3d6a6d7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8cf3bc8527c3d840dde41d2eb3d6a6d7">&#9670;&#160;</a></span>layout_mode()</h2>
 
@@ -411,11 +383,11 @@ Private 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>显示标签分别为 x, y, z 的三个 <code>ImGui::DragFloat</code> 控件。 </p>
+<p>显示标签分别为 x, y, z 的三个 <span class="tt">ImGui::DragFloat</span> 控件。 </p>
 
 </div>
 </div>
-<h2 class="groupheader">类成员变量说明</h2>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
 <a id="af5b4ea4e22b1ef5ff94c988fc4ce6adf" name="af5b4ea4e22b1ef5ff94c988fc4ce6adf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af5b4ea4e22b1ef5ff94c988fc4ce6adf">&#9670;&#160;</a></span>gl_rendered_texture</h2>
 
@@ -458,7 +430,7 @@ Private 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>与 Dandelion 的工作模式一一对应，<code>render</code> 方法据此调整渲染行为。 </p>
+<p>与 Dandelion 的工作模式一一对应，<span class="tt">render</span> 方法据此调整渲染行为。 </p>
 
 </div>
 </div>
@@ -521,11 +493,19 @@ Private 属性</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>UI</b></li><li class="navelem"><a class="el" href="../../d1/d84/classUI_1_1Toolbar.html">Toolbar</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1 </li>
+    <li class="navelem"><b>UI</b></li><li class="navelem"><a href="../../d1/d84/classUI_1_1Toolbar.html">Toolbar</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>
 </body>

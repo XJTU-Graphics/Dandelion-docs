@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.13.1"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: Shader类 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -13,7 +13,6 @@
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
-<script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../cookie.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
@@ -38,7 +37,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.1</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,26 +46,20 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.13.1 -->
+<!-- 制作者 Doxygen 1.14.0 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
-/* @license-end */
 </script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() { codefold.init(1); });
-/* @license-end */
+$(function() { codefold.init(); });
 </script>
 <script type="text/javascript" src="../../menudata.js"></script>
 <script type="text/javascript" src="../../menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('../../',true,false,'search.php','搜索',true);
   $(function() { init_search(); });
 });
-/* @license-end */
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
@@ -81,10 +74,9 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('d9/d69/classShader.html','../../'); initResizable(true); });
-/* @license-end */
+$(function(){initNavTree('d9/d69/classShader.html','../../','d4/de0/classShader-members'); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -108,11 +100,6 @@ $(function(){initNavTree('d9/d69/classShader.html','../../'); initResizable(true
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public 成员函数</a> &#124;
-<a href="#pub-attribs">Public 属性</a> &#124;
-<a href="#pri-attribs">Private 属性</a> &#124;
-<a href="../../d4/de0/classShader-members.html">所有成员列表</a>  </div>
   <div class="headertitle"><div class="title">Shader类 参考<div class="ingroups"><a class="el" href="../../de/d8b/group__platform.html">平台相关的部分</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -122,70 +109,56 @@ $(function(){initNavTree('d9/d69/classShader.html','../../'); initResizable(true
 
 <p><code>#include &lt;<a class="el" href="../../d9/d52/shader_8hpp_source.html">shader.hpp</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:a5210e608b42293a106fb4b7700e33d97" id="r_a5210e608b42293a106fb4b7700e33d97"><td class="memItemLeft" align="right" valign="top"><a id="a5210e608b42293a106fb4b7700e33d97" name="a5210e608b42293a106fb4b7700e33d97"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Shader</b> (const std::shared_ptr&lt; spdlog::logger &gt; &amp;logger)</td></tr>
-<tr class="separator:a5210e608b42293a106fb4b7700e33d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa41e7c39f77cf6c995b007cb5ef69f69" id="r_aa41e7c39f77cf6c995b007cb5ef69f69"><td class="memItemLeft" align="right" valign="top"><a id="aa41e7c39f77cf6c995b007cb5ef69f69" name="aa41e7c39f77cf6c995b007cb5ef69f69"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>load_vertex_shader</b> (const char *file_path)</td></tr>
-<tr class="separator:aa41e7c39f77cf6c995b007cb5ef69f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdaa4e3dfcbab6c22e16fd7ac1f900cb" id="r_abdaa4e3dfcbab6c22e16fd7ac1f900cb"><td class="memItemLeft" align="right" valign="top"><a id="abdaa4e3dfcbab6c22e16fd7ac1f900cb" name="abdaa4e3dfcbab6c22e16fd7ac1f900cb"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>load_fragment_shader</b> (const char *file_path)</td></tr>
-<tr class="separator:abdaa4e3dfcbab6c22e16fd7ac1f900cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75512fd8255dc4442d65f1fde2d5feb2" id="r_a75512fd8255dc4442d65f1fde2d5feb2"><td class="memItemLeft" align="right" valign="top"><a id="a75512fd8255dc4442d65f1fde2d5feb2" name="a75512fd8255dc4442d65f1fde2d5feb2"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>compile</b> ()</td></tr>
-<tr class="separator:a75512fd8255dc4442d65f1fde2d5feb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c7896754f0e1fca8bde860cfef63832" id="r_a3c7896754f0e1fca8bde860cfef63832"><td class="memItemLeft" align="right" valign="top"><a id="a3c7896754f0e1fca8bde860cfef63832" name="a3c7896754f0e1fca8bde860cfef63832"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>use</b> () const</td></tr>
-<tr class="separator:a3c7896754f0e1fca8bde860cfef63832"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4362b3c351e543ec784db0ce4e043239" id="r_a4362b3c351e543ec784db0ce4e043239"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
-<tr class="memitem:a4362b3c351e543ec784db0ce4e043239"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4362b3c351e543ec784db0ce4e043239">set_uniform</a> (const char *name, const T &amp;value) const</td></tr>
-<tr class="separator:a4362b3c351e543ec784db0ce4e043239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4362b3c351e543ec784db0ce4e043239 template"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4362b3c351e543ec784db0ce4e043239">set_uniform</a> (const char *name, const T &amp;value) const</td></tr>
 <tr class="memitem:a95a43d16ffeeb312e73b2bf43be3d239" id="r_a95a43d16ffeeb312e73b2bf43be3d239"><td class="memItemLeft" align="right" valign="top"><a id="a95a43d16ffeeb312e73b2bf43be3d239" name="a95a43d16ffeeb312e73b2bf43be3d239"></a>
 template&lt;&gt; </td></tr>
-<tr class="memitem:a95a43d16ffeeb312e73b2bf43be3d239"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>set_uniform</b> (const char *name, const bool &amp;value) const</td></tr>
-<tr class="separator:a95a43d16ffeeb312e73b2bf43be3d239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95a43d16ffeeb312e73b2bf43be3d239 template"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><b>set_uniform</b> (const char *name, const bool &amp;value) const</td></tr>
 <tr class="memitem:acb5ac62a292a17a6447c8f74e5aab608" id="r_acb5ac62a292a17a6447c8f74e5aab608"><td class="memItemLeft" align="right" valign="top"><a id="acb5ac62a292a17a6447c8f74e5aab608" name="acb5ac62a292a17a6447c8f74e5aab608"></a>
 template&lt;&gt; </td></tr>
-<tr class="memitem:acb5ac62a292a17a6447c8f74e5aab608"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>set_uniform</b> (const char *name, const float &amp;value) const</td></tr>
-<tr class="separator:acb5ac62a292a17a6447c8f74e5aab608"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb5ac62a292a17a6447c8f74e5aab608 template"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><b>set_uniform</b> (const char *name, const float &amp;value) const</td></tr>
 <tr class="memitem:aa528f0367b61c466f056bdac8b31e583" id="r_aa528f0367b61c466f056bdac8b31e583"><td class="memItemLeft" align="right" valign="top"><a id="aa528f0367b61c466f056bdac8b31e583" name="aa528f0367b61c466f056bdac8b31e583"></a>
 template&lt;&gt; </td></tr>
-<tr class="memitem:aa528f0367b61c466f056bdac8b31e583"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>set_uniform</b> (const char *name, const Vector3f &amp;value) const</td></tr>
-<tr class="separator:aa528f0367b61c466f056bdac8b31e583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa528f0367b61c466f056bdac8b31e583 template"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><b>set_uniform</b> (const char *name, const Vector3f &amp;value) const</td></tr>
 <tr class="memitem:abec8b49817c6e6054b14488f828e3ced" id="r_abec8b49817c6e6054b14488f828e3ced"><td class="memItemLeft" align="right" valign="top"><a id="abec8b49817c6e6054b14488f828e3ced" name="abec8b49817c6e6054b14488f828e3ced"></a>
 template&lt;&gt; </td></tr>
-<tr class="memitem:abec8b49817c6e6054b14488f828e3ced"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>set_uniform</b> (const char *name, const Matrix4f &amp;value) const</td></tr>
-<tr class="separator:abec8b49817c6e6054b14488f828e3ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abec8b49817c6e6054b14488f828e3ced template"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><b>set_uniform</b> (const char *name, const Matrix4f &amp;value) const</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
 <tr class="memitem:af3eee7628d291077cfa66dcc83df83a2" id="r_af3eee7628d291077cfa66dcc83df83a2"><td class="memItemLeft" align="right" valign="top"><a id="af3eee7628d291077cfa66dcc83df83a2" name="af3eee7628d291077cfa66dcc83df83a2"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
-<tr class="separator:af3eee7628d291077cfa66dcc83df83a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private 属性</h2></td></tr>
 <tr class="memitem:a7a6f3ac31318d327e4aea67733f9c3ab" id="r_a7a6f3ac31318d327e4aea67733f9c3ab"><td class="memItemLeft" align="right" valign="top"><a id="a7a6f3ac31318d327e4aea67733f9c3ab" name="a7a6f3ac31318d327e4aea67733f9c3ab"></a>
 std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>logger</b></td></tr>
-<tr class="separator:a7a6f3ac31318d327e4aea67733f9c3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b58afa953c868430fa284afe6264df8" id="r_a0b58afa953c868430fa284afe6264df8"><td class="memItemLeft" align="right" valign="top"><a id="a0b58afa953c868430fa284afe6264df8" name="a0b58afa953c868430fa284afe6264df8"></a>
 std::unique_ptr&lt; char[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vertex_shader_source</b></td></tr>
-<tr class="separator:a0b58afa953c868430fa284afe6264df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ecc61b1f1f34255ebf39a7a574ff898" id="r_a0ecc61b1f1f34255ebf39a7a574ff898"><td class="memItemLeft" align="right" valign="top"><a id="a0ecc61b1f1f34255ebf39a7a574ff898" name="a0ecc61b1f1f34255ebf39a7a574ff898"></a>
 std::unique_ptr&lt; char[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fragment_shader_source</b></td></tr>
-<tr class="separator:a0ecc61b1f1f34255ebf39a7a574ff898"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>对 GLSL <a class="el" href="../../d9/d69/classShader.html" title="对 GLSL Shader 的简单封装。">Shader</a> 的简单封装。 </p>
 <p>一个 Shade 对象在构造时并不直接加载 GLSL 代码，正确的使用顺序是：</p><ol type="1">
-<li>调用 <code>load_vertex_shader</code></li>
-<li>调用 <code>load_fragment_shader</code></li>
-<li>调用 <code>compile</code> 编译 <a class="el" href="../../d9/d69/classShader.html" title="对 GLSL Shader 的简单封装。">Shader</a></li>
-<li>前三个步骤都返回 <code>true</code> 的前提下，调用 <code>use</code> 使用 <a class="el" href="../../d9/d69/classShader.html" title="对 GLSL Shader 的简单封装。">Shader</a> </li>
+<li>调用 <span class="tt">load_vertex_shader</span></li>
+<li>调用 <span class="tt">load_fragment_shader</span></li>
+<li>调用 <span class="tt">compile</span> 编译 <a class="el" href="../../d9/d69/classShader.html" title="对 GLSL Shader 的简单封装。">Shader</a></li>
+<li>前三个步骤都返回 <span class="tt">true</span> 的前提下，调用 <span class="tt">use</span> 使用 <a class="el" href="../../d9/d69/classShader.html" title="对 GLSL Shader 的简单封装。">Shader</a> </li>
 </ol>
-</div><h2 class="groupheader">成员函数说明</h2>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
 <a id="a4362b3c351e543ec784db0ce4e043239" name="a4362b3c351e543ec784db0ce4e043239"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4362b3c351e543ec784db0ce4e043239">&#9670;&#160;</a></span>set_uniform()</h2>
 
@@ -229,11 +202,19 @@ template&lt;typename T&gt; </div>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d9/d69/classShader.html">Shader</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1 </li>
+    <li class="navelem"><a href="../../d9/d69/classShader.html">Shader</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>
 </body>

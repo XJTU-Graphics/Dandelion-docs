@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.13.1"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: Platform类 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -13,7 +13,6 @@
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
-<script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../cookie.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
@@ -38,7 +37,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.1</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,26 +46,20 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.13.1 -->
+<!-- 制作者 Doxygen 1.14.0 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
-/* @license-end */
 </script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() { codefold.init(1); });
-/* @license-end */
+$(function() { codefold.init(); });
 </script>
 <script type="text/javascript" src="../../menudata.js"></script>
 <script type="text/javascript" src="../../menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('../../',true,false,'search.php','搜索',true);
   $(function() { init_search(); });
 });
-/* @license-end */
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
@@ -81,10 +74,9 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('df/d1e/classPlatform.html','../../'); initResizable(true); });
-/* @license-end */
+$(function(){initNavTree('df/d1e/classPlatform.html','../../','d6/d5f/classPlatform-members'); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -108,13 +100,6 @@ $(function(){initNavTree('df/d1e/classPlatform.html','../../'); initResizable(tr
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public 成员函数</a> &#124;
-<a href="#pri-methods">Private 成员函数</a> &#124;
-<a href="#pri-static-methods">静态 Private 成员函数</a> &#124;
-<a href="#pri-attribs">Private 属性</a> &#124;
-<a href="#pri-static-attribs">静态 Private 属性</a> &#124;
-<a href="../../d6/d5f/classPlatform-members.html">所有成员列表</a>  </div>
   <div class="headertitle"><div class="title">Platform类 参考<div class="ingroups"><a class="el" href="../../de/d8b/group__platform.html">平台相关的部分</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -124,64 +109,49 @@ $(function(){initNavTree('df/d1e/classPlatform.html','../../'); initResizable(tr
 
 <p><code>#include &lt;<a class="el" href="../../de/d03/platform_8h_source.html">platform.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:a52028ea2984cbfdf8e9f42ee87f66cfe" id="r_a52028ea2984cbfdf8e9f42ee87f66cfe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52028ea2984cbfdf8e9f42ee87f66cfe">Platform</a> ()</td></tr>
 <tr class="memdesc:a52028ea2984cbfdf8e9f42ee87f66cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化 OpenGL Context、创建窗口、初始化 Dear ImGui、创建预览场景用的 shader。  <br /></td></tr>
-<tr class="separator:a52028ea2984cbfdf8e9f42ee87f66cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a623e404af56fbf153dcaa64214404f9c" id="r_a623e404af56fbf153dcaa64214404f9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a623e404af56fbf153dcaa64214404f9c">eventloop</a> ()</td></tr>
 <tr class="memdesc:a623e404af56fbf153dcaa64214404f9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">事件循环主体。  <br /></td></tr>
-<tr class="separator:a623e404af56fbf153dcaa64214404f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private 成员函数</h2></td></tr>
 <tr class="memitem:a9de7ff9bee337082d0f8802b5bf8fabe" id="r_a9de7ff9bee337082d0f8802b5bf8fabe"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9de7ff9bee337082d0f8802b5bf8fabe">get_dpi</a> () noexcept</td></tr>
-<tr class="separator:a9de7ff9bee337082d0f8802b5bf8fabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc7c9ebc5b95dfc19864a639839bd986" id="r_abc7c9ebc5b95dfc19864a639839bd986"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc7c9ebc5b95dfc19864a639839bd986">resize_window</a> () noexcept</td></tr>
-<tr class="separator:abc7c9ebc5b95dfc19864a639839bd986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6304cef1b9edc72f8d7793c2d7cfd1f9" id="r_a6304cef1b9edc72f8d7793c2d7cfd1f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6304cef1b9edc72f8d7793c2d7cfd1f9">create_context</a> (int major, int minor) noexcept</td></tr>
-<tr class="separator:a6304cef1b9edc72f8d7793c2d7cfd1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae68d7112482e9e731697b5569e4afeef" id="r_ae68d7112482e9e731697b5569e4afeef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae68d7112482e9e731697b5569e4afeef">set_opengl_properties</a> () noexcept</td></tr>
-<tr class="separator:ae68d7112482e9e731697b5569e4afeef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afca9d338fc86be846ac3835b443faf02" id="r_afca9d338fc86be846ac3835b443faf02"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afca9d338fc86be846ac3835b443faf02">init_ui</a> ()</td></tr>
-<tr class="separator:afca9d338fc86be846ac3835b443faf02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 静态 Private 成员函数</h2></td></tr>
 <tr class="memitem:af6a570d0dc5be623ebaa3da7cb1b500c" id="r_af6a570d0dc5be623ebaa3da7cb1b500c"><td class="memItemLeft" align="right" valign="top"><a id="af6a570d0dc5be623ebaa3da7cb1b500c" name="af6a570d0dc5be623ebaa3da7cb1b500c"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>on_framebuffer_resized</b> (GLFWwindow *window, GLsizei width, GLsizei height)</td></tr>
-<tr class="separator:af6a570d0dc5be623ebaa3da7cb1b500c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private 属性</h2></td></tr>
 <tr class="memitem:afd8af54ffbf27be95373c672fc30044d" id="r_afd8af54ffbf27be95373c672fc30044d"><td class="memItemLeft" align="right" valign="top"><a id="afd8af54ffbf27be95373c672fc30044d" name="afd8af54ffbf27be95373c672fc30044d"></a>
 std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>logger</b></td></tr>
-<tr class="separator:afd8af54ffbf27be95373c672fc30044d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd5ba6f935fadd528b683d30ea99a504" id="r_abd5ba6f935fadd528b683d30ea99a504"><td class="memItemLeft" align="right" valign="top"><a id="abd5ba6f935fadd528b683d30ea99a504" name="abd5ba6f935fadd528b683d30ea99a504"></a>
 GLFWwindow *&#160;</td><td class="memItemRight" valign="bottom"><b>window</b></td></tr>
-<tr class="separator:abd5ba6f935fadd528b683d30ea99a504"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbe12342e54e09ba8c6d622ce130a767" id="r_abbe12342e54e09ba8c6d622ce130a767"><td class="memItemLeft" align="right" valign="top"><a id="abbe12342e54e09ba8c6d622ce130a767" name="abbe12342e54e09ba8c6d622ce130a767"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>window_width</b></td></tr>
-<tr class="separator:abbe12342e54e09ba8c6d622ce130a767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a453ec7264b5a4138ddfd007e3b35e2" id="r_a0a453ec7264b5a4138ddfd007e3b35e2"><td class="memItemLeft" align="right" valign="top"><a id="a0a453ec7264b5a4138ddfd007e3b35e2" name="a0a453ec7264b5a4138ddfd007e3b35e2"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>window_height</b></td></tr>
-<tr class="separator:a0a453ec7264b5a4138ddfd007e3b35e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac71c6670c576fc21de751e48baa8383d" id="r_ac71c6670c576fc21de751e48baa8383d"><td class="memItemLeft" align="right" valign="top"><a id="ac71c6670c576fc21de751e48baa8383d" name="ac71c6670c576fc21de751e48baa8383d"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>dpi</b></td></tr>
-<tr class="separator:ac71c6670c576fc21de751e48baa8383d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d885118eacd2e6a3417ce2491832b84" id="r_a6d885118eacd2e6a3417ce2491832b84"><td class="memItemLeft" align="right" valign="top"><a id="a6d885118eacd2e6a3417ce2491832b84" name="a6d885118eacd2e6a3417ce2491832b84"></a>
 std::unique_ptr&lt; <a class="el" href="../../d9/d69/classShader.html">Shader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>shader</b></td></tr>
-<tr class="separator:a6d885118eacd2e6a3417ce2491832b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 静态 Private 属性</h2></td></tr>
 <tr class="memitem:a413547cd9109752974bb6a538ff74099" id="r_a413547cd9109752974bb6a538ff74099"><td class="memItemLeft" align="right" valign="top"><a id="a413547cd9109752974bb6a538ff74099" name="a413547cd9109752974bb6a538ff74099"></a>
 static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>mouse_wheel_threshold</b> = 1e-2f</td></tr>
-<tr class="separator:a413547cd9109752974bb6a538ff74099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>这个类管理平台相关的窗口和配置信息。 </p>
-</div><h2 class="groupheader">构造及析构函数说明</h2>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
 <a id="a52028ea2984cbfdf8e9f42ee87f66cfe" name="a52028ea2984cbfdf8e9f42ee87f66cfe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a52028ea2984cbfdf8e9f42ee87f66cfe">&#9670;&#160;</a></span>Platform()</h2>
 
@@ -203,7 +173,7 @@ static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>mou
 
 </div>
 </div>
-<h2 class="groupheader">成员函数说明</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
 <a id="a6304cef1b9edc72f8d7793c2d7cfd1f9" name="a6304cef1b9edc72f8d7793c2d7cfd1f9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6304cef1b9edc72f8d7793c2d7cfd1f9">&#9670;&#160;</a></span>create_context()</h2>
 
@@ -230,7 +200,7 @@ static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>mou
   </tr>
 </table>
 </div><div class="memdoc">
-<p>创建 <code>major.minor</code> 版本的 OpenGL Context。 </p><dl class="params"><dt>参数</dt><dd>
+<p>创建 <span class="tt">major.minor</span> 版本的 OpenGL Context。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">major</td><td>OpenGL 主版本 </td></tr>
     <tr><td class="paramname">minor</td><td>OpenGL 次版本（小版本） </td></tr>
@@ -371,11 +341,19 @@ static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>mou
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../df/d1e/classPlatform.html">Platform</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1 </li>
+    <li class="navelem"><a href="../../df/d1e/classPlatform.html">Platform</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>
 </body>

@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.13.1"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: Dandelion 开发者文档</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -13,7 +13,6 @@
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -38,7 +37,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.1</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,26 +46,20 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.13.1 -->
+<!-- 制作者 Doxygen 1.14.0 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
-/* @license-end */
 </script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() { codefold.init(0); });
-/* @license-end */
+$(function() { codefold.init(); });
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','搜索',true);
   $(function() { init_search(); });
 });
-/* @license-end */
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
@@ -81,10 +74,9 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('index.html',''); initResizable(true); });
-/* @license-end */
+$(function(){initNavTree('index.html','',''); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -116,7 +108,7 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
 <div class="caption">
 我们希望 Dandelion 成为一颗蒲公英种子，传播渺小的热爱和友善</div></div>
  <p>Dandelion 是一个轻量级的跨平台三维实验框架，适合用于图形学课程教学。本文档介绍了 Dandelion 的开发思路、项目结构，并尽可能全面地列出类和函数参考。</p>
-<h1><a class="anchor" id="功能定位"></a>
+<h1 class="doxsection"><a class="anchor" id="功能定位"></a>
 功能定位</h1>
 <p>当我们开设计算机图形学这门课程时，必然需要设计相应的实验。而实现一个“好看”（甚至有时只是“能看”）的图形应用，往往需要编写上千行的代码。为了在十分有限的课时约束下开展实验，最成熟的办法就是设计一个代码框架。我们对 Dandelion 的期望是：核心功能有限（但可扩展）、界面足够简单、尽可能不涉及和特定平台相关的细节。</p>
 <p>目前 Dandelion 提供（或计划提供）的功能包括：</p>
@@ -133,7 +125,7 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
 <li>多种类型的光源（例如面光源）</li>
 <li>对 Mesh 以外的三维表示形式的支持（例如体素、点云、符号距离场等等）</li>
 </ul>
-<h1><a class="anchor" id="鸣谢"></a>
+<h1 class="doxsection"><a class="anchor" id="鸣谢"></a>
 鸣谢</h1>
 <p>感谢卡内基-梅隆大学 15/462 课题组开源了 Scotty3D 实验框架，我们在很大程度上参考了它。</p>
 <p>感谢 GAMES 开放的 GAMES 系列课程，我们参考了 GAMES 101 / 102 的课程、文档和实验框架。 </p>
@@ -141,10 +133,11 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->
 </div><!-- doc-content -->
+</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>
 </body>

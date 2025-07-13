@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.13.1"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: Halfedge结构体 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -13,7 +13,6 @@
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
-<script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../cookie.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
@@ -38,7 +37,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.1</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,26 +46,20 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.13.1 -->
+<!-- 制作者 Doxygen 1.14.0 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
-/* @license-end */
 </script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() { codefold.init(1); });
-/* @license-end */
+$(function() { codefold.init(); });
 </script>
 <script type="text/javascript" src="../../menudata.js"></script>
 <script type="text/javascript" src="../../menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('../../',true,false,'search.php','搜索',true);
   $(function() { init_search(); });
 });
-/* @license-end */
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
@@ -81,10 +74,9 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('df/d02/structHalfedge.html','../../'); initResizable(true); });
-/* @license-end */
+$(function(){initNavTree('df/d02/structHalfedge.html','../../','d8/dc1/structHalfedge-members'); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -108,10 +100,6 @@ $(function(){initNavTree('df/d02/structHalfedge.html','../../'); initResizable(t
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public 成员函数</a> &#124;
-<a href="#pub-attribs">Public 属性</a> &#124;
-<a href="../../d8/dc1/structHalfedge-members.html">所有成员列表</a>  </div>
   <div class="headertitle"><div class="title">Halfedge结构体 参考<div class="ingroups"><a class="el" href="../../d9/dba/group__geometry.html">几何处理</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -130,44 +118,32 @@ $(function(){initNavTree('df/d02/structHalfedge.html','../../'); initResizable(t
   </map>
 </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:a61ae0123c3bf12fffa50f1dc85fb998b" id="r_a61ae0123c3bf12fffa50f1dc85fb998b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61ae0123c3bf12fffa50f1dc85fb998b">Halfedge</a> (std::size_t halfedge_id)</td></tr>
-<tr class="separator:a61ae0123c3bf12fffa50f1dc85fb998b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf1c78e7f1b53433a83b744c0552b1e1" id="r_abf1c78e7f1b53433a83b744c0552b1e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf1c78e7f1b53433a83b744c0552b1e1">set_neighbors</a> (<a class="el" href="../../df/d02/structHalfedge.html">Halfedge</a> *<a class="el" href="#a39fffbfff9d7dafc64e8eea6c99dfb0b">next</a>, <a class="el" href="../../df/d02/structHalfedge.html">Halfedge</a> *<a class="el" href="#a3641c6df7c8eb01d6380cd88987367fc">prev</a>, <a class="el" href="../../df/d02/structHalfedge.html">Halfedge</a> *<a class="el" href="#a4f982336fcb5cfe922ef05489010ab56">inv</a>, <a class="el" href="../../df/dd0/structVertex.html">Vertex</a> *<a class="el" href="#a3bb515eebb9177fbc2fde1f0893a93c7">from</a>, <a class="el" href="../../d2/d4f/structEdge.html">Edge</a> *<a class="el" href="#a0465cf62d0c9580ba6739bf1b73e76e3">edge</a>, <a class="el" href="../../d0/d02/structFace.html">Face</a> *<a class="el" href="#ab040e45d54199899c27c79615f1088ae">face</a>)</td></tr>
-<tr class="separator:abf1c78e7f1b53433a83b744c0552b1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a417c41407d754472bea866ce19ccd0f1" id="r_a417c41407d754472bea866ce19ccd0f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a417c41407d754472bea866ce19ccd0f1">is_boundary</a> () const</td></tr>
 <tr class="memdesc:a417c41407d754472bea866ce19ccd0f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">这条半边是否属于一个虚拟的边界面。  <br /></td></tr>
-<tr class="separator:a417c41407d754472bea866ce19ccd0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
 <tr class="memitem:ad2b5c8becbcd69f87529c19b273af43d" id="r_ad2b5c8becbcd69f87529c19b273af43d"><td class="memItemLeft" align="right" valign="top">const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2b5c8becbcd69f87529c19b273af43d">id</a></td></tr>
-<tr class="separator:ad2b5c8becbcd69f87529c19b273af43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39fffbfff9d7dafc64e8eea6c99dfb0b" id="r_a39fffbfff9d7dafc64e8eea6c99dfb0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d02/structHalfedge.html">Halfedge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39fffbfff9d7dafc64e8eea6c99dfb0b">next</a></td></tr>
-<tr class="separator:a39fffbfff9d7dafc64e8eea6c99dfb0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3641c6df7c8eb01d6380cd88987367fc" id="r_a3641c6df7c8eb01d6380cd88987367fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d02/structHalfedge.html">Halfedge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3641c6df7c8eb01d6380cd88987367fc">prev</a></td></tr>
-<tr class="separator:a3641c6df7c8eb01d6380cd88987367fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f982336fcb5cfe922ef05489010ab56" id="r_a4f982336fcb5cfe922ef05489010ab56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d02/structHalfedge.html">Halfedge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f982336fcb5cfe922ef05489010ab56">inv</a></td></tr>
-<tr class="separator:a4f982336fcb5cfe922ef05489010ab56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bb515eebb9177fbc2fde1f0893a93c7" id="r_a3bb515eebb9177fbc2fde1f0893a93c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd0/structVertex.html">Vertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bb515eebb9177fbc2fde1f0893a93c7">from</a></td></tr>
-<tr class="separator:a3bb515eebb9177fbc2fde1f0893a93c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0465cf62d0c9580ba6739bf1b73e76e3" id="r_a0465cf62d0c9580ba6739bf1b73e76e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d4f/structEdge.html">Edge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0465cf62d0c9580ba6739bf1b73e76e3">edge</a></td></tr>
-<tr class="separator:a0465cf62d0c9580ba6739bf1b73e76e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab040e45d54199899c27c79615f1088ae" id="r_ab040e45d54199899c27c79615f1088ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d02/structFace.html">Face</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab040e45d54199899c27c79615f1088ae">face</a></td></tr>
-<tr class="separator:ab040e45d54199899c27c79615f1088ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_structLinkedListNode"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_structLinkedListNode')"><img src="../../closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el" href="../../d6/d73/structLinkedListNode.html">LinkedListNode&lt; Halfedge &gt;</a></td></tr>
+<tr class="inherit_header pub_attribs_structLinkedListNode"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_structLinkedListNode')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 属性 继承自 <a class="el" href="../../d6/d73/structLinkedListNode.html">LinkedListNode&lt; Halfedge &gt;</a></td></tr>
 <tr class="memitem:a48d3aca521531297bc80542440cf7cbf inherit pub_attribs_structLinkedListNode" id="r_a48d3aca521531297bc80542440cf7cbf"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../df/d02/structHalfedge.html">Halfedge</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>next_node</b></td></tr>
-<tr class="separator:a48d3aca521531297bc80542440cf7cbf inherit pub_attribs_structLinkedListNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff7189049aff9833094647c87def9829 inherit pub_attribs_structLinkedListNode" id="r_aff7189049aff9833094647c87def9829"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../df/d02/structHalfedge.html">Halfedge</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>prev_node</b></td></tr>
-<tr class="separator:aff7189049aff9833094647c87def9829 inherit pub_attribs_structLinkedListNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>半边网格中最关键的几何元素。 </p>
 <p>半边网格中，所有几何元素都通过半边相互连接。Halfedge 类维护了每条半边的起点、所属的边和面片、 在整个半边网格上的下一条（前一条、反向）半边，从而将所有的几何基本元素联系在一起。 </p>
-</div><h2 class="groupheader">构造及析构函数说明</h2>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
 <a id="a61ae0123c3bf12fffa50f1dc85fb998b" name="a61ae0123c3bf12fffa50f1dc85fb998b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a61ae0123c3bf12fffa50f1dc85fb998b">&#9670;&#160;</a></span>Halfedge()</h2>
 
@@ -182,11 +158,11 @@ Public 属性</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>仅供 <code><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a11fb68a9c539b85f208b09337d35a831">HalfedgeMesh::new_halfedge</a></code> 调用，其他任何情况下都不应该直接使用。 </p>
+<p>仅供 <span class="tt"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a11fb68a9c539b85f208b09337d35a831">HalfedgeMesh::new_halfedge</a></span> 调用，其他任何情况下都不应该直接使用。 </p>
 
 </div>
 </div>
-<h2 class="groupheader">成员函数说明</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
 <a id="a417c41407d754472bea866ce19ccd0f1" name="a417c41407d754472bea866ce19ccd0f1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a417c41407d754472bea866ce19ccd0f1">&#9670;&#160;</a></span>is_boundary()</h2>
 
@@ -203,7 +179,7 @@ Public 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>这条半边是否属于一个虚拟的边界面。 </p>
-<p>这个函数的返回值是 <code>face-&gt;on_boundary</code>，因此返回真时表示这条半边属于一个 “虚假的”面（表示边界而不是真正的面片）；而返回假时这条半边也有可能与 mesh 边界相邻，所以函数名为 <code>is_boundary</code> 而不是 <code>on_boundary</code> 。 </p>
+<p>这个函数的返回值是 <span class="tt">face-&gt;on_boundary</span>，因此返回真时表示这条半边属于一个 “虚假的”面（表示边界而不是真正的面片）；而返回假时这条半边也有可能与 mesh 边界相邻，所以函数名为 <span class="tt">is_boundary</span> 而不是 <span class="tt">on_boundary</span> 。 </p>
 
 </div>
 </div>
@@ -249,7 +225,7 @@ Public 属性</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">类成员变量说明</h2>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
 <a id="a0465cf62d0c9580ba6739bf1b73e76e3" name="a0465cf62d0c9580ba6739bf1b73e76e3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0465cf62d0c9580ba6739bf1b73e76e3">&#9670;&#160;</a></span>edge</h2>
 
@@ -361,11 +337,19 @@ Public 属性</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../df/d02/structHalfedge.html">Halfedge</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1 </li>
+    <li class="navelem"><a href="../../df/d02/structHalfedge.html">Halfedge</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>
 </body>

@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.13.1"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: RasterizerRenderer类 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -13,7 +13,6 @@
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
-<script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../cookie.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
@@ -38,7 +37,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.1</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,26 +46,20 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.13.1 -->
+<!-- 制作者 Doxygen 1.14.0 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
-/* @license-end */
 </script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() { codefold.init(1); });
-/* @license-end */
+$(function() { codefold.init(); });
 </script>
 <script type="text/javascript" src="../../menudata.js"></script>
 <script type="text/javascript" src="../../menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('../../',true,false,'search.php','搜索',true);
   $(function() { init_search(); });
 });
-/* @license-end */
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
@@ -81,10 +74,9 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('d7/db0/classRasterizerRenderer.html','../../'); initResizable(true); });
-/* @license-end */
+$(function(){initNavTree('d7/db0/classRasterizerRenderer.html','../../','d5/d97/classRasterizerRenderer-members'); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -108,11 +100,6 @@ $(function(){initNavTree('d7/db0/classRasterizerRenderer.html','../../'); initRe
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public 成员函数</a> &#124;
-<a href="#pub-attribs">Public 属性</a> &#124;
-<a href="#pri-attribs">Private 属性</a> &#124;
-<a href="../../d5/d97/classRasterizerRenderer-members.html">所有成员列表</a>  </div>
   <div class="headertitle"><div class="title">RasterizerRenderer类 参考<div class="ingroups"><a class="el" href="../../db/d81/group__rendering.html">离线渲染</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -122,52 +109,40 @@ $(function(){initNavTree('d7/db0/classRasterizerRenderer.html','../../'); initRe
 
 <p><code>#include &lt;<a class="el" href="../../d7/da2/render__engine_8h_source.html">render_engine.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:a74db69460ba11e8076c6cc73d6baf5ad" id="r_a74db69460ba11e8076c6cc73d6baf5ad"><td class="memItemLeft" align="right" valign="top"><a id="a74db69460ba11e8076c6cc73d6baf5ad" name="a74db69460ba11e8076c6cc73d6baf5ad"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>RasterizerRenderer</b> (<a class="el" href="../../d3/d2f/classRenderEngine.html">RenderEngine</a> &amp;engine, int num_vertex_threads, int num_rasterizer_threads, int num_fragment_threads)</td></tr>
-<tr class="separator:a74db69460ba11e8076c6cc73d6baf5ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ff3f7eae7d21265a6f4e8c196645736" id="r_a7ff3f7eae7d21265a6f4e8c196645736"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ff3f7eae7d21265a6f4e8c196645736">render</a> (const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
-<tr class="separator:a7ff3f7eae7d21265a6f4e8c196645736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
 <tr class="memitem:a4d122df9cd3b18fec2278a1193aa24b0" id="r_a4d122df9cd3b18fec2278a1193aa24b0"><td class="memItemLeft" align="right" valign="top">float &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d122df9cd3b18fec2278a1193aa24b0">width</a></td></tr>
-<tr class="separator:a4d122df9cd3b18fec2278a1193aa24b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd61281b380c8f9e57d4691a98052a70" id="r_afd61281b380c8f9e57d4691a98052a70"><td class="memItemLeft" align="right" valign="top"><a id="afd61281b380c8f9e57d4691a98052a70" name="afd61281b380c8f9e57d4691a98052a70"></a>
 float &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
-<tr class="separator:afd61281b380c8f9e57d4691a98052a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ca3e2c4f6e731f7e26802513990fb4c" id="r_a2ca3e2c4f6e731f7e26802513990fb4c"><td class="memItemLeft" align="right" valign="top"><a id="a2ca3e2c4f6e731f7e26802513990fb4c" name="a2ca3e2c4f6e731f7e26802513990fb4c"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>n_vertex_threads</b></td></tr>
-<tr class="separator:a2ca3e2c4f6e731f7e26802513990fb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad89575002a313296e547e9d7580dcd73" id="r_ad89575002a313296e547e9d7580dcd73"><td class="memItemLeft" align="right" valign="top"><a id="ad89575002a313296e547e9d7580dcd73" name="ad89575002a313296e547e9d7580dcd73"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>n_rasterizer_threads</b></td></tr>
-<tr class="separator:ad89575002a313296e547e9d7580dcd73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed532ae7b4b7e6dcf17e6b3906a78496" id="r_aed532ae7b4b7e6dcf17e6b3906a78496"><td class="memItemLeft" align="right" valign="top"><a id="aed532ae7b4b7e6dcf17e6b3906a78496" name="aed532ae7b4b7e6dcf17e6b3906a78496"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>n_fragment_threads</b></td></tr>
-<tr class="separator:aed532ae7b4b7e6dcf17e6b3906a78496"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d9d691f9da68dfe9df2913b764a48a3" id="r_a9d9d691f9da68dfe9df2913b764a48a3"><td class="memItemLeft" align="right" valign="top"><a id="a9d9d691f9da68dfe9df2913b764a48a3" name="a9d9d691f9da68dfe9df2913b764a48a3"></a>
 <a class="el" href="../../d1/d19/classVertexProcessor.html">VertexProcessor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>vertex_processor</b></td></tr>
-<tr class="separator:a9d9d691f9da68dfe9df2913b764a48a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa67c7e430f97e75f865928d51947a6a6" id="r_aa67c7e430f97e75f865928d51947a6a6"><td class="memItemLeft" align="right" valign="top"><a id="aa67c7e430f97e75f865928d51947a6a6" name="aa67c7e430f97e75f865928d51947a6a6"></a>
 <a class="el" href="../../d3/d7a/classRasterizer.html">Rasterizer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rasterizer</b></td></tr>
-<tr class="separator:aa67c7e430f97e75f865928d51947a6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ef87f7cfe5b9f10f3bcabd80185077b" id="r_a6ef87f7cfe5b9f10f3bcabd80185077b"><td class="memItemLeft" align="right" valign="top"><a id="a6ef87f7cfe5b9f10f3bcabd80185077b" name="a6ef87f7cfe5b9f10f3bcabd80185077b"></a>
 <a class="el" href="../../d6/d3d/classFragmentProcessor.html">FragmentProcessor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fragment_processor</b></td></tr>
-<tr class="separator:a6ef87f7cfe5b9f10f3bcabd80185077b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3576faa5982d3eeac1de5a468886ae48" id="r_a3576faa5982d3eeac1de5a468886ae48"><td class="memItemLeft" align="right" valign="top"><a id="a3576faa5982d3eeac1de5a468886ae48" name="a3576faa5982d3eeac1de5a468886ae48"></a>
 std::vector&lt; unsigned char &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>rendering_res</b></td></tr>
-<tr class="separator:a3576faa5982d3eeac1de5a468886ae48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private 属性</h2></td></tr>
 <tr class="memitem:abe9fe70d0768eab0a1fd3c6df5075d97" id="r_abe9fe70d0768eab0a1fd3c6df5075d97"><td class="memItemLeft" align="right" valign="top"><a id="abe9fe70d0768eab0a1fd3c6df5075d97" name="abe9fe70d0768eab0a1fd3c6df5075d97"></a>
 std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>logger</b></td></tr>
-<tr class="separator:abe9fe70d0768eab0a1fd3c6df5075d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>实现光栅化渲染管线。 </p>
-</div><h2 class="groupheader">成员函数说明</h2>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
 <a id="a7ff3f7eae7d21265a6f4e8c196645736" name="a7ff3f7eae7d21265a6f4e8c196645736"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ff3f7eae7d21265a6f4e8c196645736">&#9670;&#160;</a></span>render()</h2>
 
@@ -186,7 +161,7 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 
 </div>
 </div>
-<h2 class="groupheader">类成员变量说明</h2>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
 <a id="a4d122df9cd3b18fec2278a1193aa24b0" name="a4d122df9cd3b18fec2278a1193aa24b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d122df9cd3b18fec2278a1193aa24b0">&#9670;&#160;</a></span>width</h2>
 
@@ -208,11 +183,19 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d7/db0/classRasterizerRenderer.html">RasterizerRenderer</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1 </li>
+    <li class="navelem"><a href="../../d7/db0/classRasterizerRenderer.html">RasterizerRenderer</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>
 </body>

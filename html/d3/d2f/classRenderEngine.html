@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.13.1"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: RenderEngine类 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -13,7 +13,6 @@
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
-<script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../cookie.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
@@ -38,7 +37,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.1</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,26 +46,20 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.13.1 -->
+<!-- 制作者 Doxygen 1.14.0 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
-/* @license-end */
 </script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() { codefold.init(1); });
-/* @license-end */
+$(function() { codefold.init(); });
 </script>
 <script type="text/javascript" src="../../menudata.js"></script>
 <script type="text/javascript" src="../../menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('../../',true,false,'search.php','搜索',true);
   $(function() { init_search(); });
 });
-/* @license-end */
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
@@ -81,10 +74,9 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('d3/d2f/classRenderEngine.html','../../'); initResizable(true); });
-/* @license-end */
+$(function(){initNavTree('d3/d2f/classRenderEngine.html','../../','d5/da2/classRenderEngine-members'); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -108,11 +100,6 @@ $(function(){initNavTree('d3/d2f/classRenderEngine.html','../../'); initResizabl
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public 成员函数</a> &#124;
-<a href="#pub-attribs">Public 属性</a> &#124;
-<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
-<a href="../../d5/da2/classRenderEngine-members.html">所有成员列表</a>  </div>
   <div class="headertitle"><div class="title">RenderEngine类 参考<div class="ingroups"><a class="el" href="../../db/d81/group__rendering.html">离线渲染</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -122,36 +109,28 @@ $(function(){initNavTree('d3/d2f/classRenderEngine.html','../../'); initResizabl
 
 <p><code>#include &lt;<a class="el" href="../../d7/da2/render__engine_8h_source.html">render_engine.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:aa079a671bcaa22501bc07fb810cce53a" id="r_aa079a671bcaa22501bc07fb810cce53a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa079a671bcaa22501bc07fb810cce53a">render</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene, <a class="el" href="../../db/d81/group__rendering.html#gae9c668e3a273ce92b9f4e134d0cbd6ce">RendererType</a> type)</td></tr>
 <tr class="memdesc:aa079a671bcaa22501bc07fb810cce53a"><td class="mdescLeft">&#160;</td><td class="mdescRight">离线渲染入口，负责调用渲染器的渲染函数  <br /></td></tr>
-<tr class="separator:aa079a671bcaa22501bc07fb810cce53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
 <tr class="memitem:a8a00eff19a34210acad2447e7fd358db" id="r_a8a00eff19a34210acad2447e7fd358db"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a00eff19a34210acad2447e7fd358db">rendering_res</a></td></tr>
-<tr class="separator:a8a00eff19a34210acad2447e7fd358db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7a96cfda8281176abe4c57c093a889f" id="r_ac7a96cfda8281176abe4c57c093a889f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7a96cfda8281176abe4c57c093a889f">width</a></td></tr>
-<tr class="separator:ac7a96cfda8281176abe4c57c093a889f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a4f0bd6013b554a5627ab670f53b2f0" id="r_a9a4f0bd6013b554a5627ab670f53b2f0"><td class="memItemLeft" align="right" valign="top"><a id="a9a4f0bd6013b554a5627ab670f53b2f0" name="a9a4f0bd6013b554a5627ab670f53b2f0"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
-<tr class="separator:a9a4f0bd6013b554a5627ab670f53b2f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c6688fe583a42b4b936e2bc869427d4" id="r_a1c6688fe583a42b4b936e2bc869427d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c6688fe583a42b4b936e2bc869427d4">n_threads</a></td></tr>
-<tr class="separator:a1c6688fe583a42b4b936e2bc869427d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaf01cee431df0859ef5f2f580e8ebc0" id="r_adaf01cee431df0859ef5f2f580e8ebc0"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d7/db0/classRasterizerRenderer.html">RasterizerRenderer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adaf01cee431df0859ef5f2f580e8ebc0">rasterizer_render</a></td></tr>
-<tr class="separator:adaf01cee431df0859ef5f2f580e8ebc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cdfad591cb7e9f8260537aaf79a5df4" id="r_a6cdfad591cb7e9f8260537aaf79a5df4"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../da/db7/classWhittedRenderer.html">WhittedRenderer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cdfad591cb7e9f8260537aaf79a5df4">whitted_render</a></td></tr>
-<tr class="separator:a6cdfad591cb7e9f8260537aaf79a5df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 静态 Public 属性</h2></td></tr>
 <tr class="memitem:a3a417ded22847afe1b09d820d9016111" id="r_a3a417ded22847afe1b09d820d9016111"><td class="memItemLeft" align="right" valign="top">static Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a417ded22847afe1b09d820d9016111">background_color</a></td></tr>
-<tr class="separator:a3a417ded22847afe1b09d820d9016111"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>离线渲染的执行入口 </p>
-</div><h2 class="groupheader">成员函数说明</h2>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
 <a id="aa079a671bcaa22501bc07fb810cce53a" name="aa079a671bcaa22501bc07fb810cce53a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa079a671bcaa22501bc07fb810cce53a">&#9670;&#160;</a></span>render()</h2>
 
@@ -183,7 +162,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">类成员变量说明</h2>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
 <a id="a3a417ded22847afe1b09d820d9016111" name="a3a417ded22847afe1b09d820d9016111"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3a417ded22847afe1b09d820d9016111">&#9670;&#160;</a></span>background_color</h2>
 
@@ -288,11 +267,19 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d3/d2f/classRenderEngine.html">RenderEngine</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1 </li>
+    <li class="navelem"><a href="../../d3/d2f/classRenderEngine.html">RenderEngine</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>
 </body>

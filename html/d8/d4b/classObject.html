@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.13.1"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: Object类 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -13,7 +13,6 @@
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
-<script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../cookie.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
@@ -38,7 +37,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.1</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,26 +46,20 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.13.1 -->
+<!-- 制作者 Doxygen 1.14.0 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
-/* @license-end */
 </script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() { codefold.init(1); });
-/* @license-end */
+$(function() { codefold.init(); });
 </script>
 <script type="text/javascript" src="../../menudata.js"></script>
 <script type="text/javascript" src="../../menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('../../',true,false,'search.php','搜索',true);
   $(function() { init_search(); });
 });
-/* @license-end */
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
@@ -81,10 +74,9 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('d8/d4b/classObject.html','../../'); initResizable(true); });
-/* @license-end */
+$(function(){initNavTree('d8/d4b/classObject.html','../../','d7/dc8/classObject-members'); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -108,14 +100,6 @@ $(function(){initNavTree('d8/d4b/classObject.html','../../'); initResizable(true
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public 成员函数</a> &#124;
-<a href="#pub-attribs">Public 属性</a> &#124;
-<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
-<a href="#pri-methods">Private 成员函数</a> &#124;
-<a href="#pri-attribs">Private 属性</a> &#124;
-<a href="#pri-static-attribs">静态 Private 属性</a> &#124;
-<a href="../../d7/dc8/classObject-members.html">所有成员列表</a>  </div>
   <div class="headertitle"><div class="title">Object类 参考<div class="ingroups"><a class="el" href="../../db/d81/group__rendering.html">离线渲染</a> &#124; <a class="el" href="../../d9/d77/group__simulation.html">物理模拟</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -125,92 +109,65 @@ $(function(){initNavTree('d8/d4b/classObject.html','../../'); initResizable(true
 
 <p><code>#include &lt;<a class="el" href="../../de/d10/object_8h_source.html">object.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:aa164f4cf0ebff3e52c00167953866f6c" id="r_aa164f4cf0ebff3e52c00167953866f6c"><td class="memItemLeft" align="right" valign="top"><a id="aa164f4cf0ebff3e52c00167953866f6c" name="aa164f4cf0ebff3e52c00167953866f6c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Object</b> (const std::string &amp;object_name)</td></tr>
-<tr class="separator:aa164f4cf0ebff3e52c00167953866f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8f23e84a424cb6061cc9b23bb1f650c" id="r_af8f23e84a424cb6061cc9b23bb1f650c"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix4f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8f23e84a424cb6061cc9b23bb1f650c">model</a> ()</td></tr>
-<tr class="separator:af8f23e84a424cb6061cc9b23bb1f650c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81cff33ba1612aa43187d3e617d8edcc" id="r_a81cff33ba1612aa43187d3e617d8edcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81cff33ba1612aa43187d3e617d8edcc">update</a> (std::vector&lt; <a class="el" href="../../d8/d4b/classObject.html">Object</a> * &gt; &amp;all_objects)</td></tr>
 <tr class="memdesc:a81cff33ba1612aa43187d3e617d8edcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新下一个时间步的运动状态。  <br /></td></tr>
-<tr class="separator:a81cff33ba1612aa43187d3e617d8edcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c13c26a5d9896e078a32de6593e5be5" id="r_a5c13c26a5d9896e078a32de6593e5be5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c13c26a5d9896e078a32de6593e5be5">render</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader, <a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> mode, bool selected)</td></tr>
 <tr class="memdesc:a5c13c26a5d9896e078a32de6593e5be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据指定的渲染模式渲染物体。  <br /></td></tr>
-<tr class="separator:a5c13c26a5d9896e078a32de6593e5be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4eae75848cc2f863a790d8da3014549f" id="r_a4eae75848cc2f863a790d8da3014549f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4eae75848cc2f863a790d8da3014549f">rebuild_BVH</a> ()</td></tr>
 <tr class="memdesc:a4eae75848cc2f863a790d8da3014549f"><td class="mdescLeft">&#160;</td><td class="mdescRight">重新构建 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 。  <br /></td></tr>
-<tr class="separator:a4eae75848cc2f863a790d8da3014549f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr id="pub-methods-0" class="groupHeader"><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:aef343197effbc642b3f1812ac7bd3d85" id="r_aef343197effbc642b3f1812ac7bd3d85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef343197effbc642b3f1812ac7bd3d85">Object</a> (<a class="el" href="../../d8/d4b/classObject.html">Object</a> &amp;other)=delete</td></tr>
-<tr class="separator:aef343197effbc642b3f1812ac7bd3d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f1113c0cc351878350931775ccb56dc" id="r_a2f1113c0cc351878350931775ccb56dc"><td class="memItemLeft" align="right" valign="top"><a id="a2f1113c0cc351878350931775ccb56dc" name="a2f1113c0cc351878350931775ccb56dc"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Object</b> (const <a class="el" href="../../d8/d4b/classObject.html">Object</a> &amp;other)=delete</td></tr>
-<tr class="separator:a2f1113c0cc351878350931775ccb56dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
 <tr class="memitem:a8d677f7e946ed980a4b086efb74e9748" id="r_a8d677f7e946ed980a4b086efb74e9748"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d677f7e946ed980a4b086efb74e9748">id</a></td></tr>
-<tr class="separator:a8d677f7e946ed980a4b086efb74e9748"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24457e0a387492c80594aec7681a2277" id="r_a24457e0a387492c80594aec7681a2277"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24457e0a387492c80594aec7681a2277">name</a></td></tr>
-<tr class="separator:a24457e0a387492c80594aec7681a2277"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2b299eaa47a407bca0e9b47205edd99" id="r_ac2b299eaa47a407bca0e9b47205edd99"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2b299eaa47a407bca0e9b47205edd99">visible</a></td></tr>
-<tr class="separator:ac2b299eaa47a407bca0e9b47205edd99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcf908134541bea512ca0148e05f1f44" id="r_abcf908134541bea512ca0148e05f1f44"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcf908134541bea512ca0148e05f1f44">modified</a></td></tr>
-<tr class="separator:abcf908134541bea512ca0148e05f1f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e9b68376530dd18ab88b43e8456337f" id="r_a0e9b68376530dd18ab88b43e8456337f"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e9b68376530dd18ab88b43e8456337f">center</a></td></tr>
-<tr class="separator:a0e9b68376530dd18ab88b43e8456337f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad39b7fd1eb954cc7890dd2713be6d3f6" id="r_ad39b7fd1eb954cc7890dd2713be6d3f6"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad39b7fd1eb954cc7890dd2713be6d3f6">scaling</a></td></tr>
-<tr class="separator:ad39b7fd1eb954cc7890dd2713be6d3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a770438fbce9eb0bc063547f0f77e0b30" id="r_a770438fbce9eb0bc063547f0f77e0b30"><td class="memItemLeft" align="right" valign="top">Eigen::Quaternionf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a770438fbce9eb0bc063547f0f77e0b30">rotation</a></td></tr>
-<tr class="separator:a770438fbce9eb0bc063547f0f77e0b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72eed21f81afdf95370d638db35b59e1" id="r_a72eed21f81afdf95370d638db35b59e1"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72eed21f81afdf95370d638db35b59e1">velocity</a></td></tr>
-<tr class="separator:a72eed21f81afdf95370d638db35b59e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa31820215a5450a83c624324258f00dd" id="r_aa31820215a5450a83c624324258f00dd"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa31820215a5450a83c624324258f00dd">force</a></td></tr>
-<tr class="separator:aa31820215a5450a83c624324258f00dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60866179af7cb2aad410ea01de546e4e" id="r_a60866179af7cb2aad410ea01de546e4e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60866179af7cb2aad410ea01de546e4e">mass</a></td></tr>
-<tr class="separator:a60866179af7cb2aad410ea01de546e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fb00c4ab2fd22c033aae243bbb1e10a" id="r_a5fb00c4ab2fd22c033aae243bbb1e10a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d96/structKineticState.html">KineticState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fb00c4ab2fd22c033aae243bbb1e10a">prev_state</a></td></tr>
-<tr class="separator:a5fb00c4ab2fd22c033aae243bbb1e10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a049e8776aaeebac897c3ae2d3fe72f77" id="r_a049e8776aaeebac897c3ae2d3fe72f77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d96/structKineticState.html">KineticState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a049e8776aaeebac897c3ae2d3fe72f77">backup</a></td></tr>
-<tr class="separator:a049e8776aaeebac897c3ae2d3fe72f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3961b5381a8384cc71246ff15f7be99b" id="r_a3961b5381a8384cc71246ff15f7be99b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3961b5381a8384cc71246ff15f7be99b">mesh</a></td></tr>
-<tr class="separator:a3961b5381a8384cc71246ff15f7be99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cdcb5985e95260baeb7004cbb97054c" id="r_a9cdcb5985e95260baeb7004cbb97054c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../de/de9/classBVH.html">BVH</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cdcb5985e95260baeb7004cbb97054c">bvh</a></td></tr>
 <tr class="memdesc:a9cdcb5985e95260baeb7004cbb97054c"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据这个物体建立的 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 。  <br /></td></tr>
-<tr class="separator:a9cdcb5985e95260baeb7004cbb97054c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55b13c86eb0225e7e6e28f6b35490ca9" id="r_a55b13c86eb0225e7e6e28f6b35490ca9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55b13c86eb0225e7e6e28f6b35490ca9">BVH_boxes</a></td></tr>
-<tr class="separator:a55b13c86eb0225e7e6e28f6b35490ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 静态 Public 属性</h2></td></tr>
 <tr class="memitem:a573b153aba95a8272b6808ebfe6955cb" id="r_a573b153aba95a8272b6808ebfe6955cb"><td class="memItemLeft" align="right" valign="top">static std::function&lt; <a class="el" href="../../d1/d96/structKineticState.html">KineticState</a>(const <a class="el" href="../../d1/d96/structKineticState.html">KineticState</a> &amp;, const <a class="el" href="../../d1/d96/structKineticState.html">KineticState</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a573b153aba95a8272b6808ebfe6955cb">step</a></td></tr>
 <tr class="memdesc:a573b153aba95a8272b6808ebfe6955cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于更新物体运动状态的函数。  <br /></td></tr>
-<tr class="separator:a573b153aba95a8272b6808ebfe6955cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03b1d23240bc4b367719aba1c6a63872" id="r_a03b1d23240bc4b367719aba1c6a63872"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03b1d23240bc4b367719aba1c6a63872">BVH_for_collision</a> = false</td></tr>
-<tr class="separator:a03b1d23240bc4b367719aba1c6a63872"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private 成员函数</h2></td></tr>
 <tr class="memitem:adca04f4c328648ed754a8c3d846f4d96" id="r_adca04f4c328648ed754a8c3d846f4d96"><td class="memItemLeft" align="right" valign="top"><a id="adca04f4c328648ed754a8c3d846f4d96" name="adca04f4c328648ed754a8c3d846f4d96"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>refresh_BVH_boxes</b> (<a class="el" href="../../d4/d59/structBVHNode.html">BVHNode</a> *node)</td></tr>
-<tr class="separator:adca04f4c328648ed754a8c3d846f4d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private 属性</h2></td></tr>
 <tr class="memitem:a1bdaceb3171dfb3a26e71bc996d7ff1b" id="r_a1bdaceb3171dfb3a26e71bc996d7ff1b"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1bdaceb3171dfb3a26e71bc996d7ff1b">logger</a></td></tr>
-<tr class="separator:a1bdaceb3171dfb3a26e71bc996d7ff1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 静态 Private 属性</h2></td></tr>
 <tr class="memitem:a022b391a51bc04cdb8d7ab1e2db770ed" id="r_a022b391a51bc04cdb8d7ab1e2db770ed"><td class="memItemLeft" align="right" valign="top">static std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a022b391a51bc04cdb8d7ab1e2db770ed">next_available_id</a> = 0</td></tr>
-<tr class="separator:a022b391a51bc04cdb8d7ab1e2db770ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>表示物体的类。 </p>
-<p>“物体”由存储几何数据的 mesh、存储变换信息的位姿参数和存储颜色的材质组成， 每个 <code><a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a></code> 实例对应唯一的 <code><a class="el" href="../../d8/d88/structGL_1_1Mesh.html" title="用于场景预览渲染的 Mesh 类。">GL::Mesh</a></code>、<code><a class="el" href="../../d4/d50/structGL_1_1Material.html" title="物体材质。">GL::Material</a></code> 和唯一的模型变换矩阵 (Model Transform Matrix)，是场景中的最小单元。</p>
-<p>由于 <code><a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a></code> 对象持有的 <code><a class="el" href="../../d8/d88/structGL_1_1Mesh.html" title="用于场景预览渲染的 Mesh 类。">GL::Mesh</a></code> 实例是不可复制的，当前的 <code><a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a></code> 也是不可复制的。但“复制一个物体”在逻辑上完全合理，因此未来会实现该类的复制构造函数。 </p>
-</div><h2 class="groupheader">构造及析构函数说明</h2>
+<p>“物体”由存储几何数据的 mesh、存储变换信息的位姿参数和存储颜色的材质组成， 每个 <span class="tt"><a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a></span> 实例对应唯一的 <span class="tt"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html" title="用于场景预览渲染的 Mesh 类。">GL::Mesh</a></span>、<span class="tt"><a class="el" href="../../d4/d50/structGL_1_1Material.html" title="物体材质。">GL::Material</a></span> 和唯一的模型变换矩阵 (Model Transform Matrix)，是场景中的最小单元。</p>
+<p>由于 <span class="tt"><a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a></span> 对象持有的 <span class="tt"><a class="el" href="../../d8/d88/structGL_1_1Mesh.html" title="用于场景预览渲染的 Mesh 类。">GL::Mesh</a></span> 实例是不可复制的，当前的 <span class="tt"><a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a></span> 也是不可复制的。但“复制一个物体”在逻辑上完全合理，因此未来会实现该类的复制构造函数。 </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
 <a id="aef343197effbc642b3f1812ac7bd3d85" name="aef343197effbc642b3f1812ac7bd3d85"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aef343197effbc642b3f1812ac7bd3d85">&#9670;&#160;</a></span>Object()</h2>
 
@@ -237,7 +194,7 @@ Private 属性</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">成员函数说明</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
 <a id="af8f23e84a424cb6061cc9b23bb1f650c" name="af8f23e84a424cb6061cc9b23bb1f650c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8f23e84a424cb6061cc9b23bb1f650c">&#9670;&#160;</a></span>model()</h2>
 
@@ -303,7 +260,7 @@ Private 属性</h2></td></tr>
 <p>根据指定的渲染模式渲染物体。 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">shader</td><td>对一个 <code><a class="el" href="../../d9/d69/classShader.html" title="对 GLSL Shader 的简单封装。">Shader</a></code> 对象的引用 </td></tr>
+    <tr><td class="paramname">shader</td><td>对一个 <span class="tt"><a class="el" href="../../d9/d69/classShader.html" title="对 GLSL Shader 的简单封装。">Shader</a></span> 对象的引用 </td></tr>
     <tr><td class="paramname">mode</td><td>渲染模式。所有模式下都渲染面片，建模模式下额外渲染边和顶点。 </td></tr>
     <tr><td class="paramname">selected</td><td>布局模式下该物体是否被选中，被选中的物体额外渲染边。其他模式下， 该参数无意义。 </td></tr>
   </table>
@@ -328,7 +285,7 @@ Private 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>更新下一个时间步的运动状态。 </p>
-<p>首先使用 <code><a class="el" href="#a573b153aba95a8272b6808ebfe6955cb" title="用于更新物体运动状态的函数。">Object::step</a></code> 计算下一个时间步自身的运动状态，尝试将自身移动到算出的位置， 再检测在此位置是否会与其他物体碰撞。如果发生碰撞则自身位置回退， 并根据动量定理修改碰撞双方的速度。</p>
+<p>首先使用 <span class="tt"><a class="el" href="#a573b153aba95a8272b6808ebfe6955cb" title="用于更新物体运动状态的函数。">Object::step</a></span> 计算下一个时间步自身的运动状态，尝试将自身移动到算出的位置， 再检测在此位置是否会与其他物体碰撞。如果发生碰撞则自身位置回退， 并根据动量定理修改碰撞双方的速度。</p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">all_objects</td><td>场景中所有的物体，用于碰撞检测和响应。 </td></tr>
@@ -338,7 +295,7 @@ Private 属性</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">类成员变量说明</h2>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
 <a id="a049e8776aaeebac897c3ae2d3fe72f77" name="a049e8776aaeebac897c3ae2d3fe72f77"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a049e8776aaeebac897c3ae2d3fe72f77">&#9670;&#160;</a></span>backup</h2>
 
@@ -367,7 +324,7 @@ Private 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>根据这个物体建立的 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 。 </p>
-<p>物体的 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 在它的 mesh 加载完成后构建。由于 mesh 数据的加载过程是在 <code><a class="el" href="../../d0/db7/classGroup.html#a3cc9d35ed0753293c7128cddf920b55b">Group::load</a></code> 中完成的，构建 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 的函数调用也只能在这个函数（而不是在 <code><a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a></code> 的构造函数）中进行。</p>
+<p>物体的 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 在它的 mesh 加载完成后构建。由于 mesh 数据的加载过程是在 <span class="tt"><a class="el" href="../../d0/db7/classGroup.html#a3cc9d35ed0753293c7128cddf920b55b">Group::load</a></span> 中完成的，构建 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 的函数调用也只能在这个函数（而不是在 <span class="tt"><a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a></span> 的构造函数）中进行。</p>
 <p>物体的 mesh 数据都在模型坐标系下，因此 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 也是建立在模型坐标系下的。这意味着物体的平移、 旋转和缩放都不改变 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 的结构，只有物体发生形变时才需要更新 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 。目前的实现是： 每次退出建模模式时，不加检查地删除原先的 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 并重新构建。 </p>
 
 </div>
@@ -669,11 +626,19 @@ Private 属性</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d8/d4b/classObject.html">Object</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1 </li>
+    <li class="navelem"><a href="../../d8/d4b/classObject.html">Object</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>
 </body>

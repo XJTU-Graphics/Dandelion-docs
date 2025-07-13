@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['构建_0',['构建',['../d8/df1/build.html',1,'']]]
+  ['linux_0',['Linux',['../d8/df1/build.html#compilation-linux',1,'']]]
 ];

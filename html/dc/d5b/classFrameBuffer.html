@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.13.1"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: FrameBuffer类 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -13,7 +13,6 @@
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
-<script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../cookie.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
@@ -38,7 +37,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.1</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,26 +46,20 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.13.1 -->
+<!-- 制作者 Doxygen 1.14.0 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
-/* @license-end */
 </script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() { codefold.init(1); });
-/* @license-end */
+$(function() { codefold.init(); });
 </script>
 <script type="text/javascript" src="../../menudata.js"></script>
 <script type="text/javascript" src="../../menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('../../',true,false,'search.php','搜索',true);
   $(function() { init_search(); });
 });
-/* @license-end */
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
@@ -81,10 +74,9 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('dc/d5b/classFrameBuffer.html','../../'); initResizable(true); });
-/* @license-end */
+$(function(){initNavTree('dc/d5b/classFrameBuffer.html','../../','db/d8c/classFrameBuffer-members'); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -108,11 +100,6 @@ $(function(){initNavTree('dc/d5b/classFrameBuffer.html','../../'); initResizable
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public 成员函数</a> &#124;
-<a href="#pub-attribs">Public 属性</a> &#124;
-<a href="#pri-attribs">Private 属性</a> &#124;
-<a href="../../db/d8c/classFrameBuffer-members.html">所有成员列表</a>  </div>
   <div class="headertitle"><div class="title">FrameBuffer类 参考<div class="ingroups"><a class="el" href="../../db/d81/group__rendering.html">离线渲染</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -122,38 +109,30 @@ $(function(){initNavTree('dc/d5b/classFrameBuffer.html','../../'); initResizable
 
 <p><code>#include &lt;<a class="el" href="../../da/d22/graphics__interface_8h_source.html">graphics_interface.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:aab4c897d360f51c5a96b4782e67e98a9" id="r_aab4c897d360f51c5a96b4782e67e98a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab4c897d360f51c5a96b4782e67e98a9">FrameBuffer</a> (int <a class="el" href="#ac09ee7577229126ecb519c0d9efb284b">width</a>, int height)</td></tr>
-<tr class="separator:aab4c897d360f51c5a96b4782e67e98a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02e942da4a5306a5222032bf7ba17e83" id="r_a02e942da4a5306a5222032bf7ba17e83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02e942da4a5306a5222032bf7ba17e83">set_pixel</a> (int index, float depth, const Eigen::Vector3f &amp;color)</td></tr>
 <tr class="memdesc:a02e942da4a5306a5222032bf7ba17e83"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置当前像素点的颜色  <br /></td></tr>
-<tr class="separator:a02e942da4a5306a5222032bf7ba17e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac18ac65f8408c16c944c1be0778c6ce6" id="r_ac18ac65f8408c16c944c1be0778c6ce6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac18ac65f8408c16c944c1be0778c6ce6">clear</a> (<a class="el" href="../../db/d81/group__rendering.html#gadf8e136713c0691010d2bec6ba63e9cf">BufferType</a> buff)</td></tr>
 <tr class="memdesc:ac18ac65f8408c16c944c1be0778c6ce6"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化指定类型的 buffer。  <br /></td></tr>
-<tr class="separator:ac18ac65f8408c16c944c1be0778c6ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
 <tr class="memitem:ac09ee7577229126ecb519c0d9efb284b" id="r_ac09ee7577229126ecb519c0d9efb284b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac09ee7577229126ecb519c0d9efb284b">width</a></td></tr>
-<tr class="separator:ac09ee7577229126ecb519c0d9efb284b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bba1e0559f4a1cb66676b3dbbdd367f" id="r_a4bba1e0559f4a1cb66676b3dbbdd367f"><td class="memItemLeft" align="right" valign="top"><a id="a4bba1e0559f4a1cb66676b3dbbdd367f" name="a4bba1e0559f4a1cb66676b3dbbdd367f"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
-<tr class="separator:a4bba1e0559f4a1cb66676b3dbbdd367f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab86b310a53e82a8709fe1baa0d3f6797" id="r_ab86b310a53e82a8709fe1baa0d3f6797"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Eigen::Vector3f &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab86b310a53e82a8709fe1baa0d3f6797">color_buffer</a></td></tr>
-<tr class="separator:ab86b310a53e82a8709fe1baa0d3f6797"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1817272cc755bb8255c479b508058676" id="r_a1817272cc755bb8255c479b508058676"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1817272cc755bb8255c479b508058676">depth_buffer</a></td></tr>
-<tr class="separator:a1817272cc755bb8255c479b508058676"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private 属性</h2></td></tr>
 <tr class="memitem:ad315b40bb4342c6d1e5d0ab358b43cbd" id="r_ad315b40bb4342c6d1e5d0ab358b43cbd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../dd/d57/classSpinLock.html">SpinLock</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad315b40bb4342c6d1e5d0ab358b43cbd">spin_locks</a></td></tr>
-<tr class="separator:ad315b40bb4342c6d1e5d0ab358b43cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>一个最简化的 Frame Buffer 。 </p>
 <p>要渲染一帧，通常至少需要一个 color buffer 用于输出颜色、一个 depth buffer 用于记录深度。 </p>
-</div><h2 class="groupheader">构造及析构函数说明</h2>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
 <a id="aab4c897d360f51c5a96b4782e67e98a9" name="aab4c897d360f51c5a96b4782e67e98a9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab4c897d360f51c5a96b4782e67e98a9">&#9670;&#160;</a></span>FrameBuffer()</h2>
 
@@ -176,7 +155,7 @@ Private 属性</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">成员函数说明</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
 <a id="ac18ac65f8408c16c944c1be0778c6ce6" name="ac18ac65f8408c16c944c1be0778c6ce6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac18ac65f8408c16c944c1be0778c6ce6">&#9670;&#160;</a></span>clear()</h2>
 
@@ -240,7 +219,7 @@ Private 属性</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">类成员变量说明</h2>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
 <a id="ab86b310a53e82a8709fe1baa0d3f6797" name="ab86b310a53e82a8709fe1baa0d3f6797"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab86b310a53e82a8709fe1baa0d3f6797">&#9670;&#160;</a></span>color_buffer</h2>
 
@@ -316,11 +295,19 @@ Private 属性</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dc/d5b/classFrameBuffer.html">FrameBuffer</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1 </li>
+    <li class="navelem"><a href="../../dc/d5b/classFrameBuffer.html">FrameBuffer</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>
 </body>

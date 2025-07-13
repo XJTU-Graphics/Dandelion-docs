@@ -84,3 +84,4 @@ var NAVTREEINDEX =
 
 var SYNCONMSG = '点击 关闭 面板同步';
 var SYNCOFFMSG = '点击 开启 面板同步';
+var LISTOFALLMEMBERS = '所有成员列表';

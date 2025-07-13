@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.13.1"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: Scene类 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -13,7 +13,6 @@
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
-<script type="text/javascript" src="../../resize.js"></script>
 <script type="text/javascript" src="../../cookie.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
@@ -38,7 +37,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.1</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -47,26 +46,20 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.13.1 -->
+<!-- 制作者 Doxygen 1.14.0 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
-/* @license-end */
 </script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() { codefold.init(1); });
-/* @license-end */
+$(function() { codefold.init(); });
 </script>
 <script type="text/javascript" src="../../menudata.js"></script>
 <script type="text/javascript" src="../../menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('../../',true,false,'search.php','搜索',true);
   $(function() { init_search(); });
 });
-/* @license-end */
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
@@ -81,10 +74,9 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('d5/d9c/classScene.html','../../'); initResizable(true); });
-/* @license-end */
+$(function(){initNavTree('d5/d9c/classScene.html','../../','db/d67/classScene-members'); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -108,13 +100,6 @@ $(function(){initNavTree('d5/d9c/classScene.html','../../'); initResizable(true)
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public 成员函数</a> &#124;
-<a href="#pub-attribs">Public 属性</a> &#124;
-<a href="#pri-methods">Private 成员函数</a> &#124;
-<a href="#pri-static-methods">静态 Private 成员函数</a> &#124;
-<a href="#pri-attribs">Private 属性</a> &#124;
-<a href="../../db/d67/classScene-members.html">所有成员列表</a>  </div>
   <div class="headertitle"><div class="title">Scene类 参考<div class="ingroups"><a class="el" href="../../db/d81/group__rendering.html">离线渲染</a> &#124; <a class="el" href="../../d9/d77/group__simulation.html">物理模拟</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -124,81 +109,58 @@ $(function(){initNavTree('d5/d9c/classScene.html','../../'); initResizable(true)
 
 <p><code>#include &lt;<a class="el" href="../../db/d83/scene_8h_source.html">scene.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:adb7836c08d271fb2f2faebf720d7b5e2" id="r_adb7836c08d271fb2f2faebf720d7b5e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb7836c08d271fb2f2faebf720d7b5e2">Scene</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;&amp;other)=delete</td></tr>
-<tr class="separator:adb7836c08d271fb2f2faebf720d7b5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa78f982d2d987f8e4bc6748a834bdccc" id="r_aa78f982d2d987f8e4bc6748a834bdccc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa78f982d2d987f8e4bc6748a834bdccc">load</a> (const std::string &amp;file_path)</td></tr>
 <tr class="memdesc:aa78f982d2d987f8e4bc6748a834bdccc"><td class="mdescLeft">&#160;</td><td class="mdescRight">从指定路径加载模型文件到这个场景中。  <br /></td></tr>
-<tr class="separator:aa78f982d2d987f8e4bc6748a834bdccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95c6652f9dab25c674e14c889a0d72db" id="r_a95c6652f9dab25c674e14c889a0d72db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95c6652f9dab25c674e14c889a0d72db">start_simulation</a> ()</td></tr>
-<tr class="separator:a95c6652f9dab25c674e14c889a0d72db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60ceb60b6635b4750ea7681e358b2185" id="r_a60ceb60b6635b4750ea7681e358b2185"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60ceb60b6635b4750ea7681e358b2185">stop_simulation</a> ()</td></tr>
-<tr class="separator:a60ceb60b6635b4750ea7681e358b2185"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22359fce4b3d3f44275aa5d6b2dd3dc1" id="r_a22359fce4b3d3f44275aa5d6b2dd3dc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22359fce4b3d3f44275aa5d6b2dd3dc1">reset_simulation</a> ()</td></tr>
-<tr class="separator:a22359fce4b3d3f44275aa5d6b2dd3dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a296ce2b55947a1a276ab86291eeeaacf" id="r_a296ce2b55947a1a276ab86291eeeaacf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a296ce2b55947a1a276ab86291eeeaacf">check_during_simulation</a> ()</td></tr>
-<tr class="separator:a296ce2b55947a1a276ab86291eeeaacf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dcbf1d49270fea656c0a86b2bacd95c" id="r_a3dcbf1d49270fea656c0a86b2bacd95c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3dcbf1d49270fea656c0a86b2bacd95c">render</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader, <a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> mode)</td></tr>
 <tr class="memdesc:a3dcbf1d49270fea656c0a86b2bacd95c"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制整个场景。  <br /></td></tr>
-<tr class="separator:a3dcbf1d49270fea656c0a86b2bacd95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr id="pub-methods-0" class="groupHeader"><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a2dced7c96389ef0c6688ad20c8d01e81" id="r_a2dced7c96389ef0c6688ad20c8d01e81"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2dced7c96389ef0c6688ad20c8d01e81">Scene</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;other)=delete</td></tr>
-<tr class="separator:a2dced7c96389ef0c6688ad20c8d01e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab278e1cce7985696ecccb1f8f113cacb" id="r_ab278e1cce7985696ecccb1f8f113cacb"><td class="memItemLeft" align="right" valign="top"><a id="ab278e1cce7985696ecccb1f8f113cacb" name="ab278e1cce7985696ecccb1f8f113cacb"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b> (const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;other)=delete</td></tr>
-<tr class="separator:ab278e1cce7985696ecccb1f8f113cacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
 <tr class="memitem:a3f024af6f54b5cd0dd3ed11cd875c327" id="r_a3f024af6f54b5cd0dd3ed11cd875c327"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="../../d0/db7/classGroup.html">Group</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f024af6f54b5cd0dd3ed11cd875c327">groups</a></td></tr>
-<tr class="separator:a3f024af6f54b5cd0dd3ed11cd875c327"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaa5052d36de2f738beaa15dce2a63bd" id="r_adaa5052d36de2f738beaa15dce2a63bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d4b/classObject.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adaa5052d36de2f738beaa15dce2a63bd">selected_object</a></td></tr>
 <tr class="memdesc:adaa5052d36de2f738beaa15dce2a63bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前被选中的物体。  <br /></td></tr>
-<tr class="separator:adaa5052d36de2f738beaa15dce2a63bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afed13ec4ba2d7ab75b273d507911b498" id="r_afed13ec4ba2d7ab75b273d507911b498"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d7e/structCamera.html">Camera</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afed13ec4ba2d7ab75b273d507911b498">camera</a></td></tr>
-<tr class="separator:afed13ec4ba2d7ab75b273d507911b498"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7481b024ed1181823b38c10e663ffea7" id="r_a7481b024ed1181823b38c10e663ffea7"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7481b024ed1181823b38c10e663ffea7">lights</a></td></tr>
-<tr class="separator:a7481b024ed1181823b38c10e663ffea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa74b766e66ccda23ba55490a93db7bb" id="r_aaa74b766e66ccda23ba55490a93db7bb"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa74b766e66ccda23ba55490a93db7bb">halfedge_mesh</a></td></tr>
-<tr class="separator:aaa74b766e66ccda23ba55490a93db7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private 成员函数</h2></td></tr>
 <tr class="memitem:a538e25d2e438166039cdea0053da344f" id="r_a538e25d2e438166039cdea0053da344f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a538e25d2e438166039cdea0053da344f">render_camera</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader)</td></tr>
 <tr class="memdesc:a538e25d2e438166039cdea0053da344f"><td class="mdescLeft">&#160;</td><td class="mdescRight">在渲染模式 (Rendering mode) 下绘制代表相机视锥的线框。  <br /></td></tr>
-<tr class="separator:a538e25d2e438166039cdea0053da344f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b43ea89d6c24ed55d7dd8f5748674eb" id="r_a3b43ea89d6c24ed55d7dd8f5748674eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b43ea89d6c24ed55d7dd8f5748674eb">render_lights</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader)</td></tr>
 <tr class="memdesc:a3b43ea89d6c24ed55d7dd8f5748674eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">在渲染模式下绘制光源。  <br /></td></tr>
-<tr class="separator:a3b43ea89d6c24ed55d7dd8f5748674eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb092c6c00660da77286cda3d4b1e36f" id="r_aeb092c6c00660da77286cda3d4b1e36f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb092c6c00660da77286cda3d4b1e36f">simulation_update</a> ()</td></tr>
 <tr class="memdesc:aeb092c6c00660da77286cda3d4b1e36f"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算场景中所有物体下一帧要渲染的运动状态。  <br /></td></tr>
-<tr class="separator:aeb092c6c00660da77286cda3d4b1e36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 静态 Private 成员函数</h2></td></tr>
 <tr class="memitem:a53fbe865bbe45b652ebd137cc2ef39cd" id="r_a53fbe865bbe45b652ebd137cc2ef39cd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53fbe865bbe45b652ebd137cc2ef39cd">render_ground</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader)</td></tr>
 <tr class="memdesc:a53fbe865bbe45b652ebd137cc2ef39cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制空间坐标轴和 \(y=1\) 平面上表示地面的网格线。  <br /></td></tr>
-<tr class="separator:a53fbe865bbe45b652ebd137cc2ef39cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private 属性</h2></td></tr>
 <tr class="memitem:a141a7d2999cde438b69442da6bbd6d79" id="r_a141a7d2999cde438b69442da6bbd6d79"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a141a7d2999cde438b69442da6bbd6d79">during_animation</a></td></tr>
-<tr class="separator:a141a7d2999cde438b69442da6bbd6d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac27383b17bb15fffc17d3e402cf4dcd9" id="r_ac27383b17bb15fffc17d3e402cf4dcd9"><td class="memItemLeft" align="right" valign="top">std::chrono::time_point&lt; std::chrono::steady_clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac27383b17bb15fffc17d3e402cf4dcd9">last_update</a></td></tr>
-<tr class="separator:ac27383b17bb15fffc17d3e402cf4dcd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5dc85d7716e1ed0577246cb6d2e90e4" id="r_ac5dc85d7716e1ed0577246cb6d2e90e4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d8/d4b/classObject.html">Object</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5dc85d7716e1ed0577246cb6d2e90e4">all_objects</a></td></tr>
-<tr class="separator:ac5dc85d7716e1ed0577246cb6d2e90e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65320ce4e571046f3ebea79b9ef00ece" id="r_a65320ce4e571046f3ebea79b9ef00ece"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65320ce4e571046f3ebea79b9ef00ece">arrows</a></td></tr>
-<tr class="separator:a65320ce4e571046f3ebea79b9ef00ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d310a617d791b73ab82bc34bcb37f69" id="r_a5d310a617d791b73ab82bc34bcb37f69"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d310a617d791b73ab82bc34bcb37f69">logger</a></td></tr>
-<tr class="separator:a5d310a617d791b73ab82bc34bcb37f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>表示一个包含相机、光源、物体的完整场景。 </p>
-<p><code><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a></code> 是一个对象语义的类，它既包含完成图形设计和渲染所需的全部数据， 也具有渲染自身预览效果的功能。当前的设计是：控制器 (<a class="el" href="../../d9/d85/classController.html" title="控制器管理所有的界面组件，并处理和预览视角操作（例如旋转、缩放或者平移）相关的输入。">Controller</a>) 在 OpenGL 上下文被创建后即创建场景实例，该实例在程序的整个生命周期中都是唯一的。因此， 复制或移动 <code><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a></code> 实例都是错误的行为，因为这有可能导致场景数据不一致。 未来加入修改历史记录时，此设计思路有可能被改变。</p>
-<p>场景可以是空的，如果它非空，则可以包含若干个物体组 (<a class="el" href="../../d0/db7/classGroup.html" title="表示物体组的类。">Group</a>)； 每个组也可以为空或包含若干物体 (<a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a>)，物体是场景中的最小单元，不能再分了。 各种数据遵循“尽可能存储到更小单元中”的原则，因此 <code><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a></code> 类中只存储相机、 光源这些与任何物体都无关的数据，而材质、mesh 等数据则存储到物体中。 所有物体都由 <code><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a></code> 对象创建并持有，当 <code><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a></code> 对象析构时，所有的组、 物体都会自行析构。 </p>
-</div><h2 class="groupheader">构造及析构函数说明</h2>
+<p><span class="tt"><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a></span> 是一个对象语义的类，它既包含完成图形设计和渲染所需的全部数据， 也具有渲染自身预览效果的功能。当前的设计是：控制器 (<a class="el" href="../../d9/d85/classController.html" title="控制器管理所有的界面组件，并处理和预览视角操作（例如旋转、缩放或者平移）相关的输入。">Controller</a>) 在 OpenGL 上下文被创建后即创建场景实例，该实例在程序的整个生命周期中都是唯一的。因此， 复制或移动 <span class="tt"><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a></span> 实例都是错误的行为，因为这有可能导致场景数据不一致。 未来加入修改历史记录时，此设计思路有可能被改变。</p>
+<p>场景可以是空的，如果它非空，则可以包含若干个物体组 (<a class="el" href="../../d0/db7/classGroup.html" title="表示物体组的类。">Group</a>)； 每个组也可以为空或包含若干物体 (<a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a>)，物体是场景中的最小单元，不能再分了。 各种数据遵循“尽可能存储到更小单元中”的原则，因此 <span class="tt"><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a></span> 类中只存储相机、 光源这些与任何物体都无关的数据，而材质、mesh 等数据则存储到物体中。 所有物体都由 <span class="tt"><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a></span> 对象创建并持有，当 <span class="tt"><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a></span> 对象析构时，所有的组、 物体都会自行析构。 </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
 <a id="a2dced7c96389ef0c6688ad20c8d01e81" name="a2dced7c96389ef0c6688ad20c8d01e81"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2dced7c96389ef0c6688ad20c8d01e81">&#9670;&#160;</a></span>Scene() <span class="overload">[1/2]</span></h2>
 
@@ -251,7 +213,7 @@ Private 属性</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">成员函数说明</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
 <a id="a296ce2b55947a1a276ab86291eeeaacf" name="a296ce2b55947a1a276ab86291eeeaacf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a296ce2b55947a1a276ab86291eeeaacf">&#9670;&#160;</a></span>check_during_simulation()</h2>
 
@@ -286,7 +248,7 @@ Private 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>从指定路径加载模型文件到这个场景中。 </p>
-<p>这个函数只会根据文件名创建一个物体组，然后调用物体组的 <code>load</code> 方法加载文件。 </p>
+<p>这个函数只会根据文件名创建一个物体组，然后调用物体组的 <span class="tt">load</span> 方法加载文件。 </p>
 
 </div>
 </div>
@@ -310,7 +272,7 @@ Private 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>绘制整个场景。 </p>
-<p><code>render</code> 方法是场景对外的绘制接口，不会直接绘制任何内容，只负责调用每个 <a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a> 的 <code>render</code> 方法、<code>render_camera</code> 和 <code>render_lights</code> 方法。 </p>
+<p><span class="tt">render</span> 方法是场景对外的绘制接口，不会直接绘制任何内容，只负责调用每个 <a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a> 的 <span class="tt">render</span> 方法、<span class="tt">render_camera</span> 和 <span class="tt">render_lights</span> 方法。 </p>
 
 </div>
 </div>
@@ -441,7 +403,7 @@ Private 属性</h2></td></tr>
 
 <p>计算场景中所有物体下一帧要渲染的运动状态。 </p>
 <p>这个函数按照固定的时间步长模拟物体运动。</p>
-<p>每一帧的渲染过程可以概括为更新数据（几何、运动等等）和渲染图像两步。 约定当前屏幕上显示的是上一帧的图像，正在计算的是当前帧的数据。 更新运动状态时首先用当前时间减去 <code>last_update</code> 得到上一帧和之前帧剩余时长之和； 再循环模拟物体运动。每循环一次走过一个长度为 <code>time_step</code> 的时间步、 剩余时长减去 <code>time_step</code> ；当剩余时长不足一个 <code>time_step</code> 时停止模拟， 并将这一帧模拟走过的总时长累加到 <code>last_update</code> 上。 </p>
+<p>每一帧的渲染过程可以概括为更新数据（几何、运动等等）和渲染图像两步。 约定当前屏幕上显示的是上一帧的图像，正在计算的是当前帧的数据。 更新运动状态时首先用当前时间减去 <span class="tt">last_update</span> 得到上一帧和之前帧剩余时长之和； 再循环模拟物体运动。每循环一次走过一个长度为 <span class="tt">time_step</span> 的时间步、 剩余时长减去 <span class="tt">time_step</span> ；当剩余时长不足一个 <span class="tt">time_step</span> 时停止模拟， 并将这一帧模拟走过的总时长累加到 <span class="tt">last_update</span> 上。 </p>
 
 </div>
 </div>
@@ -459,7 +421,7 @@ Private 属性</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>备份物体当前状态并开始模拟，此后每一帧都会调用所有物体的 <code>update</code> 方法。 </p>
+<p>备份物体当前状态并开始模拟，此后每一帧都会调用所有物体的 <span class="tt">update</span> 方法。 </p>
 
 </div>
 </div>
@@ -477,11 +439,11 @@ Private 属性</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>停止模拟，此后不再调用物体的 <code>update</code> 方法。 </p>
+<p>停止模拟，此后不再调用物体的 <span class="tt">update</span> 方法。 </p>
 
 </div>
 </div>
-<h2 class="groupheader">类成员变量说明</h2>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
 <a id="ac5dc85d7716e1ed0577246cb6d2e90e4" name="ac5dc85d7716e1ed0577246cb6d2e90e4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac5dc85d7716e1ed0577246cb6d2e90e4">&#9670;&#160;</a></span>all_objects</h2>
 
@@ -680,11 +642,19 @@ Private 属性</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1 </li>
+    <li class="navelem"><a href="../../d5/d9c/classScene.html">Scene</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>
 </body>
