@@ -103,25 +103,30 @@ $(function(){initNavTree('d9/d2f/structure.html','../../',''); });
   <div class="headertitle"><div class="title">项目结构 </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>按照所实现的功能，Dandelion 的源代码被划分为若干模块（注意，非 C++ 20 引入的原生 module），每个模块的源代码存放于一个子目录中。整个项目的结构如下：</p>
+<div class="textblock"><p>按照所实现的功能，Dandelion 的源代码被划分为若干功能模块，每个功能模块的源代码存放于一个子目录中。整个项目的结构如下：</p>
 <div class="fragment"><div class="line">dandelion</div>
-<div class="line">├── CMakeLists.txt</div>
+<div class="line">├── CMakeLists.txt      <span class="comment">// 顶层的 CMakeLists，构建 dandelion 可执行文件</span></div>
 <div class="line">├── CREDITS</div>
-<div class="line">├── deps        <span class="comment">// 所有的依赖库</span></div>
-<div class="line">│   ├── assimp</div>
-<div class="line">│   └── ...</div>
-<div class="line">├── docs        <span class="comment">// 开发者文档源码</span></div>
+<div class="line">├── CompilerFlags.cmake <span class="comment">// 被所有 CMakeLists 共享的编译配置，主要用来处理不同平台的适配和警告</span></div>
 <div class="line">├── README.md</div>
-<div class="line">├── resources   <span class="comment">// 运行时所需的资源文件，包括图标、字体和 shader 源码</span></div>
-<div class="line">└── src         <span class="comment">// 源代码</span></div>
-<div class="line">    ├── main.cpp</div>
-<div class="line">    ├── geometry    <span class="comment">// 几何处理模块</span></div>
-<div class="line">    ├── simulation  <span class="comment">// 物理模拟模块</span></div>
-<div class="line">    ├── platform    <span class="comment">// 平台相关模块</span></div>
-<div class="line">    ├── render      <span class="comment">// 离线渲染模块</span></div>
-<div class="line">    ├── scene       <span class="comment">// 场景模块</span></div>
-<div class="line">    ├── ui          <span class="comment">// UI 模块</span></div>
-<div class="line">    └── utils       <span class="comment">// 共享工具模块</span></div>
+<div class="line">├── deps    <span class="comment">// 第三方库</span></div>
+<div class="line">├── docs    <span class="comment">// 用于生成开发者文档的 dox 文件</span></div>
+<div class="line">├── lib     <span class="comment">// 用于构建静态库的 CMakeLists</span></div>
+<div class="line">├── resources       <span class="comment">// 一些运行时加载的资源文件</span></div>
+<div class="line">├── src             <span class="comment">// 源代码</span></div>
+<div class="line">│   ├── geometry    <span class="comment">//      几何处理，包括半边网格数据结构和一些几何算法</span></div>
+<div class="line">│   ├── main.cpp    <span class="comment">//      dandelion 的入口</span></div>
+<div class="line">│   ├── platform    <span class="comment">//      平台相关 API 的封装，包括 OpenGL 和原生窗口等</span></div>
+<div class="line">│   ├── render      <span class="comment">//      离线渲染，包括所有渲染器的实现</span></div>
+<div class="line">│   ├── scene       <span class="comment">//      场景表示</span></div>
+<div class="line">│   ├── simulation  <span class="comment">//      物理模拟相关的代码，主要是求解器</span></div>
+<div class="line">│   ├── ui          <span class="comment">//      应用 GUI</span></div>
+<div class="line">│   └── utils       <span class="comment">//      通用工具，包括日志、BVH 等</span></div>
+<div class="line">└── test            <span class="comment">// 单元测试</span></div>
+<div class="line">    ├── CMakeLists.txt      <span class="comment">// 构建单元测试的 CMakeLists</span></div>
+<div class="line">    ├── basic_tests.cpp     <span class="comment">// 测试三维变换</span></div>
+<div class="line">    ├── geometry_tests.cpp  <span class="comment">// 测试几何处理算法</span></div>
+<div class="line">    └── main.cpp            <span class="comment">// 单元测试程序的入口</span></div>
 </div><!-- fragment --><p>点击左侧导航栏上的 <em>专题</em> 页面可以显示模块简介，在 <em>专题</em> 页面上点击模块名则可以查看模块内的各种定义。 </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

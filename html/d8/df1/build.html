@@ -176,18 +176,24 @@ $(function(){initNavTree('d8/df1/build.html','../../',''); });
 <p>由于日志输出是调试实验的重要参考，我们始终推荐从 <b>终端</b> 启动 Dandelion。在 Windows 平台上，我们推荐使用 PowerShell 而非 cmd，并推荐使用 Windows Terminal 作为终端模拟器；在 Linux 或 macOS 平台上可以直接使用默认的 shell 和终端模拟器，更熟悉这些工具的话也可以自己挑选。</p>
 <p>以下的所有说明中，均以“终端”代指终端模拟器而非 shell。不清楚二者区别的话，可以简单认为“终端”就是指能执行命令的窗口。</p>
 <p>由于我们人力有限，Dandelion 仅支持 Debug 和 Release 两种构建类型，在不修改 <em>CMakeLists.txt</em> 的情况下，你也只能用这两个类型构建 Dandelion。这并不意味着 MinSizeRel 和 RelWithDebInfo 类型一定会构建出错，但我们不会在这两个模式下作任何测试。</p>
+<p>无论你是否认真阅读了上面的文档，在开始编译之前，请确保：</p><ul>
+<li>系统满足要求</li>
+<li>编译器和 CMake 足够新</li>
+<li>如果是 Linux，安装了所需的额外依赖</li>
+<li>下载了 <em>dandelion-ray</em> 和 <em>dandelion-bvh</em> 两个静态库</li>
+</ul>
 <h2 class="doxsection"><a class="anchor" id="compilation-windows"></a>
 Windows</h2>
-<p>由于 Dandelion 的源文件中包含 UTF-8 编码的中文，整个项目需要开启 <span class="tt">/utf-8</span> 选项编译，而 Windows 文件系统默认的中文编码是 GBK ，这可能导致兼容性问题（表现为“无访问权限”等）。因此，Dandelion 的源代码必须位于全英文路径下。</p>
+<p>由于 Dandelion 的源文件中包含 UTF-8 编码的中文，整个项目需要开启 <span class="tt">/utf-8</span> 选项编译，而 Windows 文件系统默认的中文编码是 GBK ，这可能导致兼容性问题（表现为“无访问权限”等）。因此，Dandelion 的源代码 <b>必须位于全英文路径下</b> 。</p>
 <p>打开终端，进入 dandelion 根目录并执行如下命令：</p>
 <div class="fragment"><div class="line">&gt; New-Item -ItemType &quot;directory&quot; build</div>
 <div class="line">&gt; Set-Location build</div>
 <div class="line">&gt; cmake -S .. -B .</div>
-<div class="line">&gt; cmake --build . --config Debug --target dandelion --parallel 8</div>
-</div><!-- fragment --><p>完成后可以直接运行程序：（必须在 <em>build</em> 目录下执行命令，切换到 <em>Debug</em> 目录下会导致程序找不到资源文件））</p>
+<div class="line">&gt; cmake --build . --config Debug --target dandelion --parallel $env:NUMBER_OF_PROCESSORS</div>
+</div><!-- fragment --><p>完成后可以直接运行程序：（必须在 <em>build</em> 目录下执行命令，切换到 <em>Debug</em> 目录下会导致程序找不到资源文件）</p>
 <div class="fragment"><div class="line">&gt; .\Debug\dandelion.exe</div>
-</div><!-- fragment --><p>MSVC 和 MS Build 是 Multi-config 的构建工具，在调整构建类型时不需要重新配置 CMake 项目，只需修改参数重新编译：</p>
-<div class="fragment"><div class="line">&gt; cmake --build . --config Release --target dandelion --parallel 8</div>
+</div><!-- fragment --><p>因为 MSBuild 是 Multi-config 的构建工具，所以调整构建类型时不需要重新配置 CMake 项目，只需修改参数重新编译：</p>
+<div class="fragment"><div class="line">&gt; cmake --build . --config Release --target dandelion --parallel $env:NUMBER_OF_PROCESSORS</div>
 <div class="line">&gt; .\Release\dandelion.exe</div>
 </div><!-- fragment --><p>如果你希望在 Windows 平台上使用 MinGW 工具链构建，请注意 MinGW 是 Single-config 构建工具，执行命令的方式与 Linux 平台相同。</p>
 <h2 class="doxsection"><a class="anchor" id="compilation-linux"></a>
@@ -196,12 +202,12 @@ Linux</h2>
 <div class="fragment"><div class="line">$ mkdir build</div>
 <div class="line">$ cd build</div>
 <div class="line">$ cmake -S .. -B . -DCMAKE_BUILD_TYPE=Debug</div>
-<div class="line">$ cmake --build . --parallel 8</div>
+<div class="line">$ cmake --build . --parallel $(nproc)</div>
 </div><!-- fragment --><p>完成后可以直接运行程序：</p>
 <div class="fragment"><div class="line">$ ./dandelion</div>
 </div><!-- fragment --><p>GNU Make 是 Single-config 的构建工具，需要重新配置 CMake 项目才能改变构建类型：</p>
 <div class="fragment"><div class="line">$ cmake -S .. -B . -DCMAKE_BUILD_TYPE=Release</div>
-<div class="line">$ cmake --build . --parallel 8</div>
+<div class="line">$ cmake --build . --parallel $(nproc)</div>
 </div><!-- fragment --><p>调整 <span class="tt">cmake</span> 命令的参数可以调整编译设置。修改 <span class="tt">--parallel</span> 参数后接的数字可以调整编译器使用的线程数，建议和物理核心数量等同。</p>
 <h2 class="doxsection"><a class="anchor" id="compilation-macos"></a>
 macOS</h2>

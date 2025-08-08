@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['平台相关的部分_0',['平台相关的部分',['../de/d8b/group__platform.html',1,'']]]
+  ['工具需求_0',['工具需求',['../d8/df1/build.html#requests',1,'']]]
 ];

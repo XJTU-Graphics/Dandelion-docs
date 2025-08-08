@@ -1,6 +1,6 @@
 var indexSectionsWithContent =
 {
-  0: "abcdefghiklmnopqrstuvwx~代依几工平开拼提杂构物界离组编非项",
+  0: "abcdefghiklmnopqrstuvwx~代依几参工平开拼提杂构物界离组编非项",
   1: "abcdefghiklmoprstuvw",
   2: "abcfghklmoprst",
   3: "abcdefghilmnopqrstuvx~",
@@ -9,7 +9,7 @@ var indexSectionsWithContent =
   6: "bhrw",
   7: "o",
   8: "u几平杂物界离",
-  9: "dglmwx代依工开拼提构组编非项"
+  9: "dglmwx代依参工开拼提构组编非项"
 };
 
 var indexSectionNames =

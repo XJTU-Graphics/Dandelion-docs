@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dandelion: 开始开发</title>
+<title>Dandelion: 参与贡献</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -100,13 +100,13 @@ $(function(){initNavTree('da/d2c/startup.html','../../',''); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">开始开发 </div></div>
+  <div class="headertitle"><div class="title">参与贡献 </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>在开始编写代码前，请稍微花一点时间阅读以下的约定和帮助，这将有助于你更加顺利地参与到 Dandelion 的开发中。使用 Dandelion 做实验的同学可以不必遵守这些，直接开始实验。</p>
+<div class="textblock"><p>在开始编写代码前，请阅读以下的约定和帮助，以便更加顺利地参与到 Dandelion 的开发中。使用 Dandelion 做实验的同学可以不必遵守这些，直接开始实验。</p>
 <h1 class="doxsection"><a class="anchor" id="standard"></a>
 项目规范</h1>
-<p>开发过程中，除实现功能外，也请关注命名、注释（文档）、提交规范这三方面。</p>
+<p>开发过程中，除实现功能外还需要关注命名、注释（文档）、提交规范这三方面。</p>
 <ul>
 <li>命名<ul>
 <li>禁止用拼音命名，可以用 <a href="https://unbug.github.io/codelf">CodeIf</a> 这个工具来查找合适的变量名，实在不方便翻译成英文的直接用中文。</li>
@@ -119,7 +119,7 @@ $(function(){initNavTree('da/d2c/startup.html','../../',''); });
 </li>
 <li>注释：在写完代码后，请尽量注释你认为其他人不能一眼看懂的类、函数。函数内部关于实现思路的注释没有任何格式规定，而 Doxygen 注释块请遵循这两条：<ul>
 <li>对类和函数的注释应该是 Qt 风格的 Doxygen 注释块。每处英文注释开头请加上 <span class="tt">\~english</span> 指令、中文注释开头请加上 <span class="tt">\~chinese</span> 命令，否则 Doxygen 生成对应语言的文档时内容会不匹配。</li>
-<li>如果时间紧张，可以仅写中文注释；但除非功能特别简单，还请务必写上注释，哪怕只是一个 <span class="tt">\brief</span>。</li>
+<li>每个类或函数必须有 Doxygen 注释块，如果该类或函数功能特别简单，注释块可以简短。</li>
 </ul>
 </li>
 <li>提交规范<ul>
@@ -183,6 +183,9 @@ $(function(){initNavTree('da/d2c/startup.html','../../',''); });
 <div class="line">}</div>
 </div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="commit"></a>
 提交更改</h1>
+<h2 class="doxsection"><a class="anchor" id="non-member-submission"></a>
+非组织成员</h2>
+<p>请在 GitHub 上 Fork XJTU-Graphics/dandelion 项目，修改后提交 Pull Request 。Gitee 仅用作发布镜像，issue 很可能得不到回复，PR 则不会被接受。</p>
 <h2 class="doxsection"><a class="anchor" id="member-submission"></a>
 XJTU-Graphics 组织成员</h2>
 <p>我们统一在 XJTU-Graphics/dandelion-dev 这个仓库下协作开发。为了减少混乱，请按照如下的流程新增功能或者修复 Bug：</p>
@@ -211,18 +214,17 @@ XJTU-Graphics 组织成员</h2>
 <li>通常不要使用 <span class="tt">merge</span> 命令，如果遇到严重冲突不知道该怎么解决，请与其他人讨论。</li>
 <li>在推送到远程仓库前，保证自己已经 rebase 到了最新的 <span class="tt">main</span> 分支上。</li>
 </ul>
-<h2 class="doxsection"><a class="anchor" id="non-member-submission"></a>
-非组织成员</h2>
-<p>请在 GitHub 上 Fork XJTU-Graphics/dandelion 项目，修改后提交 Pull Request 。Gitee 仅用作发布镜像，issue 很可能得不到回复，PR 则不会被接受。</p>
 <h1 class="doxsection"><a class="anchor" id="tools"></a>
 开发工具</h1>
 <h2 class="doxsection"><a class="anchor" id="code-format"></a>
 代码格式</h2>
 <p>请注意， <b>所有的源代码文件在提交之前都应当被格式化。</b></p>
 <p>为了免去写代码时考虑格式的麻烦，我们使用 clang-format 工具格式化 src 目录下的所有代码。指定格式的 .clang-format 文件已经放置于项目根目录下，请勿随意修改。</p>
-<p>目前 vim / VS Code / Visual Studio 等开发工具中都有集成 clang-format 的插件，可以直接安装使用；也可以手动在命令行使用</p>
-<div class="fragment"><div class="line">clang-format -style=file -i file</div>
-</div><!-- fragment --><p>来格式化 <span class="tt">file</span> 这个文件。</p>
+<p>目前 vim / VS Code / Visual Studio 等开发工具中都有集成 clang-format 的插件，可以直接安装使用；我们也编写了用于格式检查的 git pre-commit hook，在项目根目录执行如下命令复制该文件： </p><blockquote class="doxtable">
+<p>注意：在 Windows 平台上，需要用 Git Bash 执行命令。 </p><div class="fragment"><div class="line">cp pre-commit .git/hooks</div>
+<div class="line">chmod +x .git/hooks/pre-commit</div>
+</div><!-- fragment --> </blockquote>
+<p>之后，每次执行 <span class="tt">git commit</span> 提交时都会自动格式化暂存区的所有 C/C++ 头文件和源文件。</p>
 <h2 class="doxsection"><a class="anchor" id="spell-check"></a>
 拼写检查</h2>
 <p>一个拼写错误的单词可能给后期开发带来很大麻烦，我们在发现拼写错误后 <b>一定会更正它</b> 。推荐使用插件检查单词拼写，省得在写错后回头修改。</p>
