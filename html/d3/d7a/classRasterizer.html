@@ -111,8 +111,8 @@ $(function(){initNavTree('d3/d7a/classRasterizer.html','../../','dd/d81/classRas
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:aae9de98cad8fde08e456e35c0f00d433" id="r_aae9de98cad8fde08e456e35c0f00d433"><td class="memItemLeft" align="right" valign="top"><a id="aae9de98cad8fde08e456e35c0f00d433" name="aae9de98cad8fde08e456e35c0f00d433"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>worker_thread</b> ()</td></tr>
+<tr class="memitem:aae9de98cad8fde08e456e35c0f00d433" id="r_aae9de98cad8fde08e456e35c0f00d433"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae9de98cad8fde08e456e35c0f00d433">worker_thread</a> ()</td></tr>
+<tr class="memdesc:aae9de98cad8fde08e456e35c0f00d433"><td class="mdescLeft">&#160;</td><td class="mdescRight">负责执行光栅化的工作线程  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private 成员函数</h2></td></tr>
@@ -300,6 +300,26 @@ Private 成员函数</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aae9de98cad8fde08e456e35c0f00d433" name="aae9de98cad8fde08e456e35c0f00d433"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae9de98cad8fde08e456e35c0f00d433">&#9670;&#160;</a></span>worker_thread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Rasterizer::worker_thread </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>负责执行光栅化的工作线程 </p>
+<p>不断读取顶点着色输出队列中的顶点数据，每三个顶点将其光栅化为三角形片元 </p>
 
 </div>
 </div>

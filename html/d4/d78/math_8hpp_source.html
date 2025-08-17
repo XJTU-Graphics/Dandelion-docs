@@ -273,9 +273,9 @@ $(function(){initNavTree('d4/d78/math_8hpp_source.html','../../',''); });
 <div class="foldopen" id="foldopen00150" data-start="{" data-end="}">
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="../../db/d81/group__utils.html#ga35871f456d2ecb7c9d8ea653197c12cf">  150</a></span><span class="keyword">inline</span> std::tuple&lt;T, T, T&gt; <a class="code hl_function" href="../../db/d81/group__utils.html#ga35871f456d2ecb7c9d8ea653197c12cf">quaternion_to_ZYX_euler</a>(T w, T x, T y, T z)</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>{</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keyword">const</span> T test          = x * z + w * y;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keyword">const</span> T     test      = x * z + w * y;</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="keyword">constexpr</span> T threshold = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0.5 - 1e-6);</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    T x_rad, y_rad, z_rad;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    T           x_rad, y_rad, z_rad;</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keywordflow">if</span> (std::abs(test) &gt; threshold) {</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        x_rad = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0.0);</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        y_rad = <a class="code hl_function" href="../../db/d81/group__utils.html#ga9394636a770c3d784a10b8334c33f5d2">sign</a>(test) * <a class="code hl_function" href="../../db/d81/group__utils.html#ga8af16bad73ed4f92ede4dd5e7841bd7c">pi&lt;T&gt;</a>() / <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(2.0);</div>

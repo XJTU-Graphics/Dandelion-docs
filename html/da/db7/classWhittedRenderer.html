@@ -135,8 +135,8 @@ std::vector&lt; unsigned char &gt; &amp;&#160;</td><td class="memItemRight" vali
 Private 成员函数</h2></td></tr>
 <tr class="memitem:aae05cbee4a886faacbfeb68721f81b90" id="r_aae05cbee4a886faacbfeb68721f81b90"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae05cbee4a886faacbfeb68721f81b90">fresnel</a> (const Eigen::Vector3f &amp;I, const Eigen::Vector3f &amp;N, const float &amp;ior)</td></tr>
 <tr class="memdesc:aae05cbee4a886faacbfeb68721f81b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">菲涅尔方程根据观察角度计算反射光线的所占百分比  <br /></td></tr>
-<tr class="memitem:ad102975d06de8046ebf872ed2fe0717c" id="r_ad102975d06de8046ebf872ed2fe0717c"><td class="memItemLeft" align="right" valign="top"><a id="ad102975d06de8046ebf872ed2fe0717c" name="ad102975d06de8046ebf872ed2fe0717c"></a>
-std::optional&lt; std::tuple&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a>, <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>trace</b> (const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray, const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
+<tr class="memitem:ad102975d06de8046ebf872ed2fe0717c" id="r_ad102975d06de8046ebf872ed2fe0717c"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::tuple&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a>, <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad102975d06de8046ebf872ed2fe0717c">trace</a> (const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray, const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
+<tr class="memdesc:ad102975d06de8046ebf872ed2fe0717c"><td class="mdescLeft">&#160;</td><td class="mdescRight">追踪光线与场景中物体的相交情况  <br /></td></tr>
 <tr class="memitem:a2e43a419ed22f6f4ae6c340456a8bf4d" id="r_a2e43a419ed22f6f4ae6c340456a8bf4d"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e43a419ed22f6f4ae6c340456a8bf4d">cast_ray</a> (const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;ray, const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene, int depth)</td></tr>
 <tr class="memdesc:a2e43a419ed22f6f4ae6c340456a8bf4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">追踪指定光线得到颜色  <br /></td></tr>
 </table><table class="memberdecls">
@@ -251,6 +251,46 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
       </table>
 </div><div class="memdoc">
 <p>whitted-style 渲染器的渲染调用接口 </p>
+
+</div>
+</div>
+<a id="ad102975d06de8046ebf872ed2fe0717c" name="ad102975d06de8046ebf872ed2fe0717c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad102975d06de8046ebf872ed2fe0717c">&#9670;&#160;</a></span>trace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; std::tuple&lt; <a class="el" href="../../d6/d30/structIntersection.html">Intersection</a>, <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &gt; &gt; WhittedRenderer::trace </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dd/d5e/structRay.html">Ray</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ray</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>追踪光线与场景中物体的相交情况 </p>
+<p>遍历场景中的所有物体，找到与光线最近的相交点，并返回相交信息和物体材质信息； 根据<span class="tt">use_bvh</span>决定是否使用 <a class="el" href="../../de/de9/classBVH.html">BVH</a> 进行加速求交</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ray</td><td>待检测的光线 </td></tr>
+    <tr><td class="paramname">scene</td><td>当前渲染的场景</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>如果相交，返回包含相交信息和物体材质的元组；如果不相交，返回<span class="tt">std::nullopt</span> </dd></dl>
 
 </div>
 </div>

@@ -25,7 +25,7 @@ var annotated_dup =
     [ "Controller", "d9/d85/classController.html", "d9/d85/classController" ],
     [ "Edge", "d2/d4f/structEdge.html", "d2/d4f/structEdge" ],
     [ "Face", "d0/d02/structFace.html", "d0/d02/structFace" ],
-    [ "FragmentProcessor", "d6/d3d/classFragmentProcessor.html", null ],
+    [ "FragmentProcessor", "d6/d3d/classFragmentProcessor.html", "d6/d3d/classFragmentProcessor" ],
     [ "FragmentShaderPayload", "db/dd4/structFragmentShaderPayload.html", "db/dd4/structFragmentShaderPayload" ],
     [ "FrameBuffer", "dc/d5b/classFrameBuffer.html", "dc/d5b/classFrameBuffer" ],
     [ "Group", "d0/db7/classGroup.html", "d0/db7/classGroup" ],
@@ -50,7 +50,7 @@ var annotated_dup =
     [ "Triangle", "d2/d51/classTriangle.html", "d2/d51/classTriangle" ],
     [ "Uniforms", "de/d97/structUniforms.html", null ],
     [ "Vertex", "df/dd0/structVertex.html", "df/dd0/structVertex" ],
-    [ "VertexProcessor", "d1/d19/classVertexProcessor.html", null ],
+    [ "VertexProcessor", "d1/d19/classVertexProcessor.html", "d1/d19/classVertexProcessor" ],
     [ "VertexShaderPayload", "d9/d78/structVertexShaderPayload.html", "d9/d78/structVertexShaderPayload" ],
     [ "WhittedRenderer", "da/db7/classWhittedRenderer.html", "da/db7/classWhittedRenderer" ]
 ];

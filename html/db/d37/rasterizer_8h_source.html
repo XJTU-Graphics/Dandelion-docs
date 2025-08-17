@@ -140,47 +140,57 @@ $(function(){initNavTree('db/d37/rasterizer_8h_source.html','../../',''); });
 <div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../d3/d7a/classRasterizer.html">   35</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d3/d7a/classRasterizer.html">Rasterizer</a></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span> worker_thread();</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">private</span>:<span class="comment"></span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">    /*!</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">     * \~chinese</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">     * \brief 将指定三角形光栅化为片元。</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">     * \param t 要进行光栅化的三角形</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/d7a/classRasterizer.html#a1919db79cf2ee65e79a72ffe5990d01b">rasterize_triangle</a>(<a class="code hl_class" href="../../d2/d51/classTriangle.html">Triangle</a>&amp; t);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">    /*!</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">     * \~chinese</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">     * \brief 负责执行光栅化的工作线程</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">     * </span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">     * 不断读取顶点着色输出队列中的顶点数据，每三个顶点将其光栅化为三角形片元</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">     * </span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/d7a/classRasterizer.html#aae9de98cad8fde08e456e35c0f00d433">worker_thread</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"></span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">    /*! \~chinese 判断像素坐标 (x,y) 是否在给定三个顶点的三角形内 */</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/d7a/classRasterizer.html#a417c8579bd870e2ec9147ec606426315">inside_triangle</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keyword">const</span> Eigen::Vector4f* vertices);<span class="comment"></span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">    /*! \~chinese 计算像素坐标 (x,y) 在给定三个顶点的三角形内的重心坐标 */</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">static</span> std::tuple&lt;float, float, float&gt; <a class="code hl_function" href="../../d3/d7a/classRasterizer.html#afecb95c7771bd5a41030a78669ac48ef">compute_barycentric_2d</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y,</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                                                                  <span class="keyword">const</span> Eigen::Vector4f* v);<span class="comment"></span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">    /*!</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">     * \~chinese</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">     * \brief 对顶点的任意属性（如world space坐标，法线向量）利用屏幕空间进行插值</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">     * 这里的插值使用了透视矫正插值</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">     * \param alpha, beta, gamma 计算出的重心坐标</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">     * \param vert1, vert2, vert3 三角形的三个顶点的任意待插值属性</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">     * \param weight 三个顶点的 w 坐标 (`Vector3f{v[0].w(), v[1].w(), v[2].w()}`)</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">     * \param Z 1 / (alpha / v[0].w() + beta / v[1].w() + gamma / v[2].w());</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">static</span> Eigen::Vector3f <a class="code hl_function" href="../../d3/d7a/classRasterizer.html#a9825a3a34decc7ce9591d407296f0531">interpolate</a>(<span class="keywordtype">float</span> alpha, <span class="keywordtype">float</span> beta, <span class="keywordtype">float</span> gamma,</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                                       <span class="keyword">const</span> Eigen::Vector3f&amp; vert1, <span class="keyword">const</span> Eigen::Vector3f&amp; vert2,</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                                       <span class="keyword">const</span> Eigen::Vector3f&amp; vert3, <span class="keyword">const</span> Eigen::Vector3f&amp; weight,</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                                       <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; Z);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>};</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">    /*!</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">     * \~chinese</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">     * \brief 将指定三角形光栅化为片元。</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">     * \param t 要进行光栅化的三角形</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/d7a/classRasterizer.html#a1919db79cf2ee65e79a72ffe5990d01b">rasterize_triangle</a>(<a class="code hl_class" href="../../d2/d51/classTriangle.html">Triangle</a>&amp; t);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"></span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">    /*! \~chinese 判断像素坐标 (x,y) 是否在给定三个顶点的三角形内 */</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/d7a/classRasterizer.html#a417c8579bd870e2ec9147ec606426315">inside_triangle</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keyword">const</span> Eigen::Vector4f* vertices);<span class="comment"></span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">    /*! \~chinese 计算像素坐标 (x,y) 在给定三个顶点的三角形内的重心坐标 */</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">static</span> std::tuple&lt;float, float, float&gt;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_function" href="../../d3/d7a/classRasterizer.html#afecb95c7771bd5a41030a78669ac48ef">compute_barycentric_2d</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keyword">const</span> Eigen::Vector4f* v);<span class="comment"></span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">    /*!</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">     * \~chinese</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">     * \brief 对顶点的任意属性（如world space坐标，法线向量）利用屏幕空间进行插值</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">     * 这里的插值使用了透视矫正插值</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">     * \param alpha, beta, gamma 计算出的重心坐标</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">     * \param vert1, vert2, vert3 三角形的三个顶点的任意待插值属性</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">     * \param weight 三个顶点的 w 坐标 (`Vector3f{v[0].w(), v[1].w(), v[2].w()}`)</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">     * \param Z 1 / (alpha / v[0].w() + beta / v[1].w() + gamma / v[2].w());</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">static</span> Eigen::Vector3f <a class="code hl_function" href="../../d3/d7a/classRasterizer.html#a9825a3a34decc7ce9591d407296f0531">interpolate</a>(</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordtype">float</span> alpha, <span class="keywordtype">float</span> beta, <span class="keywordtype">float</span> gamma, <span class="keyword">const</span> Eigen::Vector3f&amp; vert1,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keyword">const</span> Eigen::Vector3f&amp; vert2, <span class="keyword">const</span> Eigen::Vector3f&amp; vert3, <span class="keyword">const</span> Eigen::Vector3f&amp; weight,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; Z</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    );</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>};</div>
 </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_RENDER_RASTERIZER_H</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_RENDER_RASTERIZER_H</span></div>
 <div class="ttc" id="acamera_8h_html"><div class="ttname"><a href="../../d7/df6/camera_8h.html">camera.h</a></div></div>
 <div class="ttc" id="aclassRasterizer_html"><div class="ttname"><a href="../../d3/d7a/classRasterizer.html">Rasterizer</a></div><div class="ttdoc">光栅化器</div><div class="ttdef"><b>定义</b> rasterizer.h:36</div></div>
-<div class="ttc" id="aclassRasterizer_html_a1919db79cf2ee65e79a72ffe5990d01b"><div class="ttname"><a href="../../d3/d7a/classRasterizer.html#a1919db79cf2ee65e79a72ffe5990d01b">Rasterizer::rasterize_triangle</a></div><div class="ttdeci">void rasterize_triangle(Triangle &amp;t)</div><div class="ttdoc">将指定三角形光栅化为片元。</div><div class="ttdef"><b>定义</b> rasterizer.cpp:120</div></div>
+<div class="ttc" id="aclassRasterizer_html_a1919db79cf2ee65e79a72ffe5990d01b"><div class="ttname"><a href="../../d3/d7a/classRasterizer.html#a1919db79cf2ee65e79a72ffe5990d01b">Rasterizer::rasterize_triangle</a></div><div class="ttdeci">void rasterize_triangle(Triangle &amp;t)</div><div class="ttdoc">将指定三角形光栅化为片元。</div><div class="ttdef"><b>定义</b> rasterizer.cpp:122</div></div>
 <div class="ttc" id="aclassRasterizer_html_a417c8579bd870e2ec9147ec606426315"><div class="ttname"><a href="../../d3/d7a/classRasterizer.html#a417c8579bd870e2ec9147ec606426315">Rasterizer::inside_triangle</a></div><div class="ttdeci">static bool inside_triangle(int x, int y, const Eigen::Vector4f *vertices)</div><div class="ttdef"><b>定义</b> rasterizer.cpp:69</div></div>
 <div class="ttc" id="aclassRasterizer_html_a9825a3a34decc7ce9591d407296f0531"><div class="ttname"><a href="../../d3/d7a/classRasterizer.html#a9825a3a34decc7ce9591d407296f0531">Rasterizer::interpolate</a></div><div class="ttdeci">static Eigen::Vector3f interpolate(float alpha, float beta, float gamma, const Eigen::Vector3f &amp;vert1, const Eigen::Vector3f &amp;vert2, const Eigen::Vector3f &amp;vert3, const Eigen::Vector3f &amp;weight, const float &amp;Z)</div><div class="ttdoc">对顶点的任意属性（如world space坐标，法线向量）利用屏幕空间进行插值</div><div class="ttdef"><b>定义</b> rasterizer.cpp:106</div></div>
+<div class="ttc" id="aclassRasterizer_html_aae9de98cad8fde08e456e35c0f00d433"><div class="ttname"><a href="../../d3/d7a/classRasterizer.html#aae9de98cad8fde08e456e35c0f00d433">Rasterizer::worker_thread</a></div><div class="ttdeci">void worker_thread()</div><div class="ttdoc">负责执行光栅化的工作线程</div><div class="ttdef"><b>定义</b> rasterizer.cpp:24</div></div>
 <div class="ttc" id="aclassRasterizer_html_afecb95c7771bd5a41030a78669ac48ef"><div class="ttname"><a href="../../d3/d7a/classRasterizer.html#afecb95c7771bd5a41030a78669ac48ef">Rasterizer::compute_barycentric_2d</a></div><div class="ttdeci">static std::tuple&lt; float, float, float &gt; compute_barycentric_2d(float x, float y, const Eigen::Vector4f *v)</div><div class="ttdef"><b>定义</b> rasterizer.cpp:85</div></div>
 <div class="ttc" id="aclassTriangle_html"><div class="ttname"><a href="../../d2/d51/classTriangle.html">Triangle</a></div><div class="ttdoc">表示一个三角形，包括三个顶点的世界坐标,视口坐标以及每个顶点的法向向量</div><div class="ttdef"><b>定义</b> triangle.h:18</div></div>
 <div class="ttc" id="agl_8hpp_html"><div class="ttname"><a href="../../d7/d6a/gl_8hpp.html">gl.hpp</a></div></div>

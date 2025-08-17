@@ -1,11 +1,16 @@
 var searchData=
 [
-  ['wheel_5fscroll_5ffactor_0',['wheel_scroll_factor',['../d9/d85/classController.html#a6d58d96a5298afd8338ca4d39127053b',1,'Controller']]],
-  ['whitted_5frender_1',['whitted_render',['../d3/d2f/classRenderEngine.html#a6cdfad591cb7e9f8260537aaf79a5df4',1,'RenderEngine']]],
-  ['width_2',['width',['../dc/d5b/classFrameBuffer.html#ac09ee7577229126ecb519c0d9efb284b',1,'FrameBuffer::width'],['../de/d97/structUniforms.html#a0ced151699f824c314f407df9f69da60',1,'Uniforms::width'],['../d3/d2f/classRenderEngine.html#ac7a96cfda8281176abe4c57c093a889f',1,'RenderEngine::width'],['../d7/db0/classRasterizerRenderer.html#a4d122df9cd3b18fec2278a1193aa24b0',1,'RasterizerRenderer::width']]],
-  ['window_5fwidth_3',['window_width',['../d9/d85/classController.html#ad186fddab2ac94aa2c8d5c004a106905',1,'Controller']]],
-  ['world_5fnormal_4',['world_normal',['../db/dd4/structFragmentShaderPayload.html#a952eb10b8fe886ed0d2aa0be7e9fbdb6',1,'FragmentShaderPayload']]],
-  ['world_5fpos_5',['world_pos',['../db/dd4/structFragmentShaderPayload.html#ac5203ae9ef88e6f029b5f62704cb3137',1,'FragmentShaderPayload::world_pos'],['../d2/d51/classTriangle.html#a5dda71c2a78dde1b9644370f60f4edc8',1,'Triangle::world_pos']]],
-  ['world_5fposition_6',['world_position',['../d9/d78/structVertexShaderPayload.html#a016e759fcf153cdfe1e118468b9116d2',1,'VertexShaderPayload']]],
-  ['world_5fup_7',['world_up',['../d7/d7e/structCamera.html#ad8f6527347bebb52dfe3e4bfa963c3b1',1,'Camera']]]
+  ['v_5findices_0',['v_indices',['../dc/d6d/classHalfedgeMesh.html#acee4b40805260ef656491fb603ab7528',1,'HalfedgeMesh']]],
+  ['v_5fpointers_1',['v_pointers',['../dc/d6d/classHalfedgeMesh.html#a96bef329a770abcb1d7c9e75cb054395',1,'HalfedgeMesh']]],
+  ['velocity_2',['velocity',['../d8/d4b/classObject.html#a72eed21f81afdf95370d638db35b59e1',1,'Object']]],
+  ['vertex_5ffinish_3',['vertex_finish',['../d6/d7a/structContext.html#a869a047ca9aa1690320d8edbb79eb4f3',1,'Context']]],
+  ['vertex_5fposition_5flocation_4',['vertex_position_location',['../db/d81/group__utils.html#ga59f39d17248f4e72b89867b326d1cd76',1,'rendering.hpp']]],
+  ['vertex_5fqueue_5',['vertex_queue',['../d1/d19/classVertexProcessor.html#abe0ca56af192b08cea82186dbe035225',1,'VertexProcessor']]],
+  ['vertex_5fqueue_5fmutex_6',['vertex_queue_mutex',['../d6/d7a/structContext.html#a24e7de80e141bcbd42084595e8800e1a',1,'Context']]],
+  ['vertex_5fshader_5foutput_5fqueue_7',['vertex_shader_output_queue',['../d6/d7a/structContext.html#a2c108d6bd3955d6324c2f860a3d9bf74',1,'Context']]],
+  ['vertex_5fshader_5fptr_8',['vertex_shader_ptr',['../d1/d19/classVertexProcessor.html#ae21075d6af655a35f6c4b200fe712189',1,'VertexProcessor']]],
+  ['vertices_9',['vertices',['../dc/d6d/classHalfedgeMesh.html#a8b346d45b38685a327a0408d7390927b',1,'HalfedgeMesh']]],
+  ['viewport_5fpos_10',['viewport_pos',['../d2/d51/classTriangle.html#a116be0b7e53383377d774f87d28e4c92',1,'Triangle']]],
+  ['viewport_5fposition_11',['viewport_position',['../d9/d78/structVertexShaderPayload.html#a6388ee8ab1ad8965acbd41dfc0bff328',1,'VertexShaderPayload']]],
+  ['visible_12',['visible',['../d8/d4b/classObject.html#ac2b299eaa47a407bca0e9b47205edd99',1,'Object']]]
 ];

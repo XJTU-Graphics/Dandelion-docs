@@ -9,7 +9,8 @@ var searchData=
   ['toolbar_6',['Toolbar',['../d1/d84/classUI_1_1Toolbar.html',1,'UI::Toolbar'],['../d1/d84/classUI_1_1Toolbar.html#aff62aaa8d997eb9bbe317086bc09363d',1,'UI::Toolbar::Toolbar()']]],
   ['toolbar_7',['toolbar',['../d9/d85/classController.html#a1359b487bc897978a39d647cc915cd71',1,'Controller']]],
   ['toolbar_2eh_8',['toolbar.h',['../dc/d2a/toolbar_8h.html',1,'']]],
-  ['trackball_5fradius_9',['trackball_radius',['../d9/d85/classController.html#ae604a933148415cb35ffd6dfdc6572b5',1,'Controller']]],
-  ['triangle_10',['Triangle',['../d2/d51/classTriangle.html',1,'']]],
-  ['triangle_2eh_11',['triangle.h',['../dd/d6a/triangle_8h.html',1,'']]]
+  ['trace_9',['trace',['../da/db7/classWhittedRenderer.html#ad102975d06de8046ebf872ed2fe0717c',1,'WhittedRenderer']]],
+  ['trackball_5fradius_10',['trackball_radius',['../d9/d85/classController.html#ae604a933148415cb35ffd6dfdc6572b5',1,'Controller']]],
+  ['triangle_11',['Triangle',['../d2/d51/classTriangle.html',1,'']]],
+  ['triangle_2eh_12',['triangle.h',['../dd/d6a/triangle_8h.html',1,'']]]
 ];

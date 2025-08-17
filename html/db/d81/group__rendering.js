@@ -16,6 +16,11 @@ var group__rendering =
       [ "shininess", "d4/d50/structGL_1_1Material.html#a593816847c0d6811a2fc6c625670ef27", null ],
       [ "specular", "d4/d50/structGL_1_1Material.html#a886340a3db61c4e1139bc795a89fe2f7", null ]
     ] ],
+    [ "VertexShaderPayload", "d9/d78/structVertexShaderPayload.html", [
+      [ "normal", "d9/d78/structVertexShaderPayload.html#ab46f2135883b35652d9c2289c6490dea", null ],
+      [ "viewport_position", "d9/d78/structVertexShaderPayload.html#a6388ee8ab1ad8965acbd41dfc0bff328", null ],
+      [ "world_position", "d9/d78/structVertexShaderPayload.html#a016e759fcf153cdfe1e118468b9116d2", null ]
+    ] ],
     [ "FragmentShaderPayload", "db/dd4/structFragmentShaderPayload.html", [
       [ "color", "db/dd4/structFragmentShaderPayload.html#a1628ee5cd555e4c6b61526b90970aeba", null ],
       [ "depth", "db/dd4/structFragmentShaderPayload.html#a642f61c3dd4d7b433de3c308251bd7f5", null ],
@@ -35,10 +40,20 @@ var group__rendering =
     [ "Uniforms", "de/d97/structUniforms.html", null ],
     [ "Context", "d6/d7a/structContext.html", null ],
     [ "Rasterizer", "d3/d7a/classRasterizer.html", [
-      [ "rasterize_triangle", "d3/d7a/classRasterizer.html#a1919db79cf2ee65e79a72ffe5990d01b", null ]
+      [ "rasterize_triangle", "d3/d7a/classRasterizer.html#a1919db79cf2ee65e79a72ffe5990d01b", null ],
+      [ "worker_thread", "d3/d7a/classRasterizer.html#aae9de98cad8fde08e456e35c0f00d433", null ]
     ] ],
-    [ "VertexProcessor", "d1/d19/classVertexProcessor.html", null ],
-    [ "FragmentProcessor", "d6/d3d/classFragmentProcessor.html", null ],
+    [ "VertexProcessor", "d1/d19/classVertexProcessor.html", [
+      [ "input_vertices", "d1/d19/classVertexProcessor.html#a0f0c3cc902042ba03b24a183f3c60b5b", null ],
+      [ "worker_thread", "d1/d19/classVertexProcessor.html#a60f0cc625ab8df95073bcb3081c5e09f", null ],
+      [ "queue_mutex", "d1/d19/classVertexProcessor.html#a3c58045473c54ea4e6566c9e32a8e2f2", null ],
+      [ "vertex_queue", "d1/d19/classVertexProcessor.html#abe0ca56af192b08cea82186dbe035225", null ],
+      [ "vertex_shader_ptr", "d1/d19/classVertexProcessor.html#ae21075d6af655a35f6c4b200fe712189", null ]
+    ] ],
+    [ "FragmentProcessor", "d6/d3d/classFragmentProcessor.html", [
+      [ "worker_thread", "d6/d3d/classFragmentProcessor.html#a57d7b62ef9160f88897b4ccfc442e59f", null ],
+      [ "fragment_shader_ptr", "d6/d3d/classFragmentProcessor.html#afb705216e98d35bfe1adb63c4cb0b2ec", null ]
+    ] ],
     [ "RenderEngine", "d3/d2f/classRenderEngine.html", [
       [ "render", "d3/d2f/classRenderEngine.html#aa079a671bcaa22501bc07fb810cce53a", null ],
       [ "n_threads", "d3/d2f/classRenderEngine.html#a1c6688fe583a42b4b936e2bc869427d4", null ],
@@ -48,13 +63,13 @@ var group__rendering =
       [ "width", "d3/d2f/classRenderEngine.html#ac7a96cfda8281176abe4c57c093a889f", null ]
     ] ],
     [ "RasterizerRenderer", "d7/db0/classRasterizerRenderer.html", [
-      [ "render", "d7/db0/classRasterizerRenderer.html#a7ff3f7eae7d21265a6f4e8c196645736", null ],
-      [ "width", "d7/db0/classRasterizerRenderer.html#a4d122df9cd3b18fec2278a1193aa24b0", null ]
+      [ "render", "d7/db0/classRasterizerRenderer.html#a7ff3f7eae7d21265a6f4e8c196645736", null ]
     ] ],
     [ "WhittedRenderer", "da/db7/classWhittedRenderer.html", [
       [ "cast_ray", "da/db7/classWhittedRenderer.html#a2e43a419ed22f6f4ae6c340456a8bf4d", null ],
       [ "fresnel", "da/db7/classWhittedRenderer.html#aae05cbee4a886faacbfeb68721f81b90", null ],
       [ "render", "da/db7/classWhittedRenderer.html#a37457260b903ef3742b741cde1795db3", null ],
+      [ "trace", "da/db7/classWhittedRenderer.html#ad102975d06de8046ebf872ed2fe0717c", null ],
       [ "use_bvh", "da/db7/classWhittedRenderer.html#a9bd446f848764a7bfd5ce3737094ec59", null ]
     ] ],
     [ "Triangle", "d2/d51/classTriangle.html", [

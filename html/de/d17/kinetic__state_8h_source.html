@@ -136,15 +136,17 @@ $(function(){initNavTree('de/d17/kinetic__state_8h_source.html','../../',''); })
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../d1/d96/structKineticState.html">   30</a></span><span class="keyword">struct </span>KineticState</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    KineticState() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    KineticState(<span class="keyword">const</span> Eigen::Vector3f&amp; position, <span class="keyword">const</span> Eigen::Vector3f&amp; velocity,</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                 <span class="keyword">const</span> Eigen::Vector3f&amp; acceleration);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    Eigen::Vector3f position;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    Eigen::Vector3f velocity;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    Eigen::Vector3f acceleration;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>};</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    KineticState(</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keyword">const</span> Eigen::Vector3f&amp; position, <span class="keyword">const</span> Eigen::Vector3f&amp; velocity,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">const</span> Eigen::Vector3f&amp; acceleration</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    );</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    Eigen::Vector3f position;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    Eigen::Vector3f velocity;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    Eigen::Vector3f acceleration;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>};</div>
 </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_UTILS_KINETIC_STATE_H</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_UTILS_KINETIC_STATE_H</span></div>
 <div class="ttc" id="agroup__simulation_html_ga4feca29d7349adc765dcdf44d396d46a"><div class="ttname"><a href="../../d9/d77/group__simulation.html#ga4feca29d7349adc765dcdf44d396d46a">time_step</a></div><div class="ttdeci">float time_step</div><div class="ttdoc">物理模拟过程使用的固定时间步。</div><div class="ttdef"><b>定义</b> kinetic_state.cpp:5</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

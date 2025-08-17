@@ -111,17 +111,65 @@ $(function(){initNavTree('d6/d3d/classFragmentProcessor.html','../../','da/d2e/c
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a57d7b62ef9160f88897b4ccfc442e59f" id="r_a57d7b62ef9160f88897b4ccfc442e59f"><td class="memItemLeft" align="right" valign="top"><a id="a57d7b62ef9160f88897b4ccfc442e59f" name="a57d7b62ef9160f88897b4ccfc442e59f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>worker_thread</b> ()</td></tr>
+<tr class="memitem:a57d7b62ef9160f88897b4ccfc442e59f" id="r_a57d7b62ef9160f88897b4ccfc442e59f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57d7b62ef9160f88897b4ccfc442e59f">worker_thread</a> ()</td></tr>
+<tr class="memdesc:a57d7b62ef9160f88897b4ccfc442e59f"><td class="mdescLeft">&#160;</td><td class="mdescRight">负责执行片元着色器的工作线程  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:afb705216e98d35bfe1adb63c4cb0b2ec" id="r_afb705216e98d35bfe1adb63c4cb0b2ec"><td class="memItemLeft" align="right" valign="top"><a id="afb705216e98d35bfe1adb63c4cb0b2ec" name="afb705216e98d35bfe1adb63c4cb0b2ec"></a>
-Eigen::Vector3f(*&#160;</td><td class="memItemRight" valign="bottom"><b>fragment_shader_ptr</b> )(const <a class="el" href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a> &amp;payload, const <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &amp;material, const std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;lights, const <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp;camera)</td></tr>
+<tr class="memitem:afb705216e98d35bfe1adb63c4cb0b2ec" id="r_afb705216e98d35bfe1adb63c4cb0b2ec"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb705216e98d35bfe1adb63c4cb0b2ec">fragment_shader_ptr</a> )(const <a class="el" href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a> &amp;payload, const <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &amp;material, const std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;lights, const <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp;camera)</td></tr>
+<tr class="memdesc:afb705216e98d35bfe1adb63c4cb0b2ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">片元着色器函数指针，指向用于计算片元颜色的着色器函数  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>负责执行片元着色器的工作线程。 </p>
-</div><hr/>该类的文档由以下文件生成:<ul>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="a57d7b62ef9160f88897b4ccfc442e59f" name="a57d7b62ef9160f88897b4ccfc442e59f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57d7b62ef9160f88897b4ccfc442e59f">&#9670;&#160;</a></span>worker_thread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FragmentProcessor::worker_thread </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>负责执行片元着色器的工作线程 </p>
+<p>不断读取光栅化输出队列中的顶点数据，执行片元着色器，计算并设置像素颜色 </p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
+<a id="afb705216e98d35bfe1adb63c4cb0b2ec" name="afb705216e98d35bfe1adb63c4cb0b2ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb705216e98d35bfe1adb63c4cb0b2ec">&#9670;&#160;</a></span>fragment_shader_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Vector3f(* FragmentProcessor::fragment_shader_ptr) (const <a class="el" href="../../db/dd4/structFragmentShaderPayload.html">FragmentShaderPayload</a> &amp;payload, const <a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &amp;material, const std::list&lt; <a class="el" href="../../d5/d79/structLight.html">Light</a> &gt; &amp;lights, const <a class="el" href="../../d7/d7e/structCamera.html">Camera</a> &amp;camera)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>片元着色器函数指针，指向用于计算片元颜色的着色器函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">payload</td><td>片元数据 </td></tr>
+    <tr><td class="paramname">material</td><td>材质属性 </td></tr>
+    <tr><td class="paramname">lights</td><td>场景中的光源列表 </td></tr>
+    <tr><td class="paramname">camera</td><td>场景相机</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>计算得到的片元RGB颜色 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
 <li><a class="el" href="../../d9/dbd/rasterizer__renderer_8h_source.html">rasterizer_renderer.h</a></li>
 <li><b>rasterizer_renderer.cpp</b></li>
 </ul>
