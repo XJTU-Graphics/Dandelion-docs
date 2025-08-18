@@ -8,6 +8,7 @@ var classController =
     [ "on_rotating", "d9/d85/classController.html#a08f2827387da4b092832f926315d14f7", null ],
     [ "on_translating", "d9/d85/classController.html#a2209fae13d7c08547caf5b120141c84f", null ],
     [ "on_wheel_scrolled", "d9/d85/classController.html#a17e48bd3ebf3cd691b7485cfa65c3043", null ],
+    [ "operator=", "d9/d85/classController.html#a567c43e7750582fe306bf36f90e41393", null ],
     [ "pick_element", "d9/d85/classController.html#a53f6623f03b94f70e7d1a302026bbabb", null ],
     [ "pick_object", "d9/d85/classController.html#ae6b743008bc87ed393eabf885d2f9e52", null ],
     [ "process_input", "d9/d85/classController.html#aff4ccad882e4bab51ff03428c63e88f8", null ],
@@ -33,6 +34,8 @@ var classController =
     [ "scene", "d9/d85/classController.html#ace52a4008fe15ea112fc7ae6b9d22ca0", null ],
     [ "selected_element", "d9/d85/classController.html#a6b715719d5d3738be94a612a5b51568a", null ],
     [ "toolbar", "d9/d85/classController.html#a1359b487bc897978a39d647cc915cd71", null ],
+    [ "toolbar_width", "d9/d85/classController.html#ad334964cd4e2fb4aceaa3bebe9bf7363", null ],
     [ "trackball_radius", "d9/d85/classController.html#ae604a933148415cb35ffd6dfdc6572b5", null ],
+    [ "window_height", "d9/d85/classController.html#ac311755efb73190790f24aee388aa82b", null ],
     [ "window_width", "d9/d85/classController.html#ad186fddab2ac94aa2c8d5c004a106905", null ]
 ];

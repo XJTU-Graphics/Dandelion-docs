@@ -136,7 +136,7 @@ $(function(){initNavTree('d8/df1/build.html','../../',''); });
 <p>在 Linux 平台上，为了编译 GLFW ，你可能需要按照 <a href="https://www.glfw.org/docs/latest/compile_guide.html">Compiling GLFW</a> 的要求安装相应的依赖库。除此以外，所有的依赖项均被包含于 <em>deps</em> 子目录中，不需要额外下载或安装。由于我们对一些库进行了修复移植或裁剪，也请不要轻易尝试替换 <em>deps</em> 目录下的第三方库，它们和官方发布的相应版本可能并不完全一样。</p>
 <p>由于 Dandelion 首先是一个实验框架，用于西安交通大学计算机图形学课程教学，我们在 Dandelion 的公开频道上删去了所有实验题目的参考答案。然而物体拾取 (picking) 等功能依赖于射线求交，这部分代码被删去后会造成相当的不便。对此，我们的解决方案是将 <em>utils</em> 目录下的 <em>aabb.cpp</em>, <em>bvh.cpp</em> 和 <em>ray.cpp</em> 文件编译成两个静态库 <em>dandelion-ray</em> 和 <em>dandelion-bvh</em> ，只要在编译时链接它们就可以直接使用我们提供的实现。我们目前编译了这些版本的库：</p>
 <ul>
-<li>Windows: Visual Studio 2022 / Clang / UCRT</li>
+<li>Windows: Visual Studio 2022 / Clang / GCC</li>
 <li>Linux: GCC 11 / Clang 14</li>
 <li>macOS: AppleClang 14.0</li>
 </ul>
@@ -156,7 +156,10 @@ $(function(){initNavTree('d8/df1/build.html','../../',''); });
 </li>
 <li>CMake 3.14 及以上（推荐使用最新的稳定版本）</li>
 </ul>
-<p>在 Windows 平台上，从官方网站下载安装足够新的 Visual Studio 和 CMake 即可；在 Linux 平台上可以用包管理器安装编译器和 CMake；在 macOS 平台上，我们推荐安装 Xcode 命令行工具（不是 Xcode IDE），并使用 Homebrew 安装 CMake。</p>
+<p>在 Windows 平台上，我们推荐从官方网站下载安装足够新的 Visual Studio 和 CMake 即可，但若已有 mingw 或 MSYS2 平台构建软件的经验，也可借助 MSYS2 工具链使用移植版的 Clang 或 GCC 编译；在 Linux 平台上可以用包管理器安装编译器和 CMake；在 macOS 平台上，我们推荐安装 Xcode 命令行工具（不是 Xcode IDE），并使用 Homebrew 安装 CMake。</p>
+<blockquote class="doxtable">
+<p>Windows MSYS2 平台需要的软件包为 <span class="tt">git toolchain cmake ninja</span>，其中 <span class="tt">git</span> 需要用 pacman 安装 cygwin 版本，而其余软件包则可用 <span class="tt">pacboy -S toolchain:p cmake:p ninja:p</span> 在对应环境安装。 </p>
+</blockquote>
 <blockquote class="doxtable">
 <p>基于 Debian 的 Linux 发行版（使用 apt 包管理器）中，所需软件包名是 <span class="tt">build-essential cmake cmake-extras</span>，其他发行版请自行确定对应的包，亦可选择从源代码编译安装。 </p>
 </blockquote>
@@ -173,7 +176,7 @@ $(function(){initNavTree('d8/df1/build.html','../../',''); });
 </ul>
 <h1 class="doxsection"><a class="anchor" id="compilation"></a>
 编译</h1>
-<p>由于日志输出是调试实验的重要参考，我们始终推荐从 <b>终端</b> 启动 Dandelion。在 Windows 平台上，我们推荐使用 PowerShell 而非 cmd，并推荐使用 Windows Terminal 作为终端模拟器；在 Linux 或 macOS 平台上可以直接使用默认的 shell 和终端模拟器，更熟悉这些工具的话也可以自己挑选。</p>
+<p>由于日志输出是调试实验的重要参考，我们始终推荐从 <b>终端</b> 启动 Dandelion。在 Windows 平台上使用 Visual Studio 编译时，我们推荐使用 PowerShell 而非 cmd，并推荐使用 Windows Terminal 作为终端模拟器；在 Windows 平台上使用 MSYS2 环境编译时，则应使用其附带终端；在 Linux 或 macOS 平台上可以直接使用默认的 shell 和终端模拟器，更熟悉这些工具的话也可以自己挑选。</p>
 <p>以下的所有说明中，均以“终端”代指终端模拟器而非 shell。不清楚二者区别的话，可以简单认为“终端”就是指能执行命令的窗口。</p>
 <p>由于我们人力有限，Dandelion 仅支持 Debug 和 Release 两种构建类型，在不修改 <em>CMakeLists.txt</em> 的情况下，你也只能用这两个类型构建 Dandelion。这并不意味着 MinSizeRel 和 RelWithDebInfo 类型一定会构建出错，但我们不会在这两个模式下作任何测试。</p>
 <p>无论你是否认真阅读了上面的文档，在开始编译之前，请确保：</p><ul>
@@ -182,8 +185,8 @@ $(function(){initNavTree('d8/df1/build.html','../../',''); });
 <li>如果是 Linux，安装了所需的额外依赖</li>
 <li>下载了 <em>dandelion-ray</em> 和 <em>dandelion-bvh</em> 两个静态库</li>
 </ul>
-<h2 class="doxsection"><a class="anchor" id="compilation-windows"></a>
-Windows</h2>
+<h2 class="doxsection"><a class="anchor" id="compilation-windows-vs"></a>
+Windows (Visual Studio)</h2>
 <p>由于 Dandelion 的源文件中包含 UTF-8 编码的中文，整个项目需要开启 <span class="tt">/utf-8</span> 选项编译，而 Windows 文件系统默认的中文编码是 GBK ，这可能导致兼容性问题（表现为“无访问权限”等）。因此，Dandelion 的源代码 <b>必须位于全英文路径下</b> 。</p>
 <p>打开终端，进入 dandelion 根目录并执行如下命令：</p>
 <div class="fragment"><div class="line">&gt; New-Item -ItemType &quot;directory&quot; build</div>
@@ -195,7 +198,10 @@ Windows</h2>
 </div><!-- fragment --><p>因为 MSBuild 是 Multi-config 的构建工具，所以调整构建类型时不需要重新配置 CMake 项目，只需修改参数重新编译：</p>
 <div class="fragment"><div class="line">&gt; cmake --build . --config Release --target dandelion --parallel $env:NUMBER_OF_PROCESSORS</div>
 <div class="line">&gt; .\Release\dandelion.exe</div>
-</div><!-- fragment --><p>如果你希望在 Windows 平台上使用 MinGW 工具链构建，请注意 MinGW 是 Single-config 构建工具，执行命令的方式与 Linux 平台相同。</p>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="compilation-windows-msys2"></a>
+Windows (Clang / GCC)</h2>
+<p>如果你希望在 Windows 平台上使用 MSYS2 移植版 Clang 或 GCC 构建项目，其执行命令的方式与 Linux 平台相同。注意区分 MSYS2 平台的不同环境，当前所支持的环境是 CLANG64 和 UCRT64。</p>
+<p>因为我们安装软件包时选择了 ninja 作为 make 的替代品，因此构建时如果需要手动调用 make，请换成 ninja。</p>
 <h2 class="doxsection"><a class="anchor" id="compilation-linux"></a>
 Linux</h2>
 <p>打开终端，进入 dandelion 目录并执行如下命令：</p>

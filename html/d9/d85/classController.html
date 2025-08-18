@@ -124,8 +124,7 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a9070f68e2830fac28bb8c61af10fdb47" id="r_a9070f68e2830fac28bb8c61af10fdb47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9070f68e2830fac28bb8c61af10fdb47">render</a> (const <a class="el" href="../../d9/d69/classShader.html">Shader</a> &amp;shader)</td></tr>
 <tr id="pub-methods-0" class="groupHeader"><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:adb5f21653407293de30f649a8d2fc52c" id="r_adb5f21653407293de30f649a8d2fc52c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb5f21653407293de30f649a8d2fc52c">Controller</a> (<a class="el" href="../../d9/d85/classController.html">Controller</a> &amp;other)=delete</td></tr>
-<tr class="memitem:a567c43e7750582fe306bf36f90e41393" id="r_a567c43e7750582fe306bf36f90e41393"><td class="memItemLeft" align="right" valign="top"><a id="a567c43e7750582fe306bf36f90e41393" name="a567c43e7750582fe306bf36f90e41393"></a>
-<a class="el" href="../../d9/d85/classController.html">Controller</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="../../d9/d85/classController.html">Controller</a> &amp;other)=delete</td></tr>
+<tr class="memitem:a567c43e7750582fe306bf36f90e41393" id="r_a567c43e7750582fe306bf36f90e41393"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d85/classController.html">Controller</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a567c43e7750582fe306bf36f90e41393">operator=</a> (<a class="el" href="../../d9/d85/classController.html">Controller</a> &amp;other)=delete</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 静态 Public 成员函数</h2></td></tr>
@@ -136,10 +135,8 @@ Public 成员函数</h2></td></tr>
 Public 属性</h2></td></tr>
 <tr id="pub-attribs-0" class="groupHeader"><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:ad186fddab2ac94aa2c8d5c004a106905" id="r_ad186fddab2ac94aa2c8d5c004a106905"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad186fddab2ac94aa2c8d5c004a106905">window_width</a></td></tr>
-<tr class="memitem:ac311755efb73190790f24aee388aa82b" id="r_ac311755efb73190790f24aee388aa82b"><td class="memItemLeft" align="right" valign="top"><a id="ac311755efb73190790f24aee388aa82b" name="ac311755efb73190790f24aee388aa82b"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>window_height</b></td></tr>
-<tr class="memitem:ad334964cd4e2fb4aceaa3bebe9bf7363" id="r_ad334964cd4e2fb4aceaa3bebe9bf7363"><td class="memItemLeft" align="right" valign="top"><a id="ad334964cd4e2fb4aceaa3bebe9bf7363" name="ad334964cd4e2fb4aceaa3bebe9bf7363"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>toolbar_width</b></td></tr>
+<tr class="memitem:ac311755efb73190790f24aee388aa82b" id="r_ac311755efb73190790f24aee388aa82b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac311755efb73190790f24aee388aa82b">window_height</a></td></tr>
+<tr class="memitem:ad334964cd4e2fb4aceaa3bebe9bf7363" id="r_ad334964cd4e2fb4aceaa3bebe9bf7363"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad334964cd4e2fb4aceaa3bebe9bf7363">toolbar_width</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private 成员函数</h2></td></tr>
@@ -299,7 +296,7 @@ Private 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>在缩放窗口时调整轨迹球半径、预览视角（相机）Y 方向的 FoV，并更新自身记录的窗口尺寸。 </p>
-<p>虽然名字相同，但这个函数并非 GLFW 的窗口缩放回调函数。在缩放时它会被真正的回调函数 <span class="tt">Platform::on_framebuffer_resized</span> 调用。 </p><dl class="params"><dt>参数</dt><dd>
+<p>虽然名字相同，但这个函数并非 GLFW 的窗口缩放回调函数。在缩放时它会被真正的回调函数 <span class="tt"><a class="el" href="../../df/d1e/classPlatform.html#af6a570d0dc5be623ebaa3da7cb1b500c">Platform::on_framebuffer_resized</a></span> 调用。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">width</td><td>缩放后的窗口宽度 </td></tr>
     <tr><td class="paramname">height</td><td>缩放后的窗口高度 </td></tr>
@@ -444,6 +441,32 @@ Private 属性</h2></td></tr>
 \]
 </p>
  
+</div>
+</div>
+<a id="a567c43e7750582fe306bf36f90e41393" name="a567c43e7750582fe306bf36f90e41393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a567c43e7750582fe306bf36f90e41393">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d85/classController.html">Controller</a> &amp; Controller::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d85/classController.html">Controller</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>禁止复制构造。 </p>
+
 </div>
 </div>
 <a id="a53f6623f03b94f70e7d1a302026bbabb" name="a53f6623f03b94f70e7d1a302026bbabb"></a>
@@ -828,7 +851,7 @@ Private 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>取消选择。 </p>
-<p>这个函数清楚当前的选择状态，将<span class="tt">selected_element</span> 重置为 <span class="tt">std::monostate</span> 并清空 <span class="tt">highlighted_element</span> 或 <span class="tt">highlighted_halfedge</span> 这些高亮元素。 如果之前的被选中元素设置过 <span class="tt"><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a></span> 等对象的属性，它也会一并将其重置。 </p>
+<p>这个函数清楚当前的选择状态，将<span class="tt">selected_element</span> 重置为 <span class="tt">std::monostate</span> 并清空 <span class="tt">highlighted_element</span> 或 <span class="tt">highlighted_halfedge</span> 这些高亮元素。 如果之前的被选中元素设置过 <span class="tt"><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体等对象的完整场景。">Scene</a></span> 等对象的属性，它也会一并将其重置。 </p>
 
 </div>
 </div>
@@ -1113,6 +1136,21 @@ Private 属性</h2></td></tr>
 
 </div>
 </div>
+<a id="ad334964cd4e2fb4aceaa3bebe9bf7363" name="ad334964cd4e2fb4aceaa3bebe9bf7363"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad334964cd4e2fb4aceaa3bebe9bf7363">&#9670;&#160;</a></span>toolbar_width</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Controller::toolbar_width</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>由于 ImGui 使用浮点数表示尺寸，所有和布局相关的变量都是浮点型。 </p>
+
+</div>
+</div>
 <a id="ae604a933148415cb35ffd6dfdc6572b5" name="ae604a933148415cb35ffd6dfdc6572b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae604a933148415cb35ffd6dfdc6572b5">&#9670;&#160;</a></span>trackball_radius</h2>
 
@@ -1156,6 +1194,21 @@ Private 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>缩放视角的控制系数，详见 <span class="tt">on_wheel_scrolled</span> 方法。 </p>
+
+</div>
+</div>
+<a id="ac311755efb73190790f24aee388aa82b" name="ac311755efb73190790f24aee388aa82b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac311755efb73190790f24aee388aa82b">&#9670;&#160;</a></span>window_height</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Controller::window_height</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>由于 ImGui 使用浮点数表示尺寸，所有和布局相关的变量都是浮点型。 </p>
 
 </div>
 </div>

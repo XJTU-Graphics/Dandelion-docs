@@ -31,7 +31,8 @@ var NAVTREE =
       [ "依赖", "d8/df1/build.html#dependencies", null ],
       [ "工具需求", "d8/df1/build.html#requests", null ],
       [ "编译", "d8/df1/build.html#compilation", [
-        [ "Windows", "d8/df1/build.html#compilation-windows", null ],
+        [ "Windows (Visual Studio)", "d8/df1/build.html#compilation-windows-vs", null ],
+        [ "Windows (Clang / GCC)", "d8/df1/build.html#compilation-windows-msys2", null ],
         [ "Linux", "d8/df1/build.html#compilation-linux", null ],
         [ "macOS", "d8/df1/build.html#compilation-macos", null ]
       ] ]
@@ -50,13 +51,20 @@ var NAVTREE =
     ] ],
     [ "项目结构", "d9/d2f/structure.html", null ],
     [ "专题", "topics.html", "topics" ],
+    [ "命名空间", "namespaces.html", [
+      [ "命名空间列表", "namespaces.html", "namespaces_dup" ],
+      [ "命名空间成员", "namespacemembers.html", [
+        [ "全部", "namespacemembers.html", null ],
+        [ "函数", "namespacemembers_func.html", null ]
+      ] ]
+    ] ],
     [ "类", "annotated.html", [
       [ "类列表", "annotated.html", "annotated_dup" ],
       [ "类索引", "classes.html", null ],
       [ "类继承关系", "hierarchy.html", "hierarchy" ],
       [ "类成员", "functions.html", [
         [ "全部", "functions.html", "functions_dup" ],
-        [ "函数", "functions_func.html", null ],
+        [ "函数", "functions_func.html", "functions_func" ],
         [ "变量", "functions_vars.html", null ],
         [ "相关符号", "functions_rela.html", null ]
       ] ]
@@ -78,8 +86,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d8/d4b/classObject.html#a81cff33ba1612aa43187d3e617d8edcc",
-"df/d1e/classPlatform.html#a52028ea2984cbfdf8e9f42ee87f66cfe"
+"d7/dde/classLinkedList.html#a1fd4b9decd9189318e6caad24aa52323",
+"dc/d6d/classHalfedgeMesh.html#a59fa9525c54738f4c5c8aca8fe0ae149"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

@@ -5,5 +5,6 @@ var structGL_1_1VertexArrayObject =
     [ "~VertexArrayObject", "d9/d82/structGL_1_1VertexArrayObject.html#a37ca7e8bff292e3f334544dd6ba4ab37", null ],
     [ "bind", "d9/d82/structGL_1_1VertexArrayObject.html#a1666f5d4a67792d9895330c2c86e76da", null ],
     [ "draw", "d9/d82/structGL_1_1VertexArrayObject.html#af7313fe7cf566758819a19108694d828", null ],
-    [ "release", "d9/d82/structGL_1_1VertexArrayObject.html#aa106084d1d1a66a1c19fe7828b674830", null ]
+    [ "release", "d9/d82/structGL_1_1VertexArrayObject.html#aa106084d1d1a66a1c19fe7828b674830", null ],
+    [ "descriptor", "d9/d82/structGL_1_1VertexArrayObject.html#a87d8cdda0d24e3c999ffaec872e8fde7", null ]
 ];

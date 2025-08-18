@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xjtu_20graphics_20组织成员_0',['XJTU-Graphics 组织成员',['../da/d2c/startup.html#member-submission',1,'']]]
+  ['studio_0',['Windows (Visual Studio)',['../d8/df1/build.html#compilation-windows-vs',1,'']]]
 ];

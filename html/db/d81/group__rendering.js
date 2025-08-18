@@ -11,6 +11,7 @@ var group__rendering =
     [ "object.h", "de/d10/object_8h.html", null ],
     [ "scene.h", "db/d83/scene_8h.html", null ],
     [ "GL::Material", "d4/d50/structGL_1_1Material.html", [
+      [ "Material", "d4/d50/structGL_1_1Material.html#a9a17374d79c8ea20803efc9076b7b132", null ],
       [ "ambient", "d4/d50/structGL_1_1Material.html#afbe14a21e57e922a86e202772688f2ef", null ],
       [ "diffuse", "d4/d50/structGL_1_1Material.html#a2e6bfa1497546db65f1c363985b4a52e", null ],
       [ "shininess", "d4/d50/structGL_1_1Material.html#a593816847c0d6811a2fc6c625670ef27", null ],
@@ -92,6 +93,7 @@ var group__rendering =
     [ "Group", "d0/db7/classGroup.html", [
       [ "Group", "d0/db7/classGroup.html#a0ab5261ef821603e3cb624915ac6af32", null ],
       [ "Group", "d0/db7/classGroup.html#a0b6265dee2b5d160e5154140d808019a", null ],
+      [ "Group", "d0/db7/classGroup.html#ad08f8a58326422f80e8730d9d85851fe", null ],
       [ "load", "d0/db7/classGroup.html#a3cc9d35ed0753293c7128cddf920b55b", null ],
       [ "id", "d0/db7/classGroup.html#ad20edf5e9de2238acf2a75301fb6fe33", null ],
       [ "name", "d0/db7/classGroup.html#abfa8bde619513cf0768c14f2e5beeca1", null ],
@@ -99,13 +101,17 @@ var group__rendering =
     ] ],
     [ "Light", "d5/d79/structLight.html", [
       [ "Light", "d5/d79/structLight.html#aff5011d911a33e38dba5ea174679736e", null ],
+      [ "Light", "d5/d79/structLight.html#a84cc680b3a359591f269e479488dc644", null ],
       [ "intensity", "d5/d79/structLight.html#a1071eaa556f4bb2a9345fdfba7e6f220", null ],
       [ "position", "d5/d79/structLight.html#ac485b2b57b34f6d01f316f57b40c2fed", null ]
     ] ],
     [ "Object", "d8/d4b/classObject.html", [
+      [ "Object", "d8/d4b/classObject.html#aa164f4cf0ebff3e52c00167953866f6c", null ],
       [ "Object", "d8/d4b/classObject.html#aef343197effbc642b3f1812ac7bd3d85", null ],
+      [ "Object", "d8/d4b/classObject.html#a2f1113c0cc351878350931775ccb56dc", null ],
       [ "model", "d8/d4b/classObject.html#af8f23e84a424cb6061cc9b23bb1f650c", null ],
       [ "rebuild_BVH", "d8/d4b/classObject.html#a4eae75848cc2f863a790d8da3014549f", null ],
+      [ "refresh_BVH_boxes", "d8/d4b/classObject.html#adca04f4c328648ed754a8c3d846f4d96", null ],
       [ "render", "d8/d4b/classObject.html#a5c13c26a5d9896e078a32de6593e5be5", null ],
       [ "update", "d8/d4b/classObject.html#a81cff33ba1612aa43187d3e617d8edcc", null ],
       [ "backup", "d8/d4b/classObject.html#a049e8776aaeebac897c3ae2d3fe72f77", null ],
@@ -127,6 +133,7 @@ var group__rendering =
     ] ],
     [ "Scene", "d5/d9c/classScene.html", [
       [ "Scene", "d5/d9c/classScene.html#a2dced7c96389ef0c6688ad20c8d01e81", null ],
+      [ "Scene", "d5/d9c/classScene.html#ab278e1cce7985696ecccb1f8f113cacb", null ],
       [ "Scene", "d5/d9c/classScene.html#adb7836c08d271fb2f2faebf720d7b5e2", null ],
       [ "check_during_simulation", "d5/d9c/classScene.html#a296ce2b55947a1a276ab86291eeeaacf", null ],
       [ "load", "d5/d9c/classScene.html#aa78f982d2d987f8e4bc6748a834bdccc", null ],

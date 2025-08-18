@@ -1,11 +1,25 @@
 var group__simulation =
 [
+    [ "group.h", "d9/dd1/group_8h.html", null ],
     [ "object.h", "de/d10/object_8h.html", null ],
+    [ "scene.h", "db/d83/scene_8h.html", null ],
     [ "solver.h", "d4/d20/solver_8h.html", null ],
+    [ "Group", "d0/db7/classGroup.html", [
+      [ "Group", "d0/db7/classGroup.html#a0ab5261ef821603e3cb624915ac6af32", null ],
+      [ "Group", "d0/db7/classGroup.html#a0b6265dee2b5d160e5154140d808019a", null ],
+      [ "Group", "d0/db7/classGroup.html#ad08f8a58326422f80e8730d9d85851fe", null ],
+      [ "load", "d0/db7/classGroup.html#a3cc9d35ed0753293c7128cddf920b55b", null ],
+      [ "id", "d0/db7/classGroup.html#ad20edf5e9de2238acf2a75301fb6fe33", null ],
+      [ "name", "d0/db7/classGroup.html#abfa8bde619513cf0768c14f2e5beeca1", null ],
+      [ "objects", "d0/db7/classGroup.html#a5ed3dd74efb74aa8fc1b336f6491a238", null ]
+    ] ],
     [ "Object", "d8/d4b/classObject.html", [
+      [ "Object", "d8/d4b/classObject.html#aa164f4cf0ebff3e52c00167953866f6c", null ],
       [ "Object", "d8/d4b/classObject.html#aef343197effbc642b3f1812ac7bd3d85", null ],
+      [ "Object", "d8/d4b/classObject.html#a2f1113c0cc351878350931775ccb56dc", null ],
       [ "model", "d8/d4b/classObject.html#af8f23e84a424cb6061cc9b23bb1f650c", null ],
       [ "rebuild_BVH", "d8/d4b/classObject.html#a4eae75848cc2f863a790d8da3014549f", null ],
+      [ "refresh_BVH_boxes", "d8/d4b/classObject.html#adca04f4c328648ed754a8c3d846f4d96", null ],
       [ "render", "d8/d4b/classObject.html#a5c13c26a5d9896e078a32de6593e5be5", null ],
       [ "update", "d8/d4b/classObject.html#a81cff33ba1612aa43187d3e617d8edcc", null ],
       [ "backup", "d8/d4b/classObject.html#a049e8776aaeebac897c3ae2d3fe72f77", null ],
@@ -27,6 +41,7 @@ var group__simulation =
     ] ],
     [ "Scene", "d5/d9c/classScene.html", [
       [ "Scene", "d5/d9c/classScene.html#a2dced7c96389ef0c6688ad20c8d01e81", null ],
+      [ "Scene", "d5/d9c/classScene.html#ab278e1cce7985696ecccb1f8f113cacb", null ],
       [ "Scene", "d5/d9c/classScene.html#adb7836c08d271fb2f2faebf720d7b5e2", null ],
       [ "check_during_simulation", "d5/d9c/classScene.html#a296ce2b55947a1a276ab86291eeeaacf", null ],
       [ "load", "d5/d9c/classScene.html#aa78f982d2d987f8e4bc6748a834bdccc", null ],

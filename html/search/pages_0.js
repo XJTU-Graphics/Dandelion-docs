@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dandelion_20开发者文档_0',['Dandelion 开发者文档',['../index.html',1,'']]]
+  ['clang_20gcc_0',['Windows (Clang / GCC)',['../d8/df1/build.html#compilation-windows-msys2',1,'']]]
 ];

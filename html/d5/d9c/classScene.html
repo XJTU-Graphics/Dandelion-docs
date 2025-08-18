@@ -104,7 +104,7 @@ $(function(){initNavTree('d5/d9c/classScene.html','../../','db/d67/classScene-me
 </div><!--header-->
 <div class="contents">
 
-<p>表示一个包含相机、光源、物体的完整场景。  
+<p>表示一个包含相机、光源、物体等对象的完整场景。  
  <a href="#details">更多...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../db/d83/scene_8h_source.html">scene.h</a>&gt;</code></p>
@@ -122,8 +122,7 @@ Public 成员函数</h2></td></tr>
 <tr class="memdesc:a3dcbf1d49270fea656c0a86b2bacd95c"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制整个场景。  <br /></td></tr>
 <tr id="pub-methods-0" class="groupHeader"><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a2dced7c96389ef0c6688ad20c8d01e81" id="r_a2dced7c96389ef0c6688ad20c8d01e81"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2dced7c96389ef0c6688ad20c8d01e81">Scene</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;other)=delete</td></tr>
-<tr class="memitem:ab278e1cce7985696ecccb1f8f113cacb" id="r_ab278e1cce7985696ecccb1f8f113cacb"><td class="memItemLeft" align="right" valign="top"><a id="ab278e1cce7985696ecccb1f8f113cacb" name="ab278e1cce7985696ecccb1f8f113cacb"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b> (const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;other)=delete</td></tr>
+<tr class="memitem:ab278e1cce7985696ecccb1f8f113cacb" id="r_ab278e1cce7985696ecccb1f8f113cacb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab278e1cce7985696ecccb1f8f113cacb">Scene</a> (const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;other)=delete</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
@@ -157,12 +156,12 @@ Private 属性</h2></td></tr>
 <tr class="memitem:a5d310a617d791b73ab82bc34bcb37f69" id="r_a5d310a617d791b73ab82bc34bcb37f69"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d310a617d791b73ab82bc34bcb37f69">logger</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
-<div class="textblock"><p>表示一个包含相机、光源、物体的完整场景。 </p>
-<p><span class="tt"><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a></span> 是一个对象语义的类，它既包含完成图形设计和渲染所需的全部数据， 也具有渲染自身预览效果的功能。当前的设计是：控制器 (<a class="el" href="../../d9/d85/classController.html" title="控制器管理所有的界面组件，并处理和预览视角操作（例如旋转、缩放或者平移）相关的输入。">Controller</a>) 在 OpenGL 上下文被创建后即创建场景实例，该实例在程序的整个生命周期中都是唯一的。因此， 复制或移动 <span class="tt"><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a></span> 实例都是错误的行为，因为这有可能导致场景数据不一致。 未来加入修改历史记录时，此设计思路有可能被改变。</p>
-<p>场景可以是空的，如果它非空，则可以包含若干个物体组 (<a class="el" href="../../d0/db7/classGroup.html" title="表示物体组的类。">Group</a>)； 每个组也可以为空或包含若干物体 (<a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a>)，物体是场景中的最小单元，不能再分了。 各种数据遵循“尽可能存储到更小单元中”的原则，因此 <span class="tt"><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a></span> 类中只存储相机、 光源这些与任何物体都无关的数据，而材质、mesh 等数据则存储到物体中。 所有物体都由 <span class="tt"><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a></span> 对象创建并持有，当 <span class="tt"><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a></span> 对象析构时，所有的组、 物体都会自行析构。 </p>
+<div class="textblock"><p>表示一个包含相机、光源、物体等对象的完整场景。 </p>
+<p><span class="tt"><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体等对象的完整场景。">Scene</a></span> 是一个对象语义的类，它既包含完成图形设计和渲染所需的全部数据， 也具有渲染自身预览效果的功能。当前的设计是：控制器 (<a class="el" href="../../d9/d85/classController.html" title="控制器管理所有的界面组件，并处理和预览视角操作（例如旋转、缩放或者平移）相关的输入。">Controller</a>) 在 OpenGL 上下文被创建后即创建场景实例，该实例在程序的整个生命周期中都是唯一的。因此， 复制或移动 <span class="tt"><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体等对象的完整场景。">Scene</a></span> 实例都是错误的行为，因为这有可能导致场景数据不一致。 未来加入修改历史记录时，此设计思路有可能被改变。</p>
+<p>场景可以是空的，如果它非空，则可以包含若干个物体组 (<a class="el" href="../../d0/db7/classGroup.html" title="表示物体组的类。">Group</a>)； 每个组也可以为空或包含若干物体 (<a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a>)，物体是场景中的最小单元，不能再分了。 各种数据遵循“尽可能存储到更小单元中”的原则，因此 <span class="tt"><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体等对象的完整场景。">Scene</a></span> 类中只存储相机、 光源这些与任何物体都无关的数据，而材质、mesh 等数据则存储到物体中。 所有物体都由 <span class="tt"><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体等对象的完整场景。">Scene</a></span> 对象创建并持有，当 <span class="tt"><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体等对象的完整场景。">Scene</a></span> 对象析构时，所有的组、 物体都会自行析构。 </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
 <a id="a2dced7c96389ef0c6688ad20c8d01e81" name="a2dced7c96389ef0c6688ad20c8d01e81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2dced7c96389ef0c6688ad20c8d01e81">&#9670;&#160;</a></span>Scene() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dced7c96389ef0c6688ad20c8d01e81">&#9670;&#160;</a></span>Scene() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -187,8 +186,34 @@ Private 属性</h2></td></tr>
 
 </div>
 </div>
+<a id="ab278e1cce7985696ecccb1f8f113cacb" name="ab278e1cce7985696ecccb1f8f113cacb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab278e1cce7985696ecccb1f8f113cacb">&#9670;&#160;</a></span>Scene() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Scene::Scene </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>禁止复制场景。 </p>
+
+</div>
+</div>
 <a id="adb7836c08d271fb2f2faebf720d7b5e2" name="adb7836c08d271fb2f2faebf720d7b5e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb7836c08d271fb2f2faebf720d7b5e2">&#9670;&#160;</a></span>Scene() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adb7836c08d271fb2f2faebf720d7b5e2">&#9670;&#160;</a></span>Scene() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -248,7 +273,13 @@ Private 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>从指定路径加载模型文件到这个场景中。 </p>
-<p>这个函数只会根据文件名创建一个物体组，然后调用物体组的 <span class="tt">load</span> 方法加载文件。 </p>
+<p>这个函数只会根据文件名创建一个物体组，然后调用物体组的 <span class="tt">load</span> 方法加载文件。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_path</td><td>要加载的模型文件路径 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -272,7 +303,14 @@ Private 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>绘制整个场景。 </p>
-<p><span class="tt">render</span> 方法是场景对外的绘制接口，不会直接绘制任何内容，只负责调用每个 <a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a> 的 <span class="tt">render</span> 方法、<span class="tt">render_camera</span> 和 <span class="tt">render_lights</span> 方法。 </p>
+<p><span class="tt">render</span> 方法是场景对外的绘制接口，不会直接绘制任何内容，只负责调用每个 <span class="tt"><a class="el" href="../../d8/d4b/classObject.html" title="表示物体的类。">Object</a></span> 的 <span class="tt">render</span> 方法、<span class="tt">render_camera</span> 和 <span class="tt">render_lights</span> 方法。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shader</td><td><span class="tt"><a class="el" href="../../d9/d69/classShader.html" title="对 GLSL Shader 的简单封装。">Shader</a></span> 对象的引用，会传给待渲染的每个物体 </td></tr>
+    <tr><td class="paramname">mode</td><td>当前工作模式，根据模式的不同，会选择性渲染某些元素。 例如只有建模模式下，才会渲染半边网格 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -300,7 +338,13 @@ Private 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>在渲染模式 (Rendering mode) 下绘制代表相机视锥的线框。 </p>
-<p>根据场景对象的相机参数（位置、目标点、远近平面、视角），绘制四棱锥形的相机视锥。 由于近平面通常离相机视点很近，这个函数不会绘制近平面。离线渲染时， 会裁剪掉视锥范围外的所有内容。 </p>
+<p>根据场景对象的相机参数（位置、目标点、远近平面、视角），绘制四棱锥形的相机视锥。 由于近平面通常离相机视点很近，这个函数不会绘制近平面。离线渲染时， 会裁剪掉视锥范围外的所有内容。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shader</td><td><span class="tt"><a class="el" href="../../d9/d69/classShader.html" title="对 GLSL Shader 的简单封装。">Shader</a></span> 对象的引用 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -328,7 +372,13 @@ Private 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>绘制空间坐标轴和 \(y=1\) 平面上表示地面的网格线。 </p>
-<p>这个函数在 \(x\) 和 \(z\) 方向各绘制 1000 条网格线，并分别用红、绿、蓝三色绘制 \(x,y,z\) 三轴正半轴。 </p>
+<p>这个函数在 \(x\) 和 \(z\) 方向各绘制 1000 条网格线，并分别用红、绿、蓝三色绘制 \(x,y,z\) 三轴正半轴。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shader</td><td><span class="tt"><a class="el" href="../../d9/d69/classShader.html" title="对 GLSL Shader 的简单封装。">Shader</a></span> 对象的引用 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -356,7 +406,13 @@ Private 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>在渲染模式下绘制光源。 </p>
-<p>这个函数将场景中每个点光源绘制成六个亮点。 </p>
+<p>这个函数将一个点光源表示成一个中心点和六个亮点。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shader</td><td><span class="tt"><a class="el" href="../../d9/d69/classShader.html" title="对 GLSL Shader 的简单封装。">Shader</a></span> 对象的引用 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

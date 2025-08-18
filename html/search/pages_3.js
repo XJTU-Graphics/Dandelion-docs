@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['macos_0',['macOS',['../d8/df1/build.html#compilation-macos',1,'']]]
+  ['linux_0',['Linux',['../d8/df1/build.html#compilation-linux',1,'']]]
 ];

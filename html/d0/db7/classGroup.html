@@ -100,7 +100,7 @@ $(function(){initNavTree('d0/db7/classGroup.html','../../','d4/dd1/classGroup-me
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Group类 参考<div class="ingroups"><a class="el" href="../../db/d81/group__rendering.html">离线渲染</a></div></div></div>
+  <div class="headertitle"><div class="title">Group类 参考<div class="ingroups"><a class="el" href="../../db/d81/group__rendering.html">离线渲染</a> &#124; <a class="el" href="../../d9/d77/group__simulation.html">物理模拟</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -115,8 +115,7 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a3cc9d35ed0753293c7128cddf920b55b" id="r_a3cc9d35ed0753293c7128cddf920b55b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cc9d35ed0753293c7128cddf920b55b">load</a> (const std::string &amp;file_path)</td></tr>
 <tr id="pub-methods-0" class="groupHeader"><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a0b6265dee2b5d160e5154140d808019a" id="r_a0b6265dee2b5d160e5154140d808019a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b6265dee2b5d160e5154140d808019a">Group</a> (<a class="el" href="../../d0/db7/classGroup.html">Group</a> &amp;other)=delete</td></tr>
-<tr class="memitem:ad08f8a58326422f80e8730d9d85851fe" id="r_ad08f8a58326422f80e8730d9d85851fe"><td class="memItemLeft" align="right" valign="top"><a id="ad08f8a58326422f80e8730d9d85851fe" name="ad08f8a58326422f80e8730d9d85851fe"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Group</b> (const <a class="el" href="../../d0/db7/classGroup.html">Group</a> &amp;other)=delete</td></tr>
+<tr class="memitem:ad08f8a58326422f80e8730d9d85851fe" id="r_ad08f8a58326422f80e8730d9d85851fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad08f8a58326422f80e8730d9d85851fe">Group</a> (const <a class="el" href="../../d0/db7/classGroup.html">Group</a> &amp;other)=delete</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
@@ -138,7 +137,7 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
 <p>一个模型文件（例如一个 obj 文件）中可以包含多个物体， 因此加载一个模型文件的结果是一个组而不是一个物体。加载完成后，组名即文件名、 各物体名即文件中各 mesh 的名称。在删除组中所有的物体后该组为空但不会被删除， 未来将实现组间转移物体和向组中添加物体的功能。 </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
 <a id="a0ab5261ef821603e3cb624915ac6af32" name="a0ab5261ef821603e3cb624915ac6af32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ab5261ef821603e3cb624915ac6af32">&#9670;&#160;</a></span>Group() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ab5261ef821603e3cb624915ac6af32">&#9670;&#160;</a></span>Group() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -151,12 +150,17 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
         </tr>
       </table>
 </div><div class="memdoc">
-<p>创建一个组只需要指定组名，加载模型数据要显式调用 <span class="tt">load</span> 方法。 </p>
+<p>创建一个组只需要指定组名，加载模型数据要显式调用 <span class="tt">load</span> 方法。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>要创建组的组名 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <a id="a0b6265dee2b5d160e5154140d808019a" name="a0b6265dee2b5d160e5154140d808019a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b6265dee2b5d160e5154140d808019a">&#9670;&#160;</a></span>Group() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b6265dee2b5d160e5154140d808019a">&#9670;&#160;</a></span>Group() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -168,6 +172,32 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
           <td class="memname">Group::Group </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d0/db7/classGroup.html">Group</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>禁止复制组。 </p>
+
+</div>
+</div>
+<a id="ad08f8a58326422f80e8730d9d85851fe" name="ad08f8a58326422f80e8730d9d85851fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad08f8a58326422f80e8730d9d85851fe">&#9670;&#160;</a></span>Group() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Group::Group </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/db7/classGroup.html">Group</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -196,7 +226,12 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
         </tr>
       </table>
 </div><div class="memdoc">
-<p>被 <span class="tt"><a class="el" href="../../d5/d9c/classScene.html#aa78f982d2d987f8e4bc6748a834bdccc" title="从指定路径加载模型文件到这个场景中。">Scene::load</a></span> 调用，真正加载模型数据的函数。 </p>
+<p>被 <span class="tt"><a class="el" href="../../d5/d9c/classScene.html#aa78f982d2d987f8e4bc6748a834bdccc" title="从指定路径加载模型文件到这个场景中。">Scene::load</a></span> 调用，真正加载模型数据的函数。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_path</td><td>要加载模型的文件路径 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -212,7 +247,7 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
         </tr>
       </table>
 </div><div class="memdoc">
-<p>组的唯一 ID 。 </p>
+<p>组的唯一 ID。 </p>
 
 </div>
 </div>
@@ -250,7 +285,7 @@ std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valig
   </tr>
 </table>
 </div><div class="memdoc">
-<p>下一个可用的组 ID 。 </p>
+<p>下一个可用的组 ID。 </p>
 
 </div>
 </div>

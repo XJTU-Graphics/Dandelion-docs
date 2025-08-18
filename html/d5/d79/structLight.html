@@ -104,7 +104,7 @@ $(function(){initNavTree('d5/d79/structLight.html','../../','d6/dfa/structLight-
 </div><!--header-->
 <div class="contents">
 
-<p>一个点光源。  
+<p>表示一个点光源的类。  
  <a href="#details">更多...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../dd/dd3/light_8h_source.html">light.h</a>&gt;</code></p>
@@ -112,8 +112,7 @@ $(function(){initNavTree('d5/d79/structLight.html','../../','d6/dfa/structLight-
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:aff5011d911a33e38dba5ea174679736e" id="r_aff5011d911a33e38dba5ea174679736e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff5011d911a33e38dba5ea174679736e">Light</a> ()=delete</td></tr>
-<tr class="memitem:a84cc680b3a359591f269e479488dc644" id="r_a84cc680b3a359591f269e479488dc644"><td class="memItemLeft" align="right" valign="top"><a id="a84cc680b3a359591f269e479488dc644" name="a84cc680b3a359591f269e479488dc644"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Light</b> (const Eigen::Vector3f &amp;<a class="el" href="#ac485b2b57b34f6d01f316f57b40c2fed">position</a>, float <a class="el" href="#a1071eaa556f4bb2a9345fdfba7e6f220">intensity</a>)</td></tr>
+<tr class="memitem:a84cc680b3a359591f269e479488dc644" id="r_a84cc680b3a359591f269e479488dc644"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84cc680b3a359591f269e479488dc644">Light</a> (const Eigen::Vector3f &amp;<a class="el" href="#ac485b2b57b34f6d01f316f57b40c2fed">position</a>, float <a class="el" href="#a1071eaa556f4bb2a9345fdfba7e6f220">intensity</a>)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
@@ -121,10 +120,10 @@ Public 属性</h2></td></tr>
 <tr class="memitem:a1071eaa556f4bb2a9345fdfba7e6f220" id="r_a1071eaa556f4bb2a9345fdfba7e6f220"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1071eaa556f4bb2a9345fdfba7e6f220">intensity</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
-<div class="textblock"><p>一个点光源。 </p>
+<div class="textblock"><p>表示一个点光源的类。 </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
 <a id="aff5011d911a33e38dba5ea174679736e" name="aff5011d911a33e38dba5ea174679736e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff5011d911a33e38dba5ea174679736e">&#9670;&#160;</a></span>Light()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aff5011d911a33e38dba5ea174679736e">&#9670;&#160;</a></span>Light() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -146,6 +145,34 @@ Public 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>禁止无参构造。 </p>
+
+</div>
+</div>
+<a id="a84cc680b3a359591f269e479488dc644" name="a84cc680b3a359591f269e479488dc644"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84cc680b3a359591f269e479488dc644">&#9670;&#160;</a></span>Light() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Light::Light </td>
+          <td>(</td>
+          <td class="paramtype">const Eigen::Vector3f &amp;</td>          <td class="paramname"><span class="paramname"><em>position</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>intensity</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>在指定位置创建一个指定强度的点光源。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>光源位置 </td></tr>
+    <tr><td class="paramname">position</td><td>光源强度 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

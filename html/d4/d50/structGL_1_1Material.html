@@ -111,8 +111,8 @@ $(function(){initNavTree('d4/d50/structGL_1_1Material.html','../../','d7/da1/str
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a9a17374d79c8ea20803efc9076b7b132" id="r_a9a17374d79c8ea20803efc9076b7b132"><td class="memItemLeft" align="right" valign="top"><a id="a9a17374d79c8ea20803efc9076b7b132" name="a9a17374d79c8ea20803efc9076b7b132"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Material</b> (const Eigen::Vector3f &amp;K_ambient=Eigen::Vector3f(1.0f, 1.0f, 1.0f), const Eigen::Vector3f &amp;K_diffuse=Eigen::Vector3f(0.5f, 0.5f, 0.5f), const Eigen::Vector3f &amp;K_specular=Eigen::Vector3f(0.0f, 0.0f, 0.0f), float <a class="el" href="#a593816847c0d6811a2fc6c625670ef27">shininess</a>=5.0f)</td></tr>
+<tr class="memitem:a9a17374d79c8ea20803efc9076b7b132" id="r_a9a17374d79c8ea20803efc9076b7b132"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a17374d79c8ea20803efc9076b7b132">Material</a> (const Eigen::Vector3f &amp;K_ambient=Eigen::Vector3f(1.0f, 1.0f, 1.0f), const Eigen::Vector3f &amp;K_diffuse=Eigen::Vector3f(0.5f, 0.5f, 0.5f), const Eigen::Vector3f &amp;K_specular=Eigen::Vector3f(0.0f, 0.0f, 0.0f), float <a class="el" href="#a593816847c0d6811a2fc6c625670ef27">shininess</a>=5.0f)</td></tr>
+<tr class="memdesc:a9a17374d79c8ea20803efc9076b7b132"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造一个材质对象。  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
@@ -123,7 +123,51 @@ Public 属性</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>物体材质。 </p>
-</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
+<p>该类型实现了一个简单的 Phong 材质模型，包含环境光、漫反射、镜面反射三个颜色向量， 以及一个光滑度参数。 </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
+<a id="a9a17374d79c8ea20803efc9076b7b132" name="a9a17374d79c8ea20803efc9076b7b132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a17374d79c8ea20803efc9076b7b132">&#9670;&#160;</a></span>Material()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Material::Material </td>
+          <td>(</td>
+          <td class="paramtype">const Eigen::Vector3f &amp;</td>          <td class="paramname"><span class="paramname"><em>K_ambient</em></span><span class="paramdefsep"> = </span><span class="paramdefval">Eigen::Vector3f(1.0f,&#160;1.0f,&#160;1.0f)</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Vector3f &amp;</td>          <td class="paramname"><span class="paramname"><em>K_diffuse</em></span><span class="paramdefsep"> = </span><span class="paramdefval">Eigen::Vector3f(0.5f,&#160;0.5f,&#160;0.5f)</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Vector3f &amp;</td>          <td class="paramname"><span class="paramname"><em>K_specular</em></span><span class="paramdefsep"> = </span><span class="paramdefval">Eigen::Vector3f(0.0f,&#160;0.0f,&#160;0.0f)</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>shininess</em></span><span class="paramdefsep"> = </span><span class="paramdefval">5.0f</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造一个材质对象。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">K_ambient</td><td>环境光系数（颜色） </td></tr>
+    <tr><td class="paramname">K_diffuse</td><td>漫反射系数（颜色） </td></tr>
+    <tr><td class="paramname">K_specular</td><td>镜面反射系数（颜色） </td></tr>
+    <tr><td class="paramname">shininess</td><td>光滑度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
 <a id="afbe14a21e57e922a86e202772688f2ef" name="afbe14a21e57e922a86e202772688f2ef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afbe14a21e57e922a86e202772688f2ef">&#9670;&#160;</a></span>ambient</h2>
 
@@ -201,7 +245,7 @@ Public 属性</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>GL</b></li><li class="navelem"><a href="../../d4/d50/structGL_1_1Material.html">Material</a></li>
+    <li class="navelem"><a href="../../dd/d9a/namespaceGL.html">GL</a></li><li class="navelem"><a href="../../d4/d50/structGL_1_1Material.html">Material</a></li>
     <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

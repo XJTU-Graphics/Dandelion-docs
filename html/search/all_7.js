@@ -11,7 +11,9 @@ var searchData=
   ['halfedgemeshfailure_8',['HalfedgeMeshFailure',['../d9/dba/group__geometry.html#ga61975e76d464c02410b50d5600f125da',1,'halfedge.h']]],
   ['halfedges_9',['halfedges',['../dc/d6d/classHalfedgeMesh.html#a52add04034d022864df496b87b212e97',1,'HalfedgeMesh']]],
   ['head_10',['head',['../d7/dde/classLinkedList.html#a0bf7653ddd7a5047576d01859c54108c',1,'LinkedList']]],
-  ['height_11',['height',['../d6/de2/classUI_1_1Menubar.html#a16d89c2e6a2ba731cf37f2d2535c6283',1,'UI::Menubar']]],
-  ['highlighted_5felement_12',['highlighted_element',['../d9/d85/classController.html#ac5a2db1447f9cfb2f59fb6b236ddcb61',1,'Controller']]],
-  ['highlighted_5fhalfedge_13',['highlighted_halfedge',['../d9/d85/classController.html#ae0f5af9db482fbbbdf22e3e08195c471',1,'Controller']]]
+  ['height_11',['height',['../de/d97/structUniforms.html#ad839d1f923bbd41d63690168986cd60e',1,'Uniforms::height'],['../d6/de2/classUI_1_1Menubar.html#a16d89c2e6a2ba731cf37f2d2535c6283',1,'UI::Menubar::height()']]],
+  ['highlight_5fface_5fcolor_12',['highlight_face_color',['../d8/d88/structGL_1_1Mesh.html#ae1f9d0f3d8122efc11efcd3a97da92f3',1,'GL::Mesh']]],
+  ['highlight_5fwireframe_5fcolor_13',['highlight_wireframe_color',['../d8/d88/structGL_1_1Mesh.html#a877cd9d5951a8bfef862ae352badafce',1,'GL::Mesh']]],
+  ['highlighted_5felement_14',['highlighted_element',['../d9/d85/classController.html#ac5a2db1447f9cfb2f59fb6b236ddcb61',1,'Controller']]],
+  ['highlighted_5fhalfedge_15',['highlighted_halfedge',['../d9/d85/classController.html#ae0f5af9db482fbbbdf22e3e08195c471',1,'Controller']]]
 ];

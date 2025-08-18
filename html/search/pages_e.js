@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['组织成员_0',['XJTU-Graphics 组织成员',['../da/d2c/startup.html#member-submission',1,'']]]
+  ['拼写检查_0',['拼写检查',['../da/d2c/startup.html#spell-check',1,'']]]
 ];

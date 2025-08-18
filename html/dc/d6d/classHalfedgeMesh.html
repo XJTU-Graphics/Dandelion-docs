@@ -189,7 +189,7 @@ Private 属性</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>半边网格整体。 </p>
-<p>当 Dandelion 进入建模模式时，<span class="tt"><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体的完整场景。">Scene</a></span> 对象将用选中的 mesh 构造一个半边网格， 从而支持各种基于半边网格的几何算法。当几何操作完成后，需要将半边网格的几何信息 （坐标、连接关系等）同步到原先的 mesh，这样才能显示操作带来的变化。</p>
+<p>当 Dandelion 进入建模模式时，<span class="tt"><a class="el" href="../../d5/d9c/classScene.html" title="表示一个包含相机、光源、物体等对象的完整场景。">Scene</a></span> 对象将用选中的 mesh 构造一个半边网格， 从而支持各种基于半边网格的几何算法。当几何操作完成后，需要将半边网格的几何信息 （坐标、连接关系等）同步到原先的 mesh，这样才能显示操作带来的变化。</p>
 <p>各种全局操作往往需要频繁增删几何元素，为了保证 \(O(1)\) 的增删效率， 所有的几何元素都存储于双向链表 (<span class="tt"><a class="el" href="../../d7/dde/classLinkedList.html" title="侵入式双链表。">LinkedList</a></span>) 中。 </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
 <a id="afee59ddbb09b6ddd751e74cc5a8664f9" name="afee59ddbb09b6ddd751e74cc5a8664f9"></a>

@@ -11,5 +11,7 @@ var rendering_8hpp =
     [ "line_width", "dc/df7/rendering_8hpp.html#a3ca9a822f7e8866ae1e5f1e29a3e20b2", null ],
     [ "picking_enabled_modes", "dc/df7/rendering_8hpp.html#a2d1f9d29e3d9cadcf469f07790d4be18", null ],
     [ "point_size", "dc/df7/rendering_8hpp.html#a7040e00a64700f0d2349c23740688f56", null ],
+    [ "vertex_color_location", "db/d81/group__utils.html#gaa30b93e8006d140b22dc6d5a7cd167eb", null ],
+    [ "vertex_normal_location", "db/d81/group__utils.html#gaf9299ed6aa7dd39df06de271a323be8d", null ],
     [ "vertex_position_location", "db/d81/group__utils.html#ga59f39d17248f4e72b89867b326d1cd76", null ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['拼写检查_0',['拼写检查',['../da/d2c/startup.html#spell-check',1,'']]]
+  ['参与贡献_0',['参与贡献',['../da/d2c/startup.html',1,'']]]
 ];

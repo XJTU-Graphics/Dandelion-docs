@@ -104,7 +104,7 @@ $(function(){initNavTree('df/d1e/classPlatform.html','../../','d6/d5f/classPlatf
 </div><!--header-->
 <div class="contents">
 
-<p>这个类管理平台相关的窗口和配置信息。  
+<p>这个类管理平台相关的窗口、配置信息以及应用启动的入口和事件循环。  
  <a href="#details">更多...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../de/d03/platform_8h_source.html">platform.h</a>&gt;</code></p>
@@ -113,6 +113,7 @@ $(function(){initNavTree('df/d1e/classPlatform.html','../../','d6/d5f/classPlatf
 Public 成员函数</h2></td></tr>
 <tr class="memitem:a52028ea2984cbfdf8e9f42ee87f66cfe" id="r_a52028ea2984cbfdf8e9f42ee87f66cfe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52028ea2984cbfdf8e9f42ee87f66cfe">Platform</a> ()</td></tr>
 <tr class="memdesc:a52028ea2984cbfdf8e9f42ee87f66cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化 OpenGL Context、创建窗口、初始化 Dear ImGui、创建预览场景用的 shader。  <br /></td></tr>
+<tr class="memitem:a13b5e4ef946b8a2fe38d22014145ab68" id="r_a13b5e4ef946b8a2fe38d22014145ab68"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13b5e4ef946b8a2fe38d22014145ab68">~Platform</a> ()</td></tr>
 <tr class="memitem:a623e404af56fbf153dcaa64214404f9c" id="r_a623e404af56fbf153dcaa64214404f9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a623e404af56fbf153dcaa64214404f9c">eventloop</a> ()</td></tr>
 <tr class="memdesc:a623e404af56fbf153dcaa64214404f9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">事件循环主体。  <br /></td></tr>
 </table><table class="memberdecls">
@@ -126,23 +127,17 @@ Private 成员函数</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 静态 Private 成员函数</h2></td></tr>
-<tr class="memitem:af6a570d0dc5be623ebaa3da7cb1b500c" id="r_af6a570d0dc5be623ebaa3da7cb1b500c"><td class="memItemLeft" align="right" valign="top"><a id="af6a570d0dc5be623ebaa3da7cb1b500c" name="af6a570d0dc5be623ebaa3da7cb1b500c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>on_framebuffer_resized</b> (GLFWwindow *window, GLsizei width, GLsizei height)</td></tr>
+<tr class="memitem:af6a570d0dc5be623ebaa3da7cb1b500c" id="r_af6a570d0dc5be623ebaa3da7cb1b500c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6a570d0dc5be623ebaa3da7cb1b500c">on_framebuffer_resized</a> (GLFWwindow *<a class="el" href="#abd5ba6f935fadd528b683d30ea99a504">window</a>, GLsizei width, GLsizei height)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private 属性</h2></td></tr>
-<tr class="memitem:afd8af54ffbf27be95373c672fc30044d" id="r_afd8af54ffbf27be95373c672fc30044d"><td class="memItemLeft" align="right" valign="top"><a id="afd8af54ffbf27be95373c672fc30044d" name="afd8af54ffbf27be95373c672fc30044d"></a>
-std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>logger</b></td></tr>
-<tr class="memitem:abd5ba6f935fadd528b683d30ea99a504" id="r_abd5ba6f935fadd528b683d30ea99a504"><td class="memItemLeft" align="right" valign="top"><a id="abd5ba6f935fadd528b683d30ea99a504" name="abd5ba6f935fadd528b683d30ea99a504"></a>
-GLFWwindow *&#160;</td><td class="memItemRight" valign="bottom"><b>window</b></td></tr>
-<tr class="memitem:abbe12342e54e09ba8c6d622ce130a767" id="r_abbe12342e54e09ba8c6d622ce130a767"><td class="memItemLeft" align="right" valign="top"><a id="abbe12342e54e09ba8c6d622ce130a767" name="abbe12342e54e09ba8c6d622ce130a767"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>window_width</b></td></tr>
-<tr class="memitem:a0a453ec7264b5a4138ddfd007e3b35e2" id="r_a0a453ec7264b5a4138ddfd007e3b35e2"><td class="memItemLeft" align="right" valign="top"><a id="a0a453ec7264b5a4138ddfd007e3b35e2" name="a0a453ec7264b5a4138ddfd007e3b35e2"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>window_height</b></td></tr>
-<tr class="memitem:ac71c6670c576fc21de751e48baa8383d" id="r_ac71c6670c576fc21de751e48baa8383d"><td class="memItemLeft" align="right" valign="top"><a id="ac71c6670c576fc21de751e48baa8383d" name="ac71c6670c576fc21de751e48baa8383d"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>dpi</b></td></tr>
-<tr class="memitem:a6d885118eacd2e6a3417ce2491832b84" id="r_a6d885118eacd2e6a3417ce2491832b84"><td class="memItemLeft" align="right" valign="top"><a id="a6d885118eacd2e6a3417ce2491832b84" name="a6d885118eacd2e6a3417ce2491832b84"></a>
-std::unique_ptr&lt; <a class="el" href="../../d9/d69/classShader.html">Shader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>shader</b></td></tr>
+<tr class="memitem:afd8af54ffbf27be95373c672fc30044d" id="r_afd8af54ffbf27be95373c672fc30044d"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd8af54ffbf27be95373c672fc30044d">logger</a></td></tr>
+<tr class="memitem:abd5ba6f935fadd528b683d30ea99a504" id="r_abd5ba6f935fadd528b683d30ea99a504"><td class="memItemLeft" align="right" valign="top">GLFWwindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd5ba6f935fadd528b683d30ea99a504">window</a></td></tr>
+<tr class="memitem:ac71c6670c576fc21de751e48baa8383d" id="r_ac71c6670c576fc21de751e48baa8383d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac71c6670c576fc21de751e48baa8383d">dpi</a></td></tr>
+<tr class="memitem:a6d885118eacd2e6a3417ce2491832b84" id="r_a6d885118eacd2e6a3417ce2491832b84"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d9/d69/classShader.html">Shader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d885118eacd2e6a3417ce2491832b84">shader</a></td></tr>
+<tr id="pri-attribs-0" class="groupHeader"><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:abbe12342e54e09ba8c6d622ce130a767" id="r_abbe12342e54e09ba8c6d622ce130a767"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbe12342e54e09ba8c6d622ce130a767">window_width</a></td></tr>
+<tr class="memitem:a0a453ec7264b5a4138ddfd007e3b35e2" id="r_a0a453ec7264b5a4138ddfd007e3b35e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a453ec7264b5a4138ddfd007e3b35e2">window_height</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 静态 Private 属性</h2></td></tr>
@@ -150,7 +145,7 @@ std::unique_ptr&lt; <a class="el" href="../../d9/d69/classShader.html">Shader</a
 static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>mouse_wheel_threshold</b> = 1e-2f</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
-<div class="textblock"><p>这个类管理平台相关的窗口和配置信息。 </p>
+<div class="textblock"><p>这个类管理平台相关的窗口、配置信息以及应用启动的入口和事件循环。 </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
 <a id="a52028ea2984cbfdf8e9f42ee87f66cfe" name="a52028ea2984cbfdf8e9f42ee87f66cfe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a52028ea2984cbfdf8e9f42ee87f66cfe">&#9670;&#160;</a></span>Platform()</h2>
@@ -170,6 +165,24 @@ static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>mou
 <p>初始化 OpenGL Context、创建窗口、初始化 Dear ImGui、创建预览场景用的 shader。 </p>
 <p>构造函数按照 4.6 -&gt; 4.3 -&gt; 3.3 的版本顺序尝试创建 OpenGL Context，若全部失败， 则程序终止直接退出（OpenGL 3.3 是使用 GLSL shader 的最低要求）。</p>
 <p>OpenGL <a class="el" href="../../d6/d7a/structContext.html" title="存放实现渲染管线所需的一些全局数据。">Context</a> 创建成功后，构造函数加载 OpenGL API 并创建窗口，再探测用户显示器的 DPI 来决定程序的全局缩放比例。Dear ImGui 的初始化过程依赖于全局缩放。 最后，构造函数编译、链接渲染预览场景的 shader。 </p>
+
+</div>
+</div>
+<a id="a13b5e4ef946b8a2fe38d22014145ab68" name="a13b5e4ef946b8a2fe38d22014145ab68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13b5e4ef946b8a2fe38d22014145ab68">&#9670;&#160;</a></span>~Platform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Platform::~Platform </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>执行 OpenGL 销毁窗口的操作。 </p>
 
 </div>
 </div>
@@ -283,6 +296,41 @@ static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>mou
 
 </div>
 </div>
+<a id="af6a570d0dc5be623ebaa3da7cb1b500c" name="af6a570d0dc5be623ebaa3da7cb1b500c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6a570d0dc5be623ebaa3da7cb1b500c">&#9670;&#160;</a></span>on_framebuffer_resized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Platform::on_framebuffer_resized </td>
+          <td>(</td>
+          <td class="paramtype">GLFWwindow *</td>          <td class="paramname"><span class="paramname"><em>window</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLsizei</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLsizei</td>          <td class="paramname"><span class="paramname"><em>height</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>处理窗口缩放的回调函数。 </p>
+
+</div>
+</div>
 <a id="abc7c9ebc5b95dfc19864a639839bd986" name="abc7c9ebc5b95dfc19864a639839bd986"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc7c9ebc5b95dfc19864a639839bd986">&#9670;&#160;</a></span>resize_window()</h2>
 
@@ -332,6 +380,145 @@ static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>mou
 </table>
 </div><div class="memdoc">
 <p>设置一些全局通用的 OpenGL 属性，例如开启深度测试等。 </p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
+<a id="ac71c6670c576fc21de751e48baa8383d" name="ac71c6670c576fc21de751e48baa8383d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac71c6670c576fc21de751e48baa8383d">&#9670;&#160;</a></span>dpi</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Platform::dpi</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>屏幕分辨率，实际是 PPI (Pixels Per Inch)，称为 DPI 只是出于习惯。 </p>
+
+</div>
+</div>
+<a id="afd8af54ffbf27be95373c672fc30044d" name="afd8af54ffbf27be95373c672fc30044d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd8af54ffbf27be95373c672fc30044d">&#9670;&#160;</a></span>logger</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;spdlog::logger&gt; Platform::logger</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>持有的日志记录器。 </p>
+
+</div>
+</div>
+<a id="a6d885118eacd2e6a3417ce2491832b84" name="a6d885118eacd2e6a3417ce2491832b84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d885118eacd2e6a3417ce2491832b84">&#9670;&#160;</a></span>shader</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="../../d9/d69/classShader.html">Shader</a>&gt; Platform::shader</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>用于实时渲染预览窗口的 OpenGL <a class="el" href="../../d9/d69/classShader.html" title="对 GLSL Shader 的简单封装。">Shader</a> 封装对象。 </p>
+
+</div>
+</div>
+<a id="abd5ba6f935fadd528b683d30ea99a504" name="abd5ba6f935fadd528b683d30ea99a504"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd5ba6f935fadd528b683d30ea99a504">&#9670;&#160;</a></span>window</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLFWwindow* Platform::window</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>窗口对象。 </p>
+
+</div>
+</div>
+<a id="a0a453ec7264b5a4138ddfd007e3b35e2" name="a0a453ec7264b5a4138ddfd007e3b35e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a453ec7264b5a4138ddfd007e3b35e2">&#9670;&#160;</a></span>window_height</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Platform::window_height</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>实时更新的窗口长宽。 </p>
+
+</div>
+</div>
+<a id="abbe12342e54e09ba8c6d622ce130a767" name="abbe12342e54e09ba8c6d622ce130a767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbe12342e54e09ba8c6d622ce130a767">&#9670;&#160;</a></span>window_width</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Platform::window_width</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>实时更新的窗口长宽。 </p>
 
 </div>
 </div>

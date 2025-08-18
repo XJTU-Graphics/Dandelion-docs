@@ -1,6 +1,7 @@
 var classScene =
 [
     [ "Scene", "d5/d9c/classScene.html#a2dced7c96389ef0c6688ad20c8d01e81", null ],
+    [ "Scene", "d5/d9c/classScene.html#ab278e1cce7985696ecccb1f8f113cacb", null ],
     [ "Scene", "d5/d9c/classScene.html#adb7836c08d271fb2f2faebf720d7b5e2", null ],
     [ "check_during_simulation", "d5/d9c/classScene.html#a296ce2b55947a1a276ab86291eeeaacf", null ],
     [ "load", "d5/d9c/classScene.html#aa78f982d2d987f8e4bc6748a834bdccc", null ],
