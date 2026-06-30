@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['编译和运行环境_0',['编译和运行环境',['../d8/df1/build.html#environment',1,'']]],
-  ['编译_1',['编译',['../d8/df1/build.html#compilation',1,'']]]
+  ['组织成员_0',['XJTU-Graphics 组织成员',['../da/d2c/startup.html#member-submission',1,'']]]
 ];

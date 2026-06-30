@@ -1,9 +1,9 @@
 var indexSectionsWithContent =
 {
-  0: "abcdefghiklmnopqrstuvwx~代依几参工平开拼提杂构物界离组编非项",
+  0: "abcdefghijklmnopqrstuvwx~代依几参工平开拼提杂构物界离组编非项",
   1: "abcdefghiklmoprstuvw",
   2: "g",
-  3: "abcfghklmoprst",
+  3: "abcfghjklmoprst",
   4: "abcdefghilmnopqrstuvwx~",
   5: "abcdefghilmnopqrstuvwx",
   6: "s",

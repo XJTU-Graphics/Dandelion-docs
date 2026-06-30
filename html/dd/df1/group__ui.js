@@ -20,6 +20,7 @@ var group__ui =
       [ "render", "d9/d85/classController.html#a9070f68e2830fac28bb8c61af10fdb47", null ],
       [ "render_debug_helpers", "d9/d85/classController.html#a0afa257dd629821865bd1dcbdf6986a8", null ],
       [ "render_selected_element", "d9/d85/classController.html#a2ed430569aa8dc4e63bbd82ad345db35", null ],
+      [ "return_to_safe_state", "d9/d85/classController.html#a34c70906a7fddef21721be67c9d8ef3f", null ],
       [ "select", "d9/d85/classController.html#ae4c72b93b65e486a002d4cb872e614de", null ],
       [ "select_edge", "d9/d85/classController.html#af34eb88e8cfcf959435ab733a99f285b", null ],
       [ "select_face", "d9/d85/classController.html#a4b2321e10d29a6139694c3cd6e792125", null ],
@@ -32,7 +33,6 @@ var group__ui =
       [ "highlighted_element", "d9/d85/classController.html#ac5a2db1447f9cfb2f59fb6b236ddcb61", null ],
       [ "highlighted_halfedge", "d9/d85/classController.html#ae0f5af9db482fbbbdf22e3e08195c471", null ],
       [ "logger", "d9/d85/classController.html#a3ac9aefe19714d124cb032e23fd23e75", null ],
-      [ "main_camera", "d9/d85/classController.html#a20539e548e10bce4d113f894be43665e", null ],
       [ "menubar", "d9/d85/classController.html#afe600befbeedd8d86dc9bf7e373e365a", null ],
       [ "mode", "d9/d85/classController.html#a2b60e1a9302100c28471c18a46dba481", null ],
       [ "picking_ray", "d9/d85/classController.html#aaa4a1e64142b9502bb07c23a503bd74e", null ],
@@ -77,6 +77,6 @@ var group__ui =
       [ "on_selection_canceled", "d1/d84/classUI_1_1Toolbar.html#afc398afcfb71e5cf3c8a2aca31559eb9", null ],
       [ "selected_element", "d1/d84/classUI_1_1Toolbar.html#a0dcd3ac429afd8adfed64e5039dc89e3", null ]
     ] ],
-    [ "SelectableType", "dd/df1/group__ui.html#ga638a76ca8c5a67cdc5a1e918f7c6e5c1", null ],
+    [ "SelectableType", "dd/df1/group__ui.html#ga6d7943fa9a730037e43193747b2d323b", null ],
     [ "UI::MAX_SCENE_NODES", "dd/df1/group__ui.html#ga517fcfd7da21de45b1dda1b08d77bfb9", null ]
 ];

@@ -17,5 +17,6 @@ var searchData=
   ['disable_14',['disable',['../d6/dba/structGL_1_1ArrayBuffer.html#acae88854f303cdab9f1d23bd338bb32a',1,'GL::ArrayBuffer']]],
   ['dpi_15',['dpi',['../df/d1e/classPlatform.html#ac71c6670c576fc21de751e48baa8383d',1,'Platform']]],
   ['draw_16',['draw',['../d9/d82/structGL_1_1VertexArrayObject.html#af7313fe7cf566758819a19108694d828',1,'GL::VertexArrayObject']]],
-  ['during_5fanimation_17',['during_animation',['../d5/d9c/classScene.html#a141a7d2999cde438b69442da6bbd6d79',1,'Scene']]]
+  ['dump_5fmetadata_17',['dump_metadata',['../d0/db7/classGroup.html#a7244c8523d1cc82519d6ca3b45898d6e',1,'Group']]],
+  ['during_5fanimation_18',['during_animation',['../d5/d9c/classScene.html#a141a7d2999cde438b69442da6bbd6d79',1,'Scene']]]
 ];

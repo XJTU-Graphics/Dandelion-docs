@@ -86,8 +86,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d7/dde/classLinkedList.html#a1fd4b9decd9189318e6caad24aa52323",
-"dc/d6d/classHalfedgeMesh.html#a59fa9525c54738f4c5c8aca8fe0ae149"
+"d7/d7e/structCamera.html#a1207b991b04502fb760f76be67530119",
+"dc/d6d/classHalfedgeMesh.html#a021cc1d95882fa97e294dcc508569b5d"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

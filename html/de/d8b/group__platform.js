@@ -10,7 +10,7 @@ var group__platform =
       [ "release", "d9/d82/structGL_1_1VertexArrayObject.html#aa106084d1d1a66a1c19fe7828b674830", null ],
       [ "descriptor", "d9/d82/structGL_1_1VertexArrayObject.html#a87d8cdda0d24e3c999ffaec872e8fde7", null ]
     ] ],
-    [ "GL::ArrayBuffer< T, size >", "d6/dba/structGL_1_1ArrayBuffer.html", [
+    [ "GL::ArrayBuffer&lt; T, size &gt;", "d6/dba/structGL_1_1ArrayBuffer.html", [
       [ "ArrayBuffer", "d6/dba/structGL_1_1ArrayBuffer.html#a20dda9b009642ee54f0b260b3622f3e2", null ],
       [ "ArrayBuffer", "d6/dba/structGL_1_1ArrayBuffer.html#a3456f8ddab4cf4caf5b016089299f3c8", null ],
       [ "ArrayBuffer", "d6/dba/structGL_1_1ArrayBuffer.html#af87b261e58ef9cb2bcf77f4e4c9eb86b", null ],
@@ -29,7 +29,7 @@ var group__platform =
       [ "layout_location", "d6/dba/structGL_1_1ArrayBuffer.html#a5c92fd61c3de20c99e71c48e9fa5291a", null ],
       [ "usage", "d6/dba/structGL_1_1ArrayBuffer.html#aa8ecf23830cb9969726478bccb43a01c", null ]
     ] ],
-    [ "GL::ElementArrayBuffer< size >", "da/dd6/structGL_1_1ElementArrayBuffer.html", [
+    [ "GL::ElementArrayBuffer&lt; size &gt;", "da/dd6/structGL_1_1ElementArrayBuffer.html", [
       [ "ElementArrayBuffer", "da/dd6/structGL_1_1ElementArrayBuffer.html#a735f4ff0b43967e0a7b022a62b6cc944", null ],
       [ "ElementArrayBuffer", "da/dd6/structGL_1_1ElementArrayBuffer.html#a05b220b4cc0fed8094ec4eb9da37743c", null ],
       [ "ElementArrayBuffer", "da/dd6/structGL_1_1ElementArrayBuffer.html#a2f7352881659cbf5f07d9026409dac29", null ],

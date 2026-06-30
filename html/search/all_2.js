@@ -10,7 +10,7 @@ var searchData=
   ['check_5fpicking_5fenabled_7',['check_picking_enabled',['../dc/df7/rendering_8hpp.html#a0ad2a7688f4c2a3f1e99d3b03bfd1715',1,'rendering.hpp']]],
   ['clamp_8',['clamp',['../db/d81/group__utils.html#ga46f6553c90bf08999d0ba4c86130986d',1,'math.hpp']]],
   ['clang_20gcc_9',['Windows (Clang / GCC)',['../d8/df1/build.html#compilation-windows-msys2',1,'']]],
-  ['clear_10',['clear',['../d8/d88/structGL_1_1Mesh.html#a7008e23cbaacd2878b7e81a01ac5d96b',1,'GL::Mesh::clear()'],['../d4/d91/structGL_1_1LineSet.html#ae828a479016a57b411291662f3ab7d16',1,'GL::LineSet::clear()'],['../dc/d5b/classFrameBuffer.html#ac18ac65f8408c16c944c1be0778c6ce6',1,'FrameBuffer::clear()']]],
+  ['clear_10',['clear',['../d8/d88/structGL_1_1Mesh.html#a7008e23cbaacd2878b7e81a01ac5d96b',1,'GL::Mesh::clear()'],['../d4/d91/structGL_1_1LineSet.html#ae828a479016a57b411291662f3ab7d16',1,'GL::LineSet::clear()'],['../dc/d5b/classFrameBuffer.html#ac18ac65f8408c16c944c1be0778c6ce6',1,'FrameBuffer::clear()'],['../d5/d9c/classScene.html#a70e5b1218abb729d70d9f41b107017f9',1,'Scene::clear()']]],
   ['clear_5ferasure_5frecords_11',['clear_erasure_records',['../dc/d6d/classHalfedgeMesh.html#adf741dc10d78ce517ae4fb16233254ec',1,'HalfedgeMesh']]],
   ['collapse_5fedge_12',['collapse_edge',['../dc/d6d/classHalfedgeMesh.html#a021cc1d95882fa97e294dcc508569b5d',1,'HalfedgeMesh']]],
   ['color_13',['color',['../db/dd4/structFragmentShaderPayload.html#a1628ee5cd555e4c6b61526b90970aeba',1,'FragmentShaderPayload']]],

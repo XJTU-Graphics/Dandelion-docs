@@ -3,6 +3,7 @@ var dir_313caf1132e152dd9b58bea13a4052ca =
     [ "aabb.h", "da/d70/aabb_8h.html", "da/d70/aabb_8h" ],
     [ "bvh.h", "d3/dd6/bvh_8h.html", "d3/dd6/bvh_8h" ],
     [ "formatter.hpp", "d3/d31/formatter_8hpp.html", "d3/d31/formatter_8hpp" ],
+    [ "json_serialize.hpp", "d1/d49/json__serialize_8hpp.html", null ],
     [ "kinetic_state.h", "de/d17/kinetic__state_8h.html", "de/d17/kinetic__state_8h" ],
     [ "linked_list.hpp", "d4/d07/linked__list_8hpp.html", "d4/d07/linked__list_8hpp" ],
     [ "logger.h", "d1/d8c/logger_8h.html", "d1/d8c/logger_8h" ],

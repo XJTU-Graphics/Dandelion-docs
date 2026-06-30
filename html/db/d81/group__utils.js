@@ -1,6 +1,7 @@
 var group__utils =
 [
     [ "formatter.hpp", "d3/d31/formatter_8hpp.html", null ],
+    [ "json_serialize.hpp", "d1/d49/json__serialize_8hpp.html", null ],
     [ "kinetic_state.h", "de/d17/kinetic__state_8h.html", null ],
     [ "linked_list.hpp", "d4/d07/linked__list_8hpp.html", null ],
     [ "logger.h", "d1/d8c/logger_8h.html", null ],

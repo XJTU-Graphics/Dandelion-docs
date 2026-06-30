@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: 构建</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
@@ -46,7 +46,7 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.14.0 -->
+<!-- 制作者 Doxygen 1.16.1 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
 </script>
@@ -126,12 +126,13 @@ $(function(){initNavTree('d8/df1/build.html','../../',''); });
 <li>GLAD (OpenGL Core Profile, version &gt;= 3.3), MIT &amp; Apache License</li>
 <li>Eigen (commit 12068cbcdb835d7bd88b09d8439d2171e856be06), Mozilla Public License</li>
 <li>Assimp 6.0.2, Open Assert Import Library License</li>
-<li>Dear ImGui 1.92.1 (docking branch), MIT License</li>
+<li>Dear ImGui 1.92.5, MIT License</li>
 <li>stb_image 2.30, MIT License &amp; Public Domain</li>
 <li>spdlog 1.15.3, MIT License</li>
 <li>{fmt} 11.2.0, {fmt}'s License</li>
 <li>portable-file-dialogs (commit 7f852d88a480020d7f91957cbcefe514fc95000c), WTFPL License</li>
 <li>Catch2 3.8.1, BOOST Software License</li>
+<li>nlohmann/json 3.12.0, MIT License</li>
 </ul>
 <p>在 Linux 平台上，为了编译 GLFW ，你可能需要按照 <a href="https://www.glfw.org/docs/latest/compile_guide.html">Compiling GLFW</a> 的要求安装相应的依赖库。除此以外，所有的依赖项均被包含于 <em>deps</em> 子目录中，不需要额外下载或安装。由于我们对一些库进行了修复移植或裁剪，也请不要轻易尝试替换 <em>deps</em> 目录下的第三方库，它们和官方发布的相应版本可能并不完全一样。</p>
 <p>由于 Dandelion 首先是一个实验框架，用于西安交通大学计算机图形学课程教学，我们在 Dandelion 的公开频道上删去了所有实验题目的参考答案。然而物体拾取 (picking) 等功能依赖于射线求交，这部分代码被删去后会造成相当的不便。对此，我们的解决方案是将 <em>utils</em> 目录下的 <em>aabb.cpp</em>, <em>bvh.cpp</em> 和 <em>ray.cpp</em> 文件编译成两个静态库 <em>dandelion-ray</em> 和 <em>dandelion-bvh</em> ，只要在编译时链接它们就可以直接使用我们提供的实现。我们目前编译了这些版本的库：</p>
@@ -233,7 +234,7 @@ macOS</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
   </ul>
 </div>
 </body>

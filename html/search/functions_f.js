@@ -20,5 +20,6 @@ var searchData=
   ['render_5fselected_5felement_17',['render_selected_element',['../d9/d85/classController.html#a2ed430569aa8dc4e63bbd82ad345db35',1,'Controller']]],
   ['reset_5fsimulation_18',['reset_simulation',['../d5/d9c/classScene.html#a22359fce4b3d3f44275aa5d6b2dd3dc1',1,'Scene']]],
   ['resize_5fwindow_19',['resize_window',['../df/d1e/classPlatform.html#abc7c9ebc5b95dfc19864a639839bd986',1,'Platform']]],
-  ['runge_5fkutta_5fstep_20',['runge_kutta_step',['../d4/d20/solver_8h.html#a1658b0d74382082614c979f76f65d69a',1,'solver.cpp']]]
+  ['return_5fto_5fsafe_5fstate_20',['return_to_safe_state',['../d9/d85/classController.html#a34c70906a7fddef21721be67c9d8ef3f',1,'Controller']]],
+  ['runge_5fkutta_5fstep_21',['runge_kutta_step',['../d4/d20/solver_8h.html#a1658b0d74382082614c979f76f65d69a',1,'solver.cpp']]]
 ];

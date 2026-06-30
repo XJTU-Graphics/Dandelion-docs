@@ -4,11 +4,14 @@ var classScene =
     [ "Scene", "d5/d9c/classScene.html#ab278e1cce7985696ecccb1f8f113cacb", null ],
     [ "Scene", "d5/d9c/classScene.html#adb7836c08d271fb2f2faebf720d7b5e2", null ],
     [ "check_during_simulation", "d5/d9c/classScene.html#a296ce2b55947a1a276ab86291eeeaacf", null ],
-    [ "load", "d5/d9c/classScene.html#aa78f982d2d987f8e4bc6748a834bdccc", null ],
+    [ "clear", "d5/d9c/classScene.html#a70e5b1218abb729d70d9f41b107017f9", null ],
+    [ "import_model", "d5/d9c/classScene.html#a6d72bef6cb5c5da1ce1bf996435f0219", null ],
+    [ "load", "d5/d9c/classScene.html#a403e72c40d7176f8216267d8e3881149", null ],
     [ "render", "d5/d9c/classScene.html#a3dcbf1d49270fea656c0a86b2bacd95c", null ],
     [ "render_camera", "d5/d9c/classScene.html#a538e25d2e438166039cdea0053da344f", null ],
     [ "render_lights", "d5/d9c/classScene.html#a3b43ea89d6c24ed55d7dd8f5748674eb", null ],
     [ "reset_simulation", "d5/d9c/classScene.html#a22359fce4b3d3f44275aa5d6b2dd3dc1", null ],
+    [ "save", "d5/d9c/classScene.html#ac0275d45f83cbb4bf2e09b1a2587da71", null ],
     [ "simulation_update", "d5/d9c/classScene.html#aeb092c6c00660da77286cda3d4b1e36f", null ],
     [ "start_simulation", "d5/d9c/classScene.html#a95c6652f9dab25c674e14c889a0d72db", null ],
     [ "stop_simulation", "d5/d9c/classScene.html#a60ceb60b6635b4750ea7681e358b2185", null ],
@@ -21,5 +24,6 @@ var classScene =
     [ "last_update", "d5/d9c/classScene.html#ac27383b17bb15fffc17d3e402cf4dcd9", null ],
     [ "lights", "d5/d9c/classScene.html#a7481b024ed1181823b38c10e663ffea7", null ],
     [ "logger", "d5/d9c/classScene.html#a5d310a617d791b73ab82bc34bcb37f69", null ],
+    [ "main_camera", "d5/d9c/classScene.html#ab655a448e0c5f29ecd3063d5a4365a66", null ],
     [ "selected_object", "d5/d9c/classScene.html#adaa5052d36de2f738beaa15dce2a63bd", null ]
 ];
