@@ -160,7 +160,7 @@ Public 属性</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>用于同步线条渲染数据的内存对象。 </p>
 <p>这个类负责表示可以直接同步到 GPU 的线条数据。</p>
-<p>外界读取顶点和线条数据时一般应该选择 <span class="tt"><a class="el" href="#afadefcf2242caa0c8c1426a68c9800c4">positions</a></span>/<span class="tt">edges</span> 属性，而渲染器需要向 GPU 同步数据时而渲染器需要向 GPU 同步数据时则应该直接使用扁平的 <span class="tt">vector</span> 。</p>
+<p>外界读取顶点和线条数据时一般应该选择 <span class="tt"><a class="el" href="#afadefcf2242caa0c8c1426a68c9800c4">positions</a></span>/<span class="tt"><a class="el" href="#a37accadd3e4e63cb559166e9afd55c72">lines</a></span> 属性，而渲染器需要向 GPU 同步数据时而渲染器需要向 GPU 同步数据时则应该直接使用扁平的 <span class="tt">vector</span> 。</p>
 <p>线条只支持单色渲染，着色效果不受光照的影响。 </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
 <a id="aa642ff4003413b5ed98e6396b5a23bb3" name="aa642ff4003413b5ed98e6396b5a23bb3"></a>
