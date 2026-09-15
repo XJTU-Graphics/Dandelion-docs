@@ -41,7 +41,6 @@ var group__utils =
     [ "sign", "db/d81/group__utils.html#ga9394636a770c3d784a10b8334c33f5d2", null ],
     [ "squ", "db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c", null ],
     [ "to_vec4", "db/d81/group__utils.html#ga4d6e55d71f27749e7802ef2d17f4fed1", null ],
-    [ "vertex_color_location", "db/d81/group__utils.html#gaa30b93e8006d140b22dc6d5a7cd167eb", null ],
     [ "vertex_normal_location", "db/d81/group__utils.html#gaf9299ed6aa7dd39df06de271a323be8d", null ],
     [ "vertex_position_location", "db/d81/group__utils.html#ga59f39d17248f4e72b89867b326d1cd76", null ]
 ];

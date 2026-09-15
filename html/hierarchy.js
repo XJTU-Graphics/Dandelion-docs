@@ -7,12 +7,14 @@ var hierarchy =
     [ "Camera", "d7/d7e/structCamera.html", null ],
     [ "Context", "d6/d7a/structContext.html", null ],
     [ "Controller", "d9/d85/classController.html", null ],
-    [ "UI::DebugOptions", "d9/dc1/structUI_1_1DebugOptions.html", null ],
+    [ "DebugOptions", "d3/dd6/structDebugOptions.html", null ],
+    [ "GL::DrawableLineSet", "d9/d38/structGL_1_1DrawableLineSet.html", null ],
+    [ "GL::DrawableMesh", "d7/d5e/structGL_1_1DrawableMesh.html", null ],
     [ "HalfedgeMesh::EdgeRecord", "d7/d4b/structHalfedgeMesh_1_1EdgeRecord.html", null ],
     [ "GL::ElementArrayBuffer&lt; size &gt;", "da/dd6/structGL_1_1ElementArrayBuffer.html", null ],
-    [ "formatter", null, [
-      [ "fmt::formatter< Eigen::Matrix< Scalar, n_dim, 1 > >", "d9/dd8/structfmt_1_1formatter_3_01Eigen_1_1Matrix_3_01Scalar_00_01n__dim_00_011_01_4_01_4.html", null ],
-      [ "fmt::formatter< Eigen::Matrix< Scalar, n_dim, n_dim, 0, n_dim, n_dim > >", "dc/df9/structfmt_1_1formatter_3_01Eigen_1_1Matrix_3_01Scalar_00_01n__dim_00_01n__dim_00_010_00_01n__dim_00_01n__dim_01_4_01_4.html", null ]
+    [ "std::formatter", null, [
+      [ "std::formatter< Eigen::Matrix< Scalar, n_dim, 1 > >", "de/dfd/structstd_1_1formatter_3_01Eigen_1_1Matrix_3_01Scalar_00_01n__dim_00_011_01_4_01_4.html", null ],
+      [ "std::formatter< Eigen::Matrix< Scalar, n_dim, n_dim, 0, n_dim, n_dim > >", "d4/d41/structstd_1_1formatter_3_01Eigen_1_1Matrix_3_01Scalar_00_01n__dim_00_01n__dim_00_010_00_01n__dim_00_01n__dim_01_4_01_4.html", null ]
     ] ],
     [ "FragmentProcessor", "d6/d3d/classFragmentProcessor.html", null ],
     [ "FragmentShaderPayload", "db/dd4/structFragmentShaderPayload.html", null ],
@@ -22,7 +24,10 @@ var hierarchy =
     [ "Intersection", "d6/d30/structIntersection.html", null ],
     [ "KineticState", "d1/d96/structKineticState.html", null ],
     [ "Light", "d5/d79/structLight.html", null ],
-    [ "GL::LineSet", "d4/d91/structGL_1_1LineSet.html", null ],
+    [ "LineSet", "d5/d11/structLineSet.html", [
+      [ "AABBSet", "d7/d83/structAABBSet.html", null ],
+      [ "ArrowSet", "d6/d5f/structArrowSet.html", null ]
+    ] ],
     [ "LinkedList&lt; Node &gt;", "d7/dde/classLinkedList.html", null ],
     [ "LinkedListNode&lt; Node &gt;", "d6/d73/structLinkedListNode.html", null ],
     [ "LinkedListNode&lt; Edge &gt;", "d6/d73/structLinkedListNode.html", [
@@ -37,11 +42,14 @@ var hierarchy =
     [ "LinkedListNode&lt; Vertex &gt;", "d6/d73/structLinkedListNode.html", [
       [ "Vertex", "df/dd0/structVertex.html", null ]
     ] ],
-    [ "GL::Material", "d4/d50/structGL_1_1Material.html", null ],
+    [ "Material", "d2/d10/structMaterial.html", [
+      [ "PhongMaterial", "dc/df1/structPhongMaterial.html", null ]
+    ] ],
     [ "UI::Menubar", "d6/de2/classUI_1_1Menubar.html", null ],
-    [ "GL::Mesh", "d8/d88/structGL_1_1Mesh.html", null ],
+    [ "Mesh", "da/d29/structMesh.html", null ],
     [ "Object", "d8/d4b/classObject.html", null ],
     [ "Platform", "df/d1e/classPlatform.html", null ],
+    [ "PreviewRenderer", "d0/dd8/classPreviewRenderer.html", null ],
     [ "Rasterizer", "d3/d7a/classRasterizer.html", null ],
     [ "RasterizerRenderer", "d7/db0/classRasterizerRenderer.html", null ],
     [ "Ray", "dd/d5e/structRay.html", null ],

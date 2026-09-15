@@ -3,12 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: Camera结构体 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../jquery.js"></script>
-<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../codefolding.js"></script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -37,7 +36,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.2</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;2.0.0</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -46,22 +45,47 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.16.1 -->
+<!-- 制作者 Doxygen 1.18.0 -->
 <script type="text/javascript">
-var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+let searchBox = new SearchBox("searchBox", "../../search/",'.html');
 </script>
 <script type="text/javascript">
-$(function() { codefold.init(); });
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "../../",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
 </script>
 <script type="text/javascript" src="../../menudata.js"></script>
 <script type="text/javascript" src="../../menu.js"></script>
-<script type="text/javascript">
-$(function() {
-  initMenu('../../',true,false,'search.php','搜索',true);
-  $(function() { init_search(); });
-});
-</script>
-<div id="main-nav"></div>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -69,20 +93,16 @@ $(function() {
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
+  <div id="splitbar" class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('d7/d7e/structCamera.html','../../','d9/d52/structCamera-members'); });
+document.addEventListener('DOMContentLoaded',() => { initNavTree('d7/d7e/structCamera.html','../../','d9/d52/structCamera-members'); });
 </script>
 <div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<div id="MSearchSelectWindow">
 </div>
 
 <!-- iframe showing the search results (closed by default) -->
@@ -111,7 +131,7 @@ $(function(){initNavTree('d7/d7e/structCamera.html','../../','d9/d52/structCamer
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a1207b991b04502fb760f76be67530119" id="r_a1207b991b04502fb760f76be67530119"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a1207b991b04502fb760f76be67530119">Camera</a> (const Eigen::Vector3f &amp;<a class="el" href="#ae52020b85d1f749f50c533fe10fc0f91">position</a>, const Eigen::Vector3f &amp;<a class="el" href="#aa46269efc05d0aea46f8b0540ccb9d01">target</a>, float <a class="el" href="#a430f769a9227b6cd41fe336122fbb9dc">near_plane</a>=0.1f, float <a class="el" href="#a141934c2b78b48d9dd0042e8d7c87c32">far_plane</a>=10.0f, float <a class="el" href="#aa3f6b2c9df678347897554480099e342">fov_y_degrees</a>=45.0f, float <a class="el" href="#a5742c2c47c7afc5a6d49b6e5759db3cd">aspect_ratio</a>=1.33f)</td></tr>
+<tr class="memitem:a1207b991b04502fb760f76be67530119" id="r_a1207b991b04502fb760f76be67530119"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a1207b991b04502fb760f76be67530119">Camera</a> (const Eigen::Vector3f &amp;position, const Eigen::Vector3f &amp;target, float near_plane=0.1f, float far_plane=10.0f, float fov_y_degrees=45.0f, float aspect_ratio=1.33f)</td></tr>
 <tr class="memitem:a4551bfb7cb5ed86cc5427e370fda0bdb" id="r_a4551bfb7cb5ed86cc5427e370fda0bdb"><td class="memItemLeft">Eigen::Matrix4f&#160;</td><td class="memItemRight"><a class="el" href="#a4551bfb7cb5ed86cc5427e370fda0bdb">view</a> ()</td></tr>
 <tr class="memitem:ade56525b5437d9e2c8a890a734bc83d1" id="r_ade56525b5437d9e2c8a890a734bc83d1"><td class="memItemLeft">Eigen::Matrix4f&#160;</td><td class="memItemRight"><a class="el" href="#ade56525b5437d9e2c8a890a734bc83d1">projection</a> ()</td></tr>
 </table><table class="memberdecls">
@@ -169,12 +189,12 @@ Public 属性</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="#ae52020b85d1f749f50c533fe10fc0f91">position</a></td><td>相机位置（观察点） </td></tr>
-    <tr><td class="paramname"><a class="el" href="#aa46269efc05d0aea46f8b0540ccb9d01">target</a></td><td>相机指向的目标点 </td></tr>
-    <tr><td class="paramname"><a class="el" href="#a430f769a9227b6cd41fe336122fbb9dc">near_plane</a></td><td>可视范围近平面到观察坐标系原点的距离（正值） </td></tr>
-    <tr><td class="paramname"><a class="el" href="#a141934c2b78b48d9dd0042e8d7c87c32">far_plane</a></td><td>可视范围远平面到观察坐标系原点的距离（正值） </td></tr>
-    <tr><td class="paramname"><a class="el" href="#aa3f6b2c9df678347897554480099e342">fov_y_degrees</a></td><td>高度方向（Y 方向）的视角大小，单位是角度 </td></tr>
-    <tr><td class="paramname"><a class="el" href="#a5742c2c47c7afc5a6d49b6e5759db3cd">aspect_ratio</a></td><td>宽高比，即视角的宽度 / 高度 </td></tr>
+    <tr><td class="paramname">position</td><td>相机位置（观察点） </td></tr>
+    <tr><td class="paramname">target</td><td>相机指向的目标点 </td></tr>
+    <tr><td class="paramname">near_plane</td><td>可视范围近平面到观察坐标系原点的距离（正值） </td></tr>
+    <tr><td class="paramname">far_plane</td><td>可视范围远平面到观察坐标系原点的距离（正值） </td></tr>
+    <tr><td class="paramname">fov_y_degrees</td><td>高度方向（Y 方向）的视角大小，单位是角度 </td></tr>
+    <tr><td class="paramname">aspect_ratio</td><td>宽高比，即视角的宽度 / 高度 </td></tr>
   </table>
   </dd>
 </dl>
@@ -342,7 +362,7 @@ Public 属性</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a href="../../d7/d7e/structCamera.html">Camera</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
   </ul>
 </div>
 </body>

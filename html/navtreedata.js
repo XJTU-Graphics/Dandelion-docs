@@ -58,6 +58,7 @@ var NAVTREE =
         [ "函数", "namespacemembers_func.html", null ]
       ] ]
     ] ],
+    [ "概念", "concepts.html", "concepts" ],
     [ "类", "annotated.html", [
       [ "类列表", "annotated.html", "annotated_dup" ],
       [ "类索引", "classes.html", null ],
@@ -65,7 +66,7 @@ var NAVTREE =
       [ "类成员", "functions.html", [
         [ "全部", "functions.html", "functions_dup" ],
         [ "函数", "functions_func.html", "functions_func" ],
-        [ "变量", "functions_vars.html", null ],
+        [ "变量", "functions_vars.html", "functions_vars" ],
         [ "相关符号", "functions_rela.html", null ]
       ] ]
     ] ],
@@ -75,7 +76,6 @@ var NAVTREE =
         [ "全部", "globals.html", null ],
         [ "函数", "globals_func.html", null ],
         [ "变量", "globals_vars.html", null ],
-        [ "类型定义", "globals_type.html", null ],
         [ "枚举", "globals_enum.html", null ],
         [ "宏定义", "globals_defs.html", null ]
       ] ]
@@ -86,10 +86,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d7/d7e/structCamera.html#a1207b991b04502fb760f76be67530119",
-"dc/d6d/classHalfedgeMesh.html#a021cc1d95882fa97e294dcc508569b5d"
+"d6/dba/structGL_1_1ArrayBuffer.html#a3456f8ddab4cf4caf5b016089299f3c8",
+"da/d70/aabb_8h.html#a06508b7a0bbf3b799543b3e38388c8ac",
+"functions_vars_n.html"
 ];
 
-var SYNCONMSG = '点击 关闭 面板同步';
-var SYNCOFFMSG = '点击 开启 面板同步';
-var LISTOFALLMEMBERS = '所有成员列表';
+const SYNCONMSG = '点击 关闭 面板同步';
+const SYNCOFFMSG = '点击 开启 面板同步';
+const LISTOFALLMEMBERS = '所有成员列表';

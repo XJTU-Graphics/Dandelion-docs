@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dandelion: material.hpp 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../codefolding.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;2.0.0</span>
+   </div>
+   <div id="projectbrief">A light-weight 3D builder for educational usage</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "../../",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('d4/d75/material_8hpp_source.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">material.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d4/d75/material_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;cstddef&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;Eigen/Core&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"></span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * \file scene/material.hpp</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> * 提供所有材质相关类型的定义。</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"></span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * \brief 材质类型枚举，每一种类型对应一种材质模型。</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="../../d4/d75/material_8hpp.html#ace55764233310da429c994a8c334b32a">   17</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="../../d4/d75/material_8hpp.html#ace55764233310da429c994a8c334b32a">MaterialType</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    Phong</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>};</div>
+</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"></span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * \ingroup scene</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * \ingroup rendering</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> * \brief 所有材质的基类。</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../d2/d10/structMaterial.html">   28</a></span><span class="keyword">struct </span>Material</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    Material();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">virtual</span> ~Material() = <span class="keywordflow">default</span>;<span class="comment"></span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">    /*! \~chinese 获取材质类型，所有可用的材质模型参考 `MaterialType` 。 */</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../d2/d10/structMaterial.html#af0686615ee58f34435704ddbe02922ef">   33</a></span>    <span class="keyword">virtual</span> <a class="code hl_enumeration" href="../../d4/d75/material_8hpp.html#ace55764233310da429c994a8c334b32a">MaterialType</a> <a class="code hl_function" href="../../d2/d10/structMaterial.html#af0686615ee58f34435704ddbe02922ef">type</a>() const noexcept = 0;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"></span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">    /*! \~chinese 材质的唯一 ID ，不会与其他材质重复。 */</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../d2/d10/structMaterial.html#ae4161ae5575942c92730f9a3f00766bd">   36</a></span>    std::<span class="keywordtype">size_t</span> <span class="keywordtype">id</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>private:</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    static std::<span class="keywordtype">size_t</span> next_available_id;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>};</div>
+</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"></span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"> * \brief 实现 Phong 材质模型的材质。</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"> * 该类型实现了一个简单的 Phong 材质模型，包含环境光、漫反射、镜面反射三个颜色向量，</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"> * 以及一个光滑度参数。</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="};">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../dc/df1/structPhongMaterial.html">   50</a></span>struct <a class="code hl_function" href="../../dc/df1/structPhongMaterial.html#a05896f90bddb5911be1f6b30d82f1d87">PhongMaterial</a> : public Material</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{<span class="comment"></span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">    /*!</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">     * \~chinese</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">     * \brief 构造一个材质对象。</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">     * \param K_ambient 环境光系数（颜色）</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">     * \param K_diffuse 漫反射系数（颜色）</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">     * \param K_specular 镜面反射系数（颜色）</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">     * \param shininess 光滑度</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_function" href="../../dc/df1/structPhongMaterial.html#a05896f90bddb5911be1f6b30d82f1d87">PhongMaterial</a>(</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keyword">const</span> Eigen::Vector3f&amp; K_ambient  = Eigen::Vector3f(1.0f, 1.0f, 1.0f),</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keyword">const</span> Eigen::Vector3f&amp; K_diffuse  = Eigen::Vector3f(0.5f, 0.5f, 0.5f),</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keyword">const</span> Eigen::Vector3f&amp; K_specular = Eigen::Vector3f(0.0f, 0.0f, 0.0f),</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordtype">float</span>                  <a class="code hl_variable" href="../../dc/df1/structPhongMaterial.html#aa327eb1723ade31850dcbc981b50486b">shininess</a>  = 5.0f</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    );</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">virtual</span> <a class="code hl_function" href="../../dc/df1/structPhongMaterial.html#a05896f90bddb5911be1f6b30d82f1d87">~PhongMaterial</a>() = <span class="keywordflow">default</span>;<span class="comment"></span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">    /*! \~chinese 返回 `MaterialType::Phong` 。 */</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">virtual</span> <a class="code hl_enumeration" href="../../d4/d75/material_8hpp.html#ace55764233310da429c994a8c334b32a">MaterialType</a> <a class="code hl_function" href="../../dc/df1/structPhongMaterial.html#a55df43cbeca5dc45d14d97ce266e3113">type</a>() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"></span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">    /*! \~chinese 环境光反射系数（颜色）。 */</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="../../dc/df1/structPhongMaterial.html#aa310b5c8f5cb12d70ebca39c35595a61">   71</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../dc/df1/structPhongMaterial.html#aa310b5c8f5cb12d70ebca39c35595a61">ambient</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">    /*! \~chinese 漫反射光反射系数（颜色）。 */</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="../../dc/df1/structPhongMaterial.html#ad24ce27a8570d7916b245c27f4c921f9">   73</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../dc/df1/structPhongMaterial.html#ad24ce27a8570d7916b245c27f4c921f9">diffuse</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">    /*! \~chinese 镜面反射光反射系数（颜色）。 */</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="../../dc/df1/structPhongMaterial.html#a23e34419fb8c8ae361a1e9372e25fa4d">   75</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../dc/df1/structPhongMaterial.html#a23e34419fb8c8ae361a1e9372e25fa4d">specular</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">    /*! \~chinese Phong 模型计算镜面反射时的指数 */</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../dc/df1/structPhongMaterial.html#aa327eb1723ade31850dcbc981b50486b">   77</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="../../dc/df1/structPhongMaterial.html#aa327eb1723ade31850dcbc981b50486b">shininess</a>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>};</div>
+</div>
+<div class="ttc" id="amaterial_8hpp_html_ace55764233310da429c994a8c334b32a"><div class="ttname"><a href="../../d4/d75/material_8hpp.html#ace55764233310da429c994a8c334b32a">MaterialType</a></div><div class="ttdeci">MaterialType</div><div class="ttdoc">材质类型枚举，每一种类型对应一种材质模型。</div><div class="ttdef"><b>定义</b> material.hpp:18</div></div>
+<div class="ttc" id="astructMaterial_html_af0686615ee58f34435704ddbe02922ef"><div class="ttname"><a href="../../d2/d10/structMaterial.html#af0686615ee58f34435704ddbe02922ef">Material::type</a></div><div class="ttdeci">virtual MaterialType type() const noexcept=0</div></div>
+<div class="ttc" id="astructPhongMaterial_html_a05896f90bddb5911be1f6b30d82f1d87"><div class="ttname"><a href="../../dc/df1/structPhongMaterial.html#a05896f90bddb5911be1f6b30d82f1d87">PhongMaterial::PhongMaterial</a></div><div class="ttdeci">PhongMaterial(const Eigen::Vector3f &amp;K_ambient=Eigen::Vector3f(1.0f, 1.0f, 1.0f), const Eigen::Vector3f &amp;K_diffuse=Eigen::Vector3f(0.5f, 0.5f, 0.5f), const Eigen::Vector3f &amp;K_specular=Eigen::Vector3f(0.0f, 0.0f, 0.0f), float shininess=5.0f)</div><div class="ttdoc">构造一个材质对象。</div><div class="ttdef"><b>定义</b> material.cpp:14</div></div>
+<div class="ttc" id="astructPhongMaterial_html_a23e34419fb8c8ae361a1e9372e25fa4d"><div class="ttname"><a href="../../dc/df1/structPhongMaterial.html#a23e34419fb8c8ae361a1e9372e25fa4d">PhongMaterial::specular</a></div><div class="ttdeci">Eigen::Vector3f specular</div><div class="ttdef"><b>定义</b> material.hpp:75</div></div>
+<div class="ttc" id="astructPhongMaterial_html_a55df43cbeca5dc45d14d97ce266e3113"><div class="ttname"><a href="../../dc/df1/structPhongMaterial.html#a55df43cbeca5dc45d14d97ce266e3113">PhongMaterial::type</a></div><div class="ttdeci">virtual MaterialType type() const noexcept</div><div class="ttdef"><b>定义</b> material.cpp:21</div></div>
+<div class="ttc" id="astructPhongMaterial_html_aa310b5c8f5cb12d70ebca39c35595a61"><div class="ttname"><a href="../../dc/df1/structPhongMaterial.html#aa310b5c8f5cb12d70ebca39c35595a61">PhongMaterial::ambient</a></div><div class="ttdeci">Eigen::Vector3f ambient</div><div class="ttdef"><b>定义</b> material.hpp:71</div></div>
+<div class="ttc" id="astructPhongMaterial_html_aa327eb1723ade31850dcbc981b50486b"><div class="ttname"><a href="../../dc/df1/structPhongMaterial.html#aa327eb1723ade31850dcbc981b50486b">PhongMaterial::shininess</a></div><div class="ttdeci">float shininess</div><div class="ttdef"><b>定义</b> material.hpp:77</div></div>
+<div class="ttc" id="astructPhongMaterial_html_ad24ce27a8570d7916b245c27f4c921f9"><div class="ttname"><a href="../../dc/df1/structPhongMaterial.html#ad24ce27a8570d7916b245c27f4c921f9">PhongMaterial::diffuse</a></div><div class="ttdeci">Eigen::Vector3f diffuse</div><div class="ttdef"><b>定义</b> material.hpp:73</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>src</b></li><li class="navelem"><b>scene</b></li><li class="navelem"><a href="../../d4/d75/material_8hpp.html">material.hpp</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

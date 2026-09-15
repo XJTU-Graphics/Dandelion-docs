@@ -3,12 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: UI::Toolbar类 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../jquery.js"></script>
-<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../codefolding.js"></script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -37,7 +36,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.2</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;2.0.0</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -46,22 +45,47 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.16.1 -->
+<!-- 制作者 Doxygen 1.18.0 -->
 <script type="text/javascript">
-var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+let searchBox = new SearchBox("searchBox", "../../search/",'.html');
 </script>
 <script type="text/javascript">
-$(function() { codefold.init(); });
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "../../",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
 </script>
 <script type="text/javascript" src="../../menudata.js"></script>
 <script type="text/javascript" src="../../menu.js"></script>
-<script type="text/javascript">
-$(function() {
-  initMenu('../../',true,false,'search.php','搜索',true);
-  $(function() { init_search(); });
-});
-</script>
-<div id="main-nav"></div>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -69,20 +93,16 @@ $(function() {
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
+  <div id="splitbar" class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('d1/d84/classUI_1_1Toolbar.html','../../','de/dfb/classUI_1_1Toolbar-members'); });
+document.addEventListener('DOMContentLoaded',() => { initNavTree('d1/d84/classUI_1_1Toolbar.html','../../','de/dfb/classUI_1_1Toolbar-members'); });
 </script>
 <div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<div id="MSearchSelectWindow">
 </div>
 
 <!-- iframe showing the search results (closed by default) -->
@@ -111,7 +131,7 @@ $(function(){initNavTree('d1/d84/classUI_1_1Toolbar.html','../../','de/dfb/class
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:aff62aaa8d997eb9bbe317086bc09363d" id="r_aff62aaa8d997eb9bbe317086bc09363d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aff62aaa8d997eb9bbe317086bc09363d">Toolbar</a> (<a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> &amp;<a class="el" href="#add08621ffdcd3f942f5b60b43f562c8f">mode</a>, const <a class="el" href="../../dd/df1/group__ui.html#ga6d7943fa9a730037e43193747b2d323b">SelectableType</a> &amp;<a class="el" href="#a0dcd3ac429afd8adfed64e5039dc89e3">selected_element</a>)</td></tr>
+<tr class="memitem:aff62aaa8d997eb9bbe317086bc09363d" id="r_aff62aaa8d997eb9bbe317086bc09363d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aff62aaa8d997eb9bbe317086bc09363d">Toolbar</a> (<a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> &amp;mode, const <a class="el" href="../../dd/df1/group__ui.html#ga6d7943fa9a730037e43193747b2d323b">SelectableType</a> &amp;selected_element)</td></tr>
 <tr class="memdesc:aff62aaa8d997eb9bbe317086bc09363d"><td class="mdescLeft">&#160;</td><td class="mdescRight">工具栏持有对工作模式的引用和对选中元素的引用，构造时必须传递。  <br /></td></tr>
 <tr class="memitem:a37fdcc0bb4811b139392c198e160fcc9" id="r_a37fdcc0bb4811b139392c198e160fcc9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a37fdcc0bb4811b139392c198e160fcc9">render</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
 </table><table class="memberdecls">
@@ -122,9 +142,10 @@ Public 属性</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private 成员函数</h2></td></tr>
+<tr class="memitem:adbb74129ef37f7de6eefaa8d32981012" id="r_adbb74129ef37f7de6eefaa8d32981012"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adbb74129ef37f7de6eefaa8d32981012">switch_mode</a> (<a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> target_mode, <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
 <tr class="memitem:a84d933b6a271924fe5fc548189ded079" id="r_a84d933b6a271924fe5fc548189ded079"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a84d933b6a271924fe5fc548189ded079">scene_hierarchies</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
 <tr class="memitem:a94b7f785c6e51be73447e8d10df9532c" id="r_a94b7f785c6e51be73447e8d10df9532c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a94b7f785c6e51be73447e8d10df9532c">xyz_drag</a> (float *x, float *y, float *z, float v_speed, const char *format=&quot;%.2f&quot;)</td></tr>
-<tr class="memitem:a797214ffc12efbe2ff3df22c0f14e6a7" id="r_a797214ffc12efbe2ff3df22c0f14e6a7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a797214ffc12efbe2ff3df22c0f14e6a7">material_editor</a> (<a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &amp;material)</td></tr>
+<tr class="memitem:a2a17ecabdfa04ba54aee92f3e71d4b5b" id="r_a2a17ecabdfa04ba54aee92f3e71d4b5b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2a17ecabdfa04ba54aee92f3e71d4b5b">material_editor</a> (<a class="el" href="../../d2/d10/structMaterial.html">Material</a> &amp;material)</td></tr>
 <tr class="memitem:a8cf3bc8527c3d840dde41d2eb3d6a6d7" id="r_a8cf3bc8527c3d840dde41d2eb3d6a6d7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8cf3bc8527c3d840dde41d2eb3d6a6d7">layout_mode</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
 <tr class="memitem:a49ef414deed485a34ec70f1a10b7bf54" id="r_a49ef414deed485a34ec70f1a10b7bf54"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a49ef414deed485a34ec70f1a10b7bf54">model_mode</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
 <tr class="memitem:a23e737df11534a74a7eda73edf362423" id="r_a23e737df11534a74a7eda73edf362423"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a23e737df11534a74a7eda73edf362423">render_mode</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
@@ -194,8 +215,8 @@ Private 属性</h2></td></tr>
 
 </div>
 </div>
-<a id="a797214ffc12efbe2ff3df22c0f14e6a7" name="a797214ffc12efbe2ff3df22c0f14e6a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a797214ffc12efbe2ff3df22c0f14e6a7">&#9670;&#160;</a></span>material_editor()</h2>
+<a id="a2a17ecabdfa04ba54aee92f3e71d4b5b" name="a2a17ecabdfa04ba54aee92f3e71d4b5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a17ecabdfa04ba54aee92f3e71d4b5b">&#9670;&#160;</a></span>material_editor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,7 +227,7 @@ Private 属性</h2></td></tr>
         <tr>
           <td class="memname">void Toolbar::material_editor </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d4/d50/structGL_1_1Material.html">GL::Material</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>material</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d2/d10/structMaterial.html">Material</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>material</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -339,6 +360,36 @@ Private 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>物理模拟模式对应的标签页。 </p>
+
+</div>
+</div>
+<a id="adbb74129ef37f7de6eefaa8d32981012" name="adbb74129ef37f7de6eefaa8d32981012"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbb74129ef37f7de6eefaa8d32981012">&#9670;&#160;</a></span>switch_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Toolbar::switch_mode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a></td>          <td class="paramname"><span class="paramname"><em>target_mode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>切换工作模式，清理上一个模式的临时数据。 </p>
 
 </div>
 </div>
@@ -505,7 +556,7 @@ Private 属性</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>UI</b></li><li class="navelem"><a href="../../d1/d84/classUI_1_1Toolbar.html">Toolbar</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
   </ul>
 </div>
 </body>

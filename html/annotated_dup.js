@@ -1,28 +1,29 @@
 var annotated_dup =
 [
-    [ "fmt", null, [
-      [ "formatter&lt; Eigen::Matrix&lt; Scalar, n_dim, 1 &gt; &gt;", "d9/dd8/structfmt_1_1formatter_3_01Eigen_1_1Matrix_3_01Scalar_00_01n__dim_00_011_01_4_01_4.html", null ],
-      [ "formatter&lt; Eigen::Matrix&lt; Scalar, n_dim, n_dim, 0, n_dim, n_dim &gt; &gt;", "dc/df9/structfmt_1_1formatter_3_01Eigen_1_1Matrix_3_01Scalar_00_01n__dim_00_01n__dim_00_010_00_01n__dim_00_01n__dim_01_4_01_4.html", null ]
-    ] ],
     [ "GL", "dd/d9a/namespaceGL.html", [
       [ "VertexArrayObject", "d9/d82/structGL_1_1VertexArrayObject.html", "d9/d82/structGL_1_1VertexArrayObject" ],
       [ "ArrayBuffer", "d6/dba/structGL_1_1ArrayBuffer.html", "d6/dba/structGL_1_1ArrayBuffer" ],
       [ "ElementArrayBuffer", "da/dd6/structGL_1_1ElementArrayBuffer.html", "da/dd6/structGL_1_1ElementArrayBuffer" ],
-      [ "Material", "d4/d50/structGL_1_1Material.html", "d4/d50/structGL_1_1Material" ],
-      [ "Mesh", "d8/d88/structGL_1_1Mesh.html", "d8/d88/structGL_1_1Mesh" ],
-      [ "LineSet", "d4/d91/structGL_1_1LineSet.html", "d4/d91/structGL_1_1LineSet" ]
+      [ "DrawableMesh", "d7/d5e/structGL_1_1DrawableMesh.html", "d7/d5e/structGL_1_1DrawableMesh" ],
+      [ "DrawableLineSet", "d9/d38/structGL_1_1DrawableLineSet.html", "d9/d38/structGL_1_1DrawableLineSet" ]
+    ] ],
+    [ "std", null, [
+      [ "formatter&lt; Eigen::Matrix&lt; Scalar, n_dim, 1 &gt; &gt;", "de/dfd/structstd_1_1formatter_3_01Eigen_1_1Matrix_3_01Scalar_00_01n__dim_00_011_01_4_01_4.html", null ],
+      [ "formatter&lt; Eigen::Matrix&lt; Scalar, n_dim, n_dim, 0, n_dim, n_dim &gt; &gt;", "d4/d41/structstd_1_1formatter_3_01Eigen_1_1Matrix_3_01Scalar_00_01n__dim_00_01n__dim_00_010_00_01n__dim_00_01n__dim_01_4_01_4.html", null ]
     ] ],
     [ "UI", null, [
-      [ "DebugOptions", "d9/dc1/structUI_1_1DebugOptions.html", "d9/dc1/structUI_1_1DebugOptions" ],
       [ "Menubar", "d6/de2/classUI_1_1Menubar.html", "d6/de2/classUI_1_1Menubar" ],
       [ "Toolbar", "d1/d84/classUI_1_1Toolbar.html", "d1/d84/classUI_1_1Toolbar" ]
     ] ],
     [ "AABB", "d2/d1a/classAABB.html", "d2/d1a/classAABB" ],
+    [ "AABBSet", "d7/d83/structAABBSet.html", "d7/d83/structAABBSet" ],
+    [ "ArrowSet", "d6/d5f/structArrowSet.html", "d6/d5f/structArrowSet" ],
     [ "BVH", "de/de9/classBVH.html", "de/de9/classBVH" ],
     [ "BVHNode", "d4/d59/structBVHNode.html", null ],
     [ "Camera", "d7/d7e/structCamera.html", "d7/d7e/structCamera" ],
     [ "Context", "d6/d7a/structContext.html", null ],
     [ "Controller", "d9/d85/classController.html", "d9/d85/classController" ],
+    [ "DebugOptions", "d3/dd6/structDebugOptions.html", "d3/dd6/structDebugOptions" ],
     [ "Edge", "d2/d4f/structEdge.html", "d2/d4f/structEdge" ],
     [ "Face", "d0/d02/structFace.html", "d0/d02/structFace" ],
     [ "FragmentProcessor", "d6/d3d/classFragmentProcessor.html", "d6/d3d/classFragmentProcessor" ],
@@ -34,11 +35,16 @@ var annotated_dup =
     [ "Intersection", "d6/d30/structIntersection.html", "d6/d30/structIntersection" ],
     [ "KineticState", "d1/d96/structKineticState.html", null ],
     [ "Light", "d5/d79/structLight.html", "d5/d79/structLight" ],
+    [ "LineSet", "d5/d11/structLineSet.html", "d5/d11/structLineSet" ],
     [ "LinkedList", "d7/dde/classLinkedList.html", "d7/dde/classLinkedList" ],
     [ "LinkedListNode", "d6/d73/structLinkedListNode.html", null ],
+    [ "Material", "d2/d10/structMaterial.html", "d2/d10/structMaterial" ],
+    [ "Mesh", "da/d29/structMesh.html", "da/d29/structMesh" ],
     [ "Object", "d8/d4b/classObject.html", "d8/d4b/classObject" ],
     [ "overloaded", "d9/d94/structoverloaded.html", null ],
+    [ "PhongMaterial", "dc/df1/structPhongMaterial.html", "dc/df1/structPhongMaterial" ],
     [ "Platform", "df/d1e/classPlatform.html", "df/d1e/classPlatform" ],
+    [ "PreviewRenderer", "d0/dd8/classPreviewRenderer.html", "d0/dd8/classPreviewRenderer" ],
     [ "Rasterizer", "d3/d7a/classRasterizer.html", "d3/d7a/classRasterizer" ],
     [ "RasterizerRenderer", "d7/db0/classRasterizerRenderer.html", "d7/db0/classRasterizerRenderer" ],
     [ "Ray", "dd/d5e/structRay.html", null ],

@@ -3,12 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: rendering.hpp 文件参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../jquery.js"></script>
-<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../codefolding.js"></script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -37,7 +36,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.2</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;2.0.0</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -46,22 +45,47 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.16.1 -->
+<!-- 制作者 Doxygen 1.18.0 -->
 <script type="text/javascript">
-var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+let searchBox = new SearchBox("searchBox", "../../search/",'.html');
 </script>
 <script type="text/javascript">
-$(function() { codefold.init(); });
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "../../",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
 </script>
 <script type="text/javascript" src="../../menudata.js"></script>
 <script type="text/javascript" src="../../menu.js"></script>
-<script type="text/javascript">
-$(function() {
-  initMenu('../../',true,false,'search.php','搜索',true);
-  $(function() { init_search(); });
-});
-</script>
-<div id="main-nav"></div>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -69,20 +93,16 @@ $(function() {
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
+  <div id="splitbar" class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('dc/df7/rendering_8hpp.html','../../',''); });
+document.addEventListener('DOMContentLoaded',() => { initNavTree('dc/df7/rendering_8hpp.html','../../',''); });
 </script>
 <div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<div id="MSearchSelectWindow">
 </div>
 
 <!-- iframe showing the search results (closed by default) -->
@@ -106,9 +126,15 @@ $(function(){initNavTree('dc/df7/rendering_8hpp.html','../../',''); });
 
 <p>这个文件定义了一些和渲染（离线渲染或场景预览）相关的常量、枚举等。  
 <a href="#details">更多...</a></p>
-
+<div class="textblock"><code>#include &lt;Eigen/Core&gt;</code><br />
+</div>
 <p><a href="../../dc/df7/rendering_8hpp_source.html">浏览该文件的源代码.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:DebugOptions" id="r_DebugOptions"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="../../d3/dd6/structDebugOptions.html">DebugOptions</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">辅助调试的 GUI 选项。  <a href="../../d3/dd6/structDebugOptions.html#details">更多...</a><br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 宏定义</h2></td></tr>
 <tr class="memitem:gab2596a38a2a89ebf334c84f916360771" id="r_gab2596a38a2a89ebf334c84f916360771"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="../../db/d81/group__utils.html#gab2596a38a2a89ebf334c84f916360771">RGB_COLOR</a>(r,  g,  b)</td></tr>
@@ -123,6 +149,10 @@ $(function(){initNavTree('dc/df7/rendering_8hpp.html','../../',''); });
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 函数</h2></td></tr>
+<tr class="memitem:a4184c300a457555db7eea33ff35b734d" id="r_a4184c300a457555db7eea33ff35b734d"><td class="memItemLeft">const Eigen::Vector3f&#160;</td><td class="memItemRight"><a class="el" href="#a4184c300a457555db7eea33ff35b734d">default_wireframe_color</a> (<a class="el" href="../../db/d81/group__utils.html#gab2596a38a2a89ebf334c84f916360771">RGB_COLOR</a>(255, 194, 75))</td></tr>
+<tr class="memitem:a74ae95713078daddeca3d98b75bd34d9" id="r_a74ae95713078daddeca3d98b75bd34d9"><td class="memItemLeft">const Eigen::Vector3f&#160;</td><td class="memItemRight"><a class="el" href="#a74ae95713078daddeca3d98b75bd34d9">default_face_color</a> (<a class="el" href="../../db/d81/group__utils.html#gab2596a38a2a89ebf334c84f916360771">RGB_COLOR</a>(255, 255, 255))</td></tr>
+<tr class="memitem:ae2ed56668bc343720bd0074d66de6f39" id="r_ae2ed56668bc343720bd0074d66de6f39"><td class="memItemLeft">const Eigen::Vector3f&#160;</td><td class="memItemRight"><a class="el" href="#ae2ed56668bc343720bd0074d66de6f39">highlight_wireframe_color</a> (<a class="el" href="../../db/d81/group__utils.html#gab2596a38a2a89ebf334c84f916360771">RGB_COLOR</a>(115, 206, 244))</td></tr>
+<tr class="memitem:af4828cb41541d55f6c552b7138f7bbe6" id="r_af4828cb41541d55f6c552b7138f7bbe6"><td class="memItemLeft">const Eigen::Vector3f&#160;</td><td class="memItemRight"><a class="el" href="#af4828cb41541d55f6c552b7138f7bbe6">highlight_face_color</a> (<a class="el" href="../../db/d81/group__utils.html#gab2596a38a2a89ebf334c84f916360771">RGB_COLOR</a>(115, 206, 244))</td></tr>
 <tr class="memitem:a0ad2a7688f4c2a3f1e99d3b03bfd1715" id="r_a0ad2a7688f4c2a3f1e99d3b03bfd1715"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a0ad2a7688f4c2a3f1e99d3b03bfd1715">check_picking_enabled</a> (<a class="el" href="#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> mode)</td></tr>
 <tr class="memdesc:a0ad2a7688f4c2a3f1e99d3b03bfd1715"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断指定模式是否允许拾取物体。  <br /></td></tr>
 </table><table class="memberdecls">
@@ -134,8 +164,7 @@ $(function(){initNavTree('dc/df7/rendering_8hpp.html','../../',''); });
 <tr class="memdesc:a2d1f9d29e3d9cadcf469f07790d4be18"><td class="mdescLeft">&#160;</td><td class="mdescRight">允许拾取物体的模式。  <br /></td></tr>
 <tr id="var-members-0" class="groupHeader"><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:ga59f39d17248f4e72b89867b326d1cd76" id="r_ga59f39d17248f4e72b89867b326d1cd76"><td class="memItemLeft">constexpr unsigned int&#160;</td><td class="memItemRight"><a class="el" href="../../db/d81/group__utils.html#ga59f39d17248f4e72b89867b326d1cd76">vertex_position_location</a> = 0</td></tr>
-<tr class="memitem:gaa30b93e8006d140b22dc6d5a7cd167eb" id="r_gaa30b93e8006d140b22dc6d5a7cd167eb"><td class="memItemLeft">constexpr unsigned int&#160;</td><td class="memItemRight"><a class="el" href="../../db/d81/group__utils.html#gaa30b93e8006d140b22dc6d5a7cd167eb">vertex_color_location</a> = 1</td></tr>
-<tr class="memitem:gaf9299ed6aa7dd39df06de271a323be8d" id="r_gaf9299ed6aa7dd39df06de271a323be8d"><td class="memItemLeft">constexpr unsigned int&#160;</td><td class="memItemRight"><a class="el" href="../../db/d81/group__utils.html#gaf9299ed6aa7dd39df06de271a323be8d">vertex_normal_location</a> = 2</td></tr>
+<tr class="memitem:gaf9299ed6aa7dd39df06de271a323be8d" id="r_gaf9299ed6aa7dd39df06de271a323be8d"><td class="memItemLeft">constexpr unsigned int&#160;</td><td class="memItemRight"><a class="el" href="../../db/d81/group__utils.html#gaf9299ed6aa7dd39df06de271a323be8d">vertex_normal_location</a> = 1</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>这个文件定义了一些和渲染（离线渲染或场景预览）相关的常量、枚举等。 </p>
@@ -194,6 +223,78 @@ $(function(){initNavTree('dc/df7/rendering_8hpp.html','../../',''); });
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a74ae95713078daddeca3d98b75bd34d9" name="a74ae95713078daddeca3d98b75bd34d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74ae95713078daddeca3d98b75bd34d9">&#9670;&#160;</a></span>default_face_color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Eigen::Vector3f default_face_color </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d81/group__utils.html#gab2596a38a2a89ebf334c84f916360771">RGB_COLOR</a>(255, 255, 255)</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>默认面片颜色（中灰色）。 </p>
+
+</div>
+</div>
+<a id="a4184c300a457555db7eea33ff35b734d" name="a4184c300a457555db7eea33ff35b734d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4184c300a457555db7eea33ff35b734d">&#9670;&#160;</a></span>default_wireframe_color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Eigen::Vector3f default_wireframe_color </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d81/group__utils.html#gab2596a38a2a89ebf334c84f916360771">RGB_COLOR</a>(255, 194, 75)</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>默认线框颜色（黄色）。 </p>
+
+</div>
+</div>
+<a id="af4828cb41541d55f6c552b7138f7bbe6" name="af4828cb41541d55f6c552b7138f7bbe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4828cb41541d55f6c552b7138f7bbe6">&#9670;&#160;</a></span>highlight_face_color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Eigen::Vector3f highlight_face_color </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d81/group__utils.html#gab2596a38a2a89ebf334c84f916360771">RGB_COLOR</a>(115, 206, 244)</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>高亮面片颜色（浅蓝色）。 </p>
+
+</div>
+</div>
+<a id="ae2ed56668bc343720bd0074d66de6f39" name="ae2ed56668bc343720bd0074d66de6f39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2ed56668bc343720bd0074d66de6f39">&#9670;&#160;</a></span>highlight_wireframe_color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Eigen::Vector3f highlight_wireframe_color </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d81/group__utils.html#gab2596a38a2a89ebf334c84f916360771">RGB_COLOR</a>(115, 206, 244)</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>高亮线框颜色（浅蓝色）。 </p>
 
 </div>
 </div>
@@ -286,7 +387,7 @@ $(function(){initNavTree('dc/df7/rendering_8hpp.html','../../',''); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>src</b></li><li class="navelem"><b>utils</b></li><li class="navelem"><a href="../../dc/df7/rendering_8hpp.html">rendering.hpp</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
   </ul>
 </div>
 </body>

@@ -3,12 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: object.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../jquery.js"></script>
-<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../codefolding.js"></script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -28,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.2</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;2.0.0</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -37,22 +36,47 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.16.1 -->
+<!-- 制作者 Doxygen 1.18.0 -->
 <script type="text/javascript">
-var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+let searchBox = new SearchBox("searchBox", "../../search/",'.html');
 </script>
 <script type="text/javascript">
-$(function() { codefold.init(); });
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "../../",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
 </script>
 <script type="text/javascript" src="../../menudata.js"></script>
 <script type="text/javascript" src="../../menu.js"></script>
-<script type="text/javascript">
-$(function() {
-  initMenu('../../',true,false,'search.php','搜索',true);
-  $(function() { init_search(); });
-});
-</script>
-<div id="main-nav"></div>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -60,20 +84,16 @@ $(function() {
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
+  <div id="splitbar" class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('de/d10/object_8h_source.html','../../',''); });
+document.addEventListener('DOMContentLoaded',() => { initNavTree('de/d10/object_8h_source.html','../../',''); });
 </script>
 <div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<div id="MSearchSelectWindow">
 </div>
 
 <!-- iframe showing the search results (closed by default) -->
@@ -94,206 +114,189 @@ $(function(){initNavTree('de/d10/object_8h_source.html','../../',''); });
   <div class="headertitle"><div class="title">object.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="../../de/d10/object_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef DANDELION_SCENE_OBJECT_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define DANDELION_SCENE_OBJECT_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;cstddef&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;Eigen/Core&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;Eigen/Geometry&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;spdlog/spdlog.h&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="../../d7/d6a/gl_8hpp.html">../platform/gl.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="../../d9/d52/shader_8hpp.html">../platform/shader.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="../../dc/df7/rendering_8hpp.html">../utils/rendering.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="../../d3/dd6/bvh_8h.html">../utils/bvh.h</a>&quot;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="../../de/d17/kinetic__state_8h.html">../utils/kinetic_state.h</a>&quot;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"></span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * \file scene/object.h</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * \ingroup rendering</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * \ingroup simulation</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * \brief 包含物体的类。</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"></span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">/*!</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> * \ingroup rendering</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> * \ingroup simulation</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> * \~chinese</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> * \brief 表示物体的类。</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> * “物体”由存储几何数据的 mesh、存储变换信息的位姿参数和存储颜色的材质组成，</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> * 每个 `Object` 实例对应唯一的 `GL::Mesh`、`GL::Material` 和唯一的模型变换矩阵</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> * (Model Transform Matrix)，是场景中的最小单元。</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> * 由于 `Object` 对象持有的 `GL::Mesh` 实例是不可复制的，当前的 `Object`</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> * 也是不可复制的。但“复制一个物体”在逻辑上完全合理，因此未来会实现该类的复制构造函数。</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"> */</span></div>
-<div class="foldopen" id="foldopen00041" data-start="{" data-end="};">
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html">   41</a></span><span class="keyword">class </span><a class="code hl_function" href="../../d8/d4b/classObject.html#aa164f4cf0ebff3e52c00167953866f6c">Object</a></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"></span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">    /*!</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">     * \~chinese</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">     * \brief 创建一个物体</span></div>
+<a href="../../de/d10/object_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;cstddef&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;Eigen/Core&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;Eigen/Geometry&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;spdlog/spdlog.h&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="../../d4/d75/material_8hpp.html">material.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="../../d3/dd6/bvh_8h.html">../utils/bvh.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="../../de/d17/kinetic__state_8h.html">../utils/kinetic_state.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"></span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * \file scene/object.h</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * \ingroup rendering</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * \ingroup simulation</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * \brief 包含物体的类。</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"></span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> * \ingroup rendering</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> * \ingroup simulation</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> * \brief 表示物体的类。</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> * “物体”由存储几何数据的 mesh、存储变换信息的位姿参数和存储颜色的材质组成，</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> * 每个 `Object` 实例对应唯一的 `GL::Mesh`、`GL::Material` 和唯一的模型变换矩阵</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> * (Model Transform Matrix)，是场景中的最小单元。</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> * 由于 `Object` 对象持有的 `GL::Mesh` 实例是不可复制的，当前的 `Object`</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> * 也是不可复制的。但“复制一个物体”在逻辑上完全合理，因此未来会实现该类的复制构造函数。</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="};">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html">   38</a></span><span class="keyword">class </span><a class="code hl_function" href="../../d8/d4b/classObject.html#aa164f4cf0ebff3e52c00167953866f6c">Object</a></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"></span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">    /*!</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">     * \~chinese</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">     * \brief 创建一个物体</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">     * 物体刚创建时 mesh 中没有数据，需要创建之后再添加。mesh 数据的加载过程是在</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">     * `Group::load` 中完成的</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">     * 物体刚创建时 mesh 中没有数据，需要创建之后再添加。mesh 数据的加载过程是在</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">     * `Group::load` 中完成的</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">     * \param object_name 物体名字</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#aa164f4cf0ebff3e52c00167953866f6c">   54</a></span>    <a class="code hl_function" href="../../d8/d4b/classObject.html#aa164f4cf0ebff3e52c00167953866f6c">Object</a>(<span class="keyword">const</span> std::string&amp; object_name);<span class="comment"></span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">    ///@{</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">    /*! \~chinese 禁止复制物体。 */</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#aef343197effbc642b3f1812ac7bd3d85">   57</a></span>    <a class="code hl_function" href="../../d8/d4b/classObject.html#aef343197effbc642b3f1812ac7bd3d85">Object</a>(<a class="code hl_function" href="../../d8/d4b/classObject.html#aa164f4cf0ebff3e52c00167953866f6c">Object</a>&amp; other)       = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a2f1113c0cc351878350931775ccb56dc">   58</a></span>    <a class="code hl_function" href="../../d8/d4b/classObject.html#a2f1113c0cc351878350931775ccb56dc">Object</a>(<span class="keyword">const</span> <a class="code hl_function" href="../../d8/d4b/classObject.html#aa164f4cf0ebff3e52c00167953866f6c">Object</a>&amp; other) = <span class="keyword">delete</span>;<span class="comment"></span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">    ///@}</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_function" href="../../d8/d4b/classObject.html#aa164f4cf0ebff3e52c00167953866f6c">~Object</a>() = <span class="keywordflow">default</span>;<span class="comment"></span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">    /*! \~chinese 此物体的模型变换矩阵 (Model Transform Matrix)。 */</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    Eigen::Matrix4f <a class="code hl_function" href="../../d8/d4b/classObject.html#af8f23e84a424cb6061cc9b23bb1f650c">model</a>();<span class="comment"></span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">    /*!</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">     * \~chinese</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">     * \brief 更新下一个时间步的运动状态。</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">     * 首先使用 `Object::step` 计算下一个时间步自身的运动状态，尝试将自身移动到算出的位置，</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">     * 再检测在此位置是否会与其他物体碰撞。如果发生碰撞则自身位置回退，</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">     * 并根据动量定理修改碰撞双方的速度。</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">     * \param all_objects 场景中所有的物体，用于碰撞检测和响应。</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/d4b/classObject.html#a81cff33ba1612aa43187d3e617d8edcc">update</a>(std::vector&lt;Object*&gt;&amp; all_objects);<span class="comment"></span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">    /*!</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">     * \~chinese</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">     * \brief 根据指定的渲染模式渲染物体。</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">     * \param shader 对一个 `Shader` 对象的引用</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">     * \param mode 渲染模式。所有模式下都渲染面片，建模模式下额外渲染边和顶点。</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">     * \param selected 布局模式下该物体是否被选中，被选中的物体额外渲染边。其他模式下，</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">     * 该参数无意义。</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/d4b/classObject.html#a5c13c26a5d9896e078a32de6593e5be5">render</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d69/classShader.html">Shader</a>&amp; shader, <a class="code hl_enumeration" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> mode, <span class="keywordtype">bool</span> selected);<span class="comment"></span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">    /*!</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">     * \~chinese</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">     * \brief 重新构建 BVH 。</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">     * 原先没有构建过 BVH 的情况下调用这个函数也是安全的。</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/d4b/classObject.html#a4eae75848cc2f863a790d8da3014549f">rebuild_BVH</a>();</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment"></span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">    /*!</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">     * \~chinese</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">     * \brief 用于更新物体运动状态的函数。</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">     * 让这个静态变量指向不同的函数，就可以更换不同的求解器，默认使用前向欧拉法求解。</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a573b153aba95a8272b6808ebfe6955cb">   98</a></span>    <span class="keyword">static</span> std::function&lt;<a class="code hl_struct" href="../../d1/d96/structKineticState.html">KineticState</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../d1/d96/structKineticState.html">KineticState</a>&amp;, <span class="keyword">const</span> <a class="code hl_struct" href="../../d1/d96/structKineticState.html">KineticState</a>&amp;)&gt; <a class="code hl_variable" href="../../d8/d4b/classObject.html#a573b153aba95a8272b6808ebfe6955cb">step</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">    /*! \~chinese 是否启用 BVH 加速碰撞检测。 */</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a03b1d23240bc4b367719aba1c6a63872">  100</a></span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../d8/d4b/classObject.html#a03b1d23240bc4b367719aba1c6a63872">BVH_for_collision</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">    /*! \~chinese 物体的 ID，不会与其他物体重复。 */</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a8d677f7e946ed980a4b086efb74e9748">  102</a></span>    std::size_t <a class="code hl_variable" href="../../d8/d4b/classObject.html#a8d677f7e946ed980a4b086efb74e9748">id</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">    /*! \~chinese 物体的名称，来自加载文件时的 mesh 名称（文件中未定义会创建一个默认名称）。 */</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a24457e0a387492c80594aec7681a2277">  104</a></span>    std::string <a class="code hl_variable" href="../../d8/d4b/classObject.html#a24457e0a387492c80594aec7681a2277">name</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">    /*! \~chinese 控制物体是否可见，当前恒为真，并无实际作用。 */</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#ac2b299eaa47a407bca0e9b47205edd99">  106</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../d8/d4b/classObject.html#ac2b299eaa47a407bca0e9b47205edd99">visible</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">    /*! \~chinese 表示上一帧过后是否被修改，在第一次加载后或与半边网格不一致时为真。 */</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#abcf908134541bea512ca0148e05f1f44">  108</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../d8/d4b/classObject.html#abcf908134541bea512ca0148e05f1f44">modified</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">    /*! \~chinese 物体的中心点位置。此处“中心点”指的是模型坐标系的原点而非几何意义上的中心。 */</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a0e9b68376530dd18ab88b43e8456337f">  110</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d8/d4b/classObject.html#a0e9b68376530dd18ab88b43e8456337f">center</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">    /*! \~chinese 物体三轴的缩放因子。 */</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#ad39b7fd1eb954cc7890dd2713be6d3f6">  112</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d8/d4b/classObject.html#ad39b7fd1eb954cc7890dd2713be6d3f6">scaling</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">    /*! \~chinese 物体的旋转。 */</span></div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a770438fbce9eb0bc063547f0f77e0b30">  114</a></span>    Eigen::Quaternionf <a class="code hl_variable" href="../../d8/d4b/classObject.html#a770438fbce9eb0bc063547f0f77e0b30">rotation</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">    /*! \~chinese 物体的速度。 */</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a72eed21f81afdf95370d638db35b59e1">  116</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d8/d4b/classObject.html#a72eed21f81afdf95370d638db35b59e1">velocity</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">    /*! \~chinese 物体所受的合外力。 */</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#aa31820215a5450a83c624324258f00dd">  118</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d8/d4b/classObject.html#aa31820215a5450a83c624324258f00dd">force</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">    /*! \~chinese 物体质量 */</span></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a60866179af7cb2aad410ea01de546e4e">  120</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d8/d4b/classObject.html#a60866179af7cb2aad410ea01de546e4e">mass</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">    /*! \~chinese 上一帧的状态，用于高阶求解器求解。 */</span></div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a5fb00c4ab2fd22c033aae243bbb1e10a">  122</a></span>    <a class="code hl_struct" href="../../d1/d96/structKineticState.html">KineticState</a> <a class="code hl_variable" href="../../d8/d4b/classObject.html#a5fb00c4ab2fd22c033aae243bbb1e10a">prev_state</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">    /*! \~chinese 进入物理模拟模式后用于备份初始状态。 */</span></div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a049e8776aaeebac897c3ae2d3fe72f77">  124</a></span>    <a class="code hl_struct" href="../../d1/d96/structKineticState.html">KineticState</a> <a class="code hl_variable" href="../../d8/d4b/classObject.html#a049e8776aaeebac897c3ae2d3fe72f77">backup</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">    /*! \~chinese</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">     * 由于位姿参数每一帧都可能变化，mesh 中存储模型坐标系下的坐标以提高运行效率。</span></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">     * 如需获取世界坐标系下的坐标，请乘上模型变换矩阵。</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a3961b5381a8384cc71246ff15f7be99b">  129</a></span>    <a class="code hl_struct" href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a> <a class="code hl_variable" href="../../d8/d4b/classObject.html#a3961b5381a8384cc71246ff15f7be99b">mesh</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">    /*!</span></div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">     * \~chinese</span></div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">     * \brief 根据这个物体建立的 BVH 。</span></div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">     * 物体的 BVH 在它的 mesh 加载完成后构建。由于 mesh 数据的加载过程是在 `Group::load`</span></div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">     * 中完成的，构建 BVH 的函数调用也只能在这个函数（而不是在 `Object` 的构造函数）中进行。</span></div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">     * 物体的 mesh 数据都在模型坐标系下，因此 BVH 也是建立在模型坐标系下的。这意味着物体的平移、</span></div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">     * 旋转和缩放都不改变 BVH 的结构，只有物体发生形变时才需要更新 BVH 。目前的实现是：</span></div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">     * 每次退出建模模式时，不加检查地删除原先的 BVH 并重新构建。</span></div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a9cdcb5985e95260baeb7004cbb97054c">  141</a></span>    std::unique_ptr&lt;BVH&gt; <a class="code hl_variable" href="../../d8/d4b/classObject.html#a9cdcb5985e95260baeb7004cbb97054c">bvh</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment">    /*! \~chinese 代表 BVH 所有包围盒的线框。 */</span></div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a55b13c86eb0225e7e6e28f6b35490ca9">  143</a></span>    <a class="code hl_struct" href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a> <a class="code hl_variable" href="../../d8/d4b/classObject.html#a55b13c86eb0225e7e6e28f6b35490ca9">BVH_boxes</a>;</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment"></span> </div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment">    /*!</span></div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment">     * \~chinese</span></div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment">     * \brief 将新的 BVH 线框添加到 `BVH_boxes` 中</span></div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment">     * \param node 初始 BVH 结点，函数会递归更新子结点，将所有 BVH 包围盒都添加为线框</span></div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/d4b/classObject.html#adca04f4c328648ed754a8c3d846f4d96">refresh_BVH_boxes</a>(<a class="code hl_struct" href="../../d4/d59/structBVHNode.html">BVHNode</a>* node);<span class="comment"></span></div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">    /*! \~chinese 下一个可用的物体 ID 。 */</span></div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a022b391a51bc04cdb8d7ab1e2db770ed">  155</a></span>    <span class="keyword">static</span> std::size_t <a class="code hl_variable" href="../../d8/d4b/classObject.html#a022b391a51bc04cdb8d7ab1e2db770ed">next_available_id</a>;<span class="comment"></span></div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">    /*! \~chinese 日志记录器。 */</span></div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a1bdaceb3171dfb3a26e71bc996d7ff1b">  157</a></span>    std::shared_ptr&lt;spdlog::logger&gt; <a class="code hl_variable" href="../../d8/d4b/classObject.html#a1bdaceb3171dfb3a26e71bc996d7ff1b">logger</a>;</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>};</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">     * \param object_name 物体名字</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#aa164f4cf0ebff3e52c00167953866f6c">   51</a></span>    <a class="code hl_function" href="../../d8/d4b/classObject.html#aa164f4cf0ebff3e52c00167953866f6c">Object</a>(<span class="keyword">const</span> std::string&amp; object_name);<span class="comment"></span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">    ///@{</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">    /*! \~chinese 禁止复制物体。 */</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#aef343197effbc642b3f1812ac7bd3d85">   54</a></span>    <a class="code hl_function" href="../../d8/d4b/classObject.html#aef343197effbc642b3f1812ac7bd3d85">Object</a>(<a class="code hl_function" href="../../d8/d4b/classObject.html#aa164f4cf0ebff3e52c00167953866f6c">Object</a>&amp; other)       = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a2f1113c0cc351878350931775ccb56dc">   55</a></span>    <a class="code hl_function" href="../../d8/d4b/classObject.html#a2f1113c0cc351878350931775ccb56dc">Object</a>(<span class="keyword">const</span> <a class="code hl_function" href="../../d8/d4b/classObject.html#aa164f4cf0ebff3e52c00167953866f6c">Object</a>&amp; other) = <span class="keyword">delete</span>;<span class="comment"></span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">    ///@}</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_function" href="../../d8/d4b/classObject.html#aa164f4cf0ebff3e52c00167953866f6c">~Object</a>() = <span class="keywordflow">default</span>;<span class="comment"></span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">    /*! \~chinese 此物体的模型变换矩阵 (Model Transform Matrix)。 */</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    Eigen::Matrix4f <a class="code hl_function" href="../../d8/d4b/classObject.html#af9fa8aeeb0f12b2bb54df338cfbd6eed">model</a>() <span class="keyword">const</span>;<span class="comment"></span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">    /*!</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">     * \~chinese</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">     * \brief 更新下一个时间步的运动状态。</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">     * 首先使用 `Object::step` 计算下一个时间步自身的运动状态，尝试将自身移动到算出的位置，</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">     * 再检测在此位置是否会与其他物体碰撞。如果发生碰撞则自身位置回退，</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">     * 并根据动量定理修改碰撞双方的速度。</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">     * \param all_objects 场景中所有的物体，用于碰撞检测和响应。</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/d4b/classObject.html#a81cff33ba1612aa43187d3e617d8edcc">update</a>(std::vector&lt;Object*&gt;&amp; all_objects);<span class="comment"></span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">    /*!</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">     * \~chinese</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">     * \brief 重新构建 BVH 。</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">     * 原先没有构建过 BVH 的情况下调用这个函数也是安全的。</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/d4b/classObject.html#a4eae75848cc2f863a790d8da3014549f">rebuild_BVH</a>();</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment"></span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">    /*!</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">     * \~chinese</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">     * \brief 用于更新物体运动状态的函数。</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">     * 让这个静态变量指向不同的函数，就可以更换不同的求解器，默认使用前向欧拉法求解。</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a573b153aba95a8272b6808ebfe6955cb">   85</a></span>    <span class="keyword">static</span> std::function&lt;<a class="code hl_struct" href="../../d1/d96/structKineticState.html">KineticState</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../d1/d96/structKineticState.html">KineticState</a>&amp;, <span class="keyword">const</span> <a class="code hl_struct" href="../../d1/d96/structKineticState.html">KineticState</a>&amp;)&gt; <a class="code hl_variable" href="../../d8/d4b/classObject.html#a573b153aba95a8272b6808ebfe6955cb">step</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">    /*! \~chinese 是否启用 BVH 加速碰撞检测。 */</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a03b1d23240bc4b367719aba1c6a63872">   87</a></span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../d8/d4b/classObject.html#a03b1d23240bc4b367719aba1c6a63872">BVH_for_collision</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">    /*! \~chinese 物体的 ID，不会与其他物体重复。 */</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a8d677f7e946ed980a4b086efb74e9748">   89</a></span>    std::size_t <a class="code hl_variable" href="../../d8/d4b/classObject.html#a8d677f7e946ed980a4b086efb74e9748">id</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">    /*! \~chinese 物体的名称，来自加载文件时的 mesh 名称（文件中未定义会创建一个默认名称）。 */</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a24457e0a387492c80594aec7681a2277">   91</a></span>    std::string <a class="code hl_variable" href="../../d8/d4b/classObject.html#a24457e0a387492c80594aec7681a2277">name</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">    /*! \~chinese 控制物体是否可见，当前恒为真，并无实际作用。 */</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#ac2b299eaa47a407bca0e9b47205edd99">   93</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../d8/d4b/classObject.html#ac2b299eaa47a407bca0e9b47205edd99">visible</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">    /*! \~chinese 表示上一帧过后是否被修改，在第一次加载后或与半边网格不一致时为真。 */</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#abcf908134541bea512ca0148e05f1f44">   95</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../d8/d4b/classObject.html#abcf908134541bea512ca0148e05f1f44">modified</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">    /*! \~chinese 物体的中心点位置。此处“中心点”指的是模型坐标系的原点而非几何意义上的中心。 */</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a0e9b68376530dd18ab88b43e8456337f">   97</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d8/d4b/classObject.html#a0e9b68376530dd18ab88b43e8456337f">center</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">    /*! \~chinese 物体三轴的缩放因子。 */</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#ad39b7fd1eb954cc7890dd2713be6d3f6">   99</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d8/d4b/classObject.html#ad39b7fd1eb954cc7890dd2713be6d3f6">scaling</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">    /*! \~chinese 物体的旋转。 */</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a770438fbce9eb0bc063547f0f77e0b30">  101</a></span>    Eigen::Quaternionf <a class="code hl_variable" href="../../d8/d4b/classObject.html#a770438fbce9eb0bc063547f0f77e0b30">rotation</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">    /*! \~chinese 物体的速度。 */</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a72eed21f81afdf95370d638db35b59e1">  103</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d8/d4b/classObject.html#a72eed21f81afdf95370d638db35b59e1">velocity</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">    /*! \~chinese 物体所受的合外力。 */</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#aa31820215a5450a83c624324258f00dd">  105</a></span>    Eigen::Vector3f <a class="code hl_variable" href="../../d8/d4b/classObject.html#aa31820215a5450a83c624324258f00dd">force</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">    /*! \~chinese 物体质量 */</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a60866179af7cb2aad410ea01de546e4e">  107</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="../../d8/d4b/classObject.html#a60866179af7cb2aad410ea01de546e4e">mass</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">    /*! \~chinese 上一帧的状态，用于高阶求解器求解。 */</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a5fb00c4ab2fd22c033aae243bbb1e10a">  109</a></span>    <a class="code hl_struct" href="../../d1/d96/structKineticState.html">KineticState</a> <a class="code hl_variable" href="../../d8/d4b/classObject.html#a5fb00c4ab2fd22c033aae243bbb1e10a">prev_state</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">    /*! \~chinese 进入物理模拟模式后用于备份初始状态。 */</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a049e8776aaeebac897c3ae2d3fe72f77">  111</a></span>    <a class="code hl_struct" href="../../d1/d96/structKineticState.html">KineticState</a> <a class="code hl_variable" href="../../d8/d4b/classObject.html#a049e8776aaeebac897c3ae2d3fe72f77">backup</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">    /*! \~chinese</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">     * 由于位姿参数每一帧都可能变化，mesh 中存储模型坐标系下的坐标以提高运行效率。</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">     * 如需获取世界坐标系下的坐标，请乘上模型变换矩阵。</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a6c8e1f4729ef14c63c02a716ead3d102">  116</a></span>    <a class="code hl_struct" href="../../da/d29/structMesh.html">Mesh</a> <a class="code hl_variable" href="../../d8/d4b/classObject.html#a6c8e1f4729ef14c63c02a716ead3d102">mesh</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">    /*! \~chinese 该物体的材质。 */</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a513497ce9db4daba281ad4557820342b">  118</a></span>    std::unique_ptr&lt;Material&gt; <a class="code hl_variable" href="../../d8/d4b/classObject.html#a513497ce9db4daba281ad4557820342b">material</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">    /*!</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">     * \~chinese</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">     * \brief 根据这个物体建立的 BVH 。</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">     * 物体的 BVH 在它的 mesh 加载完成后构建。由于 mesh 数据的加载过程是在 `Group::load`</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">     * 中完成的，构建 BVH 的函数调用也只能在这个函数（而不是在 `Object` 的构造函数）中进行。</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">     * 物体的 mesh 数据都在模型坐标系下，因此 BVH 也是建立在模型坐标系下的。这意味着物体的平移、</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">     * 旋转和缩放都不改变 BVH 的结构，只有物体发生形变时才需要更新 BVH 。目前的实现是：</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">     * 每次退出建模模式时，不加检查地删除原先的 BVH 并重新构建。</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a9cdcb5985e95260baeb7004cbb97054c">  130</a></span>    std::unique_ptr&lt;BVH&gt; <a class="code hl_variable" href="../../d8/d4b/classObject.html#a9cdcb5985e95260baeb7004cbb97054c">bvh</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">    /*! \~chinese 代表 BVH 所有包围盒的线框。 */</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#ac5d5f45233b48d35f04ec81a8767693d">  132</a></span>    <a class="code hl_struct" href="../../d7/d83/structAABBSet.html">AABBSet</a> <a class="code hl_variable" href="../../d8/d4b/classObject.html#ac5d5f45233b48d35f04ec81a8767693d">BVH_boxes</a>;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment"></span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">    /*!</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">     * \~chinese</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">     * \brief 将新的 BVH 线框添加到 `BVH_boxes` 中</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">     * \param node 初始 BVH 结点，函数会递归更新子结点，将所有 BVH 包围盒都添加为线框</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/d4b/classObject.html#adca04f4c328648ed754a8c3d846f4d96">refresh_BVH_boxes</a>(<a class="code hl_struct" href="../../d4/d59/structBVHNode.html">BVHNode</a>* node);<span class="comment"></span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment">    /*! \~chinese 下一个可用的物体 ID 。 */</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a022b391a51bc04cdb8d7ab1e2db770ed">  144</a></span>    <span class="keyword">static</span> std::size_t <a class="code hl_variable" href="../../d8/d4b/classObject.html#a022b391a51bc04cdb8d7ab1e2db770ed">next_available_id</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">    /*! \~chinese 日志记录器。 */</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="../../d8/d4b/classObject.html#a1bdaceb3171dfb3a26e71bc996d7ff1b">  146</a></span>    std::shared_ptr&lt;spdlog::logger&gt; <a class="code hl_variable" href="../../d8/d4b/classObject.html#a1bdaceb3171dfb3a26e71bc996d7ff1b">logger</a>;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>};</div>
 </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="preprocessor">#endif </span><span class="comment">// DANDELION_SCENE_OBJECT_H</span></div>
 <div class="ttc" id="abvh_8h_html"><div class="ttname"><a href="../../d3/dd6/bvh_8h.html">bvh.h</a></div></div>
-<div class="ttc" id="aclassObject_html_a022b391a51bc04cdb8d7ab1e2db770ed"><div class="ttname"><a href="../../d8/d4b/classObject.html#a022b391a51bc04cdb8d7ab1e2db770ed">Object::next_available_id</a></div><div class="ttdeci">static std::size_t next_available_id</div><div class="ttdef"><b>定义</b> object.h:155</div></div>
-<div class="ttc" id="aclassObject_html_a03b1d23240bc4b367719aba1c6a63872"><div class="ttname"><a href="../../d8/d4b/classObject.html#a03b1d23240bc4b367719aba1c6a63872">Object::BVH_for_collision</a></div><div class="ttdeci">static bool BVH_for_collision</div><div class="ttdef"><b>定义</b> object.h:100</div></div>
-<div class="ttc" id="aclassObject_html_a049e8776aaeebac897c3ae2d3fe72f77"><div class="ttname"><a href="../../d8/d4b/classObject.html#a049e8776aaeebac897c3ae2d3fe72f77">Object::backup</a></div><div class="ttdeci">KineticState backup</div><div class="ttdef"><b>定义</b> object.h:124</div></div>
-<div class="ttc" id="aclassObject_html_a0e9b68376530dd18ab88b43e8456337f"><div class="ttname"><a href="../../d8/d4b/classObject.html#a0e9b68376530dd18ab88b43e8456337f">Object::center</a></div><div class="ttdeci">Eigen::Vector3f center</div><div class="ttdef"><b>定义</b> object.h:110</div></div>
-<div class="ttc" id="aclassObject_html_a1bdaceb3171dfb3a26e71bc996d7ff1b"><div class="ttname"><a href="../../d8/d4b/classObject.html#a1bdaceb3171dfb3a26e71bc996d7ff1b">Object::logger</a></div><div class="ttdeci">std::shared_ptr&lt; spdlog::logger &gt; logger</div><div class="ttdef"><b>定义</b> object.h:157</div></div>
-<div class="ttc" id="aclassObject_html_a24457e0a387492c80594aec7681a2277"><div class="ttname"><a href="../../d8/d4b/classObject.html#a24457e0a387492c80594aec7681a2277">Object::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>定义</b> object.h:104</div></div>
+<div class="ttc" id="aclassObject_html_a022b391a51bc04cdb8d7ab1e2db770ed"><div class="ttname"><a href="../../d8/d4b/classObject.html#a022b391a51bc04cdb8d7ab1e2db770ed">Object::next_available_id</a></div><div class="ttdeci">static std::size_t next_available_id</div><div class="ttdef"><b>定义</b> object.h:144</div></div>
+<div class="ttc" id="aclassObject_html_a03b1d23240bc4b367719aba1c6a63872"><div class="ttname"><a href="../../d8/d4b/classObject.html#a03b1d23240bc4b367719aba1c6a63872">Object::BVH_for_collision</a></div><div class="ttdeci">static bool BVH_for_collision</div><div class="ttdef"><b>定义</b> object.h:87</div></div>
+<div class="ttc" id="aclassObject_html_a049e8776aaeebac897c3ae2d3fe72f77"><div class="ttname"><a href="../../d8/d4b/classObject.html#a049e8776aaeebac897c3ae2d3fe72f77">Object::backup</a></div><div class="ttdeci">KineticState backup</div><div class="ttdef"><b>定义</b> object.h:111</div></div>
+<div class="ttc" id="aclassObject_html_a0e9b68376530dd18ab88b43e8456337f"><div class="ttname"><a href="../../d8/d4b/classObject.html#a0e9b68376530dd18ab88b43e8456337f">Object::center</a></div><div class="ttdeci">Eigen::Vector3f center</div><div class="ttdef"><b>定义</b> object.h:97</div></div>
+<div class="ttc" id="aclassObject_html_a1bdaceb3171dfb3a26e71bc996d7ff1b"><div class="ttname"><a href="../../d8/d4b/classObject.html#a1bdaceb3171dfb3a26e71bc996d7ff1b">Object::logger</a></div><div class="ttdeci">std::shared_ptr&lt; spdlog::logger &gt; logger</div><div class="ttdef"><b>定义</b> object.h:146</div></div>
+<div class="ttc" id="aclassObject_html_a24457e0a387492c80594aec7681a2277"><div class="ttname"><a href="../../d8/d4b/classObject.html#a24457e0a387492c80594aec7681a2277">Object::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>定义</b> object.h:91</div></div>
 <div class="ttc" id="aclassObject_html_a2f1113c0cc351878350931775ccb56dc"><div class="ttname"><a href="../../d8/d4b/classObject.html#a2f1113c0cc351878350931775ccb56dc">Object::Object</a></div><div class="ttdeci">Object(const Object &amp;other)=delete</div></div>
-<div class="ttc" id="aclassObject_html_a3961b5381a8384cc71246ff15f7be99b"><div class="ttname"><a href="../../d8/d4b/classObject.html#a3961b5381a8384cc71246ff15f7be99b">Object::mesh</a></div><div class="ttdeci">GL::Mesh mesh</div><div class="ttdef"><b>定义</b> object.h:129</div></div>
-<div class="ttc" id="aclassObject_html_a4eae75848cc2f863a790d8da3014549f"><div class="ttname"><a href="../../d8/d4b/classObject.html#a4eae75848cc2f863a790d8da3014549f">Object::rebuild_BVH</a></div><div class="ttdeci">void rebuild_BVH()</div><div class="ttdoc">重新构建 BVH 。</div><div class="ttdef"><b>定义</b> object.cpp:143</div></div>
-<div class="ttc" id="aclassObject_html_a55b13c86eb0225e7e6e28f6b35490ca9"><div class="ttname"><a href="../../d8/d4b/classObject.html#a55b13c86eb0225e7e6e28f6b35490ca9">Object::BVH_boxes</a></div><div class="ttdeci">GL::LineSet BVH_boxes</div><div class="ttdef"><b>定义</b> object.h:143</div></div>
-<div class="ttc" id="aclassObject_html_a573b153aba95a8272b6808ebfe6955cb"><div class="ttname"><a href="../../d8/d4b/classObject.html#a573b153aba95a8272b6808ebfe6955cb">Object::step</a></div><div class="ttdeci">static std::function&lt; KineticState(const KineticState &amp;, const KineticState &amp;)&gt; step</div><div class="ttdoc">用于更新物体运动状态的函数。</div><div class="ttdef"><b>定义</b> object.h:98</div></div>
-<div class="ttc" id="aclassObject_html_a5c13c26a5d9896e078a32de6593e5be5"><div class="ttname"><a href="../../d8/d4b/classObject.html#a5c13c26a5d9896e078a32de6593e5be5">Object::render</a></div><div class="ttdeci">void render(const Shader &amp;shader, WorkingMode mode, bool selected)</div><div class="ttdoc">根据指定的渲染模式渲染物体。</div><div class="ttdef"><b>定义</b> object.cpp:109</div></div>
-<div class="ttc" id="aclassObject_html_a5fb00c4ab2fd22c033aae243bbb1e10a"><div class="ttname"><a href="../../d8/d4b/classObject.html#a5fb00c4ab2fd22c033aae243bbb1e10a">Object::prev_state</a></div><div class="ttdeci">KineticState prev_state</div><div class="ttdef"><b>定义</b> object.h:122</div></div>
-<div class="ttc" id="aclassObject_html_a60866179af7cb2aad410ea01de546e4e"><div class="ttname"><a href="../../d8/d4b/classObject.html#a60866179af7cb2aad410ea01de546e4e">Object::mass</a></div><div class="ttdeci">float mass</div><div class="ttdef"><b>定义</b> object.h:120</div></div>
-<div class="ttc" id="aclassObject_html_a72eed21f81afdf95370d638db35b59e1"><div class="ttname"><a href="../../d8/d4b/classObject.html#a72eed21f81afdf95370d638db35b59e1">Object::velocity</a></div><div class="ttdeci">Eigen::Vector3f velocity</div><div class="ttdef"><b>定义</b> object.h:116</div></div>
-<div class="ttc" id="aclassObject_html_a770438fbce9eb0bc063547f0f77e0b30"><div class="ttname"><a href="../../d8/d4b/classObject.html#a770438fbce9eb0bc063547f0f77e0b30">Object::rotation</a></div><div class="ttdeci">Eigen::Quaternionf rotation</div><div class="ttdef"><b>定义</b> object.h:114</div></div>
-<div class="ttc" id="aclassObject_html_a81cff33ba1612aa43187d3e617d8edcc"><div class="ttname"><a href="../../d8/d4b/classObject.html#a81cff33ba1612aa43187d3e617d8edcc">Object::update</a></div><div class="ttdeci">void update(std::vector&lt; Object * &gt; &amp;all_objects)</div><div class="ttdoc">更新下一个时间步的运动状态。</div><div class="ttdef"><b>定义</b> object.cpp:52</div></div>
-<div class="ttc" id="aclassObject_html_a8d677f7e946ed980a4b086efb74e9748"><div class="ttname"><a href="../../d8/d4b/classObject.html#a8d677f7e946ed980a4b086efb74e9748">Object::id</a></div><div class="ttdeci">std::size_t id</div><div class="ttdef"><b>定义</b> object.h:102</div></div>
-<div class="ttc" id="aclassObject_html_a9cdcb5985e95260baeb7004cbb97054c"><div class="ttname"><a href="../../d8/d4b/classObject.html#a9cdcb5985e95260baeb7004cbb97054c">Object::bvh</a></div><div class="ttdeci">std::unique_ptr&lt; BVH &gt; bvh</div><div class="ttdoc">根据这个物体建立的 BVH 。</div><div class="ttdef"><b>定义</b> object.h:141</div></div>
+<div class="ttc" id="aclassObject_html_a4eae75848cc2f863a790d8da3014549f"><div class="ttname"><a href="../../d8/d4b/classObject.html#a4eae75848cc2f863a790d8da3014549f">Object::rebuild_BVH</a></div><div class="ttdeci">void rebuild_BVH()</div><div class="ttdoc">重新构建 BVH 。</div><div class="ttdef"><b>定义</b> object.cpp:108</div></div>
+<div class="ttc" id="aclassObject_html_a513497ce9db4daba281ad4557820342b"><div class="ttname"><a href="../../d8/d4b/classObject.html#a513497ce9db4daba281ad4557820342b">Object::material</a></div><div class="ttdeci">std::unique_ptr&lt; Material &gt; material</div><div class="ttdef"><b>定义</b> object.h:118</div></div>
+<div class="ttc" id="aclassObject_html_a573b153aba95a8272b6808ebfe6955cb"><div class="ttname"><a href="../../d8/d4b/classObject.html#a573b153aba95a8272b6808ebfe6955cb">Object::step</a></div><div class="ttdeci">static std::function&lt; KineticState(const KineticState &amp;, const KineticState &amp;)&gt; step</div><div class="ttdoc">用于更新物体运动状态的函数。</div><div class="ttdef"><b>定义</b> object.h:85</div></div>
+<div class="ttc" id="aclassObject_html_a5fb00c4ab2fd22c033aae243bbb1e10a"><div class="ttname"><a href="../../d8/d4b/classObject.html#a5fb00c4ab2fd22c033aae243bbb1e10a">Object::prev_state</a></div><div class="ttdeci">KineticState prev_state</div><div class="ttdef"><b>定义</b> object.h:109</div></div>
+<div class="ttc" id="aclassObject_html_a60866179af7cb2aad410ea01de546e4e"><div class="ttname"><a href="../../d8/d4b/classObject.html#a60866179af7cb2aad410ea01de546e4e">Object::mass</a></div><div class="ttdeci">float mass</div><div class="ttdef"><b>定义</b> object.h:107</div></div>
+<div class="ttc" id="aclassObject_html_a6c8e1f4729ef14c63c02a716ead3d102"><div class="ttname"><a href="../../d8/d4b/classObject.html#a6c8e1f4729ef14c63c02a716ead3d102">Object::mesh</a></div><div class="ttdeci">Mesh mesh</div><div class="ttdef"><b>定义</b> object.h:116</div></div>
+<div class="ttc" id="aclassObject_html_a72eed21f81afdf95370d638db35b59e1"><div class="ttname"><a href="../../d8/d4b/classObject.html#a72eed21f81afdf95370d638db35b59e1">Object::velocity</a></div><div class="ttdeci">Eigen::Vector3f velocity</div><div class="ttdef"><b>定义</b> object.h:103</div></div>
+<div class="ttc" id="aclassObject_html_a770438fbce9eb0bc063547f0f77e0b30"><div class="ttname"><a href="../../d8/d4b/classObject.html#a770438fbce9eb0bc063547f0f77e0b30">Object::rotation</a></div><div class="ttdeci">Eigen::Quaternionf rotation</div><div class="ttdef"><b>定义</b> object.h:101</div></div>
+<div class="ttc" id="aclassObject_html_a81cff33ba1612aa43187d3e617d8edcc"><div class="ttname"><a href="../../d8/d4b/classObject.html#a81cff33ba1612aa43187d3e617d8edcc">Object::update</a></div><div class="ttdeci">void update(std::vector&lt; Object * &gt; &amp;all_objects)</div><div class="ttdoc">更新下一个时间步的运动状态。</div><div class="ttdef"><b>定义</b> object.cpp:51</div></div>
+<div class="ttc" id="aclassObject_html_a8d677f7e946ed980a4b086efb74e9748"><div class="ttname"><a href="../../d8/d4b/classObject.html#a8d677f7e946ed980a4b086efb74e9748">Object::id</a></div><div class="ttdeci">std::size_t id</div><div class="ttdef"><b>定义</b> object.h:89</div></div>
+<div class="ttc" id="aclassObject_html_a9cdcb5985e95260baeb7004cbb97054c"><div class="ttname"><a href="../../d8/d4b/classObject.html#a9cdcb5985e95260baeb7004cbb97054c">Object::bvh</a></div><div class="ttdeci">std::unique_ptr&lt; BVH &gt; bvh</div><div class="ttdoc">根据这个物体建立的 BVH 。</div><div class="ttdef"><b>定义</b> object.h:130</div></div>
 <div class="ttc" id="aclassObject_html_aa164f4cf0ebff3e52c00167953866f6c"><div class="ttname"><a href="../../d8/d4b/classObject.html#aa164f4cf0ebff3e52c00167953866f6c">Object::Object</a></div><div class="ttdeci">Object(const std::string &amp;object_name)</div><div class="ttdoc">创建一个物体</div></div>
-<div class="ttc" id="aclassObject_html_aa31820215a5450a83c624324258f00dd"><div class="ttname"><a href="../../d8/d4b/classObject.html#aa31820215a5450a83c624324258f00dd">Object::force</a></div><div class="ttdeci">Eigen::Vector3f force</div><div class="ttdef"><b>定义</b> object.h:118</div></div>
-<div class="ttc" id="aclassObject_html_abcf908134541bea512ca0148e05f1f44"><div class="ttname"><a href="../../d8/d4b/classObject.html#abcf908134541bea512ca0148e05f1f44">Object::modified</a></div><div class="ttdeci">bool modified</div><div class="ttdef"><b>定义</b> object.h:108</div></div>
-<div class="ttc" id="aclassObject_html_ac2b299eaa47a407bca0e9b47205edd99"><div class="ttname"><a href="../../d8/d4b/classObject.html#ac2b299eaa47a407bca0e9b47205edd99">Object::visible</a></div><div class="ttdeci">bool visible</div><div class="ttdef"><b>定义</b> object.h:106</div></div>
-<div class="ttc" id="aclassObject_html_ad39b7fd1eb954cc7890dd2713be6d3f6"><div class="ttname"><a href="../../d8/d4b/classObject.html#ad39b7fd1eb954cc7890dd2713be6d3f6">Object::scaling</a></div><div class="ttdeci">Eigen::Vector3f scaling</div><div class="ttdef"><b>定义</b> object.h:112</div></div>
-<div class="ttc" id="aclassObject_html_adca04f4c328648ed754a8c3d846f4d96"><div class="ttname"><a href="../../d8/d4b/classObject.html#adca04f4c328648ed754a8c3d846f4d96">Object::refresh_BVH_boxes</a></div><div class="ttdeci">void refresh_BVH_boxes(BVHNode *node)</div><div class="ttdoc">将新的 BVH 线框添加到 BVH_boxes 中</div><div class="ttdef"><b>定义</b> object.cpp:152</div></div>
+<div class="ttc" id="aclassObject_html_aa31820215a5450a83c624324258f00dd"><div class="ttname"><a href="../../d8/d4b/classObject.html#aa31820215a5450a83c624324258f00dd">Object::force</a></div><div class="ttdeci">Eigen::Vector3f force</div><div class="ttdef"><b>定义</b> object.h:105</div></div>
+<div class="ttc" id="aclassObject_html_abcf908134541bea512ca0148e05f1f44"><div class="ttname"><a href="../../d8/d4b/classObject.html#abcf908134541bea512ca0148e05f1f44">Object::modified</a></div><div class="ttdeci">bool modified</div><div class="ttdef"><b>定义</b> object.h:95</div></div>
+<div class="ttc" id="aclassObject_html_ac2b299eaa47a407bca0e9b47205edd99"><div class="ttname"><a href="../../d8/d4b/classObject.html#ac2b299eaa47a407bca0e9b47205edd99">Object::visible</a></div><div class="ttdeci">bool visible</div><div class="ttdef"><b>定义</b> object.h:93</div></div>
+<div class="ttc" id="aclassObject_html_ac5d5f45233b48d35f04ec81a8767693d"><div class="ttname"><a href="../../d8/d4b/classObject.html#ac5d5f45233b48d35f04ec81a8767693d">Object::BVH_boxes</a></div><div class="ttdeci">AABBSet BVH_boxes</div><div class="ttdef"><b>定义</b> object.h:132</div></div>
+<div class="ttc" id="aclassObject_html_ad39b7fd1eb954cc7890dd2713be6d3f6"><div class="ttname"><a href="../../d8/d4b/classObject.html#ad39b7fd1eb954cc7890dd2713be6d3f6">Object::scaling</a></div><div class="ttdeci">Eigen::Vector3f scaling</div><div class="ttdef"><b>定义</b> object.h:99</div></div>
+<div class="ttc" id="aclassObject_html_adca04f4c328648ed754a8c3d846f4d96"><div class="ttname"><a href="../../d8/d4b/classObject.html#adca04f4c328648ed754a8c3d846f4d96">Object::refresh_BVH_boxes</a></div><div class="ttdeci">void refresh_BVH_boxes(BVHNode *node)</div><div class="ttdoc">将新的 BVH 线框添加到 BVH_boxes 中</div><div class="ttdef"><b>定义</b> object.cpp:116</div></div>
 <div class="ttc" id="aclassObject_html_aef343197effbc642b3f1812ac7bd3d85"><div class="ttname"><a href="../../d8/d4b/classObject.html#aef343197effbc642b3f1812ac7bd3d85">Object::Object</a></div><div class="ttdeci">Object(Object &amp;other)=delete</div></div>
-<div class="ttc" id="aclassObject_html_af8f23e84a424cb6061cc9b23bb1f650c"><div class="ttname"><a href="../../d8/d4b/classObject.html#af8f23e84a424cb6061cc9b23bb1f650c">Object::model</a></div><div class="ttdeci">Eigen::Matrix4f model()</div><div class="ttdef"><b>定义</b> object.cpp:46</div></div>
-<div class="ttc" id="aclassShader_html"><div class="ttname"><a href="../../d9/d69/classShader.html">Shader</a></div><div class="ttdoc">对 GLSL Shader 的简单封装。</div><div class="ttdef"><b>定义</b> shader.hpp:24</div></div>
-<div class="ttc" id="agl_8hpp_html"><div class="ttname"><a href="../../d7/d6a/gl_8hpp.html">gl.hpp</a></div></div>
+<div class="ttc" id="aclassObject_html_af9fa8aeeb0f12b2bb54df338cfbd6eed"><div class="ttname"><a href="../../d8/d4b/classObject.html#af9fa8aeeb0f12b2bb54df338cfbd6eed">Object::model</a></div><div class="ttdeci">Eigen::Matrix4f model() const</div><div class="ttdef"><b>定义</b> object.cpp:45</div></div>
 <div class="ttc" id="akinetic__state_8h_html"><div class="ttname"><a href="../../de/d17/kinetic__state_8h.html">kinetic_state.h</a></div></div>
-<div class="ttc" id="arendering_8hpp_html"><div class="ttname"><a href="../../dc/df7/rendering_8hpp.html">rendering.hpp</a></div><div class="ttdoc">这个文件定义了一些和渲染（离线渲染或场景预览）相关的常量、枚举等。</div></div>
-<div class="ttc" id="arendering_8hpp_html_a1352c5fcb6cfad612ba26a0e91355bcb"><div class="ttname"><a href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a></div><div class="ttdeci">WorkingMode</div><div class="ttdef"><b>定义</b> rendering.hpp:46</div></div>
-<div class="ttc" id="ashader_8hpp_html"><div class="ttname"><a href="../../d9/d52/shader_8hpp.html">shader.hpp</a></div></div>
-<div class="ttc" id="astructBVHNode_html"><div class="ttname"><a href="../../d4/d59/structBVHNode.html">BVHNode</a></div><div class="ttdoc">表示的是BVH建立的树中的节点</div><div class="ttdef"><b>定义</b> bvh.h:22</div></div>
-<div class="ttc" id="astructGL_1_1LineSet_html"><div class="ttname"><a href="../../d4/d91/structGL_1_1LineSet.html">GL::LineSet</a></div><div class="ttdoc">在预览场景时绘制若干线条。</div><div class="ttdef"><b>定义</b> gl.hpp:334</div></div>
-<div class="ttc" id="astructGL_1_1Mesh_html"><div class="ttname"><a href="../../d8/d88/structGL_1_1Mesh.html">GL::Mesh</a></div><div class="ttdoc">用于场景预览渲染的 Mesh 类。</div><div class="ttdef"><b>定义</b> gl.hpp:268</div></div>
+<div class="ttc" id="amaterial_8hpp_html"><div class="ttname"><a href="../../d4/d75/material_8hpp.html">material.hpp</a></div></div>
+<div class="ttc" id="astructAABBSet_html"><div class="ttname"><a href="../../d7/d83/structAABBSet.html">AABBSet</a></div><div class="ttdoc">用于渲染轴对齐包围盒 (AABB) 的特殊线条集。</div><div class="ttdef"><b>定义</b> mesh.hpp:157</div></div>
+<div class="ttc" id="astructBVHNode_html"><div class="ttname"><a href="../../d4/d59/structBVHNode.html">BVHNode</a></div><div class="ttdoc">表示的是BVH建立的树中的节点</div><div class="ttdef"><b>定义</b> bvh.h:19</div></div>
 <div class="ttc" id="astructKineticState_html"><div class="ttname"><a href="../../d1/d96/structKineticState.html">KineticState</a></div><div class="ttdoc">表示物体的质点运动学状态。</div><div class="ttdef"><b>定义</b> kinetic_state.h:31</div></div>
+<div class="ttc" id="astructMesh_html"><div class="ttname"><a href="../../da/d29/structMesh.html">Mesh</a></div><div class="ttdoc">用于同步渲染数据的三角形 Mesh 。</div><div class="ttdef"><b>定义</b> mesh.hpp:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
@@ -301,7 +304,7 @@ $(function(){initNavTree('de/d10/object_8h_source.html','../../',''); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>src</b></li><li class="navelem"><b>scene</b></li><li class="navelem"><a href="../../de/d10/object_8h.html">object.h</a></li>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
   </ul>
 </div>
 </body>

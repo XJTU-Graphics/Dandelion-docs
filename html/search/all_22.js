@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['杂项工具_0',['杂项工具',['../db/d81/group__utils.html',1,'']]]
+  ['拼写检查_0',['拼写检查',['../da/d2c/startup.html#spell-check',1,'']]]
 ];

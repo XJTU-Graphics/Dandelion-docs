@@ -3,12 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: 成员列表</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../jquery.js"></script>
-<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../codefolding.js"></script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -37,7 +36,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.2</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;2.0.0</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -46,22 +45,47 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.16.1 -->
+<!-- 制作者 Doxygen 1.18.0 -->
 <script type="text/javascript">
-var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+let searchBox = new SearchBox("searchBox", "../../search/",'.html');
 </script>
 <script type="text/javascript">
-$(function() { codefold.init(); });
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "../../",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
 </script>
 <script type="text/javascript" src="../../menudata.js"></script>
 <script type="text/javascript" src="../../menu.js"></script>
-<script type="text/javascript">
-$(function() {
-  initMenu('../../',true,false,'search.php','搜索',true);
-  $(function() { init_search(); });
-});
-</script>
-<div id="main-nav"></div>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -69,20 +93,16 @@ $(function() {
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
+  <div id="splitbar" class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('da/dd6/structGL_1_1ElementArrayBuffer.html','../../',''); });
+document.addEventListener('DOMContentLoaded',() => { initNavTree('da/dd6/structGL_1_1ElementArrayBuffer.html','../../',''); });
 </script>
 <div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<div id="MSearchSelectWindow">
 </div>
 
 <!-- iframe showing the search results (closed by default) -->
@@ -107,7 +127,7 @@ $(function(){initNavTree('da/dd6/structGL_1_1ElementArrayBuffer.html','../../','
 <p>成员的完整列表，这些成员属于 <a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">GL::ElementArrayBuffer&lt; size &gt;</a>,包括所有继承而来的类成员</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#aa826a419aae7eb87828ceb781ee780cf">append</a>(Ts... values)</td><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">GL::ElementArrayBuffer&lt; size &gt;</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#aa019c17eb0f85e6ce41b54e9b268d73f">bind</a>()</td><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">GL::ElementArrayBuffer&lt; size &gt;</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a2eb24903cf7819c219e2aabe25f02a55">bind</a>() const noexcept</td><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">GL::ElementArrayBuffer&lt; size &gt;</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a25fd1f84717b224a566b84214ce33ead">count</a>() const</td><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">GL::ElementArrayBuffer&lt; size &gt;</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#ac8146ee6a703d9e3076aaccee1ab8642">data</a></td><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">GL::ElementArrayBuffer&lt; size &gt;</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a30f42d32a2c74dc1b670393dc8325d08">descriptor</a></td><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">GL::ElementArrayBuffer&lt; size &gt;</a></td><td class="entry"></td></tr>
@@ -115,8 +135,8 @@ $(function(){initNavTree('da/dd6/structGL_1_1ElementArrayBuffer.html','../../','
   <tr class="even"><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a05b220b4cc0fed8094ec4eb9da37743c">ElementArrayBuffer</a>(const ElementArrayBuffer &amp;other)=delete</td><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">GL::ElementArrayBuffer&lt; size &gt;</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a2f7352881659cbf5f07d9026409dac29">ElementArrayBuffer</a>(ElementArrayBuffer &amp;&amp;other)</td><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">GL::ElementArrayBuffer&lt; size &gt;</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#abea0a500bbdc2802160aef284e93911a">operator=</a>(ElementArrayBuffer &amp;other)=delete</td><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">GL::ElementArrayBuffer&lt; size &gt;</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#ad119c6cfe4591270c9c538bb91f192ad">release</a>()</td><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">GL::ElementArrayBuffer&lt; size &gt;</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#afca11b32f60d82774a14eed7cd42ab24">to_gpu</a>()</td><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">GL::ElementArrayBuffer&lt; size &gt;</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#ae5028d5441c0ac2a1b17da544ecdafd7">release</a>() const noexcept</td><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">GL::ElementArrayBuffer&lt; size &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#a98c0ea420167e0be204a1def69f724a6">to_gpu</a>() const noexcept</td><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">GL::ElementArrayBuffer&lt; size &gt;</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#acd16313e2ba6bb74e4136dd8e866f033">usage</a></td><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">GL::ElementArrayBuffer&lt; size &gt;</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html#afdd2237e08fef320c6424d6d4b4795b2">~ElementArrayBuffer</a>()</td><td class="entry"><a class="el" href="../../da/dd6/structGL_1_1ElementArrayBuffer.html">GL::ElementArrayBuffer&lt; size &gt;</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
@@ -125,7 +145,7 @@ $(function(){initNavTree('da/dd6/structGL_1_1ElementArrayBuffer.html','../../','
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
   </ul>
 </div>
 </body>

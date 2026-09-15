@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['提交更改_0',['提交更改',['../da/d2c/startup.html#commit',1,'']]]
+  ['开发工具_0',['开发工具',['../da/d2c/startup.html#tools',1,'']]],
+  ['开发者文档_1',['Dandelion 开发者文档',['../index.html',1,'']]]
 ];

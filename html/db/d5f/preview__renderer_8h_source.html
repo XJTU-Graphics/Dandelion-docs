@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dandelion: preview_renderer.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../codefolding.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;2.0.0</span>
+   </div>
+   <div id="projectbrief">A light-weight 3D builder for educational usage</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "../../",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('db/d5f/preview__renderer_8h_source.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">preview_renderer.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../db/d5f/preview__renderer_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;spdlog/spdlog.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="../../dc/df7/rendering_8hpp.html">../utils/rendering.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="../../da/dc6/mesh_8hpp.html">../geometry/mesh.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="../../db/d83/scene_8h.html">../scene/scene.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="../../d7/d6a/gl_8hpp.html">../platform/gl.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="../../d9/d52/shader_8hpp.html">../platform/shader.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"></span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * \file render/preview_renderer.h</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * \ingroup rendering</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * \brief 用于实时预览的渲染器。</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"></span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">/*!</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * \~chinese</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * \brief 用于实时预览的渲染器。</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * `PreviewRenderer` 在形式上与离线渲染器相似，但并不受 `RenderEngine` 的管理。</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../d0/dd8/classPreviewRenderer.html">   27</a></span><span class="keyword">class </span><a class="code hl_function" href="../../d0/dd8/classPreviewRenderer.html#a06d0f8e3af727f568f3a00168b26b4b7">PreviewRenderer</a></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"></span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">    /*!</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">     * \~chinese</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">     * 构造渲染器。因为 OpenGL shader 需要在 context 初始化之后再编译，</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">     * 所以 shader 相关的初始化操作需要单独调用 `compile_shaders` 方法。</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_function" href="../../d0/dd8/classPreviewRenderer.html#a06d0f8e3af727f568f3a00168b26b4b7">PreviewRenderer</a>();<span class="comment"></span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">    /*! \~chinese 加载并编译编译 OpenGL shader 。 */</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d0/dd8/classPreviewRenderer.html#a3706acd7bf5c06d02d3097b156b67fdd">compile_shaders</a>();<span class="comment"></span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">    /*! \~chinese 删除 OpenGL shader 。 */</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d0/dd8/classPreviewRenderer.html#a49a5081a5f27538849487b29d2536c31">delete_shaders</a>();<span class="comment"></span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">    /*! \~chinese 释放所有使用了 OpenGL VAO/VBO/EBO 的可渲染对象。 */</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d0/dd8/classPreviewRenderer.html#af57d524f14558450ff1b5891494e5ff9">delete_drawable_resources</a>();<span class="comment"></span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">    /*!</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">     * \~chinese</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">     * \brief 渲染一帧的画面。</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">     * 该方法会按需更新 GPU 数据、发起所有的 draw call ，但不会交换 back buffer 与</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">     * front buffer ，因此不会直接引发画面更新。</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">     * \param scene 渲染的场景</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">     * \param mode 当前的工作模式，这决定了场景的渲染方式。</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">     * \param debug_options 当前的调试选项，这决定了用于调试的特殊图元是否被渲染。</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d0/dd8/classPreviewRenderer.html#a8d830ce3cc4386ce24cc5d27289b504e">render</a>(<a class="code hl_class" href="../../d5/d9c/classScene.html">Scene</a>&amp; scene, <a class="code hl_enumeration" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> mode, <span class="keyword">const</span> <a class="code hl_struct" href="../../d3/dd6/structDebugOptions.html">DebugOptions</a>&amp; debug_options);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"></span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">    /*!</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">     * \~chinese</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">     * 将 `Mesh` 对象中的几何数据同步到 `GL::DrawableMesh` 中，并将数据传输到显存。</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">     * 该方法不会重置 `mesh` 的 `modified` 脏标记。</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">     * \param mesh 数据源 Mesh</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">     * \param drawable_mesh 要填充并传输到显存的渲染 Mesh</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d0/dd8/classPreviewRenderer.html#a2b78c4ab0187c3f370998adef8fd0ac9">fill_drawable_mesh</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../da/d29/structMesh.html">Mesh</a>&amp; mesh, <a class="code hl_struct" href="../../d7/d5e/structGL_1_1DrawableMesh.html">GL::DrawableMesh</a>&amp; drawable_mesh);<span class="comment"></span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">    /*!</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">     * \~chinese</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">     * 将 `LineSet` 对象中的几何数据同步到 `GL::DrawableLineSet` 中，并将数据传输到显存。</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">     * 该方法不会重置 `lineset` 的 `modified` 脏标记。</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">     * \param lineset 数据源线条集</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">     * \param drawable_lineset 要填充并传输到显存的渲染线条集</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d0/dd8/classPreviewRenderer.html#a61a04ba1ee76b2314af82ea1338dd03e">fill_drawable_lineset</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../d5/d11/structLineSet.html">LineSet</a>&amp; lineset, <a class="code hl_struct" href="../../d9/d38/structGL_1_1DrawableLineSet.html">GL::DrawableLineSet</a>&amp; drawable_lineset);<span class="comment"></span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">    /*! \~chinese 将场景中所有的 `Mesh` 几何数据同步到 `GL::DrawableMesh` 。 */</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d0/dd8/classPreviewRenderer.html#a7c7b18c884fe3580fc66c669d84fa0c2">update_drawable_meshes</a>(<a class="code hl_class" href="../../d5/d9c/classScene.html">Scene</a>&amp; scene);<span class="comment"></span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">    /*! \~chinese 将场景中所有的 `LineSet` 几何数据同步到 `GL::DrawableLineSet` 。 */</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d0/dd8/classPreviewRenderer.html#a4700daff00e09ebd55773e95c6f7277c">update_drawable_linesets</a>(<a class="code hl_class" href="../../d5/d9c/classScene.html">Scene</a>&amp; scene);<span class="comment"></span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">    /*!</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">     * \~chinese</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">     * 有物体被选中时，渲染这个物体的线框作为标记。</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d0/dd8/classPreviewRenderer.html#ac4932fdfb39a1ee089629050cdf8b23f">render_selected_object</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d5/d9c/classScene.html">Scene</a>&amp; scene, <a class="code hl_enumeration" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> mode);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    std::unique_ptr&lt;Shader&gt;                                                  primitive_shader;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    std::unique_ptr&lt;Shader&gt;                                                  phong_shader;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    std::unordered_map&lt;const Mesh*, std::unique_ptr&lt;GL::DrawableMesh&gt;&gt;       general_meshes;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    std::unordered_map&lt;const LineSet*, std::unique_ptr&lt;GL::DrawableLineSet&gt;&gt; general_linesets;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    std::unordered_map&lt;const Mesh*, std::unique_ptr&lt;GL::DrawableMesh&gt;&gt;       overlay_meshes;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    std::unordered_map&lt;const LineSet*, std::unique_ptr&lt;GL::DrawableLineSet&gt;&gt; overlay_linesets;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    std::shared_ptr&lt;spdlog::logger&gt;                                          logger;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>};</div>
+</div>
+<div class="ttc" id="aclassPreviewRenderer_html_a06d0f8e3af727f568f3a00168b26b4b7"><div class="ttname"><a href="../../d0/dd8/classPreviewRenderer.html#a06d0f8e3af727f568f3a00168b26b4b7">PreviewRenderer::PreviewRenderer</a></div><div class="ttdeci">PreviewRenderer()</div><div class="ttdef"><b>定义</b> preview_renderer.cpp:27</div></div>
+<div class="ttc" id="aclassPreviewRenderer_html_a2b78c4ab0187c3f370998adef8fd0ac9"><div class="ttname"><a href="../../d0/dd8/classPreviewRenderer.html#a2b78c4ab0187c3f370998adef8fd0ac9">PreviewRenderer::fill_drawable_mesh</a></div><div class="ttdeci">void fill_drawable_mesh(const Mesh &amp;mesh, GL::DrawableMesh &amp;drawable_mesh)</div><div class="ttdef"><b>定义</b> preview_renderer.cpp:209</div></div>
+<div class="ttc" id="aclassPreviewRenderer_html_a3706acd7bf5c06d02d3097b156b67fdd"><div class="ttname"><a href="../../d0/dd8/classPreviewRenderer.html#a3706acd7bf5c06d02d3097b156b67fdd">PreviewRenderer::compile_shaders</a></div><div class="ttdeci">void compile_shaders()</div><div class="ttdef"><b>定义</b> preview_renderer.cpp:32</div></div>
+<div class="ttc" id="aclassPreviewRenderer_html_a4700daff00e09ebd55773e95c6f7277c"><div class="ttname"><a href="../../d0/dd8/classPreviewRenderer.html#a4700daff00e09ebd55773e95c6f7277c">PreviewRenderer::update_drawable_linesets</a></div><div class="ttdeci">void update_drawable_linesets(Scene &amp;scene)</div><div class="ttdef"><b>定义</b> preview_renderer.cpp:312</div></div>
+<div class="ttc" id="aclassPreviewRenderer_html_a49a5081a5f27538849487b29d2536c31"><div class="ttname"><a href="../../d0/dd8/classPreviewRenderer.html#a49a5081a5f27538849487b29d2536c31">PreviewRenderer::delete_shaders</a></div><div class="ttdeci">void delete_shaders()</div><div class="ttdef"><b>定义</b> preview_renderer.cpp:48</div></div>
+<div class="ttc" id="aclassPreviewRenderer_html_a61a04ba1ee76b2314af82ea1338dd03e"><div class="ttname"><a href="../../d0/dd8/classPreviewRenderer.html#a61a04ba1ee76b2314af82ea1338dd03e">PreviewRenderer::fill_drawable_lineset</a></div><div class="ttdeci">void fill_drawable_lineset(const LineSet &amp;lineset, GL::DrawableLineSet &amp;drawable_lineset)</div><div class="ttdef"><b>定义</b> preview_renderer.cpp:245</div></div>
+<div class="ttc" id="aclassPreviewRenderer_html_a7c7b18c884fe3580fc66c669d84fa0c2"><div class="ttname"><a href="../../d0/dd8/classPreviewRenderer.html#a7c7b18c884fe3580fc66c669d84fa0c2">PreviewRenderer::update_drawable_meshes</a></div><div class="ttdeci">void update_drawable_meshes(Scene &amp;scene)</div><div class="ttdef"><b>定义</b> preview_renderer.cpp:270</div></div>
+<div class="ttc" id="aclassPreviewRenderer_html_a8d830ce3cc4386ce24cc5d27289b504e"><div class="ttname"><a href="../../d0/dd8/classPreviewRenderer.html#a8d830ce3cc4386ce24cc5d27289b504e">PreviewRenderer::render</a></div><div class="ttdeci">void render(Scene &amp;scene, WorkingMode mode, const DebugOptions &amp;debug_options)</div><div class="ttdoc">渲染一帧的画面。</div><div class="ttdef"><b>定义</b> preview_renderer.cpp:62</div></div>
+<div class="ttc" id="aclassPreviewRenderer_html_ac4932fdfb39a1ee089629050cdf8b23f"><div class="ttname"><a href="../../d0/dd8/classPreviewRenderer.html#ac4932fdfb39a1ee089629050cdf8b23f">PreviewRenderer::render_selected_object</a></div><div class="ttdeci">void render_selected_object(const Scene &amp;scene, WorkingMode mode)</div><div class="ttdef"><b>定义</b> preview_renderer.cpp:367</div></div>
+<div class="ttc" id="aclassPreviewRenderer_html_af57d524f14558450ff1b5891494e5ff9"><div class="ttname"><a href="../../d0/dd8/classPreviewRenderer.html#af57d524f14558450ff1b5891494e5ff9">PreviewRenderer::delete_drawable_resources</a></div><div class="ttdeci">void delete_drawable_resources()</div><div class="ttdef"><b>定义</b> preview_renderer.cpp:54</div></div>
+<div class="ttc" id="aclassScene_html"><div class="ttname"><a href="../../d5/d9c/classScene.html">Scene</a></div><div class="ttdoc">表示一个包含相机、光源、物体等对象的完整场景。</div><div class="ttdef"><b>定义</b> scene.h:57</div></div>
+<div class="ttc" id="agl_8hpp_html"><div class="ttname"><a href="../../d7/d6a/gl_8hpp.html">gl.hpp</a></div></div>
+<div class="ttc" id="amesh_8hpp_html"><div class="ttname"><a href="../../da/dc6/mesh_8hpp.html">mesh.hpp</a></div></div>
+<div class="ttc" id="arendering_8hpp_html"><div class="ttname"><a href="../../dc/df7/rendering_8hpp.html">rendering.hpp</a></div><div class="ttdoc">这个文件定义了一些和渲染（离线渲染或场景预览）相关的常量、枚举等。</div></div>
+<div class="ttc" id="arendering_8hpp_html_a1352c5fcb6cfad612ba26a0e91355bcb"><div class="ttname"><a href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a></div><div class="ttdeci">WorkingMode</div><div class="ttdef"><b>定义</b> rendering.hpp:55</div></div>
+<div class="ttc" id="ascene_8h_html"><div class="ttname"><a href="../../db/d83/scene_8h.html">scene.h</a></div><div class="ttdoc">包含场景的类。</div></div>
+<div class="ttc" id="ashader_8hpp_html"><div class="ttname"><a href="../../d9/d52/shader_8hpp.html">shader.hpp</a></div></div>
+<div class="ttc" id="astructDebugOptions_html"><div class="ttname"><a href="../../d3/dd6/structDebugOptions.html">DebugOptions</a></div><div class="ttdoc">辅助调试的 GUI 选项。</div><div class="ttdef"><b>定义</b> rendering.hpp:94</div></div>
+<div class="ttc" id="astructGL_1_1DrawableLineSet_html"><div class="ttname"><a href="../../d9/d38/structGL_1_1DrawableLineSet.html">GL::DrawableLineSet</a></div><div class="ttdoc">保存 GPU 所需几何数据的渲染线条集。</div><div class="ttdef"><b>定义</b> gl.hpp:250</div></div>
+<div class="ttc" id="astructGL_1_1DrawableMesh_html"><div class="ttname"><a href="../../d7/d5e/structGL_1_1DrawableMesh.html">GL::DrawableMesh</a></div><div class="ttdoc">保存 GPU 所需几何数据的渲染 Mesh 。</div><div class="ttdef"><b>定义</b> gl.hpp:219</div></div>
+<div class="ttc" id="astructLineSet_html"><div class="ttname"><a href="../../d5/d11/structLineSet.html">LineSet</a></div><div class="ttdoc">用于同步线条渲染数据的内存对象。</div><div class="ttdef"><b>定义</b> mesh.hpp:72</div></div>
+<div class="ttc" id="astructMesh_html"><div class="ttname"><a href="../../da/d29/structMesh.html">Mesh</a></div><div class="ttdoc">用于同步渲染数据的三角形 Mesh 。</div><div class="ttdef"><b>定义</b> mesh.hpp:28</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>src</b></li><li class="navelem"><b>render</b></li><li class="navelem"><a href="../../db/d5f/preview__renderer_8h.html">preview_renderer.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

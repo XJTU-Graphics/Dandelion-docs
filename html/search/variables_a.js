@@ -2,16 +2,16 @@ var searchData=
 [
   ['main_5fcamera_0',['main_camera',['../d5/d9c/classScene.html#ab655a448e0c5f29ecd3063d5a4365a66',1,'Scene']]],
   ['mass_1',['mass',['../d8/d4b/classObject.html#a60866179af7cb2aad410ea01de546e4e',1,'Object']]],
-  ['material_2',['material',['../d8/d88/structGL_1_1Mesh.html#a23777f301b1c83def29d6028713fb348',1,'GL::Mesh::material'],['../de/d97/structUniforms.html#afd0587ccdef535d3dea64d3c26efed11',1,'Uniforms::material']]],
+  ['material_2',['material',['../de/d97/structUniforms.html#ae69e1493cd6a586e15e4fffe927e846d',1,'Uniforms::material'],['../d8/d4b/classObject.html#a513497ce9db4daba281ad4557820342b',1,'Object::material']]],
   ['max_5fscene_5fnodes_3',['MAX_SCENE_NODES',['../dd/df1/group__ui.html#ga517fcfd7da21de45b1dda1b08d77bfb9',1,'UI']]],
   ['menubar_4',['menubar',['../d9/d85/classController.html#afe600befbeedd8d86dc9bf7e373e365a',1,'Controller']]],
   ['menubar_5fheight_5',['menubar_height',['../d6/de2/classUI_1_1Menubar.html#a3713a62f4a279d0e2fec07d4222b56ea',1,'UI::Menubar']]],
-  ['mesh_6',['mesh',['../dc/d6d/classHalfedgeMesh.html#a83064ef1f92388f61c18465849fc3bdd',1,'HalfedgeMesh::mesh'],['../d8/d4b/classObject.html#a3961b5381a8384cc71246ff15f7be99b',1,'Object::mesh'],['../de/de9/classBVH.html#aa0f8034664ed3b33f9ce38ab17cce377',1,'BVH::mesh']]],
+  ['mesh_6',['mesh',['../dc/d6d/classHalfedgeMesh.html#ac0e037ef9d2d75d37cb9132de5657239',1,'HalfedgeMesh::mesh'],['../d8/d4b/classObject.html#a6c8e1f4729ef14c63c02a716ead3d102',1,'Object::mesh'],['../de/de9/classBVH.html#a4e749d38a525a2f2a88d5f79a1271248',1,'BVH::mesh']]],
   ['metadata_5ffilename_7',['metadata_filename',['../d5/d9c/classScene.html#ac18e094c74b4cec4dea359f5b4649e01',1,'Scene']]],
   ['mirror_5fthreshold_8',['mirror_threshold',['../da/db7/classWhittedRenderer.html#abefb80c7762a3c7d0a23af1cc765d36f',1,'WhittedRenderer']]],
   ['mode_9',['mode',['../d9/d85/classController.html#a2b60e1a9302100c28471c18a46dba481',1,'Controller::mode'],['../d1/d84/classUI_1_1Toolbar.html#add08621ffdcd3f942f5b60b43f562c8f',1,'UI::Toolbar::mode']]],
   ['model_10',['model',['../de/de9/classBVH.html#a361736e4284afa96bc9b713d09f08465',1,'BVH']]],
-  ['modified_11',['modified',['../d8/d4b/classObject.html#abcf908134541bea512ca0148e05f1f44',1,'Object']]],
+  ['modified_11',['modified',['../dc/d6d/classHalfedgeMesh.html#a6580435173d6a8ee5d061d07783d4fca',1,'HalfedgeMesh::modified'],['../da/d29/structMesh.html#ad067c6a7cca5dad49cc8ccfd1b2d932b',1,'Mesh::modified'],['../d5/d11/structLineSet.html#ab4be9a0a7e3fb59a58df4410a4ff77f8',1,'LineSet::modified'],['../d8/d4b/classObject.html#abcf908134541bea512ca0148e05f1f44',1,'Object::modified']]],
   ['mouse_5ftranslation_5ffactor_12',['mouse_translation_factor',['../d9/d85/classController.html#a55561237581cbe501830f6500beeb0d6',1,'Controller']]],
   ['mvp_13',['MVP',['../de/d97/structUniforms.html#abb3ceec66f95622f4f2de92593daa350',1,'Uniforms']]]
 ];

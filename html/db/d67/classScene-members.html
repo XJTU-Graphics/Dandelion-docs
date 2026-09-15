@@ -3,12 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: 成员列表</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../jquery.js"></script>
-<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../codefolding.js"></script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -37,7 +36,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.2</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;2.0.0</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -46,22 +45,47 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.16.1 -->
+<!-- 制作者 Doxygen 1.18.0 -->
 <script type="text/javascript">
-var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+let searchBox = new SearchBox("searchBox", "../../search/",'.html');
 </script>
 <script type="text/javascript">
-$(function() { codefold.init(); });
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "../../",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
 </script>
 <script type="text/javascript" src="../../menudata.js"></script>
 <script type="text/javascript" src="../../menu.js"></script>
-<script type="text/javascript">
-$(function() {
-  initMenu('../../',true,false,'search.php','搜索',true);
-  $(function() { init_search(); });
-});
-</script>
-<div id="main-nav"></div>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -69,20 +93,16 @@ $(function() {
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
+  <div id="splitbar" class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('d5/d9c/classScene.html','../../',''); });
+document.addEventListener('DOMContentLoaded',() => { initNavTree('d5/d9c/classScene.html','../../',''); });
 </script>
 <div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<div id="MSearchSelectWindow">
 </div>
 
 <!-- iframe showing the search results (closed by default) -->
@@ -107,36 +127,44 @@ $(function(){initNavTree('d5/d9c/classScene.html','../../',''); });
 <p>成员的完整列表，这些成员属于 <a class="el" href="../../d5/d9c/classScene.html">Scene</a>,包括所有继承而来的类成员</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#ac5dc85d7716e1ed0577246cb6d2e90e4">all_objects</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a65320ce4e571046f3ebea79b9ef00ece">arrows</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a12d20bba7f24a19e8cda8903f4932cf9">arrows</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#afed13ec4ba2d7ab75b273d507911b498">camera</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a296ce2b55947a1a276ab86291eeeaacf">check_during_simulation</a>()</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a70e5b1218abb729d70d9f41b107017f9">clear</a>()</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a141a7d2999cde438b69442da6bbd6d79">during_animation</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#ad9945ea5e08ef01b32bca712e479a04b">camera_wireframe</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a296ce2b55947a1a276ab86291eeeaacf">check_during_simulation</a>()</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a70e5b1218abb729d70d9f41b107017f9">clear</a>()</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a141a7d2999cde438b69442da6bbd6d79">during_animation</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#ab452a0e6b26d6a11e162c2e4e4e781fb">for_each_object</a>(F &amp;&amp;op)</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a860c69c6cd20cc5b978ae7f6949aaa76">for_each_object</a>(F &amp;&amp;op) const</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a944b5f8490c49543941b4d7ee5d54a30">ground_grid</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a3f024af6f54b5cd0dd3ed11cd875c327">groups</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#aaa74b766e66ccda23ba55490a93db7bb">halfedge_mesh</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a241b8eb86ecfc55d2609a0a8ddfba247">highlighted_element</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a154117eec6e4ba2e7596e4cd869a8b13">highlighted_halfedge</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a6d72bef6cb5c5da1ce1bf996435f0219">import_model</a>(const std::string &amp;file_path)</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a8cebdd74da562c48a746aa6ef11356d9">initial_camera_pos</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a6a3e788c7a69e094096214a8e0d2a341">initial_camera_target</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#ac27383b17bb15fffc17d3e402cf4dcd9">last_update</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a7481b024ed1181823b38c10e663ffea7">lights</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a403e72c40d7176f8216267d8e3881149">load</a>(const std::string_view directory)</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a5d310a617d791b73ab82bc34bcb37f69">logger</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#ab655a448e0c5f29ecd3063d5a4365a66">main_camera</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#ac18e094c74b4cec4dea359f5b4649e01">metadata_filename</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a3dcbf1d49270fea656c0a86b2bacd95c">render</a>(const Shader &amp;shader, WorkingMode mode)</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a538e25d2e438166039cdea0053da344f">render_camera</a>(const Shader &amp;shader)</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a53fbe865bbe45b652ebd137cc2ef39cd">render_ground</a>(const Shader &amp;shader)</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a3b43ea89d6c24ed55d7dd8f5748674eb">render_lights</a>(const Shader &amp;shader)</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#aa214320e724d6822128c72f4645add05">light_indicator</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a7481b024ed1181823b38c10e663ffea7">lights</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a403e72c40d7176f8216267d8e3881149">load</a>(const std::string_view directory)</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a5d310a617d791b73ab82bc34bcb37f69">logger</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#ab655a448e0c5f29ecd3063d5a4365a66">main_camera</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#ac18e094c74b4cec4dea359f5b4649e01">metadata_filename</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a0aa97e355d2c8773a07cb0207a969856">picking_ray</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a22359fce4b3d3f44275aa5d6b2dd3dc1">reset_simulation</a>()</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#ac0275d45f83cbb4bf2e09b1a2587da71">save</a>(const std::string_view directory)</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>Scene</b>() (定义于 <a class="el" href="../../d5/d9c/classScene.html">Scene</a>)</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a2dced7c96389ef0c6688ad20c8d01e81">Scene</a>(Scene &amp;other)=delete</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#ab278e1cce7985696ecccb1f8f113cacb">Scene</a>(const Scene &amp;other)=delete</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#adb7836c08d271fb2f2faebf720d7b5e2">Scene</a>(Scene &amp;&amp;other)=delete</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#adaa5052d36de2f738beaa15dce2a63bd">selected_object</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#aeb092c6c00660da77286cda3d4b1e36f">simulation_update</a>()</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a95c6652f9dab25c674e14c889a0d72db">start_simulation</a>()</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a60ceb60b6635b4750ea7681e358b2185">stop_simulation</a>()</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a0d431accfa7a0a11af276ff876072526">selected_element</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#adaa5052d36de2f738beaa15dce2a63bd">selected_object</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#aeb092c6c00660da77286cda3d4b1e36f">simulation_update</a>()</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a95c6652f9dab25c674e14c889a0d72db">start_simulation</a>()</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a60ceb60b6635b4750ea7681e358b2185">stop_simulation</a>()</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#ab809069462a32e156b53f2746033f636">x_axis</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a140341716dedd0745c91a82b3c3a04b7">y_axis</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d5/d9c/classScene.html#a01a2bb9f779f14a36c208ccd439e16cd">z_axis</a></td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>~Scene</b>()=default (定义于 <a class="el" href="../../d5/d9c/classScene.html">Scene</a>)</td><td class="entry"><a class="el" href="../../d5/d9c/classScene.html">Scene</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
@@ -144,7 +172,7 @@ $(function(){initNavTree('d5/d9c/classScene.html','../../',''); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
   </ul>
 </div>
 </body>

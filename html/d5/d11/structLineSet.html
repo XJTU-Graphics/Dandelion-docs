@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dandelion: LineSet结构体 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../codefolding.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="../../mathjax/es5/tex-chtml.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;2.0.0</span>
+   </div>
+   <div id="projectbrief">A light-weight 3D builder for educational usage</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "../../",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('d5/d11/structLineSet.html','../../','da/d3a/structLineSet-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">LineSet结构体 参考<div class="ingroups"><a class="el" href="../../d9/dba/group__geometry.html">几何处理</a> &#124; <a class="el" href="../../db/d81/group__rendering.html">离线渲染</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>用于同步线条渲染数据的内存对象。  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../da/dc6/mesh_8hpp_source.html">mesh.hpp</a>&gt;</code></p>
+<div class="dynheader">
+类 LineSet 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../d5/d11/structLineSet.png" usemap="#LineSet_map" alt=""/>
+  <map id="LineSet_map" name="LineSet_map">
+<area href="../../d7/d83/structAABBSet.html" title="用于渲染轴对齐包围盒 (AABB) 的特殊线条集。" alt="AABBSet" shape="rect" coords="0,56,65,80"/>
+<area href="../../d6/d5f/structArrowSet.html" title="用于渲染箭头的特殊线条集。" alt="ArrowSet" shape="rect" coords="75,56,140,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aa642ff4003413b5ed98e6396b5a23bb3" id="r_aa642ff4003413b5ed98e6396b5a23bb3"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aa642ff4003413b5ed98e6396b5a23bb3">LineSet</a> ()=default</td></tr>
+<tr class="memitem:ab59021791db6729742ebf6ee75208433" id="r_ab59021791db6729742ebf6ee75208433"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ab59021791db6729742ebf6ee75208433">LineSet</a> (const <a class="el" href="../../d5/d11/structLineSet.html">LineSet</a> &amp;other)=default</td></tr>
+<tr class="memitem:a381c2163377099fd68677835b69fe78e" id="r_a381c2163377099fd68677835b69fe78e"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a381c2163377099fd68677835b69fe78e">LineSet</a> (<a class="el" href="../../d5/d11/structLineSet.html">LineSet</a> &amp;&amp;other)=default</td></tr>
+<tr class="memitem:a325a55c5f8ff24f96cc7ccae5e9045b6" id="r_a325a55c5f8ff24f96cc7ccae5e9045b6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a325a55c5f8ff24f96cc7ccae5e9045b6">add_line</a> (const Eigen::Vector3f &amp;from, const Eigen::Vector3f &amp;to)</td></tr>
+<tr class="memitem:af6b2d9fd00ca1b626de3eb5d11dd2186" id="r_af6b2d9fd00ca1b626de3eb5d11dd2186"><td class="memItemLeft">std::size_t&#160;</td><td class="memItemRight"><a class="el" href="#af6b2d9fd00ca1b626de3eb5d11dd2186">n_lines</a> () const noexcept</td></tr>
+<tr class="memitem:ab38b350e5e76d47e40d3458f771a53b9" id="r_ab38b350e5e76d47e40d3458f771a53b9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab38b350e5e76d47e40d3458f771a53b9">clear</a> () noexcept</td></tr>
+<tr class="memdesc:ab38b350e5e76d47e40d3458f771a53b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">清空 <a class="el" href="../../da/d29/structMesh.html" title="用于同步渲染数据的三角形 Mesh 。">Mesh</a> 中所有的图元数据。  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:afadefcf2242caa0c8c1426a68c9800c4" id="r_afadefcf2242caa0c8c1426a68c9800c4"><td class="memItemLeft">std::vector&lt; Eigen::Vector3f &gt;&#160;</td><td class="memItemRight"><a class="el" href="#afadefcf2242caa0c8c1426a68c9800c4">positions</a></td></tr>
+<tr class="memitem:a37accadd3e4e63cb559166e9afd55c72" id="r_a37accadd3e4e63cb559166e9afd55c72"><td class="memItemLeft">std::vector&lt; std::array&lt; unsigned int, 2 &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a37accadd3e4e63cb559166e9afd55c72">lines</a></td></tr>
+<tr class="memitem:a8125d926563d939174e52af0c4bb6941" id="r_a8125d926563d939174e52af0c4bb6941"><td class="memItemLeft">Eigen::Vector3f&#160;</td><td class="memItemRight"><a class="el" href="#a8125d926563d939174e52af0c4bb6941">color</a></td></tr>
+<tr class="memitem:ab4be9a0a7e3fb59a58df4410a4ff77f8" id="r_ab4be9a0a7e3fb59a58df4410a4ff77f8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ab4be9a0a7e3fb59a58df4410a4ff77f8">modified</a></td></tr>
+<tr class="memitem:a28547234046e2d510db967637c8295dd" id="r_a28547234046e2d510db967637c8295dd"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a28547234046e2d510db967637c8295dd">name</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>用于同步线条渲染数据的内存对象。 </p>
+<p>这个类负责表示可以直接同步到 GPU 的线条数据。</p>
+<p>外界读取顶点和线条数据时一般应该选择 <span class="tt"><a class="el" href="#afadefcf2242caa0c8c1426a68c9800c4">positions</a></span>/<span class="tt">edges</span> 属性，而渲染器需要向 GPU 同步数据时而渲染器需要向 GPU 同步数据时则应该直接使用扁平的 <span class="tt">vector</span> 。</p>
+<p>线条只支持单色渲染，着色效果不受光照的影响。 </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
+<a id="aa642ff4003413b5ed98e6396b5a23bb3" name="aa642ff4003413b5ed98e6396b5a23bb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa642ff4003413b5ed98e6396b5a23bb3">&#9670;&#160;</a></span>LineSet() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LineSet::LineSet </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>默认构造一个空的 <a class="el" href="../../d5/d11/structLineSet.html" title="用于同步线条渲染数据的内存对象。">LineSet</a> 。 </p>
+
+</div>
+</div>
+<a id="ab59021791db6729742ebf6ee75208433" name="ab59021791db6729742ebf6ee75208433"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab59021791db6729742ebf6ee75208433">&#9670;&#160;</a></span>LineSet() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LineSet::LineSet </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/d11/structLineSet.html">LineSet</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>默认复制另一个 <a class="el" href="../../d5/d11/structLineSet.html" title="用于同步线条渲染数据的内存对象。">LineSet</a> 中的所有数据。 </p>
+
+</div>
+</div>
+<a id="a381c2163377099fd68677835b69fe78e" name="a381c2163377099fd68677835b69fe78e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a381c2163377099fd68677835b69fe78e">&#9670;&#160;</a></span>LineSet() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LineSet::LineSet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d11/structLineSet.html">LineSet</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>调用各成员的移动构造。 </p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="a325a55c5f8ff24f96cc7ccae5e9045b6" name="a325a55c5f8ff24f96cc7ccae5e9045b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a325a55c5f8ff24f96cc7ccae5e9045b6">&#9670;&#160;</a></span>add_line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LineSet::add_line </td>
+          <td>(</td>
+          <td class="paramtype">const Eigen::Vector3f &amp;</td>          <td class="paramname"><span class="paramname"><em>from</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Vector3f &amp;</td>          <td class="paramname"><span class="paramname"><em>to</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>添加一条从 <span class="tt">from</span> 到 <span class="tt">to</span> 的线段。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">from</td><td>起始点。 </td></tr>
+    <tr><td class="paramname">to</td><td>终止点。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab38b350e5e76d47e40d3458f771a53b9" name="ab38b350e5e76d47e40d3458f771a53b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab38b350e5e76d47e40d3458f771a53b9">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LineSet::clear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>清空 <a class="el" href="../../da/d29/structMesh.html" title="用于同步渲染数据的三角形 Mesh 。">Mesh</a> 中所有的图元数据。 </p>
+<p>该方法只清空直接保存数据的容器（公有成员），不会清空用于向 GPU 传输数据的 buffer （私有成员）。 </p>
+
+</div>
+</div>
+<a id="af6b2d9fd00ca1b626de3eb5d11dd2186" name="af6b2d9fd00ca1b626de3eb5d11dd2186"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6b2d9fd00ca1b626de3eb5d11dd2186">&#9670;&#160;</a></span>n_lines()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t LineSet::n_lines </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>统计当前总共有多少条线段。 </p><dl class="section return"><dt>返回</dt><dd>线段总数。 </dd></dl>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
+<a id="a8125d926563d939174e52af0c4bb6941" name="a8125d926563d939174e52af0c4bb6941"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8125d926563d939174e52af0c4bb6941">&#9670;&#160;</a></span>color</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Vector3f LineSet::color</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>线条的颜色，每个分量取值范围在 0 到 1 之间。 </p>
+
+</div>
+</div>
+<a id="a37accadd3e4e63cb559166e9afd55c72" name="a37accadd3e4e63cb559166e9afd55c72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37accadd3e4e63cb559166e9afd55c72">&#9670;&#160;</a></span>lines</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::array&lt;unsigned int, 2&gt; &gt; LineSet::lines</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>线条的顶点索引。 </p>
+
+</div>
+</div>
+<a id="ab4be9a0a7e3fb59a58df4410a4ff77f8" name="ab4be9a0a7e3fb59a58df4410a4ff77f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4be9a0a7e3fb59a58df4410a4ff77f8">&#9670;&#160;</a></span>modified</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LineSet::modified</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>相较于上次渲染，该线条集是否被修改过。 </p>
+
+</div>
+</div>
+<a id="a28547234046e2d510db967637c8295dd" name="a28547234046e2d510db967637c8295dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28547234046e2d510db967637c8295dd">&#9670;&#160;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string LineSet::name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>名称。 </p>
+
+</div>
+</div>
+<a id="afadefcf2242caa0c8c1426a68c9800c4" name="afadefcf2242caa0c8c1426a68c9800c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afadefcf2242caa0c8c1426a68c9800c4">&#9670;&#160;</a></span>positions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;Eigen::Vector3f&gt; LineSet::positions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>顶点坐标。 </p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li><a class="el" href="../../da/dc6/mesh_8hpp_source.html">mesh.hpp</a></li>
+<li><b>mesh.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="../../d5/d11/structLineSet.html">LineSet</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

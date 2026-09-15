@@ -3,12 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: 参与贡献</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../jquery.js"></script>
-<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../codefolding.js"></script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -37,7 +36,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.2</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;2.0.0</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -46,22 +45,47 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.16.1 -->
+<!-- 制作者 Doxygen 1.18.0 -->
 <script type="text/javascript">
-var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+let searchBox = new SearchBox("searchBox", "../../search/",'.html');
 </script>
 <script type="text/javascript">
-$(function() { codefold.init(); });
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "../../",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
 </script>
 <script type="text/javascript" src="../../menudata.js"></script>
 <script type="text/javascript" src="../../menu.js"></script>
-<script type="text/javascript">
-$(function() {
-  initMenu('../../',true,false,'search.php','搜索',true);
-  $(function() { init_search(); });
-});
-</script>
-<div id="main-nav"></div>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -69,20 +93,16 @@ $(function() {
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
+  <div id="splitbar" class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('da/d2c/startup.html','../../',''); });
+document.addEventListener('DOMContentLoaded',() => { initNavTree('da/d2c/startup.html','../../',''); });
 </script>
 <div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<div id="MSearchSelectWindow">
 </div>
 
 <!-- iframe showing the search results (closed by default) -->
@@ -170,8 +190,8 @@ $(function(){initNavTree('da/d2c/startup.html','../../',''); });
 <div class="line"><span class="comment">    /*! \~chinese 构造函数是私有的。 */</span></div>
 <div class="line">    <a class="code hl_function" href="../../d9/d85/classController.html#a95c56822d667e94b031451729ce069a9">Controller</a>();</div>
 <div class="line">};</div>
-<div class="ttc" id="aclassController_html"><div class="ttname"><a href="../../d9/d85/classController.html">Controller</a></div><div class="ttdoc">控制器管理所有的界面组件，并处理和预览视角操作（例如旋转、缩放或者平移）相关的输入。</div><div class="ttdef"><b>定义</b> controller.h:38</div></div>
-<div class="ttc" id="aclassController_html_a142bc68626ef6319295599d939e56cf0"><div class="ttname"><a href="../../d9/d85/classController.html#a142bc68626ef6319295599d939e56cf0">Controller::on_framebuffer_resized</a></div><div class="ttdeci">void on_framebuffer_resized(float width, float height)</div><div class="ttdoc">在缩放窗口时调整轨迹球半径、预览视角（相机）Y 方向的 FoV，并更新自身记录的窗口尺寸。</div><div class="ttdef"><b>定义</b> controller.cpp:146</div></div>
+<div class="ttc" id="aclassController_html"><div class="ttname"><a href="../../d9/d85/classController.html">Controller</a></div><div class="ttdoc">控制器管理所有的界面组件，并处理和预览视角操作（例如旋转、缩放或者平移）相关的输入。</div><div class="ttdef"><b>定义</b> controller.h:37</div></div>
+<div class="ttc" id="aclassController_html_a142bc68626ef6319295599d939e56cf0"><div class="ttname"><a href="../../d9/d85/classController.html#a142bc68626ef6319295599d939e56cf0">Controller::on_framebuffer_resized</a></div><div class="ttdeci">void on_framebuffer_resized(float width, float height)</div><div class="ttdoc">在缩放窗口时调整轨迹球半径、预览视角（相机）Y 方向的 FoV，并更新自身记录的窗口尺寸。</div><div class="ttdef"><b>定义</b> controller.cpp:150</div></div>
 <div class="ttc" id="aclassController_html_a567c43e7750582fe306bf36f90e41393"><div class="ttname"><a href="../../d9/d85/classController.html#a567c43e7750582fe306bf36f90e41393">Controller::operator=</a></div><div class="ttdeci">Controller &amp; operator=(Controller &amp;other)=delete</div></div>
 <div class="ttc" id="aclassController_html_a6301902226747ccdef81ee281c9abc6e"><div class="ttname"><a href="../../d9/d85/classController.html#a6301902226747ccdef81ee281c9abc6e">Controller::controller</a></div><div class="ttdeci">static Controller &amp; controller()</div><div class="ttdoc">获取 Controller 类的唯一实例。</div><div class="ttdef"><b>定义</b> controller.cpp:34</div></div>
 <div class="ttc" id="aclassController_html_a95c56822d667e94b031451729ce069a9"><div class="ttname"><a href="../../d9/d85/classController.html#a95c56822d667e94b031451729ce069a9">Controller::Controller</a></div><div class="ttdeci">Controller()</div><div class="ttdef"><b>定义</b> controller.cpp:40</div></div>
@@ -257,7 +277,7 @@ XJTU-Graphics 组织成员</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
   </ul>
 </div>
 </body>

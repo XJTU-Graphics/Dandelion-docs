@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dandelion: PreviewRenderer类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../codefolding.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="../../mathjax/es5/tex-chtml.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;2.0.0</span>
+   </div>
+   <div id="projectbrief">A light-weight 3D builder for educational usage</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "../../",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('d0/dd8/classPreviewRenderer.html','../../','dd/d95/classPreviewRenderer-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">PreviewRenderer类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>用于实时预览的渲染器。  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../db/d5f/preview__renderer_8h_source.html">preview_renderer.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a06d0f8e3af727f568f3a00168b26b4b7" id="r_a06d0f8e3af727f568f3a00168b26b4b7"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a06d0f8e3af727f568f3a00168b26b4b7">PreviewRenderer</a> ()</td></tr>
+<tr class="memitem:a3706acd7bf5c06d02d3097b156b67fdd" id="r_a3706acd7bf5c06d02d3097b156b67fdd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3706acd7bf5c06d02d3097b156b67fdd">compile_shaders</a> ()</td></tr>
+<tr class="memitem:a49a5081a5f27538849487b29d2536c31" id="r_a49a5081a5f27538849487b29d2536c31"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a49a5081a5f27538849487b29d2536c31">delete_shaders</a> ()</td></tr>
+<tr class="memitem:af57d524f14558450ff1b5891494e5ff9" id="r_af57d524f14558450ff1b5891494e5ff9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af57d524f14558450ff1b5891494e5ff9">delete_drawable_resources</a> ()</td></tr>
+<tr class="memitem:a8d830ce3cc4386ce24cc5d27289b504e" id="r_a8d830ce3cc4386ce24cc5d27289b504e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8d830ce3cc4386ce24cc5d27289b504e">render</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene, <a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> mode, const <a class="el" href="../../d3/dd6/structDebugOptions.html">DebugOptions</a> &amp;debug_options)</td></tr>
+<tr class="memdesc:a8d830ce3cc4386ce24cc5d27289b504e"><td class="mdescLeft">&#160;</td><td class="mdescRight">渲染一帧的画面。  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a2b78c4ab0187c3f370998adef8fd0ac9" id="r_a2b78c4ab0187c3f370998adef8fd0ac9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2b78c4ab0187c3f370998adef8fd0ac9">fill_drawable_mesh</a> (const <a class="el" href="../../da/d29/structMesh.html">Mesh</a> &amp;mesh, <a class="el" href="../../d7/d5e/structGL_1_1DrawableMesh.html">GL::DrawableMesh</a> &amp;drawable_mesh)</td></tr>
+<tr class="memitem:a61a04ba1ee76b2314af82ea1338dd03e" id="r_a61a04ba1ee76b2314af82ea1338dd03e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a61a04ba1ee76b2314af82ea1338dd03e">fill_drawable_lineset</a> (const <a class="el" href="../../d5/d11/structLineSet.html">LineSet</a> &amp;lineset, <a class="el" href="../../d9/d38/structGL_1_1DrawableLineSet.html">GL::DrawableLineSet</a> &amp;drawable_lineset)</td></tr>
+<tr class="memitem:a7c7b18c884fe3580fc66c669d84fa0c2" id="r_a7c7b18c884fe3580fc66c669d84fa0c2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7c7b18c884fe3580fc66c669d84fa0c2">update_drawable_meshes</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
+<tr class="memitem:a4700daff00e09ebd55773e95c6f7277c" id="r_a4700daff00e09ebd55773e95c6f7277c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4700daff00e09ebd55773e95c6f7277c">update_drawable_linesets</a> (<a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene)</td></tr>
+<tr class="memitem:ac4932fdfb39a1ee089629050cdf8b23f" id="r_ac4932fdfb39a1ee089629050cdf8b23f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac4932fdfb39a1ee089629050cdf8b23f">render_selected_object</a> (const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;scene, <a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a> mode)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:ab29bf3e5d50fa087469f7cf0f613922d" id="r_ab29bf3e5d50fa087469f7cf0f613922d"><td class="memItemLeft"><a id="ab29bf3e5d50fa087469f7cf0f613922d" name="ab29bf3e5d50fa087469f7cf0f613922d"></a>
+std::unique_ptr&lt; <a class="el" href="../../d9/d69/classShader.html">Shader</a> &gt;&#160;</td><td class="memItemRight"><b>primitive_shader</b></td></tr>
+<tr class="memitem:ab1dd56fff9aad68539307cbc6f6d7fd1" id="r_ab1dd56fff9aad68539307cbc6f6d7fd1"><td class="memItemLeft"><a id="ab1dd56fff9aad68539307cbc6f6d7fd1" name="ab1dd56fff9aad68539307cbc6f6d7fd1"></a>
+std::unique_ptr&lt; <a class="el" href="../../d9/d69/classShader.html">Shader</a> &gt;&#160;</td><td class="memItemRight"><b>phong_shader</b></td></tr>
+<tr class="memitem:a018c14cd0ae735de28af0371cb51fa03" id="r_a018c14cd0ae735de28af0371cb51fa03"><td class="memItemLeft"><a id="a018c14cd0ae735de28af0371cb51fa03" name="a018c14cd0ae735de28af0371cb51fa03"></a>
+std::unordered_map&lt; const <a class="el" href="../../da/d29/structMesh.html">Mesh</a> *, std::unique_ptr&lt; <a class="el" href="../../d7/d5e/structGL_1_1DrawableMesh.html">GL::DrawableMesh</a> &gt; &gt;&#160;</td><td class="memItemRight"><b>general_meshes</b></td></tr>
+<tr class="memitem:a438c1ce2f2d4e23ab07bb092f79224a0" id="r_a438c1ce2f2d4e23ab07bb092f79224a0"><td class="memItemLeft"><a id="a438c1ce2f2d4e23ab07bb092f79224a0" name="a438c1ce2f2d4e23ab07bb092f79224a0"></a>
+std::unordered_map&lt; const <a class="el" href="../../d5/d11/structLineSet.html">LineSet</a> *, std::unique_ptr&lt; <a class="el" href="../../d9/d38/structGL_1_1DrawableLineSet.html">GL::DrawableLineSet</a> &gt; &gt;&#160;</td><td class="memItemRight"><b>general_linesets</b></td></tr>
+<tr class="memitem:a1b8276ca6065cf3562bbb882a982c0e1" id="r_a1b8276ca6065cf3562bbb882a982c0e1"><td class="memItemLeft"><a id="a1b8276ca6065cf3562bbb882a982c0e1" name="a1b8276ca6065cf3562bbb882a982c0e1"></a>
+std::unordered_map&lt; const <a class="el" href="../../da/d29/structMesh.html">Mesh</a> *, std::unique_ptr&lt; <a class="el" href="../../d7/d5e/structGL_1_1DrawableMesh.html">GL::DrawableMesh</a> &gt; &gt;&#160;</td><td class="memItemRight"><b>overlay_meshes</b></td></tr>
+<tr class="memitem:a7486b4cd2a5a17f22abba78002f7e026" id="r_a7486b4cd2a5a17f22abba78002f7e026"><td class="memItemLeft"><a id="a7486b4cd2a5a17f22abba78002f7e026" name="a7486b4cd2a5a17f22abba78002f7e026"></a>
+std::unordered_map&lt; const <a class="el" href="../../d5/d11/structLineSet.html">LineSet</a> *, std::unique_ptr&lt; <a class="el" href="../../d9/d38/structGL_1_1DrawableLineSet.html">GL::DrawableLineSet</a> &gt; &gt;&#160;</td><td class="memItemRight"><b>overlay_linesets</b></td></tr>
+<tr class="memitem:a349dd8c1c7ad4f89b65b154203cfa4f4" id="r_a349dd8c1c7ad4f89b65b154203cfa4f4"><td class="memItemLeft"><a id="a349dd8c1c7ad4f89b65b154203cfa4f4" name="a349dd8c1c7ad4f89b65b154203cfa4f4"></a>
+std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight"><b>logger</b></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>用于实时预览的渲染器。 </p>
+<p><span class="tt"><a class="el" href="../../d0/dd8/classPreviewRenderer.html" title="用于实时预览的渲染器。">PreviewRenderer</a></span> 在形式上与离线渲染器相似，但并不受 <span class="tt"><a class="el" href="../../d3/d2f/classRenderEngine.html" title="离线渲染的执行入口">RenderEngine</a></span> 的管理。 </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
+<a id="a06d0f8e3af727f568f3a00168b26b4b7" name="a06d0f8e3af727f568f3a00168b26b4b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06d0f8e3af727f568f3a00168b26b4b7">&#9670;&#160;</a></span>PreviewRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PreviewRenderer::PreviewRenderer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>构造渲染器。因为 OpenGL shader 需要在 context 初始化之后再编译， 所以 shader 相关的初始化操作需要单独调用 <span class="tt"><a class="el" href="#a3706acd7bf5c06d02d3097b156b67fdd">compile_shaders</a></span> 方法。 </p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="a3706acd7bf5c06d02d3097b156b67fdd" name="a3706acd7bf5c06d02d3097b156b67fdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3706acd7bf5c06d02d3097b156b67fdd">&#9670;&#160;</a></span>compile_shaders()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PreviewRenderer::compile_shaders </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>加载并编译编译 OpenGL shader 。 </p>
+
+</div>
+</div>
+<a id="af57d524f14558450ff1b5891494e5ff9" name="af57d524f14558450ff1b5891494e5ff9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af57d524f14558450ff1b5891494e5ff9">&#9670;&#160;</a></span>delete_drawable_resources()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PreviewRenderer::delete_drawable_resources </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>释放所有使用了 OpenGL VAO/VBO/EBO 的可渲染对象。 </p>
+
+</div>
+</div>
+<a id="a49a5081a5f27538849487b29d2536c31" name="a49a5081a5f27538849487b29d2536c31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49a5081a5f27538849487b29d2536c31">&#9670;&#160;</a></span>delete_shaders()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PreviewRenderer::delete_shaders </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>删除 OpenGL shader 。 </p>
+
+</div>
+</div>
+<a id="a61a04ba1ee76b2314af82ea1338dd03e" name="a61a04ba1ee76b2314af82ea1338dd03e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61a04ba1ee76b2314af82ea1338dd03e">&#9670;&#160;</a></span>fill_drawable_lineset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PreviewRenderer::fill_drawable_lineset </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/d11/structLineSet.html">LineSet</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>lineset</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d38/structGL_1_1DrawableLineSet.html">GL::DrawableLineSet</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>drawable_lineset</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>将 <span class="tt"><a class="el" href="../../d5/d11/structLineSet.html" title="用于同步线条渲染数据的内存对象。">LineSet</a></span> 对象中的几何数据同步到 <span class="tt"><a class="el" href="../../d9/d38/structGL_1_1DrawableLineSet.html" title="保存 GPU 所需几何数据的渲染线条集。">GL::DrawableLineSet</a></span> 中，并将数据传输到显存。 该方法不会重置 <span class="tt">lineset</span> 的 <span class="tt">modified</span> 脏标记。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lineset</td><td>数据源线条集 </td></tr>
+    <tr><td class="paramname">drawable_lineset</td><td>要填充并传输到显存的渲染线条集 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2b78c4ab0187c3f370998adef8fd0ac9" name="a2b78c4ab0187c3f370998adef8fd0ac9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b78c4ab0187c3f370998adef8fd0ac9">&#9670;&#160;</a></span>fill_drawable_mesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PreviewRenderer::fill_drawable_mesh </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/d29/structMesh.html">Mesh</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>mesh</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5e/structGL_1_1DrawableMesh.html">GL::DrawableMesh</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>drawable_mesh</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>将 <span class="tt"><a class="el" href="../../da/d29/structMesh.html" title="用于同步渲染数据的三角形 Mesh 。">Mesh</a></span> 对象中的几何数据同步到 <span class="tt"><a class="el" href="../../d7/d5e/structGL_1_1DrawableMesh.html" title="保存 GPU 所需几何数据的渲染 Mesh 。">GL::DrawableMesh</a></span> 中，并将数据传输到显存。 该方法不会重置 <span class="tt">mesh</span> 的 <span class="tt">modified</span> 脏标记。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>数据源 <a class="el" href="../../da/d29/structMesh.html" title="用于同步渲染数据的三角形 Mesh 。">Mesh</a> </td></tr>
+    <tr><td class="paramname">drawable_mesh</td><td>要填充并传输到显存的渲染 <a class="el" href="../../da/d29/structMesh.html" title="用于同步渲染数据的三角形 Mesh 。">Mesh</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8d830ce3cc4386ce24cc5d27289b504e" name="a8d830ce3cc4386ce24cc5d27289b504e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d830ce3cc4386ce24cc5d27289b504e">&#9670;&#160;</a></span>render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PreviewRenderer::render </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d3/dd6/structDebugOptions.html">DebugOptions</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>debug_options</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>渲染一帧的画面。 </p>
+<p>该方法会按需更新 GPU 数据、发起所有的 draw call ，但不会交换 back buffer 与 front buffer ，因此不会直接引发画面更新。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scene</td><td>渲染的场景 </td></tr>
+    <tr><td class="paramname">mode</td><td>当前的工作模式，这决定了场景的渲染方式。 </td></tr>
+    <tr><td class="paramname">debug_options</td><td>当前的调试选项，这决定了用于调试的特殊图元是否被渲染。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac4932fdfb39a1ee089629050cdf8b23f" name="ac4932fdfb39a1ee089629050cdf8b23f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4932fdfb39a1ee089629050cdf8b23f">&#9670;&#160;</a></span>render_selected_object()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PreviewRenderer::render_selected_object </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/df7/rendering_8hpp.html#a1352c5fcb6cfad612ba26a0e91355bcb">WorkingMode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>有物体被选中时，渲染这个物体的线框作为标记。 </p>
+
+</div>
+</div>
+<a id="a4700daff00e09ebd55773e95c6f7277c" name="a4700daff00e09ebd55773e95c6f7277c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4700daff00e09ebd55773e95c6f7277c">&#9670;&#160;</a></span>update_drawable_linesets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PreviewRenderer::update_drawable_linesets </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>将场景中所有的 <span class="tt"><a class="el" href="../../d5/d11/structLineSet.html" title="用于同步线条渲染数据的内存对象。">LineSet</a></span> 几何数据同步到 <span class="tt"><a class="el" href="../../d9/d38/structGL_1_1DrawableLineSet.html" title="保存 GPU 所需几何数据的渲染线条集。">GL::DrawableLineSet</a></span> 。 </p>
+
+</div>
+</div>
+<a id="a7c7b18c884fe3580fc66c669d84fa0c2" name="a7c7b18c884fe3580fc66c669d84fa0c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c7b18c884fe3580fc66c669d84fa0c2">&#9670;&#160;</a></span>update_drawable_meshes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PreviewRenderer::update_drawable_meshes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d9c/classScene.html">Scene</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>将场景中所有的 <span class="tt"><a class="el" href="../../da/d29/structMesh.html" title="用于同步渲染数据的三角形 Mesh 。">Mesh</a></span> 几何数据同步到 <span class="tt"><a class="el" href="../../d7/d5e/structGL_1_1DrawableMesh.html" title="保存 GPU 所需几何数据的渲染 Mesh 。">GL::DrawableMesh</a></span> 。 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="../../db/d5f/preview__renderer_8h_source.html">preview_renderer.h</a></li>
+<li><b>preview_renderer.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="../../d0/dd8/classPreviewRenderer.html">PreviewRenderer</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

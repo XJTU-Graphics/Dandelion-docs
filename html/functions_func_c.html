@@ -3,12 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: 类成员 - 函数</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -37,7 +36,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.2</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;2.0.0</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -46,22 +45,47 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.16.1 -->
+<!-- 制作者 Doxygen 1.18.0 -->
 <script type="text/javascript">
-var searchBox = new SearchBox("searchBox", "search/",'.html');
+let searchBox = new SearchBox("searchBox", "search/",'.html');
 </script>
 <script type="text/javascript">
-$(function() { codefold.init(); });
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-$(function() {
-  initMenu('',true,false,'search.php','搜索',true);
-  $(function() { init_search(); });
-});
-</script>
-<div id="main-nav"></div>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -69,20 +93,16 @@ $(function() {
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
+  <div id="splitbar" class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('functions_func_c.html','',''); });
+document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_func_c.html','',''); });
 </script>
 <div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<div id="MSearchSelectWindow">
 </div>
 
 <!-- iframe showing the search results (closed by default) -->
@@ -100,7 +120,9 @@ $(function(){initNavTree('functions_func_c.html','',''); });
 </div>
 
 <div class="contents">
-<div class="textblock">这里是所有文档化的函数, 及指向类中所有成员文档的链接: </div>
+<div class="textblock">这里是所有文档化的函数, 及指向类中所有成员文档的链接: </div><br/>
+<div class="qindex"><a class="qindex" href="functions_func.html#index_a">A</a><div class="alphasepar"></div><a class="qindex" href="functions_func_b.html#index_b">B</a><div class="alphasepar"></div><a class="qindex" href="functions_func_c.html#index_c">C</a><div class="alphasepar"></div><a class="qindex" href="functions_func_d.html#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="functions_func_e.html#index_e">E</a><div class="alphasepar"></div><a class="qindex" href="functions_func_f.html#index_f">F</a><div class="alphasepar"></div><a class="qindex" href="functions_func_g.html#index_g">G</a><div class="alphasepar"></div><a class="qindex" href="functions_func_h.html#index_h">H</a><div class="alphasepar"></div><a class="qindex" href="functions_func_i.html#index_i">I</a><div class="alphasepar"></div><a class="qindex" href="functions_func_l.html#index_l">L</a><div class="alphasepar"></div><a class="qindex" href="functions_func_m.html#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="functions_func_n.html#index_n">N</a><div class="alphasepar"></div><a class="qindex" href="functions_func_o.html#index_o">O</a><div class="alphasepar"></div><a class="qindex" href="functions_func_p.html#index_p">P</a><div class="alphasepar"></div><a class="qindex" href="functions_func_r.html#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="functions_func_s.html#index_s">S</a><div class="alphasepar"></div><a class="qindex" href="functions_func_t.html#index_t">T</a><div class="alphasepar"></div><a class="qindex" href="functions_func_u.html#index_u">U</a><div class="alphasepar"></div><a class="qindex" href="functions_func_v.html#index_v">V</a><div class="alphasepar"></div><a class="qindex" href="functions_func_w.html#index_w">W</a><div class="alphasepar"></div><a class="qindex" href="functions_func_x.html#index_x">X</a><div class="alphasepar"></div><a class="qindex" href="functions_func_~.html#index_~">~</a></div>
+
 
 <h3 class="doxsection"><a id="index_c" name="index_c"></a>- c -</h3><ul>
 <li>Camera()&#160;:&#160;<a class="el" href="d7/d7e/structCamera.html#a1207b991b04502fb760f76be67530119">Camera</a></li>
@@ -108,9 +130,10 @@ $(function(){initNavTree('functions_func_c.html','',''); });
 <li>center()&#160;:&#160;<a class="el" href="d2/d4f/structEdge.html#afa0c8c4bf79654fb6558abd37c5a0ed0">Edge</a>, <a class="el" href="d0/d02/structFace.html#a86a8ab16976ba8c9ad86f1ad3b2ae7d1">Face</a></li>
 <li>centroid()&#160;:&#160;<a class="el" href="d2/d1a/classAABB.html#a710d0fc9af1c42bf850ff900aecf015b">AABB</a></li>
 <li>check_during_simulation()&#160;:&#160;<a class="el" href="d5/d9c/classScene.html#a296ce2b55947a1a276ab86291eeeaacf">Scene</a></li>
-<li>clear()&#160;:&#160;<a class="el" href="dc/d5b/classFrameBuffer.html#ac18ac65f8408c16c944c1be0778c6ce6">FrameBuffer</a>, <a class="el" href="d4/d91/structGL_1_1LineSet.html#ae828a479016a57b411291662f3ab7d16">GL::LineSet</a>, <a class="el" href="d8/d88/structGL_1_1Mesh.html#a7008e23cbaacd2878b7e81a01ac5d96b">GL::Mesh</a>, <a class="el" href="d5/d9c/classScene.html#a70e5b1218abb729d70d9f41b107017f9">Scene</a></li>
+<li>clear()&#160;:&#160;<a class="el" href="dc/d5b/classFrameBuffer.html#ac18ac65f8408c16c944c1be0778c6ce6">FrameBuffer</a>, <a class="el" href="d9/d38/structGL_1_1DrawableLineSet.html#a7fec7def1e1021b0ff5f915ec19cfae0">GL::DrawableLineSet</a>, <a class="el" href="d7/d5e/structGL_1_1DrawableMesh.html#ae707333badeb5ed8d217c7023df4b6c8">GL::DrawableMesh</a>, <a class="el" href="d5/d11/structLineSet.html#ab38b350e5e76d47e40d3458f771a53b9">LineSet</a>, <a class="el" href="da/d29/structMesh.html#a17a64599b5726f6b4d505fd7ae51e684">Mesh</a>, <a class="el" href="d5/d9c/classScene.html#a70e5b1218abb729d70d9f41b107017f9">Scene</a></li>
 <li>clear_erasure_records()&#160;:&#160;<a class="el" href="dc/d6d/classHalfedgeMesh.html#adf741dc10d78ce517ae4fb16233254ec">HalfedgeMesh</a></li>
 <li>collapse_edge()&#160;:&#160;<a class="el" href="dc/d6d/classHalfedgeMesh.html#a021cc1d95882fa97e294dcc508569b5d">HalfedgeMesh</a></li>
+<li>compile_shaders()&#160;:&#160;<a class="el" href="d0/dd8/classPreviewRenderer.html#a3706acd7bf5c06d02d3097b156b67fdd">PreviewRenderer</a></li>
 <li>compute_barycentric_2d()&#160;:&#160;<a class="el" href="d3/d7a/classRasterizer.html#afecb95c7771bd5a41030a78669ac48ef">Rasterizer</a></li>
 <li>Controller()&#160;:&#160;<a class="el" href="d9/d85/classController.html#adb5f21653407293de30f649a8d2fc52c">Controller</a></li>
 <li>controller()&#160;:&#160;<a class="el" href="d9/d85/classController.html#a6301902226747ccdef81ee281c9abc6e">Controller</a></li>
@@ -124,7 +147,7 @@ $(function(){initNavTree('functions_func_c.html','',''); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
   </ul>
 </div>
 </body>

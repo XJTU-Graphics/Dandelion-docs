@@ -3,12 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: 成员列表</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../jquery.js"></script>
-<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../codefolding.js"></script>
 <script type="text/javascript" src="../../clipboard.js"></script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
@@ -37,7 +36,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.2</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;2.0.0</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -46,22 +45,47 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.16.1 -->
+<!-- 制作者 Doxygen 1.18.0 -->
 <script type="text/javascript">
-var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+let searchBox = new SearchBox("searchBox", "../../search/",'.html');
 </script>
 <script type="text/javascript">
-$(function() { codefold.init(); });
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "../../",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
 </script>
 <script type="text/javascript" src="../../menudata.js"></script>
 <script type="text/javascript" src="../../menu.js"></script>
-<script type="text/javascript">
-$(function() {
-  initMenu('../../',true,false,'search.php','搜索',true);
-  $(function() { init_search(); });
-});
-</script>
-<div id="main-nav"></div>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -69,20 +93,16 @@ $(function() {
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
+  <div id="splitbar" class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('dc/d6d/classHalfedgeMesh.html','../../',''); });
+document.addEventListener('DOMContentLoaded',() => { initNavTree('dc/d6d/classHalfedgeMesh.html','../../',''); });
 </script>
 <div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<div id="MSearchSelectWindow">
 </div>
 
 <!-- iframe showing the search results (closed by default) -->
@@ -120,27 +140,25 @@ $(function(){initNavTree('dc/d6d/classHalfedgeMesh.html','../../',''); });
   <tr class="odd"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a3e4d4472c21ee0c5bb36dedecafd0857">error_info</a></td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#aa68bf2492d3d1dcb69eec50656b61b21">faces</a></td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#afb40de06ac1625aac7136b9da4727d9e">flip_edge</a>(Edge *e)</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#af5a3b8bbc464e803ad81e6879c80be62">global_inconsistent</a></td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#ad2362249fef8a0c2bf90b3f84e64989c">h_indices</a></td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a8df032b9f42e7234027c6657c36e5f05">halfedge_arrow_endpoints</a>(const Halfedge *h)</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a35ffb9ef22970a6a808a82e97899612c">halfedge_arrows</a></td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#afee59ddbb09b6ddd751e74cc5a8664f9">HalfedgeMesh</a>(Object &amp;object)</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a1214b2ccc858ceb5d5967ba9e9792006">HalfedgeMesh</a>(HalfedgeMesh &amp;other)=delete</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a52add04034d022864df496b87b212e97">halfedges</a></td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#ae8ff22838772ef95a905a84ba80426a4">inconsistent_element</a></td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#ad2362249fef8a0c2bf90b3f84e64989c">h_indices</a></td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a8df032b9f42e7234027c6657c36e5f05">halfedge_arrow_endpoints</a>(const Halfedge *h)</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a9031e7f35532e16343432eb698e208f2">halfedge_arrows</a></td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#afee59ddbb09b6ddd751e74cc5a8664f9">HalfedgeMesh</a>(Object &amp;object)</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a1214b2ccc858ceb5d5967ba9e9792006">HalfedgeMesh</a>(HalfedgeMesh &amp;other)=delete</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a52add04034d022864df496b87b212e97">halfedges</a></td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a59fa9525c54738f4c5c8aca8fe0ae149">isotropic_remesh</a>()</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a37aa317f68032db7f5cd80e9e7c153df">logger</a></td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a195964f7408299d4733b1566487c43f5">loop_subdivide</a>()</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a83064ef1f92388f61c18465849fc3bdd">mesh</a></td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a6d1f8dc7b7973b0a5d133cd9b9ac5cd3">new_edge</a>()</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a19cdd6ee69d015c4d73235ccfe61cff8">new_face</a>(bool is_boundary=false)</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a11fb68a9c539b85f208b09337d35a831">new_halfedge</a>()</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a7d376f5935581aff1d04716d063f4d4d">new_vertex</a>()</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#ad6e3b18210454fe312f8182c8f268f1b">next_available_id</a></td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a2b75868a73c98d202d63dfbbb6dbeb32">object</a></td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a1ad10e1953ae22e1a300557d5f653449">operator&lt;</a>(const EdgeRecord &amp;a, const EdgeRecord &amp;b)</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#ac5690ed2bfc1ca3557aa06beb14ed158">regenerate_halfedge_arrows</a>()</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a581d002e76229508e3970fe1c29038ab">render</a>(const Shader &amp;shader)</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#ac0e037ef9d2d75d37cb9132de5657239">mesh</a></td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a6580435173d6a8ee5d061d07783d4fca">modified</a></td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a6d1f8dc7b7973b0a5d133cd9b9ac5cd3">new_edge</a>()</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a19cdd6ee69d015c4d73235ccfe61cff8">new_face</a>(bool is_boundary=false)</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a11fb68a9c539b85f208b09337d35a831">new_halfedge</a>()</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a7d376f5935581aff1d04716d063f4d4d">new_vertex</a>()</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#ad6e3b18210454fe312f8182c8f268f1b">next_available_id</a></td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a2b75868a73c98d202d63dfbbb6dbeb32">object</a></td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#a1ad10e1953ae22e1a300557d5f653449">operator&lt;</a>(const EdgeRecord &amp;a, const EdgeRecord &amp;b)</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#ac5690ed2bfc1ca3557aa06beb14ed158">regenerate_halfedge_arrows</a>()</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#aeeb36cfa269c11ae95d78ffebfae16b8">simplify</a>()</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#ac4dd8462c5e705f60d71fd5902e5eb1c">split_edge</a>(Edge *e)</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html#ab295001966ae2ead2713033ba1365720">sync</a>()</td><td class="entry"><a class="el" href="../../dc/d6d/classHalfedgeMesh.html">HalfedgeMesh</a></td><td class="entry"></td></tr>
@@ -155,7 +173,7 @@ $(function(){initNavTree('dc/d6d/classHalfedgeMesh.html','../../',''); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
   </ul>
 </div>
 </body>

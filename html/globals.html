@@ -3,12 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dandelion: 文件成员</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -37,7 +36,7 @@ window.MathJax = {
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="dandelion_32.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Dandelion<span id="projectnumber">&#160;1.1.2</span>
+   <div id="projectname">Dandelion<span id="projectnumber">&#160;2.0.0</span>
    </div>
    <div id="projectbrief">A light-weight 3D builder for educational usage</div>
   </td>
@@ -46,22 +45,47 @@ window.MathJax = {
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.16.1 -->
+<!-- 制作者 Doxygen 1.18.0 -->
 <script type="text/javascript">
-var searchBox = new SearchBox("searchBox", "search/",'.html');
+let searchBox = new SearchBox("searchBox", "search/",'.html');
 </script>
 <script type="text/javascript">
-$(function() { codefold.init(); });
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-$(function() {
-  initMenu('',true,false,'search.php','搜索',true);
-  $(function() { init_search(); });
-});
-</script>
-<div id="main-nav"></div>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -69,20 +93,16 @@ $(function() {
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
+  <div id="splitbar" class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('globals.html','',''); });
+document.addEventListener('DOMContentLoaded',() => { initNavTree('globals.html','',''); });
 </script>
 <div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<div id="MSearchSelectWindow">
 </div>
 
 <!-- iframe showing the search results (closed by default) -->
@@ -100,7 +120,9 @@ $(function(){initNavTree('globals.html','',''); });
 </div>
 
 <div class="contents">
-<div class="textblock">这里列出了所有文档化的文件成员，并附带其详细说明:</div>
+<div class="textblock">这里列出了所有文档化的文件成员，并附带其详细说明:</div><br/>
+<div class="qindex"><a class="qindex" href="#index_b">B</a><div class="alphasepar"></div><a class="qindex" href="#index_c">C</a><div class="alphasepar"></div><a class="qindex" href="#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="#index_f">F</a><div class="alphasepar"></div><a class="qindex" href="#index_g">G</a><div class="alphasepar"></div><a class="qindex" href="#index_h">H</a><div class="alphasepar"></div><a class="qindex" href="#index_i">I</a><div class="alphasepar"></div><a class="qindex" href="#index_l">L</a><div class="alphasepar"></div><a class="qindex" href="#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="#index_n">N</a><div class="alphasepar"></div><a class="qindex" href="#index_p">P</a><div class="alphasepar"></div><a class="qindex" href="#index_q">Q</a><div class="alphasepar"></div><a class="qindex" href="#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="#index_s">S</a><div class="alphasepar"></div><a class="qindex" href="#index_t">T</a><div class="alphasepar"></div><a class="qindex" href="#index_u">U</a><div class="alphasepar"></div><a class="qindex" href="#index_v">V</a><div class="alphasepar"></div><a class="qindex" href="#index_w">W</a></div>
+
 
 <h3 class="doxsection"><a id="index_b" name="index_b"></a>- b -</h3><ul>
 <li>backward_euler_step()&#160;:&#160;<a class="el" href="d4/d20/solver_8h.html#a0e9a67b000cd934b584bda19d460c837">solver.h</a></li>
@@ -115,6 +137,8 @@ $(function(){initNavTree('globals.html','',''); });
 
 
 <h3 class="doxsection"><a id="index_d" name="index_d"></a>- d -</h3><ul>
+<li>default_face_color()&#160;:&#160;<a class="el" href="dc/df7/rendering_8hpp.html#a74ae95713078daddeca3d98b75bd34d9">rendering.hpp</a></li>
+<li>default_wireframe_color()&#160;:&#160;<a class="el" href="dc/df7/rendering_8hpp.html#a4184c300a457555db7eea33ff35b734d">rendering.hpp</a></li>
 <li>degrees()&#160;:&#160;<a class="el" href="db/d81/group__utils.html#ga69c7787a7d4d90c5abd1cd155532202f">math.hpp</a></li>
 </ul>
 
@@ -126,13 +150,15 @@ $(function(){initNavTree('globals.html','',''); });
 
 <h3 class="doxsection"><a id="index_g" name="index_g"></a>- g -</h3><ul>
 <li>generate_ray()&#160;:&#160;<a class="el" href="db/d81/group__rendering.html#ga058f7f5f254453b5df93c093ebde122a">ray.h</a></li>
-<li>get_aabb()&#160;:&#160;<a class="el" href="da/d70/aabb_8h.html#a57c55234c2237bd8e3c68da0a930c095">aabb.h</a></li>
+<li>get_aabb()&#160;:&#160;<a class="el" href="da/d70/aabb_8h.html#a06508b7a0bbf3b799543b3e38388c8ac">aabb.h</a></li>
 <li>get_logger()&#160;:&#160;<a class="el" href="d1/d8c/logger_8h.html#a1bb215f44dfedf58404dd92ebc405505">logger.h</a></li>
 </ul>
 
 
 <h3 class="doxsection"><a id="index_h" name="index_h"></a>- h -</h3><ul>
 <li>HalfedgeMeshFailure&#160;:&#160;<a class="el" href="d9/dba/group__geometry.html#ga61975e76d464c02410b50d5600f125da">halfedge.h</a></li>
+<li>highlight_face_color()&#160;:&#160;<a class="el" href="dc/df7/rendering_8hpp.html#af4828cb41541d55f6c552b7138f7bbe6">rendering.hpp</a></li>
+<li>highlight_wireframe_color()&#160;:&#160;<a class="el" href="dc/df7/rendering_8hpp.html#ae2ed56668bc343720bd0074d66de6f39">rendering.hpp</a></li>
 </ul>
 
 
@@ -147,13 +173,18 @@ $(function(){initNavTree('globals.html','',''); });
 </ul>
 
 
+<h3 class="doxsection"><a id="index_m" name="index_m"></a>- m -</h3><ul>
+<li>MaterialType&#160;:&#160;<a class="el" href="d4/d75/material_8hpp.html#ace55764233310da429c994a8c334b32a">material.hpp</a></li>
+</ul>
+
+
 <h3 class="doxsection"><a id="index_n" name="index_n"></a>- n -</h3><ul>
-<li>naive_intersect()&#160;:&#160;<a class="el" href="db/d81/group__rendering.html#ga1a3a6b802c525058a523c2dadaae1f2b">ray.h</a></li>
+<li>naive_intersect()&#160;:&#160;<a class="el" href="db/d81/group__rendering.html#ga17cbd0105f7ec9348f98ea5e9a998bed">ray.h</a></li>
 </ul>
 
 
 <h3 class="doxsection"><a id="index_p" name="index_p"></a>- p -</h3><ul>
-<li>phong_fragment_shader()&#160;:&#160;<a class="el" href="db/d81/group__rendering.html#ga23e48f4922a0422f0e9679f65daaef5f">graphics_interface.h</a></li>
+<li>phong_fragment_shader()&#160;:&#160;<a class="el" href="db/d81/group__rendering.html#ga59d7fafa0f6f28b712848882a051fdf7">graphics_interface.h</a></li>
 <li>pi()&#160;:&#160;<a class="el" href="db/d81/group__utils.html#ga8af16bad73ed4f92ede4dd5e7841bd7c">math.hpp</a></li>
 <li>pi&lt; double &gt;()&#160;:&#160;<a class="el" href="d4/d78/math_8hpp.html#a375c8412919ad185761dc5613dd1fb3d">math.hpp</a></li>
 <li>pi&lt; float &gt;()&#160;:&#160;<a class="el" href="d4/d78/math_8hpp.html#a7fc2131b54ddf0cfaf2be1dd2bb779ca">math.hpp</a></li>
@@ -170,7 +201,7 @@ $(function(){initNavTree('globals.html','',''); });
 
 <h3 class="doxsection"><a id="index_r" name="index_r"></a>- r -</h3><ul>
 <li>radians()&#160;:&#160;<a class="el" href="db/d81/group__utils.html#gadc516f532c93b92333ea8e8962393300">math.hpp</a></li>
-<li>ray_triangle_intersect()&#160;:&#160;<a class="el" href="db/d81/group__rendering.html#gab851f3686bc57e3a8cc135f68f3871a5">ray.h</a></li>
+<li>ray_triangle_intersect()&#160;:&#160;<a class="el" href="db/d81/group__rendering.html#ga8c1294850ff93cf9fdb18915cedbf527">ray.h</a></li>
 <li>reflect()&#160;:&#160;<a class="el" href="db/d81/group__utils.html#ga45d287464d22e5ef6cc281294b2d9c44">math.hpp</a></li>
 <li>RendererType&#160;:&#160;<a class="el" href="db/d81/group__rendering.html#gae9c668e3a273ce92b9f4e134d0cbd6ce">render_engine.h</a></li>
 <li>RGB_COLOR&#160;:&#160;<a class="el" href="db/d81/group__utils.html#gab2596a38a2a89ebf334c84f916360771">rendering.hpp</a></li>
@@ -180,7 +211,6 @@ $(function(){initNavTree('globals.html','',''); });
 
 <h3 class="doxsection"><a id="index_s" name="index_s"></a>- s -</h3><ul>
 <li>scale_factor&#160;:&#160;<a class="el" href="de/d60/settings_8h.html#a0e2670c8711a75dd29c3e07307270535">settings.h</a></li>
-<li>SelectableType&#160;:&#160;<a class="el" href="dd/df1/group__ui.html#ga6d7943fa9a730037e43193747b2d323b">selection_helper.h</a></li>
 <li>sign()&#160;:&#160;<a class="el" href="db/d81/group__utils.html#ga9394636a770c3d784a10b8334c33f5d2">math.hpp</a></li>
 <li>squ()&#160;:&#160;<a class="el" href="db/d81/group__utils.html#ga94c1d99deed7f3b1a05d8edc8f05219c">math.hpp</a></li>
 <li>symplectic_euler_step()&#160;:&#160;<a class="el" href="d4/d20/solver_8h.html#a8646e59c916e93fc88f4db99ddc27722">solver.h</a></li>
@@ -199,7 +229,6 @@ $(function(){initNavTree('globals.html','',''); });
 
 
 <h3 class="doxsection"><a id="index_v" name="index_v"></a>- v -</h3><ul>
-<li>vertex_color_location&#160;:&#160;<a class="el" href="db/d81/group__utils.html#gaa30b93e8006d140b22dc6d5a7cd167eb">rendering.hpp</a></li>
 <li>vertex_normal_location&#160;:&#160;<a class="el" href="db/d81/group__utils.html#gaf9299ed6aa7dd39df06de271a323be8d">rendering.hpp</a></li>
 <li>vertex_position_location&#160;:&#160;<a class="el" href="db/d81/group__utils.html#ga59f39d17248f4e72b89867b326d1cd76">rendering.hpp</a></li>
 <li>vertex_shader()&#160;:&#160;<a class="el" href="db/d81/group__rendering.html#gaf95c1a4382cc7c01a134fbdd9e7db1c4">graphics_interface.h</a></li>
@@ -215,7 +244,7 @@ $(function(){initNavTree('globals.html','',''); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
   </ul>
 </div>
 </body>
